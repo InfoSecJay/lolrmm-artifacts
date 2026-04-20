@@ -1,0 +1,208 @@
+slug,name,file,file_expanded,os_raw,os_canonical,type,description
+access_remote_pc,Access Remote PC,C:\Program Files (x86)\RemotePC\RemotePCUIU.exe,C:\Program Files (x86)\RemotePC\RemotePCUIU.exe,Windows,Windows,,RemotePC service binary
+access_remote_pc,Access Remote PC,C:\Program Files (x86)\RemotePC\*,C:\Program Files (x86)\RemotePC\*,Windows,Windows,,Multiple files and binaries related to RemotePC installation
+action1,Action1,C:\Windows\Action1\action1_agent.exe,C:\Windows\Action1\action1_agent.exe,Windows,Windows,,Action1 service binary
+action1,Action1,C:\Windows\Action1\*,C:\Windows\Action1\*,Windows,Windows,,Multiple files and binaries related to Action1 installation
+action1,Action1,C:\Windows\Action1\scripts\*,C:\Windows\Action1\scripts\*,Windows,Windows,,Multiple scripts related to Action1 installation
+action1,Action1,C:\Windows\Action1\rule_data\*,C:\Windows\Action1\rule_data\*,Windows,Windows,,Files related to Action1 rules
+action1,Action1,C:\Windows\Action1\action1_log_*.log,C:\Windows\Action1\action1_log_*.log,Windows,Windows,,"Contains history, errors, system notifications. Incoming and outgoing connections."
+alpemix,Alpemix,%localappdata%\Alpemix\Alpemix.ini,C:\Users\*\AppData\Local\Alpemix\Alpemix.ini,Windows,Windows,,N/A
+ammyyadmin,Ammyy Admin,%programdata%\\AMMYY\\access.log,C:\ProgramData\\AMMYY\\access.log,Windows,Windows,,"Ammyy Admin access log file. Contains information about the remote IP address, the time of connection, bytes recv/send, and the ID of the remote machine."
+ammyyadmin,Ammyy Admin,%Binary_path%\\AA_v3.log,%Binary_path%\\AA_v3.log,Windows,Windows,,Ammyy Admin log file. Contains application related logs.
+anydesk,AnyDesk,%programdata%\AnyDesk\ad_svc.trace,C:\ProgramData\AnyDesk\ad_svc.trace,Windows,Windows,,"AnyDesk service log file. As well as ad.trace, we can determine the IP address of the other participant and its AnyDesk ID when a connection is established."
+anydesk,AnyDesk,%programdata%\AnyDesk\connection_trace.txt,C:\ProgramData\AnyDesk\connection_trace.txt,Windows,Windows,,"Incoming connection logs, contains IP Address of the remote machine and file transfer activity. Only generated on target side. The content indicates how the connection was approved (e.g. the local user authorized it, or a password was used)"
+anydesk,AnyDesk,%APPDATA%\AnyDesk\connection_trace.txt,C:\Users\*\AppData\Roaming\AnyDesk\connection_trace.txt,Windows,Windows,,"Incoming connection logs, contains IP Address of the remote machine and file transfer activity. Only generated on target side. The content indicates how the connection was approved (e.g. the local user authorized it, or a password was used)"
+anydesk,AnyDesk,%APPDATA%\AnyDesk\ad.trace,C:\Users\*\AppData\Roaming\AnyDesk\ad.trace,Windows,Windows,,"AnyDesk user interface log file. In this log file, we can determine the IP address of the other participant and its AnyDesk ID. It is also possible to track events of file transfer. Below is the Client ID and external IP address of the remote participant."
+anydesk,AnyDesk,%APPDATA%\AnyDesk\chat\*.txt,C:\Users\*\AppData\Roaming\AnyDesk\chat\*.txt,Windows,Windows,,"If the chat functionality is used, its entries will be printed in a text file in this folder."
+anydesk,AnyDesk,%APPDATA%\AnyDesk\user.conf,C:\Users\*\AppData\Roaming\AnyDesk\user.conf,Windows,Windows,,N/A
+anydesk,AnyDesk,%PROGRAMDATA%\AnyDesk\service.conf,C:\ProgramData\AnyDesk\service.conf,Windows,Windows,,Password can be set to auto-validate the session. The password will be saved in a salted hash format.
+anydesk,AnyDesk,%APPDATA%\AnyDesk\service.conf,C:\Users\*\AppData\Roaming\AnyDesk\service.conf,Windows,Windows,,N/A
+anydesk,AnyDesk,%APPDATA%\AnyDesk\system.conf,C:\Users\*\AppData\Roaming\AnyDesk\system.conf,Windows,Windows,,N/A
+anydesk,AnyDesk,%PROGRAMDATA%\AnyDesk\system.conf,C:\ProgramData\AnyDesk\system.conf,Windows,Windows,,N/A
+anydesk,AnyDesk,%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk.lnk,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk.lnk,Windows,Windows,,N/A
+anydesk,AnyDesk,%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\AnyDesk\Uninstall AnyDesk.lnk,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AnyDesk\Uninstall AnyDesk.lnk,Windows,Windows,,N/A
+anydesk,AnyDesk,C:\Users\*\Videos\AnyDesk\*.anydesk,C:\Users\*\Videos\AnyDesk\*.anydesk,Windows,Windows,,N/A
+anydesk,AnyDesk,C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\*,C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\*,Windows,Windows,,N/A
+anydesk,AnyDesk,~/Library/Application Support/AnyDesk/Logs/,~/Library/Application Support/AnyDesk/Logs/,Mac,MacOS,,N/A
+anydesk,AnyDesk,~/.config/AnyDesk/Logs/,~/.config/AnyDesk/Logs/,Linux,Linux,,N/A
+aspia,Aspia,C:\Users\*\AppData\Roaming\aspia\client.ini,C:\Users\*\AppData\Roaming\aspia\client.ini,Windows,Windows,,N/A
+aspia,Aspia,C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log,C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log,Windows,Windows,,N/A
+aspia,Aspia,C:\Program Files\Aspia\Client\qt.conf,C:\Program Files\Aspia\Client\qt.conf,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\*,C:\Program Files\ATERA Networks\AteraAgent\Packages\*,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\AteraAgent.exe,C:\Program Files\ATERA Networks\AteraAgent\AteraAgent.exe,Windows,Windows,,Atera service binary
+atera,Atera,C:\Program Files\Atera Networks\AlphaAgent.exe,C:\Program Files\Atera Networks\AlphaAgent.exe,Windows,Windows,,Atera service binary
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageMonitoring\AgentPackageMonitoring.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageMonitoring\AgentPackageMonitoring.exe,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageHeartbeat\AgentPackageHeartbeat.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageHeartbeat\AgentPackageHeartbeat.exe,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageFileExplorer\AgentPackageFileExplorer.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageFileExplorer\AgentPackageFileExplorer.exe,Windows,Windows,,N/A
+atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe,Windows,Windows,,N/A
+baramundi,baramundi Management Suite,C:\Program Files\bsag\bma\bma.exe,C:\Program Files\bsag\bma\bma.exe,Windows,Windows,,baramundi Management Agent executable. Main service binary for the baramundi Management Suite agent that runs as a Windows service (BARAAGNT). Depends on RpcSs service.
+bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe,C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe,Windows,Windows,,Main Bluetrait agent executable file
+bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe,C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe,Windows,Windows,,Bluetrait User Agent executable file
+bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.db,C:\Program Files (x86)\Bluetrait Agent\config.db,Windows,Windows,,Bluetrait configuration database file
+bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.json,C:\Program Files (x86)\Bluetrait Agent\config.json,Windows,Windows,,Bluetrait JSON configuration file
+bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,Windows,Windows,,PAExec utility used by Bluetrait for remote execution
+devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,%localappdata%\Devolutions\RemoteDesktopManager\Connections.log,C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.log,Windows,Windows,,"Log file showing connections, disconnections, actions on saved passwords and attachments, and other changes"
+devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,%localappdata%\Devolutions\RemoteDesktopManager[GUID]\Mru.xml,C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager[GUID]\Mru.xml,Windows,Windows,,Most recently used Connections
+devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,%localappdata%\Devolutions\RemoteDesktopManager\Connections.db,C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.db,Windows,Windows,,Default connections database. There can be others. Holds information and configuration about the connections
+fleetdeck,FleetDeck.io,C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe,C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe,Windows,Windows,,FleetDeck agent service executable (verified via official documentation)
+fleetdeck,FleetDeck.io,C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe,C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe,Windows,Windows,,FleetDeck agent executable (verified via official documentation)
+fleetdeck,FleetDeck.io,C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll,C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll,Windows,Windows,,FleetDeck agent DLL (reported in GitHub issue)
+fleetdeck,FleetDeck.io,C:\Windows\Temp\FleetDeck\*,C:\Windows\Temp\FleetDeck\*,Windows,Windows,,FleetDeck temporary files directory (verified via official documentation)
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.AppManagement.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.AppManagement.zip,Windows,Windows,,Gorelo Agent Plugin - App Management
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.DeviceChat.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.DeviceChat.zip,Windows,Windows,,Gorelo Agent Plugin - Device Chat
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.IpAddressDetector.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.IpAddressDetector.zip,Windows,Windows,,Gorelo Agent Plugin - IpAddress Detector
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ScreenCapture.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ScreenCapture.zip,Windows,Windows,,Gorelo Agent Plugin - Screen Capture
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ScriptRunner.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ScriptRunner.zip,Windows,Windows,,Gorelo Agent Plugin - Script Runner
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ServerMonitor.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ServerMonitor.zip,Windows,Windows,,Gorelo Agent Plugin - Server Monitor
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ShellCommand.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ShellCommand.zip,Windows,Windows,,Gorelo Agent Plugin - Shell Command
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.SystemProfiler.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.SystemProfiler.zip,Windows,Windows,,Gorelo Agent Plugin - System Profiler
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.SystemSecurityManagement.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.SystemSecurityManagement.zip,Windows,Windows,,Gorelo Agent Plugin - System Security Management
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.WindowsChecker.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.WindowsChecker.zip,Windows,Windows,,Gorelo Agent Plugin - Windows Checker
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.WindowsPatchManagement.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.WindowsPatchManagement.zip,Windows,Windows,,Gorelo Agent Plugin - Windows Patch Management
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\RMMAgent\Gorelo.RemoteManagement.Agent\Gorelo.RemoteManagement.Agent.exe,C:\Program Files\Gorelo\Agent\RMMAgent\Gorelo.RemoteManagement.Agent\Gorelo.RemoteManagement.Agent.exe,Windows,Windows,,Gorelo RMM Agent executable
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Shell\Gorelo.RemoteManagement.Shell\Gorelo.RemoteManagement.Shell.exe,C:\Program Files\Gorelo\Agent\Shell\Gorelo.RemoteManagement.Shell\Gorelo.RemoteManagement.Shell.exe,Windows,Windows,,Gorelo RMM Shell executable
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.RemoteManagement.Agent.zip,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.RemoteManagement.Agent.zip,Windows,Windows,,Installer Download - Agent package
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.RemoteManagement.Shell.zip,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.RemoteManagement.Shell.zip,Windows,Windows,,Installer Download - Shell package
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.Rmm.Installer.Handler.zip,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.Rmm.Installer.Handler.zip,Windows,Windows,,Installer Download - Handler package
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.Rmm.Installer.zip,C:\Program Files\Gorelo\Installer\Downloads\Gorelo.Rmm.Installer.zip,Windows,Windows,,Installer Download - Installer package
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Installer\Gorelo.Rmm.Installer.Handler\Gorelo.Rmm.Installer.Handler.exe,C:\Program Files\Gorelo\Installer\Gorelo.Rmm.Installer.Handler\Gorelo.Rmm.Installer.Handler.exe,Windows,Windows,,RMM Installer Handler executable
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Installer\Gorelo.Rmm.Installer\Gorelo.Rmm.Installer.exe,C:\Program Files\Gorelo\Installer\Gorelo.Rmm.Installer\Gorelo.Rmm.Installer.exe,Windows,Windows,,RMM Installer executable
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\Agent\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\Agent\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the Agent component
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\Installer\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\Installer\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the Installer component
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\InstallerHandler\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\InstallerHandler\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the InstallerHandler component
+gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the Shell component
+gotomypc,GoToMyPC,%AppData%\GoTo\Logs\goto.log,C:\Users\*\AppData\Roaming\GoTo\Logs\goto.log,Windows,Windows,,N/A
+heartbeatrm,HeartbeatRM,C:\Program Files (x86)\HeartbeatRM\*,C:\Program Files (x86)\HeartbeatRM\*,Windows,Windows,,HeartbeatRM official installation directory (verified via vendor documentation)
+heartbeatrm,HeartbeatRM,C:\Program Files\HeartbeatRM\*,C:\Program Files\HeartbeatRM\*,Windows,Windows,,HeartbeatRM reported installation directory (unverified - from threat intelligence)
+heartbeatrm,HeartbeatRM,*\agent-installer-any.exe,*\agent-installer-any.exe,Windows,Windows,,HeartbeatRM official installer (verified via VirusTotal)
+hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\HopToDesk.exe,C:\Program Files (x86)\HopToDesk\HopToDesk.exe,Windows,Windows,,HopToDesk application executable (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\privacyhelper.exe,C:\Program Files (x86)\HopToDesk\privacyhelper.exe,Windows,Windows,,HopToDesk privacy helper executable (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\PrivacyMode.dll,C:\Program Files (x86)\HopToDesk\PrivacyMode.dll,Windows,Windows,,HopToDesk privacy mode library (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\sciter.dll,C:\Program Files (x86)\HopToDesk\sciter.dll,Windows,Windows,,HopToDesk Sciter UI library (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Users\*\AppData\Local\Temp\sciter.dll,C:\Users\*\AppData\Local\Temp\sciter.dll,Windows,Windows,,HopToDesk UI library (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Users\*\AppData\Local\Temp\privacyhelper.exe,C:\Users\*\AppData\Local\Temp\privacyhelper.exe,Windows,Windows,,HopToDesk privacy helper (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Users\*\AppData\Roaming\HopToDesk\config\*,C:\Users\*\AppData\Roaming\HopToDesk\config\*,Windows,Windows,,HopToDesk configuration files (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Users\*\AppData\Roaming\HopToDesk\config\hoptodesk.toml,C:\Users\*\AppData\Roaming\HopToDesk\config\hoptodesk.toml,Windows,Windows,,HopToDesk configuration file (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk.toml,C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk.toml,Windows,Windows,,HopToDesk configuration file (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk_rCURRENT.log,C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk_rCURRENT.log,Windows,Windows,,HopToDesk log file (verified via VirusTotal sandbox analysis)
+hoptodesk,HopToDesk,/System/Volumes/Data/Users/*/Library/Logs/HopToDesk/hoptodesk_rCURRENT.log,/System/Volumes/Data/Users/*/Library/Logs/HopToDesk/hoptodesk_rCURRENT.log,MacOS,MacOS,,HopToDesk log file (verified via VirusTotal sandbox analysis)
+idrive,iDrive,C:\ProgramData\IDrive\*,C:\ProgramData\IDrive\*,Windows,Windows,,iDrive installation and data directory (observed in threat intelligence)
+idrive,iDrive,C:\Program Files\IDrive\*,C:\Program Files\IDrive\*,Windows,Windows,,iDrive program files directory
+idrive,iDrive,C:\Program Files (x86)\IDrive\*,C:\Program Files (x86)\IDrive\*,Windows,Windows,,iDrive program files directory (32-bit)
+idrive,iDrive,C:\Users\*\AppData\Local\IDrive\*,C:\Users\*\AppData\Local\IDrive\*,Windows,Windows,,iDrive user data and configuration
+immybot,ImmyBot,C:\Program Files\ImmyBot\*,C:\Program Files\ImmyBot\*,Windows,Windows,,ImmyBot installation directory (verified via official documentation)
+immybot,ImmyBot,C:\Program Files (x86)\ImmyBot\*,C:\Program Files (x86)\ImmyBot\*,Windows,Windows,,ImmyBot installation directory for 32-bit (verified via official documentation)
+immybot,ImmyBot,C:\ProgramData\ImmyBot\Logs\*,C:\ProgramData\ImmyBot\Logs\*,Windows,Windows,,ImmyBot agent logs (verified via official documentation)
+immybot,ImmyBot,C:\ProgramData\ImmyBot\Scripts\*,C:\ProgramData\ImmyBot\Scripts\*,Windows,Windows,,ImmyBot script execution directory (verified via official documentation)
+immybot,ImmyBot,C:\ProgramData\ImmyBotAgentService\config.json,C:\ProgramData\ImmyBotAgentService\config.json,Windows,Windows,,ImmyBot agent configuration file (verified via official documentation)
+immybot,ImmyBot,C:\Windows\Temp\ImmyBot\*,C:\Windows\Temp\ImmyBot\*,Windows,Windows,,ImmyBot temporary files directory
+kaseya,Kaseya (VSA),%localappdata%\Kaseya\Log\KaseyaLiveConnect\*,C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect\*,Windows,Windows,,Kaseya Live Connect logs
+kaseya,Kaseya (VSA),~/Library/Logs/com.kaseya/KaseyaLiveConnect/*,~/Library/Logs/com.kaseya/KaseyaLiveConnect/*,MacOS,MacOS,,Kaseya Live Connect logs
+kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\Endpoint\*,C:\ProgramData\Kaseya\Log\Endpoint\*,Windows,Windows,,Kaseya Endpoint logs
+kaseya,Kaseya (VSA),C:\Program Files*\Kaseya\*\agentmon.log,C:\Program Files*\Kaseya\*\agentmon.log,Windows,Windows,,Kaseya Agent Monitor log
+kaseya,Kaseya (VSA),/var/log/system.log,/var/log/system.log,MacOS 32bit,MacOS,,Kaseya Agent Monitor log
+kaseya,Kaseya (VSA),~/opt/kaseya/*/logs*,~/opt/kaseya/*/logs*,MacOS 64bit,MacOS,,Kaseya Agent Monitor log
+kaseya,Kaseya (VSA),C:\Users\*\AppData\Local\Temp\KASetup.log,C:\Users\*\AppData\Local\Temp\KASetup.log,Windows,Windows,,Kaseya Setup log in user temp directory
+kaseya,Kaseya (VSA),C:\Windows\Temp\KASetup.log,C:\Windows\Temp\KASetup.log,Windows,Windows,,Kaseya Setup log in Windows temp directory
+kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\*,C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\*,Windows,Windows,,Kaseya Edge Services logs
+kaseya,Kaseya (VSA),C:\Kaseya\api\v1.0\logs\,C:\Kaseya\api\v1.0\logs\,Windows,Windows,,Kaseya API logs
+kaseya,Kaseya (VSA),C:\Kaseya\api\v1.5\endpoint\logs,C:\Kaseya\api\v1.5\endpoint\logs,Windows,Windows,,Kaseya API logs
+kaseya,Kaseya (VSA),C:\Kaseya\api\v1.5\endpoints\logs,C:\Kaseya\api\v1.5\endpoints\logs,Windows,Windows,,Kaseya API logs
+kaseya,Kaseya (VSA),C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\,C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\,Windows,Windows,,Certificate creation
+kaseya,Kaseya (VSA),C:\Kaseya\WebPages\install\makecert.txt,C:\Kaseya\WebPages\install\makecert.txt,Windows,Windows,,Certificate creation
+kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*,C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*,Windows,Windows,,Endpoint service logs
+kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*,C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*,Windows,Windows,,Session logs
+level,Level,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
+level,Level,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
+level,Level,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
+levelio,Level.io,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
+levelio,Level.io,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
+levelio,Level.io,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
+manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Program Files\ManageEngine\ServiceDesk\*,C:\Program Files\ManageEngine\ServiceDesk\*,Windows,Windows,,ManageEngine ServiceDesk Plus installation directory (verified via VirusTotal sandbox)
+manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe,C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe,Windows,Windows,,ManageEngine ServiceDesk Plus temporary installer files (verified via VirusTotal sandbox)
+manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe,C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe,Windows,Windows,,InstallShield wrapper temporary files (verified via VirusTotal sandbox)
+meshcentral,MeshCentral,C:\Program Files\Mesh Agent\MeshAgent.exe,C:\Program Files\Mesh Agent\MeshAgent.exe,Windows,Windows,,Local MeshAgent service binary after installation
+meshcentral,MeshCentral,C:\Program Files\Mesh Agent\MeshAgent.msh,C:\Program Files\Mesh Agent\MeshAgent.msh,Windows,Windows,,"Local MeshAgent service configuration file. Contains configuration settings including the MeshCentral server address, port, and other settings. If the MeshAgent is run without being installed, the configuration file is created in the same directory as the MeshAgent binary."
+meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent/meshagent,/usr/local/mesh_services/meshagent/meshagent/meshagent,MacOS,MacOS,,Local MeshAgent service binary after installation
+meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent/meshagent.db,/usr/local/mesh_services/meshagent/meshagent/meshagent.db,MacOS,MacOS,,Local Meshagent database after installation
+meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent/meshagent.msh,/usr/local/mesh_services/meshagent/meshagent/meshagent.msh,MacOS,MacOS,,Local Meshagent databconfiguration file after installation
+meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent,/usr/local/mesh_services/meshagent/meshagent,Linux,Linux,,Local MeshAgent service binary after installation
+meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent.db,/usr/local/mesh_services/meshagent/meshagent.db,Linux,Linux,,Local Meshagent database after installation
+meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent.msh,/usr/local/mesh_services/meshagent/meshagent.msh,Linux,Linux,,Local Meshagent databconfiguration file after installation
+miradore,Miradore,C:\Program Files\Miradore\OnlineClient\bin\*,C:\Program Files\Miradore\OnlineClient\bin\*,Windows,Windows,,Miradore client installation directory (verified via VirusTotal sandbox analysis)
+miradore,Miradore,C:\Program Files\Miradore\OnlineClient\bin\7z.dll,C:\Program Files\Miradore\OnlineClient\bin\7z.dll,Windows,Windows,,Miradore compression library (verified via VirusTotal sandbox analysis)
+mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe,Windows,Windows,,Main application binary
+mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe,Windows,Windows,,Optional service binary when Service Mode is enabled
+mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe,Windows,Windows,,Helper executable used by Mouse Without Borders
+mremoteng,mRemoteNG,C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log,C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log,Windows,Windows,,mRemoteNG log file
+mremoteng,mRemoteNG,C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml,C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml,Windows,Windows,,mRemoteNG configuration file
+mremoteng,mRemoteNG,C:\Users\*\AppData\*\mRemoteNG\**10\user.config,C:\Users\*\AppData\*\mRemoteNG\**10\user.config,Windows,Windows,,mRemoteNG user configuration file
+netbird,NetBird,C:\Program Files\Netbird\netbird.exe,C:\Program Files\Netbird\netbird.exe,Windows,Windows,,NetBird client installation directory
+netbird,NetBird,C:\ProgramData\Netbird\config.json,C:\ProgramData\Netbird\config.json,Windows,Windows,,NetBird configuration file
+netbird,NetBird,/etc/netbird/config.json,/etc/netbird/config.json,Linux,Linux,,NetBird configuration file
+netbird,NetBird,/var/log/netbird/*,/var/log/netbird/*,Linux,Linux,,NetBird log files
+netlock_rmm,NetLock RMM,C:\temp\netlock rmm\installer\logs\*,C:\temp\netlock rmm\installer\logs\*,Windows,Windows,,Debug and error logs related to installation
+netlock_rmm,NetLock RMM,C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json,C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json,Windows,Windows,,Server Configuration File
+netlock_rmm,NetLock RMM,/etc/systemd/system/netlock-rmm-agent-comm.service,/etc/systemd/system/netlock-rmm-agent-comm.service,Linux,Linux,,Netlock RMM Agent comm agent service
+netlock_rmm,NetLock RMM,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,macOS,MacOS,,macOS LaunchDaemon plist File
+netlock_rmm,NetLock RMM,/var/log/netlock-rmm-agent-comm.log,/var/log/netlock-rmm-agent-comm.log,Linux,Linux,,RMM agent comm log (Non-Windows)
+nvda,NVDA (Non-Visual Desktop Access),C:\Program Files (x86)\NVDA\nvda.exe,C:\Program Files (x86)\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory
+nvda,NVDA (Non-Visual Desktop Access),C:\Program Files\NVDA\nvda.exe,C:\Program Files\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory (64-bit)
+nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.log,C:\Users\*\AppData\Roaming\nvda\nvda.log,Windows,Windows,,NVDA log file
+nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.ini,C:\Users\*\AppData\Roaming\nvda\nvda.ini,Windows,Windows,,NVDA configuration file
+parsec,Parsec,C:\Program Files\Parsec\parsecd.exe,C:\Program Files\Parsec\parsecd.exe,Windows,Windows,,Main parsec executable
+parsec,Parsec,C:\Program Files\Parsec\pservice.exe,C:\Program Files\Parsec\pservice.exe,Windows,Windows,,Background service managing input devices
+parsec,Parsec,C:\Program Files\Parsec\teams.exe,C:\Program Files\Parsec\teams.exe,Windows,Windows,,Parsec for teams collaboration and user session management
+pchelpware,PChelpware,C:\temp_phw,C:\temp_phw,Windows,Windows,,Folder that is created upon PcHelpWare execution
+pdq_connect,PDQ Connect,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,Windows,Windows,,Journal file that is part of the database system used by the PDQ Connect Agent to manage and store data related to its operations
+radmin,RAdmin,C:\Windows\SysWOW64\rserver30\Radm_log.htm,C:\Windows\SysWOW64\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (32-bit)
+radmin,RAdmin,C:\Windows\System32\rserver30\Radm_log.htm,C:\Windows\System32\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (64-bit)
+radmin,RAdmin,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,Windows,Windows,,RAdmin chat logs
+radmin,RAdmin,C:\Users\*\Documents\ChatLogs\*\*.htm,C:\Users\*\Documents\ChatLogs\*\*.htm,Windows,Windows,,RAdmin user chat logs
+rdclient,RdClient,%APPDATA%\RdClient\*,C:\Users\*\AppData\Roaming\RdClient\*,Windows,Windows,,
+remoteripple,Remote Ripple,%APPDATA%\GlavSoft\RemoteRipple\*,C:\Users\*\AppData\Roaming\GlavSoft\RemoteRipple\*,Windows,Windows,,Log files for RemoteRipple
+remoteripple,Remote Ripple,%TEMP%\Remote_Ripple_*,C:\Users\*\AppData\Local\Temp\Remote_Ripple_*,Windows,Windows,,Temporary files/logs for RemoteRipple
+rustdesk,RustDesk,C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*,C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*,Windows,Windows,,N/A
+screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\Session.db,C:\Program Files*\ScreenConnect\App_Data\Session.db,Windows,Windows,,ScreenConnect session database
+screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\User.xml,C:\Program Files*\ScreenConnect\App_Data\User.xml,Windows,Windows,,ScreenConnect user configuration
+screenconnect,ScreenConnect,C:\ProgramData\ScreenConnect Client*\user.config,C:\ProgramData\ScreenConnect Client*\user.config,Windows,Windows,,ScreenConnect client user configuration
+splashtop,Splashtop,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx,Windows,Windows,,N/A
+splashtop,Splashtop,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx,Windows,Windows,,N/A
+splashtop,Splashtop,%PROGRAMDATA%\Splashtop\Temp\log\FTCLog.txt,C:\ProgramData\Splashtop\Temp\log\FTCLog.txt,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\agent_log.txt,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\agent_log.txt,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\SPLog.txt,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\SPLog.txt,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\svcinfo.txt,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\svcinfo.txt,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\sysinfo.txt,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\sysinfo.txt,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRService.exe,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRService.exe,Windows,Windows,,Splashtop Remote Service
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRAgent.exe,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRAgent.exe,Windows,Windows,,SplashTop Remote Agent
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Software Updater\SSUAgent.exe,C:\Program Files (x86)\Splashtop\Splashtop Software Updater\SSUAgent.exe,Windows,Windows,,Splashtop Updater
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe,Windows,Windows,,N/A
+splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3,Windows,Windows,,N/A
+teamviewer,TeamViewer,C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log,C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log,Windows,Windows,,N/A
+teamviewer,TeamViewer,TeamViewer\d\d_Logfile\.log,TeamViewer\d\d_Logfile\.log,Windows,Windows,Regex,N/A
+teamviewer,TeamViewer,C:\Program Files\TeamViewer\Connections_incoming.txt,C:\Program Files\TeamViewer\Connections_incoming.txt,Windows,Windows,,N/A
+teamviewer,TeamViewer,C:\Program Files\TeamViewer\TVNetwork.log,C:\Program Files\TeamViewer\TVNetwork.log,Windows,Windows,,N/A
+teamviewer,TeamViewer,%LOCALAPPDATA%\Temp\TeamViewer\TV15Install.log,C:\Users\*\AppData\Local\Temp\TeamViewer\TV15Install.log,Windows,Windows,,N/A
+teamviewer,TeamViewer,%APPDATA%\\TeamViewer\\TeamViewer\d\d_Logfile\.log,C:\Users\*\AppData\Roaming\\TeamViewer\\TeamViewer\d\d_Logfile\.log,Windows,Windows,Regex,N/A
+teamviewer,TeamViewer,teamviewerqs.exe,teamviewerqs.exe,Windows,Windows,,N/A
+teamviewer,TeamViewer,tv_w32.exe,tv_w32.exe,Windows,Windows,,N/A
+teamviewer,TeamViewer,tv_w64.exe,tv_w64.exe,Windows,Windows,,N/A
+teamviewer,TeamViewer,tv_x64.exe,tv_x64.exe,Windows,Windows,,N/A
+teamviewer,TeamViewer,teamviewer.exe,teamviewer.exe,Windows,Windows,,N/A
+teamviewer,TeamViewer,teamviewer_service.exe,teamviewer_service.exe,Windows,Windows,,N/A
+teamviewer,TeamViewer,%LOCALAPPDATA%\TeamViewer\Database\tvchatfilecache.db,C:\Users\*\AppData\Local\TeamViewer\Database\tvchatfilecache.db,Windows,Windows,,SQlite 3 database storing cache about TeamViewer chat
+teamviewer,TeamViewer,%LOCALAPPDATA%\TeamViewer\RemotePrinting\tvprint.db,C:\Users\*\AppData\Local\TeamViewer\RemotePrinting\tvprint.db,Windows,Windows,,SQlite 3 database storing TeamViewer print jobs
+teamviewer,TeamViewer,%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk,Windows,Windows,,N/A
+teamviewer,TeamViewer,C:\Program Files*\TeamViewer\connections*.txt,C:\Program Files*\TeamViewer\connections*.txt,Windows,Windows,,N/A
+teamviewer,TeamViewer,C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc,C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc,Windows,Windows,,N/A
+tmate,tmate,/tmp/tmate*,/tmp/tmate*,Linux,Linux,,tmate socket files for terminal sharing sessions
+tmate,tmate,~/.tmate.conf,~/.tmate.conf,Linux,Linux,,tmate configuration file
+tmate,tmate,tmate.sock,tmate.sock,Linux,Linux,,tmate socket file for session communication
+tmate,tmate,tmate-ready,tmate-ready,Linux,Linux,,tmate readiness indicator file
+tmate,tmate,tmate.bashrc,tmate.bashrc,Linux,Linux,,tmate bash configuration file
+veyon,Veyon,C:\Windows\Temp\VeyonServer.log,C:\Windows\Temp\VeyonServer.log,Windows,Windows,,VeyonServer log file
+veyon,Veyon,C:\Windows\Temp\VeyonService.log,C:\Windows\Temp\VeyonService.log,Windows,Windows,,VeyonService log file
+veyon,Veyon,C:\Users\*\AppData\Local\VeyonCLI.log,C:\Users\*\AppData\Local\VeyonCLI.log,Windows,Windows,,Veyon command-line interface utility log

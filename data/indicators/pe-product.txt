@@ -1,0 +1,12 @@
+Alpemix
+AnyDesk
+Aspia
+baramundi Management Suite
+Bluetrait
+Gorelo RMM
+LMIGuardianSvc
+Mouse Without Borders
+Parsec
+Radmin Server
+Radmin Viewer
+TeamViewer

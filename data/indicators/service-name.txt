@@ -1,0 +1,19 @@
+A1Agent
+AlpemixSrvc
+Ammyy Admin
+AnyDesk Service
+AteraAgent
+Bluetrait Agent
+GoToResolve_*
+Level
+Mesh Agent background service
+Mouse without Borders Service
+parsecvirtualds
+RCService
+RemotePC Performance Service
+Splashtop Software Updater Service
+SplashtopRemoteService
+Splashtop® Remote Service
+TeamViewer
+Veyon Service
+WinRing0_1_2_0

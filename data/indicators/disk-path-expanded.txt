@@ -1,0 +1,204 @@
+%Binary_path%\\AA_v3.log
+*\agent-installer-any.exe
+/etc/netbird/config.json
+/etc/systemd/system/netlock-rmm-agent-comm.service
+/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
+/System/Volumes/Data/Users/*/Library/Logs/HopToDesk/hoptodesk_rCURRENT.log
+/tmp/tmate*
+/usr/local/mesh_services/meshagent/meshagent
+/usr/local/mesh_services/meshagent/meshagent.db
+/usr/local/mesh_services/meshagent/meshagent.msh
+/usr/local/mesh_services/meshagent/meshagent/meshagent
+/usr/local/mesh_services/meshagent/meshagent/meshagent.db
+/usr/local/mesh_services/meshagent/meshagent/meshagent.msh
+/var/log/netbird/*
+/var/log/netlock-rmm-agent-comm.log
+/var/log/system.log
+C:\Kaseya\api\v1.0\logs\
+C:\Kaseya\api\v1.5\endpoint\logs
+C:\Kaseya\api\v1.5\endpoints\logs
+C:\Kaseya\WebPages\install\makecert.txt
+C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe
+C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe
+C:\Program Files (x86)\Bluetrait Agent\config.db
+C:\Program Files (x86)\Bluetrait Agent\config.json
+C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe
+C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll
+C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe
+C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe
+C:\Program Files (x86)\HeartbeatRM\*
+C:\Program Files (x86)\HopToDesk\HopToDesk.exe
+C:\Program Files (x86)\HopToDesk\privacyhelper.exe
+C:\Program Files (x86)\HopToDesk\PrivacyMode.dll
+C:\Program Files (x86)\HopToDesk\sciter.dll
+C:\Program Files (x86)\IDrive\*
+C:\Program Files (x86)\ImmyBot\*
+C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe
+C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe
+C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe
+C:\Program Files (x86)\NVDA\nvda.exe
+C:\Program Files (x86)\RemotePC\*
+C:\Program Files (x86)\RemotePC\RemotePCUIU.exe
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\agent_log.txt
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\SPLog.txt
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\svcinfo.txt
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\sysinfo.txt
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRAgent.exe
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRService.exe
+C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe
+C:\Program Files (x86)\Splashtop\Splashtop Software Updater\SSUAgent.exe
+C:\Program Files*\Kaseya\*\agentmon.log
+C:\Program Files*\ScreenConnect\App_Data\Session.db
+C:\Program Files*\ScreenConnect\App_Data\User.xml
+C:\Program Files*\TeamViewer\connections*.txt
+C:\Program Files\Aspia\Client\qt.conf
+C:\Program Files\Atera Networks\AlphaAgent.exe
+C:\Program Files\ATERA Networks\AteraAgent\AteraAgent.exe
+C:\Program Files\ATERA Networks\AteraAgent\Packages\*
+C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageFileExplorer\AgentPackageFileExplorer.exe
+C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageHeartbeat\AgentPackageHeartbeat.exe
+C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageMonitoring\AgentPackageMonitoring.exe
+C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe
+C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt
+C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe
+C:\Program Files\bsag\bma\bma.exe
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.AppManagement.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.DeviceChat.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.IpAddressDetector.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ScreenCapture.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ScriptRunner.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ServerMonitor.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.ShellCommand.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.SystemProfiler.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.SystemSecurityManagement.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.WindowsChecker.zip
+C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.WindowsPatchManagement.zip
+C:\Program Files\Gorelo\Agent\RMMAgent\Gorelo.RemoteManagement.Agent\Gorelo.RemoteManagement.Agent.exe
+C:\Program Files\Gorelo\Agent\Shell\Gorelo.RemoteManagement.Shell\Gorelo.RemoteManagement.Shell.exe
+C:\Program Files\Gorelo\Installer\Downloads\Gorelo.RemoteManagement.Agent.zip
+C:\Program Files\Gorelo\Installer\Downloads\Gorelo.RemoteManagement.Shell.zip
+C:\Program Files\Gorelo\Installer\Downloads\Gorelo.Rmm.Installer.Handler.zip
+C:\Program Files\Gorelo\Installer\Downloads\Gorelo.Rmm.Installer.zip
+C:\Program Files\Gorelo\Installer\Gorelo.Rmm.Installer.Handler\Gorelo.Rmm.Installer.Handler.exe
+C:\Program Files\Gorelo\Installer\Gorelo.Rmm.Installer\Gorelo.Rmm.Installer.exe
+C:\Program Files\Gorelo\LogFiles\Agent\diagnostics-*.txt
+C:\Program Files\Gorelo\LogFiles\Installer\diagnostics-*.txt
+C:\Program Files\Gorelo\LogFiles\InstallerHandler\diagnostics-*.txt
+C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt
+C:\Program Files\HeartbeatRM\*
+C:\Program Files\IDrive\*
+C:\Program Files\ImmyBot\*
+C:\Program Files\Level\level.exe
+C:\Program Files\Level\level.log
+C:\Program Files\Level\osqueryi.exe
+C:\Program Files\ManageEngine\ServiceDesk\*
+C:\Program Files\Mesh Agent\MeshAgent.exe
+C:\Program Files\Mesh Agent\MeshAgent.msh
+C:\Program Files\Miradore\OnlineClient\bin\*
+C:\Program Files\Miradore\OnlineClient\bin\7z.dll
+C:\Program Files\Netbird\netbird.exe
+C:\Program Files\NVDA\nvda.exe
+C:\Program Files\Parsec\parsecd.exe
+C:\Program Files\Parsec\pservice.exe
+C:\Program Files\Parsec\teams.exe
+C:\Program Files\TeamViewer\Connections_incoming.txt
+C:\Program Files\TeamViewer\TVNetwork.log
+C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json
+C:\ProgramData\\AMMYY\\access.log
+C:\ProgramData\AnyDesk\ad_svc.trace
+C:\ProgramData\AnyDesk\connection_trace.txt
+C:\ProgramData\AnyDesk\service.conf
+C:\ProgramData\AnyDesk\system.conf
+C:\ProgramData\IDrive\*
+C:\ProgramData\ImmyBot\Logs\*
+C:\ProgramData\ImmyBot\Scripts\*
+C:\ProgramData\ImmyBotAgentService\config.json
+C:\ProgramData\Kaseya\Log\Endpoint\*
+C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*
+C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*
+C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\*
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AnyDesk\Uninstall AnyDesk.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk
+C:\ProgramData\Netbird\config.json
+C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal
+C:\ProgramData\ScreenConnect Client*\user.config
+C:\ProgramData\Splashtop\Temp\log\FTCLog.txt
+C:\temp\netlock rmm\installer\logs\*
+C:\temp_phw
+C:\Users\*\AppData\*\mRemoteNG\**10\user.config
+C:\Users\*\AppData\Local\Alpemix\Alpemix.ini
+C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager[GUID]\Mru.xml
+C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.db
+C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.log
+C:\Users\*\AppData\Local\IDrive\*
+C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect\*
+C:\Users\*\AppData\Local\TeamViewer\Database\tvchatfilecache.db
+C:\Users\*\AppData\Local\TeamViewer\RemotePrinting\tvprint.db
+C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log
+C:\Users\*\AppData\Local\Temp\KASetup.log
+C:\Users\*\AppData\Local\Temp\privacyhelper.exe
+C:\Users\*\AppData\Local\Temp\Remote_Ripple_*
+C:\Users\*\AppData\Local\Temp\sciter.dll
+C:\Users\*\AppData\Local\Temp\TeamViewer\TV15Install.log
+C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe
+C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe
+C:\Users\*\AppData\Local\VeyonCLI.log
+C:\Users\*\AppData\Roaming\\TeamViewer\\TeamViewer\d\d_Logfile\.log
+C:\Users\*\AppData\Roaming\AnyDesk\ad.trace
+C:\Users\*\AppData\Roaming\AnyDesk\chat\*.txt
+C:\Users\*\AppData\Roaming\AnyDesk\connection_trace.txt
+C:\Users\*\AppData\Roaming\AnyDesk\service.conf
+C:\Users\*\AppData\Roaming\AnyDesk\system.conf
+C:\Users\*\AppData\Roaming\AnyDesk\user.conf
+C:\Users\*\AppData\Roaming\aspia\client.ini
+C:\Users\*\AppData\Roaming\GlavSoft\RemoteRipple\*
+C:\Users\*\AppData\Roaming\GoTo\Logs\goto.log
+C:\Users\*\AppData\Roaming\HopToDesk\config\*
+C:\Users\*\AppData\Roaming\HopToDesk\config\hoptodesk.toml
+C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk.toml
+C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk_rCURRENT.log
+C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml
+C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log
+C:\Users\*\AppData\Roaming\nvda\nvda.ini
+C:\Users\*\AppData\Roaming\nvda\nvda.log
+C:\Users\*\AppData\Roaming\RdClient\*
+C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc
+C:\Users\*\Documents\ChatLogs\*\*.htm
+C:\Users\*\Videos\AnyDesk\*.anydesk
+C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log
+C:\Windows\Action1\*
+C:\Windows\Action1\action1_agent.exe
+C:\Windows\Action1\action1_log_*.log
+C:\Windows\Action1\rule_data\*
+C:\Windows\Action1\scripts\*
+C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
+C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\
+C:\Windows\System32\rserver30\CHATLOGS\*\*.htm
+C:\Windows\System32\rserver30\Radm_log.htm
+C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx
+C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx
+C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\*
+C:\Windows\SysWOW64\rserver30\Radm_log.htm
+C:\Windows\Temp\FleetDeck\*
+C:\Windows\Temp\ImmyBot\*
+C:\Windows\Temp\KASetup.log
+C:\Windows\Temp\VeyonServer.log
+C:\Windows\Temp\VeyonService.log
+teamviewer.exe
+TeamViewer\d\d_Logfile\.log
+teamviewer_service.exe
+teamviewerqs.exe
+tmate-ready
+tmate.bashrc
+tmate.sock
+tv_w32.exe
+tv_w64.exe
+tv_x64.exe
+~/.config/AnyDesk/Logs/
+~/.tmate.conf
+~/Library/Application Support/AnyDesk/Logs/
+~/Library/Logs/com.kaseya/KaseyaLiveConnect/*
+~/opt/kaseya/*/logs*

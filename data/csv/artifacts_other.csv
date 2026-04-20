@@ -1,0 +1,6 @@
+slug,name,type,value
+anydesk,AnyDesk,User-Agent,AnyDesk/*
+anydesk,AnyDesk,NamedPipe,adprinterpipe
+teamviewer,TeamViewer,Mutex,TeamViewer_LogMutex
+teamviewer,TeamViewer,Mutex,TeamViewerHooks_DynamicMemMutex
+teamviewer,TeamViewer,Mutex,TeamViewer3_Win32_Instance_Mutex

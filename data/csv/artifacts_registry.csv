@@ -1,0 +1,66 @@
+slug,name,path,description
+action1,Action1,HKLM\System\CurrentControlSet\Services\A1Agent,Service installation event as result of Action1 installation.
+action1,Action1,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps\action1_agent.exe,"Ensures that detailed crash information is available for analysis, which aids in maintaining the stability and reliability of the software."
+action1,Action1,HKLM\SOFTWARE\WOW6432Node\Action1,Storing its configuration settings and other relevant information
+alpemix,Alpemix,HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx,N/A
+ammyyadmin,Ammyy Admin,HKU\.DEFAULT\Software\Ammyy\Admin,Writing the hr3 binary in the registry. The hr3 is likely used to store admin-related information.
+ammyyadmin,Ammyy Admin,HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin,Ammyy Admin service allows AMMYY admin to run in safe mode.
+anydesk,AnyDesk,HKLM\SOFTWARE\Clients\Media\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\Classes\.anydesk\shell\open\command,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\Classes\AnyDesk\shell\open\command,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer\*,N/A
+anydesk,AnyDesk,HKLM\DRIVERS\DriverDatabase\DeviceIds\USBPRINT\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\DRIVERS\DriverDatabase\DeviceIds\WSDPRINT\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk,N/A
+atera,Atera,HKLM\SOFTWARE\ATERA Networks\AlphaAgent,
+atera,Atera,HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent,
+atera,Atera,KLM\SOFTWARE\WOW6432Node\Splashtop Inc.,
+atera,Atera,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater,
+atera,Atera,HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AlphaAgent,
+atera,Atera,HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent,
+atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32,
+atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS,
+atera,Atera,HKLM\SOFTWARE\ATERA Networks\*,
+fleetdeck,FleetDeck.io,HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service,FleetDeck service registry key
+gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),HKLM\SOFTWARE\GoTo Resolve Unattended\,N/A
+gotomypc,GoToMyPC,HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc,Configuration settings including registration email
+gotomypc,GoToMyPC,HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc\GuestInvite,Guest invites send to connect
+gotomypc,GoToMyPC,HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history,hostname of the computer making connections and location of transferred files
+gotomypc,GoToMyPC,HKEY_USERS\<SID>\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history,hostname of the computer making connections and location of transferred files
+hoptodesk,HopToDesk,HKEY_CURRENT_USER\Software\Classes\HopToDesk\shell\open\command,HopToDesk URL protocol handler
+hoptodesk,HopToDesk,HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\HopToDesk,HopToDesk uninstall registry key
+idrive,iDrive,HKEY_LOCAL_MACHINE\SOFTWARE\IDrive\*,iDrive configuration registry keys
+idrive,iDrive,HKEY_CURRENT_USER\SOFTWARE\IDrive\*,iDrive user configuration registry keys
+manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*},ManageEngine ServiceDesk Plus uninstall registry keys (verified via VirusTotal sandbox)
+radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
+rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
+splashtop,Splashtop,KLM\SOFTWARE\WOW6432Node\Splashtop Inc.\*,Splashtop Inc. registry key
+splashtop,Splashtop,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater,Splashtop Software Updater uninstall key
+splashtop,Splashtop,HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService,Splashtop Remote Service registry key
+splashtop,Splashtop,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Remote Session/Operational,Splashtop Streamer Remote Session event log channel
+splashtop,Splashtop,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational,Splashtop Streamer Status event log channel
+splashtop,Splashtop,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater\InstallRefCount,Splashtop Software Updater install reference count
+splashtop,Splashtop,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SplashtopRemoteService,Splashtop Remote Service safe boot configuration
+splashtop,Splashtop,HKU\.DEFAULT\Software\Splashtop Inc.\*,Default user Splashtop Inc. registry key
+splashtop,Splashtop,HKU\SID\Software\Splashtop Inc.\*,User-specific Splashtop Inc. registry key
+splashtop,Splashtop,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer,Splashtop PDF Remote Printer configuration
+splashtop,Splashtop,HKLM\SOFTWARE\WOW6432Node\Splashtop Inc.\Splashtop Remote Server\ClientInfo\*,Splashtop Remote Server client information
+teamviewer,TeamViewer,HKLM\SOFTWARE\TeamViewer\*,N/A
+teamviewer,TeamViewer,HKU\<SID>\SOFTWARE\TeamViewer\*,N/A
+teamviewer,TeamViewer,HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*,N/A
+teamviewer,TeamViewer,HKLM\SOFTWARE\TeamViewer\ConnectionHistory,N/A
+teamviewer,TeamViewer,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TeamViewer\*,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MainWindowHandle,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\DesktopWallpaperSingleImage,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\DesktopWallpaperSingleImagePath,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\DesktopWallpaperSingleImagePosition,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MinimizeToTray,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioUserSelectedCapturingEndpoint,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioSendingVolumeV2,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioUserSelectedRenderingEndpoint,N/A
+teamviewer,TeamViewer,HKLM\SOFTWARE\TeamViewer\ConnectionHistory,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\ClientWindow_Mode,N/A
+teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\ClientWindowPositions,N/A
+veyon,Veyon,HKLM\SOFTWARE\Veyon Solutions,Main Veyon configuration registry key containing all service and application settings
+veyon,Veyon,HKLM\SYSTEM\CurrentControlSet\Services\VeyonService,Veyon service registration and configuration

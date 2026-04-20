@@ -1,0 +1,48 @@
+slug,name,event_id,provider_name,log_file,service_name,image_path,command_line,description
+access_remote_pc,Access Remote PC,7045,Service Control Manager,System.evtx,RemotePC Performance Service,"""C:\\Program Files (x86)\\RemotePC\\RemotePCPerformance\\RPCPerformanceService.exe""",,Service installation event as result of RemotePC installation.
+access_remote_pc,Access Remote PC,4688,Microsoft-Security-Auditing,Security.evtx,,,"sc  create RPCService start=auto binpath=""C:\\Program Files (x86)\\RemotePC\\RemotePCService.exe""",Executing command to install RemotePC service.
+access_remote_pc,Access Remote PC,4688,Microsoft-Security-Auditing,Security.evtx,,,"C:\\Windows\\system32\\schtasks /create /SC DAILY /st 12:00 /TN ""RPCPerformanceHealthCheck"" /TR ""C:\\Program Files (x86)\\RemotePC\\RemotePCPerformance\\RPCPerformanceDownloader.exe"" /rl HIGHEST /ru system",Executing command to create RemotePC HealthCheck scheduled task.
+access_remote_pc,Access Remote PC,4688,Microsoft-Security-Auditing,Security.evtx,,,C:\Windows\regedit.exe /s C:\Program Files (x86)\RemotePC\Register.reg,Executing command to install various registry changes related to RemotePC.
+access_remote_pc,Access Remote PC,4688,Microsoft-Security-Auditing,Security.evtx,,,"netsh  advfirewall firewall add rule name=""RemotePCDesktop"" enable=yes dir=in action=allow profile=any program=""C:\Program Files (x86)\RemotePC\RemotePCDesktop.exe"" description=""This program is used for File Transfer and is part of RemotePC product.""",Executing command to add local firewall rule to allow inbound traffic for RemotePC.
+action1,Action1,7045,Service Control Manager,System.evtx,A1Agent,"""C:\\Windows\\Action1\\action1_agent.exe""",,Service installation event as result of Action1 installation.
+action1,Action1,4697,Microsoft-Security-Auditing,Security.evtx,A1Agent,,C:\Windows\Action1\action1_agent.exe service,Service installation event as result of Action1 installation.
+action1,Action1,4688,Microsoft-Security-Auditing,Security.evtx,,,C:\Windows\Action1\action1_agent.exe loggedonuser,Executing command to get logged on user.
+alpemix,Alpemix,7045,Service Control Manager,System.evtx,AlpemixSrvc,*\Alpemix.exe servicestartxxx,,Service installation event as result of Alpemix installation.
+ammyyadmin,Ammyy Admin,4688,Microsoft-Security-Auditing,Security.evtx,,,"rundll32.exe ""C:\ProgramData\AMMYY\aa_nts.dll"",run",Execution of Ammyy Admin
+ammyyadmin,Ammyy Admin,7045,Service Control Manager,System.evtx,Ammyy Admin,C:\*\AA_v3.exe,,Ammyy Admin service installation event
+anydesk,AnyDesk,7045,Service Control Manager,System.evtx,AnyDesk Service,"""C:\\Program Files (x86)\\AnyDesk\\AnyDesk.exe"" --service",,Service installation event as result of AnyDesk installation.
+anydesk,AnyDesk,4697,Microsoft-Security-Auditing,Security.evtx,AnyDesk Service,"""C:\\Program Files (x86)\\AnyDesk\\AnyDesk.exe"" --service",,Service installation event as result of AnyDesk installation.
+anyviewer,AnyViewer,4688,Microsoft-Security-Auditing,Security.evtx,,,"""C:\\Program Files (x86)\\AnyViewer\\AVCore.exe"" -d",Taking actions on the remote machine such as opening a command prompt.
+anyviewer,AnyViewer,7045,Service Control Manager,System.evtx,RCService,C:\\Program Files (x86)\\AnyViewer\\RCService.exe,,AnyViewer service installation service.
+aspia,Aspia,11707,MsiInstaller,Application.evtx,,,,Aspia Client installation event.
+atera,Atera,7045,Service Control Manager,System.evtx,AteraAgent,"""C:\\Program Files (x86)\\ATERA Networks\\AteraAgent\\AteraAgent.exe""",,Service installation event as result of AteraAgent installation.
+atera,Atera,7045,Service Control Manager,System.evtx,WinRing0_1_2_0,"""C:\\Program Files (x86)\\ATERA Networks\\AteraAgent\\Packages\\AgentPackageMonitoring\\OpenHardwareMonitorLib.sys""",,Service installation event as result of Atera pakcage manager installation.
+atera,Atera,11707,MsiInstaller,Application.evtx,,,,Service installation event as result of AteraAgent installation.
+atera,Atera,4697,Microsoft-Security-Auditing,Security.evtx,,,C:\\Program Files\\ATERA Networks\\AteraAgent\\Packages\\AgentPackageFileExplorer\\AgentPackageFileExplorer.exe XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX agent-api.atera.com/Production 443 [BASE64BLOB],Service installation event as result of AteraAgent installation.
+bluetrait,Bluetrait,4688,Microsoft-Windows-Security-Auditing,Security.evtx,,,C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe,Execution of Bluetrait MSP Agent
+bluetrait,Bluetrait,7045,Service Control Manager,System.evtx,Bluetrait Agent,"""C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe""",,Bluetrait service installation event
+fleetdeck,FleetDeck.io,7045,,,,,,Service installation event for FleetDeck Agent Service
+gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),7045,Service Control Manager,System.evtx,GoToResolve_*,"""C:\Program Files (x86)\GoTo Resolve Unattended\*\GoToResolveProcessChecker.exe"" -Service -WorkFolder ""C:\Program Files (x86)\GoTo Resolve Unattended\*"" -ApplicationType ""4""",,Service installation event as result of GoTo Resolve installation.
+gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),4688,Microsoft Windows security auditing,Security.evtx,,,"""C:\Windows\system32\sc.exe"" start GoToResolve_*",Process creation event as result of GoTo Resolve installation.
+heartbeatrm,HeartbeatRM,7045,,,,,,Service installation event for HeartbeatRM
+hoptodesk,HopToDesk,7045,,,,,,Service installation event for HopToDesk
+idrive,iDrive,4688,,,,,,Process creation event for IDrive executables
+idrive,iDrive,4698,,,,,,Scheduled task creation event for iDrive
+immybot,ImmyBot,7045,,,,,,Service installation event for ImmyBot Agent
+level,Level,4698,Microsoft-Windows-Security-Auditing,Security.evtx,,,,"To ensure the Level agent is always running, a scheduled task..."
+level,Level,4697,Microsoft-Windows-Security-Auditing,Security.evtx,Level,,,The Level Agent Service ...
+level,Level,4798,Microsoft-Windows-Security-Auditing,Security.evtx,,,,Evidence of osqueryi doing automatic user/group enumeration.
+manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,4688,,,,,,Process creation event for ManageEngine_ServiceDesk_Plus.exe
+manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,7045,,,,,,Service installation event for ManageEngine ServiceDesk
+meshcentral,MeshCentral,7045,Service Control Manager,System.evtx,Mesh Agent background service,"""C:\\Program Files\\Mesh Agent\\MeshAgent.exe""",,Service installation event as result of MeshAgent installation.
+miradore,Miradore,7045,,,,,,Service installation event for Miradore Online Client
+mousewithoutborders,Mouse Without Borders,7045,Service Control Manager,System.evtx,Mouse without Borders Service,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe,,"Service installed (user mode service), auto start, account LocalSystem"
+netbird,NetBird,4688,,,,,,Process creation event for netbird.exe
+netbird,NetBird,7045,,,,,,Service installation event for NetBird
+nvda,NVDA (Non-Visual Desktop Access),4688,,,,,,Process creation event for nvda.exe
+parsec,Parsec,7045,Service Control Manager,System.evtx,parsecvirtualds,"""\SystemRoot\System32\drivers\parsecvirtualds.sys""",,Parsec service installation event
+splashtop,Splashtop,7045,Service Control Manager,System.evtx,Splashtop Software Updater Service,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Software Updater\\SSUService.exe""",,Service installation event as result of Splashtop Software Updater Service installation.
+splashtop,Splashtop,7045,Service Control Manager,System.evtx,Splashtop® Remote Service,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Remote\\Server\\SRService.exe""",,Service installation event as result of Splashtop Remote Service installation.
+splashtop,Splashtop,7045,Service Control Manager,System.evtx,SplashtopRemoteService,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Remote\\Server\\SRService.exe""",,Service installation event as result of Splashtop Remote Service installation.
+teamviewer,TeamViewer,7045,Service Control Manager,System.evtx,TeamViewer,"""C:\\Program Files\\TeamViewer\\TeamViewer_Service.exe""",,Service installation event as result of TeamViewer installation.
+veyon,Veyon,7045,Service Control Manager,System.evtx,Veyon Service,"""C:\\Program Files\\Veyon\\veyon-service.exe""",,Service installation event for Veyon Service

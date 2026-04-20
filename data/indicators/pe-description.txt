@@ -1,0 +1,46 @@
+Alpemix
+Ammyy Admin
+AnyDesk
+AnyViewer Core
+Aspia Client
+AteraAgent
+baramundi Management Agent
+Bluetrait MSP Agent
+Duet Display executable (observed in threat intelligence)
+Duet Display installer (verified via VirusTotal)
+Endpoint Agent
+FleetDeck agent DLL component (reported in GitHub issue)
+FleetDeck agent installer (verified via official documentation)
+FleetDeck agent service executable (verified via official documentation)
+FleetDeck MSI installer (verified via official documentation)
+Gorelo RMM
+HopToDesk remote desktop application (verified via VirusTotal)
+iDrive Classic client executable
+iDrive component library
+iDrive system tray application
+iDrive Windows installer executable (observed in phishing campaigns)
+ImmyBot agent executable (verified via official documentation)
+ImmyBot ephemeral agent for script execution (verified via official documentation)
+ImmyBot installer MSI (verified via VirusTotal)
+ImmyBot updater executable (verified via official documentation)
+InstallShield wrapper executable (observed in VT sandbox)
+LMIGuardianSvc
+ManageEngine ServiceDesk Plus binary installer component
+ManageEngine ServiceDesk Plus installer (verified via VirusTotal)
+MeshCentral Background Service Agent
+Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal)
+Mouse Without Borders
+NetBird client binary for Linux/macOS
+NetBird client executable for Windows
+NetBird UI executable for Windows
+NVDA screen reader executable
+NVDA service executable for secure screens
+Official HeartbeatRM installer (verified via VirusTotal)
+Parsec
+Radmin Server
+Radmin Viewer
+Reported HeartbeatRM executable (unverified - from threat intelligence report)
+Reported HeartbeatRM updater executable (unverified - from threat intelligence report)
+Screan capture
+Splash Window
+tmate terminal sharing binary

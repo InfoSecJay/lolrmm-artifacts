@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.cache/
+# SQLite is derivable from the YAMLs; keep it out of git to avoid merge conflicts.
+data/lolrmm.db
+data/yaml/
+# `out/` is a scratch directory for local experimentation. Real exports live in data/.
+out/
+.env
+.DS_Store
+# local Claude Code tool permissions
+.claude/
+

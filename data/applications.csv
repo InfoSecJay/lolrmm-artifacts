@@ -1,0 +1,346 @@
+application_name,application_name_lower,tool_slug,tool_name,alias_source,category,free,website,supported_os
+247ithelp.com (ConnectWise),247ithelp.com (connectwise),247ithelp.com_(connectwise),247ithelp.com (ConnectWise),Name,RMM,,https://www.247ithelp.com/,
+Absolute (Computrace),absolute (computrace),absolute_(computrace),Absolute (Computrace),Name,RMM,,https://www.absolute.com/,
+Access Remote PC,access remote pc,access_remote_pc,Access Remote PC,Name,RMM,true,https://www.remotedesktop.com/,Windows | Mac | Linux | Android | iOS
+Acronis Cyber Protect (Remotix),acronis cyber protect (remotix),acronis_cyber_protect_(remotix),Acronis Cyber Protect (Remotix),Name,RMM,,https://www.acronis.com/en/products/cyber-protect-connect/,Windows
+Action1,action1,action1,Action1,Name,RMM,Yes,https://www.action1.com/,Windows
+action1_agent,action1_agent,action1,Action1,PEMetadata.OriginalFileName,RMM,Yes,https://www.action1.com/,Windows
+Addigy,addigy,addigy,Addigy,Name,RMM,,https://addigy.com/,
+Adobe Connect,adobe connect,adobe_connect,Adobe Connect,Name,RAT,,https://www.adobe.com/products/adobeconnect.html,
+AeroAdmin,aeroadmin,aeroadmin,AeroAdmin,Name,RMM,,http://aeroadmin.com/,
+AliWangWang-remote-control,aliwangwang-remote-control,aliwangwang-remote-control,AliWangWang-remote-control,Name,RMM,,https://wangwang.taobao.com/,
+Alpemix,alpemix,alpemix,Alpemix,Name,RMM,,https://www.alpemix.com/en/Home,Windows | Linux | Android | Mac | IOS
+Ammyy Admin,ammyy admin,ammyyadmin,Ammyy Admin,Name,RMM,Yes/1 active session at a time,https://www.ammyy.com,Windows
+Any Support,any support,any_support,Any Support,Name,RMM,,https://anysupport.net/,Windows
+AnyDesk,anydesk,anydesk,AnyDesk,Name,RMM,true,https://anydesk.com/en,Android | ChromeOS | IOS | Linux | Mac | Windows
+Anyplace Control,anyplace control,anyplace_control,Anyplace Control,Name,RMM,,http://www.anyplace-control.com/,Windows
+AnyViewer,anyviewer,anyviewer,AnyViewer,Name,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
+AnyViewer Core,anyviewer core,anyviewer,AnyViewer,PEMetadata.Description,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
+Apple Remote Desktop,apple remote desktop,apple_remote_desktop,Apple Remote Desktop,Name,RAT,,https://www.apple.com/remotedesktop/,
+Aspia,aspia,aspia,Aspia,Name,RMM,,https://aspia.org/,Windows | MacOS | Linux
+Aspia Client,aspia client,aspia,Aspia,PEMetadata.Description,RMM,,https://aspia.org/,Windows | MacOS | Linux
+aspia_client,aspia_client,aspia,Aspia,PEMetadata.OriginalFileName,RMM,,https://aspia.org/,Windows | MacOS | Linux
+Atera,atera,atera,Atera,Name,RMM,30 day trial,https://www.atera.com/,Windows | MacOS | Linux
+AteraAgent,ateraagent,atera,Atera,PEMetadata.Description,RMM,30 day trial,https://www.atera.com/,Windows | MacOS | Linux
+Auvik,auvik,auvik,Auvik,Name,RMM,,https://www.auvik.com/,
+AweRay,aweray,aweray,AweRay,Name,RMM,,https://awesun.aweray.com/en,
+baramundi Management Agent,baramundi management agent,baramundi,baramundi Management Suite,PEMetadata.Description,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
+baramundi Management Suite,baramundi management suite,baramundi,baramundi Management Suite,Name,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
+Barracuda,barracuda,barracuda,Barracuda,Name,RMM,,https://www.barracuda.com/products/msp/network-protection/rmm,
+Basecamp,basecamp,basecamp,Basecamp,Name,RAT,,https://basecamp.com/,
+BeamYourScreen,beamyourscreen,beamyourscreen,BeamYourScreen,Name,RMM,,https://web.archive.org/web/20210304100510/https://www.beamyourscreen.com/,
+BeAnyWhere,beanywhere,beanywhere,BeAnyWhere,Name,RMM,,https://www.n-able.com/products/take-control,
+BeInSync,beinsync,beinsync,BeInSync,Name,RAT,,,
+BeyondTrust,beyondtrust,beyondtrust,BeyondTrust,Name,RMM,,,
+BeyondTrust (Bomgar),beyondtrust (bomgar),beyondtrust_(bomgar),BeyondTrust (Bomgar),Name,RMM,,https://www.beyondtrust.com/products/remote-support,
+Bitvise SSH Client,bitvise ssh client,bitvise_ssh_client,Bitvise SSH Client,Name,RAT,,https://bitvise.com/ssh-client,
+Bitvise SSH Server,bitvise ssh server,bitvise_ssh_server,Bitvise SSH Server,Name,RAT,,https://bitvise.com/ssh-server,
+Bluetrait,bluetrait,bluetrait,Bluetrait,Name,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
+Bluetrait MSP Agent,bluetrait msp agent,bluetrait,Bluetrait,PEMetadata.Description,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
+bma,bma,baramundi,baramundi Management Suite,PEMetadata.OriginalFileName,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
+CentraStage (Now Datto),centrastage (now datto),centrastage_(now_datto),CentraStage (Now Datto),Name,RMM,,https://rmm.datto.com/help,
+Centurion,centurion,centurion,Centurion,Name,RMM,,,
+Chicken (of the VNC),chicken (of the vnc),chicken_(of_the_vnc),Chicken (of the VNC),Name,RAT,,https://github.com/flit/cotvnc,
+Chrome Remote Desktop,chrome remote desktop,chrome_remote_desktop,Chrome Remote Desktop,Name,RAT,,https://remotedesktop.google.com/,Windows
+Chrome SSH Extension,chrome ssh extension,chrome_ssh_extension,Chrome SSH Extension,Name,RAT,,https://chromewebstore.google.com/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd,
+CloudFlare Tunnel,cloudflare tunnel,cloudflare_tunnel,CloudFlare Tunnel,Name,RAT,,https://cloudflare.com/products/tunnel/,
+Comodo RMM,comodo rmm,comodo_rmm,Comodo RMM,Name,RMM,,https://one.comodo.com/,Windows
+ConnectWise,connectwise,connectwise,ConnectWise,Name,RMM,,https://www.screenconnect.com/,
+Connectwise Automate (LabTech),connectwise automate (labtech),connectwise_automate_(labtech),Connectwise Automate (LabTech),Name,RMM,,https://www.connectwise.com/platform/automate,
+ConnectWise Control,connectwise control,connectwise_control,ConnectWise Control,Name,RMM,,https://www.screenconnect.com/,
+CrossLoop,crossloop,crossloop,CrossLoop,Name,RMM,,https://web.archive.org/web/20140117041805/http://www.crossloop.com/,
+CrossTec Remote Control,crosstec remote control,crosstec_remote_control,CrossTec Remote Control,Name,RMM,,https://web.archive.org/web/20220811150547/https://www.crosstecsoftware.com/remotecontrol,
+CruzControl,cruzcontrol,cruzcontrol,CruzControl,Name,RMM,,https://www.doradosoftware.com/products/cruzcontrol/,
+DameWare,dameware,dameware,DameWare,Name,RMM,,https://www.solarwinds.com/dameware/,
+DeskDay,deskday,deskday,DeskDay,Name,RMM,,https://deskday.com/,Windows
+DeskNets,desknets,desknets,DeskNets,Name,RMM,,https://www.desknets.com/,
+DeskShare,deskshare,deskshare,DeskShare,Name,RMM,,https://deskshare.com/,
+DesktopNow,desktopnow,desktopnow,DesktopNow,Name,RMM,,https://www.nchsoftware.com/remotedesktop/index.html,
+Dev Tunnels (aka Visual Studio Dev Tunnel),dev tunnels (aka visual studio dev tunnel),dev_tunnels_(aka_visual_studio_dev_tunnel),Dev Tunnels (aka Visual Studio Dev Tunnel),Name,RAT,,https://learn.microsoft.com/azure/developer/dev-tunnels/,
+Devolutions Remote Desktop Manager,devolutions remote desktop manager,devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,Name,RAT,,https://devolutions.net/remote-desktop-manager/,Windows | Linux | Android | Mac | IOS
+Distant Desktop,distant desktop,distant_desktop,Distant Desktop,Name,RMM,,https://www.distantdesktop.com/,
+Domotz,domotz,domotz,Domotz,Name,RMM,,https://www.domotz.com/,
+DragonDisk,dragondisk,dragondisk,DragonDisk,Name,RAT,,,Windows
+Duet Display,duet display,duet_display,Duet Display,Name,RAT,Trial Available,https://www.duetdisplay.com/remote-desktop-access-software,Windows | Mac | iOS | Android
+Duet Display executable (observed in threat intelligence),duet display executable (observed in threat intelligence),duet_display,Duet Display,PEMetadata.Description,RAT,Trial Available,https://www.duetdisplay.com/remote-desktop-access-software,Windows | Mac | iOS | Android
+Duet Display installer (verified via VirusTotal),duet display installer (verified via virustotal),duet_display,Duet Display,PEMetadata.Description,RAT,Trial Available,https://www.duetdisplay.com/remote-desktop-access-software,Windows | Mac | iOS | Android
+DuetDisp,duetdisp,duet_display,Duet Display,PEMetadata.OriginalFileName,RAT,Trial Available,https://www.duetdisplay.com/remote-desktop-access-software,Windows | Mac | iOS | Android
+Duplicati,duplicati,duplicati,Duplicati,Name,RAT,,https://duplicati.com/,Windows
+DW Service,dw service,dw_service,DW Service,Name,RMM,,https://www.dwservice.net/,Windows
+Echoware,echoware,echoware,Echoware,Name,RMM,,,
+eHorus,ehorus,ehorus,eHorus,Name,RMM,,https://ehorus.com,Windows | Linux | Mac
+Electric AI (Kaseya),electric ai (kaseya),electric_ai_(kaseya),Electric AI (Kaseya),Name,RMM,,https://www.electric.ai/,
+EMCO Remote Console,emco remote console,emco_remote_console,EMCO Remote Console,Name,RMM,,https://emcosoftware.com/,
+Encapto,encapto,encapto,Encapto,Name,RMM,,https://www.encapto.com/,
+Endpoint Agent,endpoint agent,action1,Action1,PEMetadata.Description,RMM,Yes,https://www.action1.com/,Windows
+Ericom AccessNow,ericom accessnow,ericom_accessnow,Ericom AccessNow,Name,RMM,,https://www.ericom.com/connect-accessnow/,
+Ericom Connect,ericom connect,ericom_connect,Ericom Connect,Name,RMM,,https://www.ericom.com/connect-accessnow/,
+ESET Remote Administrator,eset remote administrator,eset_remote_administrator,ESET Remote Administrator,Name,RMM,,https://www.eset.com/me/business/remote-management/remote-administrator/,
+ExtraPuTTY,extraputty,extraputty,ExtraPuTTY,Name,RAT,,https://sourceforge.net/projects/extraputty/,Windows
+ezHelp,ezhelp,ezhelp,ezHelp,Name,RMM,,https://ezhelp.co.kr/,
+FastViewer,fastviewer,fastviewer,FastViewer,Name,RMM,,https://www.matrix42.com/en/fastviewer,
+FixMe.it,fixme.it,fixme,FixMe.it,Name,RMM,,https://fixme.it/,Windows
+FleetDeck agent DLL component (reported in GitHub issue),fleetdeck agent dll component (reported in github issue),fleetdeck,FleetDeck.io,PEMetadata.Description,RMM,Trial and Paid,https://fleetdeck.io/,Windows
+FleetDeck agent installer (verified via official documentation),fleetdeck agent installer (verified via official documentation),fleetdeck,FleetDeck.io,PEMetadata.Description,RMM,Trial and Paid,https://fleetdeck.io/,Windows
+FleetDeck agent service executable (verified via official documentation),fleetdeck agent service executable (verified via official documentation),fleetdeck,FleetDeck.io,PEMetadata.Description,RMM,Trial and Paid,https://fleetdeck.io/,Windows
+FleetDeck MSI installer (verified via official documentation),fleetdeck msi installer (verified via official documentation),fleetdeck,FleetDeck.io,PEMetadata.Description,RMM,Trial and Paid,https://fleetdeck.io/,Windows
+FleetDeck.io,fleetdeck.io,fleetdeck,FleetDeck.io,Name,RMM,Trial and Paid,https://fleetdeck.io/,Windows
+fleetdeck_installer,fleetdeck_installer,fleetdeck,FleetDeck.io,PEMetadata.OriginalFileName,RMM,Trial and Paid,https://fleetdeck.io/,Windows
+Fortra,fortra,fortra,Fortra,Name,RMM,,https://power.fortra.com/solutions/monitoring/remote-management-msps,
+Free Ping Tool,free ping tool,free_ping_tool,Free Ping Tool,Name,RAT,,,
+Free Tools Launcher,free tools launcher,free_tools_launcher,Free Tools Launcher,Name,RMM,,https://www.manageengine.com/free-tools.html,
+FreeNX,freenx,freenx,FreeNX,Name,RAT,,,Windows
+FreeRDP,freerdp,freerdp,FreeRDP,Name,RAT,,https://www.freerdp.com/,
+GatherPlace-desktop sharing,gatherplace-desktop sharing,gatherplace-desktop_sharing,GatherPlace-desktop sharing,Name,RMM,,https://web.archive.org/web/20241106023713/https://www.gatherplace.com/,
+GetScreen,getscreen,getscreen,GetScreen,Name,RMM,,https://getscreen.me/,Windows
+Gorelo RMM,gorelo rmm,gorelormm,Gorelo RMM,Name,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
+Gorelo.Rmm.Setup,gorelo.rmm.setup,gorelormm,Gorelo RMM,PEMetadata.OriginalFileName,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
+GoTo Opener,goto opener,goto_opener,GoTo Opener,Name,RMM,,https://support.goto.com/meeting/help/about-the-goto-opener,
+GoToAssist,gotoassist,gotoassist,GoToAssist,Name,RMM,,https://start.gotoassist.com/,Windows
+GoToAssist (GoTo Resolve),gotoassist (goto resolve),gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),Name,RMM,false,https://www.logmein.com/products/resolve,Android | Windows | Mac
+GoToAssist Agent Desktop Console,gotoassist agent desktop console,gotoassist_agent_desktop_console,GoToAssist Agent Desktop Console,Name,RMM,,https://console.gotoassist.com/,
+GotoHTTP,gotohttp,gotohttp,GotoHTTP,Name,RMM,,https://gotohttp.com/,
+GoToMyPC,gotomypc,gotomypc,GoToMyPC,Name,RMM,,https://get.gotomypc.com/,
+Goverlan,goverlan,goverlan,Goverlan,Name,RMM,,,Windows
+Guacamole,guacamole,guacamole,Guacamole,Name,RAT,,https://guacamole.apache.org/,
+HeartbeatRM,heartbeatrm,heartbeatrm,HeartbeatRM,Name,RMM,Unknown,https://heartbeatrm.com/,Windows
+HelpBeam,helpbeam,helpbeam,HelpBeam,Name,RMM,,https://web.archive.org/web/20141223111635/http://www.helpbeam.com/,
+HelpU,helpu,helpu,HelpU,Name,RMM,,https://helpu.co.kr/,
+HopToDesk,hoptodesk,hoptodesk,HopToDesk,Name,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
+HopToDesk remote desktop application (verified via VirusTotal),hoptodesk remote desktop application (verified via virustotal),hoptodesk,HopToDesk,PEMetadata.Description,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
+I'm InTouch,i'm intouch,i'm_intouch,I'm InTouch,Name,RMM,,https://locator.01com.com/,
+iDrive,idrive,idrive,iDrive,Name,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
+iDrive Classic client executable,idrive classic client executable,idrive,iDrive,PEMetadata.Description,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
+iDrive component library,idrive component library,idrive,iDrive,PEMetadata.Description,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
+iDrive system tray application,idrive system tray application,idrive,iDrive,PEMetadata.Description,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
+iDrive Windows installer executable (observed in phishing campaigns),idrive windows installer executable (observed in phishing campaigns),idrive,iDrive,PEMetadata.Description,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
+ImmyBot,immybot,immybot,ImmyBot,Name,RMM,Trial Available,https://www.immy.bot/,Windows
+ImmyBot agent executable (verified via official documentation),immybot agent executable (verified via official documentation),immybot,ImmyBot,PEMetadata.Description,RMM,Trial Available,https://www.immy.bot/,Windows
+ImmyBot ephemeral agent for script execution (verified via official documentation),immybot ephemeral agent for script execution (verified via official documentation),immybot,ImmyBot,PEMetadata.Description,RMM,Trial Available,https://www.immy.bot/,Windows
+ImmyBot installer MSI (verified via VirusTotal),immybot installer msi (verified via virustotal),immybot,ImmyBot,PEMetadata.Description,RMM,Trial Available,https://www.immy.bot/,Windows
+ImmyBot updater executable (verified via official documentation),immybot updater executable (verified via official documentation),immybot,ImmyBot,PEMetadata.Description,RMM,Trial Available,https://www.immy.bot/,Windows
+Impero Connect,impero connect,imperoconnect,Impero Connect,Name,RMM,,,
+InstallShield Setup,installshield setup,manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,PEMetadata.OriginalFileName,RMM,Trial Available,https://www.manageengine.com/products/service-desk/,Windows | Linux
+InstallShield wrapper executable (observed in VT sandbox),installshield wrapper executable (observed in vt sandbox),manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,PEMetadata.Description,RMM,Trial Available,https://www.manageengine.com/products/service-desk/,Windows | Linux
+Instant Housecall,instant housecall,instant_housecall,Instant Housecall,Name,RMM,,https://instanthousecall.com/,
+Instant Housecall,instant housecall,instanthousecall,Instant Housecall,Name,RMM,,https://instanthousecall.com/,
+Insync,insync,insync,Insync,Name,RAT,,,
+IntelliAdmin Remote Control,intelliadmin remote control,intelliadmin_remote_control,IntelliAdmin Remote Control,Name,RMM,,http://www.intelliadmin.com/index.php/remote-control/,
+Iperius Remote,iperius remote,iperius_remote,Iperius Remote,Name,RMM,,https://www.iperiusremote.com/,
+ISL Light,isl light,isl_light,ISL Light,Name,RMM,,https://www.islonline.com/downloads/isl-light.htm,
+ISL Online,isl online,isl_online,ISL Online,Name,RMM,,https://www.islonline.com/,Windows
+ISL Online,isl online,islonline,ISL Online,Name,RMM,,https://www.islonline.com/,
+Itarian,itarian,itarian,Itarian,Name,RMM,,https://www.itarian.com/rmm/,
+ITSupport247 (ConnectWise),itsupport247 (connectwise),itsupport247_(connectwise),ITSupport247 (ConnectWise),Name,RMM,,https://control.itsupport247.net/,Windows
+ITSupport247 (ConnectWise),itsupport247 (connectwise),itsupport247connectwise,ITSupport247 (ConnectWise),Name,RMM,,https://control.itsupport247.net/,
+Ivanti Remote Control,ivanti remote control,ivanti_remote_control,Ivanti Remote Control,Name,RMM,,https://www.ivanti.com/use-cases/remote-control-all-of-my-devices-worldwide,
+JollysFastVNC,jollysfastvnc,jollysfastvnc,JollysFastVNC,Name,RAT,,https://www.jinx.de/JollysFastVNC.html,
+Jump Cloud,jump cloud,jump_cloud,Jump Cloud,Name,RMM,,https://jumpcloud.com/platform/remote-assistance,
+Jump Desktop,jump desktop,jump_desktop,Jump Desktop,Name,RMM,,https://jumpdesktop.com/,
+Kabuto,kabuto,kabuto,Kabuto,Name,RMM,,,
+Kaseya (VSA),kaseya (vsa),kaseya,Kaseya (VSA),Name,RMM,,https://www.kaseya.com/,Windows
+KHelpDesk,khelpdesk,khelpdesk,KHelpDesk,Name,RMM,,https://www.khelpdesk.com.br/,
+KickIdler,kickidler,kickidler,KickIdler,Name,RMM,,https://www.kickidler.com/,
+KiTTY,kitty,kitty,KiTTY,Name,RAT,,https://www.9bis.net/kitty/,
+Koofr,koofr,koofr,Koofr,Name,RAT,,,
+LabTeach (Connectwise Automate),labteach (connectwise automate),labteachconnectwiseautomate,LabTeach (Connectwise Automate),Name,RMM,,https://www.connectwise.com/platform/automate,Windows
+LabTech RMM (Now ConnectWise Automate),labtech rmm (now connectwise automate),labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),Name,RMM,,https://www.connectwise.com/platform/automate,
+LANDesk,landesk,landesk,LANDesk,Name,RMM,,https://www.landesk.com/,
+Laplink Everywhere,laplink everywhere,laplink_everywhere,Laplink Everywhere,Name,RMM,,https://everywhere.laplink.com/,
+Laplink Gold,laplink gold,laplink_gold,Laplink Gold,Name,RMM,,https://web.laplink.com/product/laplink-gold,
+Level,level,level,Level,Name,RMM,Free,https://level.io/,Windows
+Level.io,level.io,level.io,Level.io,Name,RMM,,https://level.io/,
+Level.io,level.io,levelio,Level.io,Name,RMM,,https://level.io/,Windows
+Lite Manager,lite manager,lite_manager,Lite Manager,Name,RMM,,https://www.litemanager.com/,
+LiteManager,litemanager,litemanager,LiteManager,Name,RMM,,https://www.litemanager.com/,
+LMIGuardianSvc,lmiguardiansvc,logmein,LogMeIn,PEMetadata.Product,RMM,,https://www.logmein.com/,
+LogMeIn,logmein,logmein,LogMeIn,Name,RMM,,https://www.logmein.com/,
+LogMeIn rescue,logmein rescue,logmein_rescue,LogMeIn rescue,Name,RMM,,https://www.logmein.com/products/rescue,
+Manage Engine (Desktop Central),manage engine (desktop central),manage_engine_(desktop_central),Manage Engine (Desktop Central),Name,RMM,,https://desktopcentral.manageengine.com,
+ManageEngine,manageengine,manageengine,ManageEngine,Name,RMM,,https://www.manageengine.com/,
+ManageEngine RMM Central,manageengine rmm central,manageengine_rmm_central,ManageEngine RMM Central,Name,RMM,,https://www.manageengine.com/remote-monitoring-management/,
+ManageEngine ServiceDesk Plus,manageengine servicedesk plus,manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,Name,RMM,Trial Available,https://www.manageengine.com/products/service-desk/,Windows | Linux
+ManageEngine ServiceDesk Plus binary installer component,manageengine servicedesk plus binary installer component,manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,PEMetadata.Description,RMM,Trial Available,https://www.manageengine.com/products/service-desk/,Windows | Linux
+ManageEngine ServiceDesk Plus installer (verified via VirusTotal),manageengine servicedesk plus installer (verified via virustotal),manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,PEMetadata.Description,RMM,Trial Available,https://www.manageengine.com/products/service-desk/,Windows | Linux
+MEGAsync,megasync,megasync,MEGAsync,Name,RAT,,https://mega.io/desktop,
+MeshCentral,meshcentral,meshcentral,MeshCentral,Name,RMM,Yes,https://meshcentral.com/,Windows | Linux | MacOS | FreeBSD
+MeshCentral Background Service Agent,meshcentral background service agent,meshcentral,MeshCentral,PEMetadata.Description,RMM,Yes,https://meshcentral.com/,Windows | Linux | MacOS | FreeBSD
+Microsoft Quick Assist,microsoft quick assist,microsoft_quick_assist,Microsoft Quick Assist,Name,RAT,,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,
+Microsoft RDP,microsoft rdp,microsoft_rdp,Microsoft RDP,Name,RAT,,https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/remote-desktop-windows-urdc,Windows
+Microsoft TSC,microsoft tsc,microsoft_tsc,Microsoft TSC,Name,RMM,,,
+Mikogo,mikogo,mikogo,Mikogo,Name,RMM,,,
+MioNet (Also known as WD Anywhere Access),mionet (also known as wd anywhere access),mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),Name,RMM,,,
+MioNet (WD Anywhere Access),mionet (wd anywhere access),mionet_(wd_anywhere_access),MioNet (WD Anywhere Access),Name,RMM,,,
+Miradore,miradore,miradore,Miradore,Name,RMM,Free tier available,https://www.miradore.com/,Windows | Mac | Linux | iOS | Android
+Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal),miradore installer msi (observed renamed in phishing campaigns - verified via virustotal),miradore,Miradore,PEMetadata.Description,RMM,Free tier available,https://www.miradore.com/,Windows | Mac | Linux | iOS | Android
+MobaXterm,mobaxterm,mobaxterm,MobaXterm,Name,RAT,,https://mobaxterm.mobatek.net/,
+Mocha VNC Lite,mocha vnc lite,mocha_vnc_lite,Mocha VNC Lite,Name,RAT,,,
+Mouse Without Borders,mouse without borders,mousewithoutborders,Mouse Without Borders,Name,RAT,true,https://www.microsoft.com/en-us/download/details.aspx?id=35460,Windows
+MouseWithoutBorders,mousewithoutborders,mousewithoutborders,Mouse Without Borders,PEMetadata.OriginalFileName,RAT,true,https://www.microsoft.com/en-us/download/details.aspx?id=35460,Windows
+mRemoteNG,mremoteng,mremoteng,mRemoteNG,Name,RAT,,https://mremoteng.org/,
+MSP360,msp360,msp360,MSP360,Name,RMM,,https://www.msp360.com/,
+mstsc,mstsc,mstsc,mstsc,Name,RAT,,,
+MultCloud,multcloud,multcloud,MultCloud,Name,RAT,,https://www.multcloud.com/,
+MyGreenPC,mygreenpc,mygreenpc,MyGreenPC,Name,RMM,,https://mygreenpc.com/,
+MyIVO,myivo,myivo,MyIVO,Name,RMM,,,
+N-Able Advanced Monitoring Agent,n-able advanced monitoring agent,n-able_advanced_monitoring_agent,N-Able Advanced Monitoring Agent,Name,RMM,,https://www.n-able.com/features/advanced-monitoring-agent,
+N-Able Advanced Monitoring Agent,n-able advanced monitoring agent,n-ableadvancedmonitoringagent,N-Able Advanced Monitoring Agent,Name,RMM,,https://www.n-able.com/features/advanced-monitoring-agent,
+N-ABLE Remote Access Software,n-able remote access software,n-able_remote_access_software,N-ABLE Remote Access Software,Name,RMM,,https://www.n-able.com/features/remote-access,
+Naverisk,naverisk,naverisk,Naverisk,Name,RMM,,https://www.naverisk.com/,
+Net Monitor for Employees,net monitor for employees,netmonitor,Net Monitor for Employees,Name,RMM,true,https://networklookout.com/,Windows | MacOS | Linux
+NetBird,netbird,netbird,NetBird,Name,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
+NetBird client binary for Linux/macOS,netbird client binary for linux/macos,netbird,NetBird,PEMetadata.Description,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
+NetBird client executable for Windows,netbird client executable for windows,netbird,NetBird,PEMetadata.Description,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
+NetBird UI executable for Windows,netbird ui executable for windows,netbird,NetBird,PEMetadata.Description,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
+NetLock RMM,netlock rmm,netlock_rmm,NetLock RMM,Name,RMM,,https://www.netlockrmm.com/,Windows | Linux | MacOS
+Netop,netop,netop,Netop,Name,RMM,,https://netop.com/,Windows
+Netop Remote Control (aka Impero Connect),netop remote control (aka impero connect),netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),Name,RMM,,https://netop.com/,
+Netop Remote Control (Impero Connect),netop remote control (impero connect),netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),Name,RMM,,https://netop.com/,
+Netreo,netreo,netreo,Netreo,Name,RMM,,https://docs.netreo.com/,
+NetSupport Manager,netsupport manager,netsupport_manager,NetSupport Manager,Name,RMM,,https://www.netsupportmanager.com/,
+NetSupport Manager,netsupport manager,netsupportmanager,NetSupport Manager,Name,RMM,,https://www.netsupportmanager.com/,
+Neturo,neturo,neturo,Neturo,Name,RMM,,,Windows
+Netviewer,netviewer,netviewer,Netviewer,Name,RMM,,,
+Netviewer (GoToMeet),netviewer (gotomeet),netviewer_(gotomeet),Netviewer (GoToMeet),Name,RMM,,https://www.goto.com/meeting/join,
+ngrok,ngrok,ngrok,ngrok,Name,RAT,,https://ngrok.com/,
+NinjaOne (formerly NinjaRMM),ninjaone (formerly ninjarmm),ninjaone_(formerly_ninjarmm),NinjaOne (formerly NinjaRMM),Name,RMM,,https://www.ninjaone.com/rmm/,
+NinjaRMM,ninjarmm,ninjarmm,NinjaRMM,Name,RMM,,https://www.ninjaone.com/rmm/,
+NoMachine,nomachine,nomachine,NoMachine,Name,RAT,,https://www.nomachine.com/,
+NordLocker,nordlocker,nordlocker,NordLocker,Name,RAT,,https://nordlocker.com/,
+NoteOn-desktop sharing,noteon-desktop sharing,noteon-desktop_sharing,NoteOn-desktop sharing,Name,RAT,,,
+NTR Remote,ntr remote,ntr_remote,NTR Remote,Name,RMM,,,Windows
+NVDA (Non-Visual Desktop Access),nvda (non-visual desktop access),nvda,NVDA (Non-Visual Desktop Access),Name,RMM,true,https://www.nvaccess.org/,Windows
+NVDA screen reader executable,nvda screen reader executable,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
+NVDA service executable for secure screens,nvda service executable for secure screens,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
+OCS inventory,ocs inventory,ocs_inventory,OCS inventory,Name,RMM,,https://ocsinventory-ng.org/,
+Official HeartbeatRM installer (verified via VirusTotal),official heartbeatrm installer (verified via virustotal),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
+Onionshare,onionshare,onionshare,Onionshare,Name,RAT,,https://onionshare.org/,
+OptiTune,optitune,optitune,OptiTune,Name,RMM,,https://www.bravurasoftware.com/optitune/,
+Pandora RC (eHorus),pandora rc (ehorus),pandora_rc_(ehorus),Pandora RC (eHorus),Name,RMM,,https://pandorafms.com/en/remote-control/,
+Panorama9,panorama9,panorama9,Panorama9,Name,RMM,,https://panorama9.com/,
+Parallels Access,parallels access,parallelsaccess,Parallels Access,Name,RMM,,https://www.parallels.com/,
+Parsec,parsec,parsec,Parsec,Name,RAT,true,https://parsec.app/,Windows | Linux | macOS | Android
+pcAnywhere,pcanywhere,pcanywhere,pcAnywhere,Name,RAT,,,
+PChelpware,pchelpware,pchelpware,PChelpware,Name,RMM,true,https://uvnc.com/downloads/pchelpware/,Windows
+Pcnow,pcnow,pcnow,Pcnow,Name,RMM,,,
+Pcvisit,pcvisit,pcvisit,Pcvisit,Name,RMM,,https://www.pcvisit.de/,
+PDQ Connect,pdq connect,pdq_connect,PDQ Connect,Name,RMM,,https://www.pdq.com/pdq-connect/,
+Pilixo,pilixo,pilixo,Pilixo,Name,RMM,,,
+Pocket Cloud (Wyse),pocket cloud (wyse),pocket_cloud_(wyse),Pocket Cloud (Wyse),Name,RMM,,,
+Pocket Controller,pocket controller,pocket_controller,Pocket Controller,Name,RMM,,https://soti.net/products/soti-pocket-controller,Windows
+Pocket Controller (Soti Xsight),pocket controller (soti xsight),pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),Name,RMM,,https://soti.net/products/soti-xsight/,Windows
+PSEXEC,psexec,psexec,PSEXEC,Name,RAT,,https://learn.microsoft.com/en-us/sysinternals/downloads/psexec,
+PSEXEC (Clone),psexec (clone),psexec_(clone),PSEXEC (Clone),Name,RAT,,,
+Pulseway,pulseway,pulseway,Pulseway,Name,RMM,,https://www.pulseway.com/,
+PuTTY,putty,putty,PuTTY,Name,RAT,,https://www.chiark.greenend.org.uk/~sgtatham/putty/,
+PuTTY Tray,putty tray,putty_tray,PuTTY Tray,Name,RAT,,https://github.com/FauxFaux/PuTTYTray,
+QQ IM-remote assistance,qq im-remote assistance,qq_im-remote_assistance,QQ IM-remote assistance,Name,RMM,,,
+Quest KACE Agent (formerly Dell KACE),quest kace agent (formerly dell kace),quest_kace_agent_(formerly_dell_kace),Quest KACE Agent (formerly Dell KACE),Name,RMM,,https://www.quest.com/kace/,
+Quick Assist,quick assist,quickassist,Quick Assist,Name,RAT,,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,
+RAdmin,radmin,radmin,RAdmin,Name,RMM,,https://www.radmin.com/,Windows
+Radmin Server,radmin server,radmin,RAdmin,PEMetadata.Product,RMM,,https://www.radmin.com/,Windows
+Radmin Viewer,radmin viewer,radmin,RAdmin,PEMetadata.Product,RMM,,https://www.radmin.com/,Windows
+Rapid7,rapid7,rapid7,Rapid7,Name,RMM,,https://docs.rapid7.com/insight-agent/overview/,
+RCClient,rcclient,anyviewer,AnyViewer,PEMetadata.OriginalFileName,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
+RdClient,rdclient,rdclient,RdClient,Name,RAT,true,https://www.pierschel.com/en/software-blog/28-rdclient-en,Windows
+RDCMan,rdcman,rdcman,RDCMan,Name,RAT,true,https://learn.microsoft.com/en-us/sysinternals/downloads/rdcman,Windows
+rdp2tcp,rdp2tcp,rdp2tcp,rdp2tcp,Name,RAT,,https://github.com/V-E-O/rdp2tcp,Windows
+RDPView,rdpview,rdpview,RDPView,Name,RAT,,,
+rdpwrap,rdpwrap,rdpwrap,rdpwrap,Name,RAT,,https://github.com/stascorp/rdpwrap,
+RealVNC,realvnc,realvnc,RealVNC,Name,RAT,,https://www.realvnc.com/en/connect/,
+Remcos,remcos,remcos,Remcos,Name,RMM,,,
+Remmina,remmina,remmina,Remmina,Name,RAT,,https://remmina.org/,
+Remmon,remmon,remmon,Remmon,Name,RMM,true,https://github.com/Netzwerkfehler/remmon,Windows | Linux
+Remobo,remobo,remobo,Remobo,Name,RMM,,,
+Remote Desktop Manager (Devolutions),remote desktop manager (devolutions),remote_desktop_manager_(devolutions),Remote Desktop Manager (Devolutions),Name,RAT,,https://devolutions.net/,
+Remote Desktop Plus,remote desktop plus,remote_desktop_plus,Remote Desktop Plus,Name,RAT,,https://www.donkz.nl/,
+Remote Manipulator System,remote manipulator system,remote_manipulator_system,Remote Manipulator System,Name,RMM,,https://rmansys.ru/,
+Remote Ripple,remote ripple,remoteripple,Remote Ripple,Name,RMM,true,https://remoteripple.com,Windows | Mac | Android | iOS
+Remote Utilities,remote utilities,remote_utilities,Remote Utilities,Name,RMM,,https://www.remoteutilities.com/,
+Remote.it,remote.it,remote.it,Remote.it,Name,RMM,,https://www.remote.it/,Windows
+RemoteCall,remotecall,remotecall,RemoteCall,Name,RMM,,https://www.remotecall.com/,Windows
+RemoteDesktopManager,remotedesktopmanager,devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,PEMetadata.OriginalFileName,RAT,,https://devolutions.net/remote-desktop-manager/,Windows | Linux | Android | Mac | IOS
+RemotePass,remotepass,remotepass,RemotePass,Name,RMM,,https://www.remotepass.com/,Windows
+RemotePC,remotepc,remotepc,RemotePC,Name,RMM,,https://www.remotepc.com/,Windows
+RemoteUtilities,remoteutilities,remoteutilities,RemoteUtilities,Name,RMM,,https://www.remoteutilities.com/,
+RemoteView,remoteview,remoteview,RemoteView,Name,RMM,,https://content.rview.com/,
+Reported HeartbeatRM executable (unverified - from threat intelligence report),reported heartbeatrm executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
+Reported HeartbeatRM updater executable (unverified - from threat intelligence report),reported heartbeatrm updater executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
+RES Automation Manager,res automation manager,res_automation_manager,RES Automation Manager,Name,RMM,,https://www.ivanti.com/company/history/res-software,
+Rocket Remote Desktop,rocket remote desktop,rocketremotedesktop,Rocket Remote Desktop,Name,RMM,,https://www.rocketsoftware.com/en-us/products/remote-desktop,Windows
+Royal Apps,royal apps,royal_apps,Royal Apps,Name,RMM,,https://www.royalapps.com/,Windows
+Royal Server,royal server,royal_server,Royal Server,Name,RMM,,https://www.royalapps.com/server/,
+Royal TS,royal ts,royal_ts,Royal TS,Name,RMM,,https://www.royalapps.com/ts/,
+RPort,rport,rport,RPort,Name,RMM,,https://kb.rport.io/,
+RServer3,rserver3,radmin,RAdmin,PEMetadata.OriginalFileName,RMM,,https://www.radmin.com/,Windows
+RuDesktop,rudesktop,rudesktop,RuDesktop,Name,RMM,,https://rudesktop.ru/,
+RunSmart,runsmart,runsmart,RunSmart,Name,RMM,,https://runsmart.io/,
+RustDesk,rustdesk,rustdesk,RustDesk,Name,RMM,Yes,https://rustdesk.com/,Windows | Linux | MacOS
+S3 Browser,s3 browser,s3_browser,S3 Browser,Name,RAT,,https://s3browser.com/,
+Screan capture,screan capture,anyviewer,AnyViewer,PEMetadata.Description,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
+ScreenConnect,screenconnect,screenconnect,ScreenConnect,Name,RMM,14-Days Free Trial,https://www.connectwise.com,Android | IOS | Linux | Mac | Windows
+ScreenMeet,screenmeet,screenmeet,ScreenMeet,Name,RMM,,https://www.screenmeet.com/,
+SecureCRT,securecrt,securecrt,SecureCRT,Name,RAT,,https://www.vandyke.com/products/securecrt/,
+Seetrol,seetrol,seetrol,Seetrol,Name,RMM,,https://www.seetrol.co.kr/,
+Senso.cloud,senso.cloud,senso.cloud,Senso.cloud,Name,RMM,,https://senso.cloud/,
+ServerEye,servereye,servereye,ServerEye,Name,RMM,,https://www.servereye.de/,
+ShowMyPC,showmypc,showmypc,ShowMyPC,Name,RMM,,https://showmypc.com/,
+SimpleHelp,simplehelp,simplehelp,SimpleHelp,Name,RMM,,https://simple-help.com/,
+SimpleHelp,simplehelp,updatesimplehelp,SimpleHelp,Name,RMM,,https://simple-help.com/,windows
+Site24x7,site24x7,site24x7,Site24x7,Name,RMM,,https://www.site24x7.com/,
+SkyFex,skyfex,skyfex,SkyFex,Name,RMM,,https://deskroll.com/,
+SmartCode Web VNC,smartcode web vnc,smartcode_web_vnc,SmartCode Web VNC,Name,RAT,,https://www.s-code.com/products/viewerx/webvnc.aspx,
+SmartFTP,smartftp,smartftp,SmartFTP,Name,RAT,,https://www.smartftp.com/,
+SmarTTY,smartty,smartty,SmarTTY,Name,RAT,,https://sysprogs.com/SmarTTY/,
+Solar-PuTTY,solar-putty,solar-putty,Solar-PuTTY,Name,RAT,,https://www.solarwinds.com/free-tools/solar-putty,
+Sophos-Remote Management System,sophos-remote management system,sophos-remote_management_system,Sophos-Remote Management System,Name,RMM,,,
+Sorillus,sorillus,sorillus,Sorillus,Name,RMM,,,
+Splash Window,splash window,anyviewer,AnyViewer,PEMetadata.Description,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
+Splashtop,splashtop,splashtop,Splashtop,Name,RMM,,https://www.splashtop.com/,
+Splashtop (Beta),splashtop (beta),splashtopbeta,Splashtop (Beta),Name,RMM,,https://www.splashtop.com/,
+Splashtop Remote,splashtop remote,splashtop_remote,Splashtop Remote,Name,RMM,,https://www.splashtop.com/,
+SpyAnywhere,spyanywhere,spyanywhere,SpyAnywhere,Name,RMM,,https://www.spytech-web.com/,
+SunLogin,sunlogin,sunlogin,SunLogin,Name,RMM,,https://sunlogin.oray.com/,
+SuperOps,superops,superops,SuperOps,Name,RMM,,https://superops.com/,
+SuperPuTTY,superputty,superputty,SuperPuTTY,Name,RAT,,https://github.com/jimradford/superputty,
+Supremo,supremo,supremo,Supremo,Name,RMM,,https://www.supremocontrol.com/,Windows | Linux | MacOS
+Syncro,syncro,syncro,Syncro,Name,RMM,,https://syncromsp.com/,
+Syncthing,syncthing,syncthing,Syncthing,Name,RAT,,https://syncthing.net/,Windows
+Synergy,synergy,synergy,Synergy,Name,RAT,,https://symless.com/synergy,
+SysAid,sysaid,sysaid,SysAid,Name,RMM,,https://www.sysaid.com/,
+Syspectr,syspectr,syspectr,Syspectr,Name,RMM,,https://www.syspectr.com/,
+Tactical RMM,tactical rmm,tactical_rmm,Tactical RMM,Name,RMM,,https://docs.tacticalrmm.com/,
+Tailscale,tailscale,tailscale,Tailscale,Name,RAT,,https://tailscale.com/,
+Tanium,tanium,tanium,Tanium,Name,RMM,,https://www.tanium.com/,
+Tanium Deploy,tanium deploy,taniumdeploy,Tanium Deploy,Name,RMM,,https://www.tanium.com/products/tanium-deploy/,
+TeamViewer,teamviewer,teamviewer,TeamViewer,Name,RMM,true,https://www.teamviewer.com/en,Android | ChromeOS | IOS | Linux | Mac | Windows
+TeleDesktop,teledesktop,teledesktop,TeleDesktop,Name,RMM,,,
+Terminals,terminals,terminals,Terminals,Name,RAT,,https://github.com/Terminals-Origin/Terminals,
+TigerVNC,tigervnc,tigervnc,TigerVNC,Name,RAT,,https://tigervnc.org/,
+TightVNC,tightvnc,tightvnc,TightVNC,Name,RAT,,https://www.tightvnc.com/,
+tmate,tmate,tmate,tmate,Name,RAT,Open Source,https://tmate.io/,Linux | Mac | FreeBSD
+tmate terminal sharing binary,tmate terminal sharing binary,tmate,tmate,PEMetadata.Description,RAT,Open Source,https://tmate.io/,Linux | Mac | FreeBSD
+ToDesk,todesk,todesk,ToDesk,Name,RMM,,https://www.todesk.com/,
+Total Software Deployment,total software deployment,total_software_deployment,Total Software Deployment,Name,RMM,,https://www.total-software-deployment.com/,
+TurboMeeting,turbomeeting,turbomeeting,TurboMeeting,Name,RMM,,,
+Ultra VNC,ultra vnc,ultra_vnc,Ultra VNC,Name,RAT,,https://uvnc.com/,
+UltraViewer,ultraviewer,ultraviewer,UltraViewer,Name,RMM,,https://www.ultraviewer.net/,
+UltraVNC,ultravnc,ultravnc,UltraVNC,Name,RAT,,https://uvnc.com/,
+Veyon,veyon,veyon,Veyon,Name,RAT,true,https://veyon.io,Linux | Windows
+Visual Studio Dev Tunnel,visual studio dev tunnel,visual_studio_dev_tunnel,Visual Studio Dev Tunnel,Name,RAT,,https://learn.microsoft.com/azure/developer/dev-tunnels/,
+VNC,vnc,vnc,VNC,Name,RAT,,,
+VNC Connect,vnc connect,vnc_connect,VNC Connect,Name,RAT,,https://www.realvnc.com/en/connect/,
+WebEx (Remote Access),webex (remote access),webex_(remote_access),WebEx (Remote Access),Name,RMM,,https://www.webex.com/,
+WebRDP,webrdp,webrdp,WebRDP,Name,RAT,,https://github.com/Mikej81/WebRDP,
+Weezo,weezo,weezo,Weezo,Name,RMM,,,
+WinSCP,winscp,winscp,WinSCP,Name,RAT,,https://winscp.net/,
+X2Go,x2go,x2go,X2Go,Name,RAT,,https://wiki.x2go.org/,
+Xeox,xeox,xeox,Xeox,Name,RMM,,https://xeox.com/,Windows
+Xpra,xpra,xpra,Xpra,Name,RAT,,https://github.com/Xpra-org/xpra/,Windows
+XRDP,xrdp,xrdp,XRDP,Name,RAT,,https://www.xrdp.org/,
+Xshell,xshell,xshell,Xshell,Name,RAT,,https://www.xshell.com/en/xshell/,
+Yandex.Disk,yandex.disk,yandex.disk,Yandex.Disk,Name,RAT,,https://disk.yandex.com/,
+Zabbix Agent,zabbix agent,zabbix_agent,Zabbix Agent,Name,RMM,,https://www.zabbix.com/,
+ZeroTier,zerotier,zerotier,ZeroTier,Name,RAT,,https://www.zerotier.com/,
+ZOC,zoc,zoc,ZOC,Name,RAT,,https://www.emtec.com/zoc/index.html,
+Zoho Assist,zoho assist,zohoassist,Zoho Assist,Name,RMM,,https://www.zoho.com/assist/,Windows

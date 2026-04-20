@@ -1,0 +1,63 @@
+HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history
+HKEY_CURRENT_USER\Software\Classes\HopToDesk\shell\open\command
+HKEY_CURRENT_USER\SOFTWARE\IDrive\*
+HKEY_LOCAL_MACHINE\SOFTWARE\IDrive\*
+HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\HopToDesk
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security
+HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc
+HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc\GuestInvite
+HKEY_USERS\<SID>\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history
+HKLM\DRIVERS\DriverDatabase\DeviceIds\USBPRINT\AnyDesk
+HKLM\DRIVERS\DriverDatabase\DeviceIds\WSDPRINT\AnyDesk
+HKLM\SOFTWARE\ATERA Networks\*
+HKLM\SOFTWARE\ATERA Networks\AlphaAgent
+HKLM\SOFTWARE\Classes\.anydesk\shell\open\command
+HKLM\SOFTWARE\Classes\AnyDesk\shell\open\command
+HKLM\SOFTWARE\Clients\Media\AnyDesk
+HKLM\SOFTWARE\GoTo Resolve Unattended\
+HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32
+HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer\*
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TeamViewer\*
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Remote Session/Operational
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational
+HKLM\SOFTWARE\RdClient
+HKLM\SOFTWARE\TeamViewer\*
+HKLM\SOFTWARE\TeamViewer\ConnectionHistory
+HKLM\SOFTWARE\Veyon Solutions
+HKLM\SOFTWARE\WOW6432Node\Action1
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater\InstallRefCount
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*}
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps\action1_agent.exe
+HKLM\SOFTWARE\WOW6432Node\Splashtop Inc.\Splashtop Remote Server\ClientInfo\*
+HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin
+HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AlphaAgent
+HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent
+HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SplashtopRemoteService
+HKLM\System\CurrentControlSet\Services\A1Agent
+HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx
+HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk
+HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent
+HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service
+HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
+HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
+HKLM\SYSTEM\CurrentControlSet\Services\VeyonService
+HKU\.DEFAULT\Software\Ammyy\Admin
+HKU\.DEFAULT\Software\Splashtop Inc.\*
+HKU\<SID>\SOFTWARE\TeamViewer\*
+HKU\SID\Software\Splashtop Inc.\*
+HKU\SID\SOFTWARE\TeamViewer\ClientWindow_Mode
+HKU\SID\SOFTWARE\TeamViewer\ClientWindowPositions
+HKU\SID\SOFTWARE\TeamViewer\DesktopWallpaperSingleImage
+HKU\SID\SOFTWARE\TeamViewer\DesktopWallpaperSingleImagePath
+HKU\SID\SOFTWARE\TeamViewer\DesktopWallpaperSingleImagePosition
+HKU\SID\SOFTWARE\TeamViewer\MainWindowHandle
+HKU\SID\SOFTWARE\TeamViewer\MinimizeToTray
+HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioSendingVolumeV2
+HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioUserSelectedCapturingEndpoint
+HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioUserSelectedRenderingEndpoint
+KLM\SOFTWARE\WOW6432Node\Splashtop Inc.
+KLM\SOFTWARE\WOW6432Node\Splashtop Inc.\*
