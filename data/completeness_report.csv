@@ -126,6 +126,7 @@ lite_manager,Lite Manager,RMM,True,True,False,False,False,False,False,False,Fals
 litemanager,LiteManager,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 logmein,LogMeIn,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
 logmein_rescue,LogMeIn rescue,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+lunixar,Lunixar,RMM,True,True,True,True,True,True,True,True,False,False,other | detections
 manage_engine_(desktop_central),Manage Engine (Desktop Central),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 manageengine,ManageEngine,RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 manageengine_rmm_central,ManageEngine RMM Central,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other

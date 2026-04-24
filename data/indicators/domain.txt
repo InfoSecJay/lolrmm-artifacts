@@ -90,6 +90,7 @@
 *.logmeininc.com
 *.logmeinrescue.com
 *.logmeinrescue.eu
+*.lunixar.com
 *.manageengine.com
 *.mdt.qq.com
 *.mikogo.com
@@ -218,6 +219,7 @@ app.atera.com
 app.deskday.ai
 app.gorelo.io
 app.kabuto.io
+app.lunixar.com
 app.pdq.com
 app.syspectr.com
 appcdn.atera.com
@@ -278,6 +280,7 @@ deskroll.com
 desktopcentral.manageengine.cn
 desktopcentral.manageengine.com
 desktopcentral.manageengine.com.eu
+devrmm.lunixar.com
 docs.baramundi.com
 docs.tacticalrmm.com
 domotz.com
@@ -286,6 +289,7 @@ download.cnet.com/Net-Viewer/3000-2370_4-10034828.html
 download.hoptodesk.com
 download.pilixo.com
 downloads.io
+downloads.lunixar.com
 downloads.zohocdn.com
 downloads.zohodl.com.cn
 duetdisplay.com
@@ -356,6 +360,7 @@ login.tailscale.com
 logmein-gateway.com
 logmeinrescue.com
 lr.rmm.pod1.usw.gorelo.tech
+lunixar.com
 manageengine.com
 manageengine.com/remote-monitoring-management/
 mdmsupport.comodo.com
@@ -366,6 +371,7 @@ mremoteng.org
 msp360.com
 my.kickidler.com
 myivo-server.software.informer.com
+mymeetinggoogle.com
 n-able.com
 naverisk.com
 netbird.io
@@ -446,6 +452,7 @@ signal.netbird.io
 simple-help.com
 site24x7.com/msp
 skyfex.com
+socket.lunixar.com
 sorillus.com
 soti.net/products/soti-pocket-controller
 splashtop.com

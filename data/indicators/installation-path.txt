@@ -38,6 +38,13 @@
 *\LANDesk\*
 *\LiteManager Pro – Viewer\*
 *\LMNoIpServer.exe
+*\Lunixar\Lunixar.Agent.Core.dll
+*\Lunixar\Lunixar.dll
+*\Lunixar\Lunixar.exe
+*\Lunixar\LunixarRemote.dll
+*\Lunixar\LunixarRemote.exe
+*\Lunixar\LunixarUpdater.dll
+*\Lunixar\LunixarUpdater.exe
 *\ManageEngine\*
 *\MEGAsyncSetup64.exe
 *\MEGAupdater.exe
@@ -265,6 +272,7 @@ C:\Program Files\ImmyBot\ImmyAgent.exe
 C:\Program Files\ImmyBot\ImmyUpdater.exe
 C:\Program Files\Level\*
 C:\Program Files\LiteManager Pro – Viewer\*
+C:\Program Files\Lunixar\*
 C:\Program Files\ManageEngine\ManageEngine Free Tools\Launcher\*
 C:\Program Files\ManageEngine\ServiceDesk\*
 C:\Program Files\Miradore\OnlineClient\bin\*
@@ -372,6 +380,7 @@ dwagsvc.exe
 dwrcs.exe
 echoserver*.exe
 echoware.dll
+eDocument-*.msi
 ehorus standalone.exe
 ehorus_agent.exe
 ehorus_cmd.exe
@@ -409,6 +418,7 @@ g2mcomm.exe
 g2mupdate.com
 GetScreen.exe
 getscreen.exe
+Googlemeet.msi
 GoTo Assist Opener.exe
 goto opener.exe
 gotoassist.exe
@@ -517,6 +527,7 @@ lmnoipserver.exe
 ltsvc.exe
 ltsvcmon.exe
 lttray.exe
+LunixarRMM*.msi
 ManageEngine_Remote_Access_Plus.exe
 ManageEngine_ServiceDesk_Plus.bin
 ManageEngine_ServiceDesk_Plus.exe

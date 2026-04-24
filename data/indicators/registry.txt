@@ -42,6 +42,7 @@ HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx
 HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk
 HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent
 HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service
+HKLM\System\CurrentControlSet\Services\LunixarRMM
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
 HKLM\SYSTEM\CurrentControlSet\Services\VeyonService

@@ -32,6 +32,7 @@ immybot,ImmyBot,7045,,,,,,Service installation event for ImmyBot Agent
 level,Level,4698,Microsoft-Windows-Security-Auditing,Security.evtx,,,,"To ensure the Level agent is always running, a scheduled task..."
 level,Level,4697,Microsoft-Windows-Security-Auditing,Security.evtx,Level,,,The Level Agent Service ...
 level,Level,4798,Microsoft-Windows-Security-Auditing,Security.evtx,,,,Evidence of osqueryi doing automatic user/group enumeration.
+lunixar,Lunixar,,,,,,,Service event log source
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,4688,,,,,,Process creation event for ManageEngine_ServiceDesk_Plus.exe
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,7045,,,,,,Service installation event for ManageEngine ServiceDesk
 meshcentral,MeshCentral,7045,Service Control Manager,System.evtx,Mesh Agent background service,"""C:\\Program Files\\Mesh Agent\\MeshAgent.exe""",,Service installation event as result of MeshAgent installation.

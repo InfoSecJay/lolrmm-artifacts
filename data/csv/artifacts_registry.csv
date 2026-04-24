@@ -32,6 +32,7 @@ hoptodesk,HopToDesk,HKEY_CURRENT_USER\Software\Classes\HopToDesk\shell\open\comm
 hoptodesk,HopToDesk,HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\HopToDesk,HopToDesk uninstall registry key
 idrive,iDrive,HKEY_LOCAL_MACHINE\SOFTWARE\IDrive\*,iDrive configuration registry keys
 idrive,iDrive,HKEY_CURRENT_USER\SOFTWARE\IDrive\*,iDrive user configuration registry keys
+lunixar,Lunixar,HKLM\System\CurrentControlSet\Services\LunixarRMM,Windows service registration
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*},ManageEngine ServiceDesk Plus uninstall registry keys (verified via VirusTotal sandbox)
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation

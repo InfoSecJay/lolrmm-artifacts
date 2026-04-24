@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **294**
-- Fetched + parsed tools: **294**
+- Expected files (upstream listing): **295**
+- Fetched + parsed tools: **295**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 294 tools total:
+Of 295 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 288 | 98% |
-| installation_paths | 263 | 89% |
-| capabilities | 35 | 12% |
-| supported_os | 80 | 27% |
-| disk | 40 | 14% |
-| eventlog | 26 | 9% |
-| registry | 16 | 5% |
-| network | 214 | 73% |
+| pe_metadata | 289 | 98% |
+| installation_paths | 264 | 89% |
+| capabilities | 36 | 12% |
+| supported_os | 81 | 27% |
+| disk | 41 | 14% |
+| eventlog | 27 | 9% |
+| registry | 17 | 6% |
+| network | 215 | 73% |
 | other | 2 | 1% |
-| detections | 255 | 87% |
+| detections | 255 | 86% |
 
 ## Tools with no artifacts at all (72)
 
@@ -98,7 +98,7 @@ Of 294 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (39)
+## Tools with no detections (40)
 
 - `beyondtrust` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
@@ -118,6 +118,7 @@ Of 294 tools total:
 - `immybot` (RMM)
 - `jollysfastvnc` (RAT)
 - `koofr` (RAT)
+- `lunixar` (RMM)
 - `manageengine_servicedesk_plus` (RMM)
 - `miradore` (RMM)
 - `mobaxterm` (RAT)

@@ -10512,6 +10512,150 @@
     "source_file": "logmein_rescue.yaml"
   },
   {
+    "Name": "Lunixar",
+    "Category": "RMM",
+    "Description": "Lunixar is a Remote Monitoring and Management (RMM) platform by Lunixar SAS de CV (Mexico) for MSPs and IT teams. Provides remote access from the browser and a Windows app, script execution and scheduling, hardware/software inventory, process and service management, and real-time alerting. Has been observed abused in the wild, renamed as Googlemeet.msi and distributed via the phishing domain mymeetinggoogle.com, and as eDocument-*.msi for social engineering lures.",
+    "Author": "Michael Haag",
+    "Created": "2026-04-23",
+    "LastModified": "2026-04-23",
+    "Details": {
+      "Website": "https://lunixar.com/en/",
+      "PEMetadata": [
+        {
+          "Filename": "Lunixar.exe",
+          "OriginalFileName": "",
+          "Description": "",
+          "Product": null
+        }
+      ],
+      "Privileges": "",
+      "Free": "",
+      "Verification": "",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Remote access (browser and Windows app)",
+        "Script execution and scheduling",
+        "Hardware and software inventory",
+        "Process and service management",
+        "Real-time CPU/RAM/disk alerting"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\Lunixar\\*",
+        "*\\Lunixar\\Lunixar.exe",
+        "*\\Lunixar\\Lunixar.dll",
+        "*\\Lunixar\\Lunixar.Agent.Core.dll",
+        "*\\Lunixar\\LunixarRemote.exe",
+        "*\\Lunixar\\LunixarRemote.dll",
+        "*\\Lunixar\\LunixarUpdater.exe",
+        "*\\Lunixar\\LunixarUpdater.dll",
+        "LunixarRMM*.msi",
+        "Googlemeet.msi",
+        "eDocument-*.msi"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\Lunixar\\Lunixar.dll",
+          "Description": "Main agent DLL",
+          "OS": null,
+          "Type": "File",
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Lunixar\\Lunixar.Agent.Core.dll",
+          "Description": "Agent core library",
+          "OS": null,
+          "Type": "File",
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Lunixar\\LunixarRemote.exe",
+          "Description": "Remote access executable",
+          "OS": null,
+          "Type": "File",
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Lunixar\\LunixarRemote.dll",
+          "Description": "Remote access library",
+          "OS": null,
+          "Type": "File",
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Lunixar\\LunixarUpdater.exe",
+          "Description": "Auto-updater executable",
+          "OS": null,
+          "Type": "File",
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Lunixar\\LunixarUpdater.dll",
+          "Description": "Auto-updater library",
+          "OS": null,
+          "Type": "File",
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": null,
+          "ProviderName": null,
+          "LogFile": null,
+          "ServiceName": null,
+          "ImagePath": null,
+          "CommandLine": null,
+          "Description": "Service event log source",
+          "EventId": "",
+          "Provider": "Lunixar rmm-client service"
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\System\\CurrentControlSet\\Services\\LunixarRMM",
+          "Description": "Windows service registration",
+          "Key": "ImagePath",
+          "Value": "\"C:\\Program Files\\Lunixar\\Lunixar.exe\""
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Known remote domains",
+          "Domains": [
+            "*.lunixar.com",
+            "lunixar.com",
+            "app.lunixar.com",
+            "socket.lunixar.com",
+            "downloads.lunixar.com",
+            "devrmm.lunixar.com"
+          ],
+          "Ports": [
+            23501
+          ]
+        },
+        {
+          "Description": "Known abuse/phishing domains distributing renamed Lunixar MSI",
+          "Domains": [
+            "mymeetinggoogle.com"
+          ],
+          "Ports": []
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [],
+    "References": [
+      "https://lunixar.com/en/",
+      "https://www.virustotal.com/gui/file/3160414da55882b9f03bae5aa76f0dc3c6cdb9e27e9091d9dac6fa610bd94c33"
+    ],
+    "Acknowledgement": [],
+    "source_file": "lunixar.yaml"
+  },
+  {
     "Name": "Manage Engine (Desktop Central)",
     "Category": "RMM",
     "Description": "Manage Engine (Desktop Central) is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",

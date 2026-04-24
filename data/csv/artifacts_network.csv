@@ -271,6 +271,13 @@ logmein_rescue,LogMeIn rescue,*.logmeinrescue.eu,,Known remote domains
 logmein_rescue,LogMeIn rescue,logmeinrescue.com,,Known remote domains
 logmein_rescue,LogMeIn rescue,rescue-list.*.logmein-gateway.com,,Known remote domains
 logmein_rescue,LogMeIn rescue,rescue-data-cetner.logmein-gateway.com,,Known remote domains
+lunixar,Lunixar,*.lunixar.com,23501,Known remote domains
+lunixar,Lunixar,lunixar.com,23501,Known remote domains
+lunixar,Lunixar,app.lunixar.com,23501,Known remote domains
+lunixar,Lunixar,socket.lunixar.com,23501,Known remote domains
+lunixar,Lunixar,downloads.lunixar.com,23501,Known remote domains
+lunixar,Lunixar,devrmm.lunixar.com,23501,Known remote domains
+lunixar,Lunixar,mymeetinggoogle.com,,Known abuse/phishing domains distributing renamed Lunixar MSI
 manage_engine_(desktop_central),Manage Engine (Desktop Central),desktopcentral.manageengine.com,,Known remote domains
 manage_engine_(desktop_central),Manage Engine (Desktop Central),desktopcentral.manageengine.com.eu,,Known remote domains
 manage_engine_(desktop_central),Manage Engine (Desktop Central),desktopcentral.manageengine.cn,,Known remote domains

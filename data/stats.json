@@ -1,11 +1,11 @@
 {
-  "tool_count": 294,
+  "tool_count": 295,
   "by_category": {
-    "RMM": 208,
+    "RMM": 209,
     "RAT": 86
   },
   "by_os": {
-    "Windows": 79,
+    "Windows": 80,
     "MacOS": 26,
     "Linux": 25,
     "Android": 15,
@@ -109,6 +109,11 @@
     "Script Execution": 1,
     "Automated Configuration": 1,
     "Automation & Scripting": 1,
+    "Remote access (browser and Windows app)": 1,
+    "Script execution and scheduling": 1,
+    "Hardware and software inventory": 1,
+    "Process and service management": 1,
+    "Real-time CPU/RAM/disk alerting": 1,
     "IT Service Management": 1,
     "Incident Management": 1,
     "Asset Management": 1,
@@ -164,14 +169,14 @@
     "Clipboard Synchronization": 1
   },
   "artifact_counts": {
-    "disk": 207,
-    "eventlog": 47,
-    "registry": 65,
-    "network_pairs": 607,
+    "disk": 213,
+    "eventlog": 48,
+    "registry": 66,
+    "network_pairs": 614,
     "other": 5,
-    "total": 931
+    "total": 946
   },
   "detection_count": 481,
   "tools_without_artifacts_count": 72,
-  "tools_without_detections_count": 39
+  "tools_without_detections_count": 40
 }

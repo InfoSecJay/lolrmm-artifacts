@@ -120,6 +120,12 @@ level,Level,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Wi
 levelio,Level.io,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
 levelio,Level.io,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
 levelio,Level.io,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
+lunixar,Lunixar,C:\Program Files\Lunixar\Lunixar.dll,C:\Program Files\Lunixar\Lunixar.dll,,,File,Main agent DLL
+lunixar,Lunixar,C:\Program Files\Lunixar\Lunixar.Agent.Core.dll,C:\Program Files\Lunixar\Lunixar.Agent.Core.dll,,,File,Agent core library
+lunixar,Lunixar,C:\Program Files\Lunixar\LunixarRemote.exe,C:\Program Files\Lunixar\LunixarRemote.exe,,,File,Remote access executable
+lunixar,Lunixar,C:\Program Files\Lunixar\LunixarRemote.dll,C:\Program Files\Lunixar\LunixarRemote.dll,,,File,Remote access library
+lunixar,Lunixar,C:\Program Files\Lunixar\LunixarUpdater.exe,C:\Program Files\Lunixar\LunixarUpdater.exe,,,File,Auto-updater executable
+lunixar,Lunixar,C:\Program Files\Lunixar\LunixarUpdater.dll,C:\Program Files\Lunixar\LunixarUpdater.dll,,,File,Auto-updater library
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Program Files\ManageEngine\ServiceDesk\*,C:\Program Files\ManageEngine\ServiceDesk\*,Windows,Windows,,ManageEngine ServiceDesk Plus installation directory (verified via VirusTotal sandbox)
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe,C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe,Windows,Windows,,ManageEngine ServiceDesk Plus temporary installer files (verified via VirusTotal sandbox)
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe,C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe,Windows,Windows,,InstallShield wrapper temporary files (verified via VirusTotal sandbox)

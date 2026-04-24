@@ -93,6 +93,12 @@ C:\Program Files\ImmyBot\*
 C:\Program Files\Level\level.exe
 C:\Program Files\Level\level.log
 C:\Program Files\Level\osqueryi.exe
+C:\Program Files\Lunixar\Lunixar.Agent.Core.dll
+C:\Program Files\Lunixar\Lunixar.dll
+C:\Program Files\Lunixar\LunixarRemote.dll
+C:\Program Files\Lunixar\LunixarRemote.exe
+C:\Program Files\Lunixar\LunixarUpdater.dll
+C:\Program Files\Lunixar\LunixarUpdater.exe
 C:\Program Files\ManageEngine\ServiceDesk\*
 C:\Program Files\Mesh Agent\MeshAgent.exe
 C:\Program Files\Mesh Agent\MeshAgent.msh

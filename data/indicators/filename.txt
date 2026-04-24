@@ -305,6 +305,9 @@ logmeinsystray.exe
 ltsvc.exe
 ltsvcmon.exe
 lttray.exe
+Lunixar.exe
+LunixarRemote.exe
+LunixarUpdater.exe
 ManageEngine_Remote_Access_Plus.exe
 ManageEngine_ServiceDesk_Plus.bin
 ManageEngine_ServiceDesk_Plus.exe
