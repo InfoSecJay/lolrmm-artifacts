@@ -10561,43 +10561,43 @@
         {
           "File": "C:\\Program Files\\Lunixar\\Lunixar.dll",
           "Description": "Main agent DLL",
-          "OS": null,
-          "Type": "File",
+          "OS": "Windows",
+          "Type": null,
           "Example": []
         },
         {
           "File": "C:\\Program Files\\Lunixar\\Lunixar.Agent.Core.dll",
           "Description": "Agent core library",
-          "OS": null,
-          "Type": "File",
+          "OS": "Windows",
+          "Type": null,
           "Example": []
         },
         {
           "File": "C:\\Program Files\\Lunixar\\LunixarRemote.exe",
           "Description": "Remote access executable",
-          "OS": null,
-          "Type": "File",
+          "OS": "Windows",
+          "Type": null,
           "Example": []
         },
         {
           "File": "C:\\Program Files\\Lunixar\\LunixarRemote.dll",
           "Description": "Remote access library",
-          "OS": null,
-          "Type": "File",
+          "OS": "Windows",
+          "Type": null,
           "Example": []
         },
         {
           "File": "C:\\Program Files\\Lunixar\\LunixarUpdater.exe",
           "Description": "Auto-updater executable",
-          "OS": null,
-          "Type": "File",
+          "OS": "Windows",
+          "Type": null,
           "Example": []
         },
         {
           "File": "C:\\Program Files\\Lunixar\\LunixarUpdater.dll",
           "Description": "Auto-updater library",
-          "OS": null,
-          "Type": "File",
+          "OS": "Windows",
+          "Type": null,
           "Example": []
         }
       ],
