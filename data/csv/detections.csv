@@ -194,6 +194,7 @@ khelpdesk,KHelpDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections
 khelpdesk,KHelpDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/khelpdesk_processes_sigma.yml,Detects potential processes activity of KHelpDesk RMM tool
 kickidler,KickIdler,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/kickidler_network_sigma.yml,Detects potential network activity of KickIdler RMM tool
 kitty,KiTTY,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/kitty_processes_sigma.yml,Detects potential processes activity of KiTTY RMM tool
+komari,Komari,https://github.com/Koifman/LOLRMM/tree/main/detections/sigma/komari_process_sigma.yml,Detects process activity of Komari
 labteachconnectwiseautomate,LabTeach (Connectwise Automate),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/labteach__connectwise_automate__processes_sigma.yml,Detects potential processes activity of LabTeach (Connectwise Automate) RMM tool
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/labtech_rmm__now_connectwise_automate__network_sigma.yml,Detects potential network activity of LabTech RMM (Now ConnectWise Automate) RMM tool
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/labtech_rmm__now_connectwise_automate__processes_sigma.yml,Detects potential processes activity of LabTech RMM (Now ConnectWise Automate) RMM tool

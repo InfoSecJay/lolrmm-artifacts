@@ -9527,6 +9527,62 @@
     "source_file": "kitty.yaml"
   },
   {
+    "Name": "Komari",
+    "Category": "RMM",
+    "Description": "A simple server monitor tool.",
+    "Author": "Daniel Koifman (KoifSec)",
+    "Created": "2026-05-03",
+    "LastModified": "2026-05-03",
+    "Details": {
+      "Website": "https://github.com/komari-monitor/komari",
+      "PEMetadata": [],
+      "Privileges": "User",
+      "Free": true,
+      "Verification": true,
+      "SupportedOS": [
+        "Windows",
+        "Linux"
+      ],
+      "Capabilities": [
+        "Remote Desktop Access",
+        "Remote Shell"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "komari-windows-386.exe",
+        "komari-windows-amd64.exe",
+        "komari-windows-arm64.exe",
+        "komari-agent.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": []
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/Koifman/LOLRMM/tree/main/detections/sigma/komari_process_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects process activity of Komari",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.huntress.com/blog/komari-c2-agent-abuse"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "Daniel Koifman",
+        "Handle": "@KoifSec"
+      }
+    ],
+    "source_file": "komari.yaml"
+  },
+  {
     "Name": "Koofr",
     "Category": "RAT",
     "Description": "Koofr is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",

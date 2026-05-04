@@ -1,3 +1,4 @@
+https://github.com/Koifman/LOLRMM/tree/main/detections/sigma/komari_process_sigma.yml
 https://github.com/SigmaHQ/sigma/blob/43277f26fc1c81fc98fc79147b711189e901b757/rules/windows/builtin/system/service_control_manager/win_system_service_install_anydesk.yml
 https://github.com/SigmaHQ/sigma/blob/43277f26fc1c81fc98fc79147b711189e901b757/rules/windows/file/file_event/file_event_win_anydesk_artefact.yml
 https://github.com/SigmaHQ/sigma/blob/43277f26fc1c81fc98fc79147b711189e901b757/rules/windows/process_creation/proc_creation_win_remote_access_tools_anydesk.yml

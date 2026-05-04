@@ -1,13 +1,13 @@
 {
-  "tool_count": 295,
+  "tool_count": 296,
   "by_category": {
-    "RMM": 209,
+    "RMM": 210,
     "RAT": 86
   },
   "by_os": {
-    "Windows": 80,
+    "Windows": 81,
     "MacOS": 26,
-    "Linux": 25,
+    "Linux": 26,
     "Android": 15,
     "iOS": 12,
     "ChromeOS": 2,
@@ -108,6 +108,8 @@
     "Software Deployment": 2,
     "Script Execution": 1,
     "Automated Configuration": 1,
+    "Remote Desktop Access": 3,
+    "Remote Shell": 2,
     "Automation & Scripting": 1,
     "Remote access (browser and Windows app)": 1,
     "Script execution and scheduling": 1,
@@ -134,9 +136,7 @@
     "Peer-to-Peer Networking": 1,
     "Secure Tunneling": 1,
     "Network Management": 1,
-    "Remote Desktop Access": 2,
     "Screen Management": 1,
-    "Remote Shell": 1,
     "Connection Management": 2,
     "Screen Reading": 1,
     "Remote Support": 2,
@@ -176,7 +176,7 @@
     "other": 5,
     "total": 946
   },
-  "detection_count": 481,
-  "tools_without_artifacts_count": 72,
+  "detection_count": 482,
+  "tools_without_artifacts_count": 73,
   "tools_without_detections_count": 40
 }

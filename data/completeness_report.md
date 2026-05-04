@@ -1,29 +1,29 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **295**
-- Fetched + parsed tools: **295**
+- Expected files (upstream listing): **296**
+- Fetched + parsed tools: **296**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 295 tools total:
+Of 296 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
 | pe_metadata | 289 | 98% |
-| installation_paths | 264 | 89% |
-| capabilities | 36 | 12% |
-| supported_os | 81 | 27% |
+| installation_paths | 265 | 90% |
+| capabilities | 37 | 12% |
+| supported_os | 82 | 28% |
 | disk | 41 | 14% |
 | eventlog | 27 | 9% |
 | registry | 17 | 6% |
 | network | 215 | 73% |
 | other | 2 | 1% |
-| detections | 255 | 86% |
+| detections | 256 | 86% |
 
-## Tools with no artifacts at all (72)
+## Tools with no artifacts at all (73)
 
 - `beyondtrust` (RMM)
 - `bitvise_ssh_client` (RAT)
@@ -46,6 +46,7 @@ Of 295 tools total:
 - `insync` (RAT)
 - `jollysfastvnc` (RAT)
 - `kitty` (RAT)
+- `komari` (RMM)
 - `koofr` (RAT)
 - `labteachconnectwiseautomate` (RMM)
 - `lite_manager` (RMM)

@@ -510,6 +510,10 @@ Kabuto.Installer.exe
 Kabuto.Service.Runner.exe
 KabutoSetup.exe
 KHelpDesk.exe
+komari-agent.exe
+komari-windows-386.exe
+komari-windows-amd64.exe
+komari-windows-arm64.exe
 konea.exe
 landeskagentbootstrap.exe
 LANDeskPortalManager.exe

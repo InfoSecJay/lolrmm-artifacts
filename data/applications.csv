@@ -142,6 +142,7 @@ Kaseya (VSA),kaseya (vsa),kaseya,Kaseya (VSA),Name,RMM,,https://www.kaseya.com/,
 KHelpDesk,khelpdesk,khelpdesk,KHelpDesk,Name,RMM,,https://www.khelpdesk.com.br/,
 KickIdler,kickidler,kickidler,KickIdler,Name,RMM,,https://www.kickidler.com/,
 KiTTY,kitty,kitty,KiTTY,Name,RAT,,https://www.9bis.net/kitty/,
+Komari,komari,komari,Komari,Name,RMM,true,https://github.com/komari-monitor/komari,Windows | Linux
 Koofr,koofr,koofr,Koofr,Name,RAT,,,
 LabTeach (Connectwise Automate),labteach (connectwise automate),labteachconnectwiseautomate,LabTeach (Connectwise Automate),Name,RMM,,https://www.connectwise.com/platform/automate,Windows
 LabTech RMM (Now ConnectWise Automate),labtech rmm (now connectwise automate),labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),Name,RMM,,https://www.connectwise.com/platform/automate,

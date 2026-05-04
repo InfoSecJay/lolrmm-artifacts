@@ -113,6 +113,7 @@ kaseya,Kaseya (VSA),RMM,True,True,False,True,True,False,False,True,False,True,ca
 khelpdesk,KHelpDesk,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 kickidler,KickIdler,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 kitty,KiTTY,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
+komari,Komari,RMM,False,True,True,True,False,False,False,False,False,True,pe_metadata | disk | eventlog | registry | network | other
 koofr,Koofr,RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 labteachconnectwiseautomate,LabTeach (Connectwise Automate),RMM,True,True,False,True,False,False,False,False,False,True,capabilities | disk | eventlog | registry | network | other
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
