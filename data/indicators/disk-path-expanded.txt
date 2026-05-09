@@ -1,23 +1,44 @@
 %Binary_path%\\AA_v3.log
+%CD%\conf.json
+%CD%\installer.zip
 *\agent-installer-any.exe
+/Applications/Freshservice Discovery Agent.app
+/Applications/GLPI-Agent/etc/agent.cfg
+/Applications/GLPI-Agent/etc/conf.d/*
+/Applications/Teramind Agent.app
+/Applications/tmagent.app
+/etc/glpi-agent/agent.cfg
+/etc/glpi-agent/conf.d/*
 /etc/netbird/config.json
 /etc/systemd/system/netlock-rmm-agent-comm.service
+/lib/systemd/system/glpi-agent.service
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
+/opt/freshservice/discovery_agent/*
 /System/Volumes/Data/Users/*/Library/Logs/HopToDesk/hoptodesk_rCURRENT.log
 /tmp/tmate*
+/usr/bin/glpi-agent
+/usr/local/bin/glpi-agent
 /usr/local/mesh_services/meshagent/meshagent
 /usr/local/mesh_services/meshagent/meshagent.db
 /usr/local/mesh_services/meshagent/meshagent.msh
 /usr/local/mesh_services/meshagent/meshagent/meshagent
 /usr/local/mesh_services/meshagent/meshagent/meshagent.db
 /usr/local/mesh_services/meshagent/meshagent/meshagent.msh
+/usr/local/teramind/agent/bin/tmsysd
+/usr/local/teramind/agent/etc/
+/var/lib/glpi-agent/*
 /var/log/netbird/*
 /var/log/netlock-rmm-agent-comm.log
 /var/log/system.log
+<impersonated-org>Agent.exe
+bbl.exe
 C:\Kaseya\api\v1.0\logs\
 C:\Kaseya\api\v1.5\endpoint\logs
 C:\Kaseya\api\v1.5\endpoints\logs
 C:\Kaseya\WebPages\install\makecert.txt
+C:\LUCLIENT.INI
+C:\LUCLIENT.MOD
+C:\luhboot.bat
 C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe
 C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe
 C:\Program Files (x86)\Bluetrait Agent\config.db
@@ -26,6 +47,60 @@ C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe
 C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll
 C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe
 C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\*
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\AgentInstaller.dll
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\FSAgentAutoUpdate.exe
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\FSAgentCrashStatusUpdater.exe
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\FSAgentService.exe
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\fslogger.xml
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\FSUtil.dll
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\FSWmiScanner.exe
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\log4net.dll
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\logs\*
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\Microsoft.Win32.TaskScheduler.dll
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\Newtonsoft.Json.dll
+C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\settings.conf
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\*
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\AutoUpdate.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.Discovery.SNMP.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.Discovery.Utilities.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.AutoFlush.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.GlobalSettings.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.Linux.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.Model.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.OIDLibraryPuller.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.PostMan.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.ProgressBar.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.Scanner.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.ScanService.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.ScanService.exe.config
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.UtilitiesWrapper.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.DiscoveryProbe.Window.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Freshservice.Integrations.SCCM.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\FSProbeCrashStatusUpdater.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\FSProbeReporter.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\FSScheduler.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\FSWmiScanner.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\IPRangeCalculator.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Microsoft.Win32.TaskScheduler.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\plink.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Renci.SshNet.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\SnmpSharpNet.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\SQLite.Interop.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\System.Data.SQLite.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\UninstallStatusUpdater.exe
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\bin\Vim25Service.dll
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\conf\Configurations.json
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\conf\fsautoupdatelogger.xml
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\conf\fslogger.xml
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\db\freshservice_discovery.db
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\MsiUpdater.vbs
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\nmap\nmap-service-probes
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\unix_scripts\unix_ssh_scan.sh
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\windows_scripts\GetComputerInfo.vbs
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\windows_scripts\ListADComputers.vbs
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\windows_scripts\ListDomains.vbs
+C:\Program Files (x86)\Freshworks\FreshServiceProbe\Uninstall.bat
 C:\Program Files (x86)\HeartbeatRM\*
 C:\Program Files (x86)\HopToDesk\HopToDesk.exe
 C:\Program Files (x86)\HopToDesk\privacyhelper.exe
@@ -33,6 +108,24 @@ C:\Program Files (x86)\HopToDesk\PrivacyMode.dll
 C:\Program Files (x86)\HopToDesk\sciter.dll
 C:\Program Files (x86)\IDrive\*
 C:\Program Files (x86)\ImmyBot\*
+C:\Program Files (x86)\Inventec\InvGate.net Client\4.002.004.ver
+C:\Program Files (x86)\Inventec\InvGate.net Client\5.001.004.ver
+C:\Program Files (x86)\Inventec\InvGate.net Client\build.txt
+C:\Program Files (x86)\Inventec\InvGate.net Client\DepHlp.exe
+C:\Program Files (x86)\Inventec\InvGate.net Client\files\InvGateAssetsRD.exe
+C:\Program Files (x86)\Inventec\InvGate.net Client\files\InvGateRD.exe
+C:\Program Files (x86)\Inventec\InvGate.net Client\files\sas.dll
+C:\Program Files (x86)\Inventec\InvGate.net Client\InvClient-Log.txt
+C:\Program Files (x86)\Inventec\InvGate.net Client\InvGate-ED.exe
+C:\Program Files (x86)\Inventec\InvGate.net Client\invid
+C:\Program Files (x86)\Inventec\InvGate.net Client\logs\*
+C:\Program Files (x86)\Inventec\InvGate.net Client\logs\InvClient-Log.txt
+C:\Program Files (x86)\Inventec\InvGate.net Client\logs\InvClient-Log_Service.txt
+C:\Program Files (x86)\Inventec\InvGate.net Client\logs\InvClient-Log_SoftwareMet.txt
+C:\Program Files (x86)\Inventec\InvGate.net Client\sm_rep.inv
+C:\Program Files (x86)\Inventec\InvGate.net Client\sm_temp.inv
+C:\Program Files (x86)\Inventec\InvGate.net Client\Software Matt.dll
+C:\Program Files (x86)\Inventec\InvGate.net Client\usbFiles\usbLog.txt
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe
@@ -49,6 +142,56 @@ C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRService.exe
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe
 C:\Program Files (x86)\Splashtop\Splashtop Software Updater\SSUAgent.exe
+C:\Program Files (x86)\TiFLUX\dependencies\7zip\7z.dll
+C:\Program Files (x86)\TiFLUX\dependencies\7zip\7z.exe
+C:\Program Files (x86)\TiFLUX\dependencies\7zip\7zCon.sfx
+C:\Program Files (x86)\TiFLUX\dependencies\safemode_reboot.reg
+C:\Program Files (x86)\TiFLUX\dependencies\sas_generation.reg
+C:\Program Files (x86)\TiFLUX\dependencies\sas_registry.reg
+C:\Program Files (x86)\TiFLUX\dependencies\sshHostKey.reg
+C:\Program Files (x86)\TiFLUX\dependencies\tar\libiconv-2.dll
+C:\Program Files (x86)\TiFLUX\dependencies\tar\libintl-2.dll
+C:\Program Files (x86)\TiFLUX\dependencies\tar\tar.exe
+C:\Program Files (x86)\TiFLUX\dependencies\ultravnc\*
+C:\Program Files (x86)\TiFLUX\dependencies\ultravnc\driver\xp64\driver\mv2.dll
+C:\Program Files (x86)\TiFLUX\desktop\en\TiAgent.resources.dll
+C:\Program Files (x86)\TiFLUX\desktop\es\TiAgent.resources.dll
+C:\Program Files (x86)\TiFLUX\desktop\pt-BR\TiAgent.resources.dll
+C:\Program Files (x86)\TiFLUX\desktop\TiAgent.exe
+C:\Program Files (x86)\TiFLUX\desktop\TiAgent.exe.config
+C:\Program Files (x86)\TiFLUX\desktop\TiAgent.pdb
+C:\Program Files (x86)\TiFLUX\scripts\README
+C:\Program Files (x86)\TiFLUX\si.exe
+C:\Program Files (x86)\TiFLUX\si.pdb
+C:\Program Files (x86)\TiFLUX\TiService.exe
+C:\Program Files (x86)\TiFLUX\TiUpdateService.exe
+C:\Program Files (x86)\TiFLUX\TiUpdateService.exe.config
+C:\Program Files (x86)\TiFLUX\TiUpdateService.pdb
+C:\Program Files (x86)\Vector\Asset Management Client\CLBOOT32.EXE
+C:\Program Files (x86)\Vector\Asset Management Client\CLDIST32.EXE
+C:\Program Files (x86)\Vector\Asset Management Client\CLDISTSVC.EXE
+C:\Program Files (x86)\Vector\Asset Management Client\clMeter32.exe
+C:\Program Files (x86)\Vector\Asset Management Client\clMeterSvc.exe
+C:\Program Files (x86)\Vector\Asset Management Client\closeapp.exe
+C:\Program Files (x86)\Vector\Asset Management Client\cpuchk.exe
+C:\Program Files (x86)\Vector\Asset Management Client\HTTPGet.exe
+C:\Program Files (x86)\Vector\Asset Management Client\HTTPPush.exe
+C:\Program Files (x86)\Vector\Asset Management Client\LUEDIT.EXE
+C:\Program Files (x86)\Vector\Asset Management Client\LUGuard.exe
+C:\Program Files (x86)\Vector\Asset Management Client\LuLogon.exe
+C:\Program Files (x86)\Vector\Asset Management Client\LuSMBIOS32.exe
+C:\Program Files (x86)\Vector\Asset Management Client\lutinfow32.exe
+C:\Program Files (x86)\Vector\Asset Management Client\NUKE32.EXE
+C:\Program Files (x86)\Vector\Asset Management Client\PidUpdater.exe
+C:\Program Files (x86)\Vector\Asset Management Client\Prep64.exe
+C:\Program Files (x86)\Vector\Asset Management Client\Recycler.exe
+C:\Program Files (x86)\Vector\Asset Management Client\regapps.exe
+C:\Program Files (x86)\Vector\Asset Management Client\SelfUpdater.exe
+C:\Program Files (x86)\Vector\Asset Management Client\upload.exe
+C:\Program Files (x86)\Vector\Asset Management Client\VECWAIT.EXE
+C:\Program Files (x86)\Vector\Asset Management Client\VNLDriverInstaller.exe
+C:\Program Files (x86)\Vector\Asset Management Client\VnlSelfUpdate.exe
+C:\Program Files (x86)\Vector\Asset Management Client\WINCHK32.EXE
 C:\Program Files*\Kaseya\*\agentmon.log
 C:\Program Files*\ScreenConnect\App_Data\Session.db
 C:\Program Files*\ScreenConnect\App_Data\User.xml
@@ -64,6 +207,19 @@ C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandIntera
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe
 C:\Program Files\bsag\bma\bma.exe
+C:\Program Files\GLPI-Agent\etc\agent.cfg
+C:\Program Files\GLPI-Agent\logs\glpi-agent.log
+C:\Program Files\GLPI-Agent\perl\bin\glpi-agent
+C:\Program Files\GLPI-Agent\perl\bin\glpi-esx
+C:\Program Files\GLPI-Agent\perl\bin\glpi-injector
+C:\Program Files\GLPI-Agent\perl\bin\glpi-inventory
+C:\Program Files\GLPI-Agent\perl\bin\glpi-netdiscovery
+C:\Program Files\GLPI-Agent\perl\bin\glpi-netinventory
+C:\Program Files\GLPI-Agent\perl\bin\glpi-remote
+C:\Program Files\GLPI-Agent\perl\bin\glpi-win32-service.bat
+C:\Program Files\GLPI-Agent\perl\bin\perl.exe
+C:\Program Files\GLPI-Agent\perl\bin\wperl.exe
+C:\Program Files\GLPI-Agent\var\*
 C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.AppManagement.zip
 C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.DeviceChat.zip
 C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.IpAddressDetector.zip
@@ -104,6 +260,10 @@ C:\Program Files\Mesh Agent\MeshAgent.exe
 C:\Program Files\Mesh Agent\MeshAgent.msh
 C:\Program Files\Miradore\OnlineClient\bin\*
 C:\Program Files\Miradore\OnlineClient\bin\7z.dll
+C:\Program Files\Monitic\*
+C:\Program Files\Monitic\agent.exe
+C:\Program Files\Monitic\amon.exe
+C:\Program Files\Monitic\conf.json
 C:\Program Files\Netbird\netbird.exe
 C:\Program Files\NVDA\nvda.exe
 C:\Program Files\Parsec\parsecd.exe
@@ -111,16 +271,22 @@ C:\Program Files\Parsec\pservice.exe
 C:\Program Files\Parsec\teams.exe
 C:\Program Files\TeamViewer\Connections_incoming.txt
 C:\Program Files\TeamViewer\TVNetwork.log
+C:\Program Files\Vector Networks Limited\LANutil32 Suite\clboot32.exe
+C:\Program Files\Vector\Asset Management Client\CLBOOT32.EXE
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json
 C:\ProgramData\\AMMYY\\access.log
 C:\ProgramData\AnyDesk\ad_svc.trace
 C:\ProgramData\AnyDesk\connection_trace.txt
 C:\ProgramData\AnyDesk\service.conf
 C:\ProgramData\AnyDesk\system.conf
+C:\ProgramData\Getscreen.me\<date>.gui.log
+C:\ProgramData\Getscreen.me\<date>.log
+C:\ProgramData\Getscreen.me\session.inf
 C:\ProgramData\IDrive\*
 C:\ProgramData\ImmyBot\Logs\*
 C:\ProgramData\ImmyBot\Scripts\*
 C:\ProgramData\ImmyBotAgentService\config.json
+C:\ProgramData\JWrapper-Remote Access\
 C:\ProgramData\Kaseya\Log\Endpoint\*
 C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*
 C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*
@@ -129,9 +295,18 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AnyDesk\Uninstall AnyDesk.l
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk.lnk
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk
 C:\ProgramData\Netbird\config.json
+C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal
 C:\ProgramData\ScreenConnect Client*\user.config
 C:\ProgramData\Splashtop\Temp\log\FTCLog.txt
+C:\ProgramData\Teramind Agent\*
+C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe
+C:\ProgramData\Teramind Agent\config
+C:\ProgramData\Tiflux\*
+C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\*
+C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\config
+C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\rundll32.exe.config
+C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\
 C:\temp\netlock rmm\installer\logs\*
 C:\temp_phw
 C:\Users\*\AppData\*\mRemoteNG\**10\user.config
@@ -139,10 +314,16 @@ C:\Users\*\AppData\Local\Alpemix\Alpemix.ini
 C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager[GUID]\Mru.xml
 C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.db
 C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.log
+C:\Users\*\AppData\Local\Getscreen.me
 C:\Users\*\AppData\Local\IDrive\*
 C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect\*
+C:\Users\*\AppData\Local\Programs\RemSupp\RemSupp.exe
+C:\Users\*\AppData\Local\Programs\RemSupp\Uninstall RemSupp.exe
 C:\Users\*\AppData\Local\TeamViewer\Database\tvchatfilecache.db
 C:\Users\*\AppData\Local\TeamViewer\RemotePrinting\tvprint.db
+C:\Users\*\AppData\Local\Temp\*\agent.exe
+C:\Users\*\AppData\Local\Temp\*\agent_installer.bat
+C:\Users\*\AppData\Local\Temp\*\amon.exe
 C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log
 C:\Users\*\AppData\Local\Temp\KASetup.log
 C:\Users\*\AppData\Local\Temp\privacyhelper.exe
@@ -166,20 +347,37 @@ C:\Users\*\AppData\Roaming\HopToDesk\config\*
 C:\Users\*\AppData\Roaming\HopToDesk\config\hoptodesk.toml
 C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk.toml
 C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk_rCURRENT.log
+C:\Users\*\AppData\Roaming\JWrapper-SimpleSetup\
+C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\RemSupp.lnk
 C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml
 C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log
 C:\Users\*\AppData\Roaming\nvda\nvda.ini
 C:\Users\*\AppData\Roaming\nvda\nvda.log
 C:\Users\*\AppData\Roaming\RdClient\*
+C:\Users\*\AppData\Roaming\RemSupp\chromium.log
+C:\Users\*\AppData\Roaming\RemSupp\Crashpad\metadata
+C:\Users\*\AppData\Roaming\RemSupp\Crashpad\settings.dat
+C:\Users\*\AppData\Roaming\RemSupp\Local State
+C:\Users\*\AppData\Roaming\RemSupp\Local Storage\leveldb\*
+C:\Users\*\AppData\Roaming\RemSupp\Preferences
+C:\Users\*\AppData\Roaming\RemSupp\quitAndInstall.json
+C:\Users\*\AppData\Roaming\RemSupp\sentry\queue\queue.json
+C:\Users\*\AppData\Roaming\RemSupp\sentry\scope_v3.json
+C:\Users\*\AppData\Roaming\RemSupp\sentry\session.json
 C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc
+C:\Users\*\Desktop\MoniticInstaller.exe
 C:\Users\*\Documents\ChatLogs\*\*.htm
 C:\Users\*\Videos\AnyDesk\*.anydesk
 C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log
+C:\winchk.dat
+C:\Windows\<random-6-9-char>.exe
 C:\Windows\Action1\*
 C:\Windows\Action1\action1_agent.exe
 C:\Windows\Action1\action1_log_*.log
 C:\Windows\Action1\rule_data\*
 C:\Windows\Action1\scripts\*
+C:\Windows\Installer\*.msi
+C:\Windows\Installer\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}\ARPPRODUCTICON.exe
 C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
 C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\
 C:\Windows\System32\rserver30\CHATLOGS\*\*.htm
@@ -193,16 +391,35 @@ C:\Windows\Temp\ImmyBot\*
 C:\Windows\Temp\KASetup.log
 C:\Windows\Temp\VeyonServer.log
 C:\Windows\Temp\VeyonService.log
+FSProbeUninstall.vbs
+libeay32.dll
+RodexAgent.exe
+ssleay32.dll
 teamviewer.exe
 TeamViewer\d\d_Logfile\.log
 teamviewer_service.exe
 teamviewerqs.exe
+Teramind.Setup.Updater.exe
+teramind_agent_*_ARM64.msi
+teramind_agent_*_bundle_noredist_setup.msi
+teramind_agent_*_hidden-do(<domain>).pkg
+teramind_agent_*_x64.msi
+tmagent-i(__<hash>).pkg
 tmate-ready
 tmate.bashrc
 tmate.sock
+tmdiag.zip
+tmui
 tv_w32.exe
 tv_w64.exe
 tv_x64.exe
+wec_launcher_[a-Z0-9]*_.exe
+wec_launcher_[a-Z0-9]*_.pkg
+weClipboardListener.exe
+weInstSvc.exe
+wemonc.exe
+weprtct.exe
+wesvc.exe
 ~/.config/AnyDesk/Logs/
 ~/.tmate.conf
 ~/Library/Application Support/AnyDesk/Logs/

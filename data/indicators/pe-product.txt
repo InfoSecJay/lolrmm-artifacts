@@ -3,10 +3,12 @@ AnyDesk
 Aspia
 baramundi Management Suite
 Bluetrait
+Controlio
 Gorelo RMM
 LMIGuardianSvc
 Mouse Without Borders
 Parsec
 Radmin Server
 Radmin Viewer
+RemSupp
 TeamViewer

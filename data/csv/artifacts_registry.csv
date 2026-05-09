@@ -23,6 +23,31 @@ atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS,
 atera,Atera,HKLM\SOFTWARE\ATERA Networks\*,
 fleetdeck,FleetDeck.io,HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service,FleetDeck service registry key
+freshservice,Freshservice,HKLM\SYSTEM\CurrentControlSet\Services\FSAgentService,Freshservice Discovery Agent SYSTEM service registration.
+freshservice,Freshservice,HKLM\SYSTEM\CurrentControlSet\Services\FreshServiceScan,"Freshservice Discovery Probe SYSTEM service registration (image `Freshservice.DiscoveryProbe.ScanService.exe`, LocalSystem, Automatic)."
+freshservice,Freshservice,HKLM\SOFTWARE\Freshdesk\FSAgent,"Freshservice Discovery Agent tenant configuration root. Registry values include `InstallDir`, `ProductCode`, `Version`, `AccountURI`, `RegistrationKey`, `ProxyServer`, `ProxyPort`, `ProxyUserName`, `ProxyPassword`. Confirmed via the Registry table inside `fs-windows-agent-3.10.0.msi`."
+freshservice,Freshservice,HKLM\SOFTWARE\WOW6432Node\Freshdesk\FSAgent,"Freshservice Discovery Agent tenant configuration root on x64 Windows (the Agent MSI is x86, so HKLM\SOFTWARE\Freshdesk\FSAgent is reflected here). Same value names as above."
+freshservice,Freshservice,HKLM\SOFTWARE\Freshworks\FreshServiceProbe,"Freshservice Discovery Probe tenant configuration root. Registry values include `INSTALLDIR`, `ProductCode`, `Version`, and `RegistrationKey` — the latter is a JWT (e.g. `eyJ...` decoding to `{""portal_url"":""https://<tenant>.freshservice.com""}`). Confirmed via the Registry table inside `fs-probe-4.13.0.msi`."
+freshservice,Freshservice,HKLM\SOFTWARE\WOW6432Node\Freshworks\FreshServiceProbe,Freshservice Discovery Probe tenant configuration root on x64 Windows.
+freshservice,Freshservice,HKLM\SOFTWARE\Microsoft\FreshService Probe,Freshservice Discovery Probe Start-Menu shortcut bookkeeping key (`installed=1`). Created by the ApplicationShortcut component of the Probe MSI.
+freshservice,Freshservice,HKLM\SOFTWARE\FreshService Probe,Freshservice Discovery Probe Desktop-shortcut bookkeeping key (`installed=1`). Created by the ApplicationDesktopShortcut component of the Probe MSI.
+freshservice,Freshservice,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8BE075F9-36C7-4145-8BC0-35D420223576},Discovery Agent ARP/Uninstall entry. ProductCode UUID confirmed via msiinfo against `fs-windows-agent-3.10.0.msi` (UpgradeCode {6B686B63-A11D-42DE-9678-01FE705125C7}); per-version ProductCodes will differ across releases.
+freshservice,Freshservice,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{892D2C60-AFC1-48C0-8C5D-A2DC856A3605},Discovery Probe ARP/Uninstall entry. ProductCode UUID confirmed via msiinfo against `fs-probe-4.13.0.msi` (UpgradeCode {82E36A19-1271-4411-ACEC-7BBE4B6BD17A}); per-version ProductCodes will differ across releases.
+getscreen,GetScreen,HKU\{SID}\Software\GetScreen,Application settings including language preferences.
+getscreen,GetScreen,HKU\{SID}\Software\GetScreen\Getscreen.me,Application-specific settings.
+getscreen,GetScreen,HKLM\System\CurrentControlSet\Services\GetscreenSV,"Service registry key created when Getscreen.me installs persistence (SCM service key name is 'GetscreenSV', friendly name 'Getscreen.me'). The ImagePath value typically points at a per-install elevation helper such as '""C:\ProgramData\Getscreen.me\<random28chars>-elevate.exe"" -elevate \\.\pipe\elevateGS512<random28chars>'."
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent,"GLPI Agent root configuration key on 64-bit Windows agents (server URL, tag, httpd-port, tasks, log paths and every other agent.cfg parameter are mirrored here by the MSI)"
+glpi,GLPI Agent,HKLM\SOFTWARE\WOW6432Node\GLPI-Agent,GLPI Agent root configuration key on 32-bit-on-64 installs (mirrors HKLM\SOFTWARE\GLPI-Agent)
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\Installer,"GLPI Agent installer state — Version, InstallDir, ExecMode, RunNow, AddFirewallException, TaskFrequency etc."
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\Installer\Version,Installed GLPI Agent version string — checked by glpi-agent-deployment.vbs to decide install / repair / reconfigure
+glpi,GLPI Agent,HKLM\SOFTWARE\WOW6432Node\GLPI-Agent\Installer\Version,Installed GLPI Agent version string (32-bit registry view)
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\Monitor,GLPI-Agent-Monitor (system tray monitor) settings
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\server,server parameter — operator-configured GLPI server URL(s) the agent reports to
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\httpd-port,Embedded HTTP daemon listen port (default 62354)
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\httpd-ip,Embedded HTTP daemon listen address (default 0.0.0.0)
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\httpd-trust,Trusted IPs allowed to trigger tasks via the embedded HTTP daemon without authentication
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\tag,Computer identification tag pushed with inventory
+glpi,GLPI Agent,HKLM\SOFTWARE\GLPI-Agent\tasks,"Comma-separated task list the agent will execute (Inventory, NetInventory, NetDiscovery, ESX, Deploy, Collect, RemoteInventory, WakeOnLan)"
 gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),HKLM\SOFTWARE\GoTo Resolve Unattended\,N/A
 gotomypc,GoToMyPC,HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc,Configuration settings including registration email
 gotomypc,GoToMyPC,HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc\GuestInvite,Guest invites send to connect
@@ -32,10 +57,19 @@ hoptodesk,HopToDesk,HKEY_CURRENT_USER\Software\Classes\HopToDesk\shell\open\comm
 hoptodesk,HopToDesk,HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\HopToDesk,HopToDesk uninstall registry key
 idrive,iDrive,HKEY_LOCAL_MACHINE\SOFTWARE\IDrive\*,iDrive configuration registry keys
 idrive,iDrive,HKEY_CURRENT_USER\SOFTWARE\IDrive\*,iDrive user configuration registry keys
+invgate,InvGate,HKLM\SYSTEM\CurrentControlSet\Services\InvClient,"InvGate Assets Client SYSTEM service registration (service name ""InvClient"", ImagePath points to InvGate-ED.exe under Inventec\InvGate.net Client)"
+invgate,InvGate,HKLM\SYSTEM\CurrentControlSet\Services\InvClient\ImagePath,"ImagePath value for the InvClient service — observed value ""C:\Program Files (x86)\Inventec\InvGate.net Client\InvGate-ED.exe"""
+invgate,InvGate,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4},Add/Remove Programs uninstall key for InvGate Assets Client v5.001.004 (Publisher = InvGate)
+invgate,InvGate,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F0076285-D0E2-4B49-92BD-25E0B7B27DF6},"Add/Remove Programs uninstall key for InvGate Assets Client v4.004.011 — uninstall command ""MsiExec.exe /I{F0076285-D0E2-4B49-92BD-25E0B7B27DF6}"""
+invgate,InvGate,HKLM\SOFTWARE\Classes\Installer\Products\08BB5F1461464FA46BB7AF632CD94B4C,Windows Installer product key (packed GUID form of {41F5BB80-6416-4AF4-B67B-FA36C29DB4C4})
+invgate,InvGate,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4},"32-bit-on-64 view of the InvGate Assets Client uninstall key (the agent is a 32-bit MSI, so the canonical Uninstall entry is mirrored under WOW6432Node)"
 lunixar,Lunixar,HKLM\System\CurrentControlSet\Services\LunixarRMM,Windows service registration
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*},ManageEngine ServiceDesk Plus uninstall registry keys (verified via VirusTotal sandbox)
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
+remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
+remsupp,RemSupp,HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb,Per-user uninstall key (vendor-assigned GUID)
+simplehelp,SimpleHelp,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SimpleSetup,Uninstall key written by the SimpleHelp SimpleSetup installer; URLUpdateInfo points to https://www.simple-help.com/media/static/SimpleSetup/.
 splashtop,Splashtop,KLM\SOFTWARE\WOW6432Node\Splashtop Inc.\*,Splashtop Inc. registry key
 splashtop,Splashtop,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater,Splashtop Software Updater uninstall key
 splashtop,Splashtop,HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService,Splashtop Remote Service registry key
@@ -63,5 +97,20 @@ teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioUserSelectedRe
 teamviewer,TeamViewer,HKLM\SOFTWARE\TeamViewer\ConnectionHistory,N/A
 teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\ClientWindow_Mode,N/A
 teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\ClientWindowPositions,N/A
+teramind,Teramind,HKLM\SYSTEM\CurrentControlSet\Services\tsvchst,Teramind agent Windows service registration (service name = tsvchst)
+teramind,Teramind,HKLM\SYSTEM\CurrentControlSet\Services\tsvchst\ImagePath,"ImagePath = ""C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe"" --service (or equivalent path under the GUID-named hidden-agent root)"
+teramind,Teramind,HKLM\SYSTEM\CurrentControlSet\Services\tsvchst\Start,Start = 2 (Automatic) — service launches at boot
+tiflux,TiFLUX,HKLM\SYSTEM\CurrentControlSet\Services\TiService,TiFLUX SYSTEM service registration
+tiflux,TiFLUX,HKLM\SYSTEM\CurrentControlSet\Services\TiService\ImagePath,"ImagePath = ""C:\Program Files (x86)\TiFLUX\TiService.exe"""
+tiflux,TiFLUX,HKLM\SYSTEM\CurrentControlSet\Services\TiService\Start,Start = 2 (Automatic) — service launches at boot
+tiflux,TiFLUX,HKLM\SOFTWARE\TiFLUX\*,"Tenant configuration (id, client_id, org_id, org_token, token, uuid)"
+tiflux,TiFLUX,HKLM\SOFTWARE\WOW6432Node\TiFLUX\*,"Tenant configuration on 32-bit-on-64 install (id, client_id, org_id, org_token, token, uuid)"
+tiflux,TiFLUX,HKLM\SOFTWARE\WOW6432Node\TiFLUX\org_id,Tenant org_id value persisted by the agent
+tiflux,TiFLUX,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run\TiAgent,Run-key persistence for TiAgent.exe (per-machine autostart of the tray UI)
+tiflux,TiFLUX,HKCU\SOFTWARE\TiFlux,Per-user TiFLUX state
 veyon,Veyon,HKLM\SOFTWARE\Veyon Solutions,Main Veyon configuration registry key containing all service and application settings
 veyon,Veyon,HKLM\SYSTEM\CurrentControlSet\Services\VeyonService,Veyon service registration and configuration
+vizor,VIZOR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C},"Uninstall key for Vector Asset Management Client v6.0 — Publisher ""Vector Networks"", DisplayName ""Vector Asset Management Client v6.0"", DisplayVersion 6.0.7.1325 (per advanceduninstaller.com listing)"
+vizor,VIZOR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A40A237D-C090-4C05-8580-9DBECFE3602B},"Uninstall key for Vector Asset Management Client v5.7 — Publisher ""Vector Networks"", DisplayVersion 5.7.0.1390 (per advanceduninstaller.com listing)"
+vizor,VIZOR,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C},Uninstall key for Vector Asset Management Client v6.0 (32-bit-on-64 view)
+vizor,VIZOR,HKLM\SOFTWARE\Metaquest,Vector Networks legacy product-namespace registry root — Metaquest is the original Vector Networks parent brand (vector-networks.com still aliases mail.metaquest.com / metaquest.com per the VirusTotal historical SSL certificate alt-names). Observed touched by the VIZOR Setup.exe in VirusTotal Jujubox sandbox (SHA-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e).

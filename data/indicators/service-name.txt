@@ -4,7 +4,12 @@ Ammyy Admin
 AnyDesk Service
 AteraAgent
 Bluetrait Agent
+FreshServiceScan
+FSAgentService
+Getscreen.me
+glpi-agent
 GoToResolve_*
+InvClient
 Level
 Mesh Agent background service
 Mouse without Borders Service
@@ -15,5 +20,7 @@ Splashtop Software Updater Service
 SplashtopRemoteService
 Splashtop® Remote Service
 TeamViewer
+TiService
+tsvchst
 Veyon Service
 WinRing0_1_2_0

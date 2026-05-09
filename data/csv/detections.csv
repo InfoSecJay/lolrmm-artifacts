@@ -132,10 +132,18 @@ fleetdeck,FleetDeck.io,https://github.com/magicsword-io/LOLRMM/blob/main/detecti
 fleetdeck,FleetDeck.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/fleetdeck_processes_sigma.yml,Detects potential processes activity of FleetDeck.io RMM tool
 fortra,Fortra,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/fortra_network_sigma.yml,Detects potential network activity of Fortra RMM tool
 freenx,FreeNX,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/freenx_processes_sigma.yml,Detects potential processes activity of FreeNX RMM tool
+freshservice,Freshservice,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/freshservice_files_sigma.yml,Detects potential files activity of Freshservice RMM tool
+freshservice,Freshservice,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/freshservice_network_sigma.yml,Detects potential network activity of Freshservice RMM tool
+freshservice,Freshservice,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/freshservice_processes_sigma.yml,Detects potential processes activity of Freshservice RMM tool
+freshservice,Freshservice,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/freshservice_registry_sigma.yml,Detects potential registry activity of Freshservice RMM tool
 gatherplace-desktop_sharing,GatherPlace-desktop sharing,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/gatherplace-desktop_sharing_network_sigma.yml,Detects potential network activity of GatherPlace-desktop sharing RMM tool
 gatherplace-desktop_sharing,GatherPlace-desktop sharing,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/gatherplace-desktop_sharing_processes_sigma.yml,Detects potential processes activity of GatherPlace-desktop sharing RMM tool
 getscreen,GetScreen,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/getscreen_network_sigma.yml,Detects potential network activity of GetScreen RMM tool
 getscreen,GetScreen,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/getscreen_processes_sigma.yml,Detects potential processes activity of GetScreen RMM tool
+glpi,GLPI Agent,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/glpi_files_sigma.yml,Detects potential files activity of GLPI RMM tool
+glpi,GLPI Agent,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/glpi_network_sigma.yml,Detects potential network activity of GLPI RMM tool
+glpi,GLPI Agent,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/glpi_processes_sigma.yml,Detects potential processes activity of GLPI RMM tool
+glpi,GLPI Agent,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/glpi_registry_sigma.yml,Detects potential registry activity of GLPI RMM tool
 gorelormm,Gorelo RMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/gorelo_rmm_network_sigma.yml,Detects potential network activity of Gorelo RMM RMM tool
 gorelormm,Gorelo RMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/gorelo_rmm_files_sigma.yml,Detects potential files activity of Gorelo RMM RMM tool
 gotoassist,GoToAssist,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/gotoassist_network_sigma.yml,Detects potential network activity of GoToAssist RMM tool
@@ -167,6 +175,10 @@ instanthousecall,Instant Housecall,https://github.com/magicsword-io/LOLRMM/blob/
 insync,Insync,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/insync_processes_sigma.yml,Detects potential processes activity of Insync RMM tool
 intelliadmin_remote_control,IntelliAdmin Remote Control,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/intelliadmin_remote_control_network_sigma.yml,Detects potential network activity of IntelliAdmin Remote Control RMM tool
 intelliadmin_remote_control,IntelliAdmin Remote Control,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/intelliadmin_remote_control_processes_sigma.yml,Detects potential processes activity of IntelliAdmin Remote Control RMM tool
+invgate,InvGate,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/invgate_files_sigma.yml,Detects potential files activity of InvGate RMM tool
+invgate,InvGate,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/invgate_network_sigma.yml,Detects potential network activity of InvGate RMM tool
+invgate,InvGate,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/invgate_processes_sigma.yml,Detects potential processes activity of InvGate RMM tool
+invgate,InvGate,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/invgate_registry_sigma.yml,Detects potential registry activity of InvGate RMM tool
 iperius_remote,Iperius Remote,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/iperius_remote_network_sigma.yml,Detects potential network activity of Iperius Remote RMM tool
 iperius_remote,Iperius Remote,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/iperius_remote_processes_sigma.yml,Detects potential processes activity of Iperius Remote RMM tool
 isl_light,ISL Light,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/isl_light_network_sigma.yml,Detects potential network activity of ISL Light RMM tool
@@ -236,6 +248,10 @@ mikogo,Mikogo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma
 mikogo,Mikogo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_processes_sigma.yml,Detects potential processes activity of Mikogo RMM tool
 mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mionet__also_known_as_wd_anywhere_access__processes_sigma.yml,Detects potential processes activity of MioNet (Also known as WD Anywhere Access) RMM tool
 mionet_(wd_anywhere_access),MioNet (WD Anywhere Access),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mionet__wd_anywhere_access__processes_sigma.yml,Detects potential processes activity of MioNet (WD Anywhere Access) RMM tool
+monitic,Monitic,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/monitic_files_sigma.yml,Detects potential files activity of Monitic RMM tool
+monitic,Monitic,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/monitic_network_sigma.yml,Detects potential network activity of Monitic RMM tool
+monitic,Monitic,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/monitic_processes_sigma.yml,Detects potential processes activity of Monitic RMM tool
+monitic,Monitic,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/monitic_registry_sigma.yml,Detects potential registry activity of Monitic RMM tool
 mousewithoutborders,Mouse Without Borders,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mouse_without_borders_files_sigma.yml,Detects potential files activity of Mouse Without Borders RMM tool
 mremoteng,mRemoteNG,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mremoteng_network_sigma.yml,Detects potential network activity of mRemoteNG RMM tool
 mremoteng,mRemoteNG,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mremoteng_files_sigma.yml,Detects potential files activity of mRemoteNG RMM tool
@@ -270,6 +286,7 @@ neturo,Neturo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma
 neturo,Neturo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/neturo_processes_sigma.yml,Detects potential processes activity of Neturo RMM tool
 netviewer,Netviewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer_network_sigma.yml,Detects potential network activity of Netviewer RMM tool
 netviewer,Netviewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer_processes_sigma.yml,Detects potential processes activity of Netviewer RMM tool
+netviewer_(gotomeet),Netviewer (GoToMeet),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer__gotomeet__network_sigma.yml,Detects potential network activity of Netviewer (GoToMeet) RMM tool
 netviewer_(gotomeet),Netviewer (GoToMeet),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer__gotomeet__processes_sigma.yml,Detects potential processes activity of Netviewer (GoToMeet) RMM tool
 ngrok,ngrok,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_network_sigma.yml,Detects potential network activity of ngrok RMM tool
 ngrok,ngrok,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_processes_sigma.yml,Detects potential processes activity of ngrok RMM tool
@@ -342,7 +359,8 @@ rdpview,RDPView,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sig
 rdpwrap,rdpwrap,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpwrap_network_sigma.yml,Detects potential network activity of rdpwrap RMM tool
 rdpwrap,rdpwrap,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpwrap_processes_sigma.yml,Detects potential processes activity of rdpwrap RMM tool
 remcos,Remcos,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remcos_processes_sigma.yml,Detects potential processes activity of Remcos RMM tool
-remmon,Remmon,,"QRadar AQL query for detecting Remmon process execution via EventID 4688, tracking parent process name, process name, and command-line arguments"
+remmon,Remmon,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remmon_network_sigma.yml,Detects potential network activity of Remmon RMM tool
+remmon,Remmon,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remmon_processes_sigma.yml,Detects potential processes activity of Remmon RMM tool
 remobo,Remobo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remobo_network_sigma.yml,Detects potential network activity of Remobo RMM tool
 remobo,Remobo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remobo_processes_sigma.yml,Detects potential processes activity of Remobo RMM tool
 remote.it,Remote.it,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remote.it_network_sigma.yml,Detects potential network activity of Remote.it RMM tool
@@ -364,9 +382,15 @@ remoteutilities,RemoteUtilities,https://github.com/magicsword-io/LOLRMM/blob/mai
 remoteutilities,RemoteUtilities,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remoteutilities_processes_sigma.yml,Detects potential processes activity of RemoteUtilities RMM tool
 remoteview,RemoteView,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remoteview_network_sigma.yml,Detects potential network activity of RemoteView RMM tool
 remoteview,RemoteView,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remoteview_processes_sigma.yml,Detects potential processes activity of RemoteView RMM tool
+remsupp,RemSupp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remsupp_files_sigma.yml,Detects potential files activity of RemSupp RMM tool
+remsupp,RemSupp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remsupp_network_sigma.yml,Detects potential network activity of RemSupp RMM tool
+remsupp,RemSupp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remsupp_processes_sigma.yml,Detects potential processes activity of RemSupp RMM tool
+remsupp,RemSupp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remsupp_registry_sigma.yml,Detects potential registry activity of RemSupp RMM tool
 res_automation_manager,RES Automation Manager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/res_automation_manager_network_sigma.yml,Detects potential network activity of RES Automation Manager RMM tool
 res_automation_manager,RES Automation Manager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/res_automation_manager_processes_sigma.yml,Detects potential processes activity of RES Automation Manager RMM tool
 rocketremotedesktop,Rocket Remote Desktop,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rocket_remote_desktop_processes_sigma.yml,Detects potential processes activity of Rocket Remote Desktop RMM tool
+rodexrmm,Rodex RMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rodexrmm_files_sigma.yml,Detects potential files activity of Rodex RMM tool
+rodexrmm,Rodex RMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rodexrmm_processes_sigma.yml,Detects potential processes activity of Rodex RMM tool
 royal_apps,Royal Apps,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/royal_apps_network_sigma.yml,Detects potential network activity of Royal Apps RMM tool
 royal_apps,Royal Apps,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/royal_apps_processes_sigma.yml,Detects potential processes activity of Royal Apps RMM tool
 royal_server,Royal Server,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/royal_server_network_sigma.yml,Detects potential network activity of Royal Server RMM tool
@@ -444,6 +468,14 @@ teamviewer,TeamViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detectio
 teamviewer,TeamViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teamviewer_processes_sigma.yml,Detects potential processes activity of TeamViewer RMM tool
 teledesktop,TeleDesktop,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teledesktop_network_sigma.yml,Detects potential network activity of TeleDesktop RMM tool
 teledesktop,TeleDesktop,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teledesktop_processes_sigma.yml,Detects potential processes activity of TeleDesktop RMM tool
+teramind,Teramind,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teramind_files_sigma.yml,Detects potential files activity of Teramind RMM tool
+teramind,Teramind,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teramind_network_sigma.yml,Detects potential network activity of Teramind RMM tool
+teramind,Teramind,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teramind_processes_sigma.yml,Detects potential processes activity of Teramind RMM tool
+teramind,Teramind,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teramind_registry_sigma.yml,Detects potential registry activity of Teramind RMM tool
+tiflux,TiFLUX,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tiflux_registry_sigma.yml,Detects potential registry activity of TiFLUX RMM tool
+tiflux,TiFLUX,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tiflux_network_sigma.yml,Detects potential network activity of TiFLUX RMM tool
+tiflux,TiFLUX,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tiflux_files_sigma.yml,Detects potential files activity of TiFLUX RMM tool
+tiflux,TiFLUX,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tiflux_processes_sigma.yml,Detects potential processes activity of TiFLUX RMM tool
 tigervnc,TigerVNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tigervnc_network_sigma.yml,Detects potential network activity of TigerVNC RMM tool
 tigervnc,TigerVNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tigervnc_processes_sigma.yml,Detects potential processes activity of TigerVNC RMM tool
 tightvnc,TightVNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tightvnc_network_sigma.yml,Detects potential network activity of TightVNC RMM tool
@@ -462,6 +494,10 @@ updatesimplehelp,SimpleHelp,https://github.com/magicsword-io/LOLRMM/blob/main/de
 updatesimplehelp,SimpleHelp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/simplehelp_processes_sigma.yml,Detects potential processes activity of SimpleHelp RMM tool
 veyon,Veyon,,"Detects Veyon RMM activity through registry modifications (EventCode 13), process creation (EventCode 1), and service installation (EventCode 4697)"
 visual_studio_dev_tunnel,Visual Studio Dev Tunnel,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/visual_studio_dev_tunnel_network_sigma.yml,Detects potential network activity of Visual Studio Dev Tunnel RMM tool
+vizor,VIZOR,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vizor_files_sigma.yml,Detects potential files activity of VIZOR RMM tool
+vizor,VIZOR,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vizor_network_sigma.yml,Detects potential network activity of VIZOR RMM tool
+vizor,VIZOR,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vizor_processes_sigma.yml,Detects potential processes activity of VIZOR RMM tool
+vizor,VIZOR,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vizor_registry_sigma.yml,Detects potential registry activity of VIZOR RMM tool
 vnc,VNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vnc_network_sigma.yml,Detects potential network activity of VNC RMM tool
 vnc,VNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vnc_processes_sigma.yml,Detects potential processes activity of VNC RMM tool
 webrdp,WebRDP,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/webrdp_network_sigma.yml,Detects potential network activity of WebRDP RMM tool

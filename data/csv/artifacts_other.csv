@@ -1,6 +1,104 @@
 slug,name,type,value
 anydesk,AnyDesk,User-Agent,AnyDesk/*
 anydesk,AnyDesk,NamedPipe,adprinterpipe
+controlio,Controlio,Service,weSvcService
+freshservice,Freshservice,URL,https://fstools.freshservice.com/agent/win-installer-3.10.0.msi
+freshservice,Freshservice,URL,https://fstools.freshservice.com/agent/win-installer-3.7.0.msi
+freshservice,Freshservice,URL,https://fstools.freshservice.com/fs-windows-agent-3.10.0.msi
+freshservice,Freshservice,URL,https://fstools.freshservice.com/fs-windows-agent-3.5.0.msi
+freshservice,Freshservice,URL,https://fstools.freshservice.com/fs-probe-4.13.0.msi
+freshservice,Freshservice,URL,https://fstools.freshservice.com/fs-probe-4.4.0-betfairhelpdesk.msi
+freshservice,Freshservice,SHA256,773f976170f87167d63d55bf83c5f3853d3f10f01dd627ab3dfe0f02b6f25d48
+freshservice,Freshservice,SHA256,20ca682b3485bc5e9b407749fbc42c7b4148c3d6f00c17eab52e9a85bcc1e299
+freshservice,Freshservice,SHA256,ae7da71392831894071da4464588713db5fb3babdf5f1d0d88ae7927d3c19179
+freshservice,Freshservice,SHA256,16bdb59cb9772a6b8d430d7bc4811c89548aa68aeb833b41f49ce58efcaad48a
+freshservice,Freshservice,CodeSigningSubject,CN=Freshworks Inc
+freshservice,Freshservice,CodeSigningIssuer,DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+freshservice,Freshservice,ProductCode,{8BE075F9-36C7-4145-8BC0-35D420223576} (Freshservice Discovery Agent 3.10.0; UpgradeCode {6B686B63-A11D-42DE-9678-01FE705125C7}; per-version ProductCode — do not pin)
+freshservice,Freshservice,ProductCode,{892D2C60-AFC1-48C0-8C5D-A2DC856A3605} (FreshService Probe 4.13.0; UpgradeCode {82E36A19-1271-4411-ACEC-7BBE4B6BD17A}; per-version ProductCode — do not pin)
+getscreen,GetScreen,ServiceName,Getscreen.me
+getscreen,GetScreen,ServiceName,GetscreenSV
+getscreen,GetScreen,NamedPipe,PCommand*GetScreen.meout
+getscreen,GetScreen,NamedPipe,\\.\pipe\elevateGS512*
+getscreen,GetScreen,NamedPipe,\\.\pipe\PCommand*Getscreen.me*
+getscreen,GetScreen,CommandLine,getscreen.exe -install -register 87c34ca23sss391@tutamail.com
+getscreen,GetScreen,CommandLine,getscreen-x86.exe -gpipe \\.\pipe\PCommand*Getscreen.me* -gui
+getscreen,GetScreen,CommandLine,*-elevate.exe -elevate \\.\pipe\elevateGS512*
+getscreen,GetScreen,SHA256,611835aa02303ffa12762d412882a9fc7249ce1e52b931c0e8e58891c553548c
+getscreen,GetScreen,Authentihash,c547fa46ec6345b04fb131b77b918d3aad455701b4dd152f6f4f612ba8fcc545
+getscreen,GetScreen,PublisherCertSubject,"CN=POINT B LTD, O=POINT B LTD, L=Limassol, ST=Limassol, C=CY (jurisdictionC=CY, serialNumber=HE 430957, businessCategory=Private Organization)"
+getscreen,GetScreen,PublisherCertIssuer,"CN=GlobalSign GCC R45 EV CodeSigning CA 2020, O=GlobalSign nv-sa, C=BE"
+getscreen,GetScreen,PublisherCertSerial,7ae0e9c1cfe2dce0e21c4327
+getscreen,GetScreen,PublisherCertTBSSha256,3696C8A244152307EA16EA1613ED0ECAFD138F3AF475C5A03B5B80A77E5E240C
+glpi,GLPI Agent,Other,MSI default install path: C:\Program Files\GLPI-Agent (INSTALLDIR property)
+glpi,GLPI Agent,Other,"MSI execution modes: EXECMODE=1 (Service), EXECMODE=2 (Task scheduler), EXECMODE=3 (Manual)"
+glpi,GLPI Agent,Other,"MSI public properties used to silently configure the agent at install time: SERVER, TAG, USER, PASSWORD, TIMEOUT, RUNNOW, EXECMODE, HTTPD_IP, HTTPD_PORT, HTTPD_TRUST, ADDLOCAL"
+glpi,GLPI Agent,Other,"systemd unit on Linux: glpi-agent.service (ExecStart=/usr/bin/glpi-agent --daemon --no-fork $OPTIONS, After=syslog.target network.target, CapabilityBoundingSet=~CAP_SYS_PTRACE)"
+glpi,GLPI Agent,Other,Default embedded HTTP daemon listen port: 62354/tcp (httpd-port parameter)
+glpi,GLPI Agent,Other,"Code-signing publisher: Teclib' (per MSI Manufacturer string in Variables-v2.wxi.tt — Manufacturer=""Teclib'"")"
+glpi,GLPI Agent,Other,GLPI Agent 1.17 x64 MSI SHA-256: db2661a14359931a2d14ed7268f9b90763da4f2bec97b5ed8d51b9bb655d730c (signed via GlobalSign GCC R45 EV CodeSigning CA 2020 — OCSP host ocsp.globalsign.com)
+invgate,InvGate,Other,Windows service name: InvClient
+invgate,InvGate,Other,Vendor service display name: InvGate Assets Client
+invgate,InvGate,Other,"Windows Installer product GUIDs observed: {41F5BB80-6416-4AF4-B67B-FA36C29DB4C4} (v5.001.004), {F0076285-D0E2-4B49-92BD-25E0B7B27DF6} (v4.004.011)"
+invgate,InvGate,Other,"Default install root: C:\Program Files (x86)\Inventec\InvGate.net Client (the ""Inventec"" parent folder is a vendor naming holdover from the original product line and is preserved in modern Insight / Asset Management agent builds)"
+invgate,InvGate,Other,Agent ID file: C:\Program Files (x86)\Inventec\InvGate.net Client\invid — unique per-endpoint identifier persisted by the agent and used by the tenant to dedupe/refresh asset records
+invgate,InvGate,Other,Reporting cadence: cloud agent reports back to the InvGate Asset Management server every 8–12 hours; if the host is offline at the scheduled report time the agent reports immediately on next boot
+invgate,InvGate,Other,"Remote-via-Proxy push uses WMI/PsExec on Windows and SSH on Linux/macOS; deployment plans support up to 5,000 assets and accept .msi, .exe, .bat, .ps1 payloads"
+invgate,InvGate,Other,"Install-time bypass flag observed in vendor docs: VERIFY_CERTS=false (Windows MSI property) and --verify_certs false (Linux/macOS), used to skip TLS validation when the agent connects to a self-signed on-prem Insight/IGAM URL"
+invgate,InvGate,Other,Android mobile agent: Google Play package com.invgate.insight.agent (publisher InvGate)
+invgate,InvGate,SHA256,d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8
+invgate,InvGate,MD5,e515948c8ede1192926e87df1740f876
+monitic,Monitic,URL,https://app.monitic.com/MoniticInstaller.exe
+monitic,Monitic,URL,https://app.monitic.com/installer
+monitic,Monitic,URL,https://api.monitic.com/api/ext/get-token
+monitic,Monitic,URL,https://api.monitic.com/api/ext/get-config
+monitic,Monitic,URL,https://api.monitic.com/api/ext/download-installer
+monitic,Monitic,URL,https://api.monitic.com/api/ext/check-sha256
+monitic,Monitic,URL,https://devapi.monitic.com/api/ext/download-installer
+monitic,Monitic,IP,77.37.120.252
+monitic,Monitic,ProofpointETSignature,ET INFO Observed RMM Domain in DNS Lookup ( * .monitic .com)
+monitic,Monitic,ProofpointETSignature,ET INFO Observed RMM Domain in TLS SNI ( * .monitic .com)
+monitic,Monitic,CodeSigningSubject,VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.
+monitic,Monitic,CodeSigningIssuer,GlobalSign GCC R45 EV CodeSigning CA 2020
+remsupp,RemSupp,CodeSigningSubject,"CN=RemSupp Michał Zarach, O=RemSupp Michał Zarach, L=Gdańsk, ST=Pomorskie, C=PL"
+remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 01, O=Microsoft Corporation, C=US"
+remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 02, O=Microsoft Corporation, C=US"
+remsupp,RemSupp,ProcessLineage,"RemSupp.exe self-check via cmd.exe /c tasklist /FI ""USERNAME eq %USERNAME%"" /FI ""IMAGENAME eq RemSupp.exe"" /FO csv | find ""RemSupp.exe"""
+remsupp,RemSupp,SHA256,994f537e69f555a6aca89db837f260aa31352d6c6bfe435d3ecafff0b8c683ae
+remsupp,RemSupp,SHA256,38a3e51bf0fad50dc3bb08f8ce9aa4e9d3f3c7561312605c6827a81984137532
+remsupp,RemSupp,SHA256,3cad287fbc89c40a4f481aac47d0c2b012388081c9924c09fdb2d29e5455100a
+rodexrmm,Rodex RMM,Note,"r3v13wd0s.com — alternate domain referenced in earlier writeups; flagged 14/91 malicious + tagged ""dga"" on VirusTotal. Likely a previous staging / payload-host name; rodex.cc appears to be the current marketing front."
 teamviewer,TeamViewer,Mutex,TeamViewer_LogMutex
 teamviewer,TeamViewer,Mutex,TeamViewerHooks_DynamicMemMutex
 teamviewer,TeamViewer,Mutex,TeamViewer3_Win32_Instance_Mutex
+teramind,Teramind,Service Name,tsvchst
+teramind,Teramind,macOS Daemon,tmsysd
+teramind,Teramind,URL,https://www.teramind.co/d/check?v=<version>&s=1&arch=<arch>
+teramind,Teramind,URL,https://www.teramind.co/d/update-shim.exe
+teramind,Teramind,Code Signing CN,Teramind Inc.
+teramind,Teramind,Code Signing Issuer,DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+teramind,Teramind,Product GUID,{4CEC2908-5CE4-48F0-A717-8FC833D8017A}
+teramind,Teramind,Product GUID,{6D99445F-F40F-45CB-B433-06302DAE6C70}
+teramind,Teramind,SHA256,e3ad70a1c8c540612dce4e90c3c619afafb429e297b5a1c9e1bbd4df985c4d24
+teramind,Teramind,SHA256,998b69af0d3af49021d331d2e46a1734f38e28f03fb4dd3425e023ecc0c0a066
+teramind,Teramind,SHA256,74e67c6671f6f987f4065e45ddd0cd7785be2330e2e0d273225a2b80bec405b1
+teramind,Teramind,Snort/Suricata SID,ET INFO Teramind RMM Domain (teramind .co) in DNS Lookup (Proofpoint Emerging Threats Open)
+teramind,Teramind,Snort/Suricata SID,ET INFO Observed Teramind RMM Domain (teramind .co) in TLS SNI (Proofpoint Emerging Threats Open)
+tiflux,TiFLUX,URL,https://agent.tiflux.com/ws
+tiflux,TiFLUX,URL,https://agent.tiflux.com/equipment_users/get_or_create.json
+tiflux,TiFLUX,URL,https://agent.tiflux.com/equipment/equipment_triggers_get.json
+tiflux,TiFLUX,URL,https://agent.tiflux.com/equipment/equipment_reg.json
+tiflux,TiFLUX,URL,https://agent.tiflux.com/equipment/services_triggers
+tiflux,TiFLUX,URL,https://agent.tiflux.com/r/equipment/ticket_list/<equipment_id>/<token>/<seq>
+tiflux,TiFLUX,IP,18.229.110.98
+vizor,VIZOR,Other,"Default install path (Vector Asset Management Client v6.0): C:\Program Files (x86)\Vector\Asset Management Client (ProductCode {04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}, DisplayVersion 6.0.7.1325, Publisher ""Vector Networks"")"
+vizor,VIZOR,Other,"Default install path (Vector Asset Management Client v5.7): C:\Program Files\Vector\Asset Management Client (ProductCode {A40A237D-C090-4C05-8580-9DBECFE3602B}, DisplayVersion 5.7.0.1390, Publisher ""Vector Networks"")"
+vizor,VIZOR,Other,Legacy install path (LANutil32 Suite branding): C:\Program Files\Vector Networks Limited\LANutil32 Suite (predecessor product line for the same discovery client)
+vizor,VIZOR,Other,"Vector Discovery Client service: DisplayName ""Vector Asset Management Agent"", runs as LocalSystem by default (per VIZOR Security Topics, ""Windows Account on Clients"")"
+vizor,VIZOR,Other,"Vector Discovery Server service: ""Vector Scheduler"" Windows service — parses inventory uploads from the Offline Area into the SQL Server database (per VIZOR Security Topics, ""Server-Side Process"")"
+vizor,VIZOR,Other,"Default agent transport port: 443/HTTPS to operator-configured IIS endpoint; configurable to any port (per VIZOR Security Topics, ""IP Ports"")"
+vizor,VIZOR,Other,"Software distribution: ""any valid code can be executed"" — the platform supports MSIs, batch files and arbitrary scripts pushed from the Vector Discovery Server to the agent (per Vector Asset Management v6.0 user manual)"
+vizor,VIZOR,Other,"Remote client install: uses ADMIN$ share + local administrator credentials when push-deploying the Vector Client (per VIZOR Security Topics, ""Client Deployment"")"
+vizor,VIZOR,Other,"Code-signing publisher: ""Vector Networks"" / ""Vector Networks Limited"" (per Windows file database listings for clboot32.exe — original product name ""LANutil32 Suite"")"
+vizor,VIZOR,Other,"VirusTotal — VIZOR 2.5.2 MSI_Merge bundle Setup.exe SHA-256: 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e (1/67 detection, low-prevalence Vector Networks-authored binary, registry footprint includes HKLM\SOFTWARE\Metaquest)"
+vizor,VIZOR,Other,"VirusTotal — Vector Networks LANutil32 / Vector Asset Management CLBOOTnn.EXE SHA-256: 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893 (1/72 detection; sandbox observed spawning C:\winchk32.exe, C:\cldist32.exe, C:\lusmbios16.exe and C:\luhboot.bat)"

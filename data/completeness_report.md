@@ -1,29 +1,29 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **296**
-- Fetched + parsed tools: **296**
+- Expected files (upstream listing): **306**
+- Fetched + parsed tools: **306**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 296 tools total:
+Of 306 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 289 | 98% |
-| installation_paths | 265 | 90% |
-| capabilities | 37 | 12% |
-| supported_os | 82 | 28% |
-| disk | 41 | 14% |
-| eventlog | 27 | 9% |
-| registry | 17 | 6% |
-| network | 215 | 73% |
-| other | 2 | 1% |
-| detections | 256 | 86% |
+| pe_metadata | 300 | 98% |
+| installation_paths | 275 | 90% |
+| capabilities | 47 | 15% |
+| supported_os | 92 | 30% |
+| disk | 53 | 17% |
+| eventlog | 35 | 11% |
+| registry | 26 | 8% |
+| network | 226 | 74% |
+| other | 13 | 4% |
+| detections | 265 | 87% |
 
-## Tools with no artifacts at all (73)
+## Tools with no artifacts at all (71)
 
 - `beyondtrust` (RMM)
 - `bitvise_ssh_client` (RAT)
@@ -62,7 +62,6 @@ Of 296 tools total:
 - `multcloud` (RAT)
 - `netmonitor` (RMM)
 - `netop` (RMM)
-- `netviewer_(gotomeet)` (RMM)
 - `ninjaone_(formerly_ninjarmm)` (RMM)
 - `nordlocker` (RAT)
 - `noteon-desktop_sharing` (RAT)
@@ -74,7 +73,6 @@ Of 296 tools total:
 - `realvnc` (RAT)
 - `remcos` (RMM)
 - `remmina` (RAT)
-- `remmon` (RMM)
 - `remote_desktop_manager_(devolutions)` (RAT)
 - `rocketremotedesktop` (RMM)
 - `s3_browser` (RAT)
@@ -99,12 +97,13 @@ Of 296 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (40)
+## Tools with no detections (41)
 
 - `beyondtrust` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
 - `chrome_ssh_extension` (RAT)
 - `connectwise` (RMM)
+- `controlio` (RMM)
 - `cruzcontrol` (RMM)
 - `desknets` (RMM)
 - `duet_display` (RAT)

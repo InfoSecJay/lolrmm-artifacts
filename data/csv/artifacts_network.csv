@@ -145,12 +145,51 @@ fleetdeck,FleetDeck.io,fleetdeck.io,443,Known remote domains
 fleetdeck,FleetDeck.io,agentmqtt.fleetdeck.io,443,Known remote domains
 fleetdeck,FleetDeck.io,checkip.zmazonaws.com,443,Known remote domains
 fortra,Fortra,fortra.com,,Known remote domains
+freshservice,Freshservice,fstools.freshservice.com,443,"Freshservice Discovery Agent + Discovery Probe MSI distribution and auto-update host (fs-windows-agent-*.msi, win-installer-*.msi, fs-probe-*.msi, AutoUpdate.exe, FSAgentAutoUpdate.exe); served over CloudFront. URL pattern confirmed via VirusTotal in-the-wild URLs for SHA256 773f976170f87167d63d55bf83c5f3853d3f10f01dd627ab3dfe0f02b6f25d48 (https://fstools.freshservice.com/agent/win-installer-3.10.0.msi)."
+freshservice,Freshservice,*.freshservice.com,443,Per-tenant Freshservice ITSM portal that the Discovery Agent and Discovery Probe report inventory back to (the Probe RegistrationKey JWT decodes to a portal_url payload pointing at https://<tenant>.freshservice.com).
+freshservice,Freshservice,freshservice.com,443,Freshservice corporate / marketing site referenced in the Discovery Agent and Probe MSIs.
+freshservice,Freshservice,www.freshservice.com,443,Freshservice corporate / marketing site referenced in the Discovery Agent and Probe MSIs.
+freshservice,Freshservice,fstools.freshasset.com,443,Legacy Freshservice Discovery infrastructure embedded in the Probe binary (`Freshservice.DiscoveryProbe.Window.exe` references `fstools.freshasset.com`); freshasset.com is a Freshworks-owned Amazon-Registrar-registered domain still used as a fallback distribution / discovery host.
+freshservice,Freshservice,freshasset.com,443,Legacy Freshservice Discovery infrastructure embedded in the Probe binary (`Freshservice.DiscoveryProbe.Window.exe` references `fstools.freshasset.com`); freshasset.com is a Freshworks-owned Amazon-Registrar-registered domain still used as a fallback distribution / discovery host.
+freshservice,Freshservice,*.myfreshworks.com,443,Freshworks platform identity/SSO and unified Freshworks API; the Freshservice tenant authentication flow and embedded Marketplace iframes load from these domains (browser-side; not invoked by the Discovery Agent service itself).
+freshservice,Freshservice,*.freshworksapi.com,443,Freshworks platform identity/SSO and unified Freshworks API; the Freshservice tenant authentication flow and embedded Marketplace iframes load from these domains (browser-side; not invoked by the Discovery Agent service itself).
+freshservice,Freshservice,*.freshworks.com,443,Freshworks platform identity/SSO and unified Freshworks API; the Freshservice tenant authentication flow and embedded Marketplace iframes load from these domains (browser-side; not invoked by the Discovery Agent service itself).
+freshservice,Freshservice,*.freshconnect.io,443,"Freshconnect collaboration (Freshworks-owned), used by the Freshservice agent web UI for in-ticket chat. Browser-side only."
+freshservice,Freshservice,api.fdcollab.com,443,"Freshconnect collaboration (Freshworks-owned), used by the Freshservice agent web UI for in-ticket chat. Browser-side only."
+freshservice,Freshservice,*.fdcollab.com,443,"Freshconnect collaboration (Freshworks-owned), used by the Freshservice agent web UI for in-ticket chat. Browser-side only."
+freshservice,Freshservice,*.freshchat.com,443,Freshchat / push notification infrastructure used by the Freshservice agent web UI. Browser-side only.
+freshservice,Freshservice,*.webpush.freshchat.com,443,Freshchat / push notification infrastructure used by the Freshservice agent web UI. Browser-side only.
+freshservice,Freshservice,apicdn-wchat.freshchat.com,443,Freshchat / push notification infrastructure used by the Freshservice agent web UI. Browser-side only.
+freshservice,Freshservice,*.rtschannel.com,443,Freshchat / push notification infrastructure used by the Freshservice agent web UI. Browser-side only.
+freshservice,Freshservice,*.freshdev.io,443,Freshworks Marketplace integration host serving Freshservice tenant customizations and Freddy AI assets. Browser-side only.
+freshservice,Freshservice,static.freshdev.io,443,Freshworks Marketplace integration host serving Freshservice tenant customizations and Freddy AI assets. Browser-side only.
+freshservice,Freshservice,*.freshcloud.io,443,Freshworks Marketplace integration host serving Freshservice tenant customizations and Freddy AI assets. Browser-side only.
+freshservice,Freshservice,*.in-freshbots.ai,443,Freshworks Marketplace integration host serving Freshservice tenant customizations and Freddy AI assets. Browser-side only.
+freshservice,Freshservice,<internal-customer-ranges>,22,"Discovery Probe network sweep — the Probe initiates outbound TCP scans against customer-internal IPs on the documented discovery ports for fingerprinting (135/RPC, 445/SMB, 22/SSH, 161/SNMP). Source: vendor doc ""Software requirements for Discovery Probe""."
+freshservice,Freshservice,<internal-customer-ranges>,135,"Discovery Probe network sweep — the Probe initiates outbound TCP scans against customer-internal IPs on the documented discovery ports for fingerprinting (135/RPC, 445/SMB, 22/SSH, 161/SNMP). Source: vendor doc ""Software requirements for Discovery Probe""."
+freshservice,Freshservice,<internal-customer-ranges>,161,"Discovery Probe network sweep — the Probe initiates outbound TCP scans against customer-internal IPs on the documented discovery ports for fingerprinting (135/RPC, 445/SMB, 22/SSH, 161/SNMP). Source: vendor doc ""Software requirements for Discovery Probe""."
+freshservice,Freshservice,<internal-customer-ranges>,445,"Discovery Probe network sweep — the Probe initiates outbound TCP scans against customer-internal IPs on the documented discovery ports for fingerprinting (135/RPC, 445/SMB, 22/SSH, 161/SNMP). Source: vendor doc ""Software requirements for Discovery Probe""."
+freshservice,Freshservice,<internal-customer-ranges>,161,Discovery Probe SNMP polling (UDP/161 outbound to managed network devices for OID walks via SnmpSharpNet.dll).
 gatherplace-desktop_sharing,GatherPlace-desktop sharing,*.gatherplace.com,,Known remote domains
 gatherplace-desktop_sharing,GatherPlace-desktop sharing,*.gatherplace.net,,Known remote domains
 gatherplace-desktop_sharing,GatherPlace-desktop sharing,gatherplace.com,,Known remote domains
-getscreen,GetScreen,getscreen.me,,Known remote domains
-getscreen,GetScreen,GetScreen.me,,Known remote domains
-getscreen,GetScreen,*.getscreen.me,,Known remote domains
+getscreen,GetScreen,getscreen.me,443,Known remote domains
+getscreen,GetScreen,GetScreen.me,443,Known remote domains
+getscreen,GetScreen,*.getscreen.me,443,Known remote domains
+getscreen,GetScreen,go.getscreen.me,443,Known remote domains
+getscreen,GetScreen,image.getscreen.me,443,Known remote domains
+getscreen,GetScreen,px-*.getscreen.me,443,Known remote domains
+glpi,GLPI Agent,N/A (listens on httpd-ip — default 0.0.0.0 — on the agent host),62354,Embedded HTTP daemon listen port — the GLPI server (or the operator) connects to this port to trigger tasks on the endpoint. Default `httpd-port=62354` per the MSI properties; configurable.
+glpi,GLPI Agent,<operator-configured GLPI server>,80,"Outbound connection from agent to the operator-configured GLPI server (`server` parameter / MSI `SERVER` property). Endpoints are tenant-configured, not centralised — the agent talks to whatever URL the operator specifies (self-hosted GLPI, GLPI Network or attacker-controlled server)."
+glpi,GLPI Agent,<operator-configured GLPI server>,443,"Outbound connection from agent to the operator-configured GLPI server (`server` parameter / MSI `SERVER` property). Endpoints are tenant-configured, not centralised — the agent talks to whatever URL the operator specifies (self-hosted GLPI, GLPI Network or attacker-controlled server)."
+glpi,GLPI Agent,glpi-project.org,443,Official GLPI Project website — referenced from the agent (URLAbout) and used to download the agent installer
+glpi,GLPI Agent,www.glpi-project.org,443,Official GLPI Project website — referenced from the agent (URLAbout) and used to download the agent installer
+glpi,GLPI Agent,nightly.glpi-project.org,443,GLPI Project nightly build server — referenced by the bundled glpi-agent-deployment.vbs as `SetupNightlyLocation` (alternative install source)
+glpi,GLPI Agent,forum.glpi-project.org,443,GLPI Project community forum — bundled in MSI metadata as the support URL
+glpi,GLPI Agent,glpi-network.com,443,"Teclib commercial offering for GLPI (paid services, plugins, support) — operated by Teclib', the company that maintains GLPI and the GLPI Agent"
+glpi,GLPI Agent,services.glpi-network.com,443,"Teclib commercial offering for GLPI (paid services, plugins, support) — operated by Teclib', the company that maintains GLPI and the GLPI Agent"
+glpi,GLPI Agent,github.com,443,GitHub release host for the GLPI Agent installers (MSI / PKG / DEB / RPM / AppImage downloaded from this host by deployment scripts)
+glpi,GLPI Agent,objects.githubusercontent.com,443,GitHub release host for the GLPI Agent installers (MSI / PKG / DEB / RPM / AppImage downloaded from this host by deployment scripts)
 gorelormm,Gorelo RMM,app.gorelo.io,443,Called during access to remote control WebGUI access
 gorelormm,Gorelo RMM,gorelo-rmm.azurewebsites.net,443,Called during setup
 gorelormm,Gorelo RMM,gw.usw.gorelo.tech,443,Called during setup
@@ -207,6 +246,19 @@ instanthousecall,Instant Housecall,instanthousecall.com,,Known remote domains
 intelliadmin_remote_control,IntelliAdmin Remote Control,user_managed,,Known remote domains
 intelliadmin_remote_control,IntelliAdmin Remote Control,*.intelliadmin.com,,Known remote domains
 intelliadmin_remote_control,IntelliAdmin Remote Control,intelliadmin.com/remote-control,,Known remote domains
+invgate,InvGate,invgate.com,443,InvGate corporate / marketing site (referenced from agent installer and tenant console)
+invgate,InvGate,www.invgate.com,443,InvGate corporate / marketing site (referenced from agent installer and tenant console)
+invgate,InvGate,*.invgate.net,443,InvGate cloud tenant base domain — Insight / IGAM tenants are hosted as per-tenant subdomains on invgate.net (configured at agent install time as the Insight/IGAM URL); cloud agents reach the platform via a regional load balancer (lb-insight-001.invgate.net resolves to AWS elb in eu-central-1)
+invgate,InvGate,invgate.net,443,InvGate cloud tenant base domain — Insight / IGAM tenants are hosted as per-tenant subdomains on invgate.net (configured at agent install time as the Insight/IGAM URL); cloud agents reach the platform via a regional load balancer (lb-insight-001.invgate.net resolves to AWS elb in eu-central-1)
+invgate,InvGate,lb-insight-001.invgate.net,443,InvGate Insight / Asset Management cloud load balancer (CNAME prd-insight-000-999663879.eu-central-1.elb.amazonaws.com) — primary agent-to-platform endpoint for cloud tenants
+invgate,InvGate,trust.invgate.com,443,InvGate trust / status portal (Vanta-hosted at vantatrust.com)
+invgate,InvGate,trust-access.invgate.com,443,InvGate trust / status portal (Vanta-hosted at vantatrust.com)
+invgate,InvGate,instances-info.invgate.com,443,InvGate tenant management endpoints used during provisioning / instance lookup
+invgate,InvGate,instances-list.invgate.com,443,InvGate tenant management endpoints used during provisioning / instance lookup
+invgate,InvGate,releases.invgate.com,443,InvGate releases / developer / public docs portals referenced by the agent and integrators
+invgate,InvGate,docs.invgate.net,443,InvGate releases / developer / public docs portals referenced by the agent and integrators
+invgate,InvGate,help.invgate.com,443,InvGate releases / developer / public docs portals referenced by the agent and integrators
+invgate,InvGate,releases.invgate.com,443,InvGate Service Management Developer Manual (Service Desk REST API) — host used by integrations and bots talking to a tenant
 iperius_remote,Iperius Remote,*.iperiusremote.com,,Known remote domains
 iperius_remote,Iperius Remote,*.iperius.com,,Known remote domains
 iperius_remote,Iperius Remote,*.iperius-rs.com,,Known remote domains
@@ -301,6 +353,13 @@ miradore,Miradore,gateway.miradore.com,443,Known remote domains
 miradore,Miradore,*.miradore.com,443,Known remote domains
 miradore,Miradore,miradore.com,443,Known remote domains
 miradore,Miradore,gerwconline.blob.core.windows.net,443,Known remote domains
+monitic,Monitic,api.monitic.com,443,"Monitic agent control plane — config and installer download REST API (api.monitic.com/api/ext/get-config, /api/ext/download-installer, /api/ext/check-sha256, /api/ext/get-token)"
+monitic,Monitic,app.monitic.com,443,"Monitic tenant web console / installer hosting (app.monitic.com/MoniticInstaller.exe, app.monitic.com/installer)"
+monitic,Monitic,devapi.monitic.com,443,Monitic developer / staging API (referenced in MoniticInstaller.exe embedded URLs — https://devapi.monitic.com/api/ext/download-installer)
+monitic,Monitic,turn.monitic.com,443,Monitic WebRTC TURN relay for RustDesk peer-to-peer remote control fallback (turn.monitic.com → 77.37.120.252)
+monitic,Monitic,turn.monitic.com,3478,Monitic WebRTC TURN relay for RustDesk peer-to-peer remote control fallback (turn.monitic.com → 77.37.120.252)
+monitic,Monitic,monitic.com,443,Monitic corporate / marketing site
+monitic,Monitic,www.monitic.com,443,Monitic corporate / marketing site
 mousewithoutborders,Mouse Without Borders,,15100/tcp,Peer discovery and control traffic
 mousewithoutborders,Mouse Without Borders,,15101/tcp,Peer discovery and control traffic
 mremoteng,mRemoteNG,user_managed,,Known remote domains
@@ -366,6 +425,8 @@ netsupportmanager,NetSupport Manager,netsupportmanager.com,,Known remote domains
 netsupportmanager,NetSupport Manager,*.netsupportmanager.com,,Known remote domains
 neturo,Neturo,neturo.uplus.co.kr,,Known remote domains
 netviewer,Netviewer,download.cnet.com/Net-Viewer/3000-2370_4-10034828.html,,Known remote domains
+netviewer_(gotomeet),Netviewer (GoToMeet),*.netviewer.com,,Known remote domains
+netviewer_(gotomeet),Netviewer (GoToMeet),netviewer.com,,Known remote domains
 ngrok,ngrok,connect.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,connect.us.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,connect.eu.ngrok-agent.com,,Known remote domains
@@ -443,6 +504,8 @@ rdpview,RDPView,user_managed,,Known remote domains
 rdpview,RDPView,systemmanager.ru/dntu.en/rdp_view.htm,,Known remote domains
 rdpwrap,rdpwrap,user_managed,,Known remote domains
 rdpwrap,rdpwrap,github.com/stascorp/rdpwrap,,Known remote domains
+remmon,Remmon,*.remmon.hu,,Known remote domains
+remmon,Remmon,remmon.hu,,Known remote domains
 remobo,Remobo,user_managed,,Known remote domains
 remobo,Remobo,remobo.en.softonic.com,,Known remote domains
 remote.it,Remote.it,auth.api.remote.it,,Known remote domains
@@ -464,8 +527,13 @@ remoteutilities,RemoteUtilities,remoteutilities.com,,Known remote domains
 remoteview,RemoteView,*content.rview.com,,Known remote domains
 remoteview,RemoteView,*.rview.com,,Known remote domains
 remoteview,RemoteView,content.rview.com,,Known remote domains
+remsupp,RemSupp,api.remsupp.com,443,RemSupp API endpoint observed during analysis
+remsupp,RemSupp,download.remsupp.com,443,RemSupp installer / update download endpoint
 res_automation_manager,RES Automation Manager,user_managed,,Known remote domains
 res_automation_manager,RES Automation Manager,ivanti.com/,,Known remote domains
+rodexrmm,Rodex RMM,rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
+rodexrmm,Rodex RMM,www.rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
+rodexrmm,Rodex RMM,<operator-controlled VPS hostname or IP>,443,"Per-operator relay — the operator's own VPS hosts the Node.js dashboard / Go relay / MongoDB stack. Network destination is operator-controlled, not vendor-centralised, so per-campaign infrastructure varies. The agent connects back to whatever relay URL was baked in at install time over WebSocket (HTTPS:443 by default)."
 royal_apps,Royal Apps,user_managed,,Known remote domains
 royal_server,Royal Server,royalapps.com,,Known remote domains
 royal_ts,Royal TS,royalapps.com,,Known remote domains
@@ -500,8 +568,15 @@ senso.cloud,Senso.cloud,senso.cloud,,Known remote domains
 servereye,ServerEye,*.server-eye.de,,Known remote domains
 showmypc,ShowMyPC,*.showmypc.com,,Known remote domains
 showmypc,ShowMyPC,showmypc.com,,Known remote domains
-simplehelp,SimpleHelp,user_managed,,Known remote domains
-simplehelp,SimpleHelp,simple-help.com,,Known remote domains
+simplehelp,SimpleHelp,user_managed,443,Known remote domains
+simplehelp,SimpleHelp,simple-help.com,443,Known remote domains
+simplehelp,SimpleHelp,51.255.19.178,443,Known remote domains
+simplehelp,SimpleHelp,51.255.19.179,443,Known remote domains
+simplehelp,SimpleHelp,dronemaker.org,443,"Threat-actor-controlled SimpleHelp / Net Monitor infrastructure observed by Huntress during the ""Crazy"" (VoidCrypt) ransomware campaign documented in February 2026. NOT vendor-legitimate — these are attacker-operated SimpleHelp gateways and update servers."
+simplehelp,SimpleHelp,telesupportgroup.com,443,"Threat-actor-controlled SimpleHelp / Net Monitor infrastructure observed by Huntress during the ""Crazy"" (VoidCrypt) ransomware campaign documented in February 2026. NOT vendor-legitimate — these are attacker-operated SimpleHelp gateways and update servers."
+simplehelp,SimpleHelp,microuptime.com,443,"Threat-actor-controlled SimpleHelp / Net Monitor infrastructure observed by Huntress during the ""Crazy"" (VoidCrypt) ransomware campaign documented in February 2026. NOT vendor-legitimate — these are attacker-operated SimpleHelp gateways and update servers."
+simplehelp,SimpleHelp,192.144.34.42,443,"Threat-actor-controlled SimpleHelp / Net Monitor infrastructure observed by Huntress during the ""Crazy"" (VoidCrypt) ransomware campaign documented in February 2026. NOT vendor-legitimate — these are attacker-operated SimpleHelp gateways and update servers."
+simplehelp,SimpleHelp,160.191.182.41,443,"Threat-actor-controlled SimpleHelp / Net Monitor infrastructure observed by Huntress during the ""Crazy"" (VoidCrypt) ransomware campaign documented in February 2026. NOT vendor-legitimate — these are attacker-operated SimpleHelp gateways and update servers."
 site24x7,Site24x7,plus*.site24x7.com,,Known remote domains
 site24x7,Site24x7,plus*.site24x7.eu,,Known remote domains
 site24x7,Site24x7,plus*.site24x7.in,,Known remote domains
@@ -545,8 +620,8 @@ syncro,Syncro,repairshopr.com,,Known remote domains
 syncro,Syncro,kabutoservices.com,,Known remote domains
 syncro,Syncro,attachments.servably.com,,Known remote domains
 synergy,Synergy,user_managed,,Known remote domains
-syspectr,Syspectr,atled.syspectr.com,,Known remote domains
-syspectr,Syspectr,app.syspectr.com,,Known remote domains
+syspectr,Syspectr,*.syspectr.com,,Known remote domains
+syspectr,Syspectr,syspectr.com,,Known remote domains
 tactical_rmm,Tactical RMM,login.tailscale.com,,Known remote domains
 tactical_rmm,Tactical RMM,login.tailscale.com,,Known remote domains
 tactical_rmm,Tactical RMM,docs.tacticalrmm.com,,Known remote domains
@@ -562,6 +637,27 @@ teamviewer,TeamViewer,client.teamviewer.com,443,N/A
 teamviewer,TeamViewer,taf.teamviewer.com,443,N/A
 teledesktop,TeleDesktop,user_managed,,Known remote domains
 teledesktop,TeleDesktop,tele-desk.com,,Known remote domains
+teramind,Teramind,*.teramind.co,443,"Teramind cloud tenant base domain — wildcard *.teramind.co covers per-tenant subdomains (e.g. acme.teramind.co) used for the agent control channel and the customer web console. Backed by Cloudflare (104.20.25.93, 172.66.155.133). The Teramind agent installer also enforces the deployment-domain via the -do(<domain>) parameter, baking the tenant subdomain into the installer filename."
+teramind,Teramind,teramind.co,443,"Teramind cloud tenant base domain — wildcard *.teramind.co covers per-tenant subdomains (e.g. acme.teramind.co) used for the agent control channel and the customer web console. Backed by Cloudflare (104.20.25.93, 172.66.155.133). The Teramind agent installer also enforces the deployment-domain via the -do(<domain>) parameter, baking the tenant subdomain into the installer filename."
+teramind,Teramind,www.teramind.co,443,"Teramind cloud tenant base domain — wildcard *.teramind.co covers per-tenant subdomains (e.g. acme.teramind.co) used for the agent control channel and the customer web console. Backed by Cloudflare (104.20.25.93, 172.66.155.133). The Teramind agent installer also enforces the deployment-domain via the -do(<domain>) parameter, baking the tenant subdomain into the installer filename."
+teramind,Teramind,rt.teramind.co,443,"Teramind cloud realtime / WebSocket endpoint — async video upload, live screen, and offline video upload traffic over wss://. Vendor-documented hostname."
+teramind,Teramind,www.teramind.co,443,Teramind agent update / version check endpoint — directly observed as the in-the-wild URL contacted by Teramind.Setup.Updater.exe on launch (https://www.teramind.co/d/check?v=<version>&s=1&arch=<arch>) and as the download URL for the updater shim (https://www.teramind.co/d/update-shim.exe).
+teramind,Teramind,sentry.dev.teramind.co,443,Teramind Sentry telemetry endpoint embedded in signed Teramind binaries; used for crash / error reporting back to Teramind.
+teramind,Teramind,<on-prem-master-server-host>,10000,Teramind Master Server proprietary TLS protocol (on-premise deployments only). Used for agent ↔ Master Server control plane.
+teramind,Teramind,<on-prem-app-server-host>,10000,Teramind App Server traffic in multi-node on-premise deployments. Vendor-documented TCP port range.
+teramind,Teramind,<on-prem-app-server-host>,10001,Teramind App Server traffic in multi-node on-premise deployments. Vendor-documented TCP port range.
+teramind,Teramind,<on-prem-app-server-host>,10500,Teramind App Server traffic in multi-node on-premise deployments. Vendor-documented TCP port range.
+teramind,Teramind,<on-prem-app-server-host>,11000,Teramind App Server traffic in multi-node on-premise deployments. Vendor-documented TCP port range.
+teramind,Teramind,*.teramind.co,1000-65535,"Teramind agent audio recording transport. Vendor-documented UDP, random port from a wide range; tenants commonly punch the entire 1000-65535 range in firewalls."
+teramind,Teramind,www.teramind.co,80,Teramind agent deployment / update fetch over plaintext HTTP. Vendor-documented as port 80 for agent deployment / update transport.
+tiflux,TiFLUX,agent.tiflux.com,443,TiFLUX agent control channel — websocket and equipment registration / triggers JSON endpoints
+tiflux,TiFLUX,app.tiflux.com,443,TiFLUX tenant web console
+tiflux,TiFLUX,tiflux.com,443,TiFLUX corporate / marketing site (referenced from agent and installer)
+tiflux,TiFLUX,www.tiflux.com,443,TiFLUX corporate / marketing site (referenced from agent and installer)
+tiflux,TiFLUX,tiflux.com.br,443,TiFLUX corporate / marketing site (referenced from agent and installer)
+tiflux,TiFLUX,www.tiflux.com.br,443,TiFLUX corporate / marketing site (referenced from agent and installer)
+tiflux,TiFLUX,*.tiflux.com,443,TiFLUX per-tenant subdomains used to host the agent MSI installer download (also abused to deliver decoy MSIs named after legitimate software)
+tiflux,TiFLUX,my.splashtop.com,443,Splashtop infrastructure referenced by the agent only when the optional Splashtop remote-access integration is enabled in the tenant; the Splashtop client itself is not bundled in the TiFLUX MSI and is installed separately (see splashtop.yaml for Splashtop-specific artifacts)
 tigervnc,TigerVNC,user_managed,,Known remote domains
 tightvnc,TightVNC,user_managed,,Known remote domains
 tightvnc,TightVNC,tightvnc.com,,Known remote domains
@@ -586,6 +682,17 @@ updatesimplehelp,SimpleHelp,51.255.19.179,443,Known remote domains
 visual_studio_dev_tunnel,Visual Studio Dev Tunnel,global.rel.tunnels.api.visualstudio.com,,Known remote domains
 visual_studio_dev_tunnel,Visual Studio Dev Tunnel,*.rel.tunnels.api.visualstudio.com,,Known remote domains
 visual_studio_dev_tunnel,Visual Studio Dev Tunnel,*.devtunnels.ms,,Known remote domains
+vizor,VIZOR,<operator-configured Vector Discovery Server URL>,443,"Outbound connection from the Vector Discovery Client (Vector Asset Management Client) to the operator-configured Vector Discovery Server (a.k.a. Vector Asset Manager) over HTTP/HTTPS to IIS. Default port is 443 (HTTPS) per the VIZOR Security Topics document, configurable to any port. The endpoint URL is operator-configured and not centralised — every install can point at a different self-hosted IIS server, or at the vendor-hosted vizor.cloud tenant."
+vizor,VIZOR,<operator-configured Vector Discovery Server URL>,80,"Outbound connection from the Vector Discovery Client (Vector Asset Management Client) to the operator-configured Vector Discovery Server (a.k.a. Vector Asset Manager) over HTTP/HTTPS to IIS. Default port is 443 (HTTPS) per the VIZOR Security Topics document, configurable to any port. The endpoint URL is operator-configured and not centralised — every install can point at a different self-hosted IIS server, or at the vendor-hosted vizor.cloud tenant."
+vizor,VIZOR,vizor.cloud,443,"VIZOR Cloud / Vector Networks vendor-hosted endpoint. Both vector-networks.com and vizor.cloud resolve to 18.204.85.68 (AWS) per VirusTotal historical resolutions; *.vizor.cloud wildcard certificate issued by Sectigo. VIZOR Cloud uses TLS 1.2 with SHA-256, 2048-bit certificates per the VIZOR Security Topics document."
+vizor,VIZOR,www.vizor.cloud,443,"VIZOR Cloud / Vector Networks vendor-hosted endpoint. Both vector-networks.com and vizor.cloud resolve to 18.204.85.68 (AWS) per VirusTotal historical resolutions; *.vizor.cloud wildcard certificate issued by Sectigo. VIZOR Cloud uses TLS 1.2 with SHA-256, 2048-bit certificates per the VIZOR Security Topics document."
+vizor,VIZOR,vector-networks.com,443,"VIZOR Cloud / Vector Networks vendor-hosted endpoint. Both vector-networks.com and vizor.cloud resolve to 18.204.85.68 (AWS) per VirusTotal historical resolutions; *.vizor.cloud wildcard certificate issued by Sectigo. VIZOR Cloud uses TLS 1.2 with SHA-256, 2048-bit certificates per the VIZOR Security Topics document."
+vizor,VIZOR,www.vector-networks.com,443,"VIZOR Cloud / Vector Networks vendor-hosted endpoint. Both vector-networks.com and vizor.cloud resolve to 18.204.85.68 (AWS) per VirusTotal historical resolutions; *.vizor.cloud wildcard certificate issued by Sectigo. VIZOR Cloud uses TLS 1.2 with SHA-256, 2048-bit certificates per the VIZOR Security Topics document."
+vizor,VIZOR,metaquest.com,443,"Vector Networks legacy Metaquest brand domains carried in the vector-networks.com SSL certificate Subject Alt Names (SAN list — metaquest.com, mail.metaquest.com, www.metaquest.com — observed in cPanel-issued certificates 2020-2021 per VirusTotal historical SSL certificates). Same hosting infrastructure as vector-networks.com."
+vizor,VIZOR,mail.metaquest.com,443,"Vector Networks legacy Metaquest brand domains carried in the vector-networks.com SSL certificate Subject Alt Names (SAN list — metaquest.com, mail.metaquest.com, www.metaquest.com — observed in cPanel-issued certificates 2020-2021 per VirusTotal historical SSL certificates). Same hosting infrastructure as vector-networks.com."
+vizor,VIZOR,www.metaquest.com,443,"Vector Networks legacy Metaquest brand domains carried in the vector-networks.com SSL certificate Subject Alt Names (SAN list — metaquest.com, mail.metaquest.com, www.metaquest.com — observed in cPanel-issued certificates 2020-2021 per VirusTotal historical SSL certificates). Same hosting infrastructure as vector-networks.com."
+vizor,VIZOR,downloads.vector-networks.com,443,"Vector Networks downloads / support distribution host — serves the VIZOR MSI bundles, version directories (2.5.2, 2.50.2), Update Files.zip, VNConfig utility ZIPs and connector bundles. Operators (and threat actors emulating an operator) can pull the Vector Asset Management Client install media directly from these directories."
+vizor,VIZOR,www.vector-networks.com,443,"Vector Networks downloads / support distribution host — serves the VIZOR MSI bundles, version directories (2.5.2, 2.50.2), Update Files.zip, VNConfig utility ZIPs and connector bundles. Operators (and threat actors emulating an operator) can pull the Vector Asset Management Client install media directly from these directories."
 vnc,VNC,user_managed,,Known remote domains
 vnc,VNC,realvnc.com/en/connect/download/vnc,,Known remote domains
 webrdp,WebRDP,user_managed,,Known remote domains

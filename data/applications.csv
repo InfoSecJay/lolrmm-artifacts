@@ -8,6 +8,7 @@ action1_agent,action1_agent,action1,Action1,PEMetadata.OriginalFileName,RMM,Yes,
 Addigy,addigy,addigy,Addigy,Name,RMM,,https://addigy.com/,
 Adobe Connect,adobe connect,adobe_connect,Adobe Connect,Name,RAT,,https://www.adobe.com/products/adobeconnect.html,
 AeroAdmin,aeroadmin,aeroadmin,AeroAdmin,Name,RMM,,http://aeroadmin.com/,
+AgentInstaller.dll,agentinstaller.dll,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 AliWangWang-remote-control,aliwangwang-remote-control,aliwangwang-remote-control,AliWangWang-remote-control,Name,RMM,,https://wangwang.taobao.com/,
 Alpemix,alpemix,alpemix,Alpemix,Name,RMM,,https://www.alpemix.com/en/Home,Windows | Linux | Android | Mac | IOS
 Ammyy Admin,ammyy admin,ammyyadmin,Ammyy Admin,Name,RMM,Yes/1 active session at a time,https://www.ammyy.com,Windows
@@ -22,6 +23,7 @@ Aspia Client,aspia client,aspia,Aspia,PEMetadata.Description,RMM,,https://aspia.
 aspia_client,aspia_client,aspia,Aspia,PEMetadata.OriginalFileName,RMM,,https://aspia.org/,Windows | MacOS | Linux
 Atera,atera,atera,Atera,Name,RMM,30 day trial,https://www.atera.com/,Windows | MacOS | Linux
 AteraAgent,ateraagent,atera,Atera,PEMetadata.Description,RMM,30 day trial,https://www.atera.com/,Windows | MacOS | Linux
+AutoUpdate,autoupdate,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 Auvik,auvik,auvik,Auvik,Name,RMM,,https://www.auvik.com/,
 AweRay,aweray,aweray,AweRay,Name,RMM,,https://awesun.aweray.com/en,
 baramundi Management Agent,baramundi management agent,baramundi,baramundi Management Suite,PEMetadata.Description,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
@@ -48,10 +50,14 @@ Comodo RMM,comodo rmm,comodo_rmm,Comodo RMM,Name,RMM,,https://one.comodo.com/,Wi
 ConnectWise,connectwise,connectwise,ConnectWise,Name,RMM,,https://www.screenconnect.com/,
 Connectwise Automate (LabTech),connectwise automate (labtech),connectwise_automate_(labtech),Connectwise Automate (LabTech),Name,RMM,,https://www.connectwise.com/platform/automate,
 ConnectWise Control,connectwise control,connectwise_control,ConnectWise Control,Name,RMM,,https://www.screenconnect.com/,
+Controlio,controlio,controlio,Controlio,Name,RMM,true,https://controlio.net,Mac | Windows
 CrossLoop,crossloop,crossloop,CrossLoop,Name,RMM,,https://web.archive.org/web/20140117041805/http://www.crossloop.com/,
 CrossTec Remote Control,crosstec remote control,crosstec_remote_control,CrossTec Remote Control,Name,RMM,,https://web.archive.org/web/20220811150547/https://www.crosstecsoftware.com/remotecontrol,
 CruzControl,cruzcontrol,cruzcontrol,CruzControl,Name,RMM,,https://www.doradosoftware.com/products/cruzcontrol/,
 DameWare,dameware,dameware,DameWare,Name,RMM,,https://www.solarwinds.com/dameware/,
+Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter,default rename target for the teramind clipboard-monitor process; configurable via tmclipmonexe installer parameter,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name,default rename target for the teramind hidden agent core executable; configurable via tmagentexe installer parameter — collides intentionally with the legitimate desktop window manager process name,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+DepHlp,dephlp,invgate,InvGate,PEMetadata.OriginalFileName,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
 DeskDay,deskday,deskday,DeskDay,Name,RMM,,https://deskday.com/,Windows
 DeskNets,desknets,desknets,DeskNets,Name,RMM,,https://www.desknets.com/,
 DeskShare,deskshare,deskshare,DeskShare,Name,RMM,,https://deskshare.com/,
@@ -91,8 +97,39 @@ Free Ping Tool,free ping tool,free_ping_tool,Free Ping Tool,Name,RAT,,,
 Free Tools Launcher,free tools launcher,free_tools_launcher,Free Tools Launcher,Name,RMM,,https://www.manageengine.com/free-tools.html,
 FreeNX,freenx,freenx,FreeNX,Name,RAT,,,Windows
 FreeRDP,freerdp,freerdp,FreeRDP,Name,RAT,,https://www.freerdp.com/,
+Freshservice,freshservice,freshservice,Freshservice,Name,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Agent auto-updater (.NET, signed by ""Freshworks Inc""; pulls new agent MSIs from fstools.freshservice.com)","freshservice discovery agent auto-updater (.net, signed by ""freshworks inc""; pulls new agent msis from fstools.freshservice.com)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Agent crash reporter (.NET, signed by ""Freshworks Inc"")","freshservice discovery agent crash reporter (.net, signed by ""freshworks inc"")",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Agent custom-action DLL (.NET, runs the FSAgentService install/uninstall via msiexec)","freshservice discovery agent custom-action dll (.net, runs the fsagentservice install/uninstall via msiexec)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Agent SYSTEM service (.NET, signed by ""Freshworks Inc""; registers as Windows service `FSAgentService` and runs as LocalSystem)","freshservice discovery agent system service (.net, signed by ""freshworks inc""; registers as windows service `fsagentservice` and runs as localsystem)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Probe auto-updater (.NET, signed by ""Freshworks Inc""; pulls new probe MSIs from fstools.freshservice.com)","freshservice discovery probe auto-updater (.net, signed by ""freshworks inc""; pulls new probe msis from fstools.freshservice.com)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe crash reporter,freshservice discovery probe crash reporter,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe IP-range subnet calculator,freshservice discovery probe ip-range subnet calculator,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe scan progress UI helper,freshservice discovery probe scan progress ui helper,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe scheduled flush helper,freshservice discovery probe scheduled flush helper,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe scheduler helper (uses Microsoft.Win32.TaskScheduler.dll to register Windows scheduled tasks),freshservice discovery probe scheduler helper (uses microsoft.win32.taskscheduler.dll to register windows scheduled tasks),freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe SNMP OID library updater,freshservice discovery probe snmp oid library updater,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Probe SYSTEM scan service binary (registered as Windows service `FreshServiceScan`, LocalSystem, Automatic startup)","freshservice discovery probe system scan service binary (registered as windows service `freshservicescan`, localsystem, automatic startup)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe telemetry reporter,freshservice discovery probe telemetry reporter,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice Discovery Probe tray application (.NET, ConfuserEx-packed, signed by ""Freshworks Inc""; references fstools.freshservice.com and the legacy fstools.freshasset.com)","freshservice discovery probe tray application (.net, confuserex-packed, signed by ""freshworks inc""; references fstools.freshservice.com and the legacy fstools.freshasset.com)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice Discovery Probe uninstall reporter,freshservice discovery probe uninstall reporter,freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+"Freshservice WMI inventory helper invoked by the Discovery Agent / Probe (.NET, signed by ""Freshworks Inc"")","freshservice wmi inventory helper invoked by the discovery agent / probe (.net, signed by ""freshworks inc"")",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice.DiscoveryProbe.AutoFlush,freshservice.discoveryprobe.autoflush,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice.DiscoveryProbe.OIDLibraryPuller,freshservice.discoveryprobe.oidlibrarypuller,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice.DiscoveryProbe.ProgressBar,freshservice.discoveryprobe.progressbar,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice.DiscoveryProbe.ScanService,freshservice.discoveryprobe.scanservice,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+Freshservice.DiscoveryProbe.Window,freshservice.discoveryprobe.window,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSAgentAutoUpdate,fsagentautoupdate,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSAgentCrashStatusUpdater,fsagentcrashstatusupdater,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSAgentService,fsagentservice,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSProbeCrashStatusUpdater,fsprobecrashstatusupdater,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSProbeReporter,fsprobereporter,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSScheduler,fsscheduler,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+FSWmiScanner,fswmiscanner,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 GatherPlace-desktop sharing,gatherplace-desktop sharing,gatherplace-desktop_sharing,GatherPlace-desktop sharing,Name,RMM,,https://web.archive.org/web/20241106023713/https://www.gatherplace.com/,
 GetScreen,getscreen,getscreen,GetScreen,Name,RMM,,https://getscreen.me/,Windows
+"Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B Ltd). Distributed as a UPX-packed PE32 (x86) GUI executable from https://getscreen.me/download/getscreen-x86.exe. Current binaries (file version 3.5.0+) are signed by POINT B LTD (Cyprus, registered HE 430957) on a GlobalSign GCC R45 EV CodeSigning chain. Older 2020-2021 era binaries were signed by OOO ""GET SKRIN SOFTVER"" on a COMODO RSA Extended Validation Code Signing CA chain (now expired).","getscreen.me agent (productname/internalname: getscreen.me, companyname: point b ltd). distributed as a upx-packed pe32 (x86) gui executable from https://getscreen.me/download/getscreen-x86.exe. current binaries (file version 3.5.0+) are signed by point b ltd (cyprus, registered he 430957) on a globalsign gcc r45 ev codesigning chain. older 2020-2021 era binaries were signed by ooo ""get skrin softver"" on a comodo rsa extended validation code signing ca chain (now expired).",getscreen,GetScreen,PEMetadata.Description,RMM,,https://getscreen.me/,Windows
+GLPI Agent,glpi agent,glpi,GLPI Agent,Name,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 Gorelo RMM,gorelo rmm,gorelormm,Gorelo RMM,Name,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
 Gorelo.Rmm.Setup,gorelo.rmm.setup,gorelormm,Gorelo RMM,PEMetadata.OriginalFileName,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
 GoTo Opener,goto opener,goto_opener,GoTo Opener,Name,RMM,,https://support.goto.com/meeting/help/about-the-goto-opener,
@@ -108,6 +145,8 @@ HelpBeam,helpbeam,helpbeam,HelpBeam,Name,RMM,,https://web.archive.org/web/201412
 HelpU,helpu,helpu,HelpU,Name,RMM,,https://helpu.co.kr/,
 HopToDesk,hoptodesk,hoptodesk,HopToDesk,Name,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
 HopToDesk remote desktop application (verified via VirusTotal),hoptodesk remote desktop application (verified via virustotal),hoptodesk,HopToDesk,PEMetadata.Description,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
+HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista),http download helper used by the vector asset management client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on windows vista),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+HTTP push helper used by the Vector Asset Management Client to upload inventory to the Vector Discovery Server / IIS endpoint,http push helper used by the vector asset management client to upload inventory to the vector discovery server / iis endpoint,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 I'm InTouch,i'm intouch,i'm_intouch,I'm InTouch,Name,RMM,,https://locator.01com.com/,
 iDrive,idrive,idrive,iDrive,Name,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
 iDrive Classic client executable,idrive classic client executable,idrive,iDrive,PEMetadata.Description,RAT,false,https://www.idrive.com/,Windows | macOS | Linux | Android | iOS
@@ -126,7 +165,17 @@ Instant Housecall,instant housecall,instant_housecall,Instant Housecall,Name,RMM
 Instant Housecall,instant housecall,instanthousecall,Instant Housecall,Name,RMM,,https://instanthousecall.com/,
 Insync,insync,insync,Insync,Name,RAT,,,
 IntelliAdmin Remote Control,intelliadmin remote control,intelliadmin_remote_control,IntelliAdmin Remote Control,Name,RMM,,http://www.intelliadmin.com/index.php/remote-control/,
+Inventory data injection / push utility,inventory data injection / push utility,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
+InvGate,invgate,invgate,InvGate,Name,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+"InvGate Assets Client primary endpoint binary; runs as the InvClient SYSTEM service. Vendor ""InvGate""; reported sample sha256 d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8 (Win32 EXE, ~932 KB, version 4.004.001).","invgate assets client primary endpoint binary; runs as the invclient system service. vendor ""invgate""; reported sample sha256 d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8 (win32 exe, ~932 kb, version 4.004.001).",invgate,InvGate,PEMetadata.Description,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+InvGate Assets deployment helper used by the software-deployment module.,invgate assets deployment helper used by the software-deployment module.,invgate,InvGate,PEMetadata.Description,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+InvGate Assets RD helper located under \files\ within the install directory.,invgate assets rd helper located under \files\ within the install directory.,invgate,InvGate,PEMetadata.Description,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+InvGate Assets remote-desktop / remote-support helper invoked from the agent (size ~1.32 MB on v5.001.071 builds).,invgate assets remote-desktop / remote-support helper invoked from the agent (size ~1.32 mb on v5.001.071 builds).,invgate,InvGate,PEMetadata.Description,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+InvGate-ED,invgate-ed,invgate,InvGate,PEMetadata.OriginalFileName,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+InvGateAssetsRD,invgateassetsrd,invgate,InvGate,PEMetadata.OriginalFileName,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
+InvGateRD,invgaterd,invgate,InvGate,PEMetadata.OriginalFileName,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
 Iperius Remote,iperius remote,iperius_remote,Iperius Remote,Name,RMM,,https://www.iperiusremote.com/,
+IPRangeCalculator,iprangecalculator,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 ISL Light,isl light,isl_light,ISL Light,Name,RMM,,https://www.islonline.com/downloads/isl-light.htm,
 ISL Online,isl online,isl_online,ISL Online,Name,RMM,,https://www.islonline.com/,Windows
 ISL Online,isl online,islonline,ISL Online,Name,RMM,,https://www.islonline.com/,
@@ -158,6 +207,7 @@ LMIGuardianSvc,lmiguardiansvc,logmein,LogMeIn,PEMetadata.Product,RMM,,https://ww
 LogMeIn,logmein,logmein,LogMeIn,Name,RMM,,https://www.logmein.com/,
 LogMeIn rescue,logmein rescue,logmein_rescue,LogMeIn rescue,Name,RMM,,https://www.logmein.com/products/rescue,
 Lunixar,lunixar,lunixar,Lunixar,Name,RMM,,https://lunixar.com/en/,Windows
+Main GLPI Agent executable / Perl entrypoint,main glpi agent executable / perl entrypoint,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 Manage Engine (Desktop Central),manage engine (desktop central),manage_engine_(desktop_central),Manage Engine (Desktop Central),Name,RMM,,https://desktopcentral.manageengine.com,
 ManageEngine,manageengine,manageengine,ManageEngine,Name,RMM,,https://www.manageengine.com/,
 ManageEngine RMM Central,manageengine rmm central,manageengine_rmm_central,ManageEngine RMM Central,Name,RMM,,https://www.manageengine.com/remote-monitoring-management/,
@@ -177,6 +227,11 @@ Miradore,miradore,miradore,Miradore,Name,RMM,Free tier available,https://www.mir
 Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal),miradore installer msi (observed renamed in phishing campaigns - verified via virustotal),miradore,Miradore,PEMetadata.Description,RMM,Free tier available,https://www.miradore.com/,Windows | Mac | Linux | iOS | Android
 MobaXterm,mobaxterm,mobaxterm,MobaXterm,Name,RAT,,https://mobaxterm.mobatek.net/,
 Mocha VNC Lite,mocha vnc lite,mocha_vnc_lite,Mocha VNC Lite,Name,RAT,,,
+Monitic,monitic,monitic,Monitic,Name,RMM,14-day free trial (no credit card),https://www.monitic.com/,Windows | Linux | MacOS
+"Monitic agent bootstrap installer (Themida-packed Win32 PE, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ. via GlobalSign GCC R45 EV CodeSigning CA 2020). Hosted at https://app.monitic.com/MoniticInstaller.exe; observed sha256 d641841cdf83037b32e699f01da16b66a9064221013dfec43d7a3bc993d6181d (3/2026) and 924238d5c8b4c882f236053c394d1a9510b6a1fe028ae5437eed7785774b1462 (7/2025). On launch it executes `rundll32 url.dll,FileProtocolHandler https://app.monitic.com/installer` to open the installer flow in the user's browser.","monitic agent bootstrap installer (themida-packed win32 pe, signed by vault bi̇li̇şi̇m si̇stemleri̇ ltd.şti̇. via globalsign gcc r45 ev codesigning ca 2020). hosted at https://app.monitic.com/moniticinstaller.exe; observed sha256 d641841cdf83037b32e699f01da16b66a9064221013dfec43d7a3bc993d6181d (3/2026) and 924238d5c8b4c882f236053c394d1a9510b6a1fe028ae5437eed7785774b1462 (7/2025). on launch it executes `rundll32 url.dll,fileprotocolhandler https://app.monitic.com/installer` to open the installer flow in the user's browser.",monitic,Monitic,PEMetadata.Description,RMM,14-day free trial (no credit card),https://www.monitic.com/,Windows | Linux | MacOS
+"Monitic agent monitor / watchdog binary (~6 MB Go executable, Themida-packed, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\amon.exe and registered as a SYSTEM service via `amon.exe install` then started with `amon.exe start`. Calls https://api.monitic.com/api/ext/check-sha256 for integrity check / config polling. Observed sha256 71cd67afd19f9f5d0cf00d92034c40b674e3b4d9888f5be6c2f401c52863a523 (10/2025).","monitic agent monitor / watchdog binary (~6 mb go executable, themida-packed, signed by vault bi̇li̇şi̇m si̇stemleri̇ ltd.şti̇.). installed to c:\program files\monitic\amon.exe and registered as a system service via `amon.exe install` then started with `amon.exe start`. calls https://api.monitic.com/api/ext/check-sha256 for integrity check / config polling. observed sha256 71cd67afd19f9f5d0cf00d92034c40b674e3b4d9888f5be6c2f401c52863a523 (10/2025).",monitic,Monitic,PEMetadata.Description,RMM,14-day free trial (no credit card),https://www.monitic.com/,Windows | Linux | MacOS
+"Monitic primary agent binary (~50-60 MB .NET executable, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\agent.exe and registered as a SYSTEM service via `agent.exe install`. Bundles RustDesk for remote desktop (libvpx-1.dll, WinPthreadGC.dll observed in dropped-files), the kopia.io backup engine, and uses WMI (`Get-WmiObject Win32_BIOS / Win32_Processor / Win32_DiskDrive / Win32_BaseBoard`) for hardware fingerprinting. Spawns a child `tunnel.exe` (taskkill /IM tunnel.exe /F observed in lifecycle). Observed sha256 9c6b26fe30870775a42d02804c9094c83479850a87703d95ebd8631ad8188b8e (11/2025).","monitic primary agent binary (~50-60 mb .net executable, signed by vault bi̇li̇şi̇m si̇stemleri̇ ltd.şti̇.). installed to c:\program files\monitic\agent.exe and registered as a system service via `agent.exe install`. bundles rustdesk for remote desktop (libvpx-1.dll, winpthreadgc.dll observed in dropped-files), the kopia.io backup engine, and uses wmi (`get-wmiobject win32_bios / win32_processor / win32_diskdrive / win32_baseboard`) for hardware fingerprinting. spawns a child `tunnel.exe` (taskkill /im tunnel.exe /f observed in lifecycle). observed sha256 9c6b26fe30870775a42d02804c9094c83479850a87703d95ebd8631ad8188b8e (11/2025).",monitic,Monitic,PEMetadata.Description,RMM,14-day free trial (no credit card),https://www.monitic.com/,Windows | Linux | MacOS
+MoniticInstaller,moniticinstaller,monitic,Monitic,PEMetadata.OriginalFileName,RMM,14-day free trial (no credit card),https://www.monitic.com/,Windows | Linux | MacOS
 Mouse Without Borders,mouse without borders,mousewithoutborders,Mouse Without Borders,Name,RAT,true,https://www.microsoft.com/en-us/download/details.aspx?id=35460,Windows
 MouseWithoutBorders,mousewithoutborders,mousewithoutborders,Mouse Without Borders,PEMetadata.OriginalFileName,RAT,true,https://www.microsoft.com/en-us/download/details.aspx?id=35460,Windows
 mRemoteNG,mremoteng,mremoteng,mRemoteNG,Name,RAT,,https://mremoteng.org/,
@@ -228,6 +283,7 @@ Pcnow,pcnow,pcnow,Pcnow,Name,RMM,,,
 Pcvisit,pcvisit,pcvisit,Pcvisit,Name,RMM,,https://www.pcvisit.de/,
 PDQ Connect,pdq connect,pdq_connect,PDQ Connect,Name,RMM,,https://www.pdq.com/pdq-connect/,
 Pilixo,pilixo,pilixo,Pilixo,Name,RMM,,,
+plink,plink,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 Pocket Cloud (Wyse),pocket cloud (wyse),pocket_cloud_(wyse),Pocket Cloud (Wyse),Name,RMM,,,
 Pocket Controller,pocket controller,pocket_controller,Pocket Controller,Name,RMM,,https://soti.net/products/soti-pocket-controller,Windows
 Pocket Controller (Soti Xsight),pocket controller (soti xsight),pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),Name,RMM,,https://soti.net/products/soti-xsight/,Windows
@@ -235,6 +291,7 @@ PSEXEC,psexec,psexec,PSEXEC,Name,RAT,,https://learn.microsoft.com/en-us/sysinter
 PSEXEC (Clone),psexec (clone),psexec_(clone),PSEXEC (Clone),Name,RAT,,,
 Pulseway,pulseway,pulseway,Pulseway,Name,RMM,,https://www.pulseway.com/,
 PuTTY,putty,putty,PuTTY,Name,RAT,,https://www.chiark.greenend.org.uk/~sgtatham/putty/,
+"PuTTY plink.exe (PuTTY 0.62) bundled inside the Freshservice Discovery Probe MSI for SSH-based scanning of Linux/Unix hosts (legitimate redistributable, but executes from the Freshservice install dir)","putty plink.exe (putty 0.62) bundled inside the freshservice discovery probe msi for ssh-based scanning of linux/unix hosts (legitimate redistributable, but executes from the freshservice install dir)",freshservice,Freshservice,PEMetadata.Description,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 PuTTY Tray,putty tray,putty_tray,PuTTY Tray,Name,RAT,,https://github.com/FauxFaux/PuTTYTray,
 QQ IM-remote assistance,qq im-remote assistance,qq_im-remote_assistance,QQ IM-remote assistance,Name,RMM,,,
 Quest KACE Agent (formerly Dell KACE),quest kace agent (formerly dell kace),quest_kace_agent_(formerly_dell_kace),Quest KACE Agent (formerly Dell KACE),Name,RMM,,https://www.quest.com/kace/,
@@ -252,8 +309,9 @@ rdpwrap,rdpwrap,rdpwrap,rdpwrap,Name,RAT,,https://github.com/stascorp/rdpwrap,
 RealVNC,realvnc,realvnc,RealVNC,Name,RAT,,https://www.realvnc.com/en/connect/,
 Remcos,remcos,remcos,Remcos,Name,RMM,,,
 Remmina,remmina,remmina,Remmina,Name,RAT,,https://remmina.org/,
-Remmon,remmon,remmon,Remmon,Name,RMM,true,https://github.com/Netzwerkfehler/remmon,Windows | Linux
+Remmon,remmon,remmon,Remmon,Name,RMM,,,
 Remobo,remobo,remobo,Remobo,Name,RMM,,,
+Remote agent management utility (SSH / WinRM remote inventory),remote agent management utility (ssh / winrm remote inventory),glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 Remote Desktop Manager (Devolutions),remote desktop manager (devolutions),remote_desktop_manager_(devolutions),Remote Desktop Manager (Devolutions),Name,RAT,,https://devolutions.net/,
 Remote Desktop Plus,remote desktop plus,remote_desktop_plus,Remote Desktop Plus,Name,RAT,,https://www.donkz.nl/,
 Remote Manipulator System,remote manipulator system,remote_manipulator_system,Remote Manipulator System,Name,RMM,,https://rmansys.ru/,
@@ -266,10 +324,15 @@ RemotePass,remotepass,remotepass,RemotePass,Name,RMM,,https://www.remotepass.com
 RemotePC,remotepc,remotepc,RemotePC,Name,RMM,,https://www.remotepc.com/,Windows
 RemoteUtilities,remoteutilities,remoteutilities,RemoteUtilities,Name,RMM,,https://www.remoteutilities.com/,
 RemoteView,remoteview,remoteview,RemoteView,Name,RMM,,https://content.rview.com/,
+RemSupp,remsupp,remsupp,RemSupp,Name,RMM,unknown,https://api.remsupp.com,Windows
+RemSupp - Remote desktop software,remsupp - remote desktop software,remsupp,RemSupp,PEMetadata.Description,RMM,unknown,https://api.remsupp.com,Windows
 Reported HeartbeatRM executable (unverified - from threat intelligence report),reported heartbeatrm executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report),reported heartbeatrm updater executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 RES Automation Manager,res automation manager,res_automation_manager,RES Automation Manager,Name,RMM,,https://www.ivanti.com/company/history/res-software,
 Rocket Remote Desktop,rocket remote desktop,rocketremotedesktop,Rocket Remote Desktop,Name,RMM,,https://www.rocketsoftware.com/en-us/products/remote-desktop,Windows
+Rodex RMM,rodex rmm,rodexrmm,Rodex RMM,Name,RAT,"No (crypto-only paid plans, $150-$650/mo recurring)",https://www.rodex.cc/,Windows | Linux | MacOS
+"Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.","rodex rmm agent — go-based websocket agent (~7.3 mb). pe version-block strings (product=`rodex rmm suite`, copyrightholder=`rodex technologies inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.",rodexrmm,Rodex RMM,PEMetadata.Description,RAT,"No (crypto-only paid plans, $150-$650/mo recurring)",https://www.rodex.cc/,Windows | Linux | MacOS
+RodexAgent,rodexagent,rodexrmm,Rodex RMM,PEMetadata.OriginalFileName,RAT,"No (crypto-only paid plans, $150-$650/mo recurring)",https://www.rodex.cc/,Windows | Linux | MacOS
 Royal Apps,royal apps,royal_apps,Royal Apps,Name,RMM,,https://www.royalapps.com/,Windows
 Royal Server,royal server,royal_server,Royal Server,Name,RMM,,https://www.royalapps.com/server/,
 Royal TS,royal ts,royal_ts,Royal TS,Name,RMM,,https://www.royalapps.com/ts/,
@@ -277,6 +340,7 @@ RPort,rport,rport,RPort,Name,RMM,,https://kb.rport.io/,
 RServer3,rserver3,radmin,RAdmin,PEMetadata.OriginalFileName,RMM,,https://www.radmin.com/,Windows
 RuDesktop,rudesktop,rudesktop,RuDesktop,Name,RMM,,https://rudesktop.ru/,
 RunSmart,runsmart,runsmart,RunSmart,Name,RMM,,https://runsmart.io/,
+Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe,runtime name of teramind.setup.updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 RustDesk,rustdesk,rustdesk,RustDesk,Name,RMM,Yes,https://rustdesk.com/,Windows | Linux | MacOS
 S3 Browser,s3 browser,s3_browser,S3 Browser,Name,RAT,,https://s3browser.com/,
 Screan capture,screan capture,anyviewer,AnyViewer,PEMetadata.Description,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
@@ -287,13 +351,15 @@ Seetrol,seetrol,seetrol,Seetrol,Name,RMM,,https://www.seetrol.co.kr/,
 Senso.cloud,senso.cloud,senso.cloud,Senso.cloud,Name,RMM,,https://senso.cloud/,
 ServerEye,servereye,servereye,ServerEye,Name,RMM,,https://www.servereye.de/,
 ShowMyPC,showmypc,showmypc,ShowMyPC,Name,RMM,,https://showmypc.com/,
-SimpleHelp,simplehelp,simplehelp,SimpleHelp,Name,RMM,,https://simple-help.com/,
+SimpleHelp,simplehelp,simplehelp,SimpleHelp,Name,RMM,,https://simple-help.com/,Windows
 SimpleHelp,simplehelp,updatesimplehelp,SimpleHelp,Name,RMM,,https://simple-help.com/,windows
 Site24x7,site24x7,site24x7,Site24x7,Name,RMM,,https://www.site24x7.com/,
 SkyFex,skyfex,skyfex,SkyFex,Name,RMM,,https://deskroll.com/,
 SmartCode Web VNC,smartcode web vnc,smartcode_web_vnc,SmartCode Web VNC,Name,RAT,,https://www.s-code.com/products/viewerx/webvnc.aspx,
 SmartFTP,smartftp,smartftp,SmartFTP,Name,RAT,,https://www.smartftp.com/,
 SmarTTY,smartty,smartty,SmarTTY,Name,RAT,,https://sysprogs.com/SmarTTY/,
+SNMP-based network discovery task binary,snmp-based network discovery task binary,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
+SNMP-based network inventory task binary,snmp-based network inventory task binary,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 Solar-PuTTY,solar-putty,solar-putty,Solar-PuTTY,Name,RAT,,https://www.solarwinds.com/free-tools/solar-putty,
 Sophos-Remote Management System,sophos-remote management system,sophos-remote_management_system,Sophos-Remote Management System,Name,RMM,,,
 Sorillus,sorillus,sorillus,Sorillus,Name,RMM,,,
@@ -302,6 +368,7 @@ Splashtop,splashtop,splashtop,Splashtop,Name,RMM,,https://www.splashtop.com/,
 Splashtop (Beta),splashtop (beta),splashtopbeta,Splashtop (Beta),Name,RMM,,https://www.splashtop.com/,
 Splashtop Remote,splashtop remote,splashtop_remote,Splashtop Remote,Name,RMM,,https://www.splashtop.com/,
 SpyAnywhere,spyanywhere,spyanywhere,SpyAnywhere,Name,RMM,,https://www.spytech-web.com/,
+Standalone inventory collector (offline / one-shot inventory),standalone inventory collector (offline / one-shot inventory),glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 SunLogin,sunlogin,sunlogin,SunLogin,Name,RMM,,https://sunlogin.oray.com/,
 SuperOps,superops,superops,SuperOps,Name,RMM,,https://superops.com/,
 SuperPuTTY,superputty,superputty,SuperPuTTY,Name,RAT,,https://github.com/jimradford/superputty,
@@ -317,9 +384,29 @@ Tanium,tanium,tanium,Tanium,Name,RMM,,https://www.tanium.com/,
 Tanium Deploy,tanium deploy,taniumdeploy,Tanium Deploy,Name,RMM,,https://www.tanium.com/products/tanium-deploy/,
 TeamViewer,teamviewer,teamviewer,TeamViewer,Name,RMM,true,https://www.teamviewer.com/en,Android | ChromeOS | IOS | Linux | Mac | Windows
 TeleDesktop,teledesktop,teledesktop,TeleDesktop,Name,RMM,,,
+Teramind,teramind,teramind,Teramind,Name,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind agent removal utility (signed by Teramind Inc.),teramind agent removal utility (signed by teramind inc.),teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind agent removal utility variant served from teramind.co,teramind agent removal utility variant served from teramind.co,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind agent updater shim; renamed to update-shim.exe at runtime; .NET assembly signed by Teramind Inc.,teramind agent updater shim; renamed to update-shim.exe at runtime; .net assembly signed by teramind inc.,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind Agent Windows service binary (registered under service name tsvchst); embedded URL https://www.teramind.co/d/update-shim.exe,teramind agent windows service binary (registered under service name tsvchst); embedded url https://www.teramind.co/d/update-shim.exe,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind installer UI helper (signed by Teramind Inc.),teramind installer ui helper (signed by teramind inc.),teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind installer UI helper for ARM64 Windows (signed by Teramind Inc.),teramind installer ui helper for arm64 windows (signed by teramind inc.),teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind.Remover.Executable,teramind.remover.executable,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind.Setup.UI,teramind.setup.ui,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind.Setup.UIARM,teramind.setup.uiarm,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Teramind.Setup.Updater,teramind.setup.updater,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Terminals,terminals,terminals,Terminals,Name,RAT,,https://github.com/Terminals-Origin/Terminals,
+TiAgent,tiagent,tiflux,TiFLUX,PEMetadata.OriginalFileName,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+TiAgent (user-mode tray application that registers the equipment and surfaces a browser link to the tenant),tiagent (user-mode tray application that registers the equipment and surfaces a browser link to the tenant),tiflux,TiFLUX,PEMetadata.Description,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+TiFLUX,tiflux,tiflux,TiFLUX,Name,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+TiFLUX agent updater binary (.NET — TiUpdateService.exe.config and TiUpdateService.pdb shipped alongside; not directly observed registered as a Windows service),tiflux agent updater binary (.net — tiupdateservice.exe.config and tiupdateservice.pdb shipped alongside; not directly observed registered as a windows service),tiflux,TiFLUX,PEMetadata.Description,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+TiFLUX silent helper invoked by the service via cmd.exe /c start /MIN,tiflux silent helper invoked by the service via cmd.exe /c start /min,tiflux,TiFLUX,PEMetadata.Description,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+TiFLUX Windows service running as SYSTEM (`TiService`); image path C:\Program Files (x86)\TiFLUX\TiService.exe,tiflux windows service running as system (`tiservice`); image path c:\program files (x86)\tiflux\tiservice.exe,tiflux,TiFLUX,PEMetadata.Description,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
 TigerVNC,tigervnc,tigervnc,TigerVNC,Name,RAT,,https://tigervnc.org/,
 TightVNC,tightvnc,tightvnc,TightVNC,Name,RAT,,https://www.tightvnc.com/,
+TiService,tiservice,tiflux,TiFLUX,PEMetadata.OriginalFileName,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+TiUpdateService,tiupdateservice,tiflux,TiFLUX,PEMetadata.OriginalFileName,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
+tmagentsvc,tmagentsvc,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 tmate,tmate,tmate,tmate,Name,RAT,Open Source,https://tmate.io/,Linux | Mac | FreeBSD
 tmate terminal sharing binary,tmate terminal sharing binary,tmate,tmate,PEMetadata.Description,RAT,Open Source,https://tmate.io/,Linux | Mac | FreeBSD
 ToDesk,todesk,todesk,ToDesk,Name,RMM,,https://www.todesk.com/,
@@ -328,13 +415,44 @@ TurboMeeting,turbomeeting,turbomeeting,TurboMeeting,Name,RMM,,,
 Ultra VNC,ultra vnc,ultra_vnc,Ultra VNC,Name,RAT,,https://uvnc.com/,
 UltraViewer,ultraviewer,ultraviewer,UltraViewer,Name,RMM,,https://www.ultraviewer.net/,
 UltraVNC,ultravnc,ultravnc,UltraVNC,Name,RAT,,https://uvnc.com/,
+UninstallStatusUpdater,uninstallstatusupdater,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+uploads the recorded data & logs.,uploads the recorded data & logs.,controlio,Controlio,PEMetadata.Description,RMM,true,https://controlio.net,Mac | Windows
+Vector Asset Management 64-bit preparation helper,vector asset management 64-bit preparation helper,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management cleanup/uninstall helper (LANutil32 Suite component),vector asset management cleanup/uninstall helper (lanutil32 suite component),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management Client distribution component (LANutil32 Distribution Agent companion binary),vector asset management client distribution component (lanutil32 distribution agent companion binary),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management Client recycler / queue processor,vector asset management client recycler / queue processor,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management Client self-update binary,vector asset management client self-update binary,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management Client self-update orchestrator (Vector Networks LAN — VNL — namespace),vector asset management client self-update orchestrator (vector networks lan — vnl — namespace),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management CPU detection helper,vector asset management cpu detection helper,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management driver installation helper (VNL namespace),vector asset management driver installation helper (vnl namespace),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management editor utility,vector asset management editor utility,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management generic upload helper,vector asset management generic upload helper,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management hardware/software info collector (LANutil32 info utility),vector asset management hardware/software info collector (lanutil32 info utility),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management helper that closes running applications (e.g. before software distribution),vector asset management helper that closes running applications (e.g. before software distribution),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management installed-applications registry collector,vector asset management installed-applications registry collector,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management logon-time helper,vector asset management logon-time helper,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management product-ID / inventory updater,vector asset management product-id / inventory updater,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+"Vector Asset Management SMBIOS interrogation utility (LANutil32 SMBIOS reader, x86 build)","vector asset management smbios interrogation utility (lanutil32 smbios reader, x86 build)",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management software-metering client (LANutil32 Meter component),vector asset management software-metering client (lanutil32 meter component),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management software-metering Windows service — high-frequency active-window sampling for software usage measurement (associated with the LANutil32 Suite / Vector PC Software Metering capability),vector asset management software-metering windows service — high-frequency active-window sampling for software usage measurement (associated with the lanutil32 suite / vector pc software metering capability),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management wait/synchronisation helper,vector asset management wait/synchronisation helper,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management watchdog / guard utility,vector asset management watchdog / guard utility,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Asset Management Windows-side inventory collector (executes against winchk.dat data file per VirusTotal Cuckoofork observation),vector asset management windows-side inventory collector (executes against winchk.dat data file per virustotal cuckoofork observation),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+"Vector Networks LANutil32 / Vector Asset Management Client main executable (boot/launcher) — author ""Vector Networks Limited"", original product ""LANutil32 Suite""; spawns CLDIST32.EXE, WINCHK32.EXE, lusmbios16.exe etc. during inventory collection (confirmed via VirusTotal sandbox behaviour for SHA-256 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893)","vector networks lanutil32 / vector asset management client main executable (boot/launcher) — author ""vector networks limited"", original product ""lanutil32 suite""; spawns cldist32.exe, winchk32.exe, lusmbios16.exe etc. during inventory collection (confirmed via virustotal sandbox behaviour for sha-256 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893)",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Vector Networks server-side post-install setup binary shipped in the VIZOR 2.5.2 MSI_Merge bundle (registry footprint includes HKLM\SOFTWARE\Metaquest — Metaquest is the original Vector Networks parent brand) — SHA-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e,vector networks server-side post-install setup binary shipped in the vizor 2.5.2 msi_merge bundle (registry footprint includes hklm\software\metaquest — metaquest is the original vector networks parent brand) — sha-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 Veyon,veyon,veyon,Veyon,Name,RAT,true,https://veyon.io,Linux | Windows
 Visual Studio Dev Tunnel,visual studio dev tunnel,visual_studio_dev_tunnel,Visual Studio Dev Tunnel,Name,RAT,,https://learn.microsoft.com/azure/developer/dev-tunnels/,
+VIZOR,vizor,vizor,VIZOR,Name,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+"VIZOR / Vector Networks configuration utility (referenced as a VirusTotal ""referrer file"" for vector-networks.com — 1-2/74 detection rate, low-prevalence Vector-authored binary)","vizor / vector networks configuration utility (referenced as a virustotal ""referrer file"" for vector-networks.com — 1-2/74 detection rate, low-prevalence vector-authored binary)",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+"VIZOR ServiceDesk mail / email-integration component (Mq prefix = MetaQuest, the original Vector Networks codebase namespace; referenced as a vector-networks.com VirusTotal ""referrer file"" with 1-2/74 detection rate)","vizor servicedesk mail / email-integration component (mq prefix = metaquest, the original vector networks codebase namespace; referenced as a vector-networks.com virustotal ""referrer file"" with 1-2/74 detection rate)",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+VMware ESX inventory task binary,vmware esx inventory task binary,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 VNC,vnc,vnc,VNC,Name,RAT,,,
 VNC Connect,vnc connect,vnc_connect,VNC Connect,Name,RAT,,https://www.realvnc.com/en/connect/,
 WebEx (Remote Access),webex (remote access),webex_(remote_access),WebEx (Remote Access),Name,RMM,,https://www.webex.com/,
 WebRDP,webrdp,webrdp,WebRDP,Name,RAT,,https://github.com/Mikej81/WebRDP,
 Weezo,weezo,weezo,Weezo,Name,RMM,,,
+"Windows service binary — ""LANutil32 Distribution Agent"" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client","windows service binary — ""lanutil32 distribution agent"" (per third-party startup-program databases) — software distribution / push deployment service hosted by the vector asset management client",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32),windows service wrapper that hosts the glpi agent as a windows service (only available on win32),glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 WinSCP,winscp,winscp,WinSCP,Name,RAT,,https://winscp.net/,
 X2Go,x2go,x2go,X2Go,Name,RAT,,https://wiki.x2go.org/,
 Xeox,xeox,xeox,Xeox,Name,RMM,,https://xeox.com/,Windows

@@ -1,1 +1,4 @@
+\\.\pipe\elevateGS512*
+\\.\pipe\PCommand*Getscreen.me*
 adprinterpipe
+PCommand*GetScreen.meout

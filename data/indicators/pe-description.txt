@@ -6,6 +6,8 @@ Aspia Client
 AteraAgent
 baramundi Management Agent
 Bluetrait MSP Agent
+Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter
+Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name
 Duet Display executable (observed in threat intelligence)
 Duet Display installer (verified via VirusTotal)
 Endpoint Agent
@@ -13,8 +15,27 @@ FleetDeck agent DLL component (reported in GitHub issue)
 FleetDeck agent installer (verified via official documentation)
 FleetDeck agent service executable (verified via official documentation)
 FleetDeck MSI installer (verified via official documentation)
+Freshservice Discovery Agent auto-updater (.NET, signed by "Freshworks Inc"; pulls new agent MSIs from fstools.freshservice.com)
+Freshservice Discovery Agent crash reporter (.NET, signed by "Freshworks Inc")
+Freshservice Discovery Agent custom-action DLL (.NET, runs the FSAgentService install/uninstall via msiexec)
+Freshservice Discovery Agent SYSTEM service (.NET, signed by "Freshworks Inc"; registers as Windows service `FSAgentService` and runs as LocalSystem)
+Freshservice Discovery Probe auto-updater (.NET, signed by "Freshworks Inc"; pulls new probe MSIs from fstools.freshservice.com)
+Freshservice Discovery Probe crash reporter
+Freshservice Discovery Probe IP-range subnet calculator
+Freshservice Discovery Probe scan progress UI helper
+Freshservice Discovery Probe scheduled flush helper
+Freshservice Discovery Probe scheduler helper (uses Microsoft.Win32.TaskScheduler.dll to register Windows scheduled tasks)
+Freshservice Discovery Probe SNMP OID library updater
+Freshservice Discovery Probe SYSTEM scan service binary (registered as Windows service `FreshServiceScan`, LocalSystem, Automatic startup)
+Freshservice Discovery Probe telemetry reporter
+Freshservice Discovery Probe tray application (.NET, ConfuserEx-packed, signed by "Freshworks Inc"; references fstools.freshservice.com and the legacy fstools.freshasset.com)
+Freshservice Discovery Probe uninstall reporter
+Freshservice WMI inventory helper invoked by the Discovery Agent / Probe (.NET, signed by "Freshworks Inc")
+Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B Ltd). Distributed as a UPX-packed PE32 (x86) GUI executable from https://getscreen.me/download/getscreen-x86.exe. Current binaries (file version 3.5.0+) are signed by POINT B LTD (Cyprus, registered HE 430957) on a GlobalSign GCC R45 EV CodeSigning chain. Older 2020-2021 era binaries were signed by OOO "GET SKRIN SOFTVER" on a COMODO RSA Extended Validation Code Signing CA chain (now expired).
 Gorelo RMM
 HopToDesk remote desktop application (verified via VirusTotal)
+HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista)
+HTTP push helper used by the Vector Asset Management Client to upload inventory to the Vector Discovery Server / IIS endpoint
 iDrive Classic client executable
 iDrive component library
 iDrive system tray application
@@ -24,11 +45,20 @@ ImmyBot ephemeral agent for script execution (verified via official documentatio
 ImmyBot installer MSI (verified via VirusTotal)
 ImmyBot updater executable (verified via official documentation)
 InstallShield wrapper executable (observed in VT sandbox)
+Inventory data injection / push utility
+InvGate Assets Client primary endpoint binary; runs as the InvClient SYSTEM service. Vendor "InvGate"; reported sample sha256 d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8 (Win32 EXE, ~932 KB, version 4.004.001).
+InvGate Assets deployment helper used by the software-deployment module.
+InvGate Assets RD helper located under \files\ within the install directory.
+InvGate Assets remote-desktop / remote-support helper invoked from the agent (size ~1.32 MB on v5.001.071 builds).
 LMIGuardianSvc
+Main GLPI Agent executable / Perl entrypoint
 ManageEngine ServiceDesk Plus binary installer component
 ManageEngine ServiceDesk Plus installer (verified via VirusTotal)
 MeshCentral Background Service Agent
 Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal)
+Monitic agent bootstrap installer (Themida-packed Win32 PE, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ. via GlobalSign GCC R45 EV CodeSigning CA 2020). Hosted at https://app.monitic.com/MoniticInstaller.exe; observed sha256 d641841cdf83037b32e699f01da16b66a9064221013dfec43d7a3bc993d6181d (3/2026) and 924238d5c8b4c882f236053c394d1a9510b6a1fe028ae5437eed7785774b1462 (7/2025). On launch it executes `rundll32 url.dll,FileProtocolHandler https://app.monitic.com/installer` to open the installer flow in the user's browser.
+Monitic agent monitor / watchdog binary (~6 MB Go executable, Themida-packed, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\amon.exe and registered as a SYSTEM service via `amon.exe install` then started with `amon.exe start`. Calls https://api.monitic.com/api/ext/check-sha256 for integrity check / config polling. Observed sha256 71cd67afd19f9f5d0cf00d92034c40b674e3b4d9888f5be6c2f401c52863a523 (10/2025).
+Monitic primary agent binary (~50-60 MB .NET executable, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\agent.exe and registered as a SYSTEM service via `agent.exe install`. Bundles RustDesk for remote desktop (libvpx-1.dll, WinPthreadGC.dll observed in dropped-files), the kopia.io backup engine, and uses WMI (`Get-WmiObject Win32_BIOS / Win32_Processor / Win32_DiskDrive / Win32_BaseBoard`) for hardware fingerprinting. Spawns a child `tunnel.exe` (taskkill /IM tunnel.exe /F observed in lifecycle). Observed sha256 9c6b26fe30870775a42d02804c9094c83479850a87703d95ebd8631ad8188b8e (11/2025).
 Mouse Without Borders
 NetBird client binary for Linux/macOS
 NetBird client executable for Windows
@@ -37,10 +67,57 @@ NVDA screen reader executable
 NVDA service executable for secure screens
 Official HeartbeatRM installer (verified via VirusTotal)
 Parsec
+PuTTY plink.exe (PuTTY 0.62) bundled inside the Freshservice Discovery Probe MSI for SSH-based scanning of Linux/Unix hosts (legitimate redistributable, but executes from the Freshservice install dir)
 Radmin Server
 Radmin Viewer
+Remote agent management utility (SSH / WinRM remote inventory)
+RemSupp - Remote desktop software
 Reported HeartbeatRM executable (unverified - from threat intelligence report)
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report)
+Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.
+Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe
 Screan capture
+SNMP-based network discovery task binary
+SNMP-based network inventory task binary
 Splash Window
+Standalone inventory collector (offline / one-shot inventory)
+Teramind agent removal utility (signed by Teramind Inc.)
+Teramind agent removal utility variant served from teramind.co
+Teramind agent updater shim; renamed to update-shim.exe at runtime; .NET assembly signed by Teramind Inc.
+Teramind Agent Windows service binary (registered under service name tsvchst); embedded URL https://www.teramind.co/d/update-shim.exe
+Teramind installer UI helper (signed by Teramind Inc.)
+Teramind installer UI helper for ARM64 Windows (signed by Teramind Inc.)
+TiAgent (user-mode tray application that registers the equipment and surfaces a browser link to the tenant)
+TiFLUX agent updater binary (.NET — TiUpdateService.exe.config and TiUpdateService.pdb shipped alongside; not directly observed registered as a Windows service)
+TiFLUX silent helper invoked by the service via cmd.exe /c start /MIN
+TiFLUX Windows service running as SYSTEM (`TiService`); image path C:\Program Files (x86)\TiFLUX\TiService.exe
 tmate terminal sharing binary
+uploads the recorded data & logs.
+Vector Asset Management 64-bit preparation helper
+Vector Asset Management cleanup/uninstall helper (LANutil32 Suite component)
+Vector Asset Management Client distribution component (LANutil32 Distribution Agent companion binary)
+Vector Asset Management Client recycler / queue processor
+Vector Asset Management Client self-update binary
+Vector Asset Management Client self-update orchestrator (Vector Networks LAN — VNL — namespace)
+Vector Asset Management CPU detection helper
+Vector Asset Management driver installation helper (VNL namespace)
+Vector Asset Management editor utility
+Vector Asset Management generic upload helper
+Vector Asset Management hardware/software info collector (LANutil32 info utility)
+Vector Asset Management helper that closes running applications (e.g. before software distribution)
+Vector Asset Management installed-applications registry collector
+Vector Asset Management logon-time helper
+Vector Asset Management product-ID / inventory updater
+Vector Asset Management SMBIOS interrogation utility (LANutil32 SMBIOS reader, x86 build)
+Vector Asset Management software-metering client (LANutil32 Meter component)
+Vector Asset Management software-metering Windows service — high-frequency active-window sampling for software usage measurement (associated with the LANutil32 Suite / Vector PC Software Metering capability)
+Vector Asset Management wait/synchronisation helper
+Vector Asset Management watchdog / guard utility
+Vector Asset Management Windows-side inventory collector (executes against winchk.dat data file per VirusTotal Cuckoofork observation)
+Vector Networks LANutil32 / Vector Asset Management Client main executable (boot/launcher) — author "Vector Networks Limited", original product "LANutil32 Suite"; spawns CLDIST32.EXE, WINCHK32.EXE, lusmbios16.exe etc. during inventory collection (confirmed via VirusTotal sandbox behaviour for SHA-256 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893)
+Vector Networks server-side post-install setup binary shipped in the VIZOR 2.5.2 MSI_Merge bundle (registry footprint includes HKLM\SOFTWARE\Metaquest — Metaquest is the original Vector Networks parent brand) — SHA-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e
+VIZOR / Vector Networks configuration utility (referenced as a VirusTotal "referrer file" for vector-networks.com — 1-2/74 detection rate, low-prevalence Vector-authored binary)
+VIZOR ServiceDesk mail / email-integration component (Mq prefix = MetaQuest, the original Vector Networks codebase namespace; referenced as a vector-networks.com VirusTotal "referrer file" with 1-2/74 detection rate)
+VMware ESX inventory task binary
+Windows service binary — "LANutil32 Distribution Agent" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client
+Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32)
