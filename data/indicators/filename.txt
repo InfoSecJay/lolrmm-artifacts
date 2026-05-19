@@ -87,6 +87,7 @@ CloudRaCmd.exe
 CloudRaSd.exe
 CloudRaService.exe
 CloudRaUtilities.exe
+CloudWksInstall.exe
 ComodoRemoteControl.exe
 Connect.Backdrop.cloud*.exe
 Connect.exe
@@ -97,6 +98,7 @@ connectwise*.exe
 connectwisechat-customer.exe
 ConnectWiseControl*.exe
 connectwisecontrol.client.exe
+CoreAgentService.exe
 cpuchk.exe
 CrossLoopConnect.exe
 crossloopservice.exe
@@ -107,6 +109,8 @@ ctespersitence.exe
 ctiserv.exe
 DameWare Mini Remote Control*.exe
 DameWare Remote Support.exe
+dashboard-windows-amd64.exe
+dataplicity
 dcagentregister.exe
 dcagentservice.exe
 dd.exe
@@ -115,8 +119,16 @@ DepHlp.exe
 Deskroll.exe
 DeskRollUA.exe
 desktopnow.exe
+DFC.exe
+DFInst.exe
+DFServ.exe
+DFServEx.exe
+DFStd.exe
+DFStdInstall.exe
+DFWks.exe
 distant-desktop.exe
 dntus*.exe
+DocConnect.Agent.exe
 Domotz Pro Desktop App Setup*.exe
 Domotz Pro Desktop App.exe
 domotz*.exe
@@ -130,6 +142,7 @@ DuetDisp.exe
 DuetSetup.exe
 Duplicati.Server.exe
 dwagent.exe
+dwaglnc.exe
 dwagsvc.exe
 dwm.exe
 dwrcs.exe
@@ -151,10 +164,17 @@ ezhelp*.exe
 ezhelpclient.exe
 ezhelpclientmanager.exe
 ezHelpManager.exe
+FaronicsCoreAgent.exe
+FaronicsDeployAgent.exe
+FaronicsSA.exe
 fastclient.exe
 fastmaster.exe
 FastViewer.exe
+FCAForStartupMonitor.msi
 fd_agent.dll
+FIStudentAgent.exe
+FIStudentSvc.exe
+FIStudentUI.exe
 FixMeit Client.exe
 FixMeit Expert Setup.exe
 FixMeit Unattended Access Setup.exe
@@ -167,6 +187,7 @@ fleetdeck_agent_svc.exe
 fleetdeck_commander_launcher.exe
 fleetdeck_commander_svc.exe
 fleetdeck_installer.exe
+FRCServer.exe
 Freshservice.DiscoveryProbe.AutoFlush.exe
 Freshservice.DiscoveryProbe.OIDLibraryPuller.exe
 Freshservice.DiscoveryProbe.ProgressBar.exe
@@ -178,13 +199,18 @@ FSAgentService.exe
 FSProbeCrashStatusUpdater.exe
 FSProbeReporter.exe
 FSScheduler.exe
+FSSInstaller.exe
 FSWmiScanner.exe
+FWA_UI_Agent.exe
+FWAService.exe
+FWAWebInstaller_*.exe
 g2a*.exe
 g2ax_comm_customer.exe
 g2comm.exe
 g2file*.exe
 g2fileh.exe
 g2host.exe
+G2M.exe
 g2m_download.exe
 g2mainh.exe
 G2MChat.exe
@@ -290,6 +316,9 @@ ImmyBot.msi
 ImmyUpdater.exe
 ImperoClientSVC.exe
 ImperoInit.exe
+InsightInstaller.exe
+InsightInstallerStudent.exe
+InsightInstallerTeacher.exe
 installer.exe
 InstallShield Setup.exe
 instanthousecall.exe
@@ -303,7 +332,6 @@ iperius.exe
 iperiusremote.exe
 IPRangeCalculator.exe
 ir_agent.exe
-ISBEW64.exe
 islalwaysonmonitor.exe
 isllight.exe
 ISLLightClient.exe
@@ -329,9 +357,7 @@ KaUsrTsk.exe
 KHelpDesk.exe
 kitty.exe
 komari-agent.exe
-komari-windows-386.exe
-komari-windows-amd64.exe
-komari-windows-arm64.exe
+komari.exe
 konea.exe
 landeskagentbootstrap.exe
 LANDeskPortalManager.exe
@@ -349,6 +375,8 @@ lmi_rescue_srv.exe
 lmiguardiansvc.exe
 lmiignition.exe
 LMNoIpServer.exe
+loclx
+loclx.exe
 logmein.exe
 logmeinsystray.exe
 ltsvc.exe
@@ -373,6 +401,8 @@ meshagent*.exe
 MeshAgent.exe
 meshcentral*.exe
 mgntsvc.exe
+MigrationHelper_32.exe
+MigrationHelper_64.exe
 Mikogo-Screen-Service.exe
 mikogo-service.exe
 mikogo-starter.exe
@@ -380,6 +410,7 @@ mikogo.exe
 mikogolauncher.exe
 mionet.exe
 mionetmanager.exe
+ModulesUpgradeMgr.exe
 MoniticInstaller.exe
 MonitoringAgent.exe
 MouseWithoutBorders.exe
@@ -396,6 +427,8 @@ nateonmain.exe
 netbird
 netbird-ui.exe
 netbird.exe
+netbird_installer_*_windows_amd64.exe
+netbird_installer_*_windows_amd64.msi
 NetLock_RMM_Agent_Installer.exe
 NetLock_RMM_User_Process.exe
 NetLock_RMM_User_UAC.exe
@@ -404,6 +437,7 @@ neturo*.exe
 neturo.exe
 netviewer*.exe
 netviewer.exe
+nezha-agent.exe
 ngrok.exe
 ngstw32.exe
 nhostsvc.exe
@@ -416,6 +450,7 @@ nmep_agtconfig.exe
 nmep_ctrlagent.exe
 nmep_ctrlagentsvc.exe
 nomachine*.exe
+NotificationHelper.exe
 ntrntservice.exe
 NTRsupportPro_EN.exe
 NUKE32.EXE
@@ -458,6 +493,7 @@ pcvisit_service_client.exe
 pdq-connect*.exe
 PidUpdater.exe
 Pilixo_Installer*.exe
+pitunnel
 plink.exe
 pocketcloud*.exe
 pocketcloudservice.exe
@@ -468,6 +504,7 @@ prl_deskctl_wizard.exe
 prl_pm_service.exe
 pservice.exe
 psexec.exe
+psexec64.exe
 psexecsvc.exe
 pstlaunch.exe
 ptdskclient.exe
@@ -577,6 +614,7 @@ servereye*.exe
 serverproxyservice.exe
 ServiceProxyLocalSys.exe
 Setup.exe
+shellhub-agent
 showmypc*.exe
 showmypc.exe
 si.exe
@@ -600,8 +638,10 @@ sragent.exe
 srmanager.exe
 srserver.exe
 srservice.exe
+STAHelper.exe
 StatementView.msi
 strwinclt.exe
+StudentSvc.exe
 sunlogin*.exe
 superops.exe
 superopsticket.exe
@@ -643,7 +683,6 @@ Teramind.Setup.Remover.exe
 Teramind.Setup.UI.exe
 Teramind.Setup.UIARM.exe
 Teramind.Setup.Updater.exe
-termsrv.exe
 TiAgent.exe
 TiClientCore.exe
 TiClientHelper*.exe
@@ -662,6 +701,7 @@ ToDesk_Service.exe
 ToDesk_Setup.exe
 toolsiq.exe
 TPowerShell.exe
+TrustConnectAgent.exe
 TSClient.exe
 Tsdservice.exe
 tsircusr.exe
@@ -678,6 +718,7 @@ Uninstall RemSupp.exe
 UninstallStatusUpdater.exe
 update-shim.exe
 upload.exe
+UserNotificationHelper.exe
 UVNC_Launch.exe
 VECWAIT.EXE
 veyon-master.exe
@@ -710,6 +751,7 @@ windowslauncher.exe
 winpty-agent.exe
 winpty-agent64.exe
 WinSCP.exe
+wintun.dll
 winvnc*.exe
 winvnc.exe
 winvnc4.exe

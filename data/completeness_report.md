@@ -1,29 +1,29 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **306**
-- Fetched + parsed tools: **306**
+- Expected files (upstream listing): **314**
+- Fetched + parsed tools: **314**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 306 tools total:
+Of 314 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 300 | 98% |
-| installation_paths | 275 | 90% |
-| capabilities | 47 | 15% |
-| supported_os | 92 | 30% |
-| disk | 53 | 17% |
-| eventlog | 35 | 11% |
-| registry | 26 | 8% |
-| network | 226 | 74% |
-| other | 13 | 4% |
-| detections | 265 | 87% |
+| pe_metadata | 309 | 98% |
+| installation_paths | 283 | 90% |
+| capabilities | 58 | 18% |
+| supported_os | 102 | 32% |
+| disk | 65 | 21% |
+| eventlog | 43 | 14% |
+| registry | 35 | 11% |
+| network | 238 | 76% |
+| other | 20 | 6% |
+| detections | 273 | 87% |
 
-## Tools with no artifacts at all (71)
+## Tools with no artifacts at all (67)
 
 - `beyondtrust` (RMM)
 - `bitvise_ssh_client` (RAT)
@@ -46,19 +46,15 @@ Of 306 tools total:
 - `insync` (RAT)
 - `jollysfastvnc` (RAT)
 - `kitty` (RAT)
-- `komari` (RMM)
 - `koofr` (RAT)
 - `labteachconnectwiseautomate` (RMM)
 - `lite_manager` (RMM)
 - `manageengine` (RMM)
 - `megasync` (RAT)
-- `microsoft_rdp` (RAT)
-- `microsoft_tsc` (RMM)
 - `mionet_(also_known_as_wd_anywhere_access)` (RMM)
 - `mionet_(wd_anywhere_access)` (RMM)
 - `mobaxterm` (RAT)
 - `mocha_vnc_lite` (RAT)
-- `mstsc` (RAT)
 - `multcloud` (RAT)
 - `netmonitor` (RMM)
 - `netop` (RMM)

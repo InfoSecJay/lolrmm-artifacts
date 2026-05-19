@@ -1,4 +1,6 @@
+%APPDATA%\GoToMeeting\G2M.exe
 %APPDATA%\JWrapper-SimpleSetup\*
+%APPDATA%\loclx\*
 %ProgramData%\Tiflux\*
 %USERPROFILE%\\AppData\\Local\\Temp\\SupremoRemoteDesktop\\
 *%\mRemoteNG
@@ -24,6 +26,17 @@
 *\dwrcs\*
 *\dwrcst.exe
 *\ExtraPuTTY-0.30-2016-01-28-installer.exe
+*\Faronics\Deep Freeze\DFC.exe
+*\Faronics\Deep Freeze\DFServ.exe
+*\Faronics\Deep Freeze\DFServEx.exe
+*\Faronics\Deep Freeze\DFWks.exe
+*\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe
+*\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe
+*\Faronics\Insight Student\FIStudentAgent.exe
+*\Faronics\Insight Student\FIStudentSvc.exe
+*\Faronics\Insight Student\FIStudentUI.exe
+*\Faronics\Insight Student\STAHelper.exe
+*\Faronics\Insight Teacher\STAHelper.exe
 *\Freshservice.DiscoveryProbe.ScanService.exe
 *\Freshservice.DiscoveryProbe.Window.exe
 *\FSAgentAutoUpdate.exe
@@ -44,6 +57,7 @@
 *\LANDesk\*
 *\LiteManager Pro – Viewer\*
 *\LMNoIpServer.exe
+*\loclx.exe
 *\Lunixar\Lunixar.Agent.Core.dll
 *\Lunixar\Lunixar.dll
 *\Lunixar\Lunixar.exe
@@ -63,6 +77,7 @@
 *\mRemoteNG\*
 *\Netop Remote Control\*
 *\NetSarang\xShell\*
+*\nezha-agent.exe
 *\ngrok*
 *\nxplayer.exe
 *\onionshare*.exe
@@ -104,6 +119,7 @@
 *\tmcsvc.exe
 *\tniwinagent.exe
 *\Total Software Deployment\*
+*\TrustConnectAgent.exe
 *\Tsdservice.exe
 *\tvnserver.exe
 *\UltraViewer\
@@ -138,20 +154,44 @@
 /Applications/AnyDesk.app
 /Applications/GLPI-Agent/*
 /Applications/GLPI-Agent/etc/*
+/Applications/NetBird UI.app
 /Applications/Teramind Agent.app
 /Applications/TiAgent.app
 /Applications/tmagent.app
 /etc/glpi-agent/*
+/etc/init.d/dataplicity
+/etc/netbird/install.conf
+/etc/shellhub-agent/*
+/etc/systemd/system/dataplicity.service
+/etc/systemd/system/komari-agent.service
+/etc/systemd/system/komari.service
+/etc/systemd/system/nezha-agent.service
+/etc/systemd/system/nezha-dashboard.service
+/etc/systemd/system/pitunnel.service
+/etc/systemd/system/shellhub-agent.service
 /Library/Application Support/0x101_Cyber_Security/*
+/opt/dataplicity/*
+/opt/dataplicity/tuxtunnel/*
+/opt/komari/*
 /opt/netbird/*
+/opt/nezha/*
+/opt/nezha/agent
+/opt/nezha/agent/nezha-agent
+/opt/nezha/dashboard
+/opt/pitunnel/*
 /usr/0x101_Cyber_Security/Netlock_RMM/*
 /usr/bin/glpi-agent
 /usr/bin/netbird
 /usr/bin/tmate
 /usr/local/bin/0x101_Cyber_Security/Netlock_RMM/*
+/usr/local/bin/dataplicity
 /usr/local/bin/glpi-agent
+/usr/local/bin/loclx
 /usr/local/bin/netbird
+/usr/local/bin/pitunnel
+/usr/local/bin/shellhub-agent
 /usr/local/bin/tmate
+/usr/local/komari/*
 /usr/local/mesh_services/meshagent/*
 /usr/local/mesh_services/meshagent/meshagent/*
 /usr/local/teramind/agent/bin/
@@ -159,6 +199,7 @@
 /usr/local/teramind/agent/etc/
 /var/0x101_Cyber_Security/*
 /var/lib/glpi-agent/*
+/var/lib/shellhub-agent/*
 9380CC75B872221A7425D7503565B67580407F60
 aa_v*.exe
 aadg.exe
@@ -222,7 +263,13 @@ C:\\ProgramData\\AMMYY\\*
 C:\\ProgramData\\SupremoRemoteDesktop\\
 C:\AlpemixService.exe
 C:\AlpemixSrvc\
+C:\bin\cis.vbs
+C:\bin\netbird.msi
+C:\bin\OpenSSH.msi
+C:\bin\trm.zip
 C:\Downloads\SuperPuTTY\*
+C:\komari\*
+C:\nezha\*
 c:\Program Files (x86)%\mRemoteNG
 C:\Program Files (x86)\Almageste\DragonDisk\*
 C:\Program Files (x86)\AnyDesk\*
@@ -234,6 +281,24 @@ C:\Program Files (x86)\Bluetrait Agent\*
 C:\Program Files (x86)\bsag\*
 C:\Program Files (x86)\bsag\bma\*
 C:\Program Files (x86)\DesktopCentral_Agent\bin\*
+C:\Program Files (x86)\Faronics\Deep Freeze\*
+C:\Program Files (x86)\Faronics\Deep Freeze\Install C-0\*
+C:\Program Files (x86)\Faronics\Deep Freeze\Install C-1\*
+C:\Program Files (x86)\Faronics\Faronics Core\*
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\*
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FaronicsDeployAgent.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FaronicsSA.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FRCServer.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FSSInstaller.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWA_UI_Agent.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWAService.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\MigrationHelper_32.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\MigrationHelper_64.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\ModulesUpgradeMgr.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\NotificationHelper.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\UserNotificationHelper.exe
+C:\Program Files (x86)\Faronics\Insight Student\*
+C:\Program Files (x86)\Faronics\Insight Teacher\*
 C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll
 C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe
 C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe
@@ -316,6 +381,13 @@ C:\Program Files\bsag\bma\*
 C:\Program Files\Danware Data\NetOp Packn Deploy\*
 C:\Program Files\Devolutions\Remote Desktop Manager
 C:\Program Files\ehorus_agent\*
+C:\Program Files\Faronics Corporation\Deep Freeze 7.00\*
+C:\Program Files\Faronics\Core\Console\*
+C:\Program Files\Faronics\Deep Freeze\*
+C:\Program Files\Faronics\Faronics Core\*
+C:\Program Files\Faronics\Faronics Core\Workstation Agent\*
+C:\Program Files\Faronics\Insight Student\*
+C:\Program Files\Faronics\Insight Teacher\*
 C:\Program Files\Getscreen.me\
 C:\Program Files\GLPI-Agent\*
 C:\Program Files\GLPI-Agent\etc\*
@@ -327,6 +399,7 @@ C:\Program Files\HeartbeatRM\*
 C:\Program Files\IDrive\*
 C:\Program Files\ImmyBot\ImmyAgent.exe
 C:\Program Files\ImmyBot\ImmyUpdater.exe
+C:\Program Files\Komari\*
 C:\Program Files\Level\*
 C:\Program Files\LiteManager Pro – Viewer\*
 C:\Program Files\Lunixar\*
@@ -340,6 +413,7 @@ C:\Program Files\Monitic\conf.json
 C:\Program Files\Net Monitor for Employees Pro\*
 C:\Program Files\Netbird\netbird-ui.exe
 C:\Program Files\Netbird\netbird.exe
+C:\Program Files\nezha\*
 C:\Program Files\NVDA\nvda.exe
 C:\Program Files\Parsec\*
 C:\Program Files\RdClient\*
@@ -353,12 +427,16 @@ C:\Program Files\SolarWinds\Dameware Mini Remote Control\*
 C:\Program Files\SysAidServer\*
 C:\Program Files\TeamViewer\
 C:\Program Files\TightVNC\*
+C:\Program Files\TrustConnect Agent\*
+C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe
 C:\Program Files\uvnc bvba\UltraVNC\*
 C:\Program Files\Vector Networks Limited\LANutil32 Suite\*
 C:\Program Files\Vector\Asset Management Client\*
 C:\Program Files\Veyon\*
 C:\Program Files\ZOC8\*
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\*
+C:\ProgramData\Faronics\FCAForStartupMonitor.msi
+C:\ProgramData\Faronics\StorageSpace\FWA\*
 C:\ProgramData\Getscreen.me\
 C:\ProgramData\IDrive\*
 C:\ProgramData\JWrapper-Remote Access\*
@@ -370,16 +448,19 @@ C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe
 C:\ProgramData\Teramind Agent\config
 C:\ProgramData\Total Software Deployment\*
+C:\ProgramData\TrustConnect\*
 C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\*
 C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\config
 C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\*
 C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\
+C:\temper\trm
 C:\Users\*\AppData\Local\Getscreen.me\
 C:\Users\*\AppData\Local\Google\Chrome\User Data\Default\Extensions\iodihamcpbpeioajjeobimgagajmlibd*
 C:\Users\*\AppData\Local\IDrive\*
 C:\Users\*\AppData\Local\LogMeIn Rescue Applet\LMIR*.tmp\lmi_rescue.exe
 C:\Users\*\AppData\Local\LogMeIn Rescue Applet\LMIR*.tmp\lmi_rescue_srv.exe
 C:\Users\*\AppData\Local\MEGAsync\*
+C:\Users\*\AppData\Local\Programs\loclx\loclx.exe
 C:\Users\*\AppData\Local\Programs\RemSupp\RemSupp.exe
 C:\Users\*\AppData\Local\Programs\RemSupp\Uninstall RemSupp.exe
 C:\Users\*\AppData\Local\remsupp-updater\installer.exe
@@ -418,6 +499,7 @@ CloudRaCmd.exe
 CloudRaSd.exe
 CloudRaService.exe
 CloudRaUtilities.exe
+CloudWksInstall.exe
 ComodoRemoteControl.exe
 Connect.Backdrop.cloud*.exe
 Connect.exe
@@ -429,6 +511,7 @@ connectwise*.exe
 connectwisechat-customer.exe
 ConnectWiseControl*.exe
 connectwisecontrol.client.exe
+CoreAgentService.exe
 CrossLoopConnect.exe
 crossloopservice.exe
 csexec.exe
@@ -438,6 +521,7 @@ ctespersitence.exe
 ctiserv.exe
 DameWare Mini Remote Control*.exe
 DameWare Remote Support.exe
+dashboard-windows-amd64.exe
 dcagentregister.exe
 dcagentservice.exe
 dd.exe
@@ -445,8 +529,16 @@ ddsystem.exe
 Deskroll.exe
 DeskRollUA.exe
 desktopnow.exe
+DFC.exe
+DFInst.exe
+DFServ.exe
+DFServEx.exe
+DFStd.exe
+DFStdInstall.exe
+DFWks.exe
 distant-desktop.exe
 dntus*.exe
+DocConnect.Agent.exe
 Domotz Pro Desktop App Setup*.exe
 Domotz Pro Desktop App.exe
 domotz*.exe
@@ -458,6 +550,7 @@ duet.exe
 DuetDisp.exe
 DuetSetup.exe
 dwagent.exe
+dwaglnc.exe
 dwagsvc.exe
 dwrcs.exe
 echoserver*.exe
@@ -478,9 +571,14 @@ ezhelp*.exe
 ezhelpclient.exe
 ezhelpclientmanager.exe
 ezHelpManager.exe
+FaronicsCoreAgent.exe
+FaronicsDeployAgent.exe
 fastclient.exe
 fastmaster.exe
 FastViewer.exe
+FIStudentAgent.exe
+FIStudentSvc.exe
+FIStudentUI.exe
 FixMeit Client.exe
 FixMeit Expert Setup.exe
 FixMeit Unattended Access Setup.exe
@@ -497,8 +595,12 @@ fleetdeck_installer.exe
 fs-probe-*.msi
 fs-windows-agent-*.msi
 FSAgent.msi
+FWA_UI_Agent.exe
+FWAService.exe
+FWAWebInstaller_*.exe
 g2a*.exe
 g2ax_comm_customer.exe
+G2M.exe
 g2mcomm.exe
 g2mupdate.com
 Googlemeet.msi
@@ -561,6 +663,10 @@ ImmyBot.msi
 ImmyUpdater.exe
 ImperoClientSVC.exe
 ImperoInit.exe
+InsightInstaller.exe
+InsightInstallerStudent.exe
+InsightInstallerTeacher.exe
+InsightSetup.msi
 InstallShield Setup.exe
 instanthousecall.exe
 InstantHousecall.exe
@@ -569,7 +675,6 @@ intouch.exe
 iperius.exe
 iperiusremote.exe
 ir_agent.exe
-ISBEW64.exe
 islalwaysonmonitor.exe
 isllight.exe
 ISLLight.exe
@@ -593,10 +698,6 @@ Kabuto.Installer.exe
 Kabuto.Service.Runner.exe
 KabutoSetup.exe
 KHelpDesk.exe
-komari-agent.exe
-komari-windows-386.exe
-komari-windows-amd64.exe
-komari-windows-arm64.exe
 konea.exe
 landeskagentbootstrap.exe
 LANDeskPortalManager.exe
@@ -612,6 +713,8 @@ libeay32.dll
 llrcservice.exe
 lmi_rescue.exe
 lmnoipserver.exe
+loclx
+loclx.exe
 ltsvc.exe
 ltsvcmon.exe
 lttray.exe
@@ -624,7 +727,6 @@ MEAgentHelper.exe
 meshagent*.exe
 meshcentral*.exe
 mgntsvc.exe
-Microsoft Remote Desktop
 mikogo-service.exe
 mikogo-starter.exe
 mikogo.exe
@@ -634,7 +736,6 @@ mionetmanager.exe
 MonitoringAgent.exe
 mRemoteNG-Installer-*.msi
 mRemoteNG.exe
-mstsc.exe
 mwcliun.exe
 mygreenpc.exe
 myivomanager.exe
@@ -653,6 +754,9 @@ neturo.exe
 netviewer*.exe
 netviewer.exe
 NetViewer.exe
+nezha-agent
+nezha-agent.exe
+nezha_agent
 ngrok.exe
 ngstw32.exe
 nhostsvc.exe
@@ -713,6 +817,7 @@ prl_deskctl_wizard.exe
 prl_pm_service.exe
 pservice.exe
 psexec.exe
+psexec64.exe
 psexecsvc.exe
 pstlaunch.exe
 ptdskclient.exe
@@ -835,7 +940,9 @@ srserver.exe
 SRServer.exe
 srservice.exe
 ssleay32.dll
+STAHelper.exe
 strwinclt.exe
+StudentSvc.exe
 sunlogin*.exe
 superops.exe
 superopsticket.exe
@@ -870,7 +977,6 @@ TeamTaskManager.exe
 teamviewer_desktop.exe
 teamviewer_service.exe
 teamviewerhost
-termsrv.exe
 This installs a modified VNC and cannot be blocked by path separate from VNC
 TiClientCore.exe
 TiClientHelper*.exe
@@ -887,6 +993,7 @@ ToDesk_Service.exe
 ToDesk_Setup.exe
 toolsiq.exe
 TPowerShell.exe
+TrustConnectAgent.exe
 TSClient.exe
 tsircusr.exe
 turbomeeting.exe

@@ -4,15 +4,21 @@ Ammyy Admin
 AnyDesk Service
 AteraAgent
 Bluetrait Agent
+DFServ
+FaronicsCoreAgent
+FIStudentSvc
 FreshServiceScan
 FSAgentService
+FWASvc
 Getscreen.me
 glpi-agent
 GoToResolve_*
 InvClient
+komari-agent
 Level
 Mesh Agent background service
 Mouse without Borders Service
+nezha-agent
 parsecvirtualds
 RCService
 RemotePC Performance Service
@@ -21,6 +27,7 @@ SplashtopRemoteService
 Splashtop® Remote Service
 TeamViewer
 TiService
+TrustConnect Agent
 tsvchst
 Veyon Service
 WinRing0_1_2_0

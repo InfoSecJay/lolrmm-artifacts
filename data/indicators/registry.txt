@@ -1,4 +1,6 @@
 HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb
+HKCU\Software\Microsoft\Terminal Server Client\Default
+HKCU\Software\Microsoft\Terminal Server Client\Servers
 HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\SOFTWARE\TiFlux
 HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history
@@ -16,8 +18,14 @@ HKLM\SOFTWARE\ATERA Networks\*
 HKLM\SOFTWARE\ATERA Networks\AlphaAgent
 HKLM\SOFTWARE\Classes\.anydesk\shell\open\command
 HKLM\SOFTWARE\Classes\AnyDesk\shell\open\command
+HKLM\SOFTWARE\Classes\AppID\FWAService.exe
+HKLM\SOFTWARE\Classes\AppID\TrustConnectAgent.exe
 HKLM\SOFTWARE\Classes\Installer\Products\08BB5F1461464FA46BB7AF632CD94B4C
+HKLM\SOFTWARE\Classes\{359C24F1-51B5-44CE-8F2D-2FBB1A0FE4EA}\FWA_GUI_Agent
 HKLM\SOFTWARE\Clients\Media\AnyDesk
+HKLM\SOFTWARE\Faronics
+HKLM\SOFTWARE\Faronics\Deep Freeze
+HKLM\SOFTWARE\Faronics\Faronics Core 3
 HKLM\SOFTWARE\Freshdesk\FSAgent
 HKLM\SOFTWARE\FreshService Probe
 HKLM\SOFTWARE\Freshworks\FreshServiceProbe
@@ -38,9 +46,13 @@ HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32
 HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer\*
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TeamViewer\*
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TrustConnect Agent
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{581F69E6-A5D1-48C7-9F6F-CC333007F7EB}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{892D2C60-AFC1-48C0-8C5D-A2DC856A3605}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8BE075F9-36C7-4145-8BC0-35D420223576}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A40A237D-C090-4C05-8580-9DBECFE3602B}
@@ -53,6 +65,8 @@ HKLM\SOFTWARE\TeamViewer\ConnectionHistory
 HKLM\SOFTWARE\TiFLUX\*
 HKLM\SOFTWARE\Veyon Solutions
 HKLM\SOFTWARE\WOW6432Node\Action1
+HKLM\SOFTWARE\WOW6432Node\Faronics\Faronics Core 3
+HKLM\SOFTWARE\WOW6432Node\Faronics\Faronics Core 3\Storage Spaces\Spaces\FWA
 HKLM\SOFTWARE\WOW6432Node\Freshdesk\FSAgent
 HKLM\SOFTWARE\WOW6432Node\Freshworks\FreshServiceProbe
 HKLM\SOFTWARE\WOW6432Node\GLPI-Agent
@@ -77,22 +91,30 @@ HKLM\System\CurrentControlSet\Services\A1Agent
 HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx
 HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk
 HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent
+HKLM\SYSTEM\CurrentControlSet\Services\DFServ
+HKLM\SYSTEM\CurrentControlSet\Services\FaronicsCoreAgent
+HKLM\SYSTEM\CurrentControlSet\Services\FIStudentSvc
 HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service
 HKLM\SYSTEM\CurrentControlSet\Services\FreshServiceScan
 HKLM\SYSTEM\CurrentControlSet\Services\FSAgentService
 HKLM\System\CurrentControlSet\Services\GetscreenSV
 HKLM\SYSTEM\CurrentControlSet\Services\InvClient
 HKLM\SYSTEM\CurrentControlSet\Services\InvClient\ImagePath
+HKLM\System\CurrentControlSet\Services\komari-agent
 HKLM\System\CurrentControlSet\Services\LunixarRMM
+HKLM\SYSTEM\CurrentControlSet\Services\Netbird
+HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
 HKLM\SYSTEM\CurrentControlSet\Services\TiService
 HKLM\SYSTEM\CurrentControlSet\Services\TiService\ImagePath
 HKLM\SYSTEM\CurrentControlSet\Services\TiService\Start
+HKLM\SYSTEM\CurrentControlSet\Services\TrustConnect Agent
 HKLM\SYSTEM\CurrentControlSet\Services\tsvchst
 HKLM\SYSTEM\CurrentControlSet\Services\tsvchst\ImagePath
 HKLM\SYSTEM\CurrentControlSet\Services\tsvchst\Start
 HKLM\SYSTEM\CurrentControlSet\Services\VeyonService
+HKLM\System\CurrentControlSet\Services\Windows Update Service
 HKU\.DEFAULT\Software\Ammyy\Admin
 HKU\.DEFAULT\Software\Splashtop Inc.\*
 HKU\<SID>\SOFTWARE\TeamViewer\*

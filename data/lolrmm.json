@@ -2474,15 +2474,6 @@
         {
           "Description": "N/A",
           "Domains": [
-            "pubsub.pubnub.com"
-          ],
-          "Ports": [
-            "N/A"
-          ]
-        },
-        {
-          "Description": "N/A",
-          "Domains": [
             "agentreporting.atera.com"
           ],
           "Ports": [
@@ -2528,15 +2519,6 @@
         {
           "Description": "N/A",
           "Domains": [
-            "ps.pndsn.com"
-          ],
-          "Ports": [
-            "N/A"
-          ]
-        },
-        {
-          "Description": "N/A",
-          "Domains": [
             "agent-api.atera.com"
           ],
           "Ports": [
@@ -2571,7 +2553,7 @@
           ]
         },
         {
-          "Description": "N/A",
+          "Description": "Atera-specific PubNub tenant subdomain (CNAME api-tls11.pubnubapi.com) used by the AteraAgent for real-time tenant messaging. Distinct from the generic pubsub.pubnub.com / ps.pndsn.com PubNub multi-tenant infrastructure (shared by thousands of unrelated apps), this `atera.`-prefixed subdomain is reliable Atera-attribution signal.",
           "Domains": [
             "atera.pubnubapi.com"
           ],
@@ -2639,7 +2621,8 @@
       "https://support.atera.com/hc/en-us/articles/360015461139-Firewall-Settings-for-Atera-s-Integrations",
       "https://support.atera.com/hc/en-us/articles/215955967-Troubleshoot-Atera-s-Windows-agent",
       "https://support.atera.com/hc/en-us/articles/115015619747-Release-Notes-February-2018",
-      "https://thedfirreport.com/?s=ateraagent"
+      "https://thedfirreport.com/?s=ateraagent",
+      "https://www.pubnub.com/docs/general/setup/connection-management"
     ],
     "Acknowledgement": [
       {
@@ -4977,6 +4960,149 @@
     "source_file": "dameware.yaml"
   },
   {
+    "Name": "Dataplicity",
+    "Category": "RAT",
+    "Description": "Dataplicity (by Wildfoundry) is a cloud-hosted remote-access service that exposes Linux systems — primarily Raspberry Pi devices — to the Dataplicity cloud for browser-based remote shell, \"Wormhole\" HTTP tunneling, and remote management. The agent installs via a curl|sudo python one-liner (`curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python`) and registers the host with the operator's tenant under `*.dataplicity.com`. After install the operator has persistent remote shell access through the Dataplicity web console or Windows companion app without any inbound firewall change on the victim host. Catalogued by the LOTTunnels project under the \"shell access\" category for exactly this abuse profile.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-18",
+    "LastModified": "2026-05-18",
+    "Details": {
+      "Website": "https://www.dataplicity.com/",
+      "PEMetadata": [
+        {
+          "Filename": "dataplicity",
+          "OriginalFileName": "dataplicity",
+          "Description": "Dataplicity agent (Python-based) installed via curl|sudo python one-liner; runs as a system service that maintains the persistent control channel back to *.dataplicity.com.",
+          "Product": null
+        }
+      ],
+      "Privileges": "root (Linux installer uses sudo)",
+      "Free": "Yes (free + paid tiers)",
+      "Verification": "Tenant signup required; per-device install token embedded in installer URL",
+      "SupportedOS": [
+        "Linux",
+        "Windows",
+        "MacOS"
+      ],
+      "Capabilities": [
+        "Browser-based remote terminal (shell access through Dataplicity web console)",
+        "Wormhole HTTP tunneling (expose a local HTTP service publicly via `*.wormhole.dataplicity.com`)",
+        "Remote file management",
+        "Persistent device registration in operator tenant",
+        "Windows desktop companion app for managing connected devices"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "/opt/dataplicity/*",
+        "/opt/dataplicity/tuxtunnel/*",
+        "/usr/local/bin/dataplicity",
+        "/etc/systemd/system/dataplicity.service",
+        "/etc/init.d/dataplicity"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "/opt/dataplicity/tuxtunnel/manager",
+          "Description": "Dataplicity manager binary (the persistent remote-control daemon)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/dataplicity/credentials",
+          "Description": "Dataplicity agent credentials file (per-tenant install token + device identity)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/dataplicity.service",
+          "Description": "systemd unit file for Dataplicity agent persistence",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/init.d/dataplicity",
+          "Description": "SysV init script for Dataplicity agent persistence (older or non-systemd Linux distributions)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [
+        {
+          "Description": "Dataplicity control plane and per-device tenant subdomain. Each registered device gets a `*.dataplicity.com` URL the operator uses to open a browser-based shell. `*.wormhole.dataplicity.com` is the HTTP-tunnel subdomain used to publish local HTTP services.",
+          "Domains": [
+            "dataplicity.com",
+            "www.dataplicity.com",
+            "*.dataplicity.com",
+            "*.wormhole.dataplicity.com"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "URL",
+          "Value": "https://www.dataplicity.com/<TOKEN>.py"
+        },
+        {
+          "Type": "Other",
+          "Value": "Install command: curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python  (high-signal hunt pattern — sudo-piped curl-to-python from dataplicity.com)"
+        },
+        {
+          "Type": "Other",
+          "Value": "LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/dataplicity/"
+        }
+      ]
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dataplicity_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential file activity of Dataplicity RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dataplicity_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Dataplicity RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dataplicity_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of Dataplicity RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.dataplicity.com/",
+      "https://github.com/wildfoundry/dataplicity-agent",
+      "https://lottunnels.github.io/lottunnels/Binaries/dataplicity/"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "rcKillam",
+        "Handle": "@rcKillam"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "dataplicity.yaml"
+  },
+  {
     "Name": "DeskDay",
     "Category": "RMM",
     "Description": "DeskDay is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -5894,7 +6020,7 @@
       "InstallationPaths": [
         "dwagsvc.exe",
         "dwagent.exe",
-        "dwagsvc.exe"
+        "dwaglnc.exe"
       ]
     },
     "Artifacts": {
@@ -5929,9 +6055,15 @@
       }
     ],
     "References": [
-      "https://news.dwservice.net/dwservice-security-infrastructure/"
+      "https://news.dwservice.net/dwservice-security-infrastructure/",
+      "https://www.rapid7.com/blog/post/tr-muddying-tracks-state-sponsored-shadow-behind-chaos-ransomware/"
     ],
-    "Acknowledgement": [],
+    "Acknowledgement": [
+      {
+        "Person": "Daniel Koifman",
+        "Handle": "@KoifSec"
+      }
+    ],
     "source_file": "dw_service.yaml",
     "CodeSigning": {
       "certificates": [
@@ -6655,6 +6787,942 @@
     ],
     "Acknowledgement": [],
     "source_file": "ezhelp.yaml"
+  },
+  {
+    "Name": "Faronics Core",
+    "Category": "RMM",
+    "Description": "Faronics Core is the legacy on-premises endpoint management platform from Faronics Corporation (Vancouver, BC, Canada). It uses a four-tier architecture - Core Console (admin UI), Core Server (logic), Core Database (workstation inventory), and Core Agent (endpoint). The Core Agent (FaronicsCoreAgent.exe / CoreAgentService.exe) installs as a SYSTEM service on managed workstations and brokers communication between the Core Console / Server and the workstation, allowing remote task execution, software inventory, and loadout of Faronics modules (Deep Freeze, Anti-Executable, Anti-Virus, Power Save, WINSelect). Although mostly superseded by Faronics Deploy / Faronics Cloud, the Core Agent is still seen on long-running enterprise / education fleets and is part of the Faronics product family per LOLRMM issue 151.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-04",
+    "LastModified": "2026-05-04",
+    "Details": {
+      "Website": "https://www.faronics.com/products/faronics-core",
+      "PEMetadata": [
+        {
+          "Filename": "FaronicsCoreAgent.exe",
+          "OriginalFileName": "FaronicsCoreAgent.exe",
+          "Description": "Faronics Core Agent (workstation)",
+          "Product": null
+        },
+        {
+          "Filename": "CoreAgentService.exe",
+          "OriginalFileName": "CoreAgentService.exe",
+          "Description": "Faronics Core Agent service host",
+          "Product": null
+        },
+        {
+          "Filename": "FCAForStartupMonitor.msi",
+          "OriginalFileName": "FCAForStartupMonitor.msi",
+          "Description": "Faronics Core Agent startup-monitor MSI",
+          "Product": null
+        }
+      ],
+      "Privileges": "SYSTEM",
+      "Free": false,
+      "Verification": "Signed - 'Faronics Corporation' (DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1 / DigiCert SHA2 Assured ID Code Signing CA / VeriSign Class 3 Code Signing 2010 CA)",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Centralized workstation management (legacy on-prem console)",
+        "Software / hardware inventory",
+        "Task and command execution against managed workstations",
+        "Loadouts for Deep Freeze, Anti-Executable, Anti-Virus, Power Save, WINSelect, Insight, and other Faronics modules",
+        "MSI-based mass deployment of the Core Agent"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\Faronics\\Faronics Core\\*",
+        "C:\\Program Files\\Faronics\\Faronics Core\\Workstation Agent\\*",
+        "C:\\Program Files\\Faronics\\Core\\Console\\*",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Core\\*",
+        "*\\Faronics\\Faronics Core\\Workstation Agent\\FaronicsCoreAgent.exe",
+        "*\\Faronics\\Faronics Core\\Workstation Agent\\CoreAgentService.exe",
+        "C:\\ProgramData\\Faronics\\FCAForStartupMonitor.msi",
+        "FaronicsCoreAgent.exe",
+        "CoreAgentService.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\Faronics\\Faronics Core\\Workstation Agent\\FaronicsCoreAgent.exe",
+          "Description": "Faronics Core Agent main executable",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Faronics\\Faronics Core\\Workstation Agent\\CoreAgentService.exe",
+          "Description": "Faronics Core Agent service host",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\Faronics\\FCAForStartupMonitor.msi",
+          "Description": "Faronics Core Agent startup-monitor MSI installer",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "FaronicsCoreAgent",
+          "ImagePath": "\"C:\\Program Files\\Faronics\\Faronics Core\\Workstation Agent\\FaronicsCoreAgent.exe\"",
+          "CommandLine": null,
+          "Description": "Service installation event for the Faronics Core Agent."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FaronicsCoreAgent",
+          "Description": "Faronics Core Agent Windows service registration"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Faronics\\Faronics Core 3",
+          "Description": "Faronics Core 3 product configuration root"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\WOW6432Node\\Faronics\\Faronics Core 3",
+          "Description": "Faronics Core 3 product configuration root (32-bit on 64-bit hosts)"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Faronics",
+          "Description": "Top-level Faronics product registry hive"
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Faronics Core legacy update / activation infrastructure",
+          "Domains": [
+            "upd.faronicslabs.com",
+            "faronics.com",
+            "www.faronics.com"
+          ],
+          "Ports": [
+            80,
+            443
+          ]
+        },
+        {
+          "Description": "Faronics Core Server <-> Core Agent on-prem communication. The Core Server hostname/IP is administrator-supplied (no fixed vendor domain) — hunt on TCP/7751-7752 to/from on-prem Core Server hosts and pair with the Disk / Registry / Process artifacts above. Default Faronics Core Server listener and Core Agent ports are documented by Faronics.",
+          "Domains": [
+            "user_managed"
+          ],
+          "Ports": [
+            7751,
+            7752
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential files activity of Faronics Core RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Faronics Core RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential processes activity of Faronics Core RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of Faronics Core RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.faronics.com/products/faronics-core",
+      "https://www.faronics.com/assets/FCC_Manual.pdf",
+      "https://www.faronics.com/document-library/document/faronics-core-release-notes",
+      "https://www.virustotal.com/gui/file/6f78a2dc13eaf007bd83cdda91ff4d53e737e0b7205d1ae9e38f2bfd831fdb6d"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "cbecks2",
+        "Handle": "cbecks2"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "faronics_core.yaml"
+  },
+  {
+    "Name": "Faronics Deep Freeze",
+    "Category": "RMM",
+    "Description": "Faronics Deep Freeze is a \"reboot-to-restore\" endpoint protection and management product by Faronics Corporation (Vancouver, BC, Canada). Available as Standard, Enterprise, Cloud, and Mac editions. The Deep Freeze workstation agent (DFServ.exe / DFServEx.exe / DFWks.exe / DFC.exe) installs as a SYSTEM service and is managed either locally with a console password, via the on-prem Enterprise Configuration Administrator, or through Deep Freeze Cloud, where the cloud agent (CloudWksInstall.exe / Faronics Cloud Agent) runs alongside Deep Freeze and ties the endpoint to the Faronics Cloud / Deep Freeze Cloud console for remote freeze/thaw, software updater, anti-virus, anti-executable, MDM, and remote-control capabilities. Listed as a Faronics product family per LOLRMM issue 151.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-04",
+    "LastModified": "2026-05-04",
+    "Details": {
+      "Website": "https://www.faronics.com/products/deep-freeze",
+      "PEMetadata": [
+        {
+          "Filename": "DFServ.exe",
+          "OriginalFileName": "DFServ.exe",
+          "Description": "Deep Freeze workstation service",
+          "Product": null
+        },
+        {
+          "Filename": "DFServEx.exe",
+          "OriginalFileName": "DFServEx.exe",
+          "Description": "Deep Freeze workstation service (extended host)",
+          "Product": null
+        },
+        {
+          "Filename": "DFWks.exe",
+          "OriginalFileName": "DFWks.exe",
+          "Description": "Deep Freeze Workstation install program",
+          "Product": null
+        },
+        {
+          "Filename": "DFStd.exe",
+          "OriginalFileName": "DFStd.exe",
+          "Description": "Deep Freeze Standard runtime",
+          "Product": null
+        },
+        {
+          "Filename": "DFStdInstall.exe",
+          "OriginalFileName": "DFStdInstall.exe",
+          "Description": "Deep Freeze Standard installer",
+          "Product": null
+        },
+        {
+          "Filename": "DFC.exe",
+          "OriginalFileName": "DFC.exe",
+          "Description": "Deep Freeze Console / configuration utility",
+          "Product": null
+        },
+        {
+          "Filename": "CloudWksInstall.exe",
+          "OriginalFileName": "CloudWksInstall.exe",
+          "Description": "Faronics Cloud / Deep Freeze Cloud workstation installer",
+          "Product": null
+        }
+      ],
+      "Privileges": "SYSTEM",
+      "Free": "30 day trial",
+      "Verification": "Signed - 'Faronics Corporation' (DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1 / DigiCert EV Code Signing CA SHA2)",
+      "SupportedOS": [
+        "Windows",
+        "MacOS"
+      ],
+      "Capabilities": [
+        "Reboot-to-restore endpoint protection (frozen vs thawed state)",
+        "Centralized management via Deep Freeze Cloud console",
+        "Bundled Software Updater, Anti-Virus, Anti-Executable, MDM, and Remote Connect (remote control) when managed via Faronics Cloud",
+        "Active Directory deployment via MSI Packager",
+        "Silent install / uninstall via DFWks.exe command-line switches"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\Faronics\\Deep Freeze\\*",
+        "C:\\Program Files (x86)\\Faronics\\Deep Freeze\\*",
+        "C:\\Program Files (x86)\\Faronics\\Deep Freeze\\Install C-0\\*",
+        "C:\\Program Files (x86)\\Faronics\\Deep Freeze\\Install C-1\\*",
+        "C:\\Program Files\\Faronics Corporation\\Deep Freeze 7.00\\*",
+        "*\\Faronics\\Deep Freeze\\DFServ.exe",
+        "*\\Faronics\\Deep Freeze\\DFServEx.exe",
+        "*\\Faronics\\Deep Freeze\\DFWks.exe",
+        "*\\Faronics\\Deep Freeze\\DFC.exe",
+        "DFServ.exe",
+        "DFServEx.exe",
+        "DFWks.exe",
+        "DFStd.exe",
+        "DFStdInstall.exe",
+        "DFC.exe",
+        "CloudWksInstall.exe",
+        "DFInst.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Deep Freeze\\DFServ.exe",
+          "Description": "Deep Freeze workstation service binary",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Deep Freeze\\DFServEx.exe",
+          "Description": "Deep Freeze workstation service host",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Deep Freeze\\DFWks.exe",
+          "Description": "Deep Freeze workstation install / control utility",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Windows\\Temp\\DFServiceInit.log",
+          "Description": "Deep Freeze service initialization log",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\<USER>\\AppData\\Local\\Temp\\_$Df\\DFStdInstall.sib",
+          "Description": "Deep Freeze Standard installer scratch file",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "DFServ",
+          "ImagePath": "\"C:\\Program Files (x86)\\Faronics\\Deep Freeze\\DFServ.exe\"",
+          "CommandLine": null,
+          "Description": "Service installation event for Deep Freeze workstation service."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Faronics\\Deep Freeze",
+          "Description": "Deep Freeze workstation configuration root key"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Faronics",
+          "Description": "Top-level Faronics product registry hive"
+        },
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\DFServ",
+          "Description": "Deep Freeze workstation Windows service registration"
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Deep Freeze Cloud / Faronics Cloud management console",
+          "Domains": [
+            "deepfreeze.com",
+            "www.deepfreeze.com",
+            "faronicscloud.com",
+            "cloud.faronics.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Faronics legacy update / activation infrastructure embedded in Deep Freeze installers",
+          "Domains": [
+            "upd.faronicslabs.com",
+            "faronics.com",
+            "www.faronics.com"
+          ],
+          "Ports": [
+            80,
+            443
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential files activity of Faronics Deep Freeze RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Faronics Deep Freeze RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential processes activity of Faronics Deep Freeze RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of Faronics Deep Freeze RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.faronics.com/products/deep-freeze",
+      "https://docs.faronics.com/deep-freeze-cloud",
+      "https://www.faronics.com/webhelp/DFE/860/EN/Chapter.1.108.html",
+      "https://www.faronics.com/document-library/document/deep-freeze-msi-packager",
+      "https://faronicscloud.com/blogs/news/what-is-faronics-cloud-a-complete-guide-to-cloud-endpoint-management",
+      "https://www.virustotal.com/gui/file/c699e5b33564c03d65e22a272d9164fc8a2e46822d792564fb52d3b45fb5a1e4",
+      "https://www.virustotal.com/gui/file/48f35f01c04192e39b9e51850792e5fbc1a9df31e0f61ab505b1c1c30aaa0b36"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "cbecks2",
+        "Handle": "cbecks2"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "faronics_deep_freeze.yaml"
+  },
+  {
+    "Name": "Faronics Deploy",
+    "Category": "RMM",
+    "Description": "Faronics Deploy is a cloud-hosted Remote Monitoring and Management (RMM) platform by Faronics Corporation (Vancouver, BC, Canada). Provides software/OS deployment, patch management, application install/uninstall/update, hardware and software inventory, and integrated remote control over RDP, VNC, and a proprietary in-browser session (\"Remote Pro\"). The Windows endpoint agent (FaronicsDeployAgent / FWAService) installs as a SYSTEM service and communicates outbound only to AWS-hosted Faronics tenants in us-west-2 / eu-west-1, plus regional remotepro-* hosts for remote-control sessions. Faronics Deploy is the focus of LOLRMM issue 151.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-04",
+    "LastModified": "2026-05-04",
+    "Details": {
+      "Website": "https://www.faronics.com/products/deploy",
+      "PEMetadata": [
+        {
+          "Filename": "FaronicsDeployAgent.exe",
+          "OriginalFileName": "FaronicsDeployAgent.exe",
+          "Description": "Faronics Deploy Agent (full installer)",
+          "Product": null
+        },
+        {
+          "Filename": "FWAService.exe",
+          "OriginalFileName": "FWAService.exe",
+          "Description": "Faronics Deploy / Cloud Agent service host (FWASvc)",
+          "Product": null
+        },
+        {
+          "Filename": "FWA_UI_Agent.exe",
+          "OriginalFileName": "FWA_UI_Agent.exe",
+          "Description": "Faronics Deploy user-interface agent",
+          "Product": null
+        },
+        {
+          "Filename": "FRCServer.exe",
+          "OriginalFileName": "FRCServer.exe",
+          "Description": "Faronics Remote Control server component",
+          "Product": null
+        },
+        {
+          "Filename": "FaronicsSA.exe",
+          "OriginalFileName": "FaronicsSA.exe",
+          "Description": "Faronics Standalone helper",
+          "Product": null
+        },
+        {
+          "Filename": "FSSInstaller.exe",
+          "OriginalFileName": "FSSInstaller.exe",
+          "Description": "Faronics Storage Spaces installer",
+          "Product": null
+        },
+        {
+          "Filename": "NotificationHelper.exe",
+          "OriginalFileName": "NotificationHelper.exe",
+          "Description": "Faronics Deploy notification helper",
+          "Product": null
+        },
+        {
+          "Filename": "ModulesUpgradeMgr.exe",
+          "OriginalFileName": "ModulesUpgradeMgr.exe",
+          "Description": "Faronics Deploy module upgrade manager",
+          "Product": null
+        }
+      ],
+      "Privileges": "SYSTEM",
+      "Free": "30 day trial",
+      "Verification": "Signed - 'Faronics Corporation' (DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1 / DigiCert SHA2 Assured ID Code Signing CA)",
+      "SupportedOS": [
+        "Windows",
+        "MacOS"
+      ],
+      "Capabilities": [
+        "Cloud-hosted RMM console (deploy.faronics.com)",
+        "Software / OS / patch deployment",
+        "Application install, uninstall, and update",
+        "Hardware and software inventory",
+        "Integrated remote control via Remote Pro (browser), RDP, and VNC",
+        "Custom application packaging",
+        "Active Directory MSI deployment"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\*",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FaronicsDeployAgent.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FWAService.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FWA_UI_Agent.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FRCServer.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FaronicsSA.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FSSInstaller.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\ModulesUpgradeMgr.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\NotificationHelper.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\UserNotificationHelper.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\MigrationHelper_32.exe",
+        "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\MigrationHelper_64.exe",
+        "C:\\ProgramData\\Faronics\\StorageSpace\\FWA\\*",
+        "FaronicsDeployAgent.exe",
+        "FWAWebInstaller_*.exe",
+        "FWAService.exe",
+        "FWA_UI_Agent.exe",
+        "CloudWksInstall.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FaronicsDeployAgent.exe",
+          "Description": "Faronics Deploy Agent main executable",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FWAService.exe",
+          "Description": "Faronics Deploy Cloud Agent service (registered as FWASvc)",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FWA_UI_Agent.exe",
+          "Description": "Faronics Deploy user-interface agent",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FRCServer.exe",
+          "Description": "Faronics Remote Control server component",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\Faronics\\StorageSpace\\FWA\\CloudAgentLogs.LOG",
+          "Description": "Faronics Deploy / Cloud Agent activity log",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\Faronics\\StorageSpace\\FWA\\Logs\\FWASvc.log",
+          "Description": "Faronics Deploy service log (FWASvc)",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "FWASvc",
+          "ImagePath": "\"C:\\Program Files (x86)\\Faronics\\Faronics Deploy Agent\\FWAService.exe\"",
+          "CommandLine": null,
+          "Description": "Service installation event for the Faronics Deploy / Cloud Agent service."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Faronics",
+          "Description": "Top-level Faronics product registry hive (shared with other Faronics products; presence of Faronics Deploy subkeys confirms install)"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\WOW6432Node\\Faronics\\Faronics Core 3\\Storage Spaces\\Spaces\\FWA",
+          "Description": "Faronics Deploy / Cloud Agent storage-space configuration"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Classes\\AppID\\FWAService.exe",
+          "Description": "COM AppID registration for the FWAService.exe service host"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Classes\\{359C24F1-51B5-44CE-8F2D-2FBB1A0FE4EA}\\FWA_GUI_Agent",
+          "Description": "COM CLSID for the Faronics Deploy GUI agent (FWA_GUI_Agent)"
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{581F69E6-A5D1-48C7-9F6F-CC333007F7EB}",
+          "Description": "Faronics Deploy Agent uninstall entry"
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Faronics Deploy console / endpoint sign-up (web)",
+          "Domains": [
+            "deploy.faronics.com",
+            "www.faronicsdeploy.com",
+            "faronicscloud.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Faronics Deploy / Cloud agent management API (AWS API Gateway, us-west-2 and eu-west-1)",
+          "Domains": [
+            "nv0mddxkh7.execute-api.us-west-2.amazonaws.com",
+            "29qoj3q0yf.execute-api.us-west-2.amazonaws.com",
+            "8z5x4rqbxi.execute-api.eu-west-1.amazonaws.com",
+            "1wuccjc4a3.execute-api.eu-west-1.amazonaws.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Faronics Deploy installer / artifact storage (S3, us-west-2 and eu-west-1)",
+          "Domains": [
+            "faronics-deploy-na-production-installers.s3.us-west-2.amazonaws.com",
+            "faronics-deploy-int-production-installers.s3.eu-west-1.amazonaws.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Faronics Deploy Remote Pro browser-based remote-control regional endpoints",
+          "Domains": [
+            "remotepro-us-west-2.faronics.com",
+            "remotepro-us-east-1.faronics.com",
+            "remotepro-ca-central-1.faronics.com",
+            "remotepro-eu-west-1.faronicsdeploy.com",
+            "remotepro-ap-southeast-1.faronicsdeploy.com",
+            "remotepro-sa-east-1.faronicsdeploy.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Faronics support / corporate domains contacted by signed agent binaries",
+          "Domains": [
+            "faronics.com",
+            "support.faronics.com",
+            "docs.faronics.com",
+            "upd.faronicslabs.com"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential files activity of Faronics Deploy RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Faronics Deploy RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential processes activity of Faronics Deploy RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of Faronics Deploy RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.faronics.com/products/deploy",
+      "https://docs.faronics.com/faronicsdeploy",
+      "https://docs.faronics.com/faronicsdeploy/get-started-1/quick-start/pre-requisites/install-deploy-agents/windows-install-guide",
+      "https://support.faronics.com/help/en-ca/6-faronics-deploy/77-what-port-numbers-and-host-names-are-used-by-faronics-deploy",
+      "https://www.faronics.com/deploy/remote-control",
+      "https://www.virustotal.com/gui/file/b38229e9ce3a249ff7ac06ee9158e744c023338b570ffaf9bed8fc9b94b944f4",
+      "https://www.virustotal.com/gui/file/eee04dd4e7dd58d33ffb503686cdac07f88f8bea7bb29dbcd48d6715c198cea9"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "cbecks2",
+        "Handle": "cbecks2"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "faronics_deploy.yaml"
+  },
+  {
+    "Name": "Faronics Insight",
+    "Category": "RMM",
+    "Description": "Faronics Insight is a classroom / lab management platform by Faronics Corporation (Vancouver, BC, Canada) that provides Teacher-to-Student remote control, screen monitoring, screen broadcasting, application and web blocking, keylogging, browser-history collection, and remote command execution across managed Student endpoints. The Insight Student agent (FIStudentAgent.exe / FIStudentSvc.exe / FIStudentUI.exe / STAHelper.exe) installs as a SYSTEM service on the managed device, while the Insight Teacher console drives the Students via an Insight Connector intermediary. While marketed for K-12 / EDU classroom management, the same Teacher → Student remote-control, monitoring, and command capabilities meet the LOLRMM RMM-shape definition and are part of the Faronics product family from issue 151.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-04",
+    "LastModified": "2026-05-04",
+    "Details": {
+      "Website": "https://www.faronics.com/products/insight",
+      "PEMetadata": [
+        {
+          "Filename": "FIStudentSvc.exe",
+          "OriginalFileName": "FIStudentSvc.exe",
+          "Description": "Faronics Insight Student Windows service",
+          "Product": null
+        },
+        {
+          "Filename": "FIStudentAgent.exe",
+          "OriginalFileName": "FIStudentAgent.exe",
+          "Description": "Faronics Insight Student agent",
+          "Product": null
+        },
+        {
+          "Filename": "FIStudentUI.exe",
+          "OriginalFileName": "FIStudentUI.exe",
+          "Description": "Faronics Insight Student user-interface process",
+          "Product": null
+        },
+        {
+          "Filename": "STAHelper.exe",
+          "OriginalFileName": "STAHelper.exe",
+          "Description": "Faronics Insight Student / Teacher helper executable (commonly flagged by AV; vendor-recommended whitelist)",
+          "Product": null
+        },
+        {
+          "Filename": "StudentSvc.exe",
+          "OriginalFileName": "StudentSvc.exe",
+          "Description": "Insight Student service (legacy filename)",
+          "Product": null
+        },
+        {
+          "Filename": "InsightInstaller.exe",
+          "OriginalFileName": "InsightInstaller.exe",
+          "Description": "Faronics Insight unified installer",
+          "Product": null
+        },
+        {
+          "Filename": "InsightInstallerStudent.exe",
+          "OriginalFileName": "InsightInstallerStudent.exe",
+          "Description": "Faronics Insight Student installer",
+          "Product": null
+        },
+        {
+          "Filename": "InsightInstallerTeacher.exe",
+          "OriginalFileName": "InsightInstallerTeacher.exe",
+          "Description": "Faronics Insight Teacher installer",
+          "Product": null
+        }
+      ],
+      "Privileges": "SYSTEM",
+      "Free": "30 day trial",
+      "Verification": "Signed - 'Faronics Corporation' (DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1 / DigiCert SHA2 Assured ID Code Signing CA)",
+      "SupportedOS": [
+        "Windows",
+        "MacOS",
+        "ChromeOS",
+        "Android",
+        "iOS"
+      ],
+      "Capabilities": [
+        "Remote control of Student endpoints from the Teacher console",
+        "Real-time screen monitoring and screen broadcasting",
+        "Application and website blocking / allow-listing",
+        "Keylogging and browser-history collection",
+        "Remote command execution and file transfer",
+        "Mass deployment via Faronics Deploy / Active Directory MSI"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\Faronics\\Insight Student\\*",
+        "C:\\Program Files\\Faronics\\Insight Teacher\\*",
+        "C:\\Program Files (x86)\\Faronics\\Insight Student\\*",
+        "C:\\Program Files (x86)\\Faronics\\Insight Teacher\\*",
+        "*\\Faronics\\Insight Student\\STAHelper.exe",
+        "*\\Faronics\\Insight Teacher\\STAHelper.exe",
+        "*\\Faronics\\Insight Student\\FIStudentSvc.exe",
+        "*\\Faronics\\Insight Student\\FIStudentAgent.exe",
+        "*\\Faronics\\Insight Student\\FIStudentUI.exe",
+        "FIStudentAgent.exe",
+        "FIStudentSvc.exe",
+        "FIStudentUI.exe",
+        "STAHelper.exe",
+        "StudentSvc.exe",
+        "InsightInstaller.exe",
+        "InsightInstallerStudent.exe",
+        "InsightInstallerTeacher.exe",
+        "InsightSetup.msi"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\Faronics\\Insight Student\\FIStudentSvc.exe",
+          "Description": "Faronics Insight Student Windows service",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Faronics\\Insight Student\\FIStudentAgent.exe",
+          "Description": "Faronics Insight Student agent",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Faronics\\Insight Student\\FIStudentUI.exe",
+          "Description": "Faronics Insight Student UI host",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Faronics\\Insight Student\\STAHelper.exe",
+          "Description": "Faronics Insight Student helper executable",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Faronics\\Insight Teacher\\STAHelper.exe",
+          "Description": "Faronics Insight Teacher helper executable",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "FIStudentSvc",
+          "ImagePath": "\"C:\\Program Files\\Faronics\\Insight Student\\FIStudentSvc.exe\"",
+          "CommandLine": null,
+          "Description": "Service installation event for Insight Student."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Faronics",
+          "Description": "Top-level Faronics product registry hive (shared with other Faronics products)"
+        },
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\FIStudentSvc",
+          "Description": "Faronics Insight Student Windows service registration"
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Faronics Insight documentation, support, and update infrastructure",
+          "Domains": [
+            "faronics.com",
+            "www.faronics.com",
+            "support.faronics.com",
+            "docs.faronics.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Insight Connector intermediary host. The Connector hostname/IP is administrator-supplied (no fixed vendor domain) — hunt on TCP/1313 and TCP/8080 to/from on-prem Connector hosts and pair with the FIStudentSvc / FIStudentAgent / FIStudentUI / STAHelper process artifacts above. Default Teacher / Student communication ports are listed by Faronics in the Insight Quick Install Guide.",
+          "Domains": [
+            "user_managed"
+          ],
+          "Ports": [
+            1313,
+            8080
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential files activity of Faronics Insight RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Faronics Insight RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential processes activity of Faronics Insight RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of Faronics Insight RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.faronics.com/products/insight",
+      "https://docs.faronics.com/faronics-insight-docs",
+      "https://docs.faronics.com/faronics-insight-docs/installation-and-administration/installation/installing-on-windows/installing-the-insight-student",
+      "https://docs.faronics.com/faronics-insight-docs/installation-and-administration/installation/installing-on-windows/installing-the-insight-student/command-line-installation",
+      "https://www.faronics.com/assets/INS_Manual.pdf",
+      "https://www.virustotal.com/gui/file/7c9436a2cb59e4de9dab8b0a72ce874ddae448dce47b5e07d95d221fffba3ba7",
+      "https://www.virustotal.com/gui/file/647a06a3ab62d848ed5f0e5853825dc8c97954b766ed8c710ec0a1608971a61b"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "cbecks2",
+        "Handle": "cbecks2"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "faronics_insight.yaml"
   },
   {
     "Name": "FastViewer",
@@ -9748,6 +10816,12 @@
           "Product": null
         },
         {
+          "Filename": "G2M.exe",
+          "OriginalFileName": null,
+          "Description": null,
+          "Product": null
+        },
+        {
           "Filename": "G2MCodecInstExtractor.exe",
           "OriginalFileName": null,
           "Description": null,
@@ -9941,7 +11015,9 @@
       "Capabilities": [],
       "Vulnerabilities": [],
       "InstallationPaths": [
-        "C:\\Program Files (x86)\\GoToMyPC\\*"
+        "C:\\Program Files (x86)\\GoToMyPC\\*",
+        "G2M.exe",
+        "%APPDATA%\\GoToMeeting\\G2M.exe"
       ]
     },
     "Artifacts": {
@@ -9949,6 +11025,13 @@
         {
           "File": "%AppData%\\GoTo\\Logs\\goto.log",
           "Description": "N/A",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "%APPDATA%\\GoToMeeting\\G2M.exe",
+          "Description": "Legitimate, LogMeIn-signed GoToMeeting binary observed in the wild as a DLL-search-order-hijacking host. The Zscaler OpenClaw campaign (May 2025) shipped G2M.exe inside a malicious MSI alongside a malicious `g2m.dll` placed in the same directory so the signed binary loaded the attacker DLL on launch, then decrypted Remcos RAT shellcode. Hunt for `G2M.exe` running with a non-LogMeIn-signed `g2m.dll` next to it.",
           "OS": "Windows",
           "Type": null,
           "Example": []
@@ -10012,12 +11095,18 @@
     "References": [
       "https://support.logmeininc.com/gotomypc/help/what-are-the-optimal-firewall-configurations#",
       "https://support.goto.com/training/help/how-do-i-configure-gototraining-to-work-with-firewalls",
-      "https://ruler-project.github.io/ruler-project/RULER/remote/Citrix%20GoToMyPC/"
+      "https://ruler-project.github.io/ruler-project/RULER/remote/Citrix%20GoToMyPC/",
+      "https://www.zscaler.com/blogs/security-research/malicious-openclaw-skill-distributes-remcos-rat-and-ghostloader",
+      "https://www.virustotal.com/gui/file/0d3ca4872e757fa406c10aa6893e831c2aaadce0687537d14fdce1702517b2d0/behavior"
     ],
     "Acknowledgement": [
       {
         "Person": "Phill Moore",
         "Handle": "@phillmoore"
+      },
+      {
+        "Person": "Daniel Koifman",
+        "Handle": "@KoifSec"
       }
     ],
     "source_file": "gotomypc.yaml"
@@ -13458,55 +14547,218 @@
   {
     "Name": "Komari",
     "Category": "RMM",
-    "Description": "A simple server monitor tool.",
+    "Description": "Komari is a lightweight, self-hosted server monitoring tool with a web interface and lightweight agent. It supports server status monitoring through a web dashboard and collects telemetry through an installed agent.",
     "Author": "Daniel Koifman (KoifSec)",
     "Created": "2026-05-03",
-    "LastModified": "2026-05-03",
+    "LastModified": "2026-05-15",
     "Details": {
       "Website": "https://github.com/komari-monitor/komari",
-      "PEMetadata": [],
-      "Privileges": "User",
+      "PEMetadata": [
+        {
+          "Filename": "komari.exe",
+          "OriginalFileName": "komari.exe",
+          "Description": "Komari server binary",
+          "Product": "Komari"
+        },
+        {
+          "Filename": "komari-agent.exe",
+          "OriginalFileName": "komari-agent.exe",
+          "Description": "Komari agent binary",
+          "Product": "Komari Agent"
+        }
+      ],
+      "Privileges": "SYSTEM/root",
       "Free": true,
-      "Verification": true,
+      "Verification": "Official documentation and installer scripts",
       "SupportedOS": [
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac",
+        "FreeBSD"
       ],
       "Capabilities": [
-        "Remote Desktop Access",
-        "Remote Shell"
+        "Remote Monitoring",
+        "Web Interface",
+        "Agent-based telemetry",
+        "Server monitoring"
       ],
       "Vulnerabilities": [],
       "InstallationPaths": [
-        "komari-windows-386.exe",
-        "komari-windows-amd64.exe",
-        "komari-windows-arm64.exe",
-        "komari-agent.exe"
+        "C:\\Program Files\\Komari\\*",
+        "C:\\komari\\*",
+        "/opt/komari/*",
+        "/usr/local/komari/*",
+        "/etc/systemd/system/komari.service",
+        "/etc/systemd/system/komari-agent.service"
       ]
     },
     "Artifacts": {
-      "Disk": [],
-      "EventLog": [],
-      "Registry": [],
-      "Network": [],
-      "Other": []
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\Komari\\komari-agent.exe",
+          "Description": "Komari Agent Windows service binary",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Komari\\nssm.exe",
+          "Description": "NSSM service wrapper used by the Windows Komari Agent installer",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\komari\\agent",
+          "Description": "Komari Agent binary path when installed from a POSIX shell on Windows",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/komari/komari",
+          "Description": "Komari server binary installed by the official Linux installer",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/komari/agent",
+          "Description": "Komari Agent binary installed by the official Linux installer",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/local/komari/agent",
+          "Description": "Komari Agent binary path used by the official macOS installer",
+          "OS": "Mac",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/komari.service",
+          "Description": "Komari server systemd service",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/komari-agent.service",
+          "Description": "Komari Agent systemd service",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "komari-agent",
+          "ImagePath": "C:\\Program Files\\Komari\\komari-agent.exe",
+          "CommandLine": null,
+          "Description": "Windows service installation event for Komari Agent",
+          "OS": "Windows"
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\System\\CurrentControlSet\\Services\\komari-agent",
+          "Description": "Windows service registry key for Komari Agent (default name when installed via the vendor PowerShell installer)"
+        },
+        {
+          "Path": "HKLM\\System\\CurrentControlSet\\Services\\Windows Update Service",
+          "Description": "Komari Agent persistence under a renamed NSSM-wrapped service. Observed in-the-wild abuse pattern (Huntress, April 2026) where the actor used NSSM to install komari-agent.exe as a SYSTEM service named \"Windows Update Service\" to blend with legitimate Windows servicing."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Komari server web interface and agent communication",
+          "Domains": [
+            "github.com",
+            "raw.githubusercontent.com",
+            "ghcr.io",
+            "komari-document.pages.dev",
+            "www.komari.wiki"
+          ],
+          "Ports": [
+            25774,
+            443
+          ]
+        },
+        {
+          "Description": "Komari Agent install URL pattern observed in Huntress April 2026 abuse case (PowerShell installer pulled directly from komari-monitor's main branch on GitHub).",
+          "Domains": [
+            "raw.githubusercontent.com"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "URL",
+          "Value": "https://raw.githubusercontent.com/komari-monitor/komari-agent/refs/heads/main/install.ps1"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "039e659ade3aa8ee7758c11fdb8fbfffd2491920046d638413cea2042f6d584c"
+        },
+        {
+          "Type": "IP",
+          "Value": "45.153.34.132"
+        }
+      ]
     },
     "Detections": [
       {
-        "Sigma": "https://github.com/Koifman/LOLRMM/tree/main/detections/sigma/komari_process_sigma.yml",
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_files_sigma.yml",
         "Link": null,
         "Name": null,
-        "Description": "Detects process activity of Komari",
+        "Description": "Detects potential file activity of Komari RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Komari RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of Komari RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of Komari RMM tool",
         "author": null
       }
     ],
     "References": [
-      "https://www.huntress.com/blog/komari-c2-agent-abuse"
+      "https://www.huntress.com/blog/komari-c2-agent-abuse",
+      "https://github.com/komari-monitor/komari",
+      "https://github.com/komari-monitor/komari-agent",
+      "https://raw.githubusercontent.com/komari-monitor/komari/main/install-komari.sh",
+      "https://raw.githubusercontent.com/komari-monitor/komari-agent/main/install.sh",
+      "https://raw.githubusercontent.com/komari-monitor/komari-agent/main/install.ps1"
     ],
     "Acknowledgement": [
       {
         "Person": "Daniel Koifman",
         "Handle": "@KoifSec"
+      },
+      {
+        "Person": "Andreas K.",
+        "Handle": "@0x90v1"
       }
     ],
     "source_file": "komari.yaml"
@@ -14685,6 +15937,153 @@
     "source_file": "litemanager.yaml"
   },
   {
+    "Name": "LocalXpose",
+    "Category": "RAT",
+    "Description": "LocalXpose (loclx) is a free/subscription tunneling service from localxpose.io that exposes local TCP/UDP/HTTP services over the internet via the operator-controlled `*.localxpose.io` infrastructure. Marketed for developer use cases (webhook testing, local-server sharing), it is catalogued by the LOTTunnels project under the \"shell access\" category because the `loclx tunnel tcp/udp --port <PORT>` command pattern can expose an SSH or RDP listener through the operator's tenant subdomain, providing remote interactive access without a traditional RMM agent or open inbound firewall. Documented abuse cases include shell exposure for post-exploitation remote access, HTTP tunneling for data exfiltration, and tunnel-fronted phishing infrastructure.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-18",
+    "LastModified": "2026-05-18",
+    "Details": {
+      "Website": "https://localxpose.io/",
+      "PEMetadata": [
+        {
+          "Filename": "loclx.exe",
+          "OriginalFileName": "loclx.exe",
+          "Description": "LocalXpose command-line client (Windows). Single static Go binary; invoked as `loclx tunnel <type> --port <PORT>` after `loclx account login`.",
+          "Product": null
+        },
+        {
+          "Filename": "loclx",
+          "OriginalFileName": "loclx",
+          "Description": "LocalXpose command-line client (Linux/macOS).",
+          "Product": null
+        }
+      ],
+      "Privileges": "User",
+      "Free": "Yes (free tier + paid subscription)",
+      "Verification": "Tenant signup required (free); API-key authenticated via `loclx account login`",
+      "SupportedOS": [
+        "Windows",
+        "Linux",
+        "MacOS"
+      ],
+      "Capabilities": [
+        "TCP tunnel (`loclx tunnel tcp --port <PORT>`) — used to expose SSH/RDP/other shell-access services",
+        "UDP tunnel (`loclx tunnel udp --port <PORT>`)",
+        "HTTP/HTTPS tunnel (`loclx tunnel http --port <PORT>`) — used for webhook testing or to front phishing infrastructure",
+        "Custom domain support (paid tier)",
+        "Reserved tunnel addresses"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "loclx.exe",
+        "loclx",
+        "*\\loclx.exe",
+        "C:\\Users\\*\\AppData\\Local\\Programs\\loclx\\loclx.exe",
+        "/usr/local/bin/loclx",
+        "%APPDATA%\\loclx\\*"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "loclx.exe",
+          "Description": "LocalXpose CLI client (Go static binary). Often run from the user's Downloads or AppData directory rather than a system install path.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "%APPDATA%\\loclx\\config.yaml",
+          "Description": "LocalXpose CLI configuration (account API key after `loclx account login`)",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "~/.loclx/config.yaml",
+          "Description": "LocalXpose CLI configuration on Linux/macOS (account API key)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 4688,
+          "ProviderName": "Microsoft-Windows-Security-Auditing",
+          "LogFile": "Security.evtx",
+          "ServiceName": null,
+          "ImagePath": null,
+          "CommandLine": "loclx.exe tunnel tcp --port <PORT>",
+          "Description": "LocalXpose tunnel-create process invocation — `tcp` and `udp` tunnel subcommands are the high-signal abuse pattern (used to expose SSH/RDP for inbound remote access through the operator-controlled relay)."
+        }
+      ],
+      "Registry": [],
+      "Network": [
+        {
+          "Description": "LocalXpose tenant tunnel control plane and per-tunnel relay endpoints (wildcard subdomain pattern matches all operator-assigned tunnel hostnames).",
+          "Domains": [
+            "localxpose.io",
+            "*.localxpose.io",
+            "api.localxpose.io"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "Other",
+          "Value": "Install via npm (`npm install -g loclx`), choco, snap, or direct binary download from localxpose.io"
+        },
+        {
+          "Type": "Other",
+          "Value": "LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/localxpose/"
+        }
+      ]
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/localxpose_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential file activity of LocalXpose RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/localxpose_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of LocalXpose RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/localxpose_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of LocalXpose RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://localxpose.io/",
+      "https://lottunnels.github.io/lottunnels/Binaries/localxpose/"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "rcKillam",
+        "Handle": "@rcKillam"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "localxpose.yaml"
+  },
+  {
     "Name": "LogMeIn",
     "Category": "RMM",
     "Description": "LogMeIn is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -15484,12 +16883,6 @@
           "OriginalFileName": "",
           "Description": "ManageEngine ServiceDesk Plus binary installer component",
           "Product": null
-        },
-        {
-          "Filename": "ISBEW64.exe",
-          "OriginalFileName": "",
-          "Description": "InstallShield wrapper executable (observed in VT sandbox)",
-          "Product": null
         }
       ],
       "Privileges": "SYSTEM",
@@ -15511,7 +16904,6 @@
       "InstallationPaths": [
         "ManageEngine_ServiceDesk_Plus.exe",
         "ManageEngine_ServiceDesk_Plus.bin",
-        "ISBEW64.exe",
         "C:\\Program Files\\ManageEngine\\ServiceDesk\\*",
         "C:\\Program Files (x86)\\ManageEngine\\ServiceDesk\\*"
       ]
@@ -15528,13 +16920,6 @@
         {
           "File": "C:\\Users\\*\\AppData\\Local\\Temp\\{*}\\ManageEngine_ServiceDesk_Plus.exe",
           "Description": "ManageEngine ServiceDesk Plus temporary installer files (verified via VirusTotal sandbox)",
-          "OS": "Windows",
-          "Type": null,
-          "Example": []
-        },
-        {
-          "File": "C:\\Users\\*\\AppData\\Local\\Temp\\{*}\\ISBEW64.exe",
-          "Description": "InstallShield wrapper temporary files (verified via VirusTotal sandbox)",
           "OS": "Windows",
           "Type": null,
           "Example": []
@@ -15922,330 +17307,6 @@
           "src_file_sha256": "9653b13e7bfa2f3be8a175ff895e5bf46537e5f742905751282f956e39587b0b",
           "src_file_path": "downloaded_files/microsoft_quick_assist/9653b13e7bfa2f3be8a175ff895e5bf46537e5f742905751282f956e39587b0b",
           "src_file_company": "Microsoft Corporation"
-        }
-      ]
-    }
-  },
-  {
-    "Name": "Microsoft RDP",
-    "Category": "RAT",
-    "Description": "Microsoft RDP is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.\n\n**NOTE**: Some samples of this tool may be signed with third-party certificates. Always verify certificate ownership before implementing any blocking rules. Use certificate data for detection, hunting, and analysis purposes only.",
-    "Author": "",
-    "Created": "2024-08-02",
-    "LastModified": "2024-08-02",
-    "Details": {
-      "Website": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/remote-desktop-windows-urdc",
-      "PEMetadata": [
-        {
-          "Filename": "",
-          "OriginalFileName": "",
-          "Description": "",
-          "Product": null
-        }
-      ],
-      "Privileges": "",
-      "Free": "",
-      "Verification": "",
-      "SupportedOS": [
-        "Windows"
-      ],
-      "Capabilities": [],
-      "Vulnerabilities": [],
-      "InstallationPaths": [
-        "termsrv.exe",
-        "mstsc.exe",
-        "Microsoft Remote Desktop"
-      ]
-    },
-    "Artifacts": {
-      "Disk": [],
-      "EventLog": [],
-      "Registry": [],
-      "Network": [],
-      "Other": []
-    },
-    "Detections": [
-      {
-        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_rdp_processes_sigma.yml",
-        "Link": null,
-        "Name": null,
-        "Description": "Detects potential processes activity of Microsoft RDP RMM tool",
-        "author": null
-      }
-    ],
-    "References": [
-      "https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windows"
-    ],
-    "Acknowledgement": [],
-    "source_file": "microsoft_rdp.yaml",
-    "CodeSigning": {
-      "certificates": [
-        {
-          "signer_name": "win.rar GmbH",
-          "certificate_thumbprint": "729AE1F8B489DE176CC099FF49937F85F9E412F7",
-          "certificate_der_base64": "MIIHWDCCBUCgAwIBAgIQBIsIOZ7HA2I8cs0gd61l2TANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJVUzEXMBUGA1UEChMORGlnaUNlcnQsIEluYy4xQTA/BgNVBAMTOERpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0ExMB4XDTIzMDgwODAwMDAwMFoXDTI2MDgwNzIzNTk1OVowgeAxEzARBgsrBgEEAYI3PAIBAxMCREUxFzAVBgsrBgEEAYI3PAIBAhMGQmVybGluMR8wHQYLKwYBBAGCNzwCAQETDkNoYXJsb3R0ZW5idXJnMR0wGwYDVQQPDBRQcml2YXRlIE9yZ2FuaXphdGlvbjETMBEGA1UEBRMKSFJCIDEwOTg4NTELMAkGA1UEBhMCREUxDzANBgNVBAgTBkJlcmxpbjEPMA0GA1UEBxMGQmVybGluMRUwEwYDVQQKEwx3aW4ucmFyIEdtYkgxFTATBgNVBAMTDHdpbi5yYXIgR21iSDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAJrNBWkLzla3tj9bhusRhk6ZzgzcgNHbZRI9nSX1/buowo4BjwCRFy7zTVQ9WNey9ghE8mbY8zhPgARuICPibaP19oFySzXSxG0QJWzi/HC50S6r0skMKDR42RBM7KcEazmfmp9RCnNjIJiaINa8RUpS+SuhmUl/iIOr9rHrEE/JGWoS8Ft9XDXwS2CacetaAcdyvKD9QQRoWu0yOkM/CaS1kHIVAayqta7rZvaBcs6SyLT2aR+0cWHcmH++2H2q37KbUcSEopNffmpU3M74Lcm2uckQgjsjEwmNfgLeLLntTx8yn7bfh4ZNNytn6bX2U0zufBJbKehAH6Zfww/aFAH0wsP1148R7pPGoXG4AeyXATWn7ufbWytTrgR8aNvsuS8h3mmUGV6mSNaxGszALQ0KxKAsTpoFVVsz86yVYL/IK9wuq9ogAheDeLR1v7leLbwJsqLRi0Ry8uyX7szJF5i+puSdqGz+lx6FcR2VsD8vnPOVC3Wtq2UgEKZs/0zP0wIDAQABo4ICAjCCAf4wHwYDVR0jBBgwFoAUaDfg67Y7+F8Rhvv+YXsIiGX0TkIwHQYDVR0OBBYEFFhcVBV2Psfb2Ad3xaRy9ZeAf4cTMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzCBtQYDVR0fBIGtMIGqMFOgUaBPhk1odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRUcnVzdGVkRzRDb2RlU2lnbmluZ1JTQTQwOTZTSEEzODQyMDIxQ0ExLmNybDBToFGgT4ZNaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VHJ1c3RlZEc0Q29kZVNpZ25pbmdSU0E0MDk2U0hBMzg0MjAyMUNBMS5jcmwwPQYDVR0gBDYwNDAyBgVngQwBAzApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwgZQGCCsGAQUFBwEBBIGHMIGEMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wXAYIKwYBBQUHMAKGUGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRydXN0ZWRHNENvZGVTaWduaW5nUlNBNDA5NlNIQTM4NDIwMjFDQTEuY3J0MAkGA1UdEwQCMAAwDQYJKoZIhvcNAQELBQADggIBAMQeLwDoY491d3YPbv8Zh5MBMGxgKM4gPL05+gkTSP3UhXVE/ydaCKYtrINTYDHM+SxOb4GcAJZ35YC9G5A9nocvQhyDiQ5I12RccOQ7heNq4h2NgxbShNLgXMZgv1E7fx2J7U7u2DnJK+c4dYADKYLZdQjO3nIojrfR9z6Fg1qaPFQQqkVmudthB5/0kYcOxPucbFlKpFoY6M88ZzOKCRLUYtvXs4nYRggG25VoNLtpLjLXCjmQ0wQ/28QZYtIq7mW+Jfc1vPOiEmPzX6t7X626ulBKCIL/MV5mBeag+0P7vTT+QWQef1v7npeWOSljVv84k7h7HzPn+c208FwNSrPGFBJ7M2HiY1TGUYtCzLHeSNKykvWpp+ALyKQtueN9fJYBLc8DS7aYJvtx3saVysRzHP+4oDZuEtb3hjfSBjAZq20ohXsbNtepSUb7cyjEfaTBjpI9mq6hkDkoTSL2Su8s7o0SXfVPi6o8NfjyCGIbyDRszZWts4wBw83pUDS//zGnfaSv65BoZ9dXGdckRznpgxuHqTeBGx0P1vSLbP76f1OZ/O/tHxBmSG7KL4XyHc6BG7K4tayEI9e6qJoL0St9M7GxZ9g3qHm0kQfPekvcOXxQuVn8n9SG6/QipQKR4fG0dRp4GqoIXGUjjvbJot7A9kG0IrykPagAXznZnMBG",
-          "src_file_sha256": "39baa167de334fef185ae8b97e8c709a307eed08e80fe115577c59a05200a13a",
-          "src_file_path": "downloaded_files/microsoft_rdp/39baa167de334fef185ae8b97e8c709a307eed08e80fe115577c59a05200a13a",
-          "src_file_company": "Alexander Roshal"
-        }
-      ]
-    }
-  },
-  {
-    "Name": "Microsoft TSC",
-    "Category": "RMM",
-    "Description": "Microsoft TSC is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.\n\n**IMPORTANT**: This tool is signed with legitimate Microsoft Windows certificates that are used to sign core Windows operating system components. Do NOT blindly block these certificate thumbprints as doing so will break Windows functionality in your environment. Use certificate data for detection, hunting, and analysis purposes only.",
-    "Author": "",
-    "Created": "2024-08-02",
-    "LastModified": "2024-08-02",
-    "Details": {
-      "Website": "",
-      "PEMetadata": [
-        {
-          "Filename": "",
-          "OriginalFileName": "",
-          "Description": "",
-          "Product": null
-        }
-      ],
-      "Privileges": "",
-      "Free": "",
-      "Verification": "",
-      "SupportedOS": [],
-      "Capabilities": [],
-      "Vulnerabilities": [],
-      "InstallationPaths": [
-        "termsrv.exe",
-        "mstsc.exe"
-      ]
-    },
-    "Artifacts": {
-      "Disk": [],
-      "EventLog": [],
-      "Registry": [],
-      "Network": [],
-      "Other": []
-    },
-    "Detections": [
-      {
-        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_tsc_processes_sigma.yml",
-        "Link": null,
-        "Name": null,
-        "Description": "Detects potential processes activity of Microsoft TSC RMM tool",
-        "author": null
-      }
-    ],
-    "References": [
-      "https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/terminal-server-startup-connection-application"
-    ],
-    "Acknowledgement": [],
-    "source_file": "microsoft_tsc.yaml",
-    "CodeSigning": {
-      "search_names": [
-        "mstsc.exe",
-        "nssm_origin3al.exe",
-        "rdp.exe",
-        "termsrv.dll",
-        "termsrv.exe"
-      ],
-      "company_names": [],
-      "signer_names": [
-        "Microsoft Windows"
-      ],
-      "certificates": [
-        {
-          "signer_name": "Microsoft Windows",
-          "issuer": "CN=Microsoft Windows Production PCA 2011",
-          "certificate_thumbprint": "FACDE3D80E99AFCC15E08AC5A69BD22785287F79",
-          "tbs_sha256": "430E0E3126D270FCDD11F65A1694A7997E86EEABFA93DEB45A58B1DD4930033C",
-          "tbs_sha1": "1DB42CE638F6A2B4D7E42CCDB8FEC0EEBECA4782",
-          "valid_from": "2025-06-19T18:11:43+00:00",
-          "valid_to": "2026-06-17T18:11:43+00:00",
-          "certificate_der_base64": "MIIFCTCCA/GgAwIBAgITMwAABRhBhBmty60pTwAAAAAFGDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEuMCwGA1UEAxMlTWljcm9zb2Z0IFdpbmRvd3MgUHJvZHVjdGlvbiBQQ0EgMjAxMTAeFw0yNTA2MTkxODExNDNaFw0yNjA2MTcxODExNDNaMHAxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xGjAYBgNVBAMTEU1pY3Jvc29mdCBXaW5kb3dzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA13mqBajcSzGIQ7kqJCIE6oxXJVfqr0iUnSh2fDN9r18wuHPIlLeHyatPsH1rArFXUyj1IoPlkAbP8shArkP0m3AOlDZv8eH2Dw13ICwabGPn4SgKrY2+HlQtXtv7w+T05JCnEZHNjYXM05FkxvDOp7XlDH+t7trr7jFwtjjt1GSyp/e1la0D5bprFgrZd+idRKV3f0InKTtqr3/3QPgm6AGgcsV6djsk1zCxsbCa2mPbSv2Z0iyjPzdInLsOb/mQF7MuLaG7KcnrpnI8hgr3ce4G0gZTJGp80n8HjEFdpkdfzRJaxhGKyeCziaFukwCJxQvRLdfPyfdzDbibuZUy5QIDAQABo4IBhTCCAYEwHwYDVR0lBBgwFgYKKwYBBAGCNwoDBgYIKwYBBQUHAwMwHQYDVR0OBBYEFOF41I/R69R+LhZJ5/DUoIJ88kCTMFQGA1UdEQRNMEukSTBHMS0wKwYDVQQLEyRNaWNyb3NvZnQgSXJlbGFuZCBPcGVyYXRpb25zIExpbWl0ZWQxFjAUBgNVBAUTDTIyOTg3OSs1MDUzMzYwHwYDVR0jBBgwFoAUqSkCOY4WxJd4zZD5nk+a4XxVr1MwVwYDVR0fBFAwTjBMoEqgSIZGaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9wcy9jcmwvTWljV2luUHJvUENBMjAxMV8yMDExLTEwLTE5LmNybCUyMDBhBggrBgEFBQcBAQRVMFMwUQYIKwYBBQUHMAKGRWh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wa2lvcHMvY2VydHMvTWljV2luUHJvUENBMjAxMV8yMDExLTEwLTE5LmNydDAMBgNVHRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQA73LToVzb48EsyNktWyWo+IGLgB2p9kuAEQkU+8hLq0rA9WZonC9cODucqsbIMr1+hdczYWea7HVahHNh1e1l/t8UyFkJvbpIlr8SZV+RlV4s+WtBJzI6I85EjEBBNDiz26s/HTuK3hb0mOFTzRZLih4OBnpKR4+lid/Ptj6Vpz1LtTxLX7PrwIntLTvTe2HiJPSJ0kphhrHebSBArR0IRqtHbz/wcx1MMtBSPgjiKI1id83Hyj7Y604D5Z/Dak+1qcCo77G1Inkm39qAtvE5R+jt5TxTZgwWL9DmIjGbP0dqouGyc5FYPoqW6WBsdtBPaL/sxdDGWM77U4g14/8UJ"
-        },
-        {
-          "signer_name": "win.rar GmbH",
-          "certificate_thumbprint": "729AE1F8B489DE176CC099FF49937F85F9E412F7",
-          "certificate_der_base64": "MIIHWDCCBUCgAwIBAgIQBIsIOZ7HA2I8cs0gd61l2TANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJVUzEXMBUGA1UEChMORGlnaUNlcnQsIEluYy4xQTA/BgNVBAMTOERpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0ExMB4XDTIzMDgwODAwMDAwMFoXDTI2MDgwNzIzNTk1OVowgeAxEzARBgsrBgEEAYI3PAIBAxMCREUxFzAVBgsrBgEEAYI3PAIBAhMGQmVybGluMR8wHQYLKwYBBAGCNzwCAQETDkNoYXJsb3R0ZW5idXJnMR0wGwYDVQQPDBRQcml2YXRlIE9yZ2FuaXphdGlvbjETMBEGA1UEBRMKSFJCIDEwOTg4NTELMAkGA1UEBhMCREUxDzANBgNVBAgTBkJlcmxpbjEPMA0GA1UEBxMGQmVybGluMRUwEwYDVQQKEwx3aW4ucmFyIEdtYkgxFTATBgNVBAMTDHdpbi5yYXIgR21iSDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAJrNBWkLzla3tj9bhusRhk6ZzgzcgNHbZRI9nSX1/buowo4BjwCRFy7zTVQ9WNey9ghE8mbY8zhPgARuICPibaP19oFySzXSxG0QJWzi/HC50S6r0skMKDR42RBM7KcEazmfmp9RCnNjIJiaINa8RUpS+SuhmUl/iIOr9rHrEE/JGWoS8Ft9XDXwS2CacetaAcdyvKD9QQRoWu0yOkM/CaS1kHIVAayqta7rZvaBcs6SyLT2aR+0cWHcmH++2H2q37KbUcSEopNffmpU3M74Lcm2uckQgjsjEwmNfgLeLLntTx8yn7bfh4ZNNytn6bX2U0zufBJbKehAH6Zfww/aFAH0wsP1148R7pPGoXG4AeyXATWn7ufbWytTrgR8aNvsuS8h3mmUGV6mSNaxGszALQ0KxKAsTpoFVVsz86yVYL/IK9wuq9ogAheDeLR1v7leLbwJsqLRi0Ry8uyX7szJF5i+puSdqGz+lx6FcR2VsD8vnPOVC3Wtq2UgEKZs/0zP0wIDAQABo4ICAjCCAf4wHwYDVR0jBBgwFoAUaDfg67Y7+F8Rhvv+YXsIiGX0TkIwHQYDVR0OBBYEFFhcVBV2Psfb2Ad3xaRy9ZeAf4cTMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzCBtQYDVR0fBIGtMIGqMFOgUaBPhk1odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRUcnVzdGVkRzRDb2RlU2lnbmluZ1JTQTQwOTZTSEEzODQyMDIxQ0ExLmNybDBToFGgT4ZNaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VHJ1c3RlZEc0Q29kZVNpZ25pbmdSU0E0MDk2U0hBMzg0MjAyMUNBMS5jcmwwPQYDVR0gBDYwNDAyBgVngQwBAzApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwgZQGCCsGAQUFBwEBBIGHMIGEMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wXAYIKwYBBQUHMAKGUGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRydXN0ZWRHNENvZGVTaWduaW5nUlNBNDA5NlNIQTM4NDIwMjFDQTEuY3J0MAkGA1UdEwQCMAAwDQYJKoZIhvcNAQELBQADggIBAMQeLwDoY491d3YPbv8Zh5MBMGxgKM4gPL05+gkTSP3UhXVE/ydaCKYtrINTYDHM+SxOb4GcAJZ35YC9G5A9nocvQhyDiQ5I12RccOQ7heNq4h2NgxbShNLgXMZgv1E7fx2J7U7u2DnJK+c4dYADKYLZdQjO3nIojrfR9z6Fg1qaPFQQqkVmudthB5/0kYcOxPucbFlKpFoY6M88ZzOKCRLUYtvXs4nYRggG25VoNLtpLjLXCjmQ0wQ/28QZYtIq7mW+Jfc1vPOiEmPzX6t7X626ulBKCIL/MV5mBeag+0P7vTT+QWQef1v7npeWOSljVv84k7h7HzPn+c208FwNSrPGFBJ7M2HiY1TGUYtCzLHeSNKykvWpp+ALyKQtueN9fJYBLc8DS7aYJvtx3saVysRzHP+4oDZuEtb3hjfSBjAZq20ohXsbNtepSUb7cyjEfaTBjpI9mq6hkDkoTSL2Su8s7o0SXfVPi6o8NfjyCGIbyDRszZWts4wBw83pUDS//zGnfaSv65BoZ9dXGdckRznpgxuHqTeBGx0P1vSLbP76f1OZ/O/tHxBmSG7KL4XyHc6BG7K4tayEI9e6qJoL0St9M7GxZ9g3qHm0kQfPekvcOXxQuVn8n9SG6/QipQKR4fG0dRp4GqoIXGUjjvbJot7A9kG0IrykPagAXznZnMBG",
-          "src_file_sha256": "39baa167de334fef185ae8b97e8c709a307eed08e80fe115577c59a05200a13a",
-          "src_file_path": "downloaded_files/microsoft_tsc/39baa167de334fef185ae8b97e8c709a307eed08e80fe115577c59a05200a13a",
-          "src_file_company": "Alexander Roshal"
-        }
-      ]
-    },
-    "FileHashes": {
-      "authenticode": [
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "1E05B521C8BD52401F43E5CC7091FF2A9A7949E73733DAB73AF83A3D480C9569",
-          "sha1": "4286324C3C04C102352FD16E453D9BC4B01967E2"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "6D6C0969243DC45F0EBC8308007C6E5CEE1C8FAA858DB813F1DB2CF9C35AFDD7",
-          "sha1": "7A3937C5A1CD28F6D0BB5D4481F892AB6F3B64F2"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "E45A1E54300B7365004406463E7B849FB1ACA1F4733FFD6DB347166D72DA7800",
-          "sha1": "4B934DD90329E3200CF3122ACF26CB4CBC5A4D5C"
-        },
-        {
-          "file_name": "Mstsc.exe",
-          "sha256": "A7F9DA5D3ED97F2C1E6DAD4EEEBC0075498B18FF55EF3A866657629EABE424CD",
-          "sha1": "D8D112E22A0D884694BFB9B848BD82DD0BF63F2C"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "3A47B638C27A6DE7E24AF8A04B5DD963AD4EE3B3CDC65170B643F1D1103ED767",
-          "sha1": "AFC1118D8DCA54648DE9205EB36AD48B57881CBD"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "F7FF5D5419F6B310098870E4F30B9BE386E93BFBC1BC7E4073D01307D2F6C70D",
-          "sha1": "942B91A5F8D3712F0EEF476C5646FF10BA6D60CD"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "72B1695F661DFE020E8B162A38522BD8BC85BD37CEBDA2F2085A2BBB3BAFA302",
-          "sha1": "E6E0978F1B6BE303ADA88A42BB1B0E6CD8D70A19"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "3C67B7131057947726C4316BC74936A4B02AB7B26C000EFE8E89B679F704E5E6",
-          "sha1": "752086DC394C148EB840CCDA68981B553E3DFA0A"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "C3C71349BA6B28753A7CA70B9D154951A784D7A7E2AACFE95D1C0E29E4EC52C3",
-          "sha1": "2B6335CA72BF5AEDB45EB1F549962A906EDCBF83"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "5C1DFCD62C50CBC1A39F000971541BB819421040D616DF55B08B5DE78B8754DF",
-          "sha1": "C908976E4926358EE1DDA0BCE7A01A796FFF1C1C"
-        },
-        {
-          "file_name": "rdp.exe",
-          "sha256": "D2A858E81F72E209885D2AAA4F8BFF951B9EB6FEAA359F0D2216B6A1F45E4E81",
-          "sha1": "262D9A15A27C2ECD6A8334C4DCE8A596C0EA9C9F"
-        },
-        {
-          "file_name": "nssm_origin3al.exe",
-          "sha256": "809D787C3EA0714C821AAE5CBBEB3085472451CCE7EFB1066DDAAB1B67D6474E",
-          "sha1": "67D21A4D233AAF375A6AA6AF67092EDAFFABDB7E"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "EC711CB50A252B974FD2135B22E31A6B4191EF42B882367CC2B027A50727D01A",
-          "sha1": "68F0D251703CF6F2A9823F57301111CE2EBA445A"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "798851F484337E95B55C779753040A48FB8EE8CDCDEEC699B8853B1A2FF79D45",
-          "sha1": "A97B4E9FAF034BAD1D1634654A1A4E7EA8CC7CAC"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "84280E8B7014DC3AC3E7CF924ABD2E5341D3B0199AFC617ADB4F3A7EEAC68E2E",
-          "sha1": "C0348A51494D21A25F8804EE83FD85968F7AE9C5"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "8B5688946010528DDD238EE9B37E441124CFDD89F0954CA795AE7DA28444A1AF",
-          "sha1": "2024069E97B4F6043E8C0CC9D9A7CC9CBD2A74BD"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "40322286C92F04B90D5947A474524D03A149867D2BC60A81388A580FA76623F9",
-          "sha1": "78C9BB304099DD09DAFAB2399EDA3EF4A26C1881"
-        }
-      ],
-      "page": [
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "EFB23B84D5DD32038A2807A32773D9765B6A5431A689BA5FF2981CAF66C07D21",
-          "sha1": "B3C6E5A83D35D3E24857FF749357C9D3302B0CC4"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "CE34A0598DF732AE70CADF7D638014787178FDFF8A6F2FDD97507045C7C33845",
-          "sha1": "A663AA6C71708322723BF28A6DD86FAC1EAD48B9"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "60A78ACE6FC4FEC67AF7B4A0BB44C9A3C6CD68BF69D98D49C8FC0793089A3897",
-          "sha1": "917801524CC23AD8E061A20D1FB20464E8AADE76"
-        },
-        {
-          "file_name": "Mstsc.exe",
-          "sha256": "42D3873C07F355FC8B886E55F86266E7C68A9EBE8A131FE2A2E97A5A1CD14A1E",
-          "sha1": "BB505AE2BEEBA8C26A701BD622485C021634B8C4"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "7E9C0CDC7BE9DAA9AE3C1BD7CAA63275ECA836DDB53BFE7DC610456CA79FD690",
-          "sha1": "54E6DB7A5765956EC6E5D30BDE4DF2E8EEC2C98F"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "F34F64D5B43B7E7A99463A2C7FC4B19AFBF23CD45D4F744D8787C1BBDACDC3B1",
-          "sha1": "78175CED1BD06F77C10655B92B14C639B7591B69"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "3164518FED9BF478CF06B9127A27118E018201853AF7D1A25D07E3868BA876AB",
-          "sha1": "733A9423AE44CB172BF499F01582E59D6C74EC47"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "AE303E1FF86C1E2EF03956CECDD09D55FCC29625CD9BC68FAE8C6AF9A1112228",
-          "sha1": "25A4DB45870F5ED1AA6436CF1C58697A037032D0"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "743B64F1B4B53C9E8FBE6093CEDF1E2F35DAD8A8F266C826048F2DAB02B0E56F",
-          "sha1": "E3B41D88051001C6BBA5797BC8F6CA324F09F39C"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "38BFFA279D7247269F2F59739E0538AB7262D6A17CB152D0AEDF3E951C4598F2",
-          "sha1": "6D085579F114BF10FCB93F7FF91D327080195C19"
-        },
-        {
-          "file_name": "rdp.exe",
-          "sha256": "AD7A7B8BAF1901FC01CF94025BCF327FD02F71334052D8B4BEC6CE1710C6C504",
-          "sha1": "5D29ECF5B8979B4DF3F3605849332F7AF62918FF"
-        },
-        {
-          "file_name": "nssm_origin3al.exe",
-          "sha256": "27712F2684560BEE5BB534179F520AFB4126B30D2958E111117407413A16C23E",
-          "sha1": "DBDB15E637E2D7FF77E76364C50BF6869BF236F9"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "43E6D5CE75F9AB0F400039DFA3F75294314C29E574ACE702A48A1271FE6D6F00",
-          "sha1": "A9B8DD69B9AB37D7CE9F3EA81B1E90B47AFA83BD"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "F48D429CB43221DBCF4768FEAECD2FFD292C09C338FE85FD2A5ABF838C9FF1A4",
-          "sha1": "D226F80E6D62E1C8F7F7A9ED0CD26B09E9D607C7"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "D6FB9388BDA4C7977C1E3C39B5B1F8FABAE585A22F8532D210DFF2C36DDA1968",
-          "sha1": "F0641E0352301570CABDA8AE4F07935515A92623"
-        },
-        {
-          "file_name": "termsrv.dll",
-          "sha256": "2FD6F9DB743476A1534D27D76AF678430D37C3E4E0DD99954834D31CA22A8BD3",
-          "sha1": "58BFC5D10E6624C1A1C81388843BA7F0A93C4E93"
-        },
-        {
-          "file_name": "mstsc.exe",
-          "sha256": "B15A573DF850D7E79B8765B72CC6168BC2A46ABE35438FAB880CCBECF1F401BB",
-          "sha1": "D7B71FC64C8EDC31F02BDDD689FAF0DC84F4C9C0"
         }
       ]
     }
@@ -17734,27 +18795,34 @@
     }
   },
   {
-    "Name": "mstsc",
+    "Name": "mstsc.exe (Microsoft Remote Desktop Connection)",
     "Category": "RAT",
-    "Description": "mstsc is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.\n\n**IMPORTANT**: This tool is signed with legitimate Microsoft Corporation certificates that are also used to sign numerous other Microsoft products and Windows components. Do NOT blindly block these certificate thumbprints as doing so will likely break essential Windows functionality and other Microsoft applications in your environment. Use certificate data for detection, hunting, and analysis purposes only.",
+    "Description": "mstsc.exe is the built-in Microsoft Remote Desktop Connection (RDC) client\nthat ships with all supported Windows versions. The \"MSTSC\" name is a\nhistorical acronym for \"Microsoft Terminal Services Client\" — the product\nwas renamed from Terminal Services to Remote Desktop Services, but the\nbinary kept the original name. It is signed by Microsoft and located in\n%SystemRoot%\\System32\\mstsc.exe. Adversaries abuse the native RDP client\nfor interactive lateral movement (T1021.001) and as a living-off-the-land\nremote-access pathway because it is present, signed, and frequently\nallow-listed in enterprise environments. This entry consolidates the\nprevious duplicate entries \"Microsoft RDP\" and \"Microsoft TSC\", which\ndescribed the same binary under different names.\n\n**IMPORTANT**: This tool is signed with legitimate Microsoft Corporation\ncertificates that are also used to sign numerous other Microsoft products\nand Windows components. Do NOT blindly block these certificate thumbprints\nas doing so will break essential Windows functionality and other Microsoft\napplications in your environment. Use certificate data for detection,\nhunting, and analysis purposes only.",
     "Author": "",
     "Created": "2024-08-02",
-    "LastModified": "2024-08-02",
+    "LastModified": "2026-05-04",
     "Details": {
-      "Website": "",
+      "Website": "https://learn.microsoft.com/windows-server/administration/windows-commands/mstsc",
       "PEMetadata": [
         {
-          "Filename": "",
-          "OriginalFileName": "",
-          "Description": "",
+          "Filename": "mstsc.exe",
+          "OriginalFileName": "mstsc.exe",
+          "Description": "Remote Desktop Connection",
           "Product": null
         }
       ],
-      "Privileges": "",
-      "Free": "",
-      "Verification": "",
-      "SupportedOS": [],
-      "Capabilities": [],
+      "Privileges": "User",
+      "Free": true,
+      "Verification": true,
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Interactive remote desktop session over RDP",
+        "Connection profile management via .rdp files",
+        "Session shadowing (/shadow, /control)",
+        "Restricted Admin and Remote Guard credential-protection modes"
+      ],
       "Vulnerabilities": [],
       "InstallationPaths": [
         "C:\\Windows\\System32\\mstsc.exe",
@@ -17762,10 +18830,42 @@
       ]
     },
     "Artifacts": {
-      "Disk": [],
+      "Disk": [
+        {
+          "File": "%USERPROFILE%\\Documents\\Default.rdp",
+          "Description": "Hidden default RDP connection profile created by mstsc.exe.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "%SystemRoot%\\System32\\termsrv.exe",
+          "Description": "Server-side Terminal Services / Remote Desktop Services host service that listens for inbound mstsc.exe sessions on TCP/3389. Present on the destination, not the client originating the connection.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
       "EventLog": [],
-      "Registry": [],
-      "Network": [],
+      "Registry": [
+        {
+          "Path": "HKCU\\Software\\Microsoft\\Terminal Server Client\\Default",
+          "Description": "Most-recently-used (MRU) list of remote hosts connected to via mstsc.exe."
+        },
+        {
+          "Path": "HKCU\\Software\\Microsoft\\Terminal Server Client\\Servers",
+          "Description": "Per-host subkeys recording usernames and gateway hints used by mstsc.exe."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "RDP traffic initiated by mstsc.exe to a Remote Desktop Session Host or RD Gateway",
+          "Domains": [],
+          "Ports": [
+            3389
+          ]
+        }
+      ],
       "Other": []
     },
     "Detections": [
@@ -17773,11 +18873,17 @@
         "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mstsc_processes_sigma.yml",
         "Link": null,
         "Name": null,
-        "Description": "Detects potential processes activity of mstsc RMM tool",
+        "Description": "Detects potential process activity of the mstsc.exe Remote Desktop Connection client.",
         "author": null
       }
     ],
-    "References": [],
+    "References": [
+      "https://learn.microsoft.com/windows-server/administration/windows-commands/mstsc",
+      "https://learn.microsoft.com/windows-server/administration/windows-commands/remote-desktop-services-terminal-services-command-reference",
+      "https://learn.microsoft.com/troubleshoot/windows-server/remote/terminal-server-startup-connection-application",
+      "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/remote-desktop-windows-urdc",
+      "https://attack.mitre.org/techniques/T1021/001/"
+    ],
     "Acknowledgement": [],
     "source_file": "mstsc.yaml",
     "CodeSigning": {
@@ -18287,10 +19393,10 @@
   {
     "Name": "NetBird",
     "Category": "RAT",
-    "Description": "NetBird is an open-source VPN and remote access platform that provides secure peer-to-peer connectivity. It has been observed being leveraged in spear phishing campaigns across Europe, Africa, Canada, the Middle East, and South Asia, targeting financial executives and CFOs. The tool was deployed as part of multi-stage phishing attacks by threat actors including APT MuddyWater.",
+    "Description": "NetBird is an open-source WireGuard-based VPN and remote access platform that provides secure peer-to-peer connectivity. It has been observed being abused in spear-phishing campaigns across Europe, Africa, Canada, the Middle East, and South Asia, targeting CFOs and other financial executives at banks, energy companies, insurers, and investment firms. In May 2025, Trellix documented a campaign that impersonated a Rothschild & Co recruiter, leading victims through a deceptive CAPTCHA to download a ZIP containing a malicious VBScript that silently installed NetBird and OpenSSH MSI packages, created a hidden local administrator account, enabled RDP, and persisted the NetBird agent via a scheduled task — granting attackers persistent peer-to-peer remote access. Hunt.io and Trellix link the infrastructure to APT MuddyWater (Earth Vetala) based on overlap with previously documented activity (IP 192.3.95.152 / Gophish on TCP 3333).",
     "Author": "Michael Haag",
     "Created": "2026-01-15",
-    "LastModified": "2026-01-15",
+    "LastModified": "2026-05-04",
     "Details": {
       "Website": "https://netbird.io/",
       "PEMetadata": [
@@ -18310,6 +19416,24 @@
           "Filename": "netbird",
           "OriginalFileName": "",
           "Description": "NetBird client binary for Linux/macOS",
+          "Product": null
+        },
+        {
+          "Filename": "netbird_installer_*_windows_amd64.msi",
+          "OriginalFileName": "",
+          "Description": "NetBird Windows MSI installer (canonical naming pattern from official GitHub releases, e.g. netbird_installer_0.70.4_windows_amd64.msi). Renamed to netbird.msi in the May 2025 Trellix-reported campaign.",
+          "Product": null
+        },
+        {
+          "Filename": "netbird_installer_*_windows_amd64.exe",
+          "OriginalFileName": "netbird_installer.exe",
+          "Description": "NetBird Windows EXE installer signed by NetBird GmbH (formerly Wiretrustee UG). Description string \"Connect your devices into a secure WireGuard-based overlay network with SSO, MFA, and granular access controls.\" Product \"Netbird\".",
+          "Product": null
+        },
+        {
+          "Filename": "wintun.dll",
+          "OriginalFileName": "wintun.dll",
+          "Description": "WireGuard Wintun TUN driver shipped with the NetBird Windows client.",
           "Product": null
         }
       ],
@@ -18338,6 +19462,13 @@
         "/usr/bin/netbird",
         "/usr/local/bin/netbird",
         "/opt/netbird/*",
+        "/Applications/NetBird UI.app",
+        "/etc/netbird/install.conf",
+        "C:\\bin\\netbird.msi",
+        "C:\\bin\\OpenSSH.msi",
+        "C:\\bin\\cis.vbs",
+        "C:\\bin\\trm.zip",
+        "C:\\temper\\trm",
         "netbird.exe",
         "netbird-ui.exe",
         "netbird"
@@ -18372,6 +19503,55 @@
           "OS": "Linux",
           "Type": null,
           "Example": []
+        },
+        {
+          "File": "/etc/netbird/install.conf",
+          "Description": "NetBird installation manifest written by the official install.sh — records the package manager type used.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Applications/NetBird UI.app",
+          "Description": "NetBird UI application bundle on macOS (installed via .pkg or Homebrew cask).",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\bin\\netbird.msi",
+          "Description": "NetBird MSI dropped by the May 2025 Trellix-reported CFO spear-phishing campaign (silently installed by cis.vbs / Stage-2 VBS).",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\bin\\OpenSSH.msi",
+          "Description": "OpenSSH server MSI dropped alongside NetBird in the May 2025 CFO spear-phishing campaign (used to enable persistent SSH access).",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\bin\\cis.vbs",
+          "Description": "Stage-2 VBScript dropper that installs NetBird and OpenSSH (May 2025 Trellix-reported campaign).",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\bin\\trm.zip",
+          "Description": "ZIP staging archive containing NetBird and OpenSSH MSIs (renamed from \"trm\" payload fetched from the C2).",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\temper\\trm",
+          "Description": "Initial payload staging path used by the Stage-1 VBScript before being renamed to trm.zip (May 2025 campaign).",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
         }
       ],
       "EventLog": [
@@ -18394,33 +19574,140 @@
           "CommandLine": null,
           "Description": "Service installation event for NetBird",
           "OS": "Windows"
+        },
+        {
+          "EventID": 4720,
+          "ProviderName": "Microsoft-Windows-Security-Auditing",
+          "LogFile": "Security.evtx",
+          "ServiceName": null,
+          "ImagePath": null,
+          "CommandLine": null,
+          "Description": "A user account was created. Observed during May 2025 CFO spear-phishing campaign — local account \"user\" created with password \"Bs@202122\".",
+          "OS": "Windows"
+        },
+        {
+          "EventID": 4732,
+          "ProviderName": "Microsoft-Windows-Security-Auditing",
+          "LogFile": "Security.evtx",
+          "ServiceName": null,
+          "ImagePath": null,
+          "CommandLine": null,
+          "Description": "A member was added to a security-enabled local group. Observed during May 2025 CFO spear-phishing campaign — \"user\" added to Administrators / Administrateurs.",
+          "OS": "Windows"
+        },
+        {
+          "EventID": 4698,
+          "ProviderName": "Microsoft-Windows-Security-Auditing",
+          "LogFile": "Security.evtx",
+          "ServiceName": null,
+          "ImagePath": null,
+          "CommandLine": null,
+          "Description": "A scheduled task was created. Observed during May 2025 CFO spear-phishing campaign — task \"ForceNetbirdRestart\" created to restart NetBird one minute after boot.",
+          "OS": "Windows"
         }
       ],
-      "Registry": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\SpecialAccounts\\UserList\\user",
+          "Description": "Registry key set to 0 to hide the attacker-created local administrator account \"user\" from the Windows logon screen (May 2025 Trellix-reported CFO spear-phishing campaign)."
+        },
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Netbird",
+          "Description": "Netbird Windows service registration (created by NetBird MSI installer; configured by the campaign for delayed automatic start at boot)."
+        }
+      ],
       "Network": [
         {
-          "Description": "Known remote domains",
+          "Description": "NetBird control-plane and client endpoints (canonical, from official documentation)",
           "Domains": [
             "netbird.io",
             "*.netbird.io",
             "api.netbird.io",
-            "signal.netbird.io"
+            "app.netbird.io",
+            "signal.netbird.io",
+            "relay.netbird.io",
+            "login.netbird.io",
+            "pkgs.netbird.io"
           ],
           "Ports": [
             443,
+            33073,
             51820
+          ]
+        },
+        {
+          "Description": "Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.",
+          "Domains": [
+            "192.3.95.152",
+            "198.46.178.135",
+            "googl-6c11f.firebaseapp.com",
+            "googl-6c11f.web.app",
+            "googl-165a0.web.app",
+            "cloud-ed980.firebaseapp.com",
+            "cloud-233f9.firebaseapp.com",
+            "my-sharepoint-inc.com",
+            "my1cloudlive.com",
+            "my2cloudlive.com",
+            "web-16fe.app"
+          ],
+          "Ports": [
+            80,
+            443,
+            3333
           ]
         }
       ],
-      "Other": []
+      "Other": [
+        {
+          "Type": "NetworkInterface",
+          "Value": "wt0"
+        },
+        {
+          "Type": "NetworkInterface",
+          "Value": "utun100"
+        },
+        {
+          "Type": "ServiceName",
+          "Value": "Netbird"
+        },
+        {
+          "Type": "SetupKey",
+          "Value": "E48E4A70-4CF4-4A77-946B-C8E50A60855A"
+        },
+        {
+          "Type": "ScheduledTask",
+          "Value": "ForceNetbirdRestart"
+        },
+        {
+          "Type": "LocalUser",
+          "Value": "user"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "b8c84e7047080589cc2e1dc955c78349f8d37d0e79160a040096e1ffcf89d869"
+        },
+        {
+          "Type": "SignerSubject",
+          "Value": "NetBird GmbH (current; chain GlobalSign GCC R45 EV CodeSigning CA 2020 -> GlobalSign Code Signing Root R45)"
+        },
+        {
+          "Type": "SignerSubject",
+          "Value": "Wiretrustee UG (haftungsbeschränkt) (legacy; chain SSL.com EV Code Signing Intermediate CA RSA R3 -> SSL.com EV Root Certification Authority RSA R2)"
+        }
+      ]
     },
     "Detections": [],
     "References": [
       "https://github.com/magicsword-io/LOLRMM/issues/81",
       "https://www.trellix.com/en-in/blogs/research/a-flyby-on-the-cfos-inbox-spear-phishing-campaign-targeting-financial-executives-with-netbird-deployment/",
       "https://hunt.io/blog/apt-muddywater-deploys-multi-stage-phishing-to-target-cfos",
+      "https://netbird.io/knowledge-hub/netbird-response-to-spear-phishing-campaign-targeting-financial-executives",
+      "https://www.centripetal.ai/threat-research/threat-actors-abuse-netbird-in-spear-phishing-campaign-targeting-finance-executives",
+      "https://thehackernews.com/2025/06/fake-recruiter-emails-target-cfos-using.html",
       "https://netbird.io/use-cases/remote-access",
-      "https://github.com/netbirdio/netbird"
+      "https://docs.netbird.io/how-to/installation",
+      "https://github.com/netbirdio/netbird",
+      "https://github.com/netbirdio/netbird/releases/latest"
     ],
     "Acknowledgement": [
       {
@@ -19292,6 +20579,276 @@
     ],
     "Acknowledgement": [],
     "source_file": "netviewer_(gotomeet).yaml"
+  },
+  {
+    "Name": "Nezha",
+    "Category": "RMM",
+    "Description": "Nezha (nezhahq/nezha on GitHub) is a self-hosted, lightweight, open-source server and website monitoring / O&M tool written in Go. The architecture is a central Dashboard plus a per-host Agent that maintains a persistent gRPC connection back to the Dashboard for telemetry and remote operations. The Agent ships first-class capabilities by default — interactive WebSSH terminals, arbitrary command execution, file management, scheduled and triggered task execution, and batch operations across the entire fleet — and runs at SYSTEM on Windows or root on Linux/macOS/FreeBSD/OpenWRT/Synology without requiring privilege escalation.\n\nThreat actors have been observed abusing Nezha as a stealthy post-exploitation RAT. Huntress published \"The Crown Prince, Nezha\" (2025) documenting a China-nexus campaign that compromised 100+ hosts across Taiwan, Japan, South Korea, and Hong Kong via unauthenticated phpMyAdmin → log poisoning → AntSword web shell → Nezha agent deployment → Ghost RAT installation. Ontinue published a parallel writeup (\"The Monitoring Tool That's Also a Perfect RAT\") on the same abuse class. Kaspersky flags the official agent binary as `not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen`; Microsoft and most other AV engines do not currently flag it, which is exactly what makes it attractive as a living-off-the-land RMM masquerade.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-18",
+    "LastModified": "2026-05-18",
+    "Details": {
+      "Website": "https://nezha.wiki/",
+      "PEMetadata": [
+        {
+          "Filename": "nezha-agent.exe",
+          "OriginalFileName": "nezha-agent.exe",
+          "Description": "Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.",
+          "Product": null
+        },
+        {
+          "Filename": "dashboard-windows-amd64.exe",
+          "OriginalFileName": "dashboard-windows-amd64.exe",
+          "Description": "Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.",
+          "Product": null
+        }
+      ],
+      "Privileges": "SYSTEM/root",
+      "Free": true,
+      "Verification": "Open-source; no signup required (self-hosted Dashboard plus per-tenant agent install)",
+      "SupportedOS": [
+        "Windows",
+        "Linux",
+        "MacOS",
+        "FreeBSD",
+        "OpenWRT",
+        "Synology",
+        "Android"
+      ],
+      "Capabilities": [
+        "Server monitoring (CPU, RAM, disk, network, traffic)",
+        "WebSSH interactive terminal (Dashboard → Agent)",
+        "Arbitrary command execution",
+        "File management (browse, upload, download)",
+        "Scheduled and triggered task execution",
+        "Batch task execution across entire fleet",
+        "DDNS support",
+        "SSL certificate monitoring",
+        "Webpage / port availability monitoring",
+        "Status alerts via Telegram, email, Slack",
+        "REST API for fleet status"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\nezha\\*",
+        "C:\\Program Files\\nezha\\*",
+        "*\\nezha-agent.exe",
+        "nezha-agent.exe",
+        "dashboard-windows-amd64.exe",
+        "/opt/nezha/*",
+        "/opt/nezha/agent",
+        "/opt/nezha/agent/nezha-agent",
+        "/opt/nezha/dashboard",
+        "/etc/systemd/system/nezha-agent.service",
+        "/etc/systemd/system/nezha-dashboard.service",
+        "nezha-agent",
+        "nezha_agent"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\nezha\\nezha-agent.exe",
+          "Description": "Nezha Agent Windows binary (typical install path; vendor PowerShell installer drops it here)",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\nezha\\config.yml",
+          "Description": "Nezha Agent configuration file (server address, client_secret, UUID). Sits alongside the agent binary by convention.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/nezha/agent/nezha-agent",
+          "Description": "Nezha Agent Linux binary (default install path used by the official curl|bash installer)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/nezha/agent/config.yml",
+          "Description": "Nezha Agent configuration file on Linux (server address, client_secret, UUID)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/nezha-agent.service",
+          "Description": "systemd unit file for Nezha Agent persistence on Linux",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/nezha/dashboard/app",
+          "Description": "Nezha Dashboard server binary on Linux (when self-hosted dashboard is run on the same host)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "nezha-agent",
+          "ImagePath": "C:\\nezha\\nezha-agent.exe",
+          "CommandLine": null,
+          "Description": "Service installation event for the Nezha Agent (default service name when registered via NSSM or sc.exe). Threat actors have been observed renaming the service to blend with legitimate Windows services (Huntress reports services renamed to mimic Windows infrastructure)."
+        },
+        {
+          "EventID": 4688,
+          "ProviderName": "Microsoft-Windows-Security-Auditing",
+          "LogFile": "Security.evtx",
+          "ServiceName": null,
+          "ImagePath": null,
+          "CommandLine": "nezha-agent.exe -s <dashboard-host>:<port> -p <client_secret>",
+          "Description": "Nezha Agent process creation with characteristic `-s` (server) and `-p` (client_secret) command-line flags."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\nezha-agent",
+          "Description": "Windows service registry key for Nezha Agent (default name; may be renamed by abuse cases)"
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Nezha Agent gRPC channel to operator-controlled Dashboard. Dashboard host/port is fully tenant-configurable — no fixed vendor C2 — so the protocol fingerprint (persistent gRPC over TLS) is more reliable than any specific domain.",
+          "Domains": [
+            "user_managed"
+          ],
+          "Ports": [
+            5555,
+            443
+          ]
+        },
+        {
+          "Description": "Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.",
+          "Domains": [
+            "github.com",
+            "raw.githubusercontent.com",
+            "nezha.wiki",
+            "nezhahq.github.io"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.",
+          "Domains": [
+            "c.mid.al",
+            "gd.bj2.xyz",
+            "rism.pages.dev"
+          ],
+          "Ports": [
+            443,
+            53762
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "SHA256",
+          "Value": "ebf4b09229a6ad720121a849c3a79af94e677a2e02448bb471b872d13d94fc93"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "5c36ff2d85b3de71748282b4836961fc2ca5c0e62741036ce7be5e8855d42cf0"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "2b066c93d58e822cb77aa46555cd5849edc69296ba7a41ebbd07d572d8dcf0a6"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "48e3f669d147bef1760f090fbb81bdf75d08b75e2d7956c4cf1a66e5617e6152"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "d3abd4bae082d4c9918447fe82c521567cc7f9b0e5f2d55999a6e5c40fa7fd54"
+        },
+        {
+          "Type": "SHA256",
+          "Value": "056304fc1f7a81f08e957edff4207d5cf9c1934e52e23775da4483ecfad3bbf2"
+        },
+        {
+          "Type": "IP",
+          "Value": "172.245.52.169"
+        },
+        {
+          "Type": "IP",
+          "Value": "45.207.220.12"
+        },
+        {
+          "Type": "Other",
+          "Value": "Environment variables: NZ_SERVER, NZ_CLIENT_SECRET"
+        },
+        {
+          "Type": "Other",
+          "Value": "Process command-line indicators: client_secret, nezhahq"
+        },
+        {
+          "Type": "Other",
+          "Value": "AV signature: Kaspersky not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen"
+        }
+      ]
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential file activity of Nezha RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of Nezha RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of Nezha RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of Nezha RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://github.com/nezhahq/nezha",
+      "https://nezha.wiki/",
+      "https://www.huntress.com/blog/nezha-china-nexus-threat-actor-tool",
+      "https://www.ontinue.com/resource/nezha-the-monitoring-tool-thats-also-a-perfect-rat/",
+      "https://github.com/ontinue-research/threat-intel-iocs/blob/main/Hunting/2025-12-18-HuntingRules-Nezha.md",
+      "https://www.infosecurity-magazine.com/news/nezha-abused-post-exploitation/",
+      "https://www.virustotal.com/gui/file/ebf4b09229a6ad720121a849c3a79af94e677a2e02448bb471b872d13d94fc93"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "n3l5",
+        "Handle": "@n3l5"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "nezha.yaml"
   },
   {
     "Name": "ngrok",
@@ -21041,6 +22598,134 @@
     }
   },
   {
+    "Name": "PiTunnel",
+    "Category": "RAT",
+    "Description": "PiTunnel is a cloud-hosted remote-access service primarily aimed at Raspberry Pi devices (sister product of Dataplicity from Wildfoundry) that exposes local services and a persistent remote shell through the `*.pitunnel.com` tenant infrastructure. The agent installs via a curl|sudo bash one-liner (`curl -s https://pitunnel.com/get/<TOKEN> | sudo bash`) and supports persistent named tunnels via flags like `pitunnel --port=<PORT> --name=vnc --persist`. After install the operator can open arbitrary local TCP listeners (SSH, RDP, VNC, web) to the PiTunnel cloud for inbound interactive access without any firewall change on the victim host. Catalogued by the LOTTunnels project under the \"shell access\" category.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-18",
+    "LastModified": "2026-05-18",
+    "Details": {
+      "Website": "https://www.pitunnel.com/",
+      "PEMetadata": [
+        {
+          "Filename": "pitunnel",
+          "OriginalFileName": "pitunnel",
+          "Description": "PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.",
+          "Product": null
+        }
+      ],
+      "Privileges": "User or root (installer uses sudo, runtime can be user-level)",
+      "Free": "Yes (free + paid subscription)",
+      "Verification": "Tenant signup required; per-device install token embedded in installer URL",
+      "SupportedOS": [
+        "Linux",
+        "MacOS"
+      ],
+      "Capabilities": [
+        "Persistent named tunnels (`--persist` flag) that auto-reconnect on reboot",
+        "TCP exposure of arbitrary local ports (SSH/RDP/VNC/HTTP) through the operator tenant",
+        "Custom subdomain routing under `*.pitunnel.com`",
+        "Custom Tunnels UI for non-CLI management",
+        "Sister product to Dataplicity (same Wildfoundry-style cloud-relay architecture)"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "/usr/local/bin/pitunnel",
+        "/opt/pitunnel/*",
+        "/etc/systemd/system/pitunnel.service"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "/usr/local/bin/pitunnel",
+          "Description": "PiTunnel client binary (default install path)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/pitunnel.service",
+          "Description": "systemd unit file for PiTunnel persistence (created when `--persist` flag is used)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [
+        {
+          "Description": "PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.",
+          "Domains": [
+            "pitunnel.com",
+            "www.pitunnel.com",
+            "*.pitunnel.com"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "URL",
+          "Value": "https://pitunnel.com/get/<TOKEN>"
+        },
+        {
+          "Type": "Other",
+          "Value": "Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)"
+        },
+        {
+          "Type": "Other",
+          "Value": "Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist"
+        },
+        {
+          "Type": "Other",
+          "Value": "LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/pitunnel/"
+        }
+      ]
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential file activity of PiTunnel RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of PiTunnel RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of PiTunnel RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.pitunnel.com/",
+      "https://lottunnels.github.io/lottunnels/Binaries/pitunnel/"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "rcKillam",
+        "Handle": "@rcKillam"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "pitunnel.yaml"
+  },
+  {
     "Name": "Pocket Cloud (Wyse)",
     "Category": "RMM",
     "Description": "Pocket Cloud (Wyse) is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -21430,6 +23115,7 @@
       "Vulnerabilities": [],
       "InstallationPaths": [
         "psexec.exe",
+        "psexec64.exe",
         "psexecsvc.exe"
       ]
     },
@@ -25648,6 +27334,141 @@
     "source_file": "servereye.yaml"
   },
   {
+    "Name": "ShellHub",
+    "Category": "RAT",
+    "Description": "ShellHub (cloud.shellhub.io / shellhub.io) is an open-source SSH gateway that enrolls devices via a per-tenant install script and gives operators browser-based remote terminal access through the ShellHub web dashboard. The agent installs via `curl -sSf \"https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>\" | sh` and registers the host into the operator's tenant; subsequent SSH connections are brokered through the ShellHub cloud over the persistent agent connection, with no inbound firewall change required on the device. Catalogued by the LOTTunnels project under the \"shell access\" category; documentation explicitly notes potential misuse by \"insiders as well as threat actors\" for \"a variety of malicious tasks\". Both a hosted SaaS (cloud.shellhub.io) and a self-hostable Docker deployment exist.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-18",
+    "LastModified": "2026-05-18",
+    "Details": {
+      "Website": "https://shellhub.io/",
+      "PEMetadata": [
+        {
+          "Filename": "shellhub-agent",
+          "OriginalFileName": "shellhub-agent",
+          "Description": "ShellHub agent binary (Go). Maintains the persistent reverse connection to the ShellHub gateway and brokers inbound SSH sessions.",
+          "Product": null
+        }
+      ],
+      "Privileges": "root (installer uses curl|sh as root)",
+      "Free": "Yes (open-source + free hosted tier + paid subscription)",
+      "Verification": "Tenant signup required; per-tenant install token (`tenant_id`) embedded in install URL",
+      "SupportedOS": [
+        "Linux",
+        "MacOS"
+      ],
+      "Capabilities": [
+        "Browser-based remote SSH (interactive terminal via web dashboard)",
+        "Cloud-relayed SSH (no inbound firewall change required on agent host)",
+        "SSH key + username/password authentication",
+        "Device enrollment / tenant registration",
+        "Docker container deployment of the gateway (self-hosted option)"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "/usr/local/bin/shellhub-agent",
+        "/etc/shellhub-agent/*",
+        "/etc/systemd/system/shellhub-agent.service",
+        "/var/lib/shellhub-agent/*"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "/usr/local/bin/shellhub-agent",
+          "Description": "ShellHub agent binary (default install path used by the vendor install.sh)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/shellhub-agent/agent.env",
+          "Description": "ShellHub agent environment file (tenant_id, server_address, identity)",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/shellhub-agent.service",
+          "Description": "systemd unit file for ShellHub agent persistence",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [
+        {
+          "Description": "Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.",
+          "Domains": [
+            "shellhub.io",
+            "cloud.shellhub.io",
+            "www.shellhub.io",
+            "*.shellhub.io"
+          ],
+          "Ports": [
+            443,
+            80
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "URL",
+          "Value": "https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>"
+        },
+        {
+          "Type": "Other",
+          "Value": "Install command: curl -sSf \"https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>\" | sh  (high-signal hunt pattern — curl-to-sh from cloud.shellhub.io with tenant_id parameter)"
+        },
+        {
+          "Type": "Other",
+          "Value": "LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/shellhub/"
+        }
+      ]
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/shellhub_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential file activity of ShellHub RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/shellhub_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of ShellHub RMM tool",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/shellhub_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of ShellHub RMM tool",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://shellhub.io/",
+      "https://github.com/shellhub-io/shellhub",
+      "https://lottunnels.github.io/lottunnels/Binaries/shellhub/"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "rcKillam",
+        "Handle": "@rcKillam"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "shellhub.yaml"
+  },
+  {
     "Name": "ShowMyPC",
     "Category": "RMM",
     "Description": "ShowMyPC is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -28669,7 +30490,7 @@
   {
     "Name": "Teramind",
     "Category": "RMM",
-    "Description": "Teramind is a US-based employee/user activity monitoring (UAM), insider-threat and DLP platform that ships with a tightly integrated remote monitoring and management agent for Windows and macOS. The endpoint agent is delivered in two flavours — a \"Revealed\" agent installed under C:\\Program Files / C:\\ProgramData\\Teramind Agent that surfaces a tray UI, and a \"Hidden\" / \"Stealth\" agent installed under C:\\ProgramData\\{4CEC2908-5CE4-48F0-A717-8FC833D8017A} which is intentionally absent from Add/Remove Programs and renames its core processes (default rename: dwm.exe for the agent, clm.exe for the clipboard monitor). The Windows service is registered as tsvchst, with tmagentsvc.exe as the actual on-disk service binary. Cloud tenants reach the platform over TLS/WebSocket on tcp/443 to <tenant>.teramind.co plus rt.teramind.co and www.teramind.co; on-premise tenants additionally use TCP 10000 (proprietary TLS) and 10000-11000 to the App Server.\nThe hidden agent and renamed binaries make Teramind attractive both as an authorised covert workplace surveillance tool and as a dual-use remote-access capability that threat actors and rogue insiders can plant for persistent monitoring, screen recording and remote command execution. The Teramind Inc. code-signing certificate (issued by DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1) signs every component, which trivially defeats publisher-based allow-listing if the certificate is permitted. Proofpoint Emerging Threats Open ships ET INFO rules covering the teramind.co domain in DNS Lookup and TLS SNI traffic, which is the easiest network-side telemetry to turn on for hunting unauthorised deployments.\nThis catalogue entry distinguishes endpoint artifacts (services, on-disk paths, registry, control-plane traffic) from the cloud / SaaS-only features (e.g. AI behaviour analytics, compliance dashboards) which run server-side and produce no endpoint footprint of their own.",
+    "Description": "Teramind is a US-based employee/user activity monitoring (UAM), insider-threat and DLP platform that ships with a tightly integrated remote monitoring and management agent for Windows and macOS. The endpoint agent is delivered in two flavours — a \"Revealed\" agent installed under C:\\Program Files / C:\\ProgramData\\Teramind Agent that surfaces a tray UI, and a \"Hidden\" / \"Stealth\" agent installed under C:\\ProgramData\\{4CEC2908-5CE4-48F0-A717-8FC833D8017A} which is intentionally absent from Add/Remove Programs and renames its core processes (default rename: dwm.exe for the agent, clm.exe for the clipboard monitor). The Windows service is registered as tsvchst, with tmagentsvc.exe as the actual on-disk service binary. Cloud tenants reach the platform over TLS/WebSocket on tcp/443 to `<tenant>.teramind.co` plus rt.teramind.co and www.teramind.co; on-premise tenants additionally use TCP 10000 (proprietary TLS) and 10000-11000 to the App Server.\nThe hidden agent and renamed binaries make Teramind attractive both as an authorised covert workplace surveillance tool and as a dual-use remote-access capability that threat actors and rogue insiders can plant for persistent monitoring, screen recording and remote command execution. The Teramind Inc. code-signing certificate (issued by DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1) signs every component, which trivially defeats publisher-based allow-listing if the certificate is permitted. Proofpoint Emerging Threats Open ships ET INFO rules covering the teramind.co domain in DNS Lookup and TLS SNI traffic, which is the easiest network-side telemetry to turn on for hunting unauthorised deployments.\nThis catalogue entry distinguishes endpoint artifacts (services, on-disk paths, registry, control-plane traffic) from the cloud / SaaS-only features (e.g. AI behaviour analytics, compliance dashboards) which run server-side and produce no endpoint footprint of their own.",
     "Author": "@MHaggis",
     "Created": "2026-05-04",
     "LastModified": "2026-05-04",
@@ -29938,9 +31759,7 @@
           "Description": "Known remote domains",
           "Domains": [
             "todesk.com",
-            "*.todesk.com",
-            "*.todesk.com",
-            "todesktop.com"
+            "*.todesk.com"
           ],
           "Ports": []
         }
@@ -30030,6 +31849,238 @@
         }
       ]
     }
+  },
+  {
+    "Name": "TrustConnect",
+    "Category": "RAT",
+    "Description": "TrustConnect (also marketed as TrustConnect Agent) is a commodity Remote Access Trojan distributed as Malware-as-a-Service that masquerades as a legitimate remote management and remote support agent. The operators sell access for approximately $300/month (Bitcoin/USDT) and ship branded installer variants that impersonate legitimate software (Adobe Reader, Microsoft Teams, Zoom, Google Meet, etc.) so victims download what looks like an installer but receive a fully featured RAT. Proofpoint observed TrustConnect delivered through email lures (bid invitations, tax notifications, document shares, government-themed messages) and used as a beachhead to deploy ScreenConnect, Level RMM, and hands-on-keyboard activity within minutes of installation. The operators registered the EV code-signing certificate \"TrustConnect Software PTY LTD\" through Certum (revoked 2026-02-06), and after disruption activity in February 2026 they pivoted to a successor named \"DocConnect\" / \"SHIELD OS\" hosted on networkservice[.]cyou.",
+    "Author": "@MHaggis",
+    "Created": "2026-05-04",
+    "LastModified": "2026-05-04",
+    "Details": {
+      "Website": "https://trustconnectsoftware.com/",
+      "PEMetadata": [
+        {
+          "Filename": "TrustConnectAgent.exe",
+          "OriginalFileName": "TrustConnectAgent.dll",
+          "Description": "TrustConnect Agent service binary (.NET 8 single-file executable, ~35 MB). Operators ship TrustConnect under per-tenant branded installer variants that impersonate legitimate software (Adobe Reader, Microsoft Teams, Zoom Workspace, Google Meet, Airtable, plus generic Installer / Proposal / SpecialEvents lures) — these filenames are NOT listed as detection inputs here because they collide with the legitimate products' binary names and would produce FPs downstream; rely instead on the TrustConnect-specific signer chain (\"TrustConnect Software PTY LTD\"), Run-key value pattern (TrustConnectAgent_<random>), service description suffix (\"… - Remote Support Agent\"), and C2 endpoints below.",
+          "Product": null
+        },
+        {
+          "Filename": "DocConnect.Agent.exe",
+          "OriginalFileName": "",
+          "Description": "Successor variant (\"DocConnect\" / \"SHIELD OS\") observed after February 2026 disruption",
+          "Product": null
+        }
+      ],
+      "Privileges": "SYSTEM",
+      "Free": "No - sold as Malware-as-a-Service (~$300/month, Bitcoin or USDT)",
+      "Verification": "Code-signed with Certum Extended Validation certificate issued to \"TrustConnect Software PTY LTD\" (revoked 2026-02-06)",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Remote desktop streaming over WebSocket",
+        "Full keyboard and mouse control",
+        "Screen recording",
+        "File transfer (browse, pull, upload)",
+        "Arbitrary command execution",
+        "PowerShell loader / one-liner deployment",
+        "System information gathering",
+        "Multi-display switching",
+        "Operator activity hiding from victim",
+        "Telegram bot notifications for device connect/disconnect",
+        "Two-factor authentication for operator console",
+        "Used to deploy follow-on RMM tooling (ScreenConnect, Level RMM)"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\TrustConnect Agent\\TrustConnectAgent.exe",
+        "C:\\Program Files\\TrustConnect Agent\\*",
+        "C:\\ProgramData\\TrustConnect\\*",
+        "*\\TrustConnectAgent.exe",
+        "TrustConnectAgent.exe",
+        "DocConnect.Agent.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\TrustConnect Agent\\TrustConnectAgent.exe",
+          "Description": "TrustConnect Agent service binary (default install path)",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\TrustConnect Agent\\config.json",
+          "Description": "TrustConnect Agent configuration file written at install",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\TrustConnect\\*\\config.json",
+          "Description": "Per-token agent configuration (token subdirectory maps victim to operator org ID)",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\TrustConnect\\*\\device.id",
+          "Description": "36-byte device GUID file used for C2 registration",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": 7045,
+          "ProviderName": "Service Control Manager",
+          "LogFile": "System.evtx",
+          "ServiceName": "TrustConnect Agent",
+          "ImagePath": "\"C:\\\\Program Files\\\\TrustConnect Agent\\\\TrustConnectAgent.exe\"",
+          "CommandLine": null,
+          "Description": "Service installation event from `sc.exe create \"TrustConnect Agent\" binPath= \"...\" start= auto DisplayName= \"TrustConnect Agent\"`. The service description is set to \"TrustConnect Agent - Remote Support Agent\". Branded variants register the service under the impersonated product name (e.g., \"Adobe Acrobat Reader\") with the same \"Remote Support Agent\" description suffix."
+        },
+        {
+          "EventID": 4697,
+          "ProviderName": "Microsoft-Security-Auditing",
+          "LogFile": "Security.evtx",
+          "ServiceName": "TrustConnect Agent",
+          "ImagePath": null,
+          "CommandLine": null,
+          "Description": "Security-audit service installation event corresponding to the TrustConnect Agent service create."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\TrustConnect Agent",
+          "Description": "Service registration created by the agent installer (Start=2 / auto, ImagePath points at TrustConnectAgent.exe)."
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\TrustConnect Agent",
+          "Description": "Uninstall entry written by the installer (Publisher value reads \"TrustConnect Software Ltd\", InstallLocation is C:\\Program Files\\TrustConnect Agent)."
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\TrustConnectAgent_*",
+          "Description": "Run-key persistence value with a randomized per-token suffix (observed examples include TrustConnectAgent_QBt4muaH and TrustConnectAgent_POOL04-2). Value data is the full path to the agent binary."
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Classes\\AppID\\TrustConnectAgent.exe",
+          "Description": "COM AppID registration created by the agent installer."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Primary command-and-control domain (registered 2026-01-12 via NICENIC; A record 178.128.69.245 then 185.182.187.10).",
+          "Domains": [
+            "trustconnectsoftware.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "REST C2 endpoints used by the agent for registration, heartbeat, command pull, command results, file browsing/pull, and binary update. URLs include /api/agents/register, /api/agents/heartbeat, /api/agent-commands/<DEVICE_GUID>, /api/agent-commands/result, /api/files/browse/pull, /api/files/pull, /api/files/upload, /api/devices, /api/commands/run, /api/installer/script, /agent-update.",
+          "Domains": [
+            "trustconnectsoftware.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "WebSocket endpoints used for live remote desktop streaming and recording (/ws/screen, /ws/viewer, /api/screen/start, /api/recordings/chunk/<id>).",
+          "Domains": [
+            "trustconnectsoftware.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Operator console / authentication endpoints (/api/auth/login, /api/auth/verify-login, /api/admin/devices/online).",
+          "Domains": [
+            "trustconnectsoftware.com"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Successor \"DocConnect\" / \"SHIELD OS\" infrastructure observed after February 2026 disruption (React SPA backend, Supabase, SignalR transport).",
+          "Domains": [
+            "networkservice.cyou"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "TrustConnect C2 IP addresses (DigitalOcean and Contabo).",
+          "Domains": [],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_files_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential file activity of TrustConnect RAT",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_network_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential network activity of TrustConnect RAT",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_processes_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential process activity of TrustConnect RAT",
+        "author": null
+      },
+      {
+        "Sigma": "https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_registry_sigma.yml",
+        "Link": null,
+        "Name": null,
+        "Description": "Detects potential registry activity of TrustConnect RAT",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.proofpoint.com/us/blog/threat-insight/dont-trustconnect-its-a-rat",
+      "https://github.com/magicsword-io/LOLRMM/issues/157",
+      "https://github.com/magicsword-io/LOLRMM/issues/150",
+      "https://www.virustotal.com/gui/file/cee6895f7df01da489c10bf5b83770ceede79ed4e1c8c4f8ea9787a4d035c79b",
+      "https://www.virustotal.com/gui/file/edde2673becdf84e3b1d823a985c7984fec42cb65c7666e68badce78bd0666c0",
+      "https://www.virustotal.com/gui/domain/trustconnectsoftware.com"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "mikehemming",
+        "Handle": "@mikehemming"
+      },
+      {
+        "Person": "jaalmaaa",
+        "Handle": "@jaalmaaa"
+      },
+      {
+        "Person": "Michael Haag",
+        "Handle": "@MHaggis"
+      }
+    ],
+    "source_file": "trustconnect.yaml"
   },
   {
     "Name": "TurboMeeting",

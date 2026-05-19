@@ -2,6 +2,9 @@ slug,name,type,value
 anydesk,AnyDesk,User-Agent,AnyDesk/*
 anydesk,AnyDesk,NamedPipe,adprinterpipe
 controlio,Controlio,Service,weSvcService
+dataplicity,Dataplicity,URL,https://www.dataplicity.com/<TOKEN>.py
+dataplicity,Dataplicity,Other,Install command: curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python  (high-signal hunt pattern — sudo-piped curl-to-python from dataplicity.com)
+dataplicity,Dataplicity,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/dataplicity/
 freshservice,Freshservice,URL,https://fstools.freshservice.com/agent/win-installer-3.10.0.msi
 freshservice,Freshservice,URL,https://fstools.freshservice.com/agent/win-installer-3.7.0.msi
 freshservice,Freshservice,URL,https://fstools.freshservice.com/fs-windows-agent-3.10.0.msi
@@ -48,6 +51,11 @@ invgate,InvGate,Other,"Install-time bypass flag observed in vendor docs: VERIFY_
 invgate,InvGate,Other,Android mobile agent: Google Play package com.invgate.insight.agent (publisher InvGate)
 invgate,InvGate,SHA256,d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8
 invgate,InvGate,MD5,e515948c8ede1192926e87df1740f876
+komari,Komari,URL,https://raw.githubusercontent.com/komari-monitor/komari-agent/refs/heads/main/install.ps1
+komari,Komari,SHA256,039e659ade3aa8ee7758c11fdb8fbfffd2491920046d638413cea2042f6d584c
+komari,Komari,IP,45.153.34.132
+localxpose,LocalXpose,Other,"Install via npm (`npm install -g loclx`), choco, snap, or direct binary download from localxpose.io"
+localxpose,LocalXpose,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/localxpose/
 monitic,Monitic,URL,https://app.monitic.com/MoniticInstaller.exe
 monitic,Monitic,URL,https://app.monitic.com/installer
 monitic,Monitic,URL,https://api.monitic.com/api/ext/get-token
@@ -60,6 +68,30 @@ monitic,Monitic,ProofpointETSignature,ET INFO Observed RMM Domain in DNS Lookup 
 monitic,Monitic,ProofpointETSignature,ET INFO Observed RMM Domain in TLS SNI ( * .monitic .com)
 monitic,Monitic,CodeSigningSubject,VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.
 monitic,Monitic,CodeSigningIssuer,GlobalSign GCC R45 EV CodeSigning CA 2020
+netbird,NetBird,NetworkInterface,wt0
+netbird,NetBird,NetworkInterface,utun100
+netbird,NetBird,ServiceName,Netbird
+netbird,NetBird,SetupKey,E48E4A70-4CF4-4A77-946B-C8E50A60855A
+netbird,NetBird,ScheduledTask,ForceNetbirdRestart
+netbird,NetBird,LocalUser,user
+netbird,NetBird,SHA256,b8c84e7047080589cc2e1dc955c78349f8d37d0e79160a040096e1ffcf89d869
+netbird,NetBird,SignerSubject,NetBird GmbH (current; chain GlobalSign GCC R45 EV CodeSigning CA 2020 -> GlobalSign Code Signing Root R45)
+netbird,NetBird,SignerSubject,Wiretrustee UG (haftungsbeschränkt) (legacy; chain SSL.com EV Code Signing Intermediate CA RSA R3 -> SSL.com EV Root Certification Authority RSA R2)
+nezha,Nezha,SHA256,ebf4b09229a6ad720121a849c3a79af94e677a2e02448bb471b872d13d94fc93
+nezha,Nezha,SHA256,5c36ff2d85b3de71748282b4836961fc2ca5c0e62741036ce7be5e8855d42cf0
+nezha,Nezha,SHA256,2b066c93d58e822cb77aa46555cd5849edc69296ba7a41ebbd07d572d8dcf0a6
+nezha,Nezha,SHA256,48e3f669d147bef1760f090fbb81bdf75d08b75e2d7956c4cf1a66e5617e6152
+nezha,Nezha,SHA256,d3abd4bae082d4c9918447fe82c521567cc7f9b0e5f2d55999a6e5c40fa7fd54
+nezha,Nezha,SHA256,056304fc1f7a81f08e957edff4207d5cf9c1934e52e23775da4483ecfad3bbf2
+nezha,Nezha,IP,172.245.52.169
+nezha,Nezha,IP,45.207.220.12
+nezha,Nezha,Other,"Environment variables: NZ_SERVER, NZ_CLIENT_SECRET"
+nezha,Nezha,Other,"Process command-line indicators: client_secret, nezhahq"
+nezha,Nezha,Other,AV signature: Kaspersky not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen
+pitunnel,PiTunnel,URL,https://pitunnel.com/get/<TOKEN>
+pitunnel,PiTunnel,Other,Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)
+pitunnel,PiTunnel,Other,Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist
+pitunnel,PiTunnel,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/pitunnel/
 remsupp,RemSupp,CodeSigningSubject,"CN=RemSupp Michał Zarach, O=RemSupp Michał Zarach, L=Gdańsk, ST=Pomorskie, C=PL"
 remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 01, O=Microsoft Corporation, C=US"
 remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 02, O=Microsoft Corporation, C=US"
@@ -68,6 +100,9 @@ remsupp,RemSupp,SHA256,994f537e69f555a6aca89db837f260aa31352d6c6bfe435d3ecafff0b
 remsupp,RemSupp,SHA256,38a3e51bf0fad50dc3bb08f8ce9aa4e9d3f3c7561312605c6827a81984137532
 remsupp,RemSupp,SHA256,3cad287fbc89c40a4f481aac47d0c2b012388081c9924c09fdb2d29e5455100a
 rodexrmm,Rodex RMM,Note,"r3v13wd0s.com — alternate domain referenced in earlier writeups; flagged 14/91 malicious + tagged ""dga"" on VirusTotal. Likely a previous staging / payload-host name; rodex.cc appears to be the current marketing front."
+shellhub,ShellHub,URL,https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>
+shellhub,ShellHub,Other,"Install command: curl -sSf ""https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>"" | sh  (high-signal hunt pattern — curl-to-sh from cloud.shellhub.io with tenant_id parameter)"
+shellhub,ShellHub,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/shellhub/
 teamviewer,TeamViewer,Mutex,TeamViewer_LogMutex
 teamviewer,TeamViewer,Mutex,TeamViewerHooks_DynamicMemMutex
 teamviewer,TeamViewer,Mutex,TeamViewer3_Win32_Instance_Mutex

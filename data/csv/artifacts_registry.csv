@@ -22,6 +22,20 @@ atera,Atera,HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS,
 atera,Atera,HKLM\SOFTWARE\ATERA Networks\*,
+faronics_core,Faronics Core,HKLM\SYSTEM\CurrentControlSet\Services\FaronicsCoreAgent,Faronics Core Agent Windows service registration
+faronics_core,Faronics Core,HKLM\SOFTWARE\Faronics\Faronics Core 3,Faronics Core 3 product configuration root
+faronics_core,Faronics Core,HKLM\SOFTWARE\WOW6432Node\Faronics\Faronics Core 3,Faronics Core 3 product configuration root (32-bit on 64-bit hosts)
+faronics_core,Faronics Core,HKLM\SOFTWARE\Faronics,Top-level Faronics product registry hive
+faronics_deep_freeze,Faronics Deep Freeze,HKLM\SOFTWARE\Faronics\Deep Freeze,Deep Freeze workstation configuration root key
+faronics_deep_freeze,Faronics Deep Freeze,HKLM\SOFTWARE\Faronics,Top-level Faronics product registry hive
+faronics_deep_freeze,Faronics Deep Freeze,HKLM\SYSTEM\CurrentControlSet\Services\DFServ,Deep Freeze workstation Windows service registration
+faronics_deploy,Faronics Deploy,HKLM\SOFTWARE\Faronics,Top-level Faronics product registry hive (shared with other Faronics products; presence of Faronics Deploy subkeys confirms install)
+faronics_deploy,Faronics Deploy,HKLM\SOFTWARE\WOW6432Node\Faronics\Faronics Core 3\Storage Spaces\Spaces\FWA,Faronics Deploy / Cloud Agent storage-space configuration
+faronics_deploy,Faronics Deploy,HKLM\SOFTWARE\Classes\AppID\FWAService.exe,COM AppID registration for the FWAService.exe service host
+faronics_deploy,Faronics Deploy,HKLM\SOFTWARE\Classes\{359C24F1-51B5-44CE-8F2D-2FBB1A0FE4EA}\FWA_GUI_Agent,COM CLSID for the Faronics Deploy GUI agent (FWA_GUI_Agent)
+faronics_deploy,Faronics Deploy,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{581F69E6-A5D1-48C7-9F6F-CC333007F7EB},Faronics Deploy Agent uninstall entry
+faronics_insight,Faronics Insight,HKLM\SOFTWARE\Faronics,Top-level Faronics product registry hive (shared with other Faronics products)
+faronics_insight,Faronics Insight,HKLM\SYSTEM\CurrentControlSet\Services\FIStudentSvc,Faronics Insight Student Windows service registration
 fleetdeck,FleetDeck.io,HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service,FleetDeck service registry key
 freshservice,Freshservice,HKLM\SYSTEM\CurrentControlSet\Services\FSAgentService,Freshservice Discovery Agent SYSTEM service registration.
 freshservice,Freshservice,HKLM\SYSTEM\CurrentControlSet\Services\FreshServiceScan,"Freshservice Discovery Probe SYSTEM service registration (image `Freshservice.DiscoveryProbe.ScanService.exe`, LocalSystem, Automatic)."
@@ -63,8 +77,15 @@ invgate,InvGate,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB
 invgate,InvGate,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F0076285-D0E2-4B49-92BD-25E0B7B27DF6},"Add/Remove Programs uninstall key for InvGate Assets Client v4.004.011 — uninstall command ""MsiExec.exe /I{F0076285-D0E2-4B49-92BD-25E0B7B27DF6}"""
 invgate,InvGate,HKLM\SOFTWARE\Classes\Installer\Products\08BB5F1461464FA46BB7AF632CD94B4C,Windows Installer product key (packed GUID form of {41F5BB80-6416-4AF4-B67B-FA36C29DB4C4})
 invgate,InvGate,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4},"32-bit-on-64 view of the InvGate Assets Client uninstall key (the agent is a 32-bit MSI, so the canonical Uninstall entry is mirrored under WOW6432Node)"
+komari,Komari,HKLM\System\CurrentControlSet\Services\komari-agent,Windows service registry key for Komari Agent (default name when installed via the vendor PowerShell installer)
+komari,Komari,HKLM\System\CurrentControlSet\Services\Windows Update Service,"Komari Agent persistence under a renamed NSSM-wrapped service. Observed in-the-wild abuse pattern (Huntress, April 2026) where the actor used NSSM to install komari-agent.exe as a SYSTEM service named ""Windows Update Service"" to blend with legitimate Windows servicing."
 lunixar,Lunixar,HKLM\System\CurrentControlSet\Services\LunixarRMM,Windows service registration
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*},ManageEngine ServiceDesk Plus uninstall registry keys (verified via VirusTotal sandbox)
+mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Terminal Server Client\Default,Most-recently-used (MRU) list of remote hosts connected to via mstsc.exe.
+mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Terminal Server Client\Servers,Per-host subkeys recording usernames and gateway hints used by mstsc.exe.
+netbird,NetBird,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user,"Registry key set to 0 to hide the attacker-created local administrator account ""user"" from the Windows logon screen (May 2025 Trellix-reported CFO spear-phishing campaign)."
+netbird,NetBird,HKLM\SYSTEM\CurrentControlSet\Services\Netbird,Netbird Windows service registration (created by NetBird MSI installer; configured by the campaign for delayed automatic start at boot).
+nezha,Nezha,HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent,Windows service registry key for Nezha Agent (default name; may be renamed by abuse cases)
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
 remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
@@ -108,6 +129,10 @@ tiflux,TiFLUX,HKLM\SOFTWARE\WOW6432Node\TiFLUX\*,"Tenant configuration on 32-bit
 tiflux,TiFLUX,HKLM\SOFTWARE\WOW6432Node\TiFLUX\org_id,Tenant org_id value persisted by the agent
 tiflux,TiFLUX,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run\TiAgent,Run-key persistence for TiAgent.exe (per-machine autostart of the tray UI)
 tiflux,TiFLUX,HKCU\SOFTWARE\TiFlux,Per-user TiFLUX state
+trustconnect,TrustConnect,HKLM\SYSTEM\CurrentControlSet\Services\TrustConnect Agent,"Service registration created by the agent installer (Start=2 / auto, ImagePath points at TrustConnectAgent.exe)."
+trustconnect,TrustConnect,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TrustConnect Agent,"Uninstall entry written by the installer (Publisher value reads ""TrustConnect Software Ltd"", InstallLocation is C:\Program Files\TrustConnect Agent)."
+trustconnect,TrustConnect,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*,Run-key persistence value with a randomized per-token suffix (observed examples include TrustConnectAgent_QBt4muaH and TrustConnectAgent_POOL04-2). Value data is the full path to the agent binary.
+trustconnect,TrustConnect,HKLM\SOFTWARE\Classes\AppID\TrustConnectAgent.exe,COM AppID registration created by the agent installer.
 veyon,Veyon,HKLM\SOFTWARE\Veyon Solutions,Main Veyon configuration registry key containing all service and application settings
 veyon,Veyon,HKLM\SYSTEM\CurrentControlSet\Services\VeyonService,Veyon service registration and configuration
 vizor,VIZOR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C},"Uninstall key for Vector Asset Management Client v6.0 — Publisher ""Vector Networks"", DisplayName ""Vector Asset Management Client v6.0"", DisplayVersion 6.0.7.1325 (per advanceduninstaller.com listing)"

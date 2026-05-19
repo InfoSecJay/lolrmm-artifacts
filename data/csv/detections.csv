@@ -91,6 +91,9 @@ crosstec_remote_control,CrossTec Remote Control,https://github.com/magicsword-io
 crosstec_remote_control,CrossTec Remote Control,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/crosstec_remote_control_processes_sigma.yml,Detects potential processes activity of CrossTec Remote Control RMM tool
 dameware,DameWare,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dameware_network_sigma.yml,Detects potential network activity of DameWare RMM tool
 dameware,DameWare,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dameware_processes_sigma.yml,Detects potential processes activity of DameWare RMM tool
+dataplicity,Dataplicity,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dataplicity_files_sigma.yml,Detects potential file activity of Dataplicity RMM tool
+dataplicity,Dataplicity,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dataplicity_network_sigma.yml,Detects potential network activity of Dataplicity RMM tool
+dataplicity,Dataplicity,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dataplicity_processes_sigma.yml,Detects potential process activity of Dataplicity RMM tool
 deskday,DeskDay,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/deskday_network_sigma.yml,Detects potential network activity of DeskDay RMM tool
 deskday,DeskDay,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/deskday_processes_sigma.yml,Detects potential processes activity of DeskDay RMM tool
 deskshare,DeskShare,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/deskshare_network_sigma.yml,Detects potential network activity of DeskShare RMM tool
@@ -124,6 +127,22 @@ eset_remote_administrator,ESET Remote Administrator,https://github.com/magicswor
 extraputty,ExtraPuTTY,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/extraputty_processes_sigma.yml,Detects potential processes activity of ExtraPuTTY RMM tool
 ezhelp,ezHelp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ezhelp_network_sigma.yml,Detects potential network activity of ezHelp RMM tool
 ezhelp,ezHelp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ezhelp_processes_sigma.yml,Detects potential processes activity of ezHelp RMM tool
+faronics_core,Faronics Core,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_files_sigma.yml,Detects potential files activity of Faronics Core RMM tool
+faronics_core,Faronics Core,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_network_sigma.yml,Detects potential network activity of Faronics Core RMM tool
+faronics_core,Faronics Core,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_processes_sigma.yml,Detects potential processes activity of Faronics Core RMM tool
+faronics_core,Faronics Core,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_core_registry_sigma.yml,Detects potential registry activity of Faronics Core RMM tool
+faronics_deep_freeze,Faronics Deep Freeze,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_files_sigma.yml,Detects potential files activity of Faronics Deep Freeze RMM tool
+faronics_deep_freeze,Faronics Deep Freeze,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_network_sigma.yml,Detects potential network activity of Faronics Deep Freeze RMM tool
+faronics_deep_freeze,Faronics Deep Freeze,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_processes_sigma.yml,Detects potential processes activity of Faronics Deep Freeze RMM tool
+faronics_deep_freeze,Faronics Deep Freeze,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deep_freeze_registry_sigma.yml,Detects potential registry activity of Faronics Deep Freeze RMM tool
+faronics_deploy,Faronics Deploy,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_files_sigma.yml,Detects potential files activity of Faronics Deploy RMM tool
+faronics_deploy,Faronics Deploy,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_network_sigma.yml,Detects potential network activity of Faronics Deploy RMM tool
+faronics_deploy,Faronics Deploy,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_processes_sigma.yml,Detects potential processes activity of Faronics Deploy RMM tool
+faronics_deploy,Faronics Deploy,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_deploy_registry_sigma.yml,Detects potential registry activity of Faronics Deploy RMM tool
+faronics_insight,Faronics Insight,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_files_sigma.yml,Detects potential files activity of Faronics Insight RMM tool
+faronics_insight,Faronics Insight,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_network_sigma.yml,Detects potential network activity of Faronics Insight RMM tool
+faronics_insight,Faronics Insight,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_processes_sigma.yml,Detects potential processes activity of Faronics Insight RMM tool
+faronics_insight,Faronics Insight,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/faronics_insight_registry_sigma.yml,Detects potential registry activity of Faronics Insight RMM tool
 fastviewer,FastViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/fastviewer_network_sigma.yml,Detects potential network activity of FastViewer RMM tool
 fastviewer,FastViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/fastviewer_processes_sigma.yml,Detects potential processes activity of FastViewer RMM tool
 fixme,FixMe.it,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/fixme.it_network_sigma.yml,Detects potential network activity of FixMe.it RMM tool
@@ -206,7 +225,10 @@ khelpdesk,KHelpDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections
 khelpdesk,KHelpDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/khelpdesk_processes_sigma.yml,Detects potential processes activity of KHelpDesk RMM tool
 kickidler,KickIdler,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/kickidler_network_sigma.yml,Detects potential network activity of KickIdler RMM tool
 kitty,KiTTY,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/kitty_processes_sigma.yml,Detects potential processes activity of KiTTY RMM tool
-komari,Komari,https://github.com/Koifman/LOLRMM/tree/main/detections/sigma/komari_process_sigma.yml,Detects process activity of Komari
+komari,Komari,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_files_sigma.yml,Detects potential file activity of Komari RMM tool
+komari,Komari,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_network_sigma.yml,Detects potential network activity of Komari RMM tool
+komari,Komari,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_processes_sigma.yml,Detects potential process activity of Komari RMM tool
+komari,Komari,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/komari_registry_sigma.yml,Detects potential registry activity of Komari RMM tool
 labteachconnectwiseautomate,LabTeach (Connectwise Automate),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/labteach__connectwise_automate__processes_sigma.yml,Detects potential processes activity of LabTeach (Connectwise Automate) RMM tool
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/labtech_rmm__now_connectwise_automate__network_sigma.yml,Detects potential network activity of LabTech RMM (Now ConnectWise Automate) RMM tool
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/labtech_rmm__now_connectwise_automate__processes_sigma.yml,Detects potential processes activity of LabTech RMM (Now ConnectWise Automate) RMM tool
@@ -226,6 +248,9 @@ levelio,Level.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/si
 lite_manager,Lite Manager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/lite_manager_processes_sigma.yml,Detects potential processes activity of Lite Manager RMM tool
 litemanager,LiteManager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/litemanager_network_sigma.yml,Detects potential network activity of LiteManager RMM tool
 litemanager,LiteManager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/litemanager_processes_sigma.yml,Detects potential processes activity of LiteManager RMM tool
+localxpose,LocalXpose,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/localxpose_files_sigma.yml,Detects potential file activity of LocalXpose RMM tool
+localxpose,LocalXpose,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/localxpose_network_sigma.yml,Detects potential network activity of LocalXpose RMM tool
+localxpose,LocalXpose,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/localxpose_processes_sigma.yml,Detects potential process activity of LocalXpose RMM tool
 logmein,LogMeIn,https://github.com/SigmaHQ/sigma/blob/782f0f524e6f797ea114fe0d87b22cb4abaa6b7c/rules/windows/dns_query/dns_query_win_remote_access_software_domains_non_browsers.yml,DNS Query To Remote Access Software Domain From Non-Browser App
 logmein,LogMeIn,https://github.com/SigmaHQ/sigma/blob/782f0f524e6f797ea114fe0d87b22cb4abaa6b7c/rules/windows/process_creation/proc_creation_win_remote_access_tools_logmein.yml,Remote Access Tool - LogMeIn Execution
 logmein,LogMeIn,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/logmein_network_sigma.yml,Detects potential network activity of LogMeIn RMM tool
@@ -242,8 +267,6 @@ meshcentral,MeshCentral,https://github.com/magicsword-io/LOLRMM/blob/main/detect
 meshcentral,MeshCentral,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_processes_sigma.yml,Detects potential processes activity of MeshCentral RMM tool
 microsoft_quick_assist,Microsoft Quick Assist,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_quick_assist_network_sigma.yml,Detects potential network activity of Microsoft Quick Assist RMM tool
 microsoft_quick_assist,Microsoft Quick Assist,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_quick_assist_processes_sigma.yml,Detects potential processes activity of Microsoft Quick Assist RMM tool
-microsoft_rdp,Microsoft RDP,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_rdp_processes_sigma.yml,Detects potential processes activity of Microsoft RDP RMM tool
-microsoft_tsc,Microsoft TSC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_tsc_processes_sigma.yml,Detects potential processes activity of Microsoft TSC RMM tool
 mikogo,Mikogo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_network_sigma.yml,Detects potential network activity of Mikogo RMM tool
 mikogo,Mikogo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_processes_sigma.yml,Detects potential processes activity of Mikogo RMM tool
 mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mionet__also_known_as_wd_anywhere_access__processes_sigma.yml,Detects potential processes activity of MioNet (Also known as WD Anywhere Access) RMM tool
@@ -258,7 +281,7 @@ mremoteng,mRemoteNG,https://github.com/magicsword-io/LOLRMM/blob/main/detections
 mremoteng,mRemoteNG,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mremoteng_processes_sigma.yml,Detects potential processes activity of mRemoteNG RMM tool
 msp360,MSP360,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/msp360_network_sigma.yml,Detects potential network activity of MSP360 RMM tool
 msp360,MSP360,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/msp360_processes_sigma.yml,Detects potential processes activity of MSP360 RMM tool
-mstsc,mstsc,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mstsc_processes_sigma.yml,Detects potential processes activity of mstsc RMM tool
+mstsc,mstsc.exe (Microsoft Remote Desktop Connection),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mstsc_processes_sigma.yml,Detects potential process activity of the mstsc.exe Remote Desktop Connection client.
 mygreenpc,MyGreenPC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mygreenpc_network_sigma.yml,Detects potential network activity of MyGreenPC RMM tool
 mygreenpc,MyGreenPC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mygreenpc_processes_sigma.yml,Detects potential processes activity of MyGreenPC RMM tool
 myivo,MyIVO,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/myivo_network_sigma.yml,Detects potential network activity of MyIVO RMM tool
@@ -288,6 +311,10 @@ netviewer,Netviewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections
 netviewer,Netviewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer_processes_sigma.yml,Detects potential processes activity of Netviewer RMM tool
 netviewer_(gotomeet),Netviewer (GoToMeet),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer__gotomeet__network_sigma.yml,Detects potential network activity of Netviewer (GoToMeet) RMM tool
 netviewer_(gotomeet),Netviewer (GoToMeet),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer__gotomeet__processes_sigma.yml,Detects potential processes activity of Netviewer (GoToMeet) RMM tool
+nezha,Nezha,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_files_sigma.yml,Detects potential file activity of Nezha RMM tool
+nezha,Nezha,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_network_sigma.yml,Detects potential network activity of Nezha RMM tool
+nezha,Nezha,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_processes_sigma.yml,Detects potential process activity of Nezha RMM tool
+nezha,Nezha,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_registry_sigma.yml,Detects potential registry activity of Nezha RMM tool
 ngrok,ngrok,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_network_sigma.yml,Detects potential network activity of ngrok RMM tool
 ngrok,ngrok,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ngrok_processes_sigma.yml,Detects potential processes activity of ngrok RMM tool
 ninjarmm,NinjaRMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ninjarmm_network_sigma.yml,Detects potential network activity of NinjaRMM RMM tool
@@ -323,6 +350,9 @@ pdq_connect,PDQ Connect,https://github.com/magicsword-io/LOLRMM/blob/main/detect
 pdq_connect,PDQ Connect,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pdq_connect_processes_sigma.yml,Detects potential processes activity of PDQ Connect RMM tool
 pilixo,Pilixo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pilixo_network_sigma.yml,Detects potential network activity of Pilixo RMM tool
 pilixo,Pilixo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pilixo_processes_sigma.yml,Detects potential processes activity of Pilixo RMM tool
+pitunnel,PiTunnel,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_files_sigma.yml,Detects potential file activity of PiTunnel RMM tool
+pitunnel,PiTunnel,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_network_sigma.yml,Detects potential network activity of PiTunnel RMM tool
+pitunnel,PiTunnel,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_processes_sigma.yml,Detects potential process activity of PiTunnel RMM tool
 pocket_cloud_(wyse),Pocket Cloud (Wyse),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_cloud__wyse__processes_sigma.yml,Detects potential processes activity of Pocket Cloud (Wyse) RMM tool
 pocket_controller,Pocket Controller,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller_network_sigma.yml,Detects potential network activity of Pocket Controller RMM tool
 pocket_controller,Pocket Controller,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller_processes_sigma.yml,Detects potential processes activity of Pocket Controller RMM tool
@@ -417,6 +447,9 @@ senso.cloud,Senso.cloud,https://github.com/magicsword-io/LOLRMM/blob/main/detect
 senso.cloud,Senso.cloud,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/senso.cloud_processes_sigma.yml,Detects potential processes activity of Senso.cloud RMM tool
 servereye,ServerEye,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/servereye_network_sigma.yml,Detects potential network activity of ServerEye RMM tool
 servereye,ServerEye,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/servereye_processes_sigma.yml,Detects potential processes activity of ServerEye RMM tool
+shellhub,ShellHub,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/shellhub_files_sigma.yml,Detects potential file activity of ShellHub RMM tool
+shellhub,ShellHub,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/shellhub_network_sigma.yml,Detects potential network activity of ShellHub RMM tool
+shellhub,ShellHub,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/shellhub_processes_sigma.yml,Detects potential process activity of ShellHub RMM tool
 showmypc,ShowMyPC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/showmypc_network_sigma.yml,Detects potential network activity of ShowMyPC RMM tool
 showmypc,ShowMyPC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/showmypc_processes_sigma.yml,Detects potential processes activity of ShowMyPC RMM tool
 simplehelp,SimpleHelp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/simplehelp_network_sigma.yml,Detects potential network activity of SimpleHelp RMM tool
@@ -483,6 +516,10 @@ tightvnc,TightVNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/s
 todesk,ToDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/todesk_network_sigma.yml,Detects potential network activity of ToDesk RMM tool
 todesk,ToDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/todesk_processes_sigma.yml,Detects potential processes activity of ToDesk RMM tool
 total_software_deployment,Total Software Deployment,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/total_software_deployment_processes_sigma.yml,Detects potential processes activity of Total Software Deployment RMM tool
+trustconnect,TrustConnect,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_files_sigma.yml,Detects potential file activity of TrustConnect RAT
+trustconnect,TrustConnect,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_network_sigma.yml,Detects potential network activity of TrustConnect RAT
+trustconnect,TrustConnect,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_processes_sigma.yml,Detects potential process activity of TrustConnect RAT
+trustconnect,TrustConnect,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/trustconnect_registry_sigma.yml,Detects potential registry activity of TrustConnect RAT
 turbomeeting,TurboMeeting,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/turbomeeting_network_sigma.yml,Detects potential network activity of TurboMeeting RMM tool
 turbomeeting,TurboMeeting,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/turbomeeting_processes_sigma.yml,Detects potential processes activity of TurboMeeting RMM tool
 ultra_vnc,Ultra VNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ultra_vnc_processes_sigma.yml,Detects potential processes activity of Ultra VNC RMM tool

@@ -54,9 +54,32 @@ controlio,Controlio,wec_launcher_[a-Z0-9]*_.exe,wec_launcher_[a-Z0-9]*_.exe,Wind
 controlio,Controlio,wec_launcher_[a-Z0-9]*_.pkg,wec_launcher_[a-Z0-9]*_.pkg,Mac,MacOS,,Controlio macos installer
 controlio,Controlio,weInstSvc.exe,weInstSvc.exe,Windows,Windows,,Controlio binary
 controlio,Controlio,C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\,C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\,Windows,Windows,,Controlio binary
+dataplicity,Dataplicity,/opt/dataplicity/tuxtunnel/manager,/opt/dataplicity/tuxtunnel/manager,Linux,Linux,,Dataplicity manager binary (the persistent remote-control daemon)
+dataplicity,Dataplicity,/opt/dataplicity/credentials,/opt/dataplicity/credentials,Linux,Linux,,Dataplicity agent credentials file (per-tenant install token + device identity)
+dataplicity,Dataplicity,/etc/systemd/system/dataplicity.service,/etc/systemd/system/dataplicity.service,Linux,Linux,,systemd unit file for Dataplicity agent persistence
+dataplicity,Dataplicity,/etc/init.d/dataplicity,/etc/init.d/dataplicity,Linux,Linux,,SysV init script for Dataplicity agent persistence (older or non-systemd Linux distributions)
 devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,%localappdata%\Devolutions\RemoteDesktopManager\Connections.log,C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.log,Windows,Windows,,"Log file showing connections, disconnections, actions on saved passwords and attachments, and other changes"
 devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,%localappdata%\Devolutions\RemoteDesktopManager[GUID]\Mru.xml,C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager[GUID]\Mru.xml,Windows,Windows,,Most recently used Connections
 devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,%localappdata%\Devolutions\RemoteDesktopManager\Connections.db,C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager\Connections.db,Windows,Windows,,Default connections database. There can be others. Holds information and configuration about the connections
+faronics_core,Faronics Core,C:\Program Files\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe,C:\Program Files\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe,Windows,Windows,,Faronics Core Agent main executable
+faronics_core,Faronics Core,C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe,C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe,Windows,Windows,,Faronics Core Agent service host
+faronics_core,Faronics Core,C:\ProgramData\Faronics\FCAForStartupMonitor.msi,C:\ProgramData\Faronics\FCAForStartupMonitor.msi,Windows,Windows,,Faronics Core Agent startup-monitor MSI installer
+faronics_deep_freeze,Faronics Deep Freeze,C:\Program Files (x86)\Faronics\Deep Freeze\DFServ.exe,C:\Program Files (x86)\Faronics\Deep Freeze\DFServ.exe,Windows,Windows,,Deep Freeze workstation service binary
+faronics_deep_freeze,Faronics Deep Freeze,C:\Program Files (x86)\Faronics\Deep Freeze\DFServEx.exe,C:\Program Files (x86)\Faronics\Deep Freeze\DFServEx.exe,Windows,Windows,,Deep Freeze workstation service host
+faronics_deep_freeze,Faronics Deep Freeze,C:\Program Files (x86)\Faronics\Deep Freeze\DFWks.exe,C:\Program Files (x86)\Faronics\Deep Freeze\DFWks.exe,Windows,Windows,,Deep Freeze workstation install / control utility
+faronics_deep_freeze,Faronics Deep Freeze,C:\Windows\Temp\DFServiceInit.log,C:\Windows\Temp\DFServiceInit.log,Windows,Windows,,Deep Freeze service initialization log
+faronics_deep_freeze,Faronics Deep Freeze,C:\Users\<USER>\AppData\Local\Temp\_$Df\DFStdInstall.sib,C:\Users\<USER>\AppData\Local\Temp\_$Df\DFStdInstall.sib,Windows,Windows,,Deep Freeze Standard installer scratch file
+faronics_deploy,Faronics Deploy,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FaronicsDeployAgent.exe,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FaronicsDeployAgent.exe,Windows,Windows,,Faronics Deploy Agent main executable
+faronics_deploy,Faronics Deploy,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWAService.exe,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWAService.exe,Windows,Windows,,Faronics Deploy Cloud Agent service (registered as FWASvc)
+faronics_deploy,Faronics Deploy,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWA_UI_Agent.exe,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWA_UI_Agent.exe,Windows,Windows,,Faronics Deploy user-interface agent
+faronics_deploy,Faronics Deploy,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FRCServer.exe,C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FRCServer.exe,Windows,Windows,,Faronics Remote Control server component
+faronics_deploy,Faronics Deploy,C:\ProgramData\Faronics\StorageSpace\FWA\CloudAgentLogs.LOG,C:\ProgramData\Faronics\StorageSpace\FWA\CloudAgentLogs.LOG,Windows,Windows,,Faronics Deploy / Cloud Agent activity log
+faronics_deploy,Faronics Deploy,C:\ProgramData\Faronics\StorageSpace\FWA\Logs\FWASvc.log,C:\ProgramData\Faronics\StorageSpace\FWA\Logs\FWASvc.log,Windows,Windows,,Faronics Deploy service log (FWASvc)
+faronics_insight,Faronics Insight,C:\Program Files\Faronics\Insight Student\FIStudentSvc.exe,C:\Program Files\Faronics\Insight Student\FIStudentSvc.exe,Windows,Windows,,Faronics Insight Student Windows service
+faronics_insight,Faronics Insight,C:\Program Files\Faronics\Insight Student\FIStudentAgent.exe,C:\Program Files\Faronics\Insight Student\FIStudentAgent.exe,Windows,Windows,,Faronics Insight Student agent
+faronics_insight,Faronics Insight,C:\Program Files\Faronics\Insight Student\FIStudentUI.exe,C:\Program Files\Faronics\Insight Student\FIStudentUI.exe,Windows,Windows,,Faronics Insight Student UI host
+faronics_insight,Faronics Insight,C:\Program Files\Faronics\Insight Student\STAHelper.exe,C:\Program Files\Faronics\Insight Student\STAHelper.exe,Windows,Windows,,Faronics Insight Student helper executable
+faronics_insight,Faronics Insight,C:\Program Files\Faronics\Insight Teacher\STAHelper.exe,C:\Program Files\Faronics\Insight Teacher\STAHelper.exe,Windows,Windows,,Faronics Insight Teacher helper executable
 fleetdeck,FleetDeck.io,C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe,C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe,Windows,Windows,,FleetDeck agent service executable (verified via official documentation)
 fleetdeck,FleetDeck.io,C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe,C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe,Windows,Windows,,FleetDeck agent executable (verified via official documentation)
 fleetdeck,FleetDeck.io,C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll,C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll,Windows,Windows,,FleetDeck agent DLL (reported in GitHub issue)
@@ -167,6 +190,7 @@ gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\Installer\diagnostics-*.tx
 gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\InstallerHandler\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\InstallerHandler\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the InstallerHandler component
 gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the Shell component
 gotomypc,GoToMyPC,%AppData%\GoTo\Logs\goto.log,C:\Users\*\AppData\Roaming\GoTo\Logs\goto.log,Windows,Windows,,N/A
+gotomypc,GoToMyPC,%APPDATA%\GoToMeeting\G2M.exe,C:\Users\*\AppData\Roaming\GoToMeeting\G2M.exe,Windows,Windows,,"Legitimate, LogMeIn-signed GoToMeeting binary observed in the wild as a DLL-search-order-hijacking host. The Zscaler OpenClaw campaign (May 2025) shipped G2M.exe inside a malicious MSI alongside a malicious `g2m.dll` placed in the same directory so the signed binary loaded the attacker DLL on launch, then decrypted Remcos RAT shellcode. Hunt for `G2M.exe` running with a non-LogMeIn-signed `g2m.dll` next to it."
 heartbeatrm,HeartbeatRM,C:\Program Files (x86)\HeartbeatRM\*,C:\Program Files (x86)\HeartbeatRM\*,Windows,Windows,,HeartbeatRM official installation directory (verified via vendor documentation)
 heartbeatrm,HeartbeatRM,C:\Program Files\HeartbeatRM\*,C:\Program Files\HeartbeatRM\*,Windows,Windows,,HeartbeatRM reported installation directory (unverified - from threat intelligence)
 heartbeatrm,HeartbeatRM,*\agent-installer-any.exe,*\agent-installer-any.exe,Windows,Windows,,HeartbeatRM official installer (verified via VirusTotal)
@@ -226,12 +250,23 @@ kaseya,Kaseya (VSA),C:\Windows\System32\config\systemprofile\AppData\Local\Kasey
 kaseya,Kaseya (VSA),C:\Kaseya\WebPages\install\makecert.txt,C:\Kaseya\WebPages\install\makecert.txt,Windows,Windows,,Certificate creation
 kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*,C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*,Windows,Windows,,Endpoint service logs
 kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*,C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*,Windows,Windows,,Session logs
+komari,Komari,C:\Program Files\Komari\komari-agent.exe,C:\Program Files\Komari\komari-agent.exe,Windows,Windows,,Komari Agent Windows service binary
+komari,Komari,C:\Program Files\Komari\nssm.exe,C:\Program Files\Komari\nssm.exe,Windows,Windows,,NSSM service wrapper used by the Windows Komari Agent installer
+komari,Komari,C:\komari\agent,C:\komari\agent,Windows,Windows,,Komari Agent binary path when installed from a POSIX shell on Windows
+komari,Komari,/opt/komari/komari,/opt/komari/komari,Linux,Linux,,Komari server binary installed by the official Linux installer
+komari,Komari,/opt/komari/agent,/opt/komari/agent,Linux,Linux,,Komari Agent binary installed by the official Linux installer
+komari,Komari,/usr/local/komari/agent,/usr/local/komari/agent,Mac,MacOS,,Komari Agent binary path used by the official macOS installer
+komari,Komari,/etc/systemd/system/komari.service,/etc/systemd/system/komari.service,Linux,Linux,,Komari server systemd service
+komari,Komari,/etc/systemd/system/komari-agent.service,/etc/systemd/system/komari-agent.service,Linux,Linux,,Komari Agent systemd service
 level,Level,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
 level,Level,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
 level,Level,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
 levelio,Level.io,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
 levelio,Level.io,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
 levelio,Level.io,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
+localxpose,LocalXpose,loclx.exe,loclx.exe,Windows,Windows,,LocalXpose CLI client (Go static binary). Often run from the user's Downloads or AppData directory rather than a system install path.
+localxpose,LocalXpose,%APPDATA%\loclx\config.yaml,C:\Users\*\AppData\Roaming\loclx\config.yaml,Windows,Windows,,LocalXpose CLI configuration (account API key after `loclx account login`)
+localxpose,LocalXpose,~/.loclx/config.yaml,~/.loclx/config.yaml,Linux,Linux,,LocalXpose CLI configuration on Linux/macOS (account API key)
 lunixar,Lunixar,C:\Program Files\Lunixar\Lunixar.dll,C:\Program Files\Lunixar\Lunixar.dll,Windows,Windows,,Main agent DLL
 lunixar,Lunixar,C:\Program Files\Lunixar\Lunixar.Agent.Core.dll,C:\Program Files\Lunixar\Lunixar.Agent.Core.dll,Windows,Windows,,Agent core library
 lunixar,Lunixar,C:\Program Files\Lunixar\LunixarRemote.exe,C:\Program Files\Lunixar\LunixarRemote.exe,Windows,Windows,,Remote access executable
@@ -240,7 +275,6 @@ lunixar,Lunixar,C:\Program Files\Lunixar\LunixarUpdater.exe,C:\Program Files\Lun
 lunixar,Lunixar,C:\Program Files\Lunixar\LunixarUpdater.dll,C:\Program Files\Lunixar\LunixarUpdater.dll,Windows,Windows,,Auto-updater library
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Program Files\ManageEngine\ServiceDesk\*,C:\Program Files\ManageEngine\ServiceDesk\*,Windows,Windows,,ManageEngine ServiceDesk Plus installation directory (verified via VirusTotal sandbox)
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe,C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe,Windows,Windows,,ManageEngine ServiceDesk Plus temporary installer files (verified via VirusTotal sandbox)
-manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe,C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe,Windows,Windows,,InstallShield wrapper temporary files (verified via VirusTotal sandbox)
 meshcentral,MeshCentral,C:\Program Files\Mesh Agent\MeshAgent.exe,C:\Program Files\Mesh Agent\MeshAgent.exe,Windows,Windows,,Local MeshAgent service binary after installation
 meshcentral,MeshCentral,C:\Program Files\Mesh Agent\MeshAgent.msh,C:\Program Files\Mesh Agent\MeshAgent.msh,Windows,Windows,,"Local MeshAgent service configuration file. Contains configuration settings including the MeshCentral server address, port, and other settings. If the MeshAgent is run without being installed, the configuration file is created in the same directory as the MeshAgent binary."
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent/meshagent,/usr/local/mesh_services/meshagent/meshagent/meshagent,MacOS,MacOS,,Local MeshAgent service binary after installation
@@ -267,15 +301,30 @@ mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garag
 mremoteng,mRemoteNG,C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log,C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log,Windows,Windows,,mRemoteNG log file
 mremoteng,mRemoteNG,C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml,C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml,Windows,Windows,,mRemoteNG configuration file
 mremoteng,mRemoteNG,C:\Users\*\AppData\*\mRemoteNG\**10\user.config,C:\Users\*\AppData\*\mRemoteNG\**10\user.config,Windows,Windows,,mRemoteNG user configuration file
+mstsc,mstsc.exe (Microsoft Remote Desktop Connection),%USERPROFILE%\Documents\Default.rdp,C:\Users\*\Documents\Default.rdp,Windows,Windows,,Hidden default RDP connection profile created by mstsc.exe.
+mstsc,mstsc.exe (Microsoft Remote Desktop Connection),%SystemRoot%\System32\termsrv.exe,C:\Windows\System32\termsrv.exe,Windows,Windows,,"Server-side Terminal Services / Remote Desktop Services host service that listens for inbound mstsc.exe sessions on TCP/3389. Present on the destination, not the client originating the connection."
 netbird,NetBird,C:\Program Files\Netbird\netbird.exe,C:\Program Files\Netbird\netbird.exe,Windows,Windows,,NetBird client installation directory
 netbird,NetBird,C:\ProgramData\Netbird\config.json,C:\ProgramData\Netbird\config.json,Windows,Windows,,NetBird configuration file
 netbird,NetBird,/etc/netbird/config.json,/etc/netbird/config.json,Linux,Linux,,NetBird configuration file
 netbird,NetBird,/var/log/netbird/*,/var/log/netbird/*,Linux,Linux,,NetBird log files
+netbird,NetBird,/etc/netbird/install.conf,/etc/netbird/install.conf,Linux,Linux,,NetBird installation manifest written by the official install.sh — records the package manager type used.
+netbird,NetBird,/Applications/NetBird UI.app,/Applications/NetBird UI.app,macOS,MacOS,,NetBird UI application bundle on macOS (installed via .pkg or Homebrew cask).
+netbird,NetBird,C:\bin\netbird.msi,C:\bin\netbird.msi,Windows,Windows,,NetBird MSI dropped by the May 2025 Trellix-reported CFO spear-phishing campaign (silently installed by cis.vbs / Stage-2 VBS).
+netbird,NetBird,C:\bin\OpenSSH.msi,C:\bin\OpenSSH.msi,Windows,Windows,,OpenSSH server MSI dropped alongside NetBird in the May 2025 CFO spear-phishing campaign (used to enable persistent SSH access).
+netbird,NetBird,C:\bin\cis.vbs,C:\bin\cis.vbs,Windows,Windows,,Stage-2 VBScript dropper that installs NetBird and OpenSSH (May 2025 Trellix-reported campaign).
+netbird,NetBird,C:\bin\trm.zip,C:\bin\trm.zip,Windows,Windows,,"ZIP staging archive containing NetBird and OpenSSH MSIs (renamed from ""trm"" payload fetched from the C2)."
+netbird,NetBird,C:\temper\trm,C:\temper\trm,Windows,Windows,,Initial payload staging path used by the Stage-1 VBScript before being renamed to trm.zip (May 2025 campaign).
 netlock_rmm,NetLock RMM,C:\temp\netlock rmm\installer\logs\*,C:\temp\netlock rmm\installer\logs\*,Windows,Windows,,Debug and error logs related to installation
 netlock_rmm,NetLock RMM,C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json,C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json,Windows,Windows,,Server Configuration File
 netlock_rmm,NetLock RMM,/etc/systemd/system/netlock-rmm-agent-comm.service,/etc/systemd/system/netlock-rmm-agent-comm.service,Linux,Linux,,Netlock RMM Agent comm agent service
 netlock_rmm,NetLock RMM,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,macOS,MacOS,,macOS LaunchDaemon plist File
 netlock_rmm,NetLock RMM,/var/log/netlock-rmm-agent-comm.log,/var/log/netlock-rmm-agent-comm.log,Linux,Linux,,RMM agent comm log (Non-Windows)
+nezha,Nezha,C:\nezha\nezha-agent.exe,C:\nezha\nezha-agent.exe,Windows,Windows,,Nezha Agent Windows binary (typical install path; vendor PowerShell installer drops it here)
+nezha,Nezha,C:\nezha\config.yml,C:\nezha\config.yml,Windows,Windows,,"Nezha Agent configuration file (server address, client_secret, UUID). Sits alongside the agent binary by convention."
+nezha,Nezha,/opt/nezha/agent/nezha-agent,/opt/nezha/agent/nezha-agent,Linux,Linux,,Nezha Agent Linux binary (default install path used by the official curl|bash installer)
+nezha,Nezha,/opt/nezha/agent/config.yml,/opt/nezha/agent/config.yml,Linux,Linux,,"Nezha Agent configuration file on Linux (server address, client_secret, UUID)"
+nezha,Nezha,/etc/systemd/system/nezha-agent.service,/etc/systemd/system/nezha-agent.service,Linux,Linux,,systemd unit file for Nezha Agent persistence on Linux
+nezha,Nezha,/opt/nezha/dashboard/app,/opt/nezha/dashboard/app,Linux,Linux,,Nezha Dashboard server binary on Linux (when self-hosted dashboard is run on the same host)
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files (x86)\NVDA\nvda.exe,C:\Program Files (x86)\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files\NVDA\nvda.exe,C:\Program Files\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory (64-bit)
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.log,C:\Users\*\AppData\Roaming\nvda\nvda.log,Windows,Windows,,NVDA log file
@@ -285,6 +334,8 @@ parsec,Parsec,C:\Program Files\Parsec\pservice.exe,C:\Program Files\Parsec\pserv
 parsec,Parsec,C:\Program Files\Parsec\teams.exe,C:\Program Files\Parsec\teams.exe,Windows,Windows,,Parsec for teams collaboration and user session management
 pchelpware,PChelpware,C:\temp_phw,C:\temp_phw,Windows,Windows,,Folder that is created upon PcHelpWare execution
 pdq_connect,PDQ Connect,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,Windows,Windows,,Journal file that is part of the database system used by the PDQ Connect Agent to manage and store data related to its operations
+pitunnel,PiTunnel,/usr/local/bin/pitunnel,/usr/local/bin/pitunnel,Linux,Linux,,PiTunnel client binary (default install path)
+pitunnel,PiTunnel,/etc/systemd/system/pitunnel.service,/etc/systemd/system/pitunnel.service,Linux,Linux,,systemd unit file for PiTunnel persistence (created when `--persist` flag is used)
 radmin,RAdmin,C:\Windows\SysWOW64\rserver30\Radm_log.htm,C:\Windows\SysWOW64\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (32-bit)
 radmin,RAdmin,C:\Windows\System32\rserver30\Radm_log.htm,C:\Windows\System32\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (64-bit)
 radmin,RAdmin,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,Windows,Windows,,RAdmin chat logs
@@ -312,6 +363,9 @@ rustdesk,RustDesk,C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDe
 screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\Session.db,C:\Program Files*\ScreenConnect\App_Data\Session.db,Windows,Windows,,ScreenConnect session database
 screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\User.xml,C:\Program Files*\ScreenConnect\App_Data\User.xml,Windows,Windows,,ScreenConnect user configuration
 screenconnect,ScreenConnect,C:\ProgramData\ScreenConnect Client*\user.config,C:\ProgramData\ScreenConnect Client*\user.config,Windows,Windows,,ScreenConnect client user configuration
+shellhub,ShellHub,/usr/local/bin/shellhub-agent,/usr/local/bin/shellhub-agent,Linux,Linux,,ShellHub agent binary (default install path used by the vendor install.sh)
+shellhub,ShellHub,/etc/shellhub-agent/agent.env,/etc/shellhub-agent/agent.env,Linux,Linux,,"ShellHub agent environment file (tenant_id, server_address, identity)"
+shellhub,ShellHub,/etc/systemd/system/shellhub-agent.service,/etc/systemd/system/shellhub-agent.service,Linux,Linux,,systemd unit file for ShellHub agent persistence
 simplehelp,SimpleHelp,C:\ProgramData\JWrapper-Remote Access\,C:\ProgramData\JWrapper-Remote Access\,Windows,Windows,,"Default SimpleHelp ""Remote Access"" service installation directory observed in Huntress reporting on Crazy ransomware operations."
 simplehelp,SimpleHelp,%APPDATA%\JWrapper-SimpleSetup\,C:\Users\*\AppData\Roaming\JWrapper-SimpleSetup\,Windows,Windows,,"SimpleHelp customer-side setup/wrapper directory dropped by the SimpleSetup installer (e.g. windowslauncher.exe, SimpleSetupECompatibility.exe)."
 splashtop,Splashtop,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx,Windows,Windows,,N/A
@@ -395,6 +449,10 @@ tmate,tmate,~/.tmate.conf,~/.tmate.conf,Linux,Linux,,tmate configuration file
 tmate,tmate,tmate.sock,tmate.sock,Linux,Linux,,tmate socket file for session communication
 tmate,tmate,tmate-ready,tmate-ready,Linux,Linux,,tmate readiness indicator file
 tmate,tmate,tmate.bashrc,tmate.bashrc,Linux,Linux,,tmate bash configuration file
+trustconnect,TrustConnect,C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe,C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe,Windows,Windows,,TrustConnect Agent service binary (default install path)
+trustconnect,TrustConnect,C:\Program Files\TrustConnect Agent\config.json,C:\Program Files\TrustConnect Agent\config.json,Windows,Windows,,TrustConnect Agent configuration file written at install
+trustconnect,TrustConnect,C:\ProgramData\TrustConnect\*\config.json,C:\ProgramData\TrustConnect\*\config.json,Windows,Windows,,Per-token agent configuration (token subdirectory maps victim to operator org ID)
+trustconnect,TrustConnect,C:\ProgramData\TrustConnect\*\device.id,C:\ProgramData\TrustConnect\*\device.id,Windows,Windows,,36-byte device GUID file used for C2 registration
 veyon,Veyon,C:\Windows\Temp\VeyonServer.log,C:\Windows\Temp\VeyonServer.log,Windows,Windows,,VeyonServer log file
 veyon,Veyon,C:\Windows\Temp\VeyonService.log,C:\Windows\Temp\VeyonService.log,Windows,Windows,,VeyonService log file
 veyon,Veyon,C:\Users\*\AppData\Local\VeyonCLI.log,C:\Users\*\AppData\Local\VeyonCLI.log,Windows,Windows,,Veyon command-line interface utility log

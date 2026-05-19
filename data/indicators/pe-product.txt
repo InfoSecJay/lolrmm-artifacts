@@ -5,6 +5,8 @@ baramundi Management Suite
 Bluetrait
 Controlio
 Gorelo RMM
+Komari
+Komari Agent
 LMIGuardianSvc
 Mouse Without Borders
 Parsec

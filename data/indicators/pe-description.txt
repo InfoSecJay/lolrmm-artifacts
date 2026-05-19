@@ -6,11 +6,37 @@ Aspia Client
 AteraAgent
 baramundi Management Agent
 Bluetrait MSP Agent
+Dataplicity agent (Python-based) installed via curl|sudo python one-liner; runs as a system service that maintains the persistent control channel back to *.dataplicity.com.
+Deep Freeze Console / configuration utility
+Deep Freeze Standard installer
+Deep Freeze Standard runtime
+Deep Freeze Workstation install program
+Deep Freeze workstation service
+Deep Freeze workstation service (extended host)
 Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter
 Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name
 Duet Display executable (observed in threat intelligence)
 Duet Display installer (verified via VirusTotal)
 Endpoint Agent
+Faronics Cloud / Deep Freeze Cloud workstation installer
+Faronics Core Agent (workstation)
+Faronics Core Agent service host
+Faronics Core Agent startup-monitor MSI
+Faronics Deploy / Cloud Agent service host (FWASvc)
+Faronics Deploy Agent (full installer)
+Faronics Deploy module upgrade manager
+Faronics Deploy notification helper
+Faronics Deploy user-interface agent
+Faronics Insight Student / Teacher helper executable (commonly flagged by AV; vendor-recommended whitelist)
+Faronics Insight Student agent
+Faronics Insight Student installer
+Faronics Insight Student user-interface process
+Faronics Insight Student Windows service
+Faronics Insight Teacher installer
+Faronics Insight unified installer
+Faronics Remote Control server component
+Faronics Standalone helper
+Faronics Storage Spaces installer
 FleetDeck agent DLL component (reported in GitHub issue)
 FleetDeck agent installer (verified via official documentation)
 FleetDeck agent service executable (verified via official documentation)
@@ -44,13 +70,17 @@ ImmyBot agent executable (verified via official documentation)
 ImmyBot ephemeral agent for script execution (verified via official documentation)
 ImmyBot installer MSI (verified via VirusTotal)
 ImmyBot updater executable (verified via official documentation)
-InstallShield wrapper executable (observed in VT sandbox)
+Insight Student service (legacy filename)
 Inventory data injection / push utility
 InvGate Assets Client primary endpoint binary; runs as the InvClient SYSTEM service. Vendor "InvGate"; reported sample sha256 d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8 (Win32 EXE, ~932 KB, version 4.004.001).
 InvGate Assets deployment helper used by the software-deployment module.
 InvGate Assets RD helper located under \files\ within the install directory.
 InvGate Assets remote-desktop / remote-support helper invoked from the agent (size ~1.32 MB on v5.001.071 builds).
+Komari agent binary
+Komari server binary
 LMIGuardianSvc
+LocalXpose command-line client (Linux/macOS).
+LocalXpose command-line client (Windows). Single static Go binary; invoked as `loclx tunnel <type> --port <PORT>` after `loclx account login`.
 Main GLPI Agent executable / Perl entrypoint
 ManageEngine ServiceDesk Plus binary installer component
 ManageEngine ServiceDesk Plus installer (verified via VirusTotal)
@@ -63,24 +93,32 @@ Mouse Without Borders
 NetBird client binary for Linux/macOS
 NetBird client executable for Windows
 NetBird UI executable for Windows
+NetBird Windows EXE installer signed by NetBird GmbH (formerly Wiretrustee UG). Description string "Connect your devices into a secure WireGuard-based overlay network with SSO, MFA, and granular access controls." Product "Netbird".
+NetBird Windows MSI installer (canonical naming pattern from official GitHub releases, e.g. netbird_installer_0.70.4_windows_amd64.msi). Renamed to netbird.msi in the May 2025 Trellix-reported campaign.
+Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.
+Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.
 NVDA screen reader executable
 NVDA service executable for secure screens
 Official HeartbeatRM installer (verified via VirusTotal)
 Parsec
+PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.
 PuTTY plink.exe (PuTTY 0.62) bundled inside the Freshservice Discovery Probe MSI for SSH-based scanning of Linux/Unix hosts (legitimate redistributable, but executes from the Freshservice install dir)
 Radmin Server
 Radmin Viewer
 Remote agent management utility (SSH / WinRM remote inventory)
+Remote Desktop Connection
 RemSupp - Remote desktop software
 Reported HeartbeatRM executable (unverified - from threat intelligence report)
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report)
 Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.
 Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe
 Screan capture
+ShellHub agent binary (Go). Maintains the persistent reverse connection to the ShellHub gateway and brokers inbound SSH sessions.
 SNMP-based network discovery task binary
 SNMP-based network inventory task binary
 Splash Window
 Standalone inventory collector (offline / one-shot inventory)
+Successor variant ("DocConnect" / "SHIELD OS") observed after February 2026 disruption
 Teramind agent removal utility (signed by Teramind Inc.)
 Teramind agent removal utility variant served from teramind.co
 Teramind agent updater shim; renamed to update-shim.exe at runtime; .NET assembly signed by Teramind Inc.
@@ -92,6 +130,7 @@ TiFLUX agent updater binary (.NET — TiUpdateService.exe.config and TiUpdateSer
 TiFLUX silent helper invoked by the service via cmd.exe /c start /MIN
 TiFLUX Windows service running as SYSTEM (`TiService`); image path C:\Program Files (x86)\TiFLUX\TiService.exe
 tmate terminal sharing binary
+TrustConnect Agent service binary (.NET 8 single-file executable, ~35 MB). Operators ship TrustConnect under per-tenant branded installer variants that impersonate legitimate software (Adobe Reader, Microsoft Teams, Zoom Workspace, Google Meet, Airtable, plus generic Installer / Proposal / SpecialEvents lures) — these filenames are NOT listed as detection inputs here because they collide with the legitimate products' binary names and would produce FPs downstream; rely instead on the TrustConnect-specific signer chain ("TrustConnect Software PTY LTD"), Run-key value pattern (TrustConnectAgent_<random>), service description suffix ("… - Remote Support Agent"), and C2 endpoints below.
 uploads the recorded data & logs.
 Vector Asset Management 64-bit preparation helper
 Vector Asset Management cleanup/uninstall helper (LANutil32 Suite component)
@@ -121,3 +160,4 @@ VIZOR ServiceDesk mail / email-integration component (Mq prefix = MetaQuest, the
 VMware ESX inventory task binary
 Windows service binary — "LANutil32 Distribution Agent" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client
 Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32)
+WireGuard Wintun TUN driver shipped with the NetBird Windows client.

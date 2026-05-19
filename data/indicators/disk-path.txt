@@ -7,7 +7,9 @@
 %APPDATA%\AnyDesk\user.conf
 %APPDATA%\GlavSoft\RemoteRipple\*
 %AppData%\GoTo\Logs\goto.log
+%APPDATA%\GoToMeeting\G2M.exe
 %APPDATA%\JWrapper-SimpleSetup\
+%APPDATA%\loclx\config.yaml
 %APPDATA%\RdClient\*
 %Binary_path%\\AA_v3.log
 %CD%\conf.json
@@ -32,28 +34,50 @@
 %ProgramData%\Tiflux\*
 %PROGRAMFILES(X86)%\Freshdesk\Freshservice Discovery Agent\*
 %PROGRAMFILES(X86)%\Freshworks\FreshServiceProbe\*
+%SystemRoot%\System32\termsrv.exe
 %TEMP%\*\agent.exe
 %TEMP%\*\agent_installer.bat
 %TEMP%\*\amon.exe
 %TEMP%\Remote_Ripple_*
 %USERPROFILE%\Desktop\MoniticInstaller.exe
+%USERPROFILE%\Documents\Default.rdp
 *\agent-installer-any.exe
 /Applications/Freshservice Discovery Agent.app
 /Applications/GLPI-Agent/etc/agent.cfg
 /Applications/GLPI-Agent/etc/conf.d/*
+/Applications/NetBird UI.app
 /Applications/Teramind Agent.app
 /Applications/tmagent.app
 /etc/glpi-agent/agent.cfg
 /etc/glpi-agent/conf.d/*
+/etc/init.d/dataplicity
 /etc/netbird/config.json
+/etc/netbird/install.conf
+/etc/shellhub-agent/agent.env
+/etc/systemd/system/dataplicity.service
+/etc/systemd/system/komari-agent.service
+/etc/systemd/system/komari.service
 /etc/systemd/system/netlock-rmm-agent-comm.service
+/etc/systemd/system/nezha-agent.service
+/etc/systemd/system/pitunnel.service
+/etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/glpi-agent.service
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
+/opt/dataplicity/credentials
+/opt/dataplicity/tuxtunnel/manager
 /opt/freshservice/discovery_agent/*
+/opt/komari/agent
+/opt/komari/komari
+/opt/nezha/agent/config.yml
+/opt/nezha/agent/nezha-agent
+/opt/nezha/dashboard/app
 /System/Volumes/Data/Users/*/Library/Logs/HopToDesk/hoptodesk_rCURRENT.log
 /tmp/tmate*
 /usr/bin/glpi-agent
 /usr/local/bin/glpi-agent
+/usr/local/bin/pitunnel
+/usr/local/bin/shellhub-agent
+/usr/local/komari/agent
 /usr/local/mesh_services/meshagent/meshagent
 /usr/local/mesh_services/meshagent/meshagent.db
 /usr/local/mesh_services/meshagent/meshagent.msh
@@ -68,18 +92,32 @@
 /var/log/system.log
 <impersonated-org>Agent.exe
 bbl.exe
+C:\bin\cis.vbs
+C:\bin\netbird.msi
+C:\bin\OpenSSH.msi
+C:\bin\trm.zip
 C:\Kaseya\api\v1.0\logs\
 C:\Kaseya\api\v1.5\endpoint\logs
 C:\Kaseya\api\v1.5\endpoints\logs
 C:\Kaseya\WebPages\install\makecert.txt
+C:\komari\agent
 C:\LUCLIENT.INI
 C:\LUCLIENT.MOD
 C:\luhboot.bat
+C:\nezha\config.yml
+C:\nezha\nezha-agent.exe
 C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe
 C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe
 C:\Program Files (x86)\Bluetrait Agent\config.db
 C:\Program Files (x86)\Bluetrait Agent\config.json
 C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe
+C:\Program Files (x86)\Faronics\Deep Freeze\DFServ.exe
+C:\Program Files (x86)\Faronics\Deep Freeze\DFServEx.exe
+C:\Program Files (x86)\Faronics\Deep Freeze\DFWks.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FaronicsDeployAgent.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FRCServer.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWA_UI_Agent.exe
+C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWAService.exe
 C:\Program Files (x86)\FleetDeck Agent\*\fd_agent.dll
 C:\Program Files (x86)\FleetDeck Agent\*\fleetdeck_agent.exe
 C:\Program Files (x86)\FleetDeck Agent\fleetdeck_agent_svc.exe
@@ -241,6 +279,13 @@ C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandIntera
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe
 C:\Program Files\bsag\bma\bma.exe
+C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe
+C:\Program Files\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe
+C:\Program Files\Faronics\Insight Student\FIStudentAgent.exe
+C:\Program Files\Faronics\Insight Student\FIStudentSvc.exe
+C:\Program Files\Faronics\Insight Student\FIStudentUI.exe
+C:\Program Files\Faronics\Insight Student\STAHelper.exe
+C:\Program Files\Faronics\Insight Teacher\STAHelper.exe
 C:\Program Files\GLPI-Agent\etc\agent.cfg
 C:\Program Files\GLPI-Agent\logs\glpi-agent.log
 C:\Program Files\GLPI-Agent\perl\bin\glpi-agent
@@ -280,6 +325,8 @@ C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt
 C:\Program Files\HeartbeatRM\*
 C:\Program Files\IDrive\*
 C:\Program Files\ImmyBot\*
+C:\Program Files\Komari\komari-agent.exe
+C:\Program Files\Komari\nssm.exe
 C:\Program Files\Level\level.exe
 C:\Program Files\Level\level.log
 C:\Program Files\Level\osqueryi.exe
@@ -305,9 +352,14 @@ C:\Program Files\Parsec\pservice.exe
 C:\Program Files\Parsec\teams.exe
 C:\Program Files\TeamViewer\Connections_incoming.txt
 C:\Program Files\TeamViewer\TVNetwork.log
+C:\Program Files\TrustConnect Agent\config.json
+C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe
 C:\Program Files\Vector Networks Limited\LANutil32 Suite\clboot32.exe
 C:\Program Files\Vector\Asset Management Client\CLBOOT32.EXE
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json
+C:\ProgramData\Faronics\FCAForStartupMonitor.msi
+C:\ProgramData\Faronics\StorageSpace\FWA\CloudAgentLogs.LOG
+C:\ProgramData\Faronics\StorageSpace\FWA\Logs\FWASvc.log
 C:\ProgramData\Getscreen.me\<date>.gui.log
 C:\ProgramData\Getscreen.me\<date>.log
 C:\ProgramData\Getscreen.me\session.inf
@@ -327,12 +379,15 @@ C:\ProgramData\ScreenConnect Client*\user.config
 C:\ProgramData\Teramind Agent\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe
 C:\ProgramData\Teramind Agent\config
+C:\ProgramData\TrustConnect\*\config.json
+C:\ProgramData\TrustConnect\*\device.id
 C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\*
 C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\config
 C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\rundll32.exe.config
 C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\
 C:\temp\netlock rmm\installer\logs\*
 C:\temp_phw
+C:\temper\trm
 C:\Users\*\AppData\*\mRemoteNG\**10\user.config
 C:\Users\*\AppData\Local\Getscreen.me
 C:\Users\*\AppData\Local\IDrive\*
@@ -342,7 +397,6 @@ C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log
 C:\Users\*\AppData\Local\Temp\KASetup.log
 C:\Users\*\AppData\Local\Temp\privacyhelper.exe
 C:\Users\*\AppData\Local\Temp\sciter.dll
-C:\Users\*\AppData\Local\Temp\{*}\ISBEW64.exe
 C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe
 C:\Users\*\AppData\Local\VeyonCLI.log
 C:\Users\*\AppData\Roaming\aspia\client.ini
@@ -368,6 +422,7 @@ C:\Users\*\AppData\Roaming\RemSupp\sentry\session.json
 C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc
 C:\Users\*\Documents\ChatLogs\*\*.htm
 C:\Users\*\Videos\AnyDesk\*.anydesk
+C:\Users\<USER>\AppData\Local\Temp\_$Df\DFStdInstall.sib
 C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log
 C:\winchk.dat
 C:\Windows\<random-6-9-char>.exe
@@ -386,6 +441,7 @@ C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Ope
 C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx
 C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\*
 C:\Windows\SysWOW64\rserver30\Radm_log.htm
+C:\Windows\Temp\DFServiceInit.log
 C:\Windows\Temp\FleetDeck\*
 C:\Windows\Temp\ImmyBot\*
 C:\Windows\Temp\KASetup.log
@@ -393,6 +449,7 @@ C:\Windows\Temp\VeyonServer.log
 C:\Windows\Temp\VeyonService.log
 FSProbeUninstall.vbs
 libeay32.dll
+loclx.exe
 RodexAgent.exe
 ssleay32.dll
 teamviewer.exe
@@ -421,6 +478,7 @@ wemonc.exe
 weprtct.exe
 wesvc.exe
 ~/.config/AnyDesk/Logs/
+~/.loclx/config.yaml
 ~/.tmate.conf
 ~/Library/Application Support/AnyDesk/Logs/
 ~/Library/Logs/com.kaseya/KaseyaLiveConnect/*

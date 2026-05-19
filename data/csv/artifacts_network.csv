@@ -38,18 +38,16 @@ anyviewer,AnyViewer,*.aomeisoftware.com,443,N/A
 apple_remote_desktop,Apple Remote Desktop,user_managed,,Known remote domains
 aspia,Aspia,https://github.com/dchapyshev/aspia,N/A,Aspia can be downloaded from the official github repository.
 atera,Atera,pubsub.atera.com,N/A,N/A
-atera,Atera,pubsub.pubnub.com,N/A,N/A
 atera,Atera,agentreporting.atera.com,N/A,N/A
 atera,Atera,getalphacontrol.com,N/A,N/A
 atera,Atera,app.atera.com,N/A,N/A
 atera,Atera,agenthb.atera.com,N/A,N/A
 atera,Atera,packagesstore.blob.core.windows.net,N/A,N/A
-atera,Atera,ps.pndsn.com,N/A,N/A
 atera,Atera,agent-api.atera.com,N/A,N/A
 atera,Atera,agentreportingstore.blob.core.windows.net,N/A,N/A
 atera,Atera,atera-agent-heartbeat.servicebus.windows.net,N/A,N/A
 atera,Atera,ps.atera.com,N/A,N/A
-atera,Atera,atera.pubnubapi.com,N/A,N/A
+atera,Atera,atera.pubnubapi.com,N/A,"Atera-specific PubNub tenant subdomain (CNAME api-tls11.pubnubapi.com) used by the AteraAgent for real-time tenant messaging. Distinct from the generic pubsub.pubnub.com / ps.pndsn.com PubNub multi-tenant infrastructure (shared by thousands of unrelated apps), this `atera.`-prefixed subdomain is reliable Atera-attribution signal."
 atera,Atera,appcdn.atera.com,N/A,N/A
 auvik,Auvik,*.my.auvik.com,,Known remote domains
 auvik,Auvik,*.auvik.com,,Known remote domains
@@ -104,6 +102,10 @@ crossloop,CrossLoop,crossloop.en.softonic.com,,Known remote domains
 crosstec_remote_control,CrossTec Remote Control,user_managed,,Known remote domains
 crosstec_remote_control,CrossTec Remote Control,crosstecsoftware.com/remotecontrol,,Known remote domains
 dameware,DameWare,dameware.com,,Known remote domains
+dataplicity,Dataplicity,dataplicity.com,443,Dataplicity control plane and per-device tenant subdomain. Each registered device gets a `*.dataplicity.com` URL the operator uses to open a browser-based shell. `*.wormhole.dataplicity.com` is the HTTP-tunnel subdomain used to publish local HTTP services.
+dataplicity,Dataplicity,www.dataplicity.com,443,Dataplicity control plane and per-device tenant subdomain. Each registered device gets a `*.dataplicity.com` URL the operator uses to open a browser-based shell. `*.wormhole.dataplicity.com` is the HTTP-tunnel subdomain used to publish local HTTP services.
+dataplicity,Dataplicity,*.dataplicity.com,443,Dataplicity control plane and per-device tenant subdomain. Each registered device gets a `*.dataplicity.com` URL the operator uses to open a browser-based shell. `*.wormhole.dataplicity.com` is the HTTP-tunnel subdomain used to publish local HTTP services.
+dataplicity,Dataplicity,*.wormhole.dataplicity.com,443,Dataplicity control plane and per-device tenant subdomain. Each registered device gets a `*.dataplicity.com` URL the operator uses to open a browser-based shell. `*.wormhole.dataplicity.com` is the HTTP-tunnel subdomain used to publish local HTTP services.
 deskday,DeskDay,deskday.ai,,Known remote domains
 deskday,DeskDay,app.deskday.ai,,Known remote domains
 deskshare,DeskShare,user_managed,,Known remote domains
@@ -133,6 +135,49 @@ eset_remote_administrator,ESET Remote Administrator,user_managed,,Known remote d
 eset_remote_administrator,ESET Remote Administrator,eset.com/me/business/remote-management/remote-administrator/,,Known remote domains
 ezhelp,ezHelp,*.ezhelp.co.kr,,Known remote domains
 ezhelp,ezHelp,ezhelp.co.kr,,Known remote domains
+faronics_core,Faronics Core,upd.faronicslabs.com,80,Faronics Core legacy update / activation infrastructure
+faronics_core,Faronics Core,upd.faronicslabs.com,443,Faronics Core legacy update / activation infrastructure
+faronics_core,Faronics Core,faronics.com,80,Faronics Core legacy update / activation infrastructure
+faronics_core,Faronics Core,faronics.com,443,Faronics Core legacy update / activation infrastructure
+faronics_core,Faronics Core,www.faronics.com,80,Faronics Core legacy update / activation infrastructure
+faronics_core,Faronics Core,www.faronics.com,443,Faronics Core legacy update / activation infrastructure
+faronics_core,Faronics Core,user_managed,7751,Faronics Core Server <-> Core Agent on-prem communication. The Core Server hostname/IP is administrator-supplied (no fixed vendor domain) — hunt on TCP/7751-7752 to/from on-prem Core Server hosts and pair with the Disk / Registry / Process artifacts above. Default Faronics Core Server listener and Core Agent ports are documented by Faronics.
+faronics_core,Faronics Core,user_managed,7752,Faronics Core Server <-> Core Agent on-prem communication. The Core Server hostname/IP is administrator-supplied (no fixed vendor domain) — hunt on TCP/7751-7752 to/from on-prem Core Server hosts and pair with the Disk / Registry / Process artifacts above. Default Faronics Core Server listener and Core Agent ports are documented by Faronics.
+faronics_deep_freeze,Faronics Deep Freeze,deepfreeze.com,443,Deep Freeze Cloud / Faronics Cloud management console
+faronics_deep_freeze,Faronics Deep Freeze,www.deepfreeze.com,443,Deep Freeze Cloud / Faronics Cloud management console
+faronics_deep_freeze,Faronics Deep Freeze,faronicscloud.com,443,Deep Freeze Cloud / Faronics Cloud management console
+faronics_deep_freeze,Faronics Deep Freeze,cloud.faronics.com,443,Deep Freeze Cloud / Faronics Cloud management console
+faronics_deep_freeze,Faronics Deep Freeze,upd.faronicslabs.com,80,Faronics legacy update / activation infrastructure embedded in Deep Freeze installers
+faronics_deep_freeze,Faronics Deep Freeze,upd.faronicslabs.com,443,Faronics legacy update / activation infrastructure embedded in Deep Freeze installers
+faronics_deep_freeze,Faronics Deep Freeze,faronics.com,80,Faronics legacy update / activation infrastructure embedded in Deep Freeze installers
+faronics_deep_freeze,Faronics Deep Freeze,faronics.com,443,Faronics legacy update / activation infrastructure embedded in Deep Freeze installers
+faronics_deep_freeze,Faronics Deep Freeze,www.faronics.com,80,Faronics legacy update / activation infrastructure embedded in Deep Freeze installers
+faronics_deep_freeze,Faronics Deep Freeze,www.faronics.com,443,Faronics legacy update / activation infrastructure embedded in Deep Freeze installers
+faronics_deploy,Faronics Deploy,deploy.faronics.com,443,Faronics Deploy console / endpoint sign-up (web)
+faronics_deploy,Faronics Deploy,www.faronicsdeploy.com,443,Faronics Deploy console / endpoint sign-up (web)
+faronics_deploy,Faronics Deploy,faronicscloud.com,443,Faronics Deploy console / endpoint sign-up (web)
+faronics_deploy,Faronics Deploy,nv0mddxkh7.execute-api.us-west-2.amazonaws.com,443,"Faronics Deploy / Cloud agent management API (AWS API Gateway, us-west-2 and eu-west-1)"
+faronics_deploy,Faronics Deploy,29qoj3q0yf.execute-api.us-west-2.amazonaws.com,443,"Faronics Deploy / Cloud agent management API (AWS API Gateway, us-west-2 and eu-west-1)"
+faronics_deploy,Faronics Deploy,8z5x4rqbxi.execute-api.eu-west-1.amazonaws.com,443,"Faronics Deploy / Cloud agent management API (AWS API Gateway, us-west-2 and eu-west-1)"
+faronics_deploy,Faronics Deploy,1wuccjc4a3.execute-api.eu-west-1.amazonaws.com,443,"Faronics Deploy / Cloud agent management API (AWS API Gateway, us-west-2 and eu-west-1)"
+faronics_deploy,Faronics Deploy,faronics-deploy-na-production-installers.s3.us-west-2.amazonaws.com,443,"Faronics Deploy installer / artifact storage (S3, us-west-2 and eu-west-1)"
+faronics_deploy,Faronics Deploy,faronics-deploy-int-production-installers.s3.eu-west-1.amazonaws.com,443,"Faronics Deploy installer / artifact storage (S3, us-west-2 and eu-west-1)"
+faronics_deploy,Faronics Deploy,remotepro-us-west-2.faronics.com,443,Faronics Deploy Remote Pro browser-based remote-control regional endpoints
+faronics_deploy,Faronics Deploy,remotepro-us-east-1.faronics.com,443,Faronics Deploy Remote Pro browser-based remote-control regional endpoints
+faronics_deploy,Faronics Deploy,remotepro-ca-central-1.faronics.com,443,Faronics Deploy Remote Pro browser-based remote-control regional endpoints
+faronics_deploy,Faronics Deploy,remotepro-eu-west-1.faronicsdeploy.com,443,Faronics Deploy Remote Pro browser-based remote-control regional endpoints
+faronics_deploy,Faronics Deploy,remotepro-ap-southeast-1.faronicsdeploy.com,443,Faronics Deploy Remote Pro browser-based remote-control regional endpoints
+faronics_deploy,Faronics Deploy,remotepro-sa-east-1.faronicsdeploy.com,443,Faronics Deploy Remote Pro browser-based remote-control regional endpoints
+faronics_deploy,Faronics Deploy,faronics.com,443,Faronics support / corporate domains contacted by signed agent binaries
+faronics_deploy,Faronics Deploy,support.faronics.com,443,Faronics support / corporate domains contacted by signed agent binaries
+faronics_deploy,Faronics Deploy,docs.faronics.com,443,Faronics support / corporate domains contacted by signed agent binaries
+faronics_deploy,Faronics Deploy,upd.faronicslabs.com,443,Faronics support / corporate domains contacted by signed agent binaries
+faronics_insight,Faronics Insight,faronics.com,443,"Faronics Insight documentation, support, and update infrastructure"
+faronics_insight,Faronics Insight,www.faronics.com,443,"Faronics Insight documentation, support, and update infrastructure"
+faronics_insight,Faronics Insight,support.faronics.com,443,"Faronics Insight documentation, support, and update infrastructure"
+faronics_insight,Faronics Insight,docs.faronics.com,443,"Faronics Insight documentation, support, and update infrastructure"
+faronics_insight,Faronics Insight,user_managed,1313,Insight Connector intermediary host. The Connector hostname/IP is administrator-supplied (no fixed vendor domain) — hunt on TCP/1313 and TCP/8080 to/from on-prem Connector hosts and pair with the FIStudentSvc / FIStudentAgent / FIStudentUI / STAHelper process artifacts above. Default Teacher / Student communication ports are listed by Faronics in the Insight Quick Install Guide.
+faronics_insight,Faronics Insight,user_managed,8080,Insight Connector intermediary host. The Connector hostname/IP is administrator-supplied (no fixed vendor domain) — hunt on TCP/1313 and TCP/8080 to/from on-prem Connector hosts and pair with the FIStudentSvc / FIStudentAgent / FIStudentUI / STAHelper process artifacts above. Default Teacher / Student communication ports are listed by Faronics in the Insight Quick Install Guide.
 fastviewer,FastViewer,*.fastviewer.com,,Known remote domains
 fastviewer,FastViewer,fastviewer.com,,Known remote domains
 fixme,FixMe.it,*.fixme.it,,Known remote domains
@@ -292,6 +337,17 @@ kaseya,Kaseya (VSA),kaseya.com,,Known remote domains
 khelpdesk,KHelpDesk,*.khelpdesk.com.br,,Known remote domains
 kickidler,KickIdler,kickidler.com,,Known remote domains
 kickidler,KickIdler,my.kickidler.com,,Known remote domains
+komari,Komari,github.com,25774,Komari server web interface and agent communication
+komari,Komari,github.com,443,Komari server web interface and agent communication
+komari,Komari,raw.githubusercontent.com,25774,Komari server web interface and agent communication
+komari,Komari,raw.githubusercontent.com,443,Komari server web interface and agent communication
+komari,Komari,ghcr.io,25774,Komari server web interface and agent communication
+komari,Komari,ghcr.io,443,Komari server web interface and agent communication
+komari,Komari,komari-document.pages.dev,25774,Komari server web interface and agent communication
+komari,Komari,komari-document.pages.dev,443,Komari server web interface and agent communication
+komari,Komari,www.komari.wiki,25774,Komari server web interface and agent communication
+komari,Komari,www.komari.wiki,443,Komari server web interface and agent communication
+komari,Komari,raw.githubusercontent.com,443,Komari Agent install URL pattern observed in Huntress April 2026 abuse case (PowerShell installer pulled directly from komari-monitor's main branch on GitHub).
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),connectwise.com,,Known remote domains
 landesk,LANDesk,*.ivanticloud.com,,Known remote domains
 landesk,LANDesk,*.ivanti.com,,Known remote domains
@@ -313,6 +369,9 @@ levelio,Level.io,*.level.io,,Known remote domains
 litemanager,LiteManager,*.litemanager.ru,,Known remote domains
 litemanager,LiteManager,*.litemanager.com,,Known remote domains
 litemanager,LiteManager,litemanager.com,,Known remote domains
+localxpose,LocalXpose,localxpose.io,443,LocalXpose tenant tunnel control plane and per-tunnel relay endpoints (wildcard subdomain pattern matches all operator-assigned tunnel hostnames).
+localxpose,LocalXpose,*.localxpose.io,443,LocalXpose tenant tunnel control plane and per-tunnel relay endpoints (wildcard subdomain pattern matches all operator-assigned tunnel hostnames).
+localxpose,LocalXpose,api.localxpose.io,443,LocalXpose tenant tunnel control plane and per-tunnel relay endpoints (wildcard subdomain pattern matches all operator-assigned tunnel hostnames).
 logmein,LogMeIn,logmein-gateway.com,443,N/A
 logmein,LogMeIn,*.logmein.com,443,N/A
 logmein,LogMeIn,*.logmein.eu,443,N/A
@@ -368,6 +427,7 @@ msp360,MSP360,*.cloudberrylab.com,,Known remote domains
 msp360,MSP360,*.msp360.com,,Known remote domains
 msp360,MSP360,*.mspbackups.com,,Known remote domains
 msp360,MSP360,msp360.com,,Known remote domains
+mstsc,mstsc.exe (Microsoft Remote Desktop Connection),,3389,RDP traffic initiated by mstsc.exe to a Remote Desktop Session Host or RD Gateway
 mygreenpc,MyGreenPC,*mygreenpc.com,,Known remote domains
 myivo,MyIVO,myivo-server.software.informer.com,,Known remote domains
 n-able_advanced_monitoring_agent,N-Able Advanced Monitoring Agent,*remote.management,,Known remote domains
@@ -403,14 +463,63 @@ n-ableadvancedmonitoringagent,N-Able Advanced Monitoring Agent,systemmonitor.eu.
 n-ableadvancedmonitoringagent,N-Able Advanced Monitoring Agent,*.n-able.com,,Known remote domains
 naverisk,Naverisk,user_managed,,Known remote domains
 naverisk,Naverisk,naverisk.com,,Known remote domains
-netbird,NetBird,netbird.io,443,Known remote domains
-netbird,NetBird,netbird.io,51820,Known remote domains
-netbird,NetBird,*.netbird.io,443,Known remote domains
-netbird,NetBird,*.netbird.io,51820,Known remote domains
-netbird,NetBird,api.netbird.io,443,Known remote domains
-netbird,NetBird,api.netbird.io,51820,Known remote domains
-netbird,NetBird,signal.netbird.io,443,Known remote domains
-netbird,NetBird,signal.netbird.io,51820,Known remote domains
+netbird,NetBird,netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,*.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,*.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,*.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,api.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,api.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,api.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,app.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,app.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,app.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,signal.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,signal.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,signal.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,relay.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,relay.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,relay.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,login.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,login.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,login.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,pkgs.netbird.io,443,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,pkgs.netbird.io,33073,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,pkgs.netbird.io,51820,"NetBird control-plane and client endpoints (canonical, from official documentation)"
+netbird,NetBird,192.3.95.152,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,192.3.95.152,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,192.3.95.152,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,198.46.178.135,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,198.46.178.135,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,198.46.178.135,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-6c11f.firebaseapp.com,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-6c11f.firebaseapp.com,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-6c11f.firebaseapp.com,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-6c11f.web.app,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-6c11f.web.app,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-6c11f.web.app,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-165a0.web.app,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-165a0.web.app,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,googl-165a0.web.app,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,cloud-ed980.firebaseapp.com,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,cloud-ed980.firebaseapp.com,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,cloud-ed980.firebaseapp.com,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,cloud-233f9.firebaseapp.com,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,cloud-233f9.firebaseapp.com,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,cloud-233f9.firebaseapp.com,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my-sharepoint-inc.com,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my-sharepoint-inc.com,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my-sharepoint-inc.com,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my1cloudlive.com,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my1cloudlive.com,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my1cloudlive.com,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my2cloudlive.com,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my2cloudlive.com,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,my2cloudlive.com,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,web-16fe.app,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,web-16fe.app,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netbird,NetBird,web-16fe.app,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
 netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),imperosoftware.com/impero-connect/,,Known remote domains
 netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),*.connect.backdrop.cloud,,Known remote domains
 netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),*.netop.com,,Known remote domains
@@ -427,6 +536,18 @@ neturo,Neturo,neturo.uplus.co.kr,,Known remote domains
 netviewer,Netviewer,download.cnet.com/Net-Viewer/3000-2370_4-10034828.html,,Known remote domains
 netviewer_(gotomeet),Netviewer (GoToMeet),*.netviewer.com,,Known remote domains
 netviewer_(gotomeet),Netviewer (GoToMeet),netviewer.com,,Known remote domains
+nezha,Nezha,user_managed,5555,Nezha Agent gRPC channel to operator-controlled Dashboard. Dashboard host/port is fully tenant-configurable — no fixed vendor C2 — so the protocol fingerprint (persistent gRPC over TLS) is more reliable than any specific domain.
+nezha,Nezha,user_managed,443,Nezha Agent gRPC channel to operator-controlled Dashboard. Dashboard host/port is fully tenant-configurable — no fixed vendor C2 — so the protocol fingerprint (persistent gRPC over TLS) is more reliable than any specific domain.
+nezha,Nezha,github.com,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
+nezha,Nezha,raw.githubusercontent.com,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
+nezha,Nezha,nezha.wiki,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
+nezha,Nezha,nezhahq.github.io,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
+nezha,Nezha,c.mid.al,443,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
+nezha,Nezha,c.mid.al,53762,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
+nezha,Nezha,gd.bj2.xyz,443,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
+nezha,Nezha,gd.bj2.xyz,53762,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
+nezha,Nezha,rism.pages.dev,443,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
+nezha,Nezha,rism.pages.dev,53762,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
 ngrok,ngrok,connect.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,connect.us.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,connect.eu.ngrok-agent.com,,Known remote domains
@@ -483,6 +604,9 @@ pdq_connect,PDQ Connect,pdqinstallers.*.r2.cloudflarestorage.com,,Known remote d
 pilixo,Pilixo,pilixo.com,,Known remote domains
 pilixo,Pilixo,download.pilixo.com,,Known remote domains
 pilixo,Pilixo,*.pilixo.com,,Known remote domains
+pitunnel,PiTunnel,pitunnel.com,443,PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.
+pitunnel,PiTunnel,www.pitunnel.com,443,PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.
+pitunnel,PiTunnel,*.pitunnel.com,443,PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.
 pocket_controller,Pocket Controller,soti.net/products/soti-pocket-controller,,Known remote domains
 pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),*soti.net,,Known remote domains
 psexec,PSEXEC,user_managed,,Known remote domains
@@ -566,6 +690,14 @@ seetrol,Seetrol,seetrol.co.kr,,Known remote domains
 senso.cloud,Senso.cloud,*.senso.cloud,,Known remote domains
 senso.cloud,Senso.cloud,senso.cloud,,Known remote domains
 servereye,ServerEye,*.server-eye.de,,Known remote domains
+shellhub,ShellHub,shellhub.io,443,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,shellhub.io,80,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,cloud.shellhub.io,443,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,cloud.shellhub.io,80,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,www.shellhub.io,443,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,www.shellhub.io,80,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,*.shellhub.io,443,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
+shellhub,ShellHub,*.shellhub.io,80,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
 showmypc,ShowMyPC,*.showmypc.com,,Known remote domains
 showmypc,ShowMyPC,showmypc.com,,Known remote domains
 simplehelp,SimpleHelp,user_managed,443,Known remote domains
@@ -667,8 +799,12 @@ tmate,tmate,*.tmate.io,22,Known remote domains
 tmate,tmate,*.tmate.io,443,Known remote domains
 todesk,ToDesk,todesk.com,,Known remote domains
 todesk,ToDesk,*.todesk.com,,Known remote domains
-todesk,ToDesk,*.todesk.com,,Known remote domains
-todesk,ToDesk,todesktop.com,,Known remote domains
+trustconnect,TrustConnect,trustconnectsoftware.com,443,Primary command-and-control domain (registered 2026-01-12 via NICENIC; A record 178.128.69.245 then 185.182.187.10).
+trustconnect,TrustConnect,trustconnectsoftware.com,443,"REST C2 endpoints used by the agent for registration, heartbeat, command pull, command results, file browsing/pull, and binary update. URLs include /api/agents/register, /api/agents/heartbeat, /api/agent-commands/<DEVICE_GUID>, /api/agent-commands/result, /api/files/browse/pull, /api/files/pull, /api/files/upload, /api/devices, /api/commands/run, /api/installer/script, /agent-update."
+trustconnect,TrustConnect,trustconnectsoftware.com,443,"WebSocket endpoints used for live remote desktop streaming and recording (/ws/screen, /ws/viewer, /api/screen/start, /api/recordings/chunk/<id>)."
+trustconnect,TrustConnect,trustconnectsoftware.com,443,"Operator console / authentication endpoints (/api/auth/login, /api/auth/verify-login, /api/admin/devices/online)."
+trustconnect,TrustConnect,networkservice.cyou,443,"Successor ""DocConnect"" / ""SHIELD OS"" infrastructure observed after February 2026 disruption (React SPA backend, Supabase, SignalR transport)."
+trustconnect,TrustConnect,,443,TrustConnect C2 IP addresses (DigitalOcean and Contabo).
 turbomeeting,TurboMeeting,user_managed,,Known remote domains
 turbomeeting,TurboMeeting,acceo.com/turbomeeting/,,Known remote domains
 ultraviewer,UltraViewer,*.ultraviewer.net,,Known remote domains
