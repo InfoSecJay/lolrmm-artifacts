@@ -43,6 +43,7 @@ glpi,GLPI Agent,4688,Microsoft-Windows-Security-Auditing,Security.evtx,,,"C:\\Pr
 gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),7045,Service Control Manager,System.evtx,GoToResolve_*,"""C:\Program Files (x86)\GoTo Resolve Unattended\*\GoToResolveProcessChecker.exe"" -Service -WorkFolder ""C:\Program Files (x86)\GoTo Resolve Unattended\*"" -ApplicationType ""4""",,Service installation event as result of GoTo Resolve installation.
 gotoassist_(goto_resolve),GoToAssist (GoTo Resolve),4688,Microsoft Windows security auditing,Security.evtx,,,"""C:\Windows\system32\sc.exe"" start GoToResolve_*",Process creation event as result of GoTo Resolve installation.
 heartbeatrm,HeartbeatRM,7045,,,,,,Service installation event for HeartbeatRM
+helpwire,HelpWire,7045,Service Control Manager,System,helpwire-unattended,,,Potential Windows service installation event for HelpWire unattended access. Confirm exact Windows service name during live install triage.
 hoptodesk,HopToDesk,7045,,,,,,Service installation event for HopToDesk
 idrive,iDrive,4688,,,,,,Process creation event for IDrive executables
 idrive,iDrive,4698,,,,,,Scheduled task creation event for iDrive

@@ -263,6 +263,13 @@ heartbeatrm,HeartbeatRM,heartbeatrm.com,,Known remote domains
 helpbeam,HelpBeam,helpbeam.software.informer.com,,Known remote domains
 helpu,HelpU,helpu.co.kr,,Known remote domains
 helpu,HelpU,*.helpu.co.kr,,Known remote domains
+helpwire,HelpWire,helpwire.app,443,"HelpWire web, API, download, and signaling domains"
+helpwire,HelpWire,get.helpwire.app,443,"HelpWire web, API, download, and signaling domains"
+helpwire,HelpWire,api.helpwire.app,443,"HelpWire web, API, download, and signaling domains"
+helpwire,HelpWire,staging.helpwire.app,443,"HelpWire web, API, download, and signaling domains"
+helpwire,HelpWire,account.flexihub.com,443,"HelpWire web, API, download, and signaling domains"
+helpwire,HelpWire,stun.helpwire.app,3478,HelpWire STUN / NAT traversal infrastructure observed in client strings
+helpwire,HelpWire,stunserver.stunprotocol.org,3478,HelpWire STUN / NAT traversal infrastructure observed in client strings
 hoptodesk,HopToDesk,hoptodesk.com,443,Known remote domains
 hoptodesk,HopToDesk,api.hoptodesk.com,443,Known remote domains
 hoptodesk,HopToDesk,signal.hoptodesk.com,443,Known remote domains

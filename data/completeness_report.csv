@@ -96,6 +96,7 @@ guacamole,Guacamole,RAT,True,True,False,False,False,False,False,True,False,True,
 heartbeatrm,HeartbeatRM,RMM,True,True,True,True,True,True,False,True,False,False,registry | other | detections
 helpbeam,HelpBeam,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 helpu,HelpU,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+helpwire,HelpWire,RMM,True,True,True,True,True,True,False,True,True,True,registry
 hoptodesk,HopToDesk,RMM,True,True,True,True,True,True,True,True,False,True,other
 i'm_intouch,I'm InTouch,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 idrive,iDrive,RAT,True,True,True,True,True,True,True,True,False,False,other | detections

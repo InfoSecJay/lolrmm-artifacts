@@ -179,6 +179,9 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpbeam_netw
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpbeam_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpu_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpu_processes_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpwire_files_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpwire_network_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpwire_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/hoptodesk_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/hoptodesk_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/hoptodesk_processes_sigma.yml

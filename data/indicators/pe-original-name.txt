@@ -46,6 +46,7 @@ FWA_UI_Agent.exe
 FWAService.exe
 getscreen.exe
 Gorelo.Rmm.Setup.exe
+helpwire.exe
 InsightInstaller.exe
 InsightInstallerStudent.exe
 InsightInstallerTeacher.exe

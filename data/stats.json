@@ -1,13 +1,13 @@
 {
-  "tool_count": 314,
+  "tool_count": 315,
   "by_category": {
-    "RMM": 223,
+    "RMM": 224,
     "RAT": 91
   },
   "by_os": {
-    "Windows": 99,
-    "MacOS": 43,
-    "Linux": 36,
+    "Windows": 100,
+    "MacOS": 44,
+    "Linux": 37,
     "Android": 19,
     "iOS": 13,
     "ChromeOS": 3,
@@ -65,7 +65,7 @@
     "Remote shell open": 1,
     "Remote desktop management": 1,
     "Remote desktop view": 1,
-    "File transfer": 2,
+    "File transfer": 3,
     "System information": 1,
     "Text chat": 1,
     "Task manager": 1,
@@ -154,6 +154,14 @@
     "Embedded HTTP daemon for server-initiated task triggers (default 62354/tcp)": 1,
     "Self-hosted / on-premise — agent talks to operator-configured GLPI server URL (no centralised vendor cloud)": 1,
     "Command Line Support": 3,
+    "Remote control": 2,
+    "Attended remote support": 1,
+    "Unattended access": 1,
+    "Chat": 1,
+    "Multi-monitor viewing": 1,
+    "Reboot and reconnect": 1,
+    "Windows administrator rights": 1,
+    "Automatic updates": 1,
     "Cloud Backup": 1,
     "File Synchronization": 1,
     "Remote Desktop (BMR)": 1,
@@ -253,7 +261,6 @@
     "Clipboard Exchange": 1,
     "Screen Capture": 1,
     "Remote support": 1,
-    "Remote control": 1,
     "Screen sharing": 1,
     "Remote desktop (WebRTC GUI streaming)": 1,
     "Remote terminal (PowerShell / Bash / Zsh)": 1,
@@ -327,14 +334,14 @@
     "Self-hosted on-premise OR vendor-hosted cloud (vizor.cloud) — agent endpoint is operator-configured, not a fixed vendor cloud": 1
   },
   "artifact_counts": {
-    "disk": 488,
-    "eventlog": 100,
+    "disk": 495,
+    "eventlog": 101,
     "registry": 140,
-    "network_pairs": 857,
-    "other": 138,
-    "total": 1723
+    "network_pairs": 864,
+    "other": 142,
+    "total": 1742
   },
-  "detection_count": 555,
+  "detection_count": 558,
   "tools_without_artifacts_count": 67,
   "tools_without_detections_count": 41
 }

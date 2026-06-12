@@ -154,6 +154,7 @@
 /Applications/AnyDesk.app
 /Applications/GLPI-Agent/*
 /Applications/GLPI-Agent/etc/*
+/Applications/HelpWire Operator.app
 /Applications/NetBird UI.app
 /Applications/Teramind Agent.app
 /Applications/TiAgent.app
@@ -169,6 +170,7 @@
 /etc/systemd/system/nezha-dashboard.service
 /etc/systemd/system/pitunnel.service
 /etc/systemd/system/shellhub-agent.service
+/lib/systemd/system/helpwire-unattended.service
 /Library/Application Support/0x101_Cyber_Security/*
 /opt/dataplicity/*
 /opt/dataplicity/tuxtunnel/*
@@ -644,6 +646,11 @@ helpbeam*.exe
 helpu_install.exe
 HelpuManager.exe
 HelpuUpdater.exe
+HelpWire Quick.exe
+HelpWire Unattended Access.lnk
+helpwire-operator/bin/helpwire-operator
+helpwire.exe
+HelpWire.lnk
 HopToDesk-Standalone.exe
 HopToDesk.exe
 hsloader.exe

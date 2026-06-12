@@ -194,6 +194,8 @@ Guacamole,guacamole,guacamole,Guacamole,Name,RAT,,https://guacamole.apache.org/,
 HeartbeatRM,heartbeatrm,heartbeatrm,HeartbeatRM,Name,RMM,Unknown,https://heartbeatrm.com/,Windows
 HelpBeam,helpbeam,helpbeam,HelpBeam,Name,RMM,,https://web.archive.org/web/20141223111635/http://www.helpbeam.com/,
 HelpU,helpu,helpu,HelpU,Name,RMM,,https://helpu.co.kr/,
+HelpWire,helpwire,helpwire,HelpWire,Name,RMM,true,https://www.helpwire.app/,Windows | macOS | Linux
+HelpWire Operator,helpwire operator,helpwire,HelpWire,PEMetadata.Description,RMM,true,https://www.helpwire.app/,Windows | macOS | Linux
 HopToDesk,hoptodesk,hoptodesk,HopToDesk,Name,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
 HopToDesk remote desktop application (verified via VirusTotal),hoptodesk remote desktop application (verified via virustotal),hoptodesk,HopToDesk,PEMetadata.Description,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
 HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista),http download helper used by the vector asset management client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on windows vista),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows

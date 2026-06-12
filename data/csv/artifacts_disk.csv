@@ -194,6 +194,13 @@ gotomypc,GoToMyPC,%APPDATA%\GoToMeeting\G2M.exe,C:\Users\*\AppData\Roaming\GoToM
 heartbeatrm,HeartbeatRM,C:\Program Files (x86)\HeartbeatRM\*,C:\Program Files (x86)\HeartbeatRM\*,Windows,Windows,,HeartbeatRM official installation directory (verified via vendor documentation)
 heartbeatrm,HeartbeatRM,C:\Program Files\HeartbeatRM\*,C:\Program Files\HeartbeatRM\*,Windows,Windows,,HeartbeatRM reported installation directory (unverified - from threat intelligence)
 heartbeatrm,HeartbeatRM,*\agent-installer-any.exe,*\agent-installer-any.exe,Windows,Windows,,HeartbeatRM official installer (verified via VirusTotal)
+helpwire,HelpWire,helpwire.exe,helpwire.exe,Windows,Windows,,Windows HelpWire Operator / Quick Connect executable; observed original file name in PE metadata.
+helpwire,HelpWire,HelpWire Quick.exe,HelpWire Quick.exe,Windows,Windows,,Public Windows Quick Connect download filename.
+helpwire,HelpWire,HelpWire.lnk,HelpWire.lnk,Windows,Windows,,Windows Start Menu or desktop shortcut string embedded in the Windows client.
+helpwire,HelpWire,HelpWire Unattended Access.lnk,HelpWire Unattended Access.lnk,Windows,Windows,,Windows unattended access shortcut string embedded in the Windows client.
+helpwire,HelpWire,/Applications/HelpWire Operator.app,/Applications/HelpWire Operator.app,macOS,MacOS,,macOS HelpWire Operator app bundle inside the public DMG.
+helpwire,HelpWire,helpwire-operator/bin/helpwire-operator,helpwire-operator/bin/helpwire-operator,Linux,Linux,,Linux Quick Connect operator executable inside the public tarball.
+helpwire,HelpWire,/lib/systemd/system/helpwire-unattended.service,/lib/systemd/system/helpwire-unattended.service,Linux,Linux,,Linux unattended access systemd service path embedded in the Linux client.
 hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\HopToDesk.exe,C:\Program Files (x86)\HopToDesk\HopToDesk.exe,Windows,Windows,,HopToDesk application executable (verified via VirusTotal sandbox analysis)
 hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\privacyhelper.exe,C:\Program Files (x86)\HopToDesk\privacyhelper.exe,Windows,Windows,,HopToDesk privacy helper executable (verified via VirusTotal sandbox analysis)
 hoptodesk,HopToDesk,C:\Program Files (x86)\HopToDesk\PrivacyMode.dll,C:\Program Files (x86)\HopToDesk\PrivacyMode.dll,Windows,Windows,,HopToDesk privacy mode library (verified via VirusTotal sandbox analysis)

@@ -180,6 +180,9 @@ helpbeam,HelpBeam,https://github.com/magicsword-io/LOLRMM/blob/main/detections/s
 helpbeam,HelpBeam,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpbeam_processes_sigma.yml,Detects potential processes activity of HelpBeam RMM tool
 helpu,HelpU,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpu_network_sigma.yml,Detects potential network activity of HelpU RMM tool
 helpu,HelpU,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpu_processes_sigma.yml,Detects potential processes activity of HelpU RMM tool
+helpwire,HelpWire,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpwire_network_sigma.yml,Detects potential network activity of HelpWire RMM tool
+helpwire,HelpWire,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpwire_files_sigma.yml,Detects potential files activity of HelpWire RMM tool
+helpwire,HelpWire,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/helpwire_processes_sigma.yml,Detects potential processes activity of HelpWire RMM tool
 hoptodesk,HopToDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/hoptodesk_network_sigma.yml,Detects potential network activity of HopToDesk RMM tool
 hoptodesk,HopToDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/hoptodesk_files_sigma.yml,Detects potential files activity of HopToDesk RMM tool
 hoptodesk,HopToDesk,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/hoptodesk_processes_sigma.yml,Detects potential processes activity of HopToDesk RMM tool

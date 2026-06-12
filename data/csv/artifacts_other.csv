@@ -40,6 +40,10 @@ glpi,GLPI Agent,Other,"systemd unit on Linux: glpi-agent.service (ExecStart=/usr
 glpi,GLPI Agent,Other,Default embedded HTTP daemon listen port: 62354/tcp (httpd-port parameter)
 glpi,GLPI Agent,Other,"Code-signing publisher: Teclib' (per MSI Manufacturer string in Variables-v2.wxi.tt — Manufacturer=""Teclib'"")"
 glpi,GLPI Agent,Other,GLPI Agent 1.17 x64 MSI SHA-256: db2661a14359931a2d14ed7268f9b90763da4f2bec97b5ed8d51b9bb655d730c (signed via GlobalSign GCC R45 EV CodeSigning CA 2020 — OCSP host ocsp.globalsign.com)
+helpwire,HelpWire,URI Scheme,helpwire://
+helpwire,HelpWire,Windows Authenticode SHA256,9de79ff72aa09670b3d7115e9e92e1fb7e95efb607d1dab402bb7d0994fbbcec
+helpwire,HelpWire,macOS DMG SHA256,8224b40d1a55e123166643dcb3f976a7b193ed1bac653b5ca6acc8c7760ceaa2
+helpwire,HelpWire,Linux Quick Connect tarball SHA256,1455062fa16b23e95faef4f705fad630343df360ace56dd9ffe456eff4321d09
 invgate,InvGate,Other,Windows service name: InvClient
 invgate,InvGate,Other,Vendor service display name: InvGate Assets Client
 invgate,InvGate,Other,"Windows Installer product GUIDs observed: {41F5BB80-6416-4AF4-B67B-FA36C29DB4C4} (v5.001.004), {F0076285-D0E2-4B49-92BD-25E0B7B27DF6} (v4.004.011)"

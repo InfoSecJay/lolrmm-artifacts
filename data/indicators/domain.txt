@@ -234,6 +234,7 @@
 <operator-controlled VPS hostname or IP>
 a1-backend-packages.s3.amazonaws.com
 acceo.com/turbomeeting/
+account.flexihub.com
 activation.netreo.net
 aeroadmin.com
 agent-api.atera.com
@@ -248,6 +249,7 @@ agents.level.io
 ammyy.com
 anyplace-control.com
 api.fdcollab.com
+api.helpwire.app
 api.hoptodesk.com
 api.idrive.com
 api.localxpose.io
@@ -378,6 +380,7 @@ gatherplace.com
 gd.bj2.xyz
 geo.netsupportsoftware.com
 gerwconline.blob.core.windows.net
+get.helpwire.app
 getalphacontrol.com
 getscreen.me
 ghcr.io
@@ -405,6 +408,7 @@ help.invgate.com
 helpbeam.software.informer.com
 helpme.net
 helpu.co.kr
+helpwire.app
 hoptodesk.com
 https://github.com/dchapyshev/aspia
 idrive.com
@@ -577,7 +581,10 @@ soti.net/products/soti-pocket-controller
 splashtop.com
 spyanywhere.com
 sr.rmm.pod1.usw.gorelo.tech
+staging.helpwire.app
 static.freshdev.io
+stun.helpwire.app
+stunserver.stunprotocol.org
 sunlogin.oray.com
 superops.ai
 support.faronics.com

@@ -296,6 +296,8 @@ helpbeam*.exe
 helpu_install.exe
 HelpuManager.exe
 HelpuUpdater.exe
+HelpWire Quick.exe
+helpwire.exe
 HopToDesk-Standalone.exe
 HopToDesk.exe
 hsloader.exe

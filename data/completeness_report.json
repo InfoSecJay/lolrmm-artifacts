@@ -1,20 +1,20 @@
 {
-  "expected_count": 314,
-  "fetched_count": 314,
+  "expected_count": 315,
+  "fetched_count": 315,
   "missing_files": [],
   "extra_files": [],
   "parse_errors": [],
   "section_counts": {
-    "pe_metadata": 309,
-    "installation_paths": 283,
-    "network": 238,
-    "detections": 273,
-    "supported_os": 102,
-    "disk": 65,
-    "eventlog": 43,
-    "capabilities": 58,
+    "pe_metadata": 310,
+    "installation_paths": 284,
+    "network": 239,
+    "detections": 274,
+    "supported_os": 103,
+    "disk": 66,
+    "eventlog": 44,
+    "capabilities": 59,
     "registry": 35,
-    "other": 20
+    "other": 21
   },
   "tools_with_no_artifacts": [
     "beyondtrust",

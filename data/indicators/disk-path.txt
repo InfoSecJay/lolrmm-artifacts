@@ -45,6 +45,7 @@
 /Applications/Freshservice Discovery Agent.app
 /Applications/GLPI-Agent/etc/agent.cfg
 /Applications/GLPI-Agent/etc/conf.d/*
+/Applications/HelpWire Operator.app
 /Applications/NetBird UI.app
 /Applications/Teramind Agent.app
 /Applications/tmagent.app
@@ -62,6 +63,7 @@
 /etc/systemd/system/pitunnel.service
 /etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/glpi-agent.service
+/lib/systemd/system/helpwire-unattended.service
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
 /opt/dataplicity/credentials
 /opt/dataplicity/tuxtunnel/manager
@@ -448,6 +450,11 @@ C:\Windows\Temp\KASetup.log
 C:\Windows\Temp\VeyonServer.log
 C:\Windows\Temp\VeyonService.log
 FSProbeUninstall.vbs
+HelpWire Quick.exe
+HelpWire Unattended Access.lnk
+helpwire-operator/bin/helpwire-operator
+helpwire.exe
+HelpWire.lnk
 libeay32.dll
 loclx.exe
 RodexAgent.exe

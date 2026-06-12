@@ -13,6 +13,7 @@ FWASvc
 Getscreen.me
 glpi-agent
 GoToResolve_*
+helpwire-unattended
 InvClient
 komari-agent
 Level
