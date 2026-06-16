@@ -4,6 +4,7 @@ AnyDesk
 AnyViewer Core
 Aspia Client
 AteraAgent
+Background service that maintains a connection to the Remotely server.
 baramundi Management Agent
 Bluetrait MSP Agent
 Dataplicity agent (Python-based) installed via curl|sudo python one-liner; runs as a system service that maintains the persistent control channel back to *.dataplicity.com.
@@ -15,6 +16,7 @@ Deep Freeze workstation service
 Deep Freeze workstation service (extended host)
 Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter
 Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name
+Desktop client for allowing an IT administrator to provide remote support.
 Duet Display executable (observed in threat intelligence)
 Duet Display installer (verified via VirusTotal)
 Endpoint Agent
@@ -96,6 +98,7 @@ NetBird client executable for Windows
 NetBird UI executable for Windows
 NetBird Windows EXE installer signed by NetBird GmbH (formerly Wiretrustee UG). Description string "Connect your devices into a secure WireGuard-based overlay network with SSO, MFA, and granular access controls." Product "Netbird".
 NetBird Windows MSI installer (canonical naming pattern from official GitHub releases, e.g. netbird_installer_0.70.4_windows_amd64.msi). Renamed to netbird.msi in the May 2025 Trellix-reported campaign.
+NetSupport Remote Command Prompt Stub
 Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.
 Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.
 NVDA screen reader executable

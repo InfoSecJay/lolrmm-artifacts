@@ -21,10 +21,12 @@
 /etc/systemd/system/netlock-rmm-agent-comm.service
 /etc/systemd/system/nezha-agent.service
 /etc/systemd/system/pitunnel.service
+/etc/systemd/system/remotely-agent.service
 /etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/glpi-agent.service
 /lib/systemd/system/helpwire-unattended.service
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
+/Library/LaunchDaemons/remotely-agent.plist
 /opt/dataplicity/credentials
 /opt/dataplicity/tuxtunnel/manager
 /opt/freshservice/discovery_agent/*
@@ -38,6 +40,9 @@
 /usr/bin/glpi-agent
 /usr/local/bin/glpi-agent
 /usr/local/bin/pitunnel
+/usr/local/bin/Remotely/ConnectionInfo.json
+/usr/local/bin/Remotely/Desktop/Remotely_Desktop
+/usr/local/bin/Remotely/Remotely_Agent
 /usr/local/bin/shellhub-agent
 /usr/local/komari/agent
 /usr/local/mesh_services/meshagent/meshagent
@@ -51,6 +56,7 @@
 /var/lib/glpi-agent/*
 /var/log/netbird/*
 /var/log/netlock-rmm-agent-comm.log
+/var/log/remotely/Agent_Install.log
 /var/log/system.log
 <impersonated-org>Agent.exe
 bbl.exe
@@ -314,6 +320,10 @@ C:\Program Files\NVDA\nvda.exe
 C:\Program Files\Parsec\parsecd.exe
 C:\Program Files\Parsec\pservice.exe
 C:\Program Files\Parsec\teams.exe
+C:\Program Files\Remotely\ConnectionInfo.json
+C:\Program Files\Remotely\Desktop\Remotely_Desktop.exe
+C:\Program Files\Remotely\etag.txt
+C:\Program Files\Remotely\Remotely_Agent.exe
 C:\Program Files\TeamViewer\Connections_incoming.txt
 C:\Program Files\TeamViewer\TVNetwork.log
 C:\Program Files\TrustConnect Agent\config.json
@@ -381,6 +391,7 @@ C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log
 C:\Users\*\AppData\Local\Temp\KASetup.log
 C:\Users\*\AppData\Local\Temp\privacyhelper.exe
 C:\Users\*\AppData\Local\Temp\Remote_Ripple_*
+C:\Users\*\AppData\Local\Temp\Remotely_Install.txt
 C:\Users\*\AppData\Local\Temp\sciter.dll
 C:\Users\*\AppData\Local\Temp\TeamViewer\TV15Install.log
 C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe
@@ -432,7 +443,6 @@ C:\Windows\Action1\action1_agent.exe
 C:\Windows\Action1\action1_log_*.log
 C:\Windows\Action1\rule_data\*
 C:\Windows\Action1\scripts\*
-C:\Windows\Installer\*.msi
 C:\Windows\Installer\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}\ARPPRODUCTICON.exe
 C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
 C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\

@@ -96,6 +96,10 @@ pitunnel,PiTunnel,URL,https://pitunnel.com/get/<TOKEN>
 pitunnel,PiTunnel,Other,Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)
 pitunnel,PiTunnel,Other,Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist
 pitunnel,PiTunnel,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/pitunnel/
+remotely,Remotely,Windows Service Name,Remotely_Service
+remotely,Remotely,Linux systemd service,remotely-agent.service
+remotely,Remotely,macOS LaunchDaemon label,com.translucency.remotely-agent
+remotely,Remotely,Remotely Agent SignalR hub,/hubs/service
 remsupp,RemSupp,CodeSigningSubject,"CN=RemSupp Michał Zarach, O=RemSupp Michał Zarach, L=Gdańsk, ST=Pomorskie, C=PL"
 remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 01, O=Microsoft Corporation, C=US"
 remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 02, O=Microsoft Corporation, C=US"

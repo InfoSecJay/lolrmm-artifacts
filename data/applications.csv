@@ -26,6 +26,7 @@ AteraAgent,ateraagent,atera,Atera,PEMetadata.Description,RMM,30 day trial,https:
 AutoUpdate,autoupdate,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 Auvik,auvik,auvik,Auvik,Name,RMM,,https://www.auvik.com/,
 AweRay,aweray,aweray,AweRay,Name,RMM,,https://awesun.aweray.com/en,
+Background service that maintains a connection to the Remotely server.,background service that maintains a connection to the remotely server.,remotely,Remotely,PEMetadata.Description,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
 baramundi Management Agent,baramundi management agent,baramundi,baramundi Management Suite,PEMetadata.Description,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
 baramundi Management Suite,baramundi management suite,baramundi,baramundi Management Suite,Name,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
 Barracuda,barracuda,barracuda,Barracuda,Name,RMM,,https://www.barracuda.com/products/msp/network-protection/rmm,
@@ -72,6 +73,7 @@ DepHlp,dephlp,invgate,InvGate,PEMetadata.OriginalFileName,RMM,30 day trial,https
 DeskDay,deskday,deskday,DeskDay,Name,RMM,,https://deskday.com/,Windows
 DeskNets,desknets,desknets,DeskNets,Name,RMM,,https://www.desknets.com/,
 DeskShare,deskshare,deskshare,DeskShare,Name,RMM,,https://deskshare.com/,
+Desktop client for allowing an IT administrator to provide remote support.,desktop client for allowing an it administrator to provide remote support.,remotely,Remotely,PEMetadata.Description,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
 DesktopNow,desktopnow,desktopnow,DesktopNow,Name,RMM,,https://www.nchsoftware.com/remotedesktop/index.html,
 Dev Tunnels (aka Visual Studio Dev Tunnel),dev tunnels (aka visual studio dev tunnel),dev_tunnels_(aka_visual_studio_dev_tunnel),Dev Tunnels (aka Visual Studio Dev Tunnel),Name,RAT,,https://learn.microsoft.com/azure/developer/dev-tunnels/,
 Devolutions Remote Desktop Manager,devolutions remote desktop manager,devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,Name,RAT,,https://devolutions.net/remote-desktop-manager/,Windows | Linux | Android | Mac | IOS
@@ -322,7 +324,7 @@ Netop Remote Control (aka Impero Connect),netop remote control (aka impero conne
 Netop Remote Control (Impero Connect),netop remote control (impero connect),netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),Name,RMM,,https://netop.com/,
 Netreo,netreo,netreo,Netreo,Name,RMM,,https://docs.netreo.com/,
 NetSupport Manager,netsupport manager,netsupport_manager,NetSupport Manager,Name,RMM,,https://www.netsupportmanager.com/,
-NetSupport Manager,netsupport manager,netsupportmanager,NetSupport Manager,Name,RMM,,https://www.netsupportmanager.com/,
+NetSupport Remote Command Prompt Stub,netsupport remote command prompt stub,netsupport_manager,NetSupport Manager,PEMetadata.Description,RMM,,https://www.netsupportmanager.com/,
 Neturo,neturo,neturo,Neturo,Name,RMM,,,Windows
 Netviewer,netviewer,netviewer,Netviewer,Name,RMM,,,
 Netviewer (GoToMeet),netviewer (gotomeet),netviewer_(gotomeet),Netviewer (GoToMeet),Name,RMM,,https://www.goto.com/meeting/join,
@@ -381,6 +383,7 @@ rdp2tcp,rdp2tcp,rdp2tcp,rdp2tcp,Name,RAT,,https://github.com/V-E-O/rdp2tcp,Windo
 RDPView,rdpview,rdpview,RDPView,Name,RAT,,,
 rdpwrap,rdpwrap,rdpwrap,rdpwrap,Name,RAT,,https://github.com/stascorp/rdpwrap,
 RealVNC,realvnc,realvnc,RealVNC,Name,RAT,,https://www.realvnc.com/en/connect/,
+remcmdstub,remcmdstub,netsupport_manager,NetSupport Manager,PEMetadata.OriginalFileName,RMM,,https://www.netsupportmanager.com/,
 Remcos,remcos,remcos,Remcos,Name,RMM,,,
 Remmina,remmina,remmina,Remmina,Name,RAT,,https://remmina.org/,
 Remmon,remmon,remmon,Remmon,Name,RMM,,,
@@ -395,6 +398,9 @@ Remote Utilities,remote utilities,remote_utilities,Remote Utilities,Name,RMM,,ht
 Remote.it,remote.it,remote.it,Remote.it,Name,RMM,,https://www.remote.it/,Windows
 RemoteCall,remotecall,remotecall,RemoteCall,Name,RMM,,https://www.remotecall.com/,Windows
 RemoteDesktopManager,remotedesktopmanager,devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,PEMetadata.OriginalFileName,RAT,,https://devolutions.net/remote-desktop-manager/,Windows | Linux | Android | Mac | IOS
+Remotely,remotely,remotely,Remotely,Name,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
+Remotely_Agent,remotely_agent,remotely,Remotely,PEMetadata.OriginalFileName,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
+Remotely_Desktop,remotely_desktop,remotely,Remotely,PEMetadata.OriginalFileName,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
 RemotePass,remotepass,remotepass,RemotePass,Name,RMM,,https://www.remotepass.com/,Windows
 RemotePC,remotepc,remotepc,RemotePC,Name,RMM,,https://www.remotepc.com/,Windows
 RemoteUtilities,remoteutilities,remoteutilities,RemoteUtilities,Name,RMM,,https://www.remoteutilities.com/,

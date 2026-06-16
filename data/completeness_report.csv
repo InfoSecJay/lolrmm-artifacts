@@ -50,7 +50,7 @@ deskday,DeskDay,RMM,True,True,False,True,False,False,False,True,False,True,capab
 desknets,DeskNets,RMM,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 deskshare,DeskShare,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 desktopnow,DesktopNow,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
-dev_tunnels_(aka_visual_studio_dev_tunnel),Dev Tunnels (aka Visual Studio Dev Tunnel),RAT,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
+dev_tunnels_(aka_visual_studio_dev_tunnel),Dev Tunnels (aka Visual Studio Dev Tunnel),RAT,True,False,False,False,False,False,False,True,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | other | detections
 devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,RAT,True,True,False,True,True,False,False,False,False,True,capabilities | eventlog | registry | network | other
 distant_desktop,Distant Desktop,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 domotz,Domotz,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -141,7 +141,7 @@ logmein_rescue,LogMeIn rescue,RMM,True,True,False,False,False,False,False,True,F
 lunixar,Lunixar,RMM,True,True,True,True,True,True,True,True,False,False,other | detections
 manage_engine_(desktop_central),Manage Engine (Desktop Central),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 manageengine,ManageEngine,RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
-manageengine_rmm_central,ManageEngine RMM Central,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
+manageengine_rmm_central,ManageEngine RMM Central,RMM,True,False,False,False,False,False,False,True,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | other | detections
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,RMM,True,True,True,True,True,True,True,True,False,False,other | detections
 megasync,MEGAsync,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 meshcentral,MeshCentral,RMM,True,True,True,True,True,True,False,True,False,True,registry | other
@@ -171,8 +171,7 @@ netop,Netop,RMM,True,True,False,True,False,False,False,False,False,False,capabil
 netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 netreo,Netreo,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
-netsupport_manager,NetSupport Manager,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
-netsupportmanager,NetSupport Manager,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+netsupport_manager,NetSupport Manager,RMM,True,True,True,False,False,False,False,True,False,True,supported_os | disk | eventlog | registry | other
 neturo,Neturo,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 netviewer,Netviewer,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 netviewer_(gotomeet),Netviewer (GoToMeet),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -228,6 +227,7 @@ remote_desktop_plus,Remote Desktop Plus,RAT,True,True,False,False,False,False,Fa
 remote_manipulator_system,Remote Manipulator System,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 remote_utilities,Remote Utilities,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 remotecall,RemoteCall,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
+remotely,Remotely,RMM,True,True,True,True,True,True,False,True,True,True,registry
 remotepass,RemotePass,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 remotepc,RemotePC,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 remoteripple,Remote Ripple,RMM,False,True,True,True,True,False,False,False,False,True,pe_metadata | eventlog | registry | network | other
@@ -278,7 +278,7 @@ syspectr,Syspectr,RMM,True,True,False,False,False,False,False,True,False,True,ca
 tactical_rmm,Tactical RMM,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 tailscale,Tailscale,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 tanium,Tanium,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
-taniumdeploy,Tanium Deploy,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
+taniumdeploy,Tanium Deploy,RMM,True,False,False,False,False,False,False,True,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | other | detections
 teamviewer,TeamViewer,RMM,True,True,False,True,True,True,True,True,True,True,capabilities
 teledesktop,TeleDesktop,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 teramind,Teramind,RMM,True,True,True,True,True,True,True,True,True,True,

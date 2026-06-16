@@ -70,7 +70,10 @@ pitunnel
 plink.exe
 Radmin.exe
 RCClient.exe
+remcmdstub.exe
 RemoteDesktopManager
+Remotely_Agent.exe
+Remotely_Desktop.exe
 RemSupp.exe
 RodexAgent.exe
 RServer3.exe

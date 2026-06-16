@@ -22,6 +22,7 @@ Mouse without Borders Service
 nezha-agent
 parsecvirtualds
 RCService
+Remotely_Service
 RemotePC Performance Service
 Splashtop Software Updater Service
 SplashtopRemoteService

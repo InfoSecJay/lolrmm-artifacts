@@ -5,9 +5,9 @@
     "RAT": 91
   },
   "by_os": {
-    "Windows": 100,
-    "MacOS": 44,
-    "Linux": 37,
+    "Windows": 101,
+    "MacOS": 45,
+    "Linux": 38,
     "Android": 19,
     "iOS": 13,
     "ChromeOS": 3,
@@ -65,7 +65,7 @@
     "Remote shell open": 1,
     "Remote desktop management": 1,
     "Remote desktop view": 1,
-    "File transfer": 3,
+    "File transfer": 4,
     "System information": 1,
     "Text chat": 1,
     "Task manager": 1,
@@ -154,10 +154,10 @@
     "Embedded HTTP daemon for server-initiated task triggers (default 62354/tcp)": 1,
     "Self-hosted / on-premise — agent talks to operator-configured GLPI server URL (no centralised vendor cloud)": 1,
     "Command Line Support": 3,
-    "Remote control": 2,
+    "Remote control": 3,
     "Attended remote support": 1,
-    "Unattended access": 1,
-    "Chat": 1,
+    "Unattended access": 2,
+    "Chat": 2,
     "Multi-monitor viewing": 1,
     "Reboot and reconnect": 1,
     "Windows administrator rights": 1,
@@ -234,6 +234,7 @@
     "Remote Desktop Access": 2,
     "Screen Management": 1,
     "Remote Shell": 1,
+    "Remote command prompt": 1,
     "Server monitoring (CPU, RAM, disk, network, traffic)": 1,
     "WebSSH interactive terminal (Dashboard → Agent)": 1,
     "Arbitrary command execution": 2,
@@ -257,6 +258,9 @@
     "Multiple Protocol Support": 1,
     "Remote Desktop Management": 1,
     "Multiple RDP Sessions": 1,
+    "Remote scripting": 1,
+    "Remote terminal": 1,
+    "Self-hosted server": 1,
     "Remote View": 1,
     "Clipboard Exchange": 1,
     "Screen Capture": 1,
@@ -334,14 +338,14 @@
     "Self-hosted on-premise OR vendor-hosted cloud (vizor.cloud) — agent endpoint is operator-configured, not a fixed vendor cloud": 1
   },
   "artifact_counts": {
-    "disk": 495,
-    "eventlog": 101,
+    "disk": 505,
+    "eventlog": 102,
     "registry": 140,
-    "network_pairs": 864,
-    "other": 142,
-    "total": 1742
+    "network_pairs": 865,
+    "other": 146,
+    "total": 1758
   },
-  "detection_count": 558,
+  "detection_count": 549,
   "tools_without_artifacts_count": 67,
-  "tools_without_detections_count": 41
+  "tools_without_detections_count": 44
 }

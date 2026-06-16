@@ -14,14 +14,14 @@ Of 315 tools total:
 | --- | ---: | ---: |
 | pe_metadata | 310 | 98% |
 | installation_paths | 284 | 90% |
-| capabilities | 59 | 19% |
-| supported_os | 103 | 33% |
-| disk | 66 | 21% |
-| eventlog | 44 | 14% |
+| capabilities | 61 | 19% |
+| supported_os | 104 | 33% |
+| disk | 67 | 21% |
+| eventlog | 45 | 14% |
 | registry | 35 | 11% |
 | network | 239 | 76% |
-| other | 21 | 7% |
-| detections | 274 | 87% |
+| other | 22 | 7% |
+| detections | 271 | 86% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,7 +93,7 @@ Of 315 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (41)
+## Tools with no detections (44)
 
 - `beyondtrust` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
@@ -102,6 +102,7 @@ Of 315 tools total:
 - `controlio` (RMM)
 - `cruzcontrol` (RMM)
 - `desknets` (RMM)
+- `dev_tunnels_(aka_visual_studio_dev_tunnel)` (RAT)
 - `duet_display` (RAT)
 - `free_ping_tool` (RAT)
 - `free_tools_launcher` (RMM)
@@ -115,6 +116,7 @@ Of 315 tools total:
 - `jollysfastvnc` (RAT)
 - `koofr` (RAT)
 - `lunixar` (RMM)
+- `manageengine_rmm_central` (RMM)
 - `manageengine_servicedesk_plus` (RMM)
 - `miradore` (RMM)
 - `mobaxterm` (RAT)
@@ -130,6 +132,7 @@ Of 315 tools total:
 - `remote_desktop_manager_(devolutions)` (RAT)
 - `smartcode_web_vnc` (RAT)
 - `smartftp` (RAT)
+- `taniumdeploy` (RMM)
 - `terminals` (RAT)
 - `tmate` (RAT)
 - `vnc_connect` (RAT)

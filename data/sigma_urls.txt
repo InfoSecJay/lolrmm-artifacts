@@ -43,7 +43,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/anyplace_cont
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/anyviewer_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/apple_remote_desktop_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/aspia_files_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/aspia_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/aspia_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/atera_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/atera_network_sigma.yml
@@ -76,7 +75,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/centurion_net
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/centurion_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/chrome_remote_desktop_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/chrome_remote_desktop_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/cloudflare_tunnel_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/cloudflare_tunnel_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/comodo_rmm_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/comodo_rmm_processes_sigma.yml
@@ -99,7 +97,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/deskshare_net
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/deskshare_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/desktopnow_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/desktopnow_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/dev_tunnels__aka_visual_studio_dev_tunnel__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/devolutions_remote_desktop_manager_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/devolutions_remote_desktop_manager_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/distant_desktop_network_sigma.yml
@@ -251,7 +248,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/logmein_rescu
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/manage_engine__desktop_central__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/manage_engine__desktop_central__processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/manageengine_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/manageengine_rmm_central_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/megasync_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_network_sigma.yml
@@ -284,7 +280,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/naverisk_netw
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/naverisk_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netlock_rmm_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netlock_rmm_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netop_remote_control__aka_impero_connect__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netop_remote_control__aka_impero_connect__processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netop_remote_control__impero_connect__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netop_remote_control__impero_connect__processes_sigma.yml
@@ -295,7 +290,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/neturo_networ
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/neturo_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer__gotomeet__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer__gotomeet__processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/netviewer_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/nezha_network_sigma.yml
@@ -326,7 +320,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/parsec_networ
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/parsec_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pcanywhere_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pcanywhere_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pcnow_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pcnow_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pcvisit_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pcvisit_processes_sigma.yml
@@ -341,7 +334,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_proc
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_cloud__wyse__processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller__soti_xsight__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller__soti_xsight__processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/psexec__clone__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/psexec__clone__processes_sigma.yml
@@ -384,6 +376,8 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remote_utilit
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remote_utilities_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotecall_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotecall_processes_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotely_files_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotely_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotepass_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotepass_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remotepc_network_sigma.yml
@@ -472,7 +466,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tactical_rmm_
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tactical_rmm_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tailscale_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tailscale_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tanium_deploy_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tanium_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/tanium_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/teamviewer_files_sigma.yml

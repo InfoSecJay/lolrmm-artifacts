@@ -540,6 +540,7 @@ RDPConf.exe
 RDPWInst.exe
 Recycler.exe
 regapps.exe
+remcmdstub.exe
 remcom.exe
 remcomsvc.exe
 remcos*.exe
@@ -556,6 +557,8 @@ remote_host.exe
 remoteconsole.exe
 RemoteDesktopManager.exe
 remoteit.exe
+Remotely_Agent.exe
+Remotely_Desktop.exe
 remotepass-access.exe
 RemotePC.exe
 remotepchost.exe
@@ -568,6 +571,7 @@ RemSupp.exe
 RemSupp_Setup_x64.exe
 rfusclient.exe
 RHost.exe
+RMM.Agent.exe
 RmmService.exe
 rmserverconsolemediator.exe
 RocketRemoteDesktop_Setup.exe

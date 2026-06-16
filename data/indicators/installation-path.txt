@@ -169,9 +169,11 @@
 /etc/systemd/system/nezha-agent.service
 /etc/systemd/system/nezha-dashboard.service
 /etc/systemd/system/pitunnel.service
+/etc/systemd/system/remotely-agent.service
 /etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/helpwire-unattended.service
 /Library/Application Support/0x101_Cyber_Security/*
+/Library/LaunchDaemons/remotely-agent.plist
 /opt/dataplicity/*
 /opt/dataplicity/tuxtunnel/*
 /opt/komari/*
@@ -191,6 +193,9 @@
 /usr/local/bin/loclx
 /usr/local/bin/netbird
 /usr/local/bin/pitunnel
+/usr/local/bin/Remotely/ConnectionInfo.json
+/usr/local/bin/Remotely/Desktop/Remotely_Desktop
+/usr/local/bin/Remotely/Remotely_Agent
 /usr/local/bin/shellhub-agent
 /usr/local/bin/tmate
 /usr/local/komari/*
@@ -422,6 +427,10 @@ C:\Program Files\RdClient\*
 C:\Program Files\RealVNC\VNC Server\*
 C:\Program Files\Remote Ripple\*
 C:\Program Files\Remote Utilities\*
+C:\Program Files\Remotely\ConnectionInfo.json
+C:\Program Files\Remotely\Desktop\Remotely_Desktop.exe
+C:\Program Files\Remotely\etag.txt
+C:\Program Files\Remotely\Remotely_Agent.exe
 C:\Program Files\Rodex\RodexAgent.exe
 C:\Program Files\RustDesk
 C:\Program Files\Solar-Putty-v4\*
@@ -850,6 +859,7 @@ rdp2tcp.py
 RDPCheck.exe
 RDPConf.exe
 RDPWInst.exe
+remcmdstub.exe
 remcom.exe
 remcomsvc.exe
 remcos*.exe
@@ -877,6 +887,7 @@ remoting_host.exe
 requires sign up
 rfusclient.exe
 RHost.exe
+RMM.Agent.exe
 RmmService.exe
 rmserverconsolemediator.exe
 RocketRemoteDesktop_Setup.exe
