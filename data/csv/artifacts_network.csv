@@ -581,8 +581,6 @@ ninjarmm,NinjaRMM,ninjarmm.net,,Known remote domains
 ninjarmm,NinjaRMM,*.ninjarmm.net,,Known remote domains
 ninjarmm,NinjaRMM,rmmservice.eu,,Known remote domains
 ninjarmm,NinjaRMM,*.rmmservice.eu,,Known remote domains
-ninjarmm,NinjaRMM,rmmservice.eu,,Known remote domains
-ninjarmm,NinjaRMM,*.rmmservice.eu,,Known remote domains
 ninjarmm,NinjaRMM,rmmservice.com.au,,Known remote domains
 ninjarmm,NinjaRMM,*.rmmservice.com.au,,Known remote domains
 ninjarmm,NinjaRMM,rmmservice.ca,,Known remote domains
@@ -766,7 +764,6 @@ syncro,Syncro,attachments.servably.com,,Known remote domains
 synergy,Synergy,user_managed,,Known remote domains
 syspectr,Syspectr,*.syspectr.com,,Known remote domains
 syspectr,Syspectr,syspectr.com,,Known remote domains
-tactical_rmm,Tactical RMM,login.tailscale.com,,Known remote domains
 tactical_rmm,Tactical RMM,login.tailscale.com,,Known remote domains
 tactical_rmm,Tactical RMM,docs.tacticalrmm.com,,Known remote domains
 tailscale,Tailscale,*.tailscale.com,,Known remote domains

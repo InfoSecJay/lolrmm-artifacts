@@ -341,9 +341,9 @@
     "disk": 505,
     "eventlog": 102,
     "registry": 140,
-    "network_pairs": 865,
+    "network_pairs": 862,
     "other": 146,
-    "total": 1758
+    "total": 1755
   },
   "detection_count": 549,
   "tools_without_artifacts_count": 67,
