@@ -9,6 +9,7 @@ Komari
 Komari Agent
 LMIGuardianSvc
 Mouse Without Borders
+Ninite
 Parsec
 Radmin Server
 Radmin Viewer

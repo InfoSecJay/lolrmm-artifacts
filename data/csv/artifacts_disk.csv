@@ -332,6 +332,8 @@ nezha,Nezha,/opt/nezha/agent/nezha-agent,/opt/nezha/agent/nezha-agent,Linux,Linu
 nezha,Nezha,/opt/nezha/agent/config.yml,/opt/nezha/agent/config.yml,Linux,Linux,,"Nezha Agent configuration file on Linux (server address, client_secret, UUID)"
 nezha,Nezha,/etc/systemd/system/nezha-agent.service,/etc/systemd/system/nezha-agent.service,Linux,Linux,,systemd unit file for Nezha Agent persistence on Linux
 nezha,Nezha,/opt/nezha/dashboard/app,/opt/nezha/dashboard/app,Linux,Linux,,Nezha Dashboard server binary on Linux (when self-hosted dashboard is run on the same host)
+ninite,Ninite Pro (Ninite Agent),%TEMP%\NiniteDownloads\*,C:\Users\*\AppData\Local\Temp\NiniteDownloads\*,Windows,Windows,,Default Ninite download cache where installers for target apps are staged.
+ninite,Ninite Pro (Ninite Agent),NiniteUpdateSummary.log,NiniteUpdateSummary.log,Windows,Windows,,Ninite update and audit summary log written alongside the executable.
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files (x86)\NVDA\nvda.exe,C:\Program Files (x86)\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files\NVDA\nvda.exe,C:\Program Files\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory (64-bit)
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.log,C:\Users\*\AppData\Roaming\nvda\nvda.log,Windows,Windows,,NVDA log file
@@ -359,6 +361,11 @@ remotely,Remotely,/usr/local/bin/Remotely/ConnectionInfo.json,/usr/local/bin/Rem
 remotely,Remotely,/var/log/remotely/Agent_Install.log,/var/log/remotely/Agent_Install.log,Linux/macOS,Linux,,Linux and macOS installer log path used by upstream shell installers.
 remotely,Remotely,/etc/systemd/system/remotely-agent.service,/etc/systemd/system/remotely-agent.service,Linux,Linux,,Linux systemd service file created by the upstream Ubuntu and Manjaro installers.
 remotely,Remotely,/Library/LaunchDaemons/remotely-agent.plist,/Library/LaunchDaemons/remotely-agent.plist,macOS,MacOS,,macOS LaunchDaemon created by upstream macOS installers.
+remotepulse,RemotePulse,C:\Program Files (x86)\RemotePulseAgent\InstallCore.exe,C:\Program Files (x86)\RemotePulseAgent\InstallCore.exe,Windows,Windows,,RemotePulse agent installer component observed in issue 226.
+remotepulse,RemotePulse,C:\Program Files (x86)\RemotePulseAgent\agent.ps1,C:\Program Files (x86)\RemotePulseAgent\agent.ps1,Windows,Windows,,RemotePulse agent PowerShell script observed in issue 226.
+remotepulse,RemotePulse,C:\Program Files (x86)\RemotePulseAgent\defender-exclude.ps1,C:\Program Files (x86)\RemotePulseAgent\defender-exclude.ps1,Windows,Windows,,RemotePulse Defender exclusion script observed in issue 226.
+remotepulse,RemotePulse,C:\Program Files (x86)\RemotePulseAgent\install.ps1,C:\Program Files (x86)\RemotePulseAgent\install.ps1,Windows,Windows,,RemotePulse PowerShell installer script observed in issue 226.
+remotepulse,RemotePulse,C:\Program Files (x86)\RemotePulseAgent\install.cmd,C:\Program Files (x86)\RemotePulseAgent\install.cmd,Windows,Windows,,RemotePulse command installer wrapper observed in issue 226.
 remoteripple,Remote Ripple,%APPDATA%\GlavSoft\RemoteRipple\*,C:\Users\*\AppData\Roaming\GlavSoft\RemoteRipple\*,Windows,Windows,,Log files for RemoteRipple
 remoteripple,Remote Ripple,%TEMP%\Remote_Ripple_*,C:\Users\*\AppData\Local\Temp\Remote_Ripple_*,Windows,Windows,,Temporary files/logs for RemoteRipple
 remsupp,RemSupp,C:\Users\*\AppData\Local\Programs\RemSupp\RemSupp.exe,C:\Users\*\AppData\Local\Programs\RemSupp\RemSupp.exe,Windows,Windows,,Main RemSupp executable (Electron 36 / Chromium-based)

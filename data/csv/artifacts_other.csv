@@ -60,6 +60,7 @@ komari,Komari,SHA256,039e659ade3aa8ee7758c11fdb8fbfffd2491920046d638413cea2042f6
 komari,Komari,IP,45.153.34.132
 localxpose,LocalXpose,Other,"Install via npm (`npm install -g loclx`), choco, snap, or direct binary download from localxpose.io"
 localxpose,LocalXpose,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/localxpose/
+lunixar,Lunixar,Installer control,Current Lunixar agent installers use platform-controlled names and cannot be renamed from the Lunixar console; historical renamed MSI filenames should be treated as abuse artifacts rather than expected current installer names.
 monitic,Monitic,URL,https://app.monitic.com/MoniticInstaller.exe
 monitic,Monitic,URL,https://app.monitic.com/installer
 monitic,Monitic,URL,https://api.monitic.com/api/ext/get-token
@@ -100,6 +101,9 @@ remotely,Remotely,Windows Service Name,Remotely_Service
 remotely,Remotely,Linux systemd service,remotely-agent.service
 remotely,Remotely,macOS LaunchDaemon label,com.translucency.remotely-agent
 remotely,Remotely,Remotely Agent SignalR hub,/hubs/service
+remotepulse,RemotePulse,ObservedCommandLine,"cmd.exe /c ""C:\Program Files (x86)\RemotePulseAgent\install.cmd"" ""<tenant-id>"" ""https://remotepulse.io"" ""<original-lure-path>"" ""<lure-name>"""
+remotepulse,RemotePulse,CodeSigningSigner,EIKON S.A.
+remotepulse,RemotePulse,ObservedSHA256,4eab52778134487a4233915f30ddeeff9d165a4312a2d8c5256c20072cd8de53
 remsupp,RemSupp,CodeSigningSubject,"CN=RemSupp Michał Zarach, O=RemSupp Michał Zarach, L=Gdańsk, ST=Pomorskie, C=PL"
 remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 01, O=Microsoft Corporation, C=US"
 remsupp,RemSupp,CodeSigningIssuer,"CN=Microsoft ID Verified CS EOC CA 02, O=Microsoft Corporation, C=US"

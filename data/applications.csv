@@ -333,6 +333,10 @@ Nezha,nezha,nezha,Nezha,Name,RMM,true,https://nezha.wiki/,Windows | Linux | MacO
 Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.,nezha dashboard server binary (windows). hosts the web console and grpc endpoint for all connected agents.,nezha,Nezha,PEMetadata.Description,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
 nezha-agent,nezha-agent,nezha,Nezha,PEMetadata.OriginalFileName,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
 ngrok,ngrok,ngrok,ngrok,Name,RAT,,https://ngrok.com/,
+Ninite,ninite,ninite,Ninite Pro (Ninite Agent),PEMetadata.Product,RMM,false,https://ninite.com/pro,Windows
+Ninite Pro (Ninite Agent),ninite pro (ninite agent),ninite,Ninite Pro (Ninite Agent),Name,RMM,false,https://ninite.com/pro,Windows
+Ninite Pro Classic,ninite pro classic,ninite,Ninite Pro (Ninite Agent),PEMetadata.Description,RMM,false,https://ninite.com/pro,Windows
+NiniteOne,niniteone,ninite,Ninite Pro (Ninite Agent),PEMetadata.OriginalFileName,RMM,false,https://ninite.com/pro,Windows
 NinjaOne (formerly NinjaRMM),ninjaone (formerly ninjarmm),ninjaone_(formerly_ninjarmm),NinjaOne (formerly NinjaRMM),Name,RMM,,https://www.ninjaone.com/rmm/,
 NinjaRMM,ninjarmm,ninjarmm,NinjaRMM,Name,RMM,,https://www.ninjaone.com/rmm/,
 NoMachine,nomachine,nomachine,NoMachine,Name,RAT,,https://www.nomachine.com/,
@@ -403,6 +407,8 @@ Remotely_Agent,remotely_agent,remotely,Remotely,PEMetadata.OriginalFileName,RMM,
 Remotely_Desktop,remotely_desktop,remotely,Remotely,PEMetadata.OriginalFileName,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
 RemotePass,remotepass,remotepass,RemotePass,Name,RMM,,https://www.remotepass.com/,Windows
 RemotePC,remotepc,remotepc,RemotePC,Name,RMM,,https://www.remotepc.com/,Windows
+RemotePulse,remotepulse,remotepulse,RemotePulse,Name,RMM,,https://www.remotepulse.io/,Windows | Linux | MacOS
+RemotePulse agent installer component,remotepulse agent installer component,remotepulse,RemotePulse,PEMetadata.Description,RMM,,https://www.remotepulse.io/,Windows | Linux | MacOS
 RemoteUtilities,remoteutilities,remoteutilities,RemoteUtilities,Name,RMM,,https://www.remoteutilities.com/,
 RemoteView,remoteview,remoteview,RemoteView,Name,RMM,,https://content.rview.com/,
 RemSupp,remsupp,remsupp,RemSupp,Name,RMM,unknown,https://api.remsupp.com,Windows

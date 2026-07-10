@@ -38,6 +38,7 @@
 %TEMP%\*\agent.exe
 %TEMP%\*\agent_installer.bat
 %TEMP%\*\amon.exe
+%TEMP%\NiniteDownloads\*
 %TEMP%\Remote_Ripple_*
 %TEMP%\Remotely_Install.txt
 %USERPROFILE%\Desktop\MoniticInstaller.exe
@@ -213,6 +214,11 @@ C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorder
 C:\Program Files (x86)\NVDA\nvda.exe
 C:\Program Files (x86)\RemotePC\*
 C:\Program Files (x86)\RemotePC\RemotePCUIU.exe
+C:\Program Files (x86)\RemotePulseAgent\agent.ps1
+C:\Program Files (x86)\RemotePulseAgent\defender-exclude.ps1
+C:\Program Files (x86)\RemotePulseAgent\install.cmd
+C:\Program Files (x86)\RemotePulseAgent\install.ps1
+C:\Program Files (x86)\RemotePulseAgent\InstallCore.exe
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\agent_log.txt
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\SPLog.txt
@@ -467,6 +473,7 @@ helpwire.exe
 HelpWire.lnk
 libeay32.dll
 loclx.exe
+NiniteUpdateSummary.log
 RodexAgent.exe
 ssleay32.dll
 teamviewer.exe

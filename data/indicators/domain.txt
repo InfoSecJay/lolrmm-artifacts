@@ -126,6 +126,7 @@
 *.netop.com
 *.netsupportmanager.com
 *.netviewer.com
+*.ninite.com
 *.ninja-backup.com
 *.ninjaone.com
 *.ninjarmm.com
@@ -467,6 +468,7 @@ nezha.wiki
 nezhahq.github.io
 ngrok.com
 nightly.glpi-project.org
+ninite.com
 ninja-backup.com
 ninjaone.com
 ninjarmm.net
@@ -522,6 +524,7 @@ remotepro-eu-west-1.faronicsdeploy.com
 remotepro-sa-east-1.faronicsdeploy.com
 remotepro-us-east-1.faronics.com
 remotepro-us-west-2.faronics.com
+remotepulse.io
 remoteutilities.com
 repairshopr.com
 rescue-data-cetner.logmein-gateway.com
@@ -623,6 +626,7 @@ www.metaquest.com
 www.monitic.com
 www.pitunnel.com
 www.remotepc.com
+www.remotepulse.io
 www.rodex.cc
 www.shellhub.io
 www.teramind.co

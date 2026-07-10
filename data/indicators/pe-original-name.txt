@@ -65,6 +65,7 @@ MouseWithoutBorders.exe
 mstsc.exe
 netbird_installer.exe
 nezha-agent.exe
+NiniteOne.exe
 NotificationHelper.exe
 pitunnel
 plink.exe

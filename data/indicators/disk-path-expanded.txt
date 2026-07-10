@@ -174,6 +174,11 @@ C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorder
 C:\Program Files (x86)\NVDA\nvda.exe
 C:\Program Files (x86)\RemotePC\*
 C:\Program Files (x86)\RemotePC\RemotePCUIU.exe
+C:\Program Files (x86)\RemotePulseAgent\agent.ps1
+C:\Program Files (x86)\RemotePulseAgent\defender-exclude.ps1
+C:\Program Files (x86)\RemotePulseAgent\install.cmd
+C:\Program Files (x86)\RemotePulseAgent\install.ps1
+C:\Program Files (x86)\RemotePulseAgent\InstallCore.exe
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\agent_log.txt
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\SPLog.txt
@@ -389,6 +394,7 @@ C:\Users\*\AppData\Local\Temp\*\agent_installer.bat
 C:\Users\*\AppData\Local\Temp\*\amon.exe
 C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log
 C:\Users\*\AppData\Local\Temp\KASetup.log
+C:\Users\*\AppData\Local\Temp\NiniteDownloads\*
 C:\Users\*\AppData\Local\Temp\privacyhelper.exe
 C:\Users\*\AppData\Local\Temp\Remote_Ripple_*
 C:\Users\*\AppData\Local\Temp\Remotely_Install.txt
@@ -467,6 +473,7 @@ helpwire.exe
 HelpWire.lnk
 libeay32.dll
 loclx.exe
+NiniteUpdateSummary.log
 RodexAgent.exe
 ssleay32.dll
 teamviewer.exe

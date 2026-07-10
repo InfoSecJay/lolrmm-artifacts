@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **315**
-- Fetched + parsed tools: **315**
+- Expected files (upstream listing): **317**
+- Fetched + parsed tools: **317**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 315 tools total:
+Of 317 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 310 | 98% |
-| installation_paths | 284 | 90% |
-| capabilities | 61 | 19% |
-| supported_os | 104 | 33% |
-| disk | 67 | 21% |
+| pe_metadata | 312 | 98% |
+| installation_paths | 286 | 90% |
+| capabilities | 63 | 20% |
+| supported_os | 106 | 33% |
+| disk | 69 | 22% |
 | eventlog | 45 | 14% |
 | registry | 35 | 11% |
-| network | 239 | 76% |
-| other | 22 | 7% |
-| detections | 271 | 86% |
+| network | 241 | 76% |
+| other | 24 | 8% |
+| detections | 271 | 85% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,7 +93,7 @@ Of 315 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (44)
+## Tools with no detections (46)
 
 - `beyondtrust` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
@@ -124,12 +124,14 @@ Of 315 tools total:
 - `multcloud` (RAT)
 - `netbird` (RAT)
 - `netop` (RMM)
+- `ninite` (RMM)
 - `ninjaone_(formerly_ninjarmm)` (RMM)
 - `nordlocker` (RAT)
 - `nvda` (RMM)
 - `realvnc` (RAT)
 - `remmina` (RAT)
 - `remote_desktop_manager_(devolutions)` (RAT)
+- `remotepulse` (RMM)
 - `smartcode_web_vnc` (RAT)
 - `smartftp` (RAT)
 - `taniumdeploy` (RMM)

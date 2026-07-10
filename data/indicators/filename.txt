@@ -321,6 +321,7 @@ ImperoInit.exe
 InsightInstaller.exe
 InsightInstallerStudent.exe
 InsightInstallerTeacher.exe
+InstallCore.exe
 installer.exe
 InstallShield Setup.exe
 instanthousecall.exe
@@ -444,6 +445,10 @@ ngrok.exe
 ngstw32.exe
 nhostsvc.exe
 nhstw32.exe
+Ninite.exe
+NiniteAgent.exe
+NiniteOne.exe
+NinitePro.exe
 ninjarmm-cli.exe
 NinjaRMMAgent.exe
 NinjaRMMAgentPatcher.exe

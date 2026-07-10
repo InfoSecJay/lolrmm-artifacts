@@ -573,6 +573,8 @@ ngrok,ngrok,connect.sa.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,connect.jp.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,connect.in.ngrok-agent.com,,Known remote domains
 ngrok,ngrok,ngrok.com,,Known remote domains
+ninite,Ninite Pro (Ninite Agent),ninite.com,443,"The Ninite Pro agent reaches ninite.com. Note that Ninite Classic additionally downloads installers directly from many third-party application vendor domains by design, so network-only detection is high noise and low value for this tool."
+ninite,Ninite Pro (Ninite Agent),*.ninite.com,443,"The Ninite Pro agent reaches ninite.com. Note that Ninite Classic additionally downloads installers directly from many third-party application vendor domains by design, so network-only detection is high noise and low value for this tool."
 ninjarmm,NinjaRMM,*.ninjarmm.com,,Known remote domains
 ninjarmm,NinjaRMM,*.ninjaone.com,,Known remote domains
 ninjarmm,NinjaRMM,resources.ninjarmm.com,,Known remote domains
@@ -659,6 +661,8 @@ remotepc,RemotePC,*.remotedesktop.com,,Known remote domains
 remotepc,RemotePC,*.remotepc.com,,Known remote domains
 remotepc,RemotePC,www.remotepc.com,,Known remote domains
 remotepc,RemotePC,remotepc.com,,Known remote domains
+remotepulse,RemotePulse,remotepulse.io,443,Known RemotePulse service domains
+remotepulse,RemotePulse,www.remotepulse.io,443,Known RemotePulse service domains
 remoteutilities,RemoteUtilities,remoteutilities.com,,Known remote domains
 remoteview,RemoteView,*.content.rview.com,,Known remote domains
 remoteview,RemoteView,*.rview.com,,Known remote domains

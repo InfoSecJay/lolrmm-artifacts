@@ -101,6 +101,7 @@ NetBird Windows MSI installer (canonical naming pattern from official GitHub rel
 NetSupport Remote Command Prompt Stub
 Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.
 Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.
+Ninite Pro Classic
 NVDA screen reader executable
 NVDA service executable for secure screens
 Official HeartbeatRM installer (verified via VirusTotal)
@@ -111,6 +112,7 @@ Radmin Server
 Radmin Viewer
 Remote agent management utility (SSH / WinRM remote inventory)
 Remote Desktop Connection
+RemotePulse agent installer component
 RemSupp - Remote desktop software
 Reported HeartbeatRM executable (unverified - from threat intelligence report)
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report)
