@@ -152,10 +152,13 @@
 *Users\*\ExtraPuTTY-0.30-2016-01-28-installer.exe
 *Windows\System32\mstsc.exe
 /Applications/AnyDesk.app
+/Applications/ControlR.*.app
+/Applications/ControlR.app
 /Applications/GLPI-Agent/*
 /Applications/GLPI-Agent/etc/*
 /Applications/HelpWire Operator.app
 /Applications/NetBird UI.app
+/Applications/Teleport Connect.app/*
 /Applications/Teramind Agent.app
 /Applications/TiAgent.app
 /Applications/tmagent.app
@@ -173,6 +176,7 @@
 /etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/helpwire-unattended.service
 /Library/Application Support/0x101_Cyber_Security/*
+/Library/Application Support/ControlR/*
 /Library/LaunchDaemons/remotely-agent.plist
 /opt/dataplicity/*
 /opt/dataplicity/tuxtunnel/*
@@ -183,11 +187,13 @@
 /opt/nezha/agent/nezha-agent
 /opt/nezha/dashboard
 /opt/pitunnel/*
+/opt/Teleport Connect/*
 /usr/0x101_Cyber_Security/Netlock_RMM/*
 /usr/bin/glpi-agent
 /usr/bin/netbird
 /usr/bin/tmate
 /usr/local/bin/0x101_Cyber_Security/Netlock_RMM/*
+/usr/local/bin/ControlR/*
 /usr/local/bin/dataplicity
 /usr/local/bin/glpi-agent
 /usr/local/bin/loclx
@@ -198,6 +204,7 @@
 /usr/local/bin/Remotely/Remotely_Agent
 /usr/local/bin/shellhub-agent
 /usr/local/bin/tmate
+/usr/local/bin/tsh
 /usr/local/komari/*
 /usr/local/mesh_services/meshagent/*
 /usr/local/mesh_services/meshagent/meshagent/*
@@ -390,6 +397,9 @@ C:\Program Files\ATERA Networks\AteraAgent\*
 C:\Program Files\Bitvise SSH Server\*
 C:\Program Files\bsag\*
 C:\Program Files\bsag\bma\*
+C:\Program Files\ControlR\*\ControlR.Agent.exe
+C:\Program Files\ControlR\*\DesktopClient\ControlR.DesktopClient.dll
+C:\Program Files\ControlR\*\DesktopClient\ControlR.DesktopClient.exe
 C:\Program Files\Danware Data\NetOp Packn Deploy\*
 C:\Program Files\Devolutions\Remote Desktop Manager
 C:\Program Files\ehorus_agent\*
@@ -442,6 +452,7 @@ C:\Program Files\Solar-Putty-v4\*
 C:\Program Files\SolarWinds\Dameware Mini Remote Control\*
 C:\Program Files\SysAidServer\*
 C:\Program Files\TeamViewer\
+C:\Program Files\Teleport Connect\*
 C:\Program Files\TightVNC\*
 C:\Program Files\TrustConnect Agent\*
 C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe
@@ -451,6 +462,7 @@ C:\Program Files\Vector\Asset Management Client\*
 C:\Program Files\Veyon\*
 C:\Program Files\ZOC8\*
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\*
+C:\ProgramData\ControlR\
 C:\ProgramData\Faronics\FCAForStartupMonitor.msi
 C:\ProgramData\Faronics\StorageSpace\FWA\*
 C:\ProgramData\Getscreen.me\
@@ -479,6 +491,7 @@ C:\Users\*\AppData\Local\MEGAsync\*
 C:\Users\*\AppData\Local\Programs\loclx\loclx.exe
 C:\Users\*\AppData\Local\Programs\RemSupp\RemSupp.exe
 C:\Users\*\AppData\Local\Programs\RemSupp\Uninstall RemSupp.exe
+C:\Users\*\AppData\Local\Programs\Teleport Connect\*
 C:\Users\*\AppData\Local\remsupp-updater\installer.exe
 C:\Users\*\AppData\Local\rustdesk\*
 C:\Users\*\AppData\Local\rustdesk\rustdesk.exe
@@ -1004,6 +1017,7 @@ TeamTaskManager.exe
 teamviewer_desktop.exe
 teamviewer_service.exe
 teamviewerhost
+Teleport Connect Setup-*.exe
 This installs a modified VNC and cannot be blocked by path separate from VNC
 TiClientCore.exe
 TiClientHelper*.exe

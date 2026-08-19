@@ -1,25 +1,25 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **317**
-- Fetched + parsed tools: **317**
+- Expected files (upstream listing): **319**
+- Fetched + parsed tools: **319**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 317 tools total:
+Of 319 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 312 | 98% |
-| installation_paths | 286 | 90% |
-| capabilities | 63 | 20% |
-| supported_os | 106 | 33% |
-| disk | 69 | 22% |
-| eventlog | 45 | 14% |
-| registry | 35 | 11% |
-| network | 241 | 76% |
+| pe_metadata | 314 | 98% |
+| installation_paths | 288 | 90% |
+| capabilities | 65 | 20% |
+| supported_os | 108 | 34% |
+| disk | 71 | 22% |
+| eventlog | 46 | 14% |
+| registry | 37 | 12% |
+| network | 243 | 76% |
 | other | 24 | 8% |
 | detections | 271 | 85% |
 
@@ -93,13 +93,14 @@ Of 317 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (46)
+## Tools with no detections (48)
 
 - `beyondtrust` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
 - `chrome_ssh_extension` (RAT)
 - `connectwise` (RMM)
 - `controlio` (RMM)
+- `controlr` (RMM)
 - `cruzcontrol` (RMM)
 - `desknets` (RMM)
 - `dev_tunnels_(aka_visual_studio_dev_tunnel)` (RAT)
@@ -135,6 +136,7 @@ Of 317 tools total:
 - `smartcode_web_vnc` (RAT)
 - `smartftp` (RAT)
 - `taniumdeploy` (RMM)
+- `teleport_connect` (RAT)
 - `terminals` (RAT)
 - `tmate` (RAT)
 - `vnc_connect` (RAT)

@@ -54,6 +54,23 @@ controlio,Controlio,wec_launcher_[a-Z0-9]*_.exe,wec_launcher_[a-Z0-9]*_.exe,Wind
 controlio,Controlio,wec_launcher_[a-Z0-9]*_.pkg,wec_launcher_[a-Z0-9]*_.pkg,Mac,MacOS,,Controlio macos installer
 controlio,Controlio,weInstSvc.exe,weInstSvc.exe,Windows,Windows,,Controlio binary
 controlio,Controlio,C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\,C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\,Windows,Windows,,Controlio binary
+controlr,ControlR,*\ControlR.Agent.Installer.exe,*\ControlR.Agent.Installer.exe,Windows,Windows,,ControlR agent installer dropped and executed by threat actors.
+controlr,ControlR,C:\Program Files\ControlR\*\ControlR.Agent.exe,C:\Program Files\ControlR\*\ControlR.Agent.exe,Windows,Windows,,ControlR agent binary installed on Windows.
+controlr,ControlR,C:\ProgramData\ControlR\*\appsettings.json,C:\ProgramData\ControlR\*\appsettings.json,Windows,Windows,,ControlR agent configuration file on Windows.
+controlr,ControlR,C:\ProgramData\ControlR\*\Logs\ControlR.Agent\LogFile*.log,C:\ProgramData\ControlR\*\Logs\ControlR.Agent\LogFile*.log,Windows,Windows,,ControlR agent log files on Windows.
+controlr,ControlR,C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\LogFile*.log,C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\LogFile*.log,Windows,Windows,,ControlR desktop client log files on Windows.
+controlr,ControlR,/usr/local/bin/ControlR/*/ControlR.Agent,/usr/local/bin/ControlR/*/ControlR.Agent,Linux,Linux,,ControlR agent binary installed on Linux.
+controlr,ControlR,/etc/controlr/*/appsettings.json,/etc/controlr/*/appsettings.json,Linux,Linux,,ControlR agent configuration file on Linux (root).
+controlr,ControlR,/etc/systemd/system/controlr.agent*.service,/etc/systemd/system/controlr.agent*.service,Linux,Linux,,ControlR agent systemd service unit file on Linux.
+controlr,ControlR,/var/log/controlr/*/ControlR.Agent/LogFile*.log,/var/log/controlr/*/ControlR.Agent/LogFile*.log,Linux,Linux,,ControlR agent log files on Linux (root).
+controlr,ControlR,~/.controlr/*/logs/ControlR.Agent/LogFile*.log,~/.controlr/*/logs/ControlR.Agent/LogFile*.log,Linux,Linux,,ControlR agent log files on Linux (user context).
+controlr,ControlR,/Library/Application Support/ControlR/*/ControlR.Agent,/Library/Application Support/ControlR/*/ControlR.Agent,MacOS,MacOS,,ControlR agent binary installed on macOS.
+controlr,ControlR,/Applications/ControlR.app,/Applications/ControlR.app,MacOS,MacOS,,Default ControlR desktop client app bundle on macOS.
+controlr,ControlR,/Applications/ControlR.*.app,/Applications/ControlR.*.app,MacOS,MacOS,,Instance-specific ControlR desktop client app bundle on macOS.
+controlr,ControlR,/Library/LaunchDaemons/app.controlr.agent*.plist,/Library/LaunchDaemons/app.controlr.agent*.plist,MacOS,MacOS,,ControlR agent launchd plist files on macOS.
+controlr,ControlR,/Library/LaunchAgents/app.controlr.desktop*.plist,/Library/LaunchAgents/app.controlr.desktop*.plist,MacOS,MacOS,,ControlR desktop client launchd plist files on macOS.
+controlr,ControlR,/var/log/controlr/*/ControlR.Agent/LogFile*.log,/var/log/controlr/*/ControlR.Agent/LogFile*.log,MacOS,MacOS,,ControlR agent log files on macOS (root).
+controlr,ControlR,~/.controlr/*/logs/ControlR.Agent/LogFile*.log,~/.controlr/*/logs/ControlR.Agent/LogFile*.log,MacOS,MacOS,,ControlR agent log files on macOS (user context).
 dataplicity,Dataplicity,/opt/dataplicity/tuxtunnel/manager,/opt/dataplicity/tuxtunnel/manager,Linux,Linux,,Dataplicity manager binary (the persistent remote-control daemon)
 dataplicity,Dataplicity,/opt/dataplicity/credentials,/opt/dataplicity/credentials,Linux,Linux,,Dataplicity agent credentials file (per-tenant install token + device identity)
 dataplicity,Dataplicity,/etc/systemd/system/dataplicity.service,/etc/systemd/system/dataplicity.service,Linux,Linux,,systemd unit file for Dataplicity agent persistence
@@ -423,6 +440,30 @@ teamviewer,TeamViewer,%LOCALAPPDATA%\TeamViewer\RemotePrinting\tvprint.db,C:\Use
 teamviewer,TeamViewer,%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk,Windows,Windows,,N/A
 teamviewer,TeamViewer,C:\Program Files*\TeamViewer\connections*.txt,C:\Program Files*\TeamViewer\connections*.txt,Windows,Windows,,N/A
 teamviewer,TeamViewer,C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc,C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc,Windows,Windows,,N/A
+teleport_connect,Teleport Connect,C:\Program Files\Teleport Connect\Teleport Connect.exe,C:\Program Files\Teleport Connect\Teleport Connect.exe,Windows,Windows,,Main executable in a per-machine Windows installation.
+teleport_connect,Teleport Connect,C:\Program Files\Teleport Connect\resources\bin\tsh.exe,C:\Program Files\Teleport Connect\resources\bin\tsh.exe,Windows,Windows,,Bundled tsh client in a per-machine Windows installation.
+teleport_connect,Teleport Connect,C:\Users\*\AppData\Local\Programs\Teleport Connect\Teleport Connect.exe,C:\Users\*\AppData\Local\Programs\Teleport Connect\Teleport Connect.exe,Windows,Windows,,Main executable in a per-user Windows installation.
+teleport_connect,Teleport Connect,C:\Users\*\AppData\Local\Programs\Teleport Connect\resources\bin\tsh.exe,C:\Users\*\AppData\Local\Programs\Teleport Connect\resources\bin\tsh.exe,Windows,Windows,,Bundled tsh client in a per-user Windows installation.
+teleport_connect,Teleport Connect,C:\Users\*\AppData\Roaming\Teleport Connect\app_state.json,C:\Users\*\AppData\Roaming\Teleport Connect\app_state.json,Windows,Windows,,Teleport Connect application state.
+teleport_connect,Teleport Connect,C:\Users\*\AppData\Roaming\Teleport Connect\app_config.json,C:\Users\*\AppData\Roaming\Teleport Connect\app_config.json,Windows,Windows,,Teleport Connect application configuration.
+teleport_connect,Teleport Connect,C:\Users\*\AppData\Roaming\Teleport Connect\certs\tshd.crt,C:\Users\*\AppData\Roaming\Teleport Connect\certs\tshd.crt,Windows,Windows,,Ephemeral certificate used for local tsh daemon communication.
+teleport_connect,Teleport Connect,C:\Users\*\AppData\Roaming\Teleport Connect\logs\*,C:\Users\*\AppData\Roaming\Teleport Connect\logs\*,Windows,Windows,,Teleport Connect application logs.
+teleport_connect,Teleport Connect,C:\ProgramData\TeleportConnectUpdater\*,C:\ProgramData\TeleportConnectUpdater\*,Windows,Windows,,Staging directory used by the privileged updater service.
+teleport_connect,Teleport Connect,/Applications/Teleport Connect.app/Contents/MacOS/Teleport Connect,/Applications/Teleport Connect.app/Contents/MacOS/Teleport Connect,macOS,MacOS,,Main macOS application executable.
+teleport_connect,Teleport Connect,/Applications/Teleport Connect.app/Contents/MacOS/tsh.app/Contents/MacOS/tsh,/Applications/Teleport Connect.app/Contents/MacOS/tsh.app/Contents/MacOS/tsh,macOS,MacOS,,Bundled tsh client on macOS.
+teleport_connect,Teleport Connect,/Users/*/Library/Application Support/Teleport Connect/app_state.json,/Users/*/Library/Application Support/Teleport Connect/app_state.json,macOS,MacOS,,Teleport Connect application state on macOS.
+teleport_connect,Teleport Connect,/Users/*/Library/Application Support/Teleport Connect/app_config.json,/Users/*/Library/Application Support/Teleport Connect/app_config.json,macOS,MacOS,,Teleport Connect application configuration on macOS.
+teleport_connect,Teleport Connect,/Users/*/Library/Application Support/Teleport Connect/certs/tshd.crt,/Users/*/Library/Application Support/Teleport Connect/certs/tshd.crt,macOS,MacOS,,Ephemeral certificate used for local tsh daemon communication.
+teleport_connect,Teleport Connect,/Users/*/Library/Application Support/Teleport Connect/logs/*,/Users/*/Library/Application Support/Teleport Connect/logs/*,macOS,MacOS,,Teleport Connect application logs on macOS.
+teleport_connect,Teleport Connect,/opt/Teleport Connect/teleport-connect,/opt/Teleport Connect/teleport-connect,Linux,Linux,,Main Teleport Connect executable installed from a Linux package.
+teleport_connect,Teleport Connect,/opt/Teleport Connect/resources/bin/tsh,/opt/Teleport Connect/resources/bin/tsh,Linux,Linux,,Bundled tsh client on Linux.
+teleport_connect,Teleport Connect,/usr/share/applications/teleport-connect.desktop,/usr/share/applications/teleport-connect.desktop,Linux,Linux,,Desktop entry installed by the Linux package.
+teleport_connect,Teleport Connect,/home/*/.config/Teleport Connect/app_state.json,/home/*/.config/Teleport Connect/app_state.json,Linux,Linux,,Teleport Connect application state on Linux.
+teleport_connect,Teleport Connect,/home/*/.config/Teleport Connect/app_config.json,/home/*/.config/Teleport Connect/app_config.json,Linux,Linux,,Teleport Connect application configuration on Linux.
+teleport_connect,Teleport Connect,/home/*/.config/Teleport Connect/certs/tshd.crt,/home/*/.config/Teleport Connect/certs/tshd.crt,Linux,Linux,,Ephemeral certificate used for local tsh daemon communication.
+teleport_connect,Teleport Connect,/home/*/.config/Teleport Connect/logs/*,/home/*/.config/Teleport Connect/logs/*,Linux,Linux,,Teleport Connect application logs on Linux.
+teleport_connect,Teleport Connect,/home/*/.cache/Teleport Connect/teleport/teleport,/home/*/.cache/Teleport Connect/teleport/teleport,Linux,Linux,,Cached Connect My Computer agent binary on Linux.
+teleport_connect,Teleport Connect,/usr/local/bin/tsh,/usr/local/bin/tsh,Linux,Linux,,Symlink to the bundled tsh client created during Linux installation.
 teramind,Teramind,C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\*,C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\*,Windows,Windows,,Teramind Hidden / Stealth agent root install directory; named with a fixed product GUID. Vendor docs explicitly call this the verification path for confirming hidden-agent installation. Override via TMROOTDIR installer parameter.
 teramind,Teramind,C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\config,C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\config,Windows,Windows,,Teramind Hidden agent configuration directory
 teramind,Teramind,C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\rundll32.exe.config,C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\rundll32.exe.config,Windows,Windows,,"Teramind agent update staging artifact (.NET app.config sidecar) — directly observed as a Teramind-domain downloaded file in VirusTotal infrastructure data; the rundll32.exe filename is the renamed updater binary, not the legitimate Microsoft rundll32."

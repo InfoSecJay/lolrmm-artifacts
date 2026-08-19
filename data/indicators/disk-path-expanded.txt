@@ -2,19 +2,26 @@
 %CD%\conf.json
 %CD%\installer.zip
 *\agent-installer-any.exe
+*\ControlR.Agent.Installer.exe
+/Applications/ControlR.*.app
+/Applications/ControlR.app
 /Applications/Freshservice Discovery Agent.app
 /Applications/GLPI-Agent/etc/agent.cfg
 /Applications/GLPI-Agent/etc/conf.d/*
 /Applications/HelpWire Operator.app
 /Applications/NetBird UI.app
+/Applications/Teleport Connect.app/Contents/MacOS/Teleport Connect
+/Applications/Teleport Connect.app/Contents/MacOS/tsh.app/Contents/MacOS/tsh
 /Applications/Teramind Agent.app
 /Applications/tmagent.app
+/etc/controlr/*/appsettings.json
 /etc/glpi-agent/agent.cfg
 /etc/glpi-agent/conf.d/*
 /etc/init.d/dataplicity
 /etc/netbird/config.json
 /etc/netbird/install.conf
 /etc/shellhub-agent/agent.env
+/etc/systemd/system/controlr.agent*.service
 /etc/systemd/system/dataplicity.service
 /etc/systemd/system/komari-agent.service
 /etc/systemd/system/komari.service
@@ -23,8 +30,16 @@
 /etc/systemd/system/pitunnel.service
 /etc/systemd/system/remotely-agent.service
 /etc/systemd/system/shellhub-agent.service
+/home/*/.cache/Teleport Connect/teleport/teleport
+/home/*/.config/Teleport Connect/app_config.json
+/home/*/.config/Teleport Connect/app_state.json
+/home/*/.config/Teleport Connect/certs/tshd.crt
+/home/*/.config/Teleport Connect/logs/*
 /lib/systemd/system/glpi-agent.service
 /lib/systemd/system/helpwire-unattended.service
+/Library/Application Support/ControlR/*/ControlR.Agent
+/Library/LaunchAgents/app.controlr.desktop*.plist
+/Library/LaunchDaemons/app.controlr.agent*.plist
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
 /Library/LaunchDaemons/remotely-agent.plist
 /opt/dataplicity/credentials
@@ -35,15 +50,23 @@
 /opt/nezha/agent/config.yml
 /opt/nezha/agent/nezha-agent
 /opt/nezha/dashboard/app
+/opt/Teleport Connect/resources/bin/tsh
+/opt/Teleport Connect/teleport-connect
 /System/Volumes/Data/Users/*/Library/Logs/HopToDesk/hoptodesk_rCURRENT.log
 /tmp/tmate*
+/Users/*/Library/Application Support/Teleport Connect/app_config.json
+/Users/*/Library/Application Support/Teleport Connect/app_state.json
+/Users/*/Library/Application Support/Teleport Connect/certs/tshd.crt
+/Users/*/Library/Application Support/Teleport Connect/logs/*
 /usr/bin/glpi-agent
+/usr/local/bin/ControlR/*/ControlR.Agent
 /usr/local/bin/glpi-agent
 /usr/local/bin/pitunnel
 /usr/local/bin/Remotely/ConnectionInfo.json
 /usr/local/bin/Remotely/Desktop/Remotely_Desktop
 /usr/local/bin/Remotely/Remotely_Agent
 /usr/local/bin/shellhub-agent
+/usr/local/bin/tsh
 /usr/local/komari/agent
 /usr/local/mesh_services/meshagent/meshagent
 /usr/local/mesh_services/meshagent/meshagent.db
@@ -53,7 +76,9 @@
 /usr/local/mesh_services/meshagent/meshagent/meshagent.msh
 /usr/local/teramind/agent/bin/tmsysd
 /usr/local/teramind/agent/etc/
+/usr/share/applications/teleport-connect.desktop
 /var/lib/glpi-agent/*
+/var/log/controlr/*/ControlR.Agent/LogFile*.log
 /var/log/netbird/*
 /var/log/netlock-rmm-agent-comm.log
 /var/log/remotely/Agent_Install.log
@@ -254,6 +279,7 @@ C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandIntera
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe
 C:\Program Files\bsag\bma\bma.exe
+C:\Program Files\ControlR\*\ControlR.Agent.exe
 C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe
 C:\Program Files\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe
 C:\Program Files\Faronics\Insight Student\FIStudentAgent.exe
@@ -331,6 +357,8 @@ C:\Program Files\Remotely\etag.txt
 C:\Program Files\Remotely\Remotely_Agent.exe
 C:\Program Files\TeamViewer\Connections_incoming.txt
 C:\Program Files\TeamViewer\TVNetwork.log
+C:\Program Files\Teleport Connect\resources\bin\tsh.exe
+C:\Program Files\Teleport Connect\Teleport Connect.exe
 C:\Program Files\TrustConnect Agent\config.json
 C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe
 C:\Program Files\Vector Networks Limited\LANutil32 Suite\clboot32.exe
@@ -341,6 +369,9 @@ C:\ProgramData\AnyDesk\ad_svc.trace
 C:\ProgramData\AnyDesk\connection_trace.txt
 C:\ProgramData\AnyDesk\service.conf
 C:\ProgramData\AnyDesk\system.conf
+C:\ProgramData\ControlR\*\appsettings.json
+C:\ProgramData\ControlR\*\Logs\ControlR.Agent\LogFile*.log
+C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\LogFile*.log
 C:\ProgramData\Faronics\FCAForStartupMonitor.msi
 C:\ProgramData\Faronics\StorageSpace\FWA\CloudAgentLogs.LOG
 C:\ProgramData\Faronics\StorageSpace\FWA\Logs\FWASvc.log
@@ -364,6 +395,7 @@ C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal
 C:\ProgramData\ScreenConnect Client*\user.config
 C:\ProgramData\Splashtop\Temp\log\FTCLog.txt
+C:\ProgramData\TeleportConnectUpdater\*
 C:\ProgramData\Teramind Agent\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe
 C:\ProgramData\Teramind Agent\config
@@ -387,6 +419,8 @@ C:\Users\*\AppData\Local\IDrive\*
 C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect\*
 C:\Users\*\AppData\Local\Programs\RemSupp\RemSupp.exe
 C:\Users\*\AppData\Local\Programs\RemSupp\Uninstall RemSupp.exe
+C:\Users\*\AppData\Local\Programs\Teleport Connect\resources\bin\tsh.exe
+C:\Users\*\AppData\Local\Programs\Teleport Connect\Teleport Connect.exe
 C:\Users\*\AppData\Local\TeamViewer\Database\tvchatfilecache.db
 C:\Users\*\AppData\Local\TeamViewer\RemotePrinting\tvprint.db
 C:\Users\*\AppData\Local\Temp\*\agent.exe
@@ -436,6 +470,10 @@ C:\Users\*\AppData\Roaming\RemSupp\sentry\queue\queue.json
 C:\Users\*\AppData\Roaming\RemSupp\sentry\scope_v3.json
 C:\Users\*\AppData\Roaming\RemSupp\sentry\session.json
 C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc
+C:\Users\*\AppData\Roaming\Teleport Connect\app_config.json
+C:\Users\*\AppData\Roaming\Teleport Connect\app_state.json
+C:\Users\*\AppData\Roaming\Teleport Connect\certs\tshd.crt
+C:\Users\*\AppData\Roaming\Teleport Connect\logs\*
 C:\Users\*\Desktop\MoniticInstaller.exe
 C:\Users\*\Documents\ChatLogs\*\*.htm
 C:\Users\*\Documents\Default.rdp
@@ -502,6 +540,7 @@ wemonc.exe
 weprtct.exe
 wesvc.exe
 ~/.config/AnyDesk/Logs/
+~/.controlr/*/logs/ControlR.Agent/LogFile*.log
 ~/.loclx/config.yaml
 ~/.tmate.conf
 ~/Library/Application Support/AnyDesk/Logs/

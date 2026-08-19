@@ -4642,6 +4642,222 @@
     "source_file": "controlio.yaml"
   },
   {
+    "Name": "ControlR",
+    "Category": "RMM",
+    "Description": "ControlR is a legitimate Remote Monitoring and Management (RMM) tool developed by Bitbound. It has been abused by threat actors to establish persistent remote access to victim systems.",
+    "Author": "Swachchhanda Shrawan Poudel",
+    "Created": "2026-08-17",
+    "LastModified": "2026-08-18",
+    "Details": {
+      "Website": "https://controlr.app/",
+      "PEMetadata": [
+        {
+          "Filename": "ControlR.Agent.Installer.exe",
+          "OriginalFileName": "ControlR.Agent.Installer.dll",
+          "Description": "ControlR.Agent.Installer",
+          "Product": "ControlR.Agent.Installer"
+        },
+        {
+          "Filename": "ControlR.Agent.exe",
+          "OriginalFileName": "ControlR.Agent.dll",
+          "Description": "ControlR.Agent",
+          "Product": "ControlR.Agent"
+        },
+        {
+          "Filename": "ControlR.DesktopClient.exe",
+          "OriginalFileName": "ControlR.DesktopClient.dll",
+          "Description": "ControlR.DesktopClient",
+          "Product": "ControlR.DesktopClient"
+        }
+      ],
+      "Privileges": "SYSTEM/root",
+      "Free": true,
+      "Verification": "Code-signed by Bitbound",
+      "SupportedOS": [
+        "Windows",
+        "MacOS",
+        "Linux"
+      ],
+      "Capabilities": [
+        "Remote desktop management",
+        "Remote desktop view",
+        "File transfer",
+        "Command execution",
+        "Activity monitoring"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\ControlR\\*\\ControlR.Agent.exe",
+        "C:\\Program Files\\ControlR\\*\\DesktopClient\\ControlR.DesktopClient.exe",
+        "C:\\Program Files\\ControlR\\*\\DesktopClient\\ControlR.DesktopClient.dll",
+        "C:\\ProgramData\\ControlR\\",
+        "/usr/local/bin/ControlR/*",
+        "/Library/Application Support/ControlR/*",
+        "/Applications/ControlR.app",
+        "/Applications/ControlR.*.app"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\ControlR.Agent.Installer.exe",
+          "Description": "ControlR agent installer dropped and executed by threat actors.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\ControlR\\*\\ControlR.Agent.exe",
+          "Description": "ControlR agent binary installed on Windows.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\ControlR\\*\\appsettings.json",
+          "Description": "ControlR agent configuration file on Windows.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\ControlR\\*\\Logs\\ControlR.Agent\\LogFile*.log",
+          "Description": "ControlR agent log files on Windows.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\ControlR\\*\\Logs\\ControlR.DesktopClient\\LogFile*.log",
+          "Description": "ControlR desktop client log files on Windows.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/local/bin/ControlR/*/ControlR.Agent",
+          "Description": "ControlR agent binary installed on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/controlr/*/appsettings.json",
+          "Description": "ControlR agent configuration file on Linux (root).",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/controlr.agent*.service",
+          "Description": "ControlR agent systemd service unit file on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/var/log/controlr/*/ControlR.Agent/LogFile*.log",
+          "Description": "ControlR agent log files on Linux (root).",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "~/.controlr/*/logs/ControlR.Agent/LogFile*.log",
+          "Description": "ControlR agent log files on Linux (user context).",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/Application Support/ControlR/*/ControlR.Agent",
+          "Description": "ControlR agent binary installed on macOS.",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Applications/ControlR.app",
+          "Description": "Default ControlR desktop client app bundle on macOS.",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Applications/ControlR.*.app",
+          "Description": "Instance-specific ControlR desktop client app bundle on macOS.",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/LaunchDaemons/app.controlr.agent*.plist",
+          "Description": "ControlR agent launchd plist files on macOS.",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/LaunchAgents/app.controlr.desktop*.plist",
+          "Description": "ControlR desktop client launchd plist files on macOS.",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/var/log/controlr/*/ControlR.Agent/LogFile*.log",
+          "Description": "ControlR agent log files on macOS (root).",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "~/.controlr/*/logs/ControlR.Agent/LogFile*.log",
+          "Description": "ControlR agent log files on macOS (user context).",
+          "OS": "MacOS",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ControlR",
+          "Description": "Default ControlR uninstall registry key on Windows."
+        },
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ControlR (*)",
+          "Description": "Instance-specific ControlR uninstall registry key on Windows."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "ControlR agent installer is downloaded from the official demo tenant domain.",
+          "Domains": [
+            "demo.controlr.app"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [],
+    "References": [
+      "https://www.seqrite.com/blog/operation-shadowrecruit-a-recruitment-themed-malware-campaign-leveraging-controlr-and-google-sheets-to-target-indian-job-seekers/",
+      "https://controlr.app/",
+      "https://github.com/bitbound/ControlR"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "Swachchhanda Shrawan Poudel",
+        "Handle": "@_swachchhanda_"
+      }
+    ],
+    "source_file": "controlr.yaml"
+  },
+  {
     "Name": "CrossLoop",
     "Category": "RMM",
     "Description": "CrossLoop is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -30951,6 +31167,302 @@
         }
       ]
     }
+  },
+  {
+    "Name": "Teleport Connect",
+    "Category": "RAT",
+    "Description": "Teleport Connect is Gravitational Teleport's desktop client. It provides authenticated access to SSH servers, databases, Kubernetes clusters, applications, MCP servers, and Windows desktops through a graphical interface.",
+    "Author": "Richard Berry",
+    "Created": "2026-07-29",
+    "LastModified": "2026-08-18",
+    "Details": {
+      "Website": "https://goteleport.com/connect/",
+      "PEMetadata": [
+        {
+          "Filename": "Teleport Connect Setup-*.exe",
+          "OriginalFileName": "",
+          "Description": "Teleport Connect",
+          "Product": "Teleport Connect"
+        },
+        {
+          "Filename": "Teleport Connect.exe",
+          "OriginalFileName": "",
+          "Description": "Teleport Connect",
+          "Product": "Teleport Connect"
+        },
+        {
+          "Filename": "tsh.exe",
+          "OriginalFileName": "tsh.exe",
+          "Description": "Teleport tsh command-line client",
+          "Product": "Teleport"
+        }
+      ],
+      "Privileges": "User; administrator/root required for system-wide installation, managed updates, or VNet",
+      "Free": true,
+      "Verification": "Code-signed by Gravitational, Inc.",
+      "SupportedOS": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "Capabilities": [
+        "Remote access",
+        "SSH",
+        "RDP",
+        "Kubernetes access",
+        "Database access",
+        "Application access",
+        "File transfer"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "Teleport Connect Setup-*.exe",
+        "C:\\Program Files\\Teleport Connect\\*",
+        "C:\\Users\\*\\AppData\\Local\\Programs\\Teleport Connect\\*",
+        "/Applications/Teleport Connect.app/*",
+        "/opt/Teleport Connect/*",
+        "/usr/local/bin/tsh"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\Teleport Connect\\Teleport Connect.exe",
+          "Description": "Main executable in a per-machine Windows installation.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\Teleport Connect\\resources\\bin\\tsh.exe",
+          "Description": "Bundled tsh client in a per-machine Windows installation.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\*\\AppData\\Local\\Programs\\Teleport Connect\\Teleport Connect.exe",
+          "Description": "Main executable in a per-user Windows installation.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\*\\AppData\\Local\\Programs\\Teleport Connect\\resources\\bin\\tsh.exe",
+          "Description": "Bundled tsh client in a per-user Windows installation.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\*\\AppData\\Roaming\\Teleport Connect\\app_state.json",
+          "Description": "Teleport Connect application state.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\*\\AppData\\Roaming\\Teleport Connect\\app_config.json",
+          "Description": "Teleport Connect application configuration.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\*\\AppData\\Roaming\\Teleport Connect\\certs\\tshd.crt",
+          "Description": "Ephemeral certificate used for local tsh daemon communication.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Users\\*\\AppData\\Roaming\\Teleport Connect\\logs\\*",
+          "Description": "Teleport Connect application logs.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\TeleportConnectUpdater\\*",
+          "Description": "Staging directory used by the privileged updater service.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Applications/Teleport Connect.app/Contents/MacOS/Teleport Connect",
+          "Description": "Main macOS application executable.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Applications/Teleport Connect.app/Contents/MacOS/tsh.app/Contents/MacOS/tsh",
+          "Description": "Bundled tsh client on macOS.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Users/*/Library/Application Support/Teleport Connect/app_state.json",
+          "Description": "Teleport Connect application state on macOS.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Users/*/Library/Application Support/Teleport Connect/app_config.json",
+          "Description": "Teleport Connect application configuration on macOS.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Users/*/Library/Application Support/Teleport Connect/certs/tshd.crt",
+          "Description": "Ephemeral certificate used for local tsh daemon communication.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Users/*/Library/Application Support/Teleport Connect/logs/*",
+          "Description": "Teleport Connect application logs on macOS.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/Teleport Connect/teleport-connect",
+          "Description": "Main Teleport Connect executable installed from a Linux package.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/opt/Teleport Connect/resources/bin/tsh",
+          "Description": "Bundled tsh client on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/share/applications/teleport-connect.desktop",
+          "Description": "Desktop entry installed by the Linux package.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/home/*/.config/Teleport Connect/app_state.json",
+          "Description": "Teleport Connect application state on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/home/*/.config/Teleport Connect/app_config.json",
+          "Description": "Teleport Connect application configuration on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/home/*/.config/Teleport Connect/certs/tshd.crt",
+          "Description": "Ephemeral certificate used for local tsh daemon communication.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/home/*/.config/Teleport Connect/logs/*",
+          "Description": "Teleport Connect application logs on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/home/*/.cache/Teleport Connect/teleport/teleport",
+          "Description": "Cached Connect My Computer agent binary on Linux.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/local/bin/tsh",
+          "Description": "Symlink to the bundled tsh client created during Linux installation.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [
+        {
+          "EventID": null,
+          "ProviderName": null,
+          "LogFile": null,
+          "ServiceName": "TeleportConnectUpdater",
+          "ImagePath": "C:\\Program Files\\Teleport Connect\\resources\\bin\\tsh.exe",
+          "CommandLine": "connect-updater service",
+          "Description": "Privileged update service created by a per-machine Windows installation."
+        }
+      ],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Policies\\Teleport\\TeleportConnect",
+          "Description": "Machine-wide managed update policy configuration."
+        },
+        {
+          "Path": "HKCU\\SOFTWARE\\Policies\\Teleport\\TeleportConnect",
+          "Description": "Per-user managed update policy configuration."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Teleport Connect update, telemetry, and feedback services.",
+          "Domains": [
+            "cdn.teleport.dev",
+            "reporting-connect.teleportinfra.sh",
+            "usage.teleport.dev"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Teleport Cloud clusters.",
+          "Domains": [
+            "*.teleport.sh"
+          ],
+          "Ports": [
+            443
+          ]
+        },
+        {
+          "Description": "Administrator-supplied self-hosted Teleport proxy address.",
+          "Domains": [
+            "user_managed"
+          ],
+          "Ports": [
+            443,
+            3080
+          ]
+        }
+      ],
+      "Other": []
+    },
+    "Detections": [],
+    "References": [
+      "https://goteleport.com/docs/connect-your-client/teleport-clients/teleport-connect/",
+      "https://github.com/gravitational/teleport/blob/master/web/packages/teleterm/electron-builder-config.js",
+      "https://github.com/gravitational/teleport/blob/master/web/packages/teleterm/src/staticConfig.ts"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "Richard Berry",
+        "Handle": "@RichardPBerry"
+      }
+    ],
+    "source_file": "teleport_connect.yaml"
   },
   {
     "Name": "Teramind",

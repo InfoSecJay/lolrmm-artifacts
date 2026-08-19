@@ -4,6 +4,9 @@ Aspia
 baramundi Management Suite
 Bluetrait
 Controlio
+ControlR.Agent
+ControlR.Agent.Installer
+ControlR.DesktopClient
 Gorelo RMM
 Komari
 Komari Agent
@@ -15,3 +18,5 @@ Radmin Server
 Radmin Viewer
 RemSupp
 TeamViewer
+Teleport
+Teleport Connect

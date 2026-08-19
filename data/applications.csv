@@ -53,6 +53,13 @@ ConnectWise,connectwise,connectwise,ConnectWise,Name,RMM,,https://www.screenconn
 Connectwise Automate (LabTech),connectwise automate (labtech),connectwise_automate_(labtech),Connectwise Automate (LabTech),Name,RMM,,https://www.connectwise.com/platform/automate,
 ConnectWise Control,connectwise control,connectwise_control,ConnectWise Control,Name,RMM,,https://www.screenconnect.com/,
 Controlio,controlio,controlio,Controlio,Name,RMM,true,https://controlio.net,Mac | Windows
+ControlR,controlr,controlr,ControlR,Name,RMM,true,https://controlr.app/,Windows | MacOS | Linux
+ControlR.Agent,controlr.agent,controlr,ControlR,PEMetadata.Product,RMM,true,https://controlr.app/,Windows | MacOS | Linux
+ControlR.Agent.dll,controlr.agent.dll,controlr,ControlR,PEMetadata.OriginalFileName,RMM,true,https://controlr.app/,Windows | MacOS | Linux
+ControlR.Agent.Installer,controlr.agent.installer,controlr,ControlR,PEMetadata.Product,RMM,true,https://controlr.app/,Windows | MacOS | Linux
+ControlR.Agent.Installer.dll,controlr.agent.installer.dll,controlr,ControlR,PEMetadata.OriginalFileName,RMM,true,https://controlr.app/,Windows | MacOS | Linux
+ControlR.DesktopClient,controlr.desktopclient,controlr,ControlR,PEMetadata.Product,RMM,true,https://controlr.app/,Windows | MacOS | Linux
+ControlR.DesktopClient.dll,controlr.desktopclient.dll,controlr,ControlR,PEMetadata.OriginalFileName,RMM,true,https://controlr.app/,Windows | MacOS | Linux
 CoreAgentService,coreagentservice,faronics_core,Faronics Core,PEMetadata.OriginalFileName,RMM,false,https://www.faronics.com/products/faronics-core,Windows
 CrossLoop,crossloop,crossloop,CrossLoop,Name,RMM,,https://web.archive.org/web/20140117041805/http://www.crossloop.com/,
 CrossTec Remote Control,crosstec remote control,crosstec_remote_control,CrossTec Remote Control,Name,RMM,,https://web.archive.org/web/20220811150547/https://www.crosstecsoftware.com/remotecontrol,
@@ -477,6 +484,9 @@ Tanium,tanium,tanium,Tanium,Name,RMM,,https://www.tanium.com/,
 Tanium Deploy,tanium deploy,taniumdeploy,Tanium Deploy,Name,RMM,,https://www.tanium.com/products/tanium-deploy/,
 TeamViewer,teamviewer,teamviewer,TeamViewer,Name,RMM,true,https://www.teamviewer.com/en,Android | ChromeOS | IOS | Linux | Mac | Windows
 TeleDesktop,teledesktop,teledesktop,TeleDesktop,Name,RMM,,,
+Teleport,teleport,teleport_connect,Teleport Connect,PEMetadata.Product,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
+Teleport Connect,teleport connect,teleport_connect,Teleport Connect,Name,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
+Teleport tsh command-line client,teleport tsh command-line client,teleport_connect,Teleport Connect,PEMetadata.Description,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
 Teramind,teramind,teramind,Teramind,Name,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Teramind agent removal utility (signed by Teramind Inc.),teramind agent removal utility (signed by teramind inc.),teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Teramind agent removal utility variant served from teramind.co,teramind agent removal utility variant served from teramind.co,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
@@ -507,6 +517,7 @@ Total Software Deployment,total software deployment,total_software_deployment,To
 TrustConnect,trustconnect,trustconnect,TrustConnect,Name,RAT,"No - sold as Malware-as-a-Service (~$300/month, Bitcoin or USDT)",https://trustconnectsoftware.com/,Windows
 "TrustConnect Agent service binary (.NET 8 single-file executable, ~35 MB). Operators ship TrustConnect under per-tenant branded installer variants that impersonate legitimate software (Adobe Reader, Microsoft Teams, Zoom Workspace, Google Meet, Airtable, plus generic Installer / Proposal / SpecialEvents lures) — these filenames are NOT listed as detection inputs here because they collide with the legitimate products' binary names and would produce FPs downstream; rely instead on the TrustConnect-specific signer chain (""TrustConnect Software PTY LTD""), Run-key value pattern (TrustConnectAgent_<random>), service description suffix (""… - Remote Support Agent""), and C2 endpoints below.","trustconnect agent service binary (.net 8 single-file executable, ~35 mb). operators ship trustconnect under per-tenant branded installer variants that impersonate legitimate software (adobe reader, microsoft teams, zoom workspace, google meet, airtable, plus generic installer / proposal / specialevents lures) — these filenames are not listed as detection inputs here because they collide with the legitimate products' binary names and would produce fps downstream; rely instead on the trustconnect-specific signer chain (""trustconnect software pty ltd""), run-key value pattern (trustconnectagent_<random>), service description suffix (""… - remote support agent""), and c2 endpoints below.",trustconnect,TrustConnect,PEMetadata.Description,RAT,"No - sold as Malware-as-a-Service (~$300/month, Bitcoin or USDT)",https://trustconnectsoftware.com/,Windows
 TrustConnectAgent.dll,trustconnectagent.dll,trustconnect,TrustConnect,PEMetadata.OriginalFileName,RAT,"No - sold as Malware-as-a-Service (~$300/month, Bitcoin or USDT)",https://trustconnectsoftware.com/,Windows
+tsh,tsh,teleport_connect,Teleport Connect,PEMetadata.OriginalFileName,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
 TurboMeeting,turbomeeting,turbomeeting,TurboMeeting,Name,RMM,,,
 Ultra VNC,ultra vnc,ultra_vnc,Ultra VNC,Name,RAT,,https://uvnc.com/,
 UltraViewer,ultraviewer,ultraviewer,UltraViewer,Name,RMM,,https://www.ultraviewer.net/,

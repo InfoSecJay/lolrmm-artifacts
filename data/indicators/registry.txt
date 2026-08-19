@@ -2,6 +2,7 @@ HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\Software\Microsoft\Terminal Server Client\Default
 HKCU\Software\Microsoft\Terminal Server Client\Servers
 HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb
+HKCU\SOFTWARE\Policies\Teleport\TeleportConnect
 HKCU\SOFTWARE\TiFlux
 HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history
 HKEY_CURRENT_USER\Software\Classes\HopToDesk\shell\open\command
@@ -48,6 +49,8 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*)
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TeamViewer\*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TrustConnect Agent
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}
@@ -59,6 +62,7 @@ HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A40A237D-C090-4C05-858
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F0076285-D0E2-4B49-92BD-25E0B7B27DF6}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Remote Session/Operational
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational
+HKLM\SOFTWARE\Policies\Teleport\TeleportConnect
 HKLM\SOFTWARE\RdClient
 HKLM\SOFTWARE\TeamViewer\*
 HKLM\SOFTWARE\TeamViewer\ConnectionHistory

@@ -98,6 +98,9 @@ connectwise*.exe
 connectwisechat-customer.exe
 ConnectWiseControl*.exe
 connectwisecontrol.client.exe
+ControlR.Agent.exe
+ControlR.Agent.Installer.exe
+ControlR.DesktopClient.exe
 CoreAgentService.exe
 cpuchk.exe
 CrossLoopConnect.exe
@@ -688,6 +691,8 @@ TeamTaskManager.exe
 TeamViewer.exe
 teamviewer_desktop.exe
 teamviewer_service.exe
+Teleport Connect Setup-*.exe
+Teleport Connect.exe
 teramind-remover.exe
 Teramind.Remover.Executable
 Teramind.Setup.Remover.exe
@@ -715,6 +720,7 @@ TPowerShell.exe
 TrustConnectAgent.exe
 TSClient.exe
 Tsdservice.exe
+tsh.exe
 tsircusr.exe
 turbomeeting.exe
 turbomeetingstarter.exe

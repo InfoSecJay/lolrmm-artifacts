@@ -41,6 +41,7 @@ connectwise,ConnectWise,RMM,True,True,False,False,False,False,False,False,False,
 connectwise_automate_(labtech),Connectwise Automate (LabTech),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 connectwise_control,ConnectWise Control,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 controlio,Controlio,RMM,True,True,True,True,True,False,False,False,True,False,eventlog | registry | network | detections
+controlr,ControlR,RMM,True,True,True,True,True,False,True,True,False,False,eventlog | other | detections
 crossloop,CrossLoop,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 crosstec_remote_control,CrossTec Remote Control,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 cruzcontrol,CruzControl,RMM,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
@@ -283,6 +284,7 @@ tanium,Tanium,RMM,True,True,False,False,False,False,False,True,False,True,capabi
 taniumdeploy,Tanium Deploy,RMM,True,False,False,False,False,False,False,True,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | other | detections
 teamviewer,TeamViewer,RMM,True,True,False,True,True,True,True,True,True,True,capabilities
 teledesktop,TeleDesktop,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+teleport_connect,Teleport Connect,RAT,True,True,True,True,True,True,True,True,False,False,other | detections
 teramind,Teramind,RMM,True,True,True,True,True,True,True,True,True,True,
 terminals,Terminals,RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 tiflux,TiFLUX,RMM,True,True,True,True,True,True,True,True,True,True,

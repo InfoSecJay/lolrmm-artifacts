@@ -7,6 +7,9 @@ AteraAgent
 Background service that maintains a connection to the Remotely server.
 baramundi Management Agent
 Bluetrait MSP Agent
+ControlR.Agent
+ControlR.Agent.Installer
+ControlR.DesktopClient
 Dataplicity agent (Python-based) installed via curl|sudo python one-liner; runs as a system service that maintains the persistent control channel back to *.dataplicity.com.
 Deep Freeze Console / configuration utility
 Deep Freeze Standard installer
@@ -125,6 +128,8 @@ SNMP-based network inventory task binary
 Splash Window
 Standalone inventory collector (offline / one-shot inventory)
 Successor variant ("DocConnect" / "SHIELD OS") observed after February 2026 disruption
+Teleport Connect
+Teleport tsh command-line client
 Teramind agent removal utility (signed by Teramind Inc.)
 Teramind agent removal utility variant served from teramind.co
 Teramind agent updater shim; renamed to update-shim.exe at runtime; .NET assembly signed by Teramind Inc.

@@ -195,6 +195,7 @@
 *.teamviewer.com
 *.techinline.net
 *.teknopars.com
+*.teleport.sh
 *.teramind.co
 *.tiflux.com
 *.tmate.io
@@ -287,6 +288,7 @@ boot.net.anydesk.com
 builds.level.io
 c.mid.al
 cc.centrastage.net
+cdn.teleport.dev
 cell-1.domotz.com
 centuriontech.com
 cfcdn.pdq.com
@@ -322,6 +324,7 @@ crossloop.en.softonic.com
 dameware.com
 dataplicity.com
 deepfreeze.com
+demo.controlr.app
 deploy.faronics.com
 deploy01.kaseya.com
 deskday.ai
@@ -527,6 +530,7 @@ remotepro-us-west-2.faronics.com
 remotepulse.io
 remoteutilities.com
 repairshopr.com
+reporting-connect.teleportinfra.sh
 rescue-data-cetner.logmein-gateway.com
 rescue-list.*.logmein-gateway.com
 resources.ninjarmm.com
@@ -604,6 +608,7 @@ ultraviewer.net
 ultravnc.com
 upd.faronicslabs.com
 upload_data.qq.com
+usage.teleport.dev
 user_managed
 vector-networks.com
 vizor.cloud

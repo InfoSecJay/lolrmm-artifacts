@@ -1,13 +1,13 @@
 {
-  "tool_count": 317,
+  "tool_count": 319,
   "by_category": {
-    "RMM": 226,
-    "RAT": 91
+    "RMM": 227,
+    "RAT": 92
   },
   "by_os": {
-    "Windows": 103,
-    "MacOS": 46,
-    "Linux": 39,
+    "Windows": 105,
+    "MacOS": 48,
+    "Linux": 41,
     "Android": 19,
     "iOS": 13,
     "ChromeOS": 3,
@@ -63,9 +63,9 @@
     "Remote desktop": 2,
     "Remote file transfer": 1,
     "Remote shell open": 1,
-    "Remote desktop management": 1,
-    "Remote desktop view": 1,
-    "File transfer": 5,
+    "Remote desktop management": 2,
+    "Remote desktop view": 2,
+    "File transfer": 7,
     "System information": 1,
     "Text chat": 1,
     "Task manager": 1,
@@ -97,6 +97,8 @@
     "PowerShell Execution": 1,
     "Clipboard Synchronization": 2,
     "Connection Management": 3,
+    "Command execution": 1,
+    "Activity monitoring": 1,
     "Browser-based remote terminal (shell access through Dataplicity web console)": 1,
     "Wormhole HTTP tunneling (expose a local HTTP service publicly via `*.wormhole.dataplicity.com`)": 1,
     "Remote file management": 1,
@@ -288,6 +290,12 @@
     "SSH key + username/password authentication": 1,
     "Device enrollment / tenant registration": 1,
     "Docker container deployment of the gateway (self-hosted option)": 1,
+    "Remote access": 1,
+    "SSH": 1,
+    "RDP": 1,
+    "Kubernetes access": 1,
+    "Database access": 1,
+    "Application access": 1,
     "User activity monitoring (keystroke, screen, app, web)": 1,
     "Stealth / hidden agent mode (absent from Add/Remove Programs)": 1,
     "Configurable process renaming (default agent rename to dwm.exe; clipboard monitor to clm.exe)": 1,
@@ -343,14 +351,14 @@
     "Self-hosted on-premise OR vendor-hosted cloud (vizor.cloud) — agent endpoint is operator-configured, not a fixed vendor cloud": 1
   },
   "artifact_counts": {
-    "disk": 512,
-    "eventlog": 102,
-    "registry": 140,
-    "network_pairs": 866,
+    "disk": 553,
+    "eventlog": 103,
+    "registry": 144,
+    "network_pairs": 873,
     "other": 150,
-    "total": 1770
+    "total": 1823
   },
   "detection_count": 549,
   "tools_without_artifacts_count": 67,
-  "tools_without_detections_count": 46
+  "tools_without_detections_count": 48
 }

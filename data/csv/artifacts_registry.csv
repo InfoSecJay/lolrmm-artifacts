@@ -22,6 +22,8 @@ atera,Atera,HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS,
 atera,Atera,HKLM\SOFTWARE\ATERA Networks\*,
+controlr,ControlR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR,Default ControlR uninstall registry key on Windows.
+controlr,ControlR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*),Instance-specific ControlR uninstall registry key on Windows.
 faronics_core,Faronics Core,HKLM\SYSTEM\CurrentControlSet\Services\FaronicsCoreAgent,Faronics Core Agent Windows service registration
 faronics_core,Faronics Core,HKLM\SOFTWARE\Faronics\Faronics Core 3,Faronics Core 3 product configuration root
 faronics_core,Faronics Core,HKLM\SOFTWARE\WOW6432Node\Faronics\Faronics Core 3,Faronics Core 3 product configuration root (32-bit on 64-bit hosts)
@@ -118,6 +120,8 @@ teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\MultiMedia\AudioUserSelectedRe
 teamviewer,TeamViewer,HKLM\SOFTWARE\TeamViewer\ConnectionHistory,N/A
 teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\ClientWindow_Mode,N/A
 teamviewer,TeamViewer,HKU\SID\SOFTWARE\TeamViewer\ClientWindowPositions,N/A
+teleport_connect,Teleport Connect,HKLM\SOFTWARE\Policies\Teleport\TeleportConnect,Machine-wide managed update policy configuration.
+teleport_connect,Teleport Connect,HKCU\SOFTWARE\Policies\Teleport\TeleportConnect,Per-user managed update policy configuration.
 teramind,Teramind,HKLM\SYSTEM\CurrentControlSet\Services\tsvchst,Teramind agent Windows service registration (service name = tsvchst)
 teramind,Teramind,HKLM\SYSTEM\CurrentControlSet\Services\tsvchst\ImagePath,"ImagePath = ""C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe"" --service (or equivalent path under the GUID-named hidden-agent root)"
 teramind,Teramind,HKLM\SYSTEM\CurrentControlSet\Services\tsvchst\Start,Start = 2 (Automatic) — service launches at boot

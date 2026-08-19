@@ -100,6 +100,7 @@ comodo_rmm,Comodo RMM,one.comodo.com,,Known remote domains
 connectwise_automate_(labtech),Connectwise Automate (LabTech),*.hostedrmm.com,,Known remote domains
 connectwise_control,ConnectWise Control,live.screenconnect.com,,Known remote domains
 connectwise_control,ConnectWise Control,control.connectwise.com,,Known remote domains
+controlr,ControlR,demo.controlr.app,443,ControlR agent installer is downloaded from the official demo tenant domain.
 crossloop,CrossLoop,*.crossloop.com,,Known remote domains
 crossloop,CrossLoop,crossloop.en.softonic.com,,Known remote domains
 crosstec_remote_control,CrossTec Remote Control,user_managed,,Known remote domains
@@ -782,6 +783,12 @@ teamviewer,TeamViewer,client.teamviewer.com,443,N/A
 teamviewer,TeamViewer,taf.teamviewer.com,443,N/A
 teledesktop,TeleDesktop,user_managed,,Known remote domains
 teledesktop,TeleDesktop,tele-desk.com,,Known remote domains
+teleport_connect,Teleport Connect,cdn.teleport.dev,443,"Teleport Connect update, telemetry, and feedback services."
+teleport_connect,Teleport Connect,reporting-connect.teleportinfra.sh,443,"Teleport Connect update, telemetry, and feedback services."
+teleport_connect,Teleport Connect,usage.teleport.dev,443,"Teleport Connect update, telemetry, and feedback services."
+teleport_connect,Teleport Connect,*.teleport.sh,443,Teleport Cloud clusters.
+teleport_connect,Teleport Connect,user_managed,443,Administrator-supplied self-hosted Teleport proxy address.
+teleport_connect,Teleport Connect,user_managed,3080,Administrator-supplied self-hosted Teleport proxy address.
 teramind,Teramind,*.teramind.co,443,"Teramind cloud tenant base domain — wildcard *.teramind.co covers per-tenant subdomains (e.g. acme.teramind.co) used for the agent control channel and the customer web console. Backed by Cloudflare (104.20.25.93, 172.66.155.133). The Teramind agent installer also enforces the deployment-domain via the -do(<domain>) parameter, baking the tenant subdomain into the installer filename."
 teramind,Teramind,teramind.co,443,"Teramind cloud tenant base domain — wildcard *.teramind.co covers per-tenant subdomains (e.g. acme.teramind.co) used for the agent control channel and the customer web console. Backed by Cloudflare (104.20.25.93, 172.66.155.133). The Teramind agent installer also enforces the deployment-domain via the -do(<domain>) parameter, baking the tenant subdomain into the installer filename."
 teramind,Teramind,www.teramind.co,443,"Teramind cloud tenant base domain — wildcard *.teramind.co covers per-tenant subdomains (e.g. acme.teramind.co) used for the agent control channel and the customer web console. Backed by Cloudflare (104.20.25.93, 172.66.155.133). The Teramind agent installer also enforces the deployment-domain via the -do(<domain>) parameter, baking the tenant subdomain into the installer filename."

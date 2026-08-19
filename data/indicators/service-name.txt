@@ -28,6 +28,7 @@ Splashtop Software Updater Service
 SplashtopRemoteService
 Splashtop® Remote Service
 TeamViewer
+TeleportConnectUpdater
 TiService
 TrustConnect Agent
 tsvchst

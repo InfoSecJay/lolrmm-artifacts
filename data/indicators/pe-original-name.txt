@@ -9,6 +9,9 @@ AutoUpdate.exe
 Bluetrait MSP Agent.exe
 bma.exe
 CloudWksInstall.exe
+ControlR.Agent.dll
+ControlR.Agent.Installer.dll
+ControlR.DesktopClient.dll
 CoreAgentService.exe
 dashboard-windows-amd64.exe
 dataplicity
@@ -90,5 +93,6 @@ TiService.exe
 TiUpdateService.exe
 tmagentsvc.exe
 TrustConnectAgent.dll
+tsh.exe
 UninstallStatusUpdater.exe
 wintun.dll
