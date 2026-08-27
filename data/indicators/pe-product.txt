@@ -3,6 +3,7 @@ AnyDesk
 Aspia
 baramundi Management Suite
 Bluetrait
+Breeze
 Controlio
 ControlR.Agent
 ControlR.Agent.Installer

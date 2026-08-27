@@ -395,6 +395,7 @@ C:\Program Files\Aspia\
 C:\Program Files\Atera Networks
 C:\Program Files\ATERA Networks\AteraAgent\*
 C:\Program Files\Bitvise SSH Server\*
+C:\Program Files\Breeze\*
 C:\Program Files\bsag\*
 C:\Program Files\bsag\bma\*
 C:\Program Files\ControlR\*\ControlR.Agent.exe
@@ -462,6 +463,7 @@ C:\Program Files\Vector\Asset Management Client\*
 C:\Program Files\Veyon\*
 C:\Program Files\ZOC8\*
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\*
+C:\ProgramData\Breeze\*
 C:\ProgramData\ControlR\
 C:\ProgramData\Faronics\FCAForStartupMonitor.msi
 C:\ProgramData\Faronics\StorageSpace\FWA\*

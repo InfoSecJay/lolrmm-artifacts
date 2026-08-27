@@ -43,6 +43,14 @@ bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.ex
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.db,C:\Program Files (x86)\Bluetrait Agent\config.db,Windows,Windows,,Bluetrait configuration database file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.json,C:\Program Files (x86)\Bluetrait Agent\config.json,Windows,Windows,,Bluetrait JSON configuration file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,Windows,Windows,,PAExec utility used by Bluetrait for remote execution
+breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-agent.exe,C:\Program Files\Breeze\breeze-agent.exe,Windows,Windows,,Breeze RMM agent executable reported in issue 235.
+breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-watchdog.exe,C:\Program Files\Breeze\breeze-watchdog.exe,Windows,Windows,,Breeze agent watchdog executable reported in issue 235.
+breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-user-helper.exe,C:\Program Files\Breeze\breeze-user-helper.exe,Windows,Windows,,Breeze user-context helper executable reported in issue 235.
+breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-backup.exe,C:\Program Files\Breeze\breeze-backup.exe,Windows,Windows,,Breeze agent backup executable reported in issue 235.
+breezermm,BreezeRMM,C:\Program Files\Breeze\scripts\install\install-windows.ps1,C:\Program Files\Breeze\scripts\install\install-windows.ps1,Windows,Windows,,Breeze Windows install script reported in issue 235.
+breezermm,BreezeRMM,C:\ProgramData\Breeze\agent.env,C:\ProgramData\Breeze\agent.env,Windows,Windows,,Breeze agent environment configuration reported in issue 235.
+breezermm,BreezeRMM,C:\ProgramData\Breeze\secrets.yaml,C:\ProgramData\Breeze\secrets.yaml,Windows,Windows,,Breeze agent secrets file reported in issue 235.
+breezermm,BreezeRMM,C:\ProgramData\Breeze\logs\agent.log,C:\ProgramData\Breeze\logs\agent.log,Windows,Windows,,Breeze agent log file reported in issue 235.
 controlio,Controlio,weClipboardListener.exe,weClipboardListener.exe,Windows,Windows,,Controlio binary
 controlio,Controlio,bbl.exe,bbl.exe,Windows,Windows,,Controlio binary
 controlio,Controlio,weprtct.exe,weprtct.exe,Windows,Windows,,Controlio binary

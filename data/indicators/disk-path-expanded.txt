@@ -278,6 +278,11 @@ C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageMonitoring\Agent
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe
+C:\Program Files\Breeze\breeze-agent.exe
+C:\Program Files\Breeze\breeze-backup.exe
+C:\Program Files\Breeze\breeze-user-helper.exe
+C:\Program Files\Breeze\breeze-watchdog.exe
+C:\Program Files\Breeze\scripts\install\install-windows.ps1
 C:\Program Files\bsag\bma\bma.exe
 C:\Program Files\ControlR\*\ControlR.Agent.exe
 C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe
@@ -369,6 +374,9 @@ C:\ProgramData\AnyDesk\ad_svc.trace
 C:\ProgramData\AnyDesk\connection_trace.txt
 C:\ProgramData\AnyDesk\service.conf
 C:\ProgramData\AnyDesk\system.conf
+C:\ProgramData\Breeze\agent.env
+C:\ProgramData\Breeze\logs\agent.log
+C:\ProgramData\Breeze\secrets.yaml
 C:\ProgramData\ControlR\*\appsettings.json
 C:\ProgramData\ControlR\*\Logs\ControlR.Agent\LogFile*.log
 C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\LogFile*.log

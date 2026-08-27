@@ -285,6 +285,8 @@ beanywhere.com
 bluetrait.io
 bomgarcloud.com
 boot.net.anydesk.com
+breeze.app
+breezermm.com
 builds.level.io
 c.mid.al
 cc.centrastage.net
@@ -355,6 +357,7 @@ electric.ai
 emcosoftware.com
 encapto.com
 ericom.com
+eu.2breeze.app
 everywhere.laplink.com
 ezhelp.co.kr
 faronics-deploy-int-production-installers.s3.eu-west-1.amazonaws.com
@@ -608,6 +611,7 @@ ultraviewer.net
 ultravnc.com
 upd.faronicslabs.com
 upload_data.qq.com
+us.2breeze.app
 usage.teleport.dev
 user_managed
 vector-networks.com

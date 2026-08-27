@@ -1,13 +1,13 @@
 {
-  "tool_count": 319,
+  "tool_count": 320,
   "by_category": {
-    "RMM": 227,
+    "RMM": 228,
     "RAT": 92
   },
   "by_os": {
-    "Windows": 105,
-    "MacOS": 48,
-    "Linux": 41,
+    "Windows": 106,
+    "MacOS": 49,
+    "Linux": 42,
     "Android": 19,
     "iOS": 13,
     "ChromeOS": 3,
@@ -22,7 +22,7 @@
     "HelpDesk and ticketing": 1,
     "Mobile app": 2,
     "Network discovery": 2,
-    "Patch management": 2,
+    "Patch management": 3,
     "Remote monitoring and management": 6,
     "Reporting and analytics": 3,
     "5 Different Solutions for Remote Support": 1,
@@ -95,6 +95,11 @@
     "Vulnerability Scanning": 1,
     "Remote Monitoring": 3,
     "PowerShell Execution": 1,
+    "Remote access": 2,
+    "Remote monitoring": 1,
+    "Script execution": 1,
+    "Software deployment": 1,
+    "Monitoring and alerting": 1,
     "Clipboard Synchronization": 2,
     "Connection Management": 3,
     "Command execution": 1,
@@ -290,7 +295,6 @@
     "SSH key + username/password authentication": 1,
     "Device enrollment / tenant registration": 1,
     "Docker container deployment of the gateway (self-hosted option)": 1,
-    "Remote access": 1,
     "SSH": 1,
     "RDP": 1,
     "Kubernetes access": 1,
@@ -351,14 +355,14 @@
     "Self-hosted on-premise OR vendor-hosted cloud (vizor.cloud) — agent endpoint is operator-configured, not a fixed vendor cloud": 1
   },
   "artifact_counts": {
-    "disk": 553,
+    "disk": 561,
     "eventlog": 103,
     "registry": 144,
-    "network_pairs": 873,
-    "other": 150,
-    "total": 1823
+    "network_pairs": 878,
+    "other": 152,
+    "total": 1838
   },
   "detection_count": 549,
   "tools_without_artifacts_count": 67,
-  "tools_without_detections_count": 48
+  "tools_without_detections_count": 49
 }

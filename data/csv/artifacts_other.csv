@@ -1,6 +1,8 @@
 slug,name,type,value
 anydesk,AnyDesk,User-Agent,AnyDesk/*
 anydesk,AnyDesk,NamedPipe,adprinterpipe
+breezermm,BreezeRMM,ObservedSHA256,52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8
+breezermm,BreezeRMM,CodeSigningSigner,"LanternOps, LLC"
 controlio,Controlio,Service,weSvcService
 dataplicity,Dataplicity,URL,https://www.dataplicity.com/<TOKEN>.py
 dataplicity,Dataplicity,Other,Install command: curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python  (high-signal hunt pattern — sudo-piped curl-to-python from dataplicity.com)

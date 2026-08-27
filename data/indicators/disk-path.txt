@@ -318,6 +318,11 @@ C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageMonitoring\Agent
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\log.txt
 C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageSTRemote\AgentPackageSTRemote.exe
+C:\Program Files\Breeze\breeze-agent.exe
+C:\Program Files\Breeze\breeze-backup.exe
+C:\Program Files\Breeze\breeze-user-helper.exe
+C:\Program Files\Breeze\breeze-watchdog.exe
+C:\Program Files\Breeze\scripts\install\install-windows.ps1
 C:\Program Files\bsag\bma\bma.exe
 C:\Program Files\ControlR\*\ControlR.Agent.exe
 C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe
@@ -404,6 +409,9 @@ C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe
 C:\Program Files\Vector Networks Limited\LANutil32 Suite\clboot32.exe
 C:\Program Files\Vector\Asset Management Client\CLBOOT32.EXE
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json
+C:\ProgramData\Breeze\agent.env
+C:\ProgramData\Breeze\logs\agent.log
+C:\ProgramData\Breeze\secrets.yaml
 C:\ProgramData\ControlR\*\appsettings.json
 C:\ProgramData\ControlR\*\Logs\ControlR.Agent\LogFile*.log
 C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\LogFile*.log

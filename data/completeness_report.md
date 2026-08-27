@@ -1,26 +1,26 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **319**
-- Fetched + parsed tools: **319**
+- Expected files (upstream listing): **320**
+- Fetched + parsed tools: **320**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 319 tools total:
+Of 320 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 314 | 98% |
-| installation_paths | 288 | 90% |
-| capabilities | 65 | 20% |
-| supported_os | 108 | 34% |
-| disk | 71 | 22% |
+| pe_metadata | 315 | 98% |
+| installation_paths | 289 | 90% |
+| capabilities | 66 | 21% |
+| supported_os | 109 | 34% |
+| disk | 72 | 22% |
 | eventlog | 46 | 14% |
 | registry | 37 | 12% |
-| network | 243 | 76% |
-| other | 24 | 8% |
+| network | 244 | 76% |
+| other | 25 | 8% |
 | detections | 271 | 85% |
 
 ## Tools with no artifacts at all (67)
@@ -93,9 +93,10 @@ Of 319 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (48)
+## Tools with no detections (49)
 
 - `beyondtrust` (RMM)
+- `breezermm` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
 - `chrome_ssh_extension` (RAT)
 - `connectwise` (RMM)

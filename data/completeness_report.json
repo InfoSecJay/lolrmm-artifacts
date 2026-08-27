@@ -1,20 +1,20 @@
 {
-  "expected_count": 319,
-  "fetched_count": 319,
+  "expected_count": 320,
+  "fetched_count": 320,
   "missing_files": [],
   "extra_files": [],
   "parse_errors": [],
   "section_counts": {
-    "pe_metadata": 314,
-    "installation_paths": 288,
-    "network": 243,
+    "pe_metadata": 315,
+    "installation_paths": 289,
+    "network": 244,
     "detections": 271,
-    "supported_os": 108,
-    "disk": 71,
+    "supported_os": 109,
+    "disk": 72,
     "eventlog": 46,
-    "capabilities": 65,
+    "capabilities": 66,
     "registry": 37,
-    "other": 24
+    "other": 25
   },
   "tools_with_no_artifacts": [
     "beyondtrust",
@@ -87,6 +87,7 @@
   ],
   "tools_with_no_detections": [
     "beyondtrust",
+    "breezermm",
     "chicken_(of_the_vnc)",
     "chrome_ssh_extension",
     "connectwise",

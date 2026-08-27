@@ -41,6 +41,12 @@ Bitvise SSH Server,bitvise ssh server,bitvise_ssh_server,Bitvise SSH Server,Name
 Bluetrait,bluetrait,bluetrait,Bluetrait,Name,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
 Bluetrait MSP Agent,bluetrait msp agent,bluetrait,Bluetrait,PEMetadata.Description,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
 bma,bma,baramundi,baramundi Management Suite,PEMetadata.OriginalFileName,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
+Breeze,breeze,breezermm,BreezeRMM,PEMetadata.Product,RMM,true,https://breezermm.com/,Windows | macOS | Linux
+Breeze agent backup component,breeze agent backup component,breezermm,BreezeRMM,PEMetadata.Description,RMM,true,https://breezermm.com/,Windows | macOS | Linux
+Breeze agent watchdog process,breeze agent watchdog process,breezermm,BreezeRMM,PEMetadata.Description,RMM,true,https://breezermm.com/,Windows | macOS | Linux
+Breeze RMM agent,breeze rmm agent,breezermm,BreezeRMM,PEMetadata.Description,RMM,true,https://breezermm.com/,Windows | macOS | Linux
+Breeze user-context helper process,breeze user-context helper process,breezermm,BreezeRMM,PEMetadata.Description,RMM,true,https://breezermm.com/,Windows | macOS | Linux
+BreezeRMM,breezermm,breezermm,BreezeRMM,Name,RMM,true,https://breezermm.com/,Windows | macOS | Linux
 CentraStage (Now Datto),centrastage (now datto),centrastage_(now_datto),CentraStage (Now Datto),Name,RMM,,https://rmm.datto.com/help,
 Centurion,centurion,centurion,Centurion,Name,RMM,,,
 Chicken (of the VNC),chicken (of the vnc),chicken_(of_the_vnc),Chicken (of the VNC),Name,RAT,,https://github.com/flit/cotvnc,

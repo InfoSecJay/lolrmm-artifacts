@@ -66,6 +66,10 @@ bomgar-pac.exe
 bomgar-rdp.exe
 bomgar-scc-*.exe
 bomgar-scc.exe
+breeze-agent.exe
+breeze-backup.exe
+breeze-user-helper.exe
+breeze-watchdog.exe
 BvSshClient-Inst.exe
 BvSshServer-Inst.exe
 CagService.exe

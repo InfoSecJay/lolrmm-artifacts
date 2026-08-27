@@ -30,6 +30,7 @@ beyondtrust_(bomgar),BeyondTrust (Bomgar),RMM,True,True,False,False,False,False,
 bitvise_ssh_client,Bitvise SSH Client,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 bitvise_ssh_server,Bitvise SSH Server,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 bluetrait,Bluetrait,RAT,True,True,True,True,True,True,False,True,False,True,registry | other
+breezermm,BreezeRMM,RMM,True,True,True,True,True,False,False,True,True,False,eventlog | registry | detections
 centrastage_(now_datto),CentraStage (Now Datto),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 centurion,Centurion,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 chicken_(of_the_vnc),Chicken (of the VNC),RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections

@@ -7,6 +7,10 @@ AteraAgent
 Background service that maintains a connection to the Remotely server.
 baramundi Management Agent
 Bluetrait MSP Agent
+Breeze agent backup component
+Breeze agent watchdog process
+Breeze RMM agent
+Breeze user-context helper process
 ControlR.Agent
 ControlR.Agent.Installer
 ControlR.DesktopClient

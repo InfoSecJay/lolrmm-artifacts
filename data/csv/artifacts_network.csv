@@ -81,6 +81,11 @@ bluetrait,Bluetrait,bluetrait.io,443,Known domains used by Bluetrait
 bluetrait,Bluetrait,bluetrait.io,8080,Known domains used by Bluetrait
 bluetrait,Bluetrait,*.bluetrait.io,443,Known domains used by Bluetrait
 bluetrait,Bluetrait,*.bluetrait.io,8080,Known domains used by Bluetrait
+breezermm,BreezeRMM,breezermm.com,443,Vendor-documented Breeze managed cloud service domains.
+breezermm,BreezeRMM,breeze.app,443,Vendor-documented Breeze managed cloud service domains.
+breezermm,BreezeRMM,us.2breeze.app,443,Vendor-documented Breeze managed cloud service domains.
+breezermm,BreezeRMM,eu.2breeze.app,443,Vendor-documented Breeze managed cloud service domains.
+breezermm,BreezeRMM,user_managed,443,Self-hosted Breeze deployments use operator-supplied infrastructure; issue #235 notes network destinations depend on the build.
 centrastage_(now_datto),CentraStage (Now Datto),*.rmm.datto.com,,Known remote domains
 centrastage_(now_datto),CentraStage (Now Datto),cc.centrastage.net,,Known remote domains
 centrastage_(now_datto),CentraStage (Now Datto),*.cc.centrastage.net,,Known remote domains
