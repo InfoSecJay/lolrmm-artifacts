@@ -45,6 +45,7 @@
 %USERPROFILE%\Documents\Default.rdp
 *\agent-installer-any.exe
 *\ControlR.Agent.Installer.exe
+/Applications/Chrome Remote Desktop Host Uninstaller.app
 /Applications/ControlR.*.app
 /Applications/ControlR.app
 /Applications/Freshservice Discovery Agent.app
@@ -77,16 +78,25 @@
 /home/*/.config/Teleport Connect/app_state.json
 /home/*/.config/Teleport Connect/certs/tshd.crt
 /home/*/.config/Teleport Connect/logs/*
+/lib/systemd/system/chrome-remote-desktop.service
 /lib/systemd/system/glpi-agent.service
 /lib/systemd/system/helpwire-unattended.service
 /Library/Application Support/ControlR/*/ControlR.Agent
 /Library/LaunchAgents/app.controlr.desktop*.plist
+/Library/LaunchAgents/org.chromium.chromoting.plist
 /Library/LaunchDaemons/app.controlr.agent*.plist
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
+/Library/LaunchDaemons/org.chromium.chromoting.broker.plist
 /Library/LaunchDaemons/remotely-agent.plist
+/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
+/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
+/Library/PrivilegedHelperTools/org.chromium.chromoting.json
+/Library/PrivilegedHelperTools/org.chromium.chromoting.settings.json
 /opt/dataplicity/credentials
 /opt/dataplicity/tuxtunnel/manager
 /opt/freshservice/discovery_agent/*
+/opt/google/chrome-remote-desktop/chrome-remote-desktop
+/opt/google/chrome-remote-desktop/chrome-remote-desktop-host
 /opt/komari/agent
 /opt/komari/komari
 /opt/nezha/agent/config.yml
@@ -208,6 +218,7 @@ C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\windows_scripts\GetComp
 C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\windows_scripts\ListADComputers.vbs
 C:\Program Files (x86)\Freshworks\FreshServiceProbe\scan\windows_scripts\ListDomains.vbs
 C:\Program Files (x86)\Freshworks\FreshServiceProbe\Uninstall.bat
+C:\Program Files (x86)\Google\Chrome Remote Desktop\*\remoting_host.exe
 C:\Program Files (x86)\HeartbeatRM\*
 C:\Program Files (x86)\HopToDesk\HopToDesk.exe
 C:\Program Files (x86)\HopToDesk\privacyhelper.exe
@@ -254,6 +265,8 @@ C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRService.exe
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe
 C:\Program Files (x86)\Splashtop\Splashtop Software Updater\SSUAgent.exe
+C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Client\SetMe_Client.exe
+C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Module\*\tinUnattendedModule.exe
 C:\Program Files (x86)\TiFLUX\dependencies\7zip\7z.dll
 C:\Program Files (x86)\TiFLUX\dependencies\7zip\7z.exe
 C:\Program Files (x86)\TiFLUX\dependencies\7zip\7zCon.sfx
@@ -393,6 +406,8 @@ C:\Program Files\Monitic\amon.exe
 C:\Program Files\Monitic\conf.json
 C:\Program Files\Netbird\netbird.exe
 C:\Program Files\NVDA\nvda.exe
+C:\Program Files\OpsBridge\*.exe
+C:\Program Files\OpsBridge\OpsBridgeAgent.exe
 C:\Program Files\Parsec\parsecd.exe
 C:\Program Files\Parsec\pservice.exe
 C:\Program Files\Parsec\teams.exe
@@ -431,9 +446,16 @@ C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*
 C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*
 C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\*
 C:\ProgramData\Netbird\config.json
+C:\ProgramData\OpsBridge\.persisted_v4
+C:\ProgramData\OpsBridge\agent.log
+C:\ProgramData\OpsBridge\agent_state.json
+C:\ProgramData\OpsBridge\install.log
+C:\ProgramData\OpsBridge\task_*.json
 C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal
 C:\ProgramData\ScreenConnect Client*\user.config
+C:\ProgramData\SetMe Client
+C:\ProgramData\Techinline Ltd\settings.ini*
 C:\ProgramData\TeleportConnectUpdater\*
 C:\ProgramData\Teramind Agent\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe
@@ -458,6 +480,8 @@ C:\Users\*\AppData\Local\Temp\aspia\aspia_client-*.log
 C:\Users\*\AppData\Local\Temp\KASetup.log
 C:\Users\*\AppData\Local\Temp\privacyhelper.exe
 C:\Users\*\AppData\Local\Temp\sciter.dll
+C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientDesktopApplication.exe
+C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientSessionManager.exe
 C:\Users\*\AppData\Local\Temp\{*}\ManageEngine_ServiceDesk_Plus.exe
 C:\Users\*\AppData\Local\VeyonCLI.log
 C:\Users\*\AppData\Roaming\aspia\client.ini
@@ -501,6 +525,7 @@ C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
 C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\
 C:\Windows\System32\rserver30\CHATLOGS\*\*.htm
 C:\Windows\System32\rserver30\Radm_log.htm
+C:\Windows\System32\Tasks\OpsBridge Agent
 C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx
 C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx
 C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\*
@@ -509,6 +534,7 @@ C:\Windows\Temp\DFServiceInit.log
 C:\Windows\Temp\FleetDeck\*
 C:\Windows\Temp\ImmyBot\*
 C:\Windows\Temp\KASetup.log
+C:\Windows\Temp\setme\Sentry\*
 C:\Windows\Temp\VeyonServer.log
 C:\Windows\Temp\VeyonService.log
 FSProbeUninstall.vbs

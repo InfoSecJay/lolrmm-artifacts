@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **320**
-- Fetched + parsed tools: **320**
+- Expected files (upstream listing): **322**
+- Fetched + parsed tools: **322**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 320 tools total:
+Of 322 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 315 | 98% |
-| installation_paths | 289 | 90% |
-| capabilities | 66 | 21% |
-| supported_os | 109 | 34% |
-| disk | 72 | 22% |
+| pe_metadata | 317 | 98% |
+| installation_paths | 291 | 90% |
+| capabilities | 70 | 22% |
+| supported_os | 112 | 35% |
+| disk | 75 | 23% |
 | eventlog | 46 | 14% |
-| registry | 37 | 12% |
-| network | 244 | 76% |
-| other | 25 | 8% |
-| detections | 271 | 85% |
+| registry | 39 | 12% |
+| network | 246 | 76% |
+| other | 28 | 9% |
+| detections | 271 | 84% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,7 +93,7 @@ Of 320 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (49)
+## Tools with no detections (51)
 
 - `beyondtrust` (RMM)
 - `breezermm` (RMM)
@@ -130,10 +130,12 @@ Of 320 tools total:
 - `ninjaone_(formerly_ninjarmm)` (RMM)
 - `nordlocker` (RAT)
 - `nvda` (RMM)
+- `opsbridge_agent` (RMM)
 - `realvnc` (RAT)
 - `remmina` (RAT)
 - `remote_desktop_manager_(devolutions)` (RAT)
 - `remotepulse` (RMM)
+- `setme_pro` (RMM)
 - `smartcode_web_vnc` (RAT)
 - `smartftp` (RAT)
 - `taniumdeploy` (RMM)

@@ -51,6 +51,17 @@ breezermm,BreezeRMM,C:\Program Files\Breeze\scripts\install\install-windows.ps1,
 breezermm,BreezeRMM,C:\ProgramData\Breeze\agent.env,C:\ProgramData\Breeze\agent.env,Windows,Windows,,Breeze agent environment configuration reported in issue 235.
 breezermm,BreezeRMM,C:\ProgramData\Breeze\secrets.yaml,C:\ProgramData\Breeze\secrets.yaml,Windows,Windows,,Breeze agent secrets file reported in issue 235.
 breezermm,BreezeRMM,C:\ProgramData\Breeze\logs\agent.log,C:\ProgramData\Breeze\logs\agent.log,Windows,Windows,,Breeze agent log file reported in issue 235.
+chrome_remote_desktop,Chrome Remote Desktop,C:\Program Files (x86)\Google\Chrome Remote Desktop\*\remoting_host.exe,C:\Program Files (x86)\Google\Chrome Remote Desktop\*\remoting_host.exe,Windows,Windows,,Versioned Windows host process.
+chrome_remote_desktop,Chrome Remote Desktop,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host,macOS,MacOS,,Primary macOS remote desktop host executable.
+chrome_remote_desktop,Chrome Remote Desktop,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service,macOS,MacOS,,macOS host service launched by launchd.
+chrome_remote_desktop,Chrome Remote Desktop,/Library/LaunchAgents/org.chromium.chromoting.plist,/Library/LaunchAgents/org.chromium.chromoting.plist,macOS,MacOS,,macOS per-user launch agent for the Chrome Remote Desktop host.
+chrome_remote_desktop,Chrome Remote Desktop,/Library/LaunchDaemons/org.chromium.chromoting.broker.plist,/Library/LaunchDaemons/org.chromium.chromoting.broker.plist,macOS,MacOS,,macOS launch daemon for the host broker.
+chrome_remote_desktop,Chrome Remote Desktop,/Library/PrivilegedHelperTools/org.chromium.chromoting.json,/Library/PrivilegedHelperTools/org.chromium.chromoting.json,macOS,MacOS,,macOS Chrome Remote Desktop host configuration.
+chrome_remote_desktop,Chrome Remote Desktop,/Library/PrivilegedHelperTools/org.chromium.chromoting.settings.json,/Library/PrivilegedHelperTools/org.chromium.chromoting.settings.json,macOS,MacOS,,macOS Chrome Remote Desktop host settings.
+chrome_remote_desktop,Chrome Remote Desktop,/Applications/Chrome Remote Desktop Host Uninstaller.app,/Applications/Chrome Remote Desktop Host Uninstaller.app,macOS,MacOS,,macOS host uninstaller application.
+chrome_remote_desktop,Chrome Remote Desktop,/opt/google/chrome-remote-desktop/chrome-remote-desktop-host,/opt/google/chrome-remote-desktop/chrome-remote-desktop-host,Linux,Linux,,Linux Chrome Remote Desktop host executable.
+chrome_remote_desktop,Chrome Remote Desktop,/opt/google/chrome-remote-desktop/chrome-remote-desktop,/opt/google/chrome-remote-desktop/chrome-remote-desktop,Linux,Linux,,Linux host management script.
+chrome_remote_desktop,Chrome Remote Desktop,/lib/systemd/system/chrome-remote-desktop.service,/lib/systemd/system/chrome-remote-desktop.service,Linux,Linux,,Linux systemd service unit.
 controlio,Controlio,weClipboardListener.exe,weClipboardListener.exe,Windows,Windows,,Controlio binary
 controlio,Controlio,bbl.exe,bbl.exe,Windows,Windows,,Controlio binary
 controlio,Controlio,weprtct.exe,weprtct.exe,Windows,Windows,,Controlio binary
@@ -363,6 +374,14 @@ nvda,NVDA (Non-Visual Desktop Access),C:\Program Files (x86)\NVDA\nvda.exe,C:\Pr
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files\NVDA\nvda.exe,C:\Program Files\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory (64-bit)
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.log,C:\Users\*\AppData\Roaming\nvda\nvda.log,Windows,Windows,,NVDA log file
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.ini,C:\Users\*\AppData\Roaming\nvda\nvda.ini,Windows,Windows,,NVDA configuration file
+opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,Windows,Windows,,Canonical agent executable installed by the observed MSI.
+opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\*.exe,C:\Program Files\OpsBridge\*.exe,Windows,Windows,,Randomly named persisted agent copy observed across sandbox runs.
+opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\agent_state.json,C:\ProgramData\OpsBridge\agent_state.json,Windows,Windows,,Agent enrollment and runtime state.
+opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\agent.log,C:\ProgramData\OpsBridge\agent.log,Windows,Windows,,Agent activity log.
+opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\install.log,C:\ProgramData\OpsBridge\install.log,Windows,Windows,,Agent installation and persistence log.
+opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\.persisted_v4,C:\ProgramData\OpsBridge\.persisted_v4,Windows,Windows,,Marker written after agent persistence is configured.
+opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\task_*.json,C:\ProgramData\OpsBridge\task_*.json,Windows,Windows,,Per-job task file consumed by an OpsBridge worker process.
+opsbridge_agent,OpsBridge Agent,C:\Windows\System32\Tasks\OpsBridge Agent,C:\Windows\System32\Tasks\OpsBridge Agent,Windows,Windows,,Scheduled task file used for agent persistence.
 parsec,Parsec,C:\Program Files\Parsec\parsecd.exe,C:\Program Files\Parsec\parsecd.exe,Windows,Windows,,Main parsec executable
 parsec,Parsec,C:\Program Files\Parsec\pservice.exe,C:\Program Files\Parsec\pservice.exe,Windows,Windows,,Background service managing input devices
 parsec,Parsec,C:\Program Files\Parsec\teams.exe,C:\Program Files\Parsec\teams.exe,Windows,Windows,,Parsec for teams collaboration and user session management
@@ -413,6 +432,13 @@ rustdesk,RustDesk,C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDe
 screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\Session.db,C:\Program Files*\ScreenConnect\App_Data\Session.db,Windows,Windows,,ScreenConnect session database
 screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\User.xml,C:\Program Files*\ScreenConnect\App_Data\User.xml,Windows,Windows,,ScreenConnect user configuration
 screenconnect,ScreenConnect,C:\ProgramData\ScreenConnect Client*\user.config,C:\ProgramData\ScreenConnect Client*\user.config,Windows,Windows,,ScreenConnect client user configuration
+setme_pro,SetMe PRO,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Client\SetMe_Client.exe,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Client\SetMe_Client.exe,Windows,Windows,,SetMe client executable reported in issue 231.
+setme_pro,SetMe PRO,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Module\*\tinUnattendedModule.exe,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Module\*\tinUnattendedModule.exe,Windows,Windows,,Versioned unattended client module reported in issue 231 and confirmed by VirusTotal.
+setme_pro,SetMe PRO,C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientDesktopApplication.exe,C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientDesktopApplication.exe,Windows,Windows,,Attended client desktop application extracted into a per-run temporary directory.
+setme_pro,SetMe PRO,C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientSessionManager.exe,C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientSessionManager.exe,Windows,Windows,,Session manager extracted and launched by the attended client.
+setme_pro,SetMe PRO,C:\ProgramData\Techinline Ltd\settings.ini*,C:\ProgramData\Techinline Ltd\settings.ini*,Windows,Windows,,SetMe client settings and lock files observed during sandbox execution.
+setme_pro,SetMe PRO,C:\ProgramData\SetMe Client,C:\ProgramData\SetMe Client,Windows,Windows,,SetMe client ProgramData marker observed during sandbox execution.
+setme_pro,SetMe PRO,C:\Windows\Temp\setme\Sentry\*,C:\Windows\Temp\setme\Sentry\*,Windows,Windows,,SetMe crash-reporting state created by the client.
 shellhub,ShellHub,/usr/local/bin/shellhub-agent,/usr/local/bin/shellhub-agent,Linux,Linux,,ShellHub agent binary (default install path used by the vendor install.sh)
 shellhub,ShellHub,/etc/shellhub-agent/agent.env,/etc/shellhub-agent/agent.env,Linux,Linux,,"ShellHub agent environment file (tenant_id, server_address, identity)"
 shellhub,ShellHub,/etc/systemd/system/shellhub-agent.service,/etc/systemd/system/shellhub-agent.service,Linux,Linux,,systemd unit file for ShellHub agent persistence

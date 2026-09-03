@@ -47,10 +47,12 @@ HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32
 HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer\*
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*)
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OpsBridgeAgent
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TeamViewer\*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TrustConnect Agent
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}
@@ -91,6 +93,7 @@ HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AlphaAgent
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SplashtopRemoteService
+HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*
 HKLM\System\CurrentControlSet\Services\A1Agent
 HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx
 HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk
@@ -110,6 +113,7 @@ HKLM\SYSTEM\CurrentControlSet\Services\Netbird
 HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
+HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*
 HKLM\SYSTEM\CurrentControlSet\Services\TiService
 HKLM\SYSTEM\CurrentControlSet\Services\TiService\ImagePath
 HKLM\SYSTEM\CurrentControlSet\Services\TiService\Start

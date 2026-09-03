@@ -11,6 +11,7 @@ Breeze agent backup component
 Breeze agent watchdog process
 Breeze RMM agent
 Breeze user-context helper process
+Connect App Setup
 ControlR.Agent
 ControlR.Agent.Installer
 ControlR.DesktopClient
@@ -70,6 +71,7 @@ Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B
 Gorelo RMM
 HelpWire Operator
 HopToDesk remote desktop application (verified via VirusTotal)
+Host Process
 HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista)
 HTTP push helper used by the Vector Asset Management Client to upload inventory to the Vector Discovery Server / IIS endpoint
 iDrive Classic client executable
@@ -112,6 +114,7 @@ Ninite Pro Classic
 NVDA screen reader executable
 NVDA service executable for secure screens
 Official HeartbeatRM installer (verified via VirusTotal)
+OpsBridge Endpoint Service
 Parsec
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.
 PuTTY plink.exe (PuTTY 0.62) bundled inside the Freshservice Discovery Probe MSI for SSH-based scanning of Linux/Unix hosts (legitimate redistributable, but executes from the Freshservice install dir)
@@ -126,6 +129,8 @@ Reported HeartbeatRM updater executable (unverified - from threat intelligence r
 Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.
 Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe
 Screan capture
+SetMe Client
+SetMe Unattended Client
 ShellHub agent binary (Go). Maintains the persistent reverse connection to the ShellHub gateway and brokers inbound SSH sessions.
 SNMP-based network discovery task binary
 SNMP-based network inventory task binary

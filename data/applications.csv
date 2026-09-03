@@ -6,7 +6,7 @@ Acronis Cyber Protect (Remotix),acronis cyber protect (remotix),acronis_cyber_pr
 Action1,action1,action1,Action1,Name,RMM,Yes,https://www.action1.com/,Windows
 action1_agent,action1_agent,action1,Action1,PEMetadata.OriginalFileName,RMM,Yes,https://www.action1.com/,Windows
 Addigy,addigy,addigy,Addigy,Name,RMM,,https://addigy.com/,
-Adobe Connect,adobe connect,adobe_connect,Adobe Connect,Name,RAT,,https://www.adobe.com/products/adobeconnect.html,
+Adobe Connect,adobe connect,adobe_connect,Adobe Connect,Name,RAT,false,https://www.adobe.com/products/adobeconnect.html,Windows | macOS
 AeroAdmin,aeroadmin,aeroadmin,AeroAdmin,Name,RMM,,http://aeroadmin.com/,
 AgentInstaller.dll,agentinstaller.dll,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 AliWangWang-remote-control,aliwangwang-remote-control,aliwangwang-remote-control,AliWangWang-remote-control,Name,RMM,,https://wangwang.taobao.com/,
@@ -50,11 +50,13 @@ BreezeRMM,breezermm,breezermm,BreezeRMM,Name,RMM,true,https://breezermm.com/,Win
 CentraStage (Now Datto),centrastage (now datto),centrastage_(now_datto),CentraStage (Now Datto),Name,RMM,,https://rmm.datto.com/help,
 Centurion,centurion,centurion,Centurion,Name,RMM,,,
 Chicken (of the VNC),chicken (of the vnc),chicken_(of_the_vnc),Chicken (of the VNC),Name,RAT,,https://github.com/flit/cotvnc,
-Chrome Remote Desktop,chrome remote desktop,chrome_remote_desktop,Chrome Remote Desktop,Name,RAT,,https://remotedesktop.google.com/,Windows
+Chrome Remote Desktop,chrome remote desktop,chrome_remote_desktop,Chrome Remote Desktop,Name,RAT,true,https://remotedesktop.google.com/,Windows | macOS | Linux
 Chrome SSH Extension,chrome ssh extension,chrome_ssh_extension,Chrome SSH Extension,Name,RAT,,https://chromewebstore.google.com/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd,
 CloudFlare Tunnel,cloudflare tunnel,cloudflare_tunnel,CloudFlare Tunnel,Name,RAT,,https://cloudflare.com/products/tunnel/,
 CloudWksInstall,cloudwksinstall,faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
 Comodo RMM,comodo rmm,comodo_rmm,Comodo RMM,Name,RMM,,https://one.comodo.com/,Windows
+Connect App Setup,connect app setup,adobe_connect,Adobe Connect,PEMetadata.Description,RAT,false,https://www.adobe.com/products/adobeconnect.html,Windows | macOS
+ConnectAppSetup,connectappsetup,adobe_connect,Adobe Connect,PEMetadata.OriginalFileName,RAT,false,https://www.adobe.com/products/adobeconnect.html,Windows | macOS
 ConnectWise,connectwise,connectwise,ConnectWise,Name,RMM,,https://www.screenconnect.com/,
 Connectwise Automate (LabTech),connectwise automate (labtech),connectwise_automate_(labtech),Connectwise Automate (LabTech),Name,RMM,,https://www.connectwise.com/platform/automate,
 ConnectWise Control,connectwise control,connectwise_control,ConnectWise Control,Name,RMM,,https://www.screenconnect.com/,
@@ -213,6 +215,7 @@ HelpWire,helpwire,helpwire,HelpWire,Name,RMM,true,https://www.helpwire.app/,Wind
 HelpWire Operator,helpwire operator,helpwire,HelpWire,PEMetadata.Description,RMM,true,https://www.helpwire.app/,Windows | macOS | Linux
 HopToDesk,hoptodesk,hoptodesk,HopToDesk,Name,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
 HopToDesk remote desktop application (verified via VirusTotal),hoptodesk remote desktop application (verified via virustotal),hoptodesk,HopToDesk,PEMetadata.Description,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
+Host Process,host process,chrome_remote_desktop,Chrome Remote Desktop,PEMetadata.Description,RAT,true,https://remotedesktop.google.com/,Windows | macOS | Linux
 HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista),http download helper used by the vector asset management client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on windows vista),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 HTTP push helper used by the Vector Asset Management Client to upload inventory to the Vector Discovery Server / IIS endpoint,http push helper used by the vector asset management client to upload inventory to the vector discovery server / iis endpoint,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 I'm InTouch,i'm intouch,i'm_intouch,I'm InTouch,Name,RMM,,https://locator.01com.com/,
@@ -363,6 +366,10 @@ NVDA service executable for secure screens,nvda service executable for secure sc
 OCS inventory,ocs inventory,ocs_inventory,OCS inventory,Name,RMM,,https://ocsinventory-ng.org/,
 Official HeartbeatRM installer (verified via VirusTotal),official heartbeatrm installer (verified via virustotal),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 Onionshare,onionshare,onionshare,Onionshare,Name,RAT,,https://onionshare.org/,
+OpsBridge Agent,opsbridge agent,opsbridge_agent,OpsBridge Agent,Name,RMM,,https://opsbridge.digital/,Windows
+OpsBridge Endpoint Management Suite,opsbridge endpoint management suite,opsbridge_agent,OpsBridge Agent,PEMetadata.Product,RMM,,https://opsbridge.digital/,Windows
+OpsBridge Endpoint Service,opsbridge endpoint service,opsbridge_agent,OpsBridge Agent,PEMetadata.Description,RMM,,https://opsbridge.digital/,Windows
+OpsBridgeAgent,opsbridgeagent,opsbridge_agent,OpsBridge Agent,PEMetadata.OriginalFileName,RMM,,https://opsbridge.digital/,Windows
 OptiTune,optitune,optitune,OptiTune,Name,RMM,,https://www.bravurasoftware.com/optitune/,
 Pandora RC (eHorus),pandora rc (ehorus),pandora_rc_(ehorus),Pandora RC (eHorus),Name,RMM,,https://pandorafms.com/en/remote-control/,
 Panorama9,panorama9,panorama9,Panorama9,Name,RMM,,https://panorama9.com/,
@@ -424,6 +431,7 @@ RemotePulse,remotepulse,remotepulse,RemotePulse,Name,RMM,,https://www.remotepuls
 RemotePulse agent installer component,remotepulse agent installer component,remotepulse,RemotePulse,PEMetadata.Description,RMM,,https://www.remotepulse.io/,Windows | Linux | MacOS
 RemoteUtilities,remoteutilities,remoteutilities,RemoteUtilities,Name,RMM,,https://www.remoteutilities.com/,
 RemoteView,remoteview,remoteview,RemoteView,Name,RMM,,https://content.rview.com/,
+remoting_host,remoting_host,chrome_remote_desktop,Chrome Remote Desktop,PEMetadata.OriginalFileName,RAT,true,https://remotedesktop.google.com/,Windows | macOS | Linux
 RemSupp,remsupp,remsupp,RemSupp,Name,RMM,unknown,https://api.remsupp.com,Windows
 RemSupp - Remote desktop software,remsupp - remote desktop software,remsupp,RemSupp,PEMetadata.Description,RMM,unknown,https://api.remsupp.com,Windows
 Reported HeartbeatRM executable (unverified - from threat intelligence report),reported heartbeatrm executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
@@ -450,6 +458,10 @@ SecureCRT,securecrt,securecrt,SecureCRT,Name,RAT,,https://www.vandyke.com/produc
 Seetrol,seetrol,seetrol,Seetrol,Name,RMM,,https://www.seetrol.co.kr/,
 Senso.cloud,senso.cloud,senso.cloud,Senso.cloud,Name,RMM,,https://senso.cloud/,
 ServerEye,servereye,servereye,ServerEye,Name,RMM,,https://www.servereye.de/,
+SetMe,setme,setme_pro,SetMe PRO,PEMetadata.Product,RMM,false,https://www.setme.net/,Windows | macOS
+SetMe Client,setme client,setme_pro,SetMe PRO,PEMetadata.Description,RMM,false,https://www.setme.net/,Windows | macOS
+SetMe PRO,setme pro,setme_pro,SetMe PRO,Name,RMM,false,https://www.setme.net/,Windows | macOS
+SetMe Unattended Client,setme unattended client,setme_pro,SetMe PRO,PEMetadata.Description,RMM,false,https://www.setme.net/,Windows | macOS
 ShellHub,shellhub,shellhub,ShellHub,Name,RAT,Yes (open-source + free hosted tier + paid subscription),https://shellhub.io/,Linux | MacOS
 ShellHub agent binary (Go). Maintains the persistent reverse connection to the ShellHub gateway and brokers inbound SSH sessions.,shellhub agent binary (go). maintains the persistent reverse connection to the shellhub gateway and brokers inbound ssh sessions.,shellhub,ShellHub,PEMetadata.Description,RAT,Yes (open-source + free hosted tier + paid subscription),https://shellhub.io/,Linux | MacOS
 shellhub-agent,shellhub-agent,shellhub,ShellHub,PEMetadata.OriginalFileName,RAT,Yes (open-source + free hosted tier + paid subscription),https://shellhub.io/,Linux | MacOS

@@ -165,7 +165,6 @@
 *.server-eye.de
 *.server.absolute.com
 *.set.me
-*.setme.net
 *.shellhub.io
 *.showmypc.com
 *.signalserver.xyz
@@ -485,6 +484,7 @@ objects.githubusercontent.com
 ocsinventory-ng.org
 one.comodo.com
 online.level.io
+opsbridge.digital
 packagesstore.blob.core.windows.net
 panorama9.com
 parsec.app
@@ -563,7 +563,6 @@ server.absolute.com
 servicedesk.itarian.com
 services.glpi-network.com
 set.me
-setme.net
 shellhub.io
 showmypc.com
 signal.hoptodesk.com

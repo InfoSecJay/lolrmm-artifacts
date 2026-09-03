@@ -88,10 +88,14 @@ mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Te
 netbird,NetBird,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user,"Registry key set to 0 to hide the attacker-created local administrator account ""user"" from the Windows logon screen (May 2025 Trellix-reported CFO spear-phishing campaign)."
 netbird,NetBird,HKLM\SYSTEM\CurrentControlSet\Services\Netbird,Netbird Windows service registration (created by NetBird MSI installer; configured by the campaign for delayed automatic start at boot).
 nezha,Nezha,HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent,Windows service registry key for Nezha Agent (default name; may be renamed by abuse cases)
+opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OpsBridgeAgent,"Agent uninstall metadata, including the randomized persisted executable path."
+opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent,Task Scheduler cache entry for the OpsBridge Agent persistence task.
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
 remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
 remsupp,RemSupp,HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb,Per-user uninstall key (vendor-assigned GUID)
+setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*,Per-session temporary SetMe client service.
+setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*,Safe-mode registration for the per-session SetMe client service.
 simplehelp,SimpleHelp,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SimpleSetup,Uninstall key written by the SimpleHelp SimpleSetup installer; URLUpdateInfo points to https://www.simple-help.com/media/static/SimpleSetup/.
 splashtop,Splashtop,KLM\SOFTWARE\WOW6432Node\Splashtop Inc.\*,Splashtop Inc. registry key
 splashtop,Splashtop,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater,Splashtop Software Updater uninstall key

@@ -13,7 +13,8 @@ action1,Action1,a1-backend-packages.s3.amazonaws.com,443,N/A
 addigy,Addigy,prod.addigy.com,,Known remote domains
 addigy,Addigy,grtmprod.addigy.com,,Known remote domains
 addigy,Addigy,agents.addigy.com,,Known remote domains
-adobe_connect,Adobe Connect,*.adobeconnect.com,,Known remote domains
+adobe_connect,Adobe Connect,*.adobeconnect.com,443,Adobe Connect service domains.
+adobe_connect,Adobe Connect,*.adobeconnect.com,3478,Adobe Connect service domains.
 aeroadmin,AeroAdmin,auth*.aeroadmin.com,,Known remote domains
 aeroadmin,AeroAdmin,aeroadmin.com,,Known remote domains
 aliwangwang-remote-control,AliWangWang-remote-control,wangwang.taobao.com,,Known remote domains
@@ -90,13 +91,20 @@ centrastage_(now_datto),CentraStage (Now Datto),*.rmm.datto.com,,Known remote do
 centrastage_(now_datto),CentraStage (Now Datto),cc.centrastage.net,,Known remote domains
 centrastage_(now_datto),CentraStage (Now Datto),*.cc.centrastage.net,,Known remote domains
 centurion,Centurion,centuriontech.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop.google.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,remotedesktop-pa.googleapis.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop-pa.googleapis.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,remotedesktop.google.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,chromoting-client.talkgadget.google.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,chromoting-host.talkgadget.google.com,,Known remote domains
-chrome_remote_desktop,Chrome Remote Desktop,chromoting-oauth.talkgadget.google.com,,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop.google.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop.google.com,3478,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,remotedesktop-pa.googleapis.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,remotedesktop-pa.googleapis.com,3478,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop-pa.googleapis.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop-pa.googleapis.com,3478,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,remotedesktop.google.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,remotedesktop.google.com,3478,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,chromoting-client.talkgadget.google.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,chromoting-client.talkgadget.google.com,3478,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,chromoting-host.talkgadget.google.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,chromoting-host.talkgadget.google.com,3478,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,chromoting-oauth.talkgadget.google.com,443,Known remote domains
+chrome_remote_desktop,Chrome Remote Desktop,chromoting-oauth.talkgadget.google.com,3478,Known remote domains
 cloudflare_tunnel,CloudFlare Tunnel,,,Known remote domains
 comodo_rmm,Comodo RMM,*.itsm-us1.comodo.com,,Known remote domains
 comodo_rmm,Comodo RMM,mdmsupport.comodo.com,,Known remote domains
@@ -192,10 +200,6 @@ fastviewer,FastViewer,fastviewer.com,,Known remote domains
 fixme,FixMe.it,*.fixme.it,,Known remote domains
 fixme,FixMe.it,*.techinline.net,,Known remote domains
 fixme,FixMe.it,fixme.it,,Known remote domains
-fixme,FixMe.it,set.me,,Known remote domains
-fixme,FixMe.it,*.set.me,,Known remote domains
-fixme,FixMe.it,setme.net,,Known remote domains
-fixme,FixMe.it,*.setme.net,,Known remote domains
 fleetdeck,FleetDeck.io,*.fleetdeck.io,443,Known remote domains
 fleetdeck,FleetDeck.io,fleetdeck.io,443,Known remote domains
 fleetdeck,FleetDeck.io,agentmqtt.fleetdeck.io,443,Known remote domains
@@ -602,6 +606,7 @@ nvda,NVDA (Non-Visual Desktop Access),nvaccess.org,443,Known remote domains
 nvda,NVDA (Non-Visual Desktop Access),*.nvaccess.org,443,Known remote domains
 ocs_inventory,OCS inventory,user_managed,,Known remote domains
 ocs_inventory,OCS inventory,ocsinventory-ng.org,,Known remote domains
+opsbridge_agent,OpsBridge Agent,opsbridge.digital,443,"OpsBridge agent enrollment, command, and telemetry service."
 optitune,OptiTune,*.optitune.us,,Known remote domains
 optitune,OptiTune,*.opti-tune.com,,Known remote domains
 pandora_rc_(ehorus),Pandora RC (eHorus),portal.ehorus.com,,Known remote domains
@@ -712,6 +717,8 @@ seetrol,Seetrol,seetrol.co.kr,,Known remote domains
 senso.cloud,Senso.cloud,*.senso.cloud,,Known remote domains
 senso.cloud,Senso.cloud,senso.cloud,,Known remote domains
 servereye,ServerEye,*.server-eye.de,,Known remote domains
+setme_pro,SetMe PRO,set.me,443,Vendor-documented SetMe HTTPS and secure WebSocket services.
+setme_pro,SetMe PRO,*.set.me,443,Vendor-documented SetMe HTTPS and secure WebSocket services.
 shellhub,ShellHub,shellhub.io,443,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
 shellhub,ShellHub,shellhub.io,80,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.
 shellhub,ShellHub,cloud.shellhub.io,443,Hosted ShellHub control plane. Self-hosted Docker deployments may use an operator-controlled domain instead.

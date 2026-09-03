@@ -9,6 +9,7 @@ AutoUpdate.exe
 Bluetrait MSP Agent.exe
 bma.exe
 CloudWksInstall.exe
+ConnectAppSetup.exe
 ControlR.Agent.dll
 ControlR.Agent.Installer.dll
 ControlR.DesktopClient.dll
@@ -70,6 +71,7 @@ netbird_installer.exe
 nezha-agent.exe
 NiniteOne.exe
 NotificationHelper.exe
+OpsBridgeAgent.exe
 pitunnel
 plink.exe
 Radmin.exe
@@ -78,6 +80,7 @@ remcmdstub.exe
 RemoteDesktopManager
 Remotely_Agent.exe
 Remotely_Desktop.exe
+remoting_host.exe
 RemSupp.exe
 RodexAgent.exe
 RServer3.exe

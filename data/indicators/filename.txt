@@ -96,6 +96,7 @@ ComodoRemoteControl.exe
 Connect.Backdrop.cloud*.exe
 Connect.exe
 ConnectAppSetup*.exe
+ConnectAppSetup.exe
 ConnectDetector.exe
 ConnectShellSetup*.exe
 connectwise*.exe
@@ -112,7 +113,7 @@ crossloopservice.exe
 csexec.exe
 ctes.exe
 cteshostsvc.exe
-ctespersitence.exe
+ctespersistence.exe
 ctiserv.exe
 DameWare Mini Remote Control*.exe
 DameWare Remote Support.exe
@@ -164,8 +165,8 @@ einstaller.exe
 era.exe
 ERAAgent.exe
 eratool.exe
+ericomconnectconfigurationtool.exe
 EricomConnectRemoteHost*.exe
-ericomconnnectconfigurationtool.exe
 ExtraPuTTY-0.30-2016-01-28-installer.exe
 ezhelp*.exe
 ezhelpclient.exe
@@ -475,6 +476,7 @@ nvda_*.exe
 nvda_service.exe
 nxd.exe
 nxplayer.exe
+nxservice*.exe
 ocsinventory.exe
 ocsservice.exe
 onionshare*.exe
@@ -482,6 +484,7 @@ Online Backup.exe
 oolocker.exe
 OOSysAgent.exe
 oosyspectr.exe
+OpsBridgeAgent.exe
 OrayRemoteService.exe
 OrayRemoteShell.exe
 OTPowerShell.exe
@@ -547,6 +550,7 @@ RDCMan.exe
 RDConsole.exe
 RDesktop.exe
 rdp.exe
+rdp2tcp.exe
 RDPCheck.exe
 RDPConf.exe
 RDPWInst.exe
@@ -565,7 +569,6 @@ Remote Desktop.exe
 Remote Workforce Client.exe
 remote-it-installer.exe
 remote.it.exe
-remote_host.exe
 remoteconsole.exe
 RemoteDesktopManager.exe
 remoteit.exe
@@ -631,6 +634,7 @@ SensoService.exe
 servereye*.exe
 serverproxyservice.exe
 ServiceProxyLocalSys.exe
+SetMe_Client.exe
 Setup.exe
 shellhub-agent
 showmypc*.exe
@@ -690,7 +694,6 @@ TaniumClient.exe
 TaniumCX.exe
 TaniumExecWrapper.exe
 TaniumFileInfo.exe
-tdp2tcp.exe
 TeamTaskManager.exe
 TeamViewer.exe
 teamviewer_desktop.exe
@@ -710,6 +713,7 @@ TiExpertCore.exe
 TiExpertStandalone.exe
 tigervnc*.exe
 TightVNCViewerPortable*.exe
+tinUnattendedModule.exe
 TiService.exe
 TiUpdateService.exe
 tmagentsvc.exe

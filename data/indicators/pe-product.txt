@@ -1,9 +1,11 @@
+Adobe Connect
 Alpemix
 AnyDesk
 Aspia
 baramundi Management Suite
 Bluetrait
 Breeze
+Chrome Remote Desktop
 Controlio
 ControlR.Agent
 ControlR.Agent.Installer
@@ -14,10 +16,12 @@ Komari Agent
 LMIGuardianSvc
 Mouse Without Borders
 Ninite
+OpsBridge Endpoint Management Suite
 Parsec
 Radmin Server
 Radmin Viewer
 RemSupp
+SetMe
 TeamViewer
 Teleport
 Teleport Connect

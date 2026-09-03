@@ -1,4 +1,6 @@
 slug,name,type,value
+adobe_connect,Adobe Connect,ObservedInstallerSHA256,70e9cebbf2294d7805f6cda3ad8274aa20164005c8162b748fba6d1265c98c82
+adobe_connect,Adobe Connect,ObservedSetupSHA256,42a4974d93ae8593e0d5b59b8555aaa1e3dff60f48a41ff4d4dee20a6d211c29
 anydesk,AnyDesk,User-Agent,AnyDesk/*
 anydesk,AnyDesk,NamedPipe,adprinterpipe
 breezermm,BreezeRMM,ObservedSHA256,52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8
@@ -95,6 +97,13 @@ nezha,Nezha,IP,45.207.220.12
 nezha,Nezha,Other,"Environment variables: NZ_SERVER, NZ_CLIENT_SECRET"
 nezha,Nezha,Other,"Process command-line indicators: client_secret, nezhahq"
 nezha,Nezha,Other,AV signature: Kaspersky not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen
+opsbridge_agent,OpsBridge Agent,ScheduledTaskName,\OpsBridge Agent
+opsbridge_agent,OpsBridge Agent,Mutex,Global\OpsBridgeAgentSingleton
+opsbridge_agent,OpsBridge Agent,ObservedWorkerPattern,C:\Program Files\OpsBridge\*.exe --worker C:\ProgramData\OpsBridge\task_*.json
+opsbridge_agent,OpsBridge Agent,MSIProductCode,{1C453AC7-7551-48B1-B9CA-0D0FAE88575F}
+opsbridge_agent,OpsBridge Agent,MSIUpgradeCode,{75C245E5-96D2-41D4-B398-8E329847088C}
+opsbridge_agent,OpsBridge Agent,ObservedSHA256,6f5c207de0e60fb54e34f439b21c8c317539c8c0262f76ad1c19cff0ecb76914
+opsbridge_agent,OpsBridge Agent,ObservedInstallerSHA256,2a0e94343f24039319e01636d1b30a368f43b598cff6d555fd14fa0f38236fb0
 pitunnel,PiTunnel,URL,https://pitunnel.com/get/<TOKEN>
 pitunnel,PiTunnel,Other,Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)
 pitunnel,PiTunnel,Other,Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist
@@ -114,6 +123,9 @@ remsupp,RemSupp,SHA256,994f537e69f555a6aca89db837f260aa31352d6c6bfe435d3ecafff0b
 remsupp,RemSupp,SHA256,38a3e51bf0fad50dc3bb08f8ce9aa4e9d3f3c7561312605c6827a81984137532
 remsupp,RemSupp,SHA256,3cad287fbc89c40a4f481aac47d0c2b012388081c9924c09fdb2d29e5455100a
 rodexrmm,Rodex RMM,Note,"r3v13wd0s.com — alternate domain referenced in earlier writeups; flagged 14/91 malicious + tagged ""dga"" on VirusTotal. Likely a previous staging / payload-host name; rodex.cc appears to be the current marketing front."
+setme_pro,SetMe PRO,ServiceNamePattern,tinClientSessionManager-*
+setme_pro,SetMe PRO,ObservedClientSHA256,442ab6918b0b715b4a3c7f9e9c4a67fd27cb12094eb43653c1b2501e7f4f61e5
+setme_pro,SetMe PRO,ObservedUnattendedModuleSHA256,02e53fbb632c8af5e53d763b53c497b9c83493ff32406633e665ac7a01baa815
 shellhub,ShellHub,URL,https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>
 shellhub,ShellHub,Other,"Install command: curl -sSf ""https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>"" | sh  (high-signal hunt pattern — curl-to-sh from cloud.shellhub.io with tenant_id parameter)"
 shellhub,ShellHub,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/shellhub/

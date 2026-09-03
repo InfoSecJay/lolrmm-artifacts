@@ -178,8 +178,12 @@
 /Library/Application Support/0x101_Cyber_Security/*
 /Library/Application Support/ControlR/*
 /Library/LaunchDaemons/remotely-agent.plist
+/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
+/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
 /opt/dataplicity/*
 /opt/dataplicity/tuxtunnel/*
+/opt/google/chrome-remote-desktop/chrome-remote-desktop
+/opt/google/chrome-remote-desktop/chrome-remote-desktop-host
 /opt/komari/*
 /opt/netbird/*
 /opt/nezha/*
@@ -372,6 +376,8 @@ C:\Program Files (x86)\ScreenConnect Client (Random)\ScreenConnect.ClientService
 C:\Program Files (x86)\SmartFTP Client\en-US\
 C:\Program Files (x86)\Splashtop\*
 c:\Program Files (x86)\Sysprogs\SmarTTY\*
+C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Client\SetMe_Client.exe
+C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Module\*\tinUnattendedModule.exe
 C:\Program Files (x86)\TiFLUX\*
 C:\Program Files (x86)\TiFLUX\dependencies\*
 C:\Program Files (x86)\TiFLUX\dependencies\7zip\*
@@ -438,6 +444,7 @@ C:\Program Files\Netbird\netbird-ui.exe
 C:\Program Files\Netbird\netbird.exe
 C:\Program Files\nezha\*
 C:\Program Files\NVDA\nvda.exe
+C:\Program Files\OpsBridge\OpsBridgeAgent.exe
 C:\Program Files\Parsec\*
 C:\Program Files\RdClient\*
 C:\Program Files\RealVNC\VNC Server\*
@@ -472,6 +479,7 @@ C:\ProgramData\IDrive\*
 C:\ProgramData\JWrapper-Remote Access\*
 C:\ProgramData\Kaseya\
 C:\ProgramData\Netbird\*
+C:\ProgramData\OpsBridge\*
 C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\Teramind Agent\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\*
@@ -512,6 +520,7 @@ C:\Windows\<random>.exe
 C:\Windows\Action1\*
 C:\Windows\dwrcs\*
 C:\Windows\System32\mstsc.exe
+C:\Windows\System32\Tasks\OpsBridge Agent
 C:\Windows\SysWOW64\rserver30\FamItrf2
 C:\Windows\SysWOW64\rserver30\FamItrfc
 C:\Windows\SysWOW64\rserver30\rserver3.exe
@@ -548,7 +557,7 @@ crossloopservice.exe
 csexec.exe
 ctes.exe
 cteshostsvc.exe
-ctespersitence.exe
+ctespersistence.exe
 ctiserv.exe
 DameWare Mini Remote Control*.exe
 DameWare Remote Support.exe
@@ -596,8 +605,8 @@ einstaller.exe
 era.exe
 ERAAgent.exe
 eratool.exe
+ericomconnectconfigurationtool.exe
 EricomConnectRemoteHost*.exe
-ericomconnnectconfigurationtool.exe
 ezhelp*.exe
 ezhelpclient.exe
 ezhelpclientmanager.exe
@@ -817,7 +826,7 @@ nvda.exe
 nvda_*.exe
 nvda_service.exe
 nxd.exe
-nxservice*.ese
+nxservice*.exe
 ocsinventory.exe
 ocsservice.exe
 OnionShare-win*.msi
@@ -879,6 +888,7 @@ RdClientInstaller.exe
 RDConsole.exe
 RDesktop.exe
 rdp.exe
+rdp2tcp.exe
 rdp2tcp.py
 RDPCheck.exe
 RDPConf.exe
@@ -896,7 +906,6 @@ Remote Desktop.exe
 Remote Workforce Client.exe
 remote-it-installer.exe
 remote.it.exe
-remote_host.exe
 remoteconsole.exe
 remoteit.exe
 remotepass-access.exe
@@ -1014,7 +1023,6 @@ TaniumClient.exe
 TaniumCX.exe
 TaniumExecWrapper.exe
 TaniumFileInfo.exe
-tdp2tcp.exe
 TeamTaskManager.exe
 teamviewer_desktop.exe
 teamviewer_service.exe
