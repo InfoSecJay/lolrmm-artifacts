@@ -201,9 +201,19 @@ def upsert_tool(conn: sqlite3.Connection, tool: Tool) -> None:
 
 
 def sync(conn: sqlite3.Connection, tools: list[Tool]) -> None:
+    """Mirror `tools` into the store: upsert every record, then drop slugs that
+    are no longer present so a stale local DB cannot leak removed/renamed tools
+    into exports. An empty `tools` list never wipes the store (failed fetch).
+    """
     with conn:
         for t in tools:
             upsert_tool(conn, t)
+        if tools:
+            keep = {t.slug for t in tools}
+            rows = conn.execute("SELECT slug FROM tools").fetchall()
+            for slug in (r["slug"] for r in rows if r["slug"] not in keep):
+                # child rows go with it via ON DELETE CASCADE (foreign_keys is ON).
+                conn.execute("DELETE FROM tools WHERE slug = ?", (slug,))
 
 
 def load_all(conn: sqlite3.Connection) -> list[Tool]:

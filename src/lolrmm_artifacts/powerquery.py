@@ -73,10 +73,35 @@ def url_substring(raw: str) -> str | None:
 # --- value collectors --------------------------------------------------------
 
 
+# Real PE display names are short. Some upstream PEMetadata.Description fields are
+# whole paragraphs (hashes, URLs, signer notes); those can never match a display
+# name and only bloat the query, so anything longer is treated as prose.
+MAX_ALIAS_LEN = 100
+# Characters that never appear in a display name and would need escaping inside a
+# PowerQuery string literal.
+_UNSAFE_ALIAS = re.compile(r'["`\\\r\n]')
+SHORT_ALIAS_LEN = 4  # surfaced for tuning: `contains` on 3-4 chars over-matches
+
+
 def process_values(tools: list[Tool]) -> tuple[list[str], dict]:
-    """Lower-cased application aliases, deduped across tools (applications.csv col B)."""
-    values = sorted({r.application_name_lower for r in apps_mod.collect(tools)})
-    return values, {"source": "applications.csv (application_name_lower)"}
+    """Lower-cased application aliases, deduped across tools (applications.csv col B),
+    minus prose-length or unquotable values. Dropped values are reported truncated."""
+    values: list[str] = []
+    dropped: list[str] = []
+    short: list[str] = []
+    for alias in sorted({r.application_name_lower for r in apps_mod.collect(tools)}):
+        if len(alias) > MAX_ALIAS_LEN or _UNSAFE_ALIAS.search(alias):
+            dropped.append(alias if len(alias) <= 60 else alias[:57] + "...")
+            continue
+        values.append(alias)
+        if len(alias) <= SHORT_ALIAS_LEN:
+            short.append(alias)
+    meta = {
+        "source": "applications.csv (application_name_lower)",
+        "short_aliases": short,
+        "dropped": dropped,
+    }
+    return values, meta
 
 
 def url_values(tools: list[Tool]) -> tuple[list[str], dict]:

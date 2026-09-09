@@ -62,6 +62,8 @@ Everything lives under [data/](data/) and is overwritten by the daily refresh:
 
 Both aggregate with `| group` (count, estimated hosts/users, sites) so they are hunting/baseline queries, not per-event alerts. The lists are rebuilt from the corpus on every `lolrmm refresh`, so the daily action keeps them current with LOLRMM. The `modified` date only changes when the query text changes.
 
+Process aliases longer than 100 characters, or containing quotes/backslashes, are dropped: upstream occasionally puts a whole paragraph in a PE description field, and that can never match a display name. Aliases of four characters or fewer are listed under `generated.short_aliases` because `contains` over-matches on them.
+
 URL entries are normalised so PowerQuery `contains` can actually match them: `*.example.com` becomes the suffix `.example.com`; regex and mid-string wildcards (`relay-[a-f0-9]{8}.net.anydesk.com:443`, `agents*-cloud.acronis.com`) are reduced to their literal tail; schemes and ports are stripped; anything that is not a hostname is dropped. The `generated:` block in each file records the indicator count plus every entry that was rewritten or dropped, so the diff is auditable.
 
 ## Completeness check

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from lolrmm_artifacts import export, store
 
 
@@ -19,6 +17,24 @@ def test_sqlite_roundtrip(tmp_path, fixture_tools):
     disk_rows = conn.execute("SELECT COUNT(*) AS c FROM art_disk").fetchone()["c"]
     expected_disk = sum(len(t.Artifacts.Disk) for t in fixture_tools)
     assert disk_rows == expected_disk
+    conn.close()
+
+
+def test_sync_prunes_tools_removed_upstream(tmp_path, fixture_tools):
+    # A local DB outlives upstream renames; sync must mirror the parsed set so
+    # dead slugs cannot leak into DB-backed exports (seen: microsoft_rdp -> microsoft_tsc).
+    conn = store.connect(tmp_path / "lolrmm.db")
+    store.sync(conn, fixture_tools)
+    keep = fixture_tools[:-1]
+    gone = fixture_tools[-1].slug
+    store.sync(conn, keep)
+    assert {t.slug for t in store.load_all(conn)} == {t.slug for t in keep}
+    orphans = conn.execute("SELECT COUNT(*) AS c FROM art_network WHERE slug = ?", (gone,)).fetchone()["c"]
+    assert orphans == 0
+
+    # An empty parse result must not wipe the store.
+    store.sync(conn, [])
+    assert len(store.load_all(conn)) == len(keep)
     conn.close()
 
 

@@ -4,6 +4,7 @@ import pytest
 import yaml
 
 from lolrmm_artifacts import powerquery
+from lolrmm_artifacts.models import Tool
 
 
 # --- url_substring: the substring-matcher FP-trap fixture ---------------------
@@ -46,6 +47,28 @@ def test_process_values_are_lowercase_deduped_sorted(fixture_tools):
     assert "anydesk" in values
     assert "teamviewer" in values
     assert meta["source"].startswith("applications.csv")
+
+
+def test_process_values_drop_prose_and_unquotable_aliases():
+    prose = "agent binary (signed by vendor; pulls msis from the update host) " * 3  # > 100 chars
+    tool = Tool(
+        Name="Fake RMM",
+        Category="RMM",
+        Description="fixture",
+        Details={
+            "PEMetadata": [
+                {"Product": "FakeRMM", "Description": prose},
+                {"Description": 'signed by "vendor inc"'},
+                {"OriginalFileName": "frmm.exe"},
+            ]
+        },
+    )
+    values, meta = powerquery.process_values([tool])
+    assert values == ["fake rmm", "fakermm", "frmm"]
+    assert meta["short_aliases"] == ["frmm"]
+    assert len(meta["dropped"]) == 2
+    assert meta["dropped"][0].endswith("...") and len(meta["dropped"][0]) == 60
+    assert 'signed by "vendor inc"' in meta["dropped"]
 
 
 def test_url_values_have_no_pattern_tokens(fixture_tools):
