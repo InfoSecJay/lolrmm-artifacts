@@ -41,6 +41,7 @@ Everything lives under [data/](data/) and is overwritten by the daily refresh:
 | [csv/tools.csv](data/csv/tools.csv), [csv/artifacts_*.csv](data/csv/), [csv/detections.csv](data/csv/detections.csv) | One CSV per artifact section. |
 | [indicators/*.txt](data/indicators/) | Flat, deduped, sorted indicator lists per type — one per line, ready for a SIEM/EDR watchlist. |
 | [sigma_urls.txt](data/sigma_urls.txt) | Every Sigma rule URL referenced by any tool, deduped. |
+| [powerquery/*.yml](data/powerquery/) | Two SentinelOne PowerQuery hunting rules (process + URL) with the indicator lists baked in. See below. |
 | [stats.json](data/stats.json) | Corpus counts by category / OS / capability / artifact. |
 | [completeness_report.md](data/completeness_report.md), `.csv`, `.json` | Did we fetch everything upstream has? Which tools have sparse data? |
 
@@ -49,6 +50,19 @@ Everything lives under [data/](data/) and is overwritten by the daily refresh:
 `filename`, `pe-original-name`, `pe-description`, `pe-product`, `installation-path`, `disk-path`, `disk-path-expanded`, `registry`, `domain`, `port`, `event-id`, `service-name`, `named-pipe`, `user-agent`, `vulnerability`.
 
 `disk-path-expanded` rewrites Windows env vars (`%APPDATA%`, `%PROGRAMDATA%`, `%LOCALAPPDATA%`, `%PROGRAMFILES%`, `%TEMP%`, ...) into wildcarded canonical forms like `C:\Users\*\AppData\Roaming\...` so SIEM queries don't need to replicate the expansion.
+
+## SentinelOne PowerQuery rules
+
+[data/powerquery/](data/powerquery/) holds two ready-to-paste hunting queries, one file each, in a concise Sigma-shaped YAML (title, id, description, ATT&CK tags, logsource, `query`, falsepositives, level):
+
+| File | Matches | Indicator source |
+| --- | --- | --- |
+| [lolrmm_process.yml](data/powerquery/lolrmm_process.yml) | `src.process.displayName contains (...)` on `Process Creation` events | every alias in `applications.csv` (`application_name_lower`) |
+| [lolrmm_url.yml](data/powerquery/lolrmm_url.yml) | `url.address contains (...)` on `url` events | every Network domain in `indicators/domain.txt` |
+
+Both aggregate with `| group` (count, estimated hosts/users, sites) so they are hunting/baseline queries, not per-event alerts. The lists are rebuilt from the corpus on every `lolrmm refresh`, so the daily action keeps them current with LOLRMM. The `modified` date only changes when the query text changes.
+
+URL entries are normalised so PowerQuery `contains` can actually match them: `*.example.com` becomes the suffix `.example.com`; regex and mid-string wildcards (`relay-[a-f0-9]{8}.net.anydesk.com:443`, `agents*-cloud.acronis.com`) are reduced to their literal tail; schemes and ports are stripped; anything that is not a hostname is dropped. The `generated:` block in each file records the indicator count plus every entry that was rewritten or dropped, so the diff is auditable.
 
 ## Completeness check
 
@@ -82,6 +96,7 @@ lolrmm sync                                           # fetch + build SQLite
 lolrmm export --format json --out data/lolrmm.json
 lolrmm export --format csv  --out data/csv
 lolrmm applications --out data/applications.csv       # EDR alias table
+lolrmm powerquery --out data/powerquery               # SentinelOne hunting rules
 lolrmm indicators --type filename --out ind/filenames.txt
 lolrmm sigma-urls --out data/sigma_urls.txt
 lolrmm completeness --out data/

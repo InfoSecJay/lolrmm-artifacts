@@ -18,6 +18,7 @@ from . import filters as filters_mod
 from . import indicators as indicators_mod
 from . import metrics as metrics_mod
 from . import parse as parse_mod
+from . import powerquery as powerquery_mod
 from . import store as store_mod
 
 DEFAULT_DB = Path("data/lolrmm.db")
@@ -207,6 +208,22 @@ def applications(
 
 
 @app.command()
+def powerquery(
+    out_dir: Annotated[Path, typer.Option("--out", "-o", help="Directory for the two rule files.")] = Path("data/powerquery"),
+    db: Annotated[Path, typer.Option("--db")] = DEFAULT_DB,
+) -> None:
+    """Write the two SentinelOne PowerQuery hunting rules (process + url).
+
+    Each is a Sigma-shaped YAML with the query under `query:`; the indicator
+    lists are rebuilt from the corpus every run so they track LOLRMM.
+    """
+    tools = _load_tools_or_exit(db)
+    paths = powerquery_mod.write_rules(tools, out_dir)
+    for key, path in paths.items():
+        console.print(f"  {key:>8}: [cyan]{path}[/cyan]")
+
+
+@app.command()
 def completeness(
     out_dir: Annotated[Path, typer.Option("--out", "-o", help="Directory for report files.")] = Path("data"),
     db: Annotated[Path, typer.Option("--db")] = DEFAULT_DB,
@@ -256,6 +273,7 @@ def refresh(
       - csv/*.csv
       - indicators/*.txt
       - applications.csv
+      - powerquery/*.yml (SentinelOne hunting rules)
       - sigma_urls.txt
       - completeness_report.{md,csv,json}
       - stats.json
@@ -310,7 +328,11 @@ def refresh(
     apps_mod.write_csv(apps_rows, out_dir / "applications.csv")
     console.print(f"Wrote [bold]{len(apps_rows)}[/bold] application aliases -> [cyan]applications.csv[/cyan]")
 
-    # 7. Stats snapshot.
+    # 7. SentinelOne PowerQuery hunting rules - built from the same alias/domain sets.
+    pq_paths = powerquery_mod.write_rules(tools, out_dir / "powerquery")
+    console.print(f"Wrote {len(pq_paths)} PowerQuery rules -> [cyan]{out_dir / 'powerquery'}[/cyan]")
+
+    # 8. Stats snapshot.
     stats_obj = metrics_mod.compute(tools)
     stats_payload = {
         "tool_count": stats_obj.tool_count,
@@ -326,7 +348,7 @@ def refresh(
         json.dumps(stats_payload, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
-    # 8. Completeness — written last so it reflects everything above.
+    # 9. Completeness — written last so it reflects everything above.
     report = completeness_mod.compute(
         tools=tools,
         fetched_filenames=[f.name for f in files],
