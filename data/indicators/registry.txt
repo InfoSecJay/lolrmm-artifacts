@@ -1,6 +1,7 @@
 HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\Software\Microsoft\Terminal Server Client\Default
 HKCU\Software\Microsoft\Terminal Server Client\Servers
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService
 HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\SOFTWARE\Policies\Teleport\TeleportConnect
 HKCU\SOFTWARE\TiFlux
@@ -66,6 +67,7 @@ HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splasht
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational
 HKLM\SOFTWARE\Policies\Teleport\TeleportConnect
 HKLM\SOFTWARE\RdClient
+HKLM\SOFTWARE\RMMmax\AgentService
 HKLM\SOFTWARE\TeamViewer\*
 HKLM\SOFTWARE\TeamViewer\ConnectionHistory
 HKLM\SOFTWARE\TiFLUX\*
@@ -111,6 +113,7 @@ HKLM\System\CurrentControlSet\Services\komari-agent
 HKLM\System\CurrentControlSet\Services\LunixarRMM
 HKLM\SYSTEM\CurrentControlSet\Services\Netbird
 HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
+HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
 HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*

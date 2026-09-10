@@ -122,6 +122,11 @@ remsupp,RemSupp,ProcessLineage,"RemSupp.exe self-check via cmd.exe /c tasklist /
 remsupp,RemSupp,SHA256,994f537e69f555a6aca89db837f260aa31352d6c6bfe435d3ecafff0b8c683ae
 remsupp,RemSupp,SHA256,38a3e51bf0fad50dc3bb08f8ce9aa4e9d3f3c7561312605c6827a81984137532
 remsupp,RemSupp,SHA256,3cad287fbc89c40a4f481aac47d0c2b012388081c9924c09fdb2d29e5455100a
+rmmmax,RMMmax,WindowsInstallerSHA256 (RMMmaxAgentSetup.exe),5185359f18b9b0dba1b86cd1cfca6fbbe523611ce248742223ed9f6a446186c3
+rmmmax,RMMmax,WindowsAgentSHA256 (RMMmaxAgentService.exe),9361b9b740474203f1a27be1f24cb91be7235fe2f358b791fc82fad46a1c7946
+rmmmax,RMMmax,MacOSInstallerSHA256 (RMMmax-Agent-Installer.dmg),982ddbb150b3c4b64e4f741ea522b2e4528380e64ed9a274e0d0b235168553c4
+rmmmax,RMMmax,LinuxPackageSHA256 (rmmmax_linux_agent.tgz),9b29df09e57aad8cb7bdb96686c494814386e01a0469b69a85eec4e5b1b79ae2
+rmmmax,RMMmax,WindowsTrayMutex,RMMMaxAgentService_TrayInstance
 rodexrmm,Rodex RMM,Note,"r3v13wd0s.com — alternate domain referenced in earlier writeups; flagged 14/91 malicious + tagged ""dga"" on VirusTotal. Likely a previous staging / payload-host name; rodex.cc appears to be the current marketing front."
 setme_pro,SetMe PRO,ServiceNamePattern,tinClientSessionManager-*
 setme_pro,SetMe PRO,ObservedClientSHA256,442ab6918b0b715b4a3c7f9e9c4a67fd27cb12094eb43653c1b2501e7f4f61e5

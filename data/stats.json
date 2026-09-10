@@ -1,13 +1,13 @@
 {
-  "tool_count": 322,
+  "tool_count": 323,
   "by_category": {
-    "RMM": 230,
+    "RMM": 231,
     "RAT": 92
   },
   "by_os": {
-    "Windows": 109,
-    "MacOS": 52,
-    "Linux": 43,
+    "Windows": 110,
+    "MacOS": 53,
+    "Linux": 44,
     "Android": 19,
     "iOS": 13,
     "ChromeOS": 3,
@@ -22,7 +22,7 @@
     "HelpDesk and ticketing": 1,
     "Mobile app": 2,
     "Network discovery": 2,
-    "Patch management": 3,
+    "Patch management": 4,
     "Remote monitoring and management": 6,
     "Reporting and analytics": 3,
     "Virtual meetings and webinars": 1,
@@ -101,16 +101,16 @@
     "Remote Monitoring": 3,
     "PowerShell Execution": 1,
     "Remote access": 2,
-    "Remote monitoring": 1,
-    "Script execution": 1,
-    "Software deployment": 2,
+    "Remote monitoring": 2,
+    "Script execution": 2,
+    "Software deployment": 3,
     "Monitoring and alerting": 1,
     "Persistent remote desktop access": 1,
     "One-time attended remote support": 1,
     "Remote access to applications and files": 1,
     "Clipboard Synchronization": 2,
     "Connection Management": 3,
-    "Command execution": 1,
+    "Command execution": 2,
     "Activity monitoring": 1,
     "Browser-based remote terminal (shell access through Dataplicity web console)": 1,
     "Wormhole HTTP tunneling (expose a local HTTP service publicly via `*.wormhole.dataplicity.com`)": 1,
@@ -377,14 +377,14 @@
     "Self-hosted on-premise OR vendor-hosted cloud (vizor.cloud) — agent endpoint is operator-configured, not a fixed vendor cloud": 1
   },
   "artifact_counts": {
-    "disk": 587,
-    "eventlog": 103,
-    "registry": 148,
-    "network_pairs": 885,
-    "other": 164,
-    "total": 1887
+    "disk": 603,
+    "eventlog": 104,
+    "registry": 151,
+    "network_pairs": 886,
+    "other": 169,
+    "total": 1913
   },
   "detection_count": 549,
   "tools_without_artifacts_count": 67,
-  "tools_without_detections_count": 51
+  "tools_without_detections_count": 52
 }

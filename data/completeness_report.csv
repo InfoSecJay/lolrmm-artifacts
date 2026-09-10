@@ -240,6 +240,7 @@ remoteutilities,RemoteUtilities,RMM,True,True,False,False,False,False,False,True
 remoteview,RemoteView,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 remsupp,RemSupp,RMM,True,True,True,True,True,False,True,True,True,True,eventlog
 res_automation_manager,RES Automation Manager,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+rmmmax,RMMmax,RMM,True,True,True,True,True,True,True,True,True,False,detections
 rocketremotedesktop,Rocket Remote Desktop,RMM,True,True,False,True,False,False,False,False,False,True,capabilities | disk | eventlog | registry | network | other
 rodexrmm,Rodex RMM,RAT,True,True,True,True,True,False,False,True,True,True,eventlog | registry
 royal_apps,Royal Apps,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other

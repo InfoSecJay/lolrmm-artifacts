@@ -94,6 +94,9 @@ radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Paramet
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
 remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
 remsupp,RemSupp,HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb,Per-user uninstall key (vendor-assigned GUID)
+rmmmax,RMMmax,HKLM\SOFTWARE\RMMmax\AgentService,Logical configuration key used by the Windows installer and agent; stores registration state and DPAPI-protected tokens in the process registry view.
+rmmmax,RMMmax,HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService,Windows service registered by the agent through sc.exe create with obj= LocalSystem and start= auto.
+rmmmax,RMMmax,HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService,Windows tray UI startup value; invokes the agent executable with /tray when the service is installed.
 setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*,Per-session temporary SetMe client service.
 setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*,Safe-mode registration for the per-session SetMe client service.
 simplehelp,SimpleHelp,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SimpleSetup,Uninstall key written by the SimpleHelp SimpleSetup installer; URLUpdateInfo points to https://www.simple-help.com/media/static/SimpleSetup/.

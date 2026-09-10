@@ -1,6 +1,7 @@
 %APPDATA%\GoToMeeting\G2M.exe
 %APPDATA%\JWrapper-SimpleSetup\*
 %APPDATA%\loclx\*
+%ProgramData%\rmmmax\AgentService\RMMmaxAgentService.exe
 %ProgramData%\Tiflux\*
 %USERPROFILE%\\AppData\\Local\\Temp\\SupremoRemoteDesktop\\
 *%\mRemoteNG
@@ -158,6 +159,7 @@
 /Applications/GLPI-Agent/etc/*
 /Applications/HelpWire Operator.app
 /Applications/NetBird UI.app
+/Applications/RMMmax Agent.app/Contents/MacOS/RMMmax Agent
 /Applications/Teleport Connect.app/*
 /Applications/Teramind Agent.app
 /Applications/TiAgent.app
@@ -206,6 +208,7 @@
 /usr/local/bin/Remotely/ConnectionInfo.json
 /usr/local/bin/Remotely/Desktop/Remotely_Desktop
 /usr/local/bin/Remotely/Remotely_Agent
+/usr/local/bin/rmmmax-agent
 /usr/local/bin/shellhub-agent
 /usr/local/bin/tmate
 /usr/local/bin/tsh
@@ -218,6 +221,7 @@
 /var/0x101_Cyber_Security/*
 /var/lib/glpi-agent/*
 /var/lib/shellhub-agent/*
+/var/rmmmax/agentservice/rmmmax_agent.py
 9380CC75B872221A7425D7503565B67580407F60
 aa_v*.exe
 aadg.exe
@@ -921,6 +925,7 @@ requires sign up
 rfusclient.exe
 RHost.exe
 RMM.Agent.exe
+RMMmaxAgentSetup.exe
 RmmService.exe
 rmserverconsolemediator.exe
 RocketRemoteDesktop_Setup.exe

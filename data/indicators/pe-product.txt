@@ -21,6 +21,7 @@ Parsec
 Radmin Server
 Radmin Viewer
 RemSupp
+RMMmax Agent Service
 SetMe
 TeamViewer
 Teleport

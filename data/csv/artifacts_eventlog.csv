@@ -84,6 +84,7 @@ nezha,Nezha,4688,Microsoft-Windows-Security-Auditing,Security.evtx,,,nezha-agent
 nvda,NVDA (Non-Visual Desktop Access),4688,,,,,,Process creation event for nvda.exe
 parsec,Parsec,7045,Service Control Manager,System.evtx,parsecvirtualds,"""\SystemRoot\System32\drivers\parsecvirtualds.sys""",,Parsec service installation event
 remotely,Remotely,7045,Service Control Manager,System,Remotely_Service,C:\Program Files\Remotely\Remotely_Agent.exe,,Windows service installation event for Remotely unattended agent persistence.
+rmmmax,RMMmax,,RMMmaxAgentService,Application.evtx,,,,Windows agent creates the RMMmaxAgentService event source in the Application log.
 splashtop,Splashtop,7045,Service Control Manager,System.evtx,Splashtop Software Updater Service,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Software Updater\\SSUService.exe""",,Service installation event as result of Splashtop Software Updater Service installation.
 splashtop,Splashtop,7045,Service Control Manager,System.evtx,Splashtop® Remote Service,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Remote\\Server\\SRService.exe""",,Service installation event as result of Splashtop Remote Service installation.
 splashtop,Splashtop,7045,Service Control Manager,System.evtx,SplashtopRemoteService,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Remote\\Server\\SRService.exe""",,Service installation event as result of Splashtop Remote Service installation.

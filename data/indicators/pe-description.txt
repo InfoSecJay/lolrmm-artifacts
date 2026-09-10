@@ -126,6 +126,8 @@ RemotePulse agent installer component
 RemSupp - Remote desktop software
 Reported HeartbeatRM executable (unverified - from threat intelligence report)
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report)
+RMMmax Agent Service
+RMMmax Agent Service Setup
 Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.
 Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe
 Screan capture

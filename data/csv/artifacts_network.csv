@@ -682,6 +682,7 @@ remsupp,RemSupp,api.remsupp.com,443,RemSupp API endpoint observed during analysi
 remsupp,RemSupp,download.remsupp.com,443,RemSupp installer / update download endpoint
 res_automation_manager,RES Automation Manager,user_managed,,Known remote domains
 res_automation_manager,RES Automation Manager,ivanti.com,,Known remote domains
+rmmmax,RMMmax,api.rmmmax.com,443,Default HTTPS API host embedded in all three supplied agents; enrollment can configure a different API base URL.
 rodexrmm,Rodex RMM,rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
 rodexrmm,Rodex RMM,www.rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
 rodexrmm,Rodex RMM,<operator-controlled VPS hostname or IP>,443,"Per-operator relay — the operator's own VPS hosts the Node.js dashboard / Go relay / MongoDB stack. Network destination is operator-controlled, not vendor-centralised, so per-campaign infrastructure varies. The agent connects back to whatever relay URL was baked in at install time over WebSocket (HTTPS:443 by default)."

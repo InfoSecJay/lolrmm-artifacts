@@ -1,26 +1,26 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **322**
-- Fetched + parsed tools: **322**
+- Expected files (upstream listing): **323**
+- Fetched + parsed tools: **323**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 322 tools total:
+Of 323 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 317 | 98% |
-| installation_paths | 291 | 90% |
-| capabilities | 70 | 22% |
-| supported_os | 112 | 35% |
-| disk | 75 | 23% |
-| eventlog | 46 | 14% |
-| registry | 39 | 12% |
-| network | 246 | 76% |
-| other | 28 | 9% |
+| pe_metadata | 318 | 98% |
+| installation_paths | 292 | 90% |
+| capabilities | 71 | 22% |
+| supported_os | 113 | 35% |
+| disk | 76 | 24% |
+| eventlog | 47 | 15% |
+| registry | 40 | 12% |
+| network | 247 | 76% |
+| other | 29 | 9% |
 | detections | 271 | 84% |
 
 ## Tools with no artifacts at all (67)
@@ -93,7 +93,7 @@ Of 322 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (51)
+## Tools with no detections (52)
 
 - `beyondtrust` (RMM)
 - `breezermm` (RMM)
@@ -135,6 +135,7 @@ Of 322 tools total:
 - `remmina` (RAT)
 - `remote_desktop_manager_(devolutions)` (RAT)
 - `remotepulse` (RMM)
+- `rmmmax` (RMM)
 - `setme_pro` (RMM)
 - `smartcode_web_vnc` (RAT)
 - `smartftp` (RAT)

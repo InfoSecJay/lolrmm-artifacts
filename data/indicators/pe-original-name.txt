@@ -82,6 +82,7 @@ Remotely_Agent.exe
 Remotely_Desktop.exe
 remoting_host.exe
 RemSupp.exe
+RMMmaxAgentService.exe
 RodexAgent.exe
 RServer3.exe
 shellhub-agent

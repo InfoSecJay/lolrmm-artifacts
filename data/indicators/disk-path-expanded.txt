@@ -11,6 +11,7 @@
 /Applications/GLPI-Agent/etc/conf.d/*
 /Applications/HelpWire Operator.app
 /Applications/NetBird UI.app
+/Applications/RMMmax Agent.app/Contents/MacOS/RMMmax Agent
 /Applications/Teleport Connect.app/Contents/MacOS/Teleport Connect
 /Applications/Teleport Connect.app/Contents/MacOS/tsh.app/Contents/MacOS/tsh
 /Applications/Teramind Agent.app
@@ -30,6 +31,7 @@
 /etc/systemd/system/nezha-agent.service
 /etc/systemd/system/pitunnel.service
 /etc/systemd/system/remotely-agent.service
+/etc/systemd/system/rmmmax-agent.service
 /etc/systemd/system/shellhub-agent.service
 /home/*/.cache/Teleport Connect/teleport/teleport
 /home/*/.config/Teleport Connect/app_config.json
@@ -41,9 +43,11 @@
 /lib/systemd/system/helpwire-unattended.service
 /Library/Application Support/ControlR/*/ControlR.Agent
 /Library/LaunchAgents/app.controlr.desktop*.plist
+/Library/LaunchAgents/com.rmmmax.agentui.plist
 /Library/LaunchAgents/org.chromium.chromoting.plist
 /Library/LaunchDaemons/app.controlr.agent*.plist
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
+/Library/LaunchDaemons/com.rmmmax.agentservice.plist
 /Library/LaunchDaemons/org.chromium.chromoting.broker.plist
 /Library/LaunchDaemons/remotely-agent.plist
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
@@ -75,6 +79,7 @@
 /usr/local/bin/Remotely/ConnectionInfo.json
 /usr/local/bin/Remotely/Desktop/Remotely_Desktop
 /usr/local/bin/Remotely/Remotely_Agent
+/usr/local/bin/rmmmax-agent
 /usr/local/bin/shellhub-agent
 /usr/local/bin/tsh
 /usr/local/komari/agent
@@ -93,6 +98,10 @@
 /var/log/netlock-rmm-agent-comm.log
 /var/log/remotely/Agent_Install.log
 /var/log/system.log
+/var/rmmmax/agentservice/activity.log
+/var/rmmmax/agentservice/config.json
+/var/rmmmax/agentservice/rmmmax_agent.py
+/var/rmmmax/agentservice/state.json
 <impersonated-org>Agent.exe
 bbl.exe
 C:\bin\cis.vbs
@@ -421,6 +430,8 @@ C:\ProgramData\OpsBridge\install.log
 C:\ProgramData\OpsBridge\task_*.json
 C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal
+C:\ProgramData\RMMmax\AgentService\activity.log
+C:\ProgramData\rmmmax\AgentService\RMMmaxAgentService.exe
 C:\ProgramData\ScreenConnect Client*\user.config
 C:\ProgramData\SetMe Client
 C:\ProgramData\Splashtop\Temp\log\FTCLog.txt
@@ -534,6 +545,7 @@ C:\Windows\Temp\DFServiceInit.log
 C:\Windows\Temp\FleetDeck\*
 C:\Windows\Temp\ImmyBot\*
 C:\Windows\Temp\KASetup.log
+C:\Windows\Temp\rmmmax_*.ps1
 C:\Windows\Temp\setme\Sentry\*
 C:\Windows\Temp\VeyonServer.log
 C:\Windows\Temp\VeyonService.log

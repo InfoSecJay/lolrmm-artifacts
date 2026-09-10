@@ -587,6 +587,8 @@ RemSupp_Setup_x64.exe
 rfusclient.exe
 RHost.exe
 RMM.Agent.exe
+RMMmaxAgentService.exe
+RMMmaxAgentSetup.exe
 RmmService.exe
 rmserverconsolemediator.exe
 RocketRemoteDesktop_Setup.exe
