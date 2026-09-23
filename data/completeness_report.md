@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **323**
-- Fetched + parsed tools: **323**
+- Expected files (upstream listing): **326**
+- Fetched + parsed tools: **326**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 323 tools total:
+Of 326 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 318 | 98% |
-| installation_paths | 292 | 90% |
-| capabilities | 71 | 22% |
-| supported_os | 113 | 35% |
-| disk | 76 | 24% |
-| eventlog | 47 | 15% |
-| registry | 40 | 12% |
-| network | 247 | 76% |
-| other | 29 | 9% |
-| detections | 271 | 84% |
+| pe_metadata | 321 | 98% |
+| installation_paths | 295 | 90% |
+| capabilities | 74 | 23% |
+| supported_os | 116 | 36% |
+| disk | 79 | 24% |
+| eventlog | 47 | 14% |
+| registry | 43 | 13% |
+| network | 250 | 77% |
+| other | 32 | 10% |
+| detections | 271 | 83% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,7 +93,7 @@ Of 323 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (52)
+## Tools with no detections (55)
 
 - `beyondtrust` (RMM)
 - `breezermm` (RMM)
@@ -117,6 +117,7 @@ Of 323 tools total:
 - `immybot` (RMM)
 - `jollysfastvnc` (RAT)
 - `koofr` (RAT)
+- `lavawall` (RMM)
 - `lunixar` (RMM)
 - `manageengine_rmm_central` (RMM)
 - `manageengine_servicedesk_plus` (RMM)
@@ -135,6 +136,7 @@ Of 323 tools total:
 - `remmina` (RAT)
 - `remote_desktop_manager_(devolutions)` (RAT)
 - `remotepulse` (RMM)
+- `rg_system` (RMM)
 - `rmmmax` (RMM)
 - `setme_pro` (RMM)
 - `smartcode_web_vnc` (RAT)
@@ -147,4 +149,5 @@ Of 323 tools total:
 - `webex_(remote_access)` (RMM)
 - `x2go` (RAT)
 - `xrdp` (RAT)
+- `zecurit` (RMM)
 

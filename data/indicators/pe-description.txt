@@ -90,6 +90,7 @@ InvGate Assets RD helper located under \files\ within the install directory.
 InvGate Assets remote-desktop / remote-support helper invoked from the agent (size ~1.32 MB on v5.001.071 builds).
 Komari agent binary
 Komari server binary
+LavawallWin
 LMIGuardianSvc
 LocalXpose command-line client (Linux/macOS).
 LocalXpose command-line client (Windows). Single static Go binary; invoked as `loclx tunnel <type> --port <PORT>` after `loclx account login`.
@@ -126,6 +127,7 @@ RemotePulse agent installer component
 RemSupp - Remote desktop software
 Reported HeartbeatRM executable (unverified - from threat intelligence report)
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report)
+RG Supervision Agent
 RMMmax Agent Service
 RMMmax Agent Service Setup
 Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.

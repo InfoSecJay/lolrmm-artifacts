@@ -61,6 +61,7 @@ InvGateRD.exe
 IPRangeCalculator.exe
 komari-agent.exe
 komari.exe
+LavawallWin.dll
 loclx
 loclx.exe
 ModulesUpgradeMgr.exe
@@ -82,6 +83,7 @@ Remotely_Agent.exe
 Remotely_Desktop.exe
 remoting_host.exe
 RemSupp.exe
+rgsupvd
 RMMmaxAgentService.exe
 RodexAgent.exe
 RServer3.exe

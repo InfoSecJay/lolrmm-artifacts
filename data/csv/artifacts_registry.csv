@@ -81,6 +81,9 @@ invgate,InvGate,HKLM\SOFTWARE\Classes\Installer\Products\08BB5F1461464FA46BB7AF6
 invgate,InvGate,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4},"32-bit-on-64 view of the InvGate Assets Client uninstall key (the agent is a 32-bit MSI, so the canonical Uninstall entry is mirrored under WOW6432Node)"
 komari,Komari,HKLM\System\CurrentControlSet\Services\komari-agent,Windows service registry key for Komari Agent (default name when installed via the vendor PowerShell installer)
 komari,Komari,HKLM\System\CurrentControlSet\Services\Windows Update Service,"Komari Agent persistence under a renamed NSSM-wrapped service. Observed in-the-wild abuse pattern (Huntress, April 2026) where the actor used NSSM to install komari-agent.exe as a SYSTEM service named ""Windows Update Service"" to blend with legitimate Windows servicing."
+lavawall,Lavawall,HKLM\SOFTWARE\WOW6432Node\LavaWall\Agent,"Agent registration and configuration key, including DeviceId, CompanyGuid, and IsRegistered values, confirmed in the inspected code."
+lavawall,Lavawall,HKLM\SYSTEM\CurrentControlSet\Services\Lavawall Support Agent,Automatic-start Windows management service. Its description is Patch and configuration monitoring and management.
+lavawall,Lavawall,HKLM\SYSTEM\CurrentControlSet\Services\LavaWallRemoteAgent,Windows remote-support service identified in both inspected agent components.
 lunixar,Lunixar,HKLM\System\CurrentControlSet\Services\LunixarRMM,Windows service registration
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*},ManageEngine ServiceDesk Plus uninstall registry keys (verified via VirusTotal sandbox)
 mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Terminal Server Client\Default,Most-recently-used (MRU) list of remote hosts connected to via mstsc.exe.
@@ -94,6 +97,9 @@ radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Paramet
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
 remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
 remsupp,RemSupp,HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb,Per-user uninstall key (vendor-assigned GUID)
+rg_system,RG System (RG Supervision),HKLM\SOFTWARE\RG Systemes\RG Supervision,"Native-view Windows agent configuration hierarchy, corroborated by registry activity and embedded strings."
+rg_system,RG System (RG Supervision),HKLM\SOFTWARE\WOW6432Node\RG Systemes\RG Supervision,"32-bit Windows agent configuration hierarchy, also documented for the expected-host-name network setting."
+rg_system,RG System (RG Supervision),HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision,Windows service configuration key inferred from the RG-Supervision service name in vendor deployment scripts.
 rmmmax,RMMmax,HKLM\SOFTWARE\RMMmax\AgentService,Logical configuration key used by the Windows installer and agent; stores registration state and DPAPI-protected tokens in the process registry view.
 rmmmax,RMMmax,HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService,Windows service registered by the agent through sc.exe create with obj= LocalSystem and start= auto.
 rmmmax,RMMmax,HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService,Windows tray UI startup value; invokes the agent executable with /tray when the service is installed.
@@ -150,3 +156,4 @@ vizor,VIZOR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1
 vizor,VIZOR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A40A237D-C090-4C05-8580-9DBECFE3602B},"Uninstall key for Vector Asset Management Client v5.7 — Publisher ""Vector Networks"", DisplayVersion 5.7.0.1390 (per advanceduninstaller.com listing)"
 vizor,VIZOR,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C},Uninstall key for Vector Asset Management Client v6.0 (32-bit-on-64 view)
 vizor,VIZOR,HKLM\SOFTWARE\Metaquest,Vector Networks legacy product-namespace registry root — Metaquest is the original Vector Networks parent brand (vector-networks.com still aliases mail.metaquest.com / metaquest.com per the VirusTotal historical SSL certificate alt-names). Observed touched by the VIZOR Setup.exe in VirusTotal Jujubox sandbox (SHA-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e).
+zecurit,Zecurit,HKLM\SOFTWARE\Zecurit\Agent,"Windows agent configuration key. AgentDetails holds values such as agent_version, polling_interval, and agentDownloadURL. The product key is present in the extracted code and writes were observed in execution reports."

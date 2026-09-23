@@ -1,20 +1,20 @@
 {
-  "expected_count": 323,
-  "fetched_count": 323,
+  "expected_count": 326,
+  "fetched_count": 326,
   "missing_files": [],
   "extra_files": [],
   "parse_errors": [],
   "section_counts": {
-    "pe_metadata": 318,
-    "installation_paths": 292,
-    "network": 247,
+    "pe_metadata": 321,
+    "installation_paths": 295,
+    "network": 250,
     "detections": 271,
-    "supported_os": 113,
-    "disk": 76,
+    "supported_os": 116,
+    "disk": 79,
     "eventlog": 47,
-    "capabilities": 71,
-    "registry": 40,
-    "other": 29
+    "capabilities": 74,
+    "registry": 43,
+    "other": 32
   },
   "tools_with_no_artifacts": [
     "beyondtrust",
@@ -108,6 +108,7 @@
     "immybot",
     "jollysfastvnc",
     "koofr",
+    "lavawall",
     "lunixar",
     "manageengine_rmm_central",
     "manageengine_servicedesk_plus",
@@ -126,6 +127,7 @@
     "remmina",
     "remote_desktop_manager_(devolutions)",
     "remotepulse",
+    "rg_system",
     "rmmmax",
     "setme_pro",
     "smartcode_web_vnc",
@@ -137,7 +139,8 @@
     "vnc_connect",
     "webex_(remote_access)",
     "x2go",
-    "xrdp"
+    "xrdp",
+    "zecurit"
   ],
   "hard_ok": true
 }

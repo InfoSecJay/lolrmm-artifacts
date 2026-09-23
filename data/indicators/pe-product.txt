@@ -13,6 +13,7 @@ ControlR.DesktopClient
 Gorelo RMM
 Komari
 Komari Agent
+Lavawall Windows Agent
 LMIGuardianSvc
 Mouse Without Borders
 Ninite
@@ -21,6 +22,7 @@ Parsec
 Radmin Server
 Radmin Viewer
 RemSupp
+RG Supervision
 RMMmax Agent Service
 SetMe
 TeamViewer

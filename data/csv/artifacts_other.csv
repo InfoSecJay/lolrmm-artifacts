@@ -62,6 +62,14 @@ invgate,InvGate,MD5,e515948c8ede1192926e87df1740f876
 komari,Komari,URL,https://raw.githubusercontent.com/komari-monitor/komari-agent/refs/heads/main/install.ps1
 komari,Komari,SHA256,039e659ade3aa8ee7758c11fdb8fbfffd2491920046d638413cea2042f6d584c
 komari,Komari,IP,45.153.34.132
+lavawall,Lavawall,ServiceName,Lavawall Support Agent
+lavawall,Lavawall,ServiceName,LavaWallRemoteAgent
+lavawall,Lavawall,ScheduledTask,LavawallCheckAndStartServiceTask
+lavawall,Lavawall,ScheduledTaskBehavior,"Runs LavawallCheckAndStartService.ps1 as SYSTEM every five minutes to start the management service if stopped, as defined in the agent."
+lavawall,Lavawall,Mutex,Global\LavawallAgentCompanyCredentialsV2
+lavawall,Lavawall,ObservedAgentSHA256,1e395934cbef22846dd0dd2daf868429b0a5b86313f9721543b03a66cfc25e77
+lavawall,Lavawall,ObservedRemoteAgentSHA256,d494ac927c3a98f67a035a418c5e89e9a97397a837fb8cc9bedbb44d25ad3670
+lavawall,Lavawall,ObservedUIHelperSHA256,3c56c3cca03efdcd2044a48d588ab27f68fa1b7e577874a490ff4ada241cec3e
 localxpose,LocalXpose,Other,"Install via npm (`npm install -g loclx`), choco, snap, or direct binary download from localxpose.io"
 localxpose,LocalXpose,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/localxpose/
 lunixar,Lunixar,Installer control,Current Lunixar agent installers use platform-controlled names and cannot be renamed from the Lunixar console; historical renamed MSI filenames should be treated as abuse artifacts rather than expected current installer names.
@@ -122,6 +130,11 @@ remsupp,RemSupp,ProcessLineage,"RemSupp.exe self-check via cmd.exe /c tasklist /
 remsupp,RemSupp,SHA256,994f537e69f555a6aca89db837f260aa31352d6c6bfe435d3ecafff0b8c683ae
 remsupp,RemSupp,SHA256,38a3e51bf0fad50dc3bb08f8ce9aa4e9d3f3c7561312605c6827a81984137532
 remsupp,RemSupp,SHA256,3cad287fbc89c40a4f481aac47d0c2b012388081c9924c09fdb2d29e5455100a
+rg_system,RG System (RG Supervision),ServiceName,RG-Supervision
+rg_system,RG System (RG Supervision),DocumentedLinuxServiceName,rgsupv
+rg_system,RG System (RG Supervision),InspectedWindowsAgentSHA256,076b561bddf88c1482feefb2cbbc11a82b7829528988fd246a6e4a245eb48e73
+rg_system,RG System (RG Supervision),InspectedWindowsAgentVersion,2.4.132
+rg_system,RG System (RG Supervision),DeploymentKitFormat,Embedded JSON deployment configuration delimited by ---BEGIN_BLOB--- and ---END_BLOB---; values are deployment-specific and excluded.
 rmmmax,RMMmax,WindowsInstallerSHA256 (RMMmaxAgentSetup.exe),5185359f18b9b0dba1b86cd1cfca6fbbe523611ce248742223ed9f6a446186c3
 rmmmax,RMMmax,WindowsAgentSHA256 (RMMmaxAgentService.exe),9361b9b740474203f1a27be1f24cb91be7235fe2f358b791fc82fad46a1c7946
 rmmmax,RMMmax,MacOSInstallerSHA256 (RMMmax-Agent-Installer.dmg),982ddbb150b3c4b64e4f741ea522b2e4528380e64ed9a274e0d0b235168553c4
@@ -168,3 +181,21 @@ vizor,VIZOR,Other,"Remote client install: uses ADMIN$ share + local administrato
 vizor,VIZOR,Other,"Code-signing publisher: ""Vector Networks"" / ""Vector Networks Limited"" (per Windows file database listings for clboot32.exe — original product name ""LANutil32 Suite"")"
 vizor,VIZOR,Other,"VirusTotal — VIZOR 2.5.2 MSI_Merge bundle Setup.exe SHA-256: 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e (1/67 detection, low-prevalence Vector Networks-authored binary, registry footprint includes HKLM\SOFTWARE\Metaquest)"
 vizor,VIZOR,Other,"VirusTotal — Vector Networks LANutil32 / Vector Asset Management CLBOOTnn.EXE SHA-256: 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893 (1/72 detection; sandbox observed spawning C:\winchk32.exe, C:\cldist32.exe, C:\lusmbios16.exe and C:\luhboot.bat)"
+zecurit,Zecurit,ObservedServiceName,Zecurit Agent
+zecurit,Zecurit,LinuxSystemdUnit,zecurit_agent.service
+zecurit,Zecurit,MacOSLaunchDaemonLabel,com.zecurit.service
+zecurit,Zecurit,MacOSPackageIdentifier,com.zecurit_agent.app
+zecurit,Zecurit,MacOSAccessBundleIdentifier,com.Zecurit.ZecuritAccess
+zecurit,Zecurit,MacOSInstallerSigner,Developer ID Installer: ZECURIT TECHNOLOGIES PRIVATE LIMITED (DM7CUTNR64)
+zecurit,Zecurit,MacOSTeamIdentifier,DM7CUTNR64
+zecurit,Zecurit,InspectedLinuxPackageSHA256,aab8cb5e93ae707a9b041cf98091b8c76331aa2efe0d6e7bf08396ccabcb2d2e
+zecurit,Zecurit,InspectedMacOSPackageSHA256,d148fadb4578a2c0a656aef74a6da6a6e6c6ce997fca1990c39823c3660b798a
+zecurit,Zecurit,PlatformArtifactScope,"macOS/Linux indicators come from separate packages, not from the reported Windows phishing payload. Linux paths describe the default installation; although the shell wrapper accepts --path, the inspected native helper and systemd unit use /usr/local/zecurit_agent. The catalog's current Sigma generator emits Windows rules only; these OS-tagged artifacts also support platform-specific hunting."
+zecurit,Zecurit,ReportedInstallerSHA256,71e6f9bdc3f3c5564ade4e6d3c9afe582a6de8e4da9127d0dfd9f1674d15f40a
+zecurit,Zecurit,ReportedDeliveryContext,"@patialavii reported a Zoom-themed phishing page delivering zoominstaller.exe. The following defanged URLs describe that report, not legitimate Zecurit infrastructure or general product indicators."
+zecurit,Zecurit,ReportedPhishingURL,hxxps://zoominvite-us09web-user08b.pages[.]dev/
+zecurit,Zecurit,ReportedDownloadURL,hxxps://s3-us-east-1.onlizard[.]com/8_BZotHyp-282q_v8NEAQ/default/zoominstaller.exe
+zecurit,Zecurit,InstallerPEMetadata,The reported outer installer identifies its ProductName as Zecurit Agent and FileDescription as Zecurit Agent Setup. CompanyName and OriginalFileName are blank. These fields identify the wrapper; they are not metadata for the extracted agent executables.
+zecurit,Zecurit,ObservedAgentServiceSHA256,d76c4053f7b369fa374b3c36c2c01b9c5630558e67b2cc3938ecf99192c13d75
+zecurit,Zecurit,ObservedRemoteToolsSHA256,132931f79ef7bda1c12bf231da8da45b2533eb74bdd336724f47923077cfef1c
+zecurit,Zecurit,ObservedScreenReaderServiceSHA256,b03fde83d90e27cb974c988cb6235167b2b05c6eacc1b7e529ef6fbac8adac69

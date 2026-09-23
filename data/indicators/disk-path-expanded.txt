@@ -2,7 +2,26 @@
 %CD%\conf.json
 %CD%\installer.zip
 *\agent-installer-any.exe
+*\AppData\Local\Temp\rgsupv\cache\prepared
 *\ControlR.Agent.Installer.exe
+*\Lavawall\LavawallCheckAndStartService.ps1
+*\Lavawall\LavawallWin.exe
+*\Lavawall\remote-agent\remote-agent.exe
+*\Lavawall\remote-agent\uihelper.exe
+*\Lavawall\Storage\UserAgentData.db
+*\LavawallWin.dll
+*\LavawallWin.runtimeconfig.json
+*\RG-Supervision\RG_Supervision.exe
+*\Zecurit\Agent\Logs\agent_cmd_handler.log
+*\Zecurit\Agent\Logs\agent_service.log
+*\Zecurit\Agent\Storage\AgentSettings.json
+*\Zecurit\Agent\ZecuritAgentRegister.exe
+*\Zecurit\Agent\ZecuritAgentService.exe
+*\Zecurit\Agent\ZecuritRemoteTools.exe
+*\Zecurit\Agent\ZecuritScreenReaderService.exe
+*\Zecurit\zecurit_windows_agent.exe
+*\Zecurit\ZecuritAgentUpgrader.exe
+*\ZecuritAgentInstaller.msi
 /Applications/Chrome Remote Desktop Host Uninstaller.app
 /Applications/ControlR.*.app
 /Applications/ControlR.app
@@ -20,6 +39,7 @@
 /etc/glpi-agent/agent.cfg
 /etc/glpi-agent/conf.d/*
 /etc/init.d/dataplicity
+/etc/init.d/rgsupv
 /etc/netbird/config.json
 /etc/netbird/install.conf
 /etc/shellhub-agent/agent.env
@@ -33,6 +53,7 @@
 /etc/systemd/system/remotely-agent.service
 /etc/systemd/system/rmmmax-agent.service
 /etc/systemd/system/shellhub-agent.service
+/etc/systemd/system/zecurit_agent.service
 /home/*/.cache/Teleport Connect/teleport/teleport
 /home/*/.config/Teleport Connect/app_config.json
 /home/*/.config/Teleport Connect/app_state.json
@@ -48,12 +69,18 @@
 /Library/LaunchDaemons/app.controlr.agent*.plist
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
 /Library/LaunchDaemons/com.rmmmax.agentservice.plist
+/Library/LaunchDaemons/com.zecurit_agent.service.plist
 /Library/LaunchDaemons/org.chromium.chromoting.broker.plist
 /Library/LaunchDaemons/remotely-agent.plist
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
 /Library/PrivilegedHelperTools/org.chromium.chromoting.json
 /Library/PrivilegedHelperTools/org.chromium.chromoting.settings.json
+/Library/zecurit_agent/bin/CommandProcessor
+/Library/zecurit_agent/bin/Installer
+/Library/zecurit_agent/bin/Service
+/Library/zecurit_agent/bin/ZecuritAccess.app/Contents/MacOS/ZecuritAccess
+/Library/zecurit_agent/bin/ZecuritInventory.app/Contents/MacOS/ZecuritInventory
 /opt/dataplicity/credentials
 /opt/dataplicity/tuxtunnel/manager
 /opt/freshservice/discovery_agent/*
@@ -91,6 +118,11 @@
 /usr/local/mesh_services/meshagent/meshagent/meshagent.msh
 /usr/local/teramind/agent/bin/tmsysd
 /usr/local/teramind/agent/etc/
+/usr/local/zecurit_agent/bin/agentService
+/usr/local/zecurit_agent/bin/commandProcessor
+/usr/local/zecurit_agent/bin/installer
+/usr/local/zecurit_agent/config/server.json
+/usr/local/zecurit_agent/RemoveAgent.sh
 /usr/share/applications/teleport-connect.desktop
 /var/lib/glpi-agent/*
 /var/log/controlr/*/ControlR.Agent/LogFile*.log

@@ -376,6 +376,9 @@ laplink_everywhere,Laplink Everywhere,everywhere.laplink.com,,Known remote domai
 laplink_everywhere,Laplink Everywhere,le.laplink.com,,Known remote domains
 laplink_everywhere,Laplink Everywhere,atled.syspectr.com,,Known remote domains
 laplink_gold,Laplink Gold,user_managed,,Known remote domains
+lavawall,Lavawall,api-ca-1.lavawall.com,443,"Default Windows management API and secure WebSocket endpoint embedded in the inspected agent, using /go/ and /go/ws respectively. These are code-confirmed endpoints, not a claim of observed sandbox connections."
+lavawall,Lavawall,lavawinupdate.lavawall.com,443,"Vendor remote-support update host. The management agent retrieves version.json, which identifies the remote-agent.zip download and hash."
+lavawall,Lavawall,caremote1.lavawall.com,8443,Default remote-support server and port embedded in the signed remote-agent.exe version 2.0.0.16. Live session traffic was not tested.
 level.io,Level.io,level.io,,Known remote domains
 level.io,Level.io,*.level.io,,Known remote domains
 level,Level,level.io,443,Known remote domains
@@ -682,6 +685,9 @@ remsupp,RemSupp,api.remsupp.com,443,RemSupp API endpoint observed during analysi
 remsupp,RemSupp,download.remsupp.com,443,RemSupp installer / update download endpoint
 res_automation_manager,RES Automation Manager,user_managed,,Known remote domains
 res_automation_manager,RES Automation Manager,ivanti.com,,Known remote domains
+rg_system,RG System (RG Supervision),lisa.rg-supervision.com,,Agent host present in the inspected deployment-kit configuration and observed DNS queries; no completed connection was established by the reviewed traffic summary.
+rg_system,RG System (RG Supervision),api.rg-supervision.com,443,"HTTPS API URL embedded in the inspected agent; static reference, not an observed connection."
+rg_system,RG System (RG Supervision),dashboard.rg-supervision.com,443,"Vendor dashboard, agent download, and support endpoint documented by the vendor and embedded in the agent."
 rmmmax,RMMmax,api.rmmmax.com,443,Default HTTPS API host embedded in all three supplied agents; enrollment can configure a different API base URL.
 rodexrmm,Rodex RMM,rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
 rodexrmm,Rodex RMM,www.rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
@@ -871,6 +877,9 @@ xeox,Xeox,*.xeox.com,,Known remote domains
 xeox,Xeox,xeox.com,,Known remote domains
 zabbix_agent,Zabbix Agent,user_managed,,Known remote domains
 zabbix_agent,Zabbix Agent,zabbix.com,,Known remote domains
+zecurit,Zecurit,app.zecurit.com,443,Vendor application server observed in Windows agent command-line configuration and outbound HTTPS traffic. This host also serves the legitimate web console; a connection alone does not establish abuse.
+zecurit,Zecurit,dms.zecurit.com,443,Vendor endpoint observed in the reported Windows agent's outbound HTTPS traffic.
+zecurit,Zecurit,d1m8kha1zyjal6.cloudfront.net,443,Specific distribution used for agent updates. An observed agentDownloadURL points to /agent-directory/windows-main/zecurit_agent_3.22.exe on this host. The shared CloudFront parent domain is not a product indicator.
 zerotier,ZeroTier,zerotier.com,,Known remote domains
 zerotier,ZeroTier,*.zerotier.com,,Known remote domains
 zohoassist,Zoho Assist,*.zoho.com.au,,Known remote domains

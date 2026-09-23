@@ -67,6 +67,7 @@ HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splasht
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational
 HKLM\SOFTWARE\Policies\Teleport\TeleportConnect
 HKLM\SOFTWARE\RdClient
+HKLM\SOFTWARE\RG Systemes\RG Supervision
 HKLM\SOFTWARE\RMMmax\AgentService
 HKLM\SOFTWARE\TeamViewer\*
 HKLM\SOFTWARE\TeamViewer\ConnectionHistory
@@ -79,6 +80,7 @@ HKLM\SOFTWARE\WOW6432Node\Freshdesk\FSAgent
 HKLM\SOFTWARE\WOW6432Node\Freshworks\FreshServiceProbe
 HKLM\SOFTWARE\WOW6432Node\GLPI-Agent
 HKLM\SOFTWARE\WOW6432Node\GLPI-Agent\Installer\Version
+HKLM\SOFTWARE\WOW6432Node\LavaWall\Agent
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run\TiAgent
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SimpleSetup
@@ -88,9 +90,11 @@ HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*}
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps\action1_agent.exe
+HKLM\SOFTWARE\WOW6432Node\RG Systemes\RG Supervision
 HKLM\SOFTWARE\WOW6432Node\Splashtop Inc.\Splashtop Remote Server\ClientInfo\*
 HKLM\SOFTWARE\WOW6432Node\TiFLUX\*
 HKLM\SOFTWARE\WOW6432Node\TiFLUX\org_id
+HKLM\SOFTWARE\Zecurit\Agent
 HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AlphaAgent
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent
@@ -110,9 +114,12 @@ HKLM\System\CurrentControlSet\Services\GetscreenSV
 HKLM\SYSTEM\CurrentControlSet\Services\InvClient
 HKLM\SYSTEM\CurrentControlSet\Services\InvClient\ImagePath
 HKLM\System\CurrentControlSet\Services\komari-agent
+HKLM\SYSTEM\CurrentControlSet\Services\Lavawall Support Agent
+HKLM\SYSTEM\CurrentControlSet\Services\LavaWallRemoteAgent
 HKLM\System\CurrentControlSet\Services\LunixarRMM
 HKLM\SYSTEM\CurrentControlSet\Services\Netbird
 HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
+HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision
 HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*

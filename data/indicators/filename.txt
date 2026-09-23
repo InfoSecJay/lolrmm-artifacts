@@ -375,6 +375,7 @@ LANDeskPortalManager.exe
 laplink-everywhere-setup*.exe
 laplink.exe
 laplinkeverywhere.exe
+LavawallWin.exe
 ldinv32.exe
 ldsensors.exe
 level-remote-control-ffmpeg.exe
@@ -585,6 +586,7 @@ remoting_host.exe
 RemSupp.exe
 RemSupp_Setup_x64.exe
 rfusclient.exe
+RG_Supervision.exe
 RHost.exe
 RMM.Agent.exe
 RMMmaxAgentService.exe
@@ -805,6 +807,18 @@ ZA_Access.exe
 za_connect.exe
 zabbix_agent*.exe
 zaservice.exe
+ZecuritAgentAssetMgr.exe
+ZecuritAgentRegister.exe
+ZecuritAgentService.exe
+ZecuritAgentTray.exe
+ZecuritAgentUpgrader.exe
+ZecuritApplicationControlService.exe
+ZecuritCommandProcessor.exe
+ZecuritLiveNotifier.exe
+ZecuritRemoteTools.exe
+ZecuritScreenReaderApp.exe
+ZecuritScreenReaderAppUI.exe
+ZecuritScreenReaderService.exe
 zero-powershell.exe
 zerotier*.exe
 ZMAgent.exe

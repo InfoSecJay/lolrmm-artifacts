@@ -276,6 +276,10 @@ LabTech RMM (Now ConnectWise Automate),labtech rmm (now connectwise automate),la
 LANDesk,landesk,landesk,LANDesk,Name,RMM,,https://www.landesk.com/,
 Laplink Everywhere,laplink everywhere,laplink_everywhere,Laplink Everywhere,Name,RMM,,https://everywhere.laplink.com/,
 Laplink Gold,laplink gold,laplink_gold,Laplink Gold,Name,RMM,,https://web.laplink.com/product/laplink-gold,
+Lavawall,lavawall,lavawall,Lavawall,Name,RMM,false,https://lavawall.com/,Windows | macOS | Linux
+Lavawall Windows Agent,lavawall windows agent,lavawall,Lavawall,PEMetadata.Product,RMM,false,https://lavawall.com/,Windows | macOS | Linux
+LavawallWin,lavawallwin,lavawall,Lavawall,PEMetadata.Description,RMM,false,https://lavawall.com/,Windows | macOS | Linux
+LavawallWin.dll,lavawallwin.dll,lavawall,Lavawall,PEMetadata.OriginalFileName,RMM,false,https://lavawall.com/,Windows | macOS | Linux
 Level,level,level,Level,Name,RMM,Free,https://level.io/,Windows
 Level.io,level.io,level.io,Level.io,Name,RMM,,https://level.io/,
 Level.io,level.io,levelio,Level.io,Name,RMM,,https://level.io/,Windows
@@ -437,6 +441,10 @@ RemSupp - Remote desktop software,remsupp - remote desktop software,remsupp,RemS
 Reported HeartbeatRM executable (unverified - from threat intelligence report),reported heartbeatrm executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 Reported HeartbeatRM updater executable (unverified - from threat intelligence report),reported heartbeatrm updater executable (unverified - from threat intelligence report),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 RES Automation Manager,res automation manager,res_automation_manager,RES Automation Manager,Name,RMM,,https://www.ivanti.com/company/history/res-software,
+RG Supervision,rg supervision,rg_system,RG System (RG Supervision),PEMetadata.Product,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
+RG Supervision Agent,rg supervision agent,rg_system,RG System (RG Supervision),PEMetadata.Description,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
+RG System (RG Supervision),rg system (rg supervision),rg_system,RG System (RG Supervision),Name,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
+rgsupvd,rgsupvd,rg_system,RG System (RG Supervision),PEMetadata.OriginalFileName,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
 RMMmax,rmmmax,rmmmax,RMMmax,Name,RMM,true,https://rmmmax.com/,Windows | macOS | Linux
 RMMmax Agent Service,rmmmax agent service,rmmmax,RMMmax,PEMetadata.Product,RMM,true,https://rmmmax.com/,Windows | macOS | Linux
 RMMmax Agent Service Setup,rmmmax agent service setup,rmmmax,RMMmax,PEMetadata.Description,RMM,true,https://rmmmax.com/,Windows | macOS | Linux
@@ -592,6 +600,7 @@ XRDP,xrdp,xrdp,XRDP,Name,RAT,,https://www.xrdp.org/,
 Xshell,xshell,xshell,Xshell,Name,RAT,,https://www.xshell.com/en/xshell/,
 Yandex.Disk,yandex.disk,yandex.disk,Yandex.Disk,Name,RAT,,https://disk.yandex.com/,
 Zabbix Agent,zabbix agent,zabbix_agent,Zabbix Agent,Name,RMM,,https://www.zabbix.com/,
+Zecurit,zecurit,zecurit,Zecurit,Name,RMM,true,https://zecurit.com/,Windows | macOS | Linux
 ZeroTier,zerotier,zerotier,ZeroTier,Name,RAT,,https://www.zerotier.com/,
 ZOC,zoc,zoc,ZOC,Name,RAT,,https://www.emtec.com/zoc/index.html,
 Zoho Assist,zoho assist,zohoassist,Zoho Assist,Name,RMM,,https://www.zoho.com/assist/,Windows

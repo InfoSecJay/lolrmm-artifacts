@@ -132,6 +132,7 @@ labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),RM
 landesk,LANDesk,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 laplink_everywhere,Laplink Everywhere,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 laplink_gold,Laplink Gold,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+lavawall,Lavawall,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 level,Level,RMM,True,True,True,True,True,True,False,True,False,True,registry | other
 level.io,Level.io,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 levelio,Level.io,RMM,True,True,False,True,True,False,False,True,False,True,capabilities | eventlog | registry | other
@@ -240,6 +241,7 @@ remoteutilities,RemoteUtilities,RMM,True,True,False,False,False,False,False,True
 remoteview,RemoteView,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 remsupp,RemSupp,RMM,True,True,True,True,True,False,True,True,True,True,eventlog
 res_automation_manager,RES Automation Manager,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+rg_system,RG System (RG Supervision),RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 rmmmax,RMMmax,RMM,True,True,True,True,True,True,True,True,True,False,detections
 rocketremotedesktop,Rocket Remote Desktop,RMM,True,True,False,True,False,False,False,False,False,True,capabilities | disk | eventlog | registry | network | other
 rodexrmm,Rodex RMM,RAT,True,True,True,True,True,False,False,True,True,True,eventlog | registry
@@ -319,6 +321,7 @@ xrdp,XRDP,RAT,True,False,False,False,False,False,False,False,False,False,install
 xshell,Xshell,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 yandex.disk,Yandex.Disk,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 zabbix_agent,Zabbix Agent,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+zecurit,Zecurit,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 zerotier,ZeroTier,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 zoc,ZOC,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 zohoassist,Zoho Assist,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
