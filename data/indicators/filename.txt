@@ -26,6 +26,7 @@ AgentPackageTaskScheduler.exe
 AgentSetup-*.exe
 agentu.exe
 alitask.exe
+allocentra-agent.exe
 Alpemix.exe
 AlpemixService.exe
 AMMYY_Admin.exe
@@ -59,6 +60,7 @@ bbl.exe
 beamyourscreen-host.exe
 beamyourscreen.exe
 Beinsync*.exe
+BlackCryptAgent.dll
 Bluetrait MSP Agent.exe
 bma.exe
 bomgar-pac-*.exe
@@ -298,6 +300,8 @@ gp3.exe
 gp4.exe
 gp5.exe
 guacd.exe
+GxM.Agent.dll
+GxM.Agent.exe
 hbrm-updater-x64.exe
 hbrm-x64.exe
 helpbeam*.exe
@@ -348,6 +352,10 @@ isllight.exe
 ISLLightClient.exe
 isllightservice.exe
 issuser.exe
+ITAgentRMMSender.exe
+ITAgentRMMSenderSL.exe
+ITAgentRMMSenderUpdater.exe
+ITAgentSender.aiui
 ITarianRemoteAccessSetup.exe
 itsmagent.exe
 ItsmRsp.exe
@@ -381,6 +389,7 @@ ldsensors.exe
 level-remote-control-ffmpeg.exe
 level-windows-amd64.exe
 level.exe
+LightRmmAgentService.exe
 llrcservice.exe
 lmi_rescue.exe
 lmi_rescue_srv.exe
@@ -391,6 +400,8 @@ loclx
 loclx.exe
 logmein.exe
 logmeinsystray.exe
+LS RMM Worker.exe
+LS RMM.exe
 ltsvc.exe
 ltsvcmon.exe
 lttray.exe
@@ -420,6 +431,7 @@ mikogo-service.exe
 mikogo-starter.exe
 mikogo.exe
 mikogolauncher.exe
+MiniRmmAgent.exe
 mionet.exe
 mionetmanager.exe
 ModulesUpgradeMgr.exe
@@ -427,6 +439,7 @@ MoniticInstaller.exe
 MonitoringAgent.exe
 MouseWithoutBorders.exe
 MqMailIntegration.exe
+mremote-agent.exe
 mRemoteNG.exe
 mstsc.exe
 mwcliun.exe
@@ -449,6 +462,7 @@ neturo*.exe
 neturo.exe
 netviewer*.exe
 netviewer.exe
+nexusrmm.exe
 nezha-agent.exe
 ngrok.exe
 ngstw32.exe
@@ -485,6 +499,7 @@ Online Backup.exe
 oolocker.exe
 OOSysAgent.exe
 oosyspectr.exe
+OpenDesk-RMM-Agent.exe
 OpsBridgeAgent.exe
 OrayRemoteService.exe
 OrayRemoteShell.exe
@@ -512,6 +527,7 @@ pdq-connect*.exe
 PidUpdater.exe
 Pilixo_Installer*.exe
 pitunnel
+PixoIT-agent.exe
 plink.exe
 pocketcloud*.exe
 pocketcloudservice.exe
@@ -570,6 +586,7 @@ Remote Desktop.exe
 Remote Workforce Client.exe
 remote-it-installer.exe
 remote.it.exe
+RemoteAgentAgent.exe
 remoteconsole.exe
 RemoteDesktopManager.exe
 remoteit.exe
@@ -589,6 +606,7 @@ rfusclient.exe
 RG_Supervision.exe
 RHost.exe
 RMM.Agent.exe
+rmm.exe
 RMMmaxAgentService.exe
 RMMmaxAgentSetup.exe
 RmmService.exe
@@ -745,6 +763,7 @@ UltraViewer_Service.exe
 UltraVNC*.exe
 Uninstall RemSupp.exe
 UninstallStatusUpdater.exe
+UniRMM.exe
 update-shim.exe
 upload.exe
 UserNotificationHelper.exe

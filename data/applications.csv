@@ -8,8 +8,12 @@ action1_agent,action1_agent,action1,Action1,PEMetadata.OriginalFileName,RMM,Yes,
 Addigy,addigy,addigy,Addigy,Name,RMM,,https://addigy.com/,
 Adobe Connect,adobe connect,adobe_connect,Adobe Connect,Name,RAT,false,https://www.adobe.com/products/adobeconnect.html,Windows | macOS
 AeroAdmin,aeroadmin,aeroadmin,AeroAdmin,Name,RMM,,http://aeroadmin.com/,
+agent,agent,basic_rmm,Basic RMM Agent,PEMetadata.OriginalFileName,RMM,,,Windows
 AgentInstaller.dll,agentinstaller.dll,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 AliWangWang-remote-control,aliwangwang-remote-control,aliwangwang-remote-control,AliWangWang-remote-control,Name,RMM,,https://wangwang.taobao.com/,
+Allocentra,allocentra,allocentra,Allocentra,Name,RMM,,https://allocentra.co.za/,Windows | Linux | macOS
+Allocentra RMM Agent,allocentra rmm agent,allocentra,Allocentra,PEMetadata.Description,RMM,,https://allocentra.co.za/,Windows | Linux | macOS
+allocentra-agent,allocentra-agent,allocentra,Allocentra,PEMetadata.OriginalFileName,RMM,,https://allocentra.co.za/,Windows | Linux | macOS
 Alpemix,alpemix,alpemix,Alpemix,Name,RMM,,https://www.alpemix.com/en/Home,Windows | Linux | Android | Mac | IOS
 Ammyy Admin,ammyy admin,ammyyadmin,Ammyy Admin,Name,RMM,Yes/1 active session at a time,https://www.ammyy.com,Windows
 Any Support,any support,any_support,Any Support,Name,RMM,,https://anysupport.net/,Windows
@@ -31,6 +35,8 @@ baramundi Management Agent,baramundi management agent,baramundi,baramundi Manage
 baramundi Management Suite,baramundi management suite,baramundi,baramundi Management Suite,Name,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
 Barracuda,barracuda,barracuda,Barracuda,Name,RMM,,https://www.barracuda.com/products/msp/network-protection/rmm,
 Basecamp,basecamp,basecamp,Basecamp,Name,RAT,,https://basecamp.com/,
+Basic RMM Agent,basic rmm agent,basic_rmm,Basic RMM Agent,Name,RMM,,,Windows
+Basic RMM monitoring and management agent,basic rmm monitoring and management agent,basic_rmm,Basic RMM Agent,PEMetadata.Description,RMM,,,Windows
 BeamYourScreen,beamyourscreen,beamyourscreen,BeamYourScreen,Name,RMM,,https://web.archive.org/web/20210304100510/https://www.beamyourscreen.com/,
 BeAnyWhere,beanywhere,beanywhere,BeAnyWhere,Name,RMM,,https://www.n-able.com/products/take-control,
 BeInSync,beinsync,beinsync,BeInSync,Name,RAT,,,
@@ -38,6 +44,9 @@ BeyondTrust,beyondtrust,beyondtrust,BeyondTrust,Name,RMM,,,
 BeyondTrust (Bomgar),beyondtrust (bomgar),beyondtrust_(bomgar),BeyondTrust (Bomgar),Name,RMM,,https://www.beyondtrust.com/products/remote-support,
 Bitvise SSH Client,bitvise ssh client,bitvise_ssh_client,Bitvise SSH Client,Name,RAT,,https://bitvise.com/ssh-client,
 Bitvise SSH Server,bitvise ssh server,bitvise_ssh_server,Bitvise SSH Server,Name,RAT,,https://bitvise.com/ssh-server,
+BlackCrypt RMM Agent,blackcrypt rmm agent,blackcrypt,BlackCrypt RMM Agent,Name,RMM,Unknown,,Windows
+BlackCrypt RMM Remote Management Agent (self-identified in PE resources),blackcrypt rmm remote management agent (self-identified in pe resources),blackcrypt,BlackCrypt RMM Agent,PEMetadata.Description,RMM,Unknown,,Windows
+BlackCryptAgent.dll,blackcryptagent.dll,blackcrypt,BlackCrypt RMM Agent,PEMetadata.OriginalFileName,RMM,Unknown,,Windows
 Bluetrait,bluetrait,bluetrait,Bluetrait,Name,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
 Bluetrait MSP Agent,bluetrait msp agent,bluetrait,Bluetrait,PEMetadata.Description,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
 bma,bma,baramundi,baramundi Management Suite,PEMetadata.OriginalFileName,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
@@ -198,6 +207,8 @@ GatherPlace-desktop sharing,gatherplace-desktop sharing,gatherplace-desktop_shar
 GetScreen,getscreen,getscreen,GetScreen,Name,RMM,,https://getscreen.me/,Windows
 "Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B Ltd). Distributed as a UPX-packed PE32 (x86) GUI executable from https://getscreen.me/download/getscreen-x86.exe. Current binaries (file version 3.5.0+) are signed by POINT B LTD (Cyprus, registered HE 430957) on a GlobalSign GCC R45 EV CodeSigning chain. Older 2020-2021 era binaries were signed by OOO ""GET SKRIN SOFTVER"" on a COMODO RSA Extended Validation Code Signing CA chain (now expired).","getscreen.me agent (productname/internalname: getscreen.me, companyname: point b ltd). distributed as a upx-packed pe32 (x86) gui executable from https://getscreen.me/download/getscreen-x86.exe. current binaries (file version 3.5.0+) are signed by point b ltd (cyprus, registered he 430957) on a globalsign gcc r45 ev codesigning chain. older 2020-2021 era binaries were signed by ooo ""get skrin softver"" on a comodo rsa extended validation code signing ca chain (now expired).",getscreen,GetScreen,PEMetadata.Description,RMM,,https://getscreen.me/,Windows
 GLPI Agent,glpi agent,glpi,GLPI Agent,Name,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
+GO RMM,go rmm,go_rmm,GO RMM,Name,RMM,Unknown,,Windows
+GO RMM management console,go rmm management console,go_rmm,GO RMM,PEMetadata.Description,RMM,Unknown,,Windows
 Gorelo RMM,gorelo rmm,gorelormm,Gorelo RMM,Name,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
 Gorelo.Rmm.Setup,gorelo.rmm.setup,gorelormm,Gorelo RMM,PEMetadata.OriginalFileName,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
 GoTo Opener,goto opener,goto_opener,GoTo Opener,Name,RMM,,https://support.goto.com/meeting/help/about-the-goto-opener,
@@ -208,6 +219,9 @@ GotoHTTP,gotohttp,gotohttp,GotoHTTP,Name,RMM,,https://gotohttp.com/,
 GoToMyPC,gotomypc,gotomypc,GoToMyPC,Name,RMM,,https://get.gotomypc.com/,
 Goverlan,goverlan,goverlan,Goverlan,Name,RMM,,,Windows
 Guacamole,guacamole,guacamole,Guacamole,Name,RAT,,https://guacamole.apache.org/,
+GxM RMM Agent,gxm rmm agent,gxm,GxM RMM Agent,Name,RMM,Unknown,,Windows
+GxM RMM endpoint agent — authorized remote monitoring and support for managed clients (self-identified in assembly metadata),gxm rmm endpoint agent — authorized remote monitoring and support for managed clients (self-identified in assembly metadata),gxm,GxM RMM Agent,PEMetadata.Description,RMM,Unknown,,Windows
+GxM.Agent.dll,gxm.agent.dll,gxm,GxM RMM Agent,PEMetadata.OriginalFileName,RMM,Unknown,,Windows
 HeartbeatRM,heartbeatrm,heartbeatrm,HeartbeatRM,Name,RMM,Unknown,https://heartbeatrm.com/,Windows
 HelpBeam,helpbeam,helpbeam,HelpBeam,Name,RMM,,https://web.archive.org/web/20141223111635/http://www.helpbeam.com/,
 HelpU,helpu,helpu,HelpU,Name,RMM,,https://helpu.co.kr/,
@@ -253,6 +267,15 @@ IPRangeCalculator,iprangecalculator,freshservice,Freshservice,PEMetadata.Origina
 ISL Light,isl light,isl_light,ISL Light,Name,RMM,,https://www.islonline.com/downloads/isl-light.htm,
 ISL Online,isl online,isl_online,ISL Online,Name,RMM,,https://www.islonline.com/,Windows
 ISL Online,isl online,islonline,ISL Online,Name,RMM,,https://www.islonline.com/,
+IT Agent,it agent,it_agent,IT Agent,Name,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgent RMM Sender,itagent rmm sender,it_agent,IT Agent,PEMetadata.Description,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgent RMM Sender Installer,itagent rmm sender installer,it_agent,IT Agent,PEMetadata.Description,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgent RMM Sender Service Launcher,itagent rmm sender service launcher,it_agent,IT Agent,PEMetadata.Description,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgentRMMSender,itagentrmmsender,it_agent,IT Agent,PEMetadata.OriginalFileName,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgentRMMSenderSL,itagentrmmsendersl,it_agent,IT Agent,PEMetadata.OriginalFileName,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgentRMMSenderUpdater,itagentrmmsenderupdater,it_agent,IT Agent,PEMetadata.OriginalFileName,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgentRMMSenderUpdater 2026.7.31.1909,itagentrmmsenderupdater 2026.7.31.1909,it_agent,IT Agent,PEMetadata.Description,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
+ITAgentSender.aiui,itagentsender.aiui,it_agent,IT Agent,PEMetadata.OriginalFileName,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
 Itarian,itarian,itarian,Itarian,Name,RMM,,https://www.itarian.com/rmm/,
 ITSupport247 (ConnectWise),itsupport247 (connectwise),itsupport247_(connectwise),ITSupport247 (ConnectWise),Name,RMM,,https://control.itsupport247.net/,Windows
 ITSupport247 (ConnectWise),itsupport247 (connectwise),itsupport247connectwise,ITSupport247 (ConnectWise),Name,RMM,,https://control.itsupport247.net/,
@@ -283,6 +306,7 @@ LavawallWin.dll,lavawallwin.dll,lavawall,Lavawall,PEMetadata.OriginalFileName,RM
 Level,level,level,Level,Name,RMM,Free,https://level.io/,Windows
 Level.io,level.io,level.io,Level.io,Name,RMM,,https://level.io/,
 Level.io,level.io,levelio,Level.io,Name,RMM,,https://level.io/,Windows
+LightRmmAgent,lightrmmagent,light_rmm_agent,LightRmmAgent,Name,RMM,,,Windows
 Lite Manager,lite manager,lite_manager,Lite Manager,Name,RMM,,https://www.litemanager.com/,
 LiteManager,litemanager,litemanager,LiteManager,Name,RMM,,https://www.litemanager.com/,
 LMIGuardianSvc,lmiguardiansvc,logmein,LogMeIn,PEMetadata.Product,RMM,,https://www.logmein.com/,
@@ -292,6 +316,9 @@ LocalXpose command-line client (Windows). Single static Go binary; invoked as `l
 loclx,loclx,localxpose,LocalXpose,PEMetadata.OriginalFileName,RAT,Yes (free tier + paid subscription),https://localxpose.io/,Windows | Linux | MacOS
 LogMeIn,logmein,logmein,LogMeIn,Name,RMM,,https://www.logmein.com/,
 LogMeIn rescue,logmein rescue,logmein_rescue,LogMeIn rescue,Name,RMM,,https://www.logmein.com/products/rescue,
+LS RMM,ls rmm,ls_rmm,LS RMM,Name,RMM,,,Windows
+LS RMM Worker,ls rmm worker,ls_rmm,LS RMM,PEMetadata.OriginalFileName,RMM,,,Windows
+LS RMM Worker Process,ls rmm worker process,ls_rmm,LS RMM,PEMetadata.Description,RMM,,,Windows
 Lunixar,lunixar,lunixar,Lunixar,Name,RMM,,https://lunixar.com/en/,Windows
 Main GLPI Agent executable / Perl entrypoint,main glpi agent executable / perl entrypoint,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 Manage Engine (Desktop Central),manage engine (desktop central),manage_engine_(desktop_central),Manage Engine (Desktop Central),Name,RMM,,https://desktopcentral.manageengine.com,
@@ -305,6 +332,8 @@ MeshCentral,meshcentral,meshcentral,MeshCentral,Name,RMM,Yes,https://meshcentral
 MeshCentral Background Service Agent,meshcentral background service agent,meshcentral,MeshCentral,PEMetadata.Description,RMM,Yes,https://meshcentral.com/,Windows | Linux | MacOS | FreeBSD
 Microsoft Quick Assist,microsoft quick assist,microsoft_quick_assist,Microsoft Quick Assist,Name,RAT,,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,
 Mikogo,mikogo,mikogo,Mikogo,Name,RMM,,,
+Mini RMM Agent,mini rmm agent,mini_rmm,Mini RMM Agent,Name,RMM,Unknown,,Windows
+Mini RMM Agent (self-identified in assembly metadata),mini rmm agent (self-identified in assembly metadata),mini_rmm,Mini RMM Agent,PEMetadata.Description,RMM,Unknown,,Windows
 MioNet (Also known as WD Anywhere Access),mionet (also known as wd anywhere access),mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),Name,RMM,,,
 MioNet (WD Anywhere Access),mionet (wd anywhere access),mionet_(wd_anywhere_access),MioNet (WD Anywhere Access),Name,RMM,,,
 Miradore,miradore,miradore,Miradore,Name,RMM,Free tier available,https://www.miradore.com/,Windows | Mac | Linux | iOS | Android
@@ -319,6 +348,10 @@ Monitic,monitic,monitic,Monitic,Name,RMM,14-day free trial (no credit card),http
 MoniticInstaller,moniticinstaller,monitic,Monitic,PEMetadata.OriginalFileName,RMM,14-day free trial (no credit card),https://www.monitic.com/,Windows | Linux | MacOS
 Mouse Without Borders,mouse without borders,mousewithoutborders,Mouse Without Borders,Name,RAT,true,https://www.microsoft.com/en-us/download/details.aspx?id=35460,Windows
 MouseWithoutBorders,mousewithoutborders,mousewithoutborders,Mouse Without Borders,PEMetadata.OriginalFileName,RAT,true,https://www.microsoft.com/en-us/download/details.aspx?id=35460,Windows
+Mremote,mremote,mremote,Mremote,Name,RMM,false,https://egs.ci/mremote.html,Windows
+Mremote Agent,mremote agent,mremote,Mremote,PEMetadata.Product,RMM,false,https://egs.ci/mremote.html,Windows
+Mremote Agent - Outil de maintenance a distance autorise,mremote agent - outil de maintenance a distance autorise,mremote,Mremote,PEMetadata.Description,RMM,false,https://egs.ci/mremote.html,Windows
+mremote-agent,mremote-agent,mremote,Mremote,PEMetadata.OriginalFileName,RMM,false,https://egs.ci/mremote.html,Windows
 mRemoteNG,mremoteng,mremoteng,mRemoteNG,Name,RAT,,https://mremoteng.org/,
 MSP360,msp360,msp360,MSP360,Name,RMM,,https://www.msp360.com/,
 mstsc,mstsc,mstsc,mstsc.exe (Microsoft Remote Desktop Connection),PEMetadata.OriginalFileName,RAT,true,https://learn.microsoft.com/windows-server/administration/windows-commands/mstsc,Windows
@@ -348,6 +381,9 @@ NetSupport Remote Command Prompt Stub,netsupport remote command prompt stub,nets
 Neturo,neturo,neturo,Neturo,Name,RMM,,,Windows
 Netviewer,netviewer,netviewer,Netviewer,Name,RMM,,,
 Netviewer (GoToMeet),netviewer (gotomeet),netviewer_(gotomeet),Netviewer (GoToMeet),Name,RMM,,https://www.goto.com/meeting/join,
+Nexus RMM (Scogo),nexus rmm (scogo),nexus_scogo,Nexus RMM (Scogo),Name,RMM,Unknown,https://scogo.ai/,Windows
+Nexus RMM Agent Setup,nexus rmm agent setup,nexus_scogo,Nexus RMM (Scogo),PEMetadata.Description,RMM,Unknown,https://scogo.ai/,Windows
+nexusrmm,nexusrmm,nexus_scogo,Nexus RMM (Scogo),PEMetadata.OriginalFileName,RMM,Unknown,https://scogo.ai/,Windows
 Nezha,nezha,nezha,Nezha,Name,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
 "Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.","nezha agent (go binary, ~20 mb). maintains a persistent grpc connection to the dashboard for telemetry, command execution, webssh, and file operations.",nezha,Nezha,PEMetadata.Description,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
 Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.,nezha dashboard server binary (windows). hosts the web console and grpc endpoint for all connected agents.,nezha,Nezha,PEMetadata.Description,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
@@ -370,6 +406,9 @@ NVDA service executable for secure screens,nvda service executable for secure sc
 OCS inventory,ocs inventory,ocs_inventory,OCS inventory,Name,RMM,,https://ocsinventory-ng.org/,
 Official HeartbeatRM installer (verified via VirusTotal),official heartbeatrm installer (verified via virustotal),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 Onionshare,onionshare,onionshare,Onionshare,Name,RAT,,https://onionshare.org/,
+OpenDesk RMM Agent,opendesk rmm agent,opendesk,OpenDesk RMM Agent,Name,RMM,,https://github.com/nextcoreti/opendesk-rmm-agent,Windows | Linux
+OpenDesk RMM Agent - Gerenciamento Remoto,opendesk rmm agent - gerenciamento remoto,opendesk,OpenDesk RMM Agent,PEMetadata.Description,RMM,,https://github.com/nextcoreti/opendesk-rmm-agent,Windows | Linux
+opendesk-rmm-agent,opendesk-rmm-agent,opendesk,OpenDesk RMM Agent,PEMetadata.OriginalFileName,RMM,,https://github.com/nextcoreti/opendesk-rmm-agent,Windows | Linux
 OpsBridge Agent,opsbridge agent,opsbridge_agent,OpsBridge Agent,Name,RMM,,https://opsbridge.digital/,Windows
 OpsBridge Endpoint Management Suite,opsbridge endpoint management suite,opsbridge_agent,OpsBridge Agent,PEMetadata.Product,RMM,,https://opsbridge.digital/,Windows
 OpsBridge Endpoint Service,opsbridge endpoint service,opsbridge_agent,OpsBridge Agent,PEMetadata.Description,RMM,,https://opsbridge.digital/,Windows
@@ -387,6 +426,8 @@ PDQ Connect,pdq connect,pdq_connect,PDQ Connect,Name,RMM,,https://www.pdq.com/pd
 Pilixo,pilixo,pilixo,Pilixo,Name,RMM,,,
 PiTunnel,pitunnel,pitunnel,PiTunnel,Name,RAT,Yes (free + paid subscription),https://www.pitunnel.com/,Linux | MacOS
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.,pitunnel client binary; invokable as `pitunnel --port=<port> --name=<name> --persist` to register a persistent named tunnel back to the operator's tenant cloud.,pitunnel,PiTunnel,PEMetadata.Description,RAT,Yes (free + paid subscription),https://www.pitunnel.com/,Linux | MacOS
+PixoIT RMM Agent,pixoit rmm agent,breezermm,BreezeRMM,PEMetadata.Product,RMM,true,https://breezermm.com/,Windows | macOS | Linux
+PixoIT-agent,pixoit-agent,breezermm,BreezeRMM,PEMetadata.OriginalFileName,RMM,true,https://breezermm.com/,Windows | macOS | Linux
 plink,plink,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
 Pocket Cloud (Wyse),pocket cloud (wyse),pocket_cloud_(wyse),Pocket Cloud (Wyse),Name,RMM,,,
 Pocket Controller,pocket controller,pocket_controller,Pocket Controller,Name,RMM,,https://soti.net/products/soti-pocket-controller,Windows
@@ -424,6 +465,7 @@ Remote Manipulator System,remote manipulator system,remote_manipulator_system,Re
 Remote Ripple,remote ripple,remoteripple,Remote Ripple,Name,RMM,true,https://remoteripple.com,Windows | Mac | Android | iOS
 Remote Utilities,remote utilities,remote_utilities,Remote Utilities,Name,RMM,,https://www.remoteutilities.com/,
 Remote.it,remote.it,remote.it,Remote.it,Name,RMM,,https://www.remote.it/,Windows
+RemoteAgentAgent,remoteagentagent,remote_agent_agent,RemoteAgentAgent,Name,RAT,,,Windows
 RemoteCall,remotecall,remotecall,RemoteCall,Name,RMM,,https://www.remotecall.com/,Windows
 RemoteDesktopManager,remotedesktopmanager,devolutions_remote_desktop_manager,Devolutions Remote Desktop Manager,PEMetadata.OriginalFileName,RAT,,https://devolutions.net/remote-desktop-manager/,Windows | Linux | Android | Mac | IOS
 Remotely,remotely,remotely,Remotely,Name,RMM,true,https://github.com/immense/Remotely,Windows | Linux | macOS
@@ -445,6 +487,7 @@ RG Supervision,rg supervision,rg_system,RG System (RG Supervision),PEMetadata.Pr
 RG Supervision Agent,rg supervision agent,rg_system,RG System (RG Supervision),PEMetadata.Description,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
 RG System (RG Supervision),rg system (rg supervision),rg_system,RG System (RG Supervision),Name,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
 rgsupvd,rgsupvd,rg_system,RG System (RG Supervision),PEMetadata.OriginalFileName,RMM,false,https://www.rgsystem.septeo.com/,Windows | Linux | macOS
+RMMCRAT,rmmcrat,rmmcrat,RMMCRAT,Name,RAT,,,Windows
 RMMmax,rmmmax,rmmmax,RMMmax,Name,RMM,true,https://rmmmax.com/,Windows | macOS | Linux
 RMMmax Agent Service,rmmmax agent service,rmmmax,RMMmax,PEMetadata.Product,RMM,true,https://rmmmax.com/,Windows | macOS | Linux
 RMMmax Agent Service Setup,rmmmax agent service setup,rmmmax,RMMmax,PEMetadata.Description,RMM,true,https://rmmmax.com/,Windows | macOS | Linux
@@ -470,6 +513,7 @@ SecureCRT,securecrt,securecrt,SecureCRT,Name,RAT,,https://www.vandyke.com/produc
 Seetrol,seetrol,seetrol,Seetrol,Name,RMM,,https://www.seetrol.co.kr/,
 Senso.cloud,senso.cloud,senso.cloud,Senso.cloud,Name,RMM,,https://senso.cloud/,
 ServerEye,servereye,servereye,ServerEye,Name,RMM,,https://www.servereye.de/,
+Servico de Gerenciamento Remoto,servico de gerenciamento remoto,unisystem,UniSystem RMM,PEMetadata.Description,RMM,Unknown,https://xelvarunetio.pro/,Windows
 SetMe,setme,setme_pro,SetMe PRO,PEMetadata.Product,RMM,false,https://www.setme.net/,Windows | macOS
 SetMe Client,setme client,setme_pro,SetMe PRO,PEMetadata.Description,RMM,false,https://www.setme.net/,Windows | macOS
 SetMe PRO,setme pro,setme_pro,SetMe PRO,Name,RMM,false,https://www.setme.net/,Windows | macOS
@@ -553,6 +597,8 @@ Ultra VNC,ultra vnc,ultra_vnc,Ultra VNC,Name,RAT,,https://uvnc.com/,
 UltraViewer,ultraviewer,ultraviewer,UltraViewer,Name,RMM,,https://www.ultraviewer.net/,
 UltraVNC,ultravnc,ultravnc,UltraVNC,Name,RAT,,https://uvnc.com/,
 UninstallStatusUpdater,uninstallstatusupdater,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day trial; paid SaaS subscription,https://www.freshworks.com/freshservice/,Windows | MacOS | Linux
+UniRMM,unirmm,unisystem,UniSystem RMM,PEMetadata.OriginalFileName,RMM,Unknown,https://xelvarunetio.pro/,Windows
+UniSystem RMM,unisystem rmm,unisystem,UniSystem RMM,Name,RMM,Unknown,https://xelvarunetio.pro/,Windows
 uploads the recorded data & logs.,uploads the recorded data & logs.,controlio,Controlio,PEMetadata.Description,RMM,true,https://controlio.net,Mac | Windows
 Vector Asset Management 64-bit preparation helper,vector asset management 64-bit preparation helper,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 Vector Asset Management cleanup/uninstall helper (LANutil32 Suite component),vector asset management cleanup/uninstall helper (lanutil32 suite component),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows

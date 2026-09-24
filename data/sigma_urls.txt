@@ -518,6 +518,7 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/zerotier_proc
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/zoc_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/zoho_assist_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/zoho_assist_processes_sigma.yml
+https://github.com/pandare9x/Yara-Rules/blob/main/SEOPoison/rmmcrat.yar
 https://github.com/tsale/Sigma_rules/blob/ea87e4fc851207ca0f002ec043624f2b3bf1b2da/Threat%20Hunting%20Queries/Action1_RMM.yml
 https://github.com/tsale/Sigma_rules/blob/main/Threat%20Hunting%20Queries/Anyviewer.yml
 https://github.com/tsale/Sigma_rules/blob/main/Threat%20Hunting%20Queries/ammyy_admin.yml

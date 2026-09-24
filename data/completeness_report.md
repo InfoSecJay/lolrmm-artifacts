@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **326**
-- Fetched + parsed tools: **326**
+- Expected files (upstream listing): **341**
+- Fetched + parsed tools: **341**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 326 tools total:
+Of 341 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 321 | 98% |
-| installation_paths | 295 | 90% |
-| capabilities | 74 | 23% |
-| supported_os | 116 | 36% |
-| disk | 79 | 24% |
+| pe_metadata | 336 | 99% |
+| installation_paths | 307 | 90% |
+| capabilities | 89 | 26% |
+| supported_os | 131 | 38% |
+| disk | 91 | 27% |
 | eventlog | 47 | 14% |
-| registry | 43 | 13% |
-| network | 250 | 77% |
-| other | 32 | 10% |
-| detections | 271 | 83% |
+| registry | 51 | 15% |
+| network | 257 | 75% |
+| other | 47 | 14% |
+| detections | 272 | 80% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,9 +93,12 @@ Of 326 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (55)
+## Tools with no detections (69)
 
+- `allocentra` (RMM)
+- `basic_rmm` (RMM)
 - `beyondtrust` (RMM)
+- `blackcrypt` (RMM)
 - `breezermm` (RMM)
 - `chicken_(of_the_vnc)` (RAT)
 - `chrome_ssh_extension` (RAT)
@@ -109,31 +112,41 @@ Of 326 tools total:
 - `free_ping_tool` (RAT)
 - `free_tools_launcher` (RMM)
 - `freerdp` (RAT)
+- `go_rmm` (RMM)
 - `goto_opener` (RMM)
 - `gotoassist_(goto_resolve)` (RMM)
 - `gotoassist_agent_desktop_console` (RMM)
+- `gxm` (RMM)
 - `heartbeatrm` (RMM)
 - `idrive` (RAT)
 - `immybot` (RMM)
+- `it_agent` (RMM)
 - `jollysfastvnc` (RAT)
 - `koofr` (RAT)
 - `lavawall` (RMM)
+- `light_rmm_agent` (RMM)
+- `ls_rmm` (RMM)
 - `lunixar` (RMM)
 - `manageengine_rmm_central` (RMM)
 - `manageengine_servicedesk_plus` (RMM)
+- `mini_rmm` (RMM)
 - `miradore` (RMM)
 - `mobaxterm` (RAT)
 - `mocha_vnc_lite` (RAT)
+- `mremote` (RMM)
 - `multcloud` (RAT)
 - `netbird` (RAT)
 - `netop` (RMM)
+- `nexus_scogo` (RMM)
 - `ninite` (RMM)
 - `ninjaone_(formerly_ninjarmm)` (RMM)
 - `nordlocker` (RAT)
 - `nvda` (RMM)
+- `opendesk` (RMM)
 - `opsbridge_agent` (RMM)
 - `realvnc` (RAT)
 - `remmina` (RAT)
+- `remote_agent_agent` (RAT)
 - `remote_desktop_manager_(devolutions)` (RAT)
 - `remotepulse` (RMM)
 - `rg_system` (RMM)
@@ -145,6 +158,7 @@ Of 326 tools total:
 - `teleport_connect` (RAT)
 - `terminals` (RAT)
 - `tmate` (RAT)
+- `unisystem` (RMM)
 - `vnc_connect` (RAT)
 - `webex_(remote_access)` (RMM)
 - `x2go` (RAT)

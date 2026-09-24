@@ -1,3 +1,4 @@
+Allocentra RMM Agent
 Alpemix
 Ammyy Admin
 AnyDesk
@@ -6,6 +7,8 @@ Aspia Client
 AteraAgent
 Background service that maintains a connection to the Remotely server.
 baramundi Management Agent
+Basic RMM monitoring and management agent
+BlackCrypt RMM Remote Management Agent (self-identified in PE resources)
 Bluetrait MSP Agent
 Breeze agent backup component
 Breeze agent watchdog process
@@ -68,7 +71,9 @@ Freshservice Discovery Probe tray application (.NET, ConfuserEx-packed, signed b
 Freshservice Discovery Probe uninstall reporter
 Freshservice WMI inventory helper invoked by the Discovery Agent / Probe (.NET, signed by "Freshworks Inc")
 Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B Ltd). Distributed as a UPX-packed PE32 (x86) GUI executable from https://getscreen.me/download/getscreen-x86.exe. Current binaries (file version 3.5.0+) are signed by POINT B LTD (Cyprus, registered HE 430957) on a GlobalSign GCC R45 EV CodeSigning chain. Older 2020-2021 era binaries were signed by OOO "GET SKRIN SOFTVER" on a COMODO RSA Extended Validation Code Signing CA chain (now expired).
+GO RMM management console
 Gorelo RMM
+GxM RMM endpoint agent — authorized remote monitoring and support for managed clients (self-identified in assembly metadata)
 HelpWire Operator
 HopToDesk remote desktop application (verified via VirusTotal)
 Host Process
@@ -88,36 +93,47 @@ InvGate Assets Client primary endpoint binary; runs as the InvClient SYSTEM serv
 InvGate Assets deployment helper used by the software-deployment module.
 InvGate Assets RD helper located under \files\ within the install directory.
 InvGate Assets remote-desktop / remote-support helper invoked from the agent (size ~1.32 MB on v5.001.071 builds).
+ITAgent RMM Sender
+ITAgent RMM Sender Installer
+ITAgent RMM Sender Service Launcher
+ITAgentRMMSenderUpdater 2026.7.31.1909
 Komari agent binary
 Komari server binary
 LavawallWin
 LMIGuardianSvc
 LocalXpose command-line client (Linux/macOS).
 LocalXpose command-line client (Windows). Single static Go binary; invoked as `loclx tunnel <type> --port <PORT>` after `loclx account login`.
+LS RMM
+LS RMM Worker Process
 Main GLPI Agent executable / Perl entrypoint
 ManageEngine ServiceDesk Plus binary installer component
 ManageEngine ServiceDesk Plus installer (verified via VirusTotal)
 MeshCentral Background Service Agent
+Mini RMM Agent (self-identified in assembly metadata)
 Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal)
 Monitic agent bootstrap installer (Themida-packed Win32 PE, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ. via GlobalSign GCC R45 EV CodeSigning CA 2020). Hosted at https://app.monitic.com/MoniticInstaller.exe; observed sha256 d641841cdf83037b32e699f01da16b66a9064221013dfec43d7a3bc993d6181d (3/2026) and 924238d5c8b4c882f236053c394d1a9510b6a1fe028ae5437eed7785774b1462 (7/2025). On launch it executes `rundll32 url.dll,FileProtocolHandler https://app.monitic.com/installer` to open the installer flow in the user's browser.
 Monitic agent monitor / watchdog binary (~6 MB Go executable, Themida-packed, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\amon.exe and registered as a SYSTEM service via `amon.exe install` then started with `amon.exe start`. Calls https://api.monitic.com/api/ext/check-sha256 for integrity check / config polling. Observed sha256 71cd67afd19f9f5d0cf00d92034c40b674e3b4d9888f5be6c2f401c52863a523 (10/2025).
 Monitic primary agent binary (~50-60 MB .NET executable, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\agent.exe and registered as a SYSTEM service via `agent.exe install`. Bundles RustDesk for remote desktop (libvpx-1.dll, WinPthreadGC.dll observed in dropped-files), the kopia.io backup engine, and uses WMI (`Get-WmiObject Win32_BIOS / Win32_Processor / Win32_DiskDrive / Win32_BaseBoard`) for hardware fingerprinting. Spawns a child `tunnel.exe` (taskkill /IM tunnel.exe /F observed in lifecycle). Observed sha256 9c6b26fe30870775a42d02804c9094c83479850a87703d95ebd8631ad8188b8e (11/2025).
 Mouse Without Borders
+Mremote Agent - Outil de maintenance a distance autorise
 NetBird client binary for Linux/macOS
 NetBird client executable for Windows
 NetBird UI executable for Windows
 NetBird Windows EXE installer signed by NetBird GmbH (formerly Wiretrustee UG). Description string "Connect your devices into a secure WireGuard-based overlay network with SSO, MFA, and granular access controls." Product "Netbird".
 NetBird Windows MSI installer (canonical naming pattern from official GitHub releases, e.g. netbird_installer_0.70.4_windows_amd64.msi). Renamed to netbird.msi in the May 2025 Trellix-reported campaign.
 NetSupport Remote Command Prompt Stub
+Nexus RMM Agent Setup
 Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.
 Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.
 Ninite Pro Classic
 NVDA screen reader executable
 NVDA service executable for secure screens
 Official HeartbeatRM installer (verified via VirusTotal)
+OpenDesk RMM Agent - Gerenciamento Remoto
 OpsBridge Endpoint Service
 Parsec
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.
+PixoIT RMM Agent
 PuTTY plink.exe (PuTTY 0.62) bundled inside the Freshservice Discovery Probe MSI for SSH-based scanning of Linux/Unix hosts (legitimate redistributable, but executes from the Freshservice install dir)
 Radmin Server
 Radmin Viewer
@@ -133,6 +149,7 @@ RMMmax Agent Service Setup
 Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.
 Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe
 Screan capture
+Servico de Gerenciamento Remoto
 SetMe Client
 SetMe Unattended Client
 ShellHub agent binary (Go). Maintains the persistent reverse connection to the ShellHub gateway and brokers inbound SSH sessions.

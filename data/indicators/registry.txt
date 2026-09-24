@@ -1,6 +1,7 @@
 HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\Software\Microsoft\Terminal Server Client\Default
 HKCU\Software\Microsoft\Terminal Server Client\Servers
+HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\BlackCryptAgent
 HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService
 HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\SOFTWARE\Policies\Teleport\TeleportConnect
@@ -16,6 +17,7 @@ HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc\GuestInvite
 HKEY_USERS\<SID>\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history
 HKLM\DRIVERS\DriverDatabase\DeviceIds\USBPRINT\AnyDesk
 HKLM\DRIVERS\DriverDatabase\DeviceIds\WSDPRINT\AnyDesk
+HKLM\SOFTWARE\Allocentra\Agent
 HKLM\SOFTWARE\ATERA Networks\*
 HKLM\SOFTWARE\ATERA Networks\AlphaAgent
 HKLM\SOFTWARE\Classes\.anydesk\shell\open\command
@@ -42,6 +44,7 @@ HKLM\SOFTWARE\GLPI-Agent\server
 HKLM\SOFTWARE\GLPI-Agent\tag
 HKLM\SOFTWARE\GLPI-Agent\tasks
 HKLM\SOFTWARE\GoTo Resolve Unattended\
+HKLM\SOFTWARE\LS RMM
 HKLM\SOFTWARE\Metaquest
 HKLM\SOFTWARE\Microsoft\FreshService Probe
 HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32
@@ -50,6 +53,7 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\MiniRMMAgent
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*)
@@ -101,6 +105,7 @@ HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*
 HKLM\System\CurrentControlSet\Services\A1Agent
+HKLM\SYSTEM\CurrentControlSet\Services\AllocentraAgent
 HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx
 HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk
 HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent
@@ -111,15 +116,21 @@ HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service
 HKLM\SYSTEM\CurrentControlSet\Services\FreshServiceScan
 HKLM\SYSTEM\CurrentControlSet\Services\FSAgentService
 HKLM\System\CurrentControlSet\Services\GetscreenSV
+HKLM\SYSTEM\CurrentControlSet\Services\GxMAgent
 HKLM\SYSTEM\CurrentControlSet\Services\InvClient
 HKLM\SYSTEM\CurrentControlSet\Services\InvClient\ImagePath
 HKLM\System\CurrentControlSet\Services\komari-agent
 HKLM\SYSTEM\CurrentControlSet\Services\Lavawall Support Agent
 HKLM\SYSTEM\CurrentControlSet\Services\LavaWallRemoteAgent
+HKLM\SYSTEM\CurrentControlSet\Services\LightRmmAgent
+HKLM\SYSTEM\CurrentControlSet\Services\LSRMMWorker
 HKLM\System\CurrentControlSet\Services\LunixarRMM
+HKLM\SYSTEM\CurrentControlSet\Services\MiniRmmAgent
+HKLM\SYSTEM\CurrentControlSet\Services\MremoteAgent
 HKLM\SYSTEM\CurrentControlSet\Services\Netbird
 HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
 HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision
+HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent
 HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*

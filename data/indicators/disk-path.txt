@@ -47,7 +47,14 @@
 %USERPROFILE%\Desktop\MoniticInstaller.exe
 %USERPROFILE%\Documents\Default.rdp
 *\agent-installer-any.exe
+*\allocentra-update.bat
+*\allocentra\agent\allocentra-agent.exe
 *\AppData\Local\Temp\rgsupv\cache\prepared
+*\AppData\Roaming\Mremote\agent.exe
+*\AppData\Roaming\Mremote\agent.log
+*\AppData\Roaming\Mremote\consent.ok
+*\AppData\Roaming\Mremote\enrolled.json
+*\AppData\Roaming\rmm.exe
 *\ControlR.Agent.Installer.exe
 *\Lavawall\LavawallCheckAndStartService.ps1
 *\Lavawall\LavawallWin.exe
@@ -56,6 +63,16 @@
 *\Lavawall\Storage\UserAgentData.db
 *\LavawallWin.dll
 *\LavawallWin.runtimeconfig.json
+*\LightRmmAgent\LightRmmAgentService.exe
+*\LS RMM\LS RMM Worker.exe
+*\LS RMM\LS RMM-Update.exe
+*\LS RMM\LS RMM.exe
+*\LS RMM\LSRMMupdate.txt
+*\LS RMM\SC.bmp
+*\LS RMM\SC.exe
+*\ProgramData\GxM\agent\GxM.Agent.exe
+*\ProgramData\GxM\enrollment.json
+*\ProgramData\GxM\install.log
 *\RG-Supervision\RG_Supervision.exe
 *\Zecurit\Agent\Logs\agent_cmd_handler.log
 *\Zecurit\Agent\Logs\agent_service.log
@@ -80,6 +97,7 @@
 /Applications/Teleport Connect.app/Contents/MacOS/tsh.app/Contents/MacOS/tsh
 /Applications/Teramind Agent.app
 /Applications/tmagent.app
+/etc/breeze/agent.yaml
 /etc/controlr/*/appsettings.json
 /etc/glpi-agent/agent.cfg
 /etc/glpi-agent/conf.d/*
@@ -88,6 +106,7 @@
 /etc/netbird/config.json
 /etc/netbird/install.conf
 /etc/shellhub-agent/agent.env
+/etc/systemd/system/breeze-agent.service
 /etc/systemd/system/controlr.agent*.service
 /etc/systemd/system/dataplicity.service
 /etc/systemd/system/komari-agent.service
@@ -99,6 +118,7 @@
 /etc/systemd/system/rmmmax-agent.service
 /etc/systemd/system/shellhub-agent.service
 /etc/systemd/system/zecurit_agent.service
+/etc/xdg/autostart/breeze-agent-user.desktop
 /home/*/.cache/Teleport Connect/teleport/teleport
 /home/*/.config/Teleport Connect/app_config.json
 /home/*/.config/Teleport Connect/app_state.json
@@ -107,16 +127,25 @@
 /lib/systemd/system/chrome-remote-desktop.service
 /lib/systemd/system/glpi-agent.service
 /lib/systemd/system/helpwire-unattended.service
+/Library/Application Support/Breeze/*
 /Library/Application Support/ControlR/*/ControlR.Agent
 /Library/LaunchAgents/app.controlr.desktop*.plist
+/Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist
+/Library/LaunchAgents/com.breeze.desktop-helper-user.plist
 /Library/LaunchAgents/com.rmmmax.agentui.plist
 /Library/LaunchAgents/org.chromium.chromoting.plist
 /Library/LaunchDaemons/app.controlr.agent*.plist
+/Library/LaunchDaemons/com.breeze.agent.plist
+/Library/LaunchDaemons/com.breeze.watchdog.plist
 /Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist
 /Library/LaunchDaemons/com.rmmmax.agentservice.plist
 /Library/LaunchDaemons/com.zecurit_agent.service.plist
 /Library/LaunchDaemons/org.chromium.chromoting.broker.plist
 /Library/LaunchDaemons/remotely-agent.plist
+/Library/Logs/Breeze/agent.err
+/Library/Logs/Breeze/agent.log
+/Library/Logs/Breeze/watchdog.err
+/Library/Logs/Breeze/watchdog.log
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
 /Library/PrivilegedHelperTools/org.chromium.chromoting.json
@@ -145,6 +174,12 @@
 /Users/*/Library/Application Support/Teleport Connect/certs/tshd.crt
 /Users/*/Library/Application Support/Teleport Connect/logs/*
 /usr/bin/glpi-agent
+/usr/lib/systemd/user/breeze-agent-user.service
+/usr/lib/tmpfiles.d/breeze-agent.conf
+/usr/local/bin/breeze-agent
+/usr/local/bin/breeze-backup
+/usr/local/bin/breeze-desktop-helper
+/usr/local/bin/breeze-watchdog
 /usr/local/bin/ControlR/*/ControlR.Agent
 /usr/local/bin/glpi-agent
 /usr/local/bin/pitunnel
@@ -169,7 +204,9 @@
 /usr/local/zecurit_agent/config/server.json
 /usr/local/zecurit_agent/RemoveAgent.sh
 /usr/share/applications/teleport-connect.desktop
+/var/lib/breeze/*
 /var/lib/glpi-agent/*
+/var/log/breeze/*
 /var/log/controlr/*/ControlR.Agent/LogFile*.log
 /var/log/netbird/*
 /var/log/netlock-rmm-agent-comm.log
@@ -179,6 +216,7 @@
 /var/rmmmax/agentservice/config.json
 /var/rmmmax/agentservice/rmmmax_agent.py
 /var/rmmmax/agentservice/state.json
+/var/run/breeze/agent.sock
 <impersonated-org>Agent.exe
 bbl.exe
 C:\bin\cis.vbs
@@ -442,6 +480,7 @@ C:\Program Files\Lunixar\LunixarUpdater.exe
 C:\Program Files\ManageEngine\ServiceDesk\*
 C:\Program Files\Mesh Agent\MeshAgent.exe
 C:\Program Files\Mesh Agent\MeshAgent.msh
+C:\Program Files\MiniRMM\MiniRmmAgent.exe
 C:\Program Files\Miradore\OnlineClient\bin\*
 C:\Program Files\Miradore\OnlineClient\bin\7z.dll
 C:\Program Files\Monitic\*
@@ -455,6 +494,8 @@ C:\Program Files\OpsBridge\OpsBridgeAgent.exe
 C:\Program Files\Parsec\parsecd.exe
 C:\Program Files\Parsec\pservice.exe
 C:\Program Files\Parsec\teams.exe
+C:\Program Files\RemoteAgent\config.json
+C:\Program Files\RemoteAgent\RemoteAgentAgent.exe
 C:\Program Files\Remotely\ConnectionInfo.json
 C:\Program Files\Remotely\Desktop\Remotely_Desktop.exe
 C:\Program Files\Remotely\etag.txt
@@ -489,6 +530,9 @@ C:\ProgramData\Kaseya\Log\Endpoint\*
 C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\KaseyaEndpoint*
 C:\ProgramData\Kaseya\Log\Endpoint\Instance_*\Session_*
 C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\*
+C:\ProgramData\LightRmmAgent\machine.id
+C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1
+C:\ProgramData\MiniRMM\SmartScreenTest.ps1
 C:\ProgramData\Netbird\config.json
 C:\ProgramData\OpsBridge\.persisted_v4
 C:\ProgramData\OpsBridge\agent.log
@@ -497,6 +541,9 @@ C:\ProgramData\OpsBridge\install.log
 C:\ProgramData\OpsBridge\task_*.json
 C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal
+C:\ProgramData\RMMAgent\client_id.bin
+C:\ProgramData\RMMAgent\credentials.dat
+C:\ProgramData\RMMAgent\packages\Notepad++.exe
 C:\ProgramData\ScreenConnect Client*\user.config
 C:\ProgramData\SetMe Client
 C:\ProgramData\Techinline Ltd\settings.ini*
@@ -578,6 +625,8 @@ C:\Windows\Temp\DFServiceInit.log
 C:\Windows\Temp\FleetDeck\*
 C:\Windows\Temp\ImmyBot\*
 C:\Windows\Temp\KASetup.log
+C:\Windows\Temp\MonitoringPanel.msi
+C:\Windows\Temp\RemoteAgent.msi
 C:\Windows\Temp\setme\Sentry\*
 C:\Windows\Temp\VeyonServer.log
 C:\Windows\Temp\VeyonService.log
@@ -587,9 +636,17 @@ HelpWire Unattended Access.lnk
 helpwire-operator/bin/helpwire-operator
 helpwire.exe
 HelpWire.lnk
+ITAgentRMMSender.exe
+ITAgentRMMSenderSL.exe
+ITAgentRMMSenderUpdater.exe
+ITAgentSender.aiui
 libeay32.dll
 loclx.exe
+nexusrmm.exe
 NiniteUpdateSummary.log
+OpenDesk-RMM-Agent.exe
+opendesk-rmm-agent.exe
+PixoIT-agent.exe
 RodexAgent.exe
 ssleay32.dll
 teamviewer.exe
@@ -610,6 +667,8 @@ tmui
 tv_w32.exe
 tv_w64.exe
 tv_x64.exe
+UniRMM.exe
+UniRMM.msi
 wec_launcher_[a-Z0-9]*_.exe
 wec_launcher_[a-Z0-9]*_.pkg
 weClipboardListener.exe

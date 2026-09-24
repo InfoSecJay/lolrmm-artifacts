@@ -1,10 +1,25 @@
 slug,name,type,value
 adobe_connect,Adobe Connect,ObservedInstallerSHA256,70e9cebbf2294d7805f6cda3ad8274aa20164005c8162b748fba6d1265c98c82
 adobe_connect,Adobe Connect,ObservedSetupSHA256,42a4974d93ae8593e0d5b59b8555aaa1e3dff60f48a41ff4d4dee20a6d211c29
+allocentra,Allocentra,WindowsServiceName,AllocentraAgent
+allocentra,Allocentra,WindowsServiceArgument,svc
+allocentra,Allocentra,DocumentedLinuxMacOSInstaller,install-allocentra-agent.sh
+allocentra,Allocentra,InspectedWindowsAgentSHA256,24c8e21c6de8726b32d5deafadf69e2ad923d672ed09cdccf23c923544daf358
 anydesk,AnyDesk,User-Agent,AnyDesk/*
 anydesk,AnyDesk,NamedPipe,adprinterpipe
+basic_rmm,Basic RMM Agent,InspectedWindowsAgentSHA256,3f5da17df9261283d0b70e9817bbfc681c6f3101b94a45ac6f8b9cda6aa40a3f
+basic_rmm,Basic RMM Agent,GoBuildModule,basicrmm
+basic_rmm,Basic RMM Agent,GoBuildRevision,7074055331fcfba7e91cac443af2288e3afed9f2
+blackcrypt,BlackCrypt RMM Agent,InspectedSampleSHA256,bb5c49eaa94615f7d75cfa80afb8e79b12da2defc47d9b9c53d7602e7171b668
+blackcrypt,BlackCrypt RMM Agent,ClaimedPublisher,BlackCrypt Labs Inc
+blackcrypt,BlackCrypt RMM Agent,SignerSubject,C&P Global Investors LLC
+blackcrypt,BlackCrypt RMM Agent,CertificateValidation,Signed content digest verified locally; certificate trust validation reported the signing certificate as revoked.
+breezermm,BreezeRMM,InspectedBrandedBuildSHA256,74a9dc48d4d23983dbfc964422d57298c64234def5688a9b7e0f608b3043a66d
+breezermm,BreezeRMM,BrandedBuildIdentity,PixoIT RMM Agent 0.105.5; unsigned; compiled Go module github.com/breeze-rmm/agent.
 breezermm,BreezeRMM,ObservedSHA256,52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8
 breezermm,BreezeRMM,CodeSigningSigner,"LanternOps, LLC"
+breezermm,BreezeRMM,OfficialReleaseArtifactSHA256,Breeze v0.115.0 Linux amd64 agent: bcf47edf1312f3480c172908fb36b1fc0b2a37f7c1df7a7434d99ae1850985af
+breezermm,BreezeRMM,OfficialReleaseArtifactSHA256,Breeze v0.115.0 macOS arm64 package: 8b32297661229f5173510ebbf1b6d656c85bd68fea930400808e138ce7c714d1
 controlio,Controlio,Service,weSvcService
 dataplicity,Dataplicity,URL,https://www.dataplicity.com/<TOKEN>.py
 dataplicity,Dataplicity,Other,Install command: curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python  (high-signal hunt pattern — sudo-piped curl-to-python from dataplicity.com)
@@ -44,6 +59,15 @@ glpi,GLPI Agent,Other,"systemd unit on Linux: glpi-agent.service (ExecStart=/usr
 glpi,GLPI Agent,Other,Default embedded HTTP daemon listen port: 62354/tcp (httpd-port parameter)
 glpi,GLPI Agent,Other,"Code-signing publisher: Teclib' (per MSI Manufacturer string in Variables-v2.wxi.tt — Manufacturer=""Teclib'"")"
 glpi,GLPI Agent,Other,GLPI Agent 1.17 x64 MSI SHA-256: db2661a14359931a2d14ed7268f9b90763da4f2bec97b5ed8d51b9bb655d730c (signed via GlobalSign GCC R45 EV CodeSigning CA 2020 — OCSP host ocsp.globalsign.com)
+go_rmm,GO RMM,InspectedSampleSHA256,491d0512e396aa70efe16873ccf78be61e14f0f7c68bcc1639a1c3b6ba90cfd0
+go_rmm,GO RMM,InspectedComponentRole,"GO RMM management console, not a generated endpoint agent"
+go_rmm,GO RMM,PublisherStatus,Self-identified as GO RMM; no independent publisher or product source established.
+go_rmm,GO RMM,RiskScope,"Static console UI exposes webcam, microphone, keylogger, forced-crash, and other endpoint-control actions; no use of those features was observed."
+gxm,GxM RMM Agent,ServiceName,GxMAgent
+gxm,GxM RMM Agent,ServiceDisplayName,GxM RMM Agent
+gxm,GxM RMM Agent,InspectedSampleSHA256,70cd93f03941fe638fc78b99783b7b73e55300e8e7c8710173f7e9859d52b5a6
+gxm,GxM RMM Agent,ProductVersion,1.0.0.1
+gxm,GxM RMM Agent,PublisherStatus,Self-identified as GxM; no independent vendor or source identity established.
 helpwire,HelpWire,URI Scheme,helpwire://
 helpwire,HelpWire,Windows Authenticode SHA256,9de79ff72aa09670b3d7115e9e92e1fb7e95efb607d1dab402bb7d0994fbbcec
 helpwire,HelpWire,macOS DMG SHA256,8224b40d1a55e123166643dcb3f976a7b193ed1bac653b5ca6acc8c7760ceaa2
@@ -59,6 +83,10 @@ invgate,InvGate,Other,"Install-time bypass flag observed in vendor docs: VERIFY_
 invgate,InvGate,Other,Android mobile agent: Google Play package com.invgate.insight.agent (publisher InvGate)
 invgate,InvGate,SHA256,d35d852924b97126cfbf9a2d8c3384d848dbb090a9d9264e26dd766370b474e8
 invgate,InvGate,MD5,e515948c8ede1192926e87df1740f876
+it_agent,IT Agent,InspectedWindowsComponentSHA256,14c9b3ecbb18231b63ad4156d760381ee0daaee1844c84b5fce1a453532f2316
+it_agent,IT Agent,InspectedWindowsComponentSHA256,8f6148457b7fba2cc5f7bd143cca625cddf215b0350791c9718409b655751e5f
+it_agent,IT Agent,InspectedWindowsComponentSHA256,8ef734ecf9d5d984e8540bc8272c089e846bf464b8f60ee9a90cbfa9e37bcd05
+it_agent,IT Agent,InspectedWindowsInstallerSHA256,c00f23177b12cb03d48dd812ff77b1838bddddf294abd5f8e6013b66c9c1e72a
 komari,Komari,URL,https://raw.githubusercontent.com/komari-monitor/komari-agent/refs/heads/main/install.ps1
 komari,Komari,SHA256,039e659ade3aa8ee7758c11fdb8fbfffd2491920046d638413cea2042f6d584c
 komari,Komari,IP,45.153.34.132
@@ -70,9 +98,19 @@ lavawall,Lavawall,Mutex,Global\LavawallAgentCompanyCredentialsV2
 lavawall,Lavawall,ObservedAgentSHA256,1e395934cbef22846dd0dd2daf868429b0a5b86313f9721543b03a66cfc25e77
 lavawall,Lavawall,ObservedRemoteAgentSHA256,d494ac927c3a98f67a035a418c5e89e9a97397a837fb8cc9bedbb44d25ad3670
 lavawall,Lavawall,ObservedUIHelperSHA256,3c56c3cca03efdcd2044a48d588ab27f68fa1b7e577874a490ff4ada241cec3e
+light_rmm_agent,LightRmmAgent,ObservedWindowsServiceName,LightRmmAgent
 localxpose,LocalXpose,Other,"Install via npm (`npm install -g loclx`), choco, snap, or direct binary download from localxpose.io"
 localxpose,LocalXpose,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/localxpose/
+ls_rmm,LS RMM,WindowsServiceName,LSRMMWorker
+ls_rmm,LS RMM,InspectedWindowsApplicationSHA256,a4c3c416a2c2348d2805fb1cb73bc01efdcd83b35b6f63e31fd1ee41c3663af4
+ls_rmm,LS RMM,InspectedWindowsWorkerSHA256,d1a4f7fcdb85f55edde9fce195939d2d117ffb2ced919bc2f8b9bfdc84878376
 lunixar,Lunixar,Installer control,Current Lunixar agent installers use platform-controlled names and cannot be renamed from the Lunixar console; historical renamed MSI filenames should be treated as abuse artifacts rather than expected current installer names.
+mini_rmm,Mini RMM Agent,ServiceName,MiniRmmAgent
+mini_rmm,Mini RMM Agent,ServiceDisplayName,Mini RMM Agent
+mini_rmm,Mini RMM Agent,InspectedSampleSHA256,89ea754708f2be80b2d8e39533d9b98e9a8bdc588f5d732687ee7b5ce18201e7
+mini_rmm,Mini RMM Agent,ProductVersion,0.4.3.0
+mini_rmm,Mini RMM Agent,ClaimedAssemblyCompany,Senin Firman
+mini_rmm,Mini RMM Agent,PublisherStatus,No independently verified publisher or product source identified.
 monitic,Monitic,URL,https://app.monitic.com/MoniticInstaller.exe
 monitic,Monitic,URL,https://app.monitic.com/installer
 monitic,Monitic,URL,https://api.monitic.com/api/ext/get-token
@@ -85,6 +123,11 @@ monitic,Monitic,ProofpointETSignature,ET INFO Observed RMM Domain in DNS Lookup 
 monitic,Monitic,ProofpointETSignature,ET INFO Observed RMM Domain in TLS SNI ( * .monitic .com)
 monitic,Monitic,CodeSigningSubject,VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.
 monitic,Monitic,CodeSigningIssuer,GlobalSign GCC R45 EV CodeSigning CA 2020
+mremote,Mremote,DefaultServiceName,MremoteAgent
+mremote,Mremote,InspectedWindowsAgentSHA256,cb70951b2bc19ea7a9c852b0d7f68f1548f6d5d2117547f7d8b4691ba2928a5c
+mremote,Mremote,InspectedWindowsAgentVersion,1.8.8.38
+mremote,Mremote,BuildIdentity,Native Go 1.26.5 executable; main module mremote-host; Windows amd64.
+mremote,Mremote,DeploymentSpecificIdentity,A configured client identity determines the ProgramData subdirectory and can replace the fallback service name; the inspected value is excluded.
 netbird,NetBird,NetworkInterface,wt0
 netbird,NetBird,NetworkInterface,utun100
 netbird,NetBird,ServiceName,Netbird
@@ -94,6 +137,9 @@ netbird,NetBird,LocalUser,user
 netbird,NetBird,SHA256,b8c84e7047080589cc2e1dc955c78349f8d37d0e79160a040096e1ffcf89d869
 netbird,NetBird,SignerSubject,NetBird GmbH (current; chain GlobalSign GCC R45 EV CodeSigning CA 2020 -> GlobalSign Code Signing Root R45)
 netbird,NetBird,SignerSubject,Wiretrustee UG (haftungsbeschränkt) (legacy; chain SSL.com EV Code Signing Intermediate CA RSA R3 -> SSL.com EV Root Certification Authority RSA R2)
+nexus_scogo,Nexus RMM (Scogo),InspectedWindowsSampleSHA256,2d1134ec001eed644a0d459898d2f48c0e0418f1cc109f927b7f8a39aef6bbec
+nexus_scogo,Nexus RMM (Scogo),ProductVersion,2.9.0.0
+nexus_scogo,Nexus RMM (Scogo),CatalogScope,Product identity confirmed; no delivery or abuse claim.
 nezha,Nezha,SHA256,ebf4b09229a6ad720121a849c3a79af94e677a2e02448bb471b872d13d94fc93
 nezha,Nezha,SHA256,5c36ff2d85b3de71748282b4836961fc2ca5c0e62741036ce7be5e8855d42cf0
 nezha,Nezha,SHA256,2b066c93d58e822cb77aa46555cd5849edc69296ba7a41ebbd07d572d8dcf0a6
@@ -105,6 +151,7 @@ nezha,Nezha,IP,45.207.220.12
 nezha,Nezha,Other,"Environment variables: NZ_SERVER, NZ_CLIENT_SECRET"
 nezha,Nezha,Other,"Process command-line indicators: client_secret, nezhahq"
 nezha,Nezha,Other,AV signature: Kaspersky not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen
+opendesk,OpenDesk RMM Agent,InspectedWindowsAgentSHA256,60e5ca6a1f82a52a104601005d8a5c768674208f8f4ce7ac89ad97ca2b5978bb
 opsbridge_agent,OpsBridge Agent,ScheduledTaskName,\OpsBridge Agent
 opsbridge_agent,OpsBridge Agent,Mutex,Global\OpsBridgeAgentSingleton
 opsbridge_agent,OpsBridge Agent,ObservedWorkerPattern,C:\Program Files\OpsBridge\*.exe --worker C:\ProgramData\OpsBridge\task_*.json
@@ -116,6 +163,11 @@ pitunnel,PiTunnel,URL,https://pitunnel.com/get/<TOKEN>
 pitunnel,PiTunnel,Other,Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)
 pitunnel,PiTunnel,Other,Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist
 pitunnel,PiTunnel,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/pitunnel/
+remote_agent_agent,RemoteAgentAgent,ServiceArgument,--service
+remote_agent_agent,RemoteAgentAgent,ConfigurationEnvironmentVariable,AGENT_CONFIG_PATH
+remote_agent_agent,RemoteAgentAgent,ReportedRegistrationRoute,/api/register
+remote_agent_agent,RemoteAgentAgent,ReportedCommandPollingRoute,/api/commands
+remote_agent_agent,RemoteAgentAgent,ReportedResultRoute,/api/commands/<cmd_id>/result
 remotely,Remotely,Windows Service Name,Remotely_Service
 remotely,Remotely,Linux systemd service,remotely-agent.service
 remotely,Remotely,macOS LaunchDaemon label,com.translucency.remotely-agent
@@ -135,6 +187,14 @@ rg_system,RG System (RG Supervision),DocumentedLinuxServiceName,rgsupv
 rg_system,RG System (RG Supervision),InspectedWindowsAgentSHA256,076b561bddf88c1482feefb2cbbc11a82b7829528988fd246a6e4a245eb48e73
 rg_system,RG System (RG Supervision),InspectedWindowsAgentVersion,2.4.132
 rg_system,RG System (RG Supervision),DeploymentKitFormat,Embedded JSON deployment configuration delimited by ---BEGIN_BLOB--- and ---END_BLOB---; values are deployment-specific and excluded.
+rmmcrat,RMMCRAT,ObservedPackageStagingDirectory,C:\ProgramData\RMMAgent\packages\
+rmmcrat,RMMCRAT,ReportedWindowsPayloadSHA256,3afabe2f9197f66460044083c708a5206291b2efe1138be1c763f60c47069787
+rmmcrat,RMMCRAT,DefaultServiceNameFromCode,RMMAgent
+rmmcrat,RMMCRAT,DefaultServiceDisplayNameFromCode,RMM Agent
+rmmcrat,RMMCRAT,EmbeddedConfigurationMagic,RMMC
+rmmcrat,RMMCRAT,OptionalConfigurationFile,agent.conf next to the executable; path can be overridden
+rmmcrat,RMMCRAT,ReportedRegistrationRoute,/api/v1/agents/register
+rmmcrat,RMMCRAT,ReportedHeartbeatRoute,/api/v1/agents/heartbeat
 rmmmax,RMMmax,WindowsInstallerSHA256 (RMMmaxAgentSetup.exe),5185359f18b9b0dba1b86cd1cfca6fbbe523611ce248742223ed9f6a446186c3
 rmmmax,RMMmax,WindowsAgentSHA256 (RMMmaxAgentService.exe),9361b9b740474203f1a27be1f24cb91be7235fe2f358b791fc82fad46a1c7946
 rmmmax,RMMmax,MacOSInstallerSHA256 (RMMmax-Agent-Installer.dmg),982ddbb150b3c4b64e4f741ea522b2e4528380e64ed9a274e0d0b235168553c4
@@ -170,6 +230,10 @@ tiflux,TiFLUX,URL,https://agent.tiflux.com/equipment/equipment_reg.json
 tiflux,TiFLUX,URL,https://agent.tiflux.com/equipment/services_triggers
 tiflux,TiFLUX,URL,https://agent.tiflux.com/r/equipment/ticket_list/<equipment_id>/<token>/<seq>
 tiflux,TiFLUX,IP,18.229.110.98
+unisystem,UniSystem RMM,InspectedWindowsSampleSHA256,8a0c5fdb48d77253945e931270b9586ada54ae1066d26af5dbacf4ca261478d3
+unisystem,UniSystem RMM,ProductVersion,2.0.0.0
+unisystem,UniSystem RMM,VendorIdentity,UniSystem Tecnologia LTDA (from reviewed PE metadata)
+unisystem,UniSystem RMM,CatalogScope,Product identity confirmed; no delivery or abuse claim.
 vizor,VIZOR,Other,"Default install path (Vector Asset Management Client v6.0): C:\Program Files (x86)\Vector\Asset Management Client (ProductCode {04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}, DisplayVersion 6.0.7.1325, Publisher ""Vector Networks"")"
 vizor,VIZOR,Other,"Default install path (Vector Asset Management Client v5.7): C:\Program Files\Vector\Asset Management Client (ProductCode {A40A237D-C090-4C05-8580-9DBECFE3602B}, DisplayVersion 5.7.0.1390, Publisher ""Vector Networks"")"
 vizor,VIZOR,Other,Legacy install path (LANutil32 Suite branding): C:\Program Files\Vector Networks Limited\LANutil32 Suite (predecessor product line for the same discovery client)

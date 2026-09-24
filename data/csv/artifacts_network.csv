@@ -18,6 +18,7 @@ adobe_connect,Adobe Connect,*.adobeconnect.com,3478,Adobe Connect service domain
 aeroadmin,AeroAdmin,auth*.aeroadmin.com,,Known remote domains
 aeroadmin,AeroAdmin,aeroadmin.com,,Known remote domains
 aliwangwang-remote-control,AliWangWang-remote-control,wangwang.taobao.com,,Known remote domains
+allocentra,Allocentra,api.allocentra.co.za,443,Vendor-documented outbound API endpoint for agent deployment and operation.
 alpemix,Alpemix,*.alpemix.com,443,N/A
 alpemix,Alpemix,*.teknopars.com,80,N/A
 ammyyadmin,Ammyy Admin,ammyy.com,5931,Known remote domains and router IP addresses
@@ -78,6 +79,7 @@ beinsync,BeInSync,*.beinsync.com,,Known remote domains
 beyondtrust_(bomgar),BeyondTrust (Bomgar),*.beyondtrustcloud.com,,Known remote domains
 beyondtrust_(bomgar),BeyondTrust (Bomgar),*.bomgarcloud.com,,Known remote domains
 beyondtrust_(bomgar),BeyondTrust (Bomgar),bomgarcloud.com,,Known remote domains
+blackcrypt,BlackCrypt RMM Agent,blackcryptknight.com,,"Domain resolved by the inspected sample in the saved behavior report. This observation does not establish vendor ownership, operator identity, or malicious activity."
 bluetrait,Bluetrait,bluetrait.io,443,Known domains used by Bluetrait
 bluetrait,Bluetrait,bluetrait.io,8080,Known domains used by Bluetrait
 bluetrait,Bluetrait,*.bluetrait.io,443,Known domains used by Bluetrait
@@ -385,9 +387,10 @@ level,Level,level.io,443,Known remote domains
 level,Level,builds.level.io,443,Known remote domains
 level,Level,agents.level.io,443,Known remote domains
 level,Level,online.level.io,443,Known remote domains
-level,Level,downloads.io,443,Known remote domains
+level,Level,downloads.level.io,443,Known remote domains
 levelio,Level.io,level.io,,Known remote domains
 levelio,Level.io,*.level.io,,Known remote domains
+light_rmm_agent,LightRmmAgent,light-rmm-monitor-20260825.azurewebsites.net,443,Exact case-specific endpoint contacted by LightRmmAgent; not a legitimate vendor domain or an indicator for other Azure tenants.
 litemanager,LiteManager,*.litemanager.ru,,Known remote domains
 litemanager,LiteManager,*.litemanager.com,,Known remote domains
 litemanager,LiteManager,litemanager.com,,Known remote domains
@@ -404,6 +407,8 @@ logmein_rescue,LogMeIn rescue,*.logmeinrescue.eu,,Known remote domains
 logmein_rescue,LogMeIn rescue,logmeinrescue.com,,Known remote domains
 logmein_rescue,LogMeIn rescue,rescue-list.*.logmein-gateway.com,,Known remote domains
 logmein_rescue,LogMeIn rescue,rescue-data-cetner.logmein-gateway.com,,Known remote domains
+ls_rmm,LS RMM,www.logistical-software.co.uk,80,Historical HTTP update host hard-coded in the inspected worker; no current reachability or runtime connection was verified.
+ls_rmm,LS RMM,webserv.logistical-software.co.uk,,Historical database host hard-coded in the inspected worker; no port or runtime connection was verified.
 lunixar,Lunixar,*.lunixar.com,23501,Known remote domains
 lunixar,Lunixar,lunixar.com,23501,Known remote domains
 lunixar,Lunixar,app.lunixar.com,23501,Known remote domains
@@ -443,6 +448,7 @@ monitic,Monitic,monitic.com,443,Monitic corporate / marketing site
 monitic,Monitic,www.monitic.com,443,Monitic corporate / marketing site
 mousewithoutborders,Mouse Without Borders,,15100,Peer discovery and control traffic
 mousewithoutborders,Mouse Without Borders,,15101,Peer discovery and control traffic
+mremote,Mremote,api.mremote.io,443,Mremote agent WebSocket relay embedded in the inspected binary and its deployment configuration; the vendor links the management console at mremote.io.
 mremoteng,mRemoteNG,user_managed,,Known remote domains
 mremoteng,mRemoteNG,mremoteng.org,,Known remote domains
 msp360,MSP360,*.cloudberrylab.com,,Known remote domains
@@ -661,6 +667,7 @@ remobo,Remobo,remobo.en.softonic.com,,Known remote domains
 remote.it,Remote.it,auth.api.remote.it,,Known remote domains
 remote.it,Remote.it,api.remote.it,,Known remote domains
 remote.it,Remote.it,remote.it,,Known remote domains
+remote_agent_agent,RemoteAgentAgent,app-af-agent-prod-009.azurewebsites.net,443,"Case-specific configured server and captured RemoteAgent login-panel hostname; initial resolution failed, and no full registration or command exchange with the panel was captured."
 remote_desktop_plus,Remote Desktop Plus,donkz.nl,,Known remote domains
 remote_manipulator_system,Remote Manipulator System,*.internetid.ru,,Known remote domains
 remote_manipulator_system,Remote Manipulator System,rmansys.ru,,Known remote domains
@@ -688,6 +695,7 @@ res_automation_manager,RES Automation Manager,ivanti.com,,Known remote domains
 rg_system,RG System (RG Supervision),lisa.rg-supervision.com,,Agent host present in the inspected deployment-kit configuration and observed DNS queries; no completed connection was established by the reviewed traffic summary.
 rg_system,RG System (RG Supervision),api.rg-supervision.com,443,"HTTPS API URL embedded in the inspected agent; static reference, not an observed connection."
 rg_system,RG System (RG Supervision),dashboard.rg-supervision.com,443,"Vendor dashboard, agent download, and support endpoint documented by the vendor and embedded in the agent."
+rmmcrat,RMMCRAT,softbymade.top,443,Case-specific registration and heartbeat server resolved and contacted by rmm.exe; not legitimate vendor infrastructure.
 rmmmax,RMMmax,api.rmmmax.com,443,Default HTTPS API host embedded in all three supplied agents; enrollment can configure a different API base URL.
 rodexrmm,Rodex RMM,rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."
 rodexrmm,Rodex RMM,www.rodex.cc,443,"Rodex marketing / customer portal — registered 2026-03-12 via NameSilo privacy WHOIS, fronted by Cloudflare. Operators visit this site to purchase a plan and provision a relay onto their VPS."

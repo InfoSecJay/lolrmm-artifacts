@@ -6,6 +6,8 @@ action1,Action1,C:\Windows\Action1\*,C:\Windows\Action1\*,Windows,Windows,,Multi
 action1,Action1,C:\Windows\Action1\scripts\*,C:\Windows\Action1\scripts\*,Windows,Windows,,Multiple scripts related to Action1 installation
 action1,Action1,C:\Windows\Action1\rule_data\*,C:\Windows\Action1\rule_data\*,Windows,Windows,,Files related to Action1 rules
 action1,Action1,C:\Windows\Action1\action1_log_*.log,C:\Windows\Action1\action1_log_*.log,Windows,Windows,,"Contains history, errors, system notifications. Incoming and outgoing connections."
+allocentra,Allocentra,*\allocentra\agent\allocentra-agent.exe,*\allocentra\agent\allocentra-agent.exe,Windows,Windows,,Windows agent install destination confirmed in the decompiled service-install routine.
+allocentra,Allocentra,*\allocentra-update.bat,*\allocentra-update.bat,Windows,Windows,,"Update-script basename confirmed in decompiled Windows update code; generated under the process temporary directory, whose absolute path varies."
 alpemix,Alpemix,%localappdata%\Alpemix\Alpemix.ini,C:\Users\*\AppData\Local\Alpemix\Alpemix.ini,Windows,Windows,,N/A
 ammyyadmin,Ammyy Admin,%programdata%\\AMMYY\\access.log,C:\ProgramData\\AMMYY\\access.log,Windows,Windows,,"Ammyy Admin access log file. Contains information about the remote IP address, the time of connection, bytes recv/send, and the ID of the remote machine."
 ammyyadmin,Ammyy Admin,%Binary_path%\\AA_v3.log,%Binary_path%\\AA_v3.log,Windows,Windows,,Ammyy Admin log file. Contains application related logs.
@@ -43,6 +45,7 @@ bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.ex
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.db,C:\Program Files (x86)\Bluetrait Agent\config.db,Windows,Windows,,Bluetrait configuration database file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.json,C:\Program Files (x86)\Bluetrait Agent\config.json,Windows,Windows,,Bluetrait JSON configuration file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,Windows,Windows,,PAExec utility used by Bluetrait for remote execution
+breezermm,BreezeRMM,PixoIT-agent.exe,PixoIT-agent.exe,Windows,Windows,,"Original filename of the unsigned PixoIT-branded Breeze RMM build, verified in PE resources; not an asserted standard installation path."
 breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-agent.exe,C:\Program Files\Breeze\breeze-agent.exe,Windows,Windows,,Breeze RMM agent executable reported in issue 235.
 breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-watchdog.exe,C:\Program Files\Breeze\breeze-watchdog.exe,Windows,Windows,,Breeze agent watchdog executable reported in issue 235.
 breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-user-helper.exe,C:\Program Files\Breeze\breeze-user-helper.exe,Windows,Windows,,Breeze user-context helper executable reported in issue 235.
@@ -51,6 +54,27 @@ breezermm,BreezeRMM,C:\Program Files\Breeze\scripts\install\install-windows.ps1,
 breezermm,BreezeRMM,C:\ProgramData\Breeze\agent.env,C:\ProgramData\Breeze\agent.env,Windows,Windows,,Breeze agent environment configuration reported in issue 235.
 breezermm,BreezeRMM,C:\ProgramData\Breeze\secrets.yaml,C:\ProgramData\Breeze\secrets.yaml,Windows,Windows,,Breeze agent secrets file reported in issue 235.
 breezermm,BreezeRMM,C:\ProgramData\Breeze\logs\agent.log,C:\ProgramData\Breeze\logs\agent.log,Windows,Windows,,Breeze agent log file reported in issue 235.
+breezermm,BreezeRMM,/usr/local/bin/breeze-agent,/usr/local/bin/breeze-agent,Linux/macOS,Linux,,Breeze agent binary installed by the official Linux installer and present in the official v0.115.0 macOS package payload.
+breezermm,BreezeRMM,/usr/local/bin/breeze-watchdog,/usr/local/bin/breeze-watchdog,Linux/macOS,Linux,,"Breeze watchdog binary installed by the official Linux installer when the matching helper binary is supplied, and present in the official v0.115.0 macOS package payload."
+breezermm,BreezeRMM,/usr/local/bin/breeze-backup,/usr/local/bin/breeze-backup,Linux/macOS,Linux,,"Breeze backup helper installed by the official Linux installer when the matching helper binary is supplied, and present in the official v0.115.0 macOS package payload."
+breezermm,BreezeRMM,/usr/local/bin/breeze-desktop-helper,/usr/local/bin/breeze-desktop-helper,macOS,MacOS,,Desktop helper present in the official v0.115.0 macOS package payload and referenced by its user-session and LoginWindow LaunchAgents.
+breezermm,BreezeRMM,/etc/breeze/agent.yaml,/etc/breeze/agent.yaml,Linux,Linux,,Default Breeze agent configuration path checked by the official Linux installer and referenced by the released Linux agent.
+breezermm,BreezeRMM,/var/lib/breeze/*,/var/lib/breeze/*,Linux,Linux,,Breeze agent data directory created by the official Linux installer.
+breezermm,BreezeRMM,/var/log/breeze/*,/var/log/breeze/*,Linux,Linux,,Breeze log directory created by the official Linux installer; the released Linux agent references /var/log/breeze/agent.log.
+breezermm,BreezeRMM,/var/run/breeze/agent.sock,/var/run/breeze/agent.sock,Linux,Linux,,Breeze agent IPC socket path; the official Linux installer creates /var/run/breeze and the released Linux agent references agent.sock there.
+breezermm,BreezeRMM,/etc/systemd/system/breeze-agent.service,/etc/systemd/system/breeze-agent.service,Linux,Linux,,Official Breeze Linux systemd unit. It runs /usr/local/bin/breeze-agent start with /etc/breeze as its working directory and enables boot persistence.
+breezermm,BreezeRMM,/usr/lib/systemd/user/breeze-agent-user.service,/usr/lib/systemd/user/breeze-agent-user.service,Linux,Linux,,Official per-user Breeze helper systemd unit installed when supplied with the Linux installer source.
+breezermm,BreezeRMM,/etc/xdg/autostart/breeze-agent-user.desktop,/etc/xdg/autostart/breeze-agent-user.desktop,Linux,Linux,,Official Breeze user-helper XDG autostart fallback installed by the Linux installer.
+breezermm,BreezeRMM,/usr/lib/tmpfiles.d/breeze-agent.conf,/usr/lib/tmpfiles.d/breeze-agent.conf,Linux,Linux,,Official tmpfiles rule that creates /run/breeze at boot for Breeze agent IPC.
+breezermm,BreezeRMM,/Library/Application Support/Breeze/*,/Library/Application Support/Breeze/*,macOS,MacOS,,Breeze macOS configuration and IPC directory created by the v0.115.0 package postinstall script.
+breezermm,BreezeRMM,/Library/Logs/Breeze/agent.log,/Library/Logs/Breeze/agent.log,macOS,MacOS,,Standard output log path for the Breeze agent LaunchDaemon in the official v0.115.0 macOS package.
+breezermm,BreezeRMM,/Library/Logs/Breeze/agent.err,/Library/Logs/Breeze/agent.err,macOS,MacOS,,Standard error log path for the Breeze agent LaunchDaemon in the official v0.115.0 macOS package.
+breezermm,BreezeRMM,/Library/Logs/Breeze/watchdog.log,/Library/Logs/Breeze/watchdog.log,macOS,MacOS,,Standard output log path for the Breeze watchdog LaunchDaemon in the official v0.115.0 macOS package.
+breezermm,BreezeRMM,/Library/Logs/Breeze/watchdog.err,/Library/Logs/Breeze/watchdog.err,macOS,MacOS,,Standard error log path for the Breeze watchdog LaunchDaemon in the official v0.115.0 macOS package.
+breezermm,BreezeRMM,/Library/LaunchDaemons/com.breeze.agent.plist,/Library/LaunchDaemons/com.breeze.agent.plist,macOS,MacOS,,"Official Breeze macOS LaunchDaemon, label com.breeze.agent, that runs /usr/local/bin/breeze-agent run with RunAtLoad and KeepAlive."
+breezermm,BreezeRMM,/Library/LaunchDaemons/com.breeze.watchdog.plist,/Library/LaunchDaemons/com.breeze.watchdog.plist,macOS,MacOS,,"Official Breeze macOS watchdog LaunchDaemon, label com.breeze.watchdog, that runs /usr/local/bin/breeze-watchdog run with RunAtLoad and KeepAlive."
+breezermm,BreezeRMM,/Library/LaunchAgents/com.breeze.desktop-helper-user.plist,/Library/LaunchAgents/com.breeze.desktop-helper-user.plist,macOS,MacOS,,"Official Breeze macOS Aqua-session LaunchAgent, label com.breeze.desktop-helper-user, that runs the desktop helper for user sessions."
+breezermm,BreezeRMM,/Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist,/Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist,macOS,MacOS,,"Official Breeze macOS LoginWindow LaunchAgent, label com.breeze.desktop-helper-loginwindow, that runs the desktop helper before user login."
 chrome_remote_desktop,Chrome Remote Desktop,C:\Program Files (x86)\Google\Chrome Remote Desktop\*\remoting_host.exe,C:\Program Files (x86)\Google\Chrome Remote Desktop\*\remoting_host.exe,Windows,Windows,,Versioned Windows host process.
 chrome_remote_desktop,Chrome Remote Desktop,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host,macOS,MacOS,,Primary macOS remote desktop host executable.
 chrome_remote_desktop,Chrome Remote Desktop,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service,/Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service,macOS,MacOS,,macOS host service launched by launchd.
@@ -227,6 +251,9 @@ gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\InstallerHandler\diagnosti
 gorelormm,Gorelo RMM,C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt,C:\Program Files\Gorelo\LogFiles\Shell\diagnostics-*.txt,Windows,Windows,,Diagnostics logs for the Shell component
 gotomypc,GoToMyPC,%AppData%\GoTo\Logs\goto.log,C:\Users\*\AppData\Roaming\GoTo\Logs\goto.log,Windows,Windows,,N/A
 gotomypc,GoToMyPC,%APPDATA%\GoToMeeting\G2M.exe,C:\Users\*\AppData\Roaming\GoToMeeting\G2M.exe,Windows,Windows,,"Legitimate, LogMeIn-signed GoToMeeting binary observed in the wild as a DLL-search-order-hijacking host. The Zscaler OpenClaw campaign (May 2025) shipped G2M.exe inside a malicious MSI alongside a malicious `g2m.dll` placed in the same directory so the signed binary loaded the attacker DLL on launch, then decrypted Remcos RAT shellcode. Hunt for `G2M.exe` running with a non-LogMeIn-signed `g2m.dll` next to it."
+gxm,GxM RMM Agent,*\ProgramData\GxM\agent\GxM.Agent.exe,*\ProgramData\GxM\agent\GxM.Agent.exe,Windows,Windows,,Windows service staging target implemented by the inspected service-install code.
+gxm,GxM RMM Agent,*\ProgramData\GxM\enrollment.json,*\ProgramData\GxM\enrollment.json,Windows,Windows,,Enrollment configuration path implemented by the inspected code; its contents can include agent credentials and should be handled as sensitive.
+gxm,GxM RMM Agent,*\ProgramData\GxM\install.log,*\ProgramData\GxM\install.log,Windows,Windows,,Installer log path implemented by the inspected code.
 heartbeatrm,HeartbeatRM,C:\Program Files (x86)\HeartbeatRM\*,C:\Program Files (x86)\HeartbeatRM\*,Windows,Windows,,HeartbeatRM official installation directory (verified via vendor documentation)
 heartbeatrm,HeartbeatRM,C:\Program Files\HeartbeatRM\*,C:\Program Files\HeartbeatRM\*,Windows,Windows,,HeartbeatRM reported installation directory (unverified - from threat intelligence)
 heartbeatrm,HeartbeatRM,*\agent-installer-any.exe,*\agent-installer-any.exe,Windows,Windows,,HeartbeatRM official installer (verified via VirusTotal)
@@ -277,6 +304,10 @@ invgate,InvGate,C:\Program Files (x86)\Inventec\InvGate.net Client\usbFiles\usbL
 invgate,InvGate,C:\Program Files (x86)\Inventec\InvGate.net Client\4.002.004.ver,C:\Program Files (x86)\Inventec\InvGate.net Client\4.002.004.ver,Windows,Windows,,Per-version marker file dropped by the agent installer/updater
 invgate,InvGate,C:\Program Files (x86)\Inventec\InvGate.net Client\5.001.004.ver,C:\Program Files (x86)\Inventec\InvGate.net Client\5.001.004.ver,Windows,Windows,,Per-version marker file dropped by the agent installer/updater
 invgate,InvGate,C:\Windows\Installer\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}\ARPPRODUCTICON.exe,C:\Windows\Installer\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}\ARPPRODUCTICON.exe,Windows,Windows,,Add/Remove Programs icon cached by Windows Installer for the InvGate Assets Client v5.001.004 product GUID
+it_agent,IT Agent,ITAgentRMMSender.exe,ITAgentRMMSender.exe,Windows,Windows,,Inspected Windows IT Agent RMM Sender component.
+it_agent,IT Agent,ITAgentRMMSenderSL.exe,ITAgentRMMSenderSL.exe,Windows,Windows,,Inspected Windows IT Agent RMM Sender Service Launcher component.
+it_agent,IT Agent,ITAgentRMMSenderUpdater.exe,ITAgentRMMSenderUpdater.exe,Windows,Windows,,Inspected Windows IT Agent RMM Sender updater component.
+it_agent,IT Agent,ITAgentSender.aiui,ITAgentSender.aiui,Windows,Windows,,Inspected Windows IT Agent RMM Sender installer artifact.
 kaseya,Kaseya (VSA),%localappdata%\Kaseya\Log\KaseyaLiveConnect\*,C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect\*,Windows,Windows,,Kaseya Live Connect logs
 kaseya,Kaseya (VSA),~/Library/Logs/com.kaseya/KaseyaLiveConnect/*,~/Library/Logs/com.kaseya/KaseyaLiveConnect/*,MacOS,MacOS,,Kaseya Live Connect logs
 kaseya,Kaseya (VSA),C:\ProgramData\Kaseya\Log\Endpoint\*,C:\ProgramData\Kaseya\Log\Endpoint\*,Windows,Windows,,Kaseya Endpoint logs
@@ -314,9 +345,18 @@ level,Level,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Wi
 levelio,Level.io,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
 levelio,Level.io,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
 levelio,Level.io,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
+light_rmm_agent,LightRmmAgent,*\LightRmmAgent\LightRmmAgentService.exe,*\LightRmmAgent\LightRmmAgentService.exe,Windows,Windows,,Reported executable identity scoped to the reported installation directory; the exact combined path is inferred from those two observations.
+light_rmm_agent,LightRmmAgent,C:\ProgramData\LightRmmAgent\machine.id,C:\ProgramData\LightRmmAgent\machine.id,Windows,Windows,,Machine identifier written after the service started in the reported intrusion.
+light_rmm_agent,LightRmmAgent,C:\Windows\Temp\MonitoringPanel.msi,C:\Windows\Temp\MonitoringPanel.msi,Windows,Windows,,"Installer staged and launched by Level-delivered PowerShell; a case-specific staging path, not the persistent executable."
 localxpose,LocalXpose,loclx.exe,loclx.exe,Windows,Windows,,LocalXpose CLI client (Go static binary). Often run from the user's Downloads or AppData directory rather than a system install path.
 localxpose,LocalXpose,%APPDATA%\loclx\config.yaml,C:\Users\*\AppData\Roaming\loclx\config.yaml,Windows,Windows,,LocalXpose CLI configuration (account API key after `loclx account login`)
 localxpose,LocalXpose,~/.loclx/config.yaml,~/.loclx/config.yaml,Linux,Linux,,LocalXpose CLI configuration on Linux/macOS (account API key)
+ls_rmm,LS RMM,*\LS RMM\LS RMM.exe,*\LS RMM\LS RMM.exe,Windows,Windows,,Management application path recorded in the inspected sample metadata.
+ls_rmm,LS RMM,*\LS RMM\LS RMM Worker.exe,*\LS RMM\LS RMM Worker.exe,Windows,Windows,,Worker resource deployed by the management application and installed as a service.
+ls_rmm,LS RMM,*\LS RMM\LS RMM-Update.exe,*\LS RMM\LS RMM-Update.exe,Windows,Windows,,Update executable basename recovered from static update code.
+ls_rmm,LS RMM,*\LS RMM\LSRMMupdate.txt,*\LS RMM\LSRMMupdate.txt,Windows,Windows,,Version-check file basename recovered from static update code.
+ls_rmm,LS RMM,*\LS RMM\SC.exe,*\LS RMM\SC.exe,Windows,Windows,,Screenshot-helper executable basename recovered from the worker's static code.
+ls_rmm,LS RMM,*\LS RMM\SC.bmp,*\LS RMM\SC.bmp,Windows,Windows,,Screenshot output basename recovered from the worker's static code.
 lunixar,Lunixar,C:\Program Files\Lunixar\Lunixar.dll,C:\Program Files\Lunixar\Lunixar.dll,Windows,Windows,,Main agent DLL
 lunixar,Lunixar,C:\Program Files\Lunixar\Lunixar.Agent.Core.dll,C:\Program Files\Lunixar\Lunixar.Agent.Core.dll,Windows,Windows,,Agent core library
 lunixar,Lunixar,C:\Program Files\Lunixar\LunixarRemote.exe,C:\Program Files\Lunixar\LunixarRemote.exe,Windows,Windows,,Remote access executable
@@ -333,6 +373,9 @@ meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent/meshagent.m
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent,/usr/local/mesh_services/meshagent/meshagent,Linux,Linux,,Local MeshAgent service binary after installation
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent.db,/usr/local/mesh_services/meshagent/meshagent.db,Linux,Linux,,Local Meshagent database after installation
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent.msh,/usr/local/mesh_services/meshagent/meshagent.msh,Linux,Linux,,Local Meshagent databconfiguration file after installation
+mini_rmm,Mini RMM Agent,C:\Program Files\MiniRMM\MiniRmmAgent.exe,C:\Program Files\MiniRMM\MiniRmmAgent.exe,Windows,Windows,,Fixed executable destination in the statically inspected self-install routine.
+mini_rmm,Mini RMM Agent,C:\ProgramData\MiniRMM\SmartScreenTest.ps1,C:\ProgramData\MiniRMM\SmartScreenTest.ps1,Windows,Windows,,Embedded SmartScreen-test script extracted by the agent at runtime.
+mini_rmm,Mini RMM Agent,C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1,C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1,Windows,Windows,,"Embedded Defender-exclusion script extracted by the agent at runtime; included as an artifact, not as a conclusion about use or intent."
 miradore,Miradore,C:\Program Files\Miradore\OnlineClient\bin\*,C:\Program Files\Miradore\OnlineClient\bin\*,Windows,Windows,,Miradore client installation directory (verified via VirusTotal sandbox analysis)
 miradore,Miradore,C:\Program Files\Miradore\OnlineClient\bin\7z.dll,C:\Program Files\Miradore\OnlineClient\bin\7z.dll,Windows,Windows,,Miradore compression library (verified via VirusTotal sandbox analysis)
 monitic,Monitic,C:\Program Files\Monitic\agent.exe,C:\Program Files\Monitic\agent.exe,Windows,Windows,,Monitic primary agent SYSTEM service binary (RustDesk + kopia bundle)
@@ -348,6 +391,10 @@ monitic,Monitic,%CD%\conf.json,%CD%\conf.json,Windows,Windows,,Transient configu
 mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe,Windows,Windows,,Main application binary
 mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe,Windows,Windows,,Optional service binary when Service Mode is enabled
 mousewithoutborders,Mouse Without Borders,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe,C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe,Windows,Windows,,Helper executable used by Mouse Without Borders
+mremote,Mremote,*\AppData\Roaming\Mremote\agent.exe,*\AppData\Roaming\Mremote\agent.exe,Windows,Windows,,Stable per-user agent path derived from the inspected Windows binary.
+mremote,Mremote,*\AppData\Roaming\Mremote\agent.log,*\AppData\Roaming\Mremote\agent.log,Windows,Windows,,Agent log written by the inspected Windows sample in existing sandbox evidence.
+mremote,Mremote,*\AppData\Roaming\Mremote\enrolled.json,*\AppData\Roaming\Mremote\enrolled.json,Windows,Windows,,Enrollment cache path derived from the inspected Windows binary; contents are deployment-specific.
+mremote,Mremote,*\AppData\Roaming\Mremote\consent.ok,*\AppData\Roaming\Mremote\consent.ok,Windows,Windows,,General-consent marker path derived from the inspected Windows binary.
 mremoteng,mRemoteNG,C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log,C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log,Windows,Windows,,mRemoteNG log file
 mremoteng,mRemoteNG,C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml,C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml,Windows,Windows,,mRemoteNG configuration file
 mremoteng,mRemoteNG,C:\Users\*\AppData\*\mRemoteNG\**10\user.config,C:\Users\*\AppData\*\mRemoteNG\**10\user.config,Windows,Windows,,mRemoteNG user configuration file
@@ -369,6 +416,7 @@ netlock_rmm,NetLock RMM,C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Age
 netlock_rmm,NetLock RMM,/etc/systemd/system/netlock-rmm-agent-comm.service,/etc/systemd/system/netlock-rmm-agent-comm.service,Linux,Linux,,Netlock RMM Agent comm agent service
 netlock_rmm,NetLock RMM,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,macOS,MacOS,,macOS LaunchDaemon plist File
 netlock_rmm,NetLock RMM,/var/log/netlock-rmm-agent-comm.log,/var/log/netlock-rmm-agent-comm.log,Linux,Linux,,RMM agent comm log (Non-Windows)
+nexus_scogo,Nexus RMM (Scogo),nexusrmm.exe,nexusrmm.exe,Windows,Windows,,Windows Nexus RMM Agent setup filename from reviewed PE metadata.
 nezha,Nezha,C:\nezha\nezha-agent.exe,C:\nezha\nezha-agent.exe,Windows,Windows,,Nezha Agent Windows binary (typical install path; vendor PowerShell installer drops it here)
 nezha,Nezha,C:\nezha\config.yml,C:\nezha\config.yml,Windows,Windows,,"Nezha Agent configuration file (server address, client_secret, UUID). Sits alongside the agent binary by convention."
 nezha,Nezha,/opt/nezha/agent/nezha-agent,/opt/nezha/agent/nezha-agent,Linux,Linux,,Nezha Agent Linux binary (default install path used by the official curl|bash installer)
@@ -381,6 +429,8 @@ nvda,NVDA (Non-Visual Desktop Access),C:\Program Files (x86)\NVDA\nvda.exe,C:\Pr
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files\NVDA\nvda.exe,C:\Program Files\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory (64-bit)
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.log,C:\Users\*\AppData\Roaming\nvda\nvda.log,Windows,Windows,,NVDA log file
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.ini,C:\Users\*\AppData\Roaming\nvda\nvda.ini,Windows,Windows,,NVDA configuration file
+opendesk,OpenDesk RMM Agent,OpenDesk-RMM-Agent.exe,OpenDesk-RMM-Agent.exe,Windows,Windows,,Official Windows release-asset basename matching the inspected signed sample.
+opendesk,OpenDesk RMM Agent,opendesk-rmm-agent.exe,opendesk-rmm-agent.exe,Windows,Windows,,Original filename in the inspected Windows sample's PE metadata.
 opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,Windows,Windows,,Canonical agent executable installed by the observed MSI.
 opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\*.exe,C:\Program Files\OpsBridge\*.exe,Windows,Windows,,Randomly named persisted agent copy observed across sandbox runs.
 opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\agent_state.json,C:\ProgramData\OpsBridge\agent_state.json,Windows,Windows,,Agent enrollment and runtime state.
@@ -401,6 +451,9 @@ radmin,RAdmin,C:\Windows\System32\rserver30\Radm_log.htm,C:\Windows\System32\rse
 radmin,RAdmin,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,Windows,Windows,,RAdmin chat logs
 radmin,RAdmin,C:\Users\*\Documents\ChatLogs\*\*.htm,C:\Users\*\Documents\ChatLogs\*\*.htm,Windows,Windows,,RAdmin user chat logs
 rdclient,RdClient,%APPDATA%\RdClient\*,C:\Users\*\AppData\Roaming\RdClient\*,Windows,Windows,,
+remote_agent_agent,RemoteAgentAgent,C:\Program Files\RemoteAgent\RemoteAgentAgent.exe,C:\Program Files\RemoteAgent\RemoteAgentAgent.exe,Windows,Windows,,Agent executable installed by the recovered service-install script.
+remote_agent_agent,RemoteAgentAgent,C:\Program Files\RemoteAgent\config.json,C:\Program Files\RemoteAgent\config.json,Windows,Windows,,Default configuration file identified in the reconstructed Python code; its path can be overridden by AGENT_CONFIG_PATH.
+remote_agent_agent,RemoteAgentAgent,C:\Windows\Temp\RemoteAgent.msi,C:\Windows\Temp\RemoteAgent.msi,Windows,Windows,,Case-specific installer staging path observed before silent MSI installation.
 remotely,Remotely,C:\Program Files\Remotely\Remotely_Agent.exe,C:\Program Files\Remotely\Remotely_Agent.exe,Windows,Windows,,Windows unattended agent installed by Install-Remotely.ps1 and configured as the Remotely_Service service binary.
 remotely,Remotely,C:\Program Files\Remotely\Desktop\Remotely_Desktop.exe,C:\Program Files\Remotely\Desktop\Remotely_Desktop.exe,Windows,Windows,,Windows remote desktop client bundled under the Remotely installation directory.
 remotely,Remotely,C:\Program Files\Remotely\ConnectionInfo.json,C:\Program Files\Remotely\ConnectionInfo.json,Windows,Windows,,"Remotely agent configuration containing device, organization, and server connection information."
@@ -435,6 +488,10 @@ remsupp,RemSupp,C:\Users\*\AppData\Roaming\RemSupp\quitAndInstall.json,C:\Users\
 rg_system,RG System (RG Supervision),*\RG-Supervision\RG_Supervision.exe,*\RG-Supervision\RG_Supervision.exe,Windows,Windows,,"Product executable named in the inspected agent's copy-error string, scoped to the vendor's example installation directory; the installation path is configurable."
 rg_system,RG System (RG Supervision),*\AppData\Local\Temp\rgsupv\cache\prepared,*\AppData\Local\Temp\rgsupv\cache\prepared,Windows,Windows,,Temporary cache artifact written by the inspected Windows sample in existing sandbox evidence.
 rg_system,RG System (RG Supervision),/etc/init.d/rgsupv,/etc/init.d/rgsupv,Linux,Linux,,"SysV init script installed from rgsupv-init in the vendor's Linux monitoring-agent instructions; legacy documented artifact, not evidence of a current systemd unit."
+rmmcrat,RMMCRAT,*\AppData\Roaming\rmm.exe,*\AppData\Roaming\rmm.exe,Windows,Windows,,Executable location observed in the intrusion; rmm.exe alone is a generic name and requires corroboration.
+rmmcrat,RMMCRAT,C:\ProgramData\RMMAgent\client_id.bin,C:\ProgramData\RMMAgent\client_id.bin,Windows,Windows,,DPAPI-protected device identity documented by the reverse-engineering report under the observed enrollment directory.
+rmmcrat,RMMCRAT,C:\ProgramData\RMMAgent\credentials.dat,C:\ProgramData\RMMAgent\credentials.dat,Windows,Windows,,DPAPI-protected issued agent token; enrollment data must not be included in public indicators.
+rmmcrat,RMMCRAT,C:\ProgramData\RMMAgent\packages\Notepad++.exe,C:\ProgramData\RMMAgent\packages\Notepad++.exe,Windows,Windows,,Case-specific downloaded package path; the Notepad++-named task failed its integrity check before execution.
 rmmmax,RMMmax,%ProgramData%\rmmmax\AgentService\RMMmaxAgentService.exe,C:\ProgramData\rmmmax\AgentService\RMMmaxAgentService.exe,Windows,Windows,,Windows service and tray UI executable; destination confirmed by the supplied Inno Setup installer.
 rmmmax,RMMmax,%ProgramData%\RMMmax\AgentService\activity.log,C:\ProgramData\RMMmax\AgentService\activity.log,Windows,Windows,,Windows agent activity log path confirmed in the decompiled agent.
 rmmmax,RMMmax,%SystemRoot%\Temp\rmmmax_*.ps1,C:\Windows\Temp\rmmmax_*.ps1,Windows,Windows,,Temporary PowerShell command scripts created by the Windows agent and deleted after execution.
@@ -578,6 +635,8 @@ trustconnect,TrustConnect,C:\Program Files\TrustConnect Agent\TrustConnectAgent.
 trustconnect,TrustConnect,C:\Program Files\TrustConnect Agent\config.json,C:\Program Files\TrustConnect Agent\config.json,Windows,Windows,,TrustConnect Agent configuration file written at install
 trustconnect,TrustConnect,C:\ProgramData\TrustConnect\*\config.json,C:\ProgramData\TrustConnect\*\config.json,Windows,Windows,,Per-token agent configuration (token subdirectory maps victim to operator org ID)
 trustconnect,TrustConnect,C:\ProgramData\TrustConnect\*\device.id,C:\ProgramData\TrustConnect\*\device.id,Windows,Windows,,36-byte device GUID file used for C2 registration
+unisystem,UniSystem RMM,UniRMM.exe,UniRMM.exe,Windows,Windows,,Windows UniSystem RMM agent filename from reviewed PE metadata.
+unisystem,UniSystem RMM,UniRMM.msi,UniRMM.msi,Windows,Windows,,Windows installer filename described by the vendor product site.
 veyon,Veyon,C:\Windows\Temp\VeyonServer.log,C:\Windows\Temp\VeyonServer.log,Windows,Windows,,VeyonServer log file
 veyon,Veyon,C:\Windows\Temp\VeyonService.log,C:\Windows\Temp\VeyonService.log,Windows,Windows,,VeyonService log file
 veyon,Veyon,C:\Users\*\AppData\Local\VeyonCLI.log,C:\Users\*\AppData\Local\VeyonCLI.log,Windows,Windows,,Veyon command-line interface utility log

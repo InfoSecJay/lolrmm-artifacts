@@ -2,6 +2,8 @@ slug,name,path,description
 action1,Action1,HKLM\System\CurrentControlSet\Services\A1Agent,Service installation event as result of Action1 installation.
 action1,Action1,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps\action1_agent.exe,"Ensures that detailed crash information is available for analysis, which aids in maintaining the stability and reliability of the software."
 action1,Action1,HKLM\SOFTWARE\WOW6432Node\Action1,Storing its configuration settings and other relevant information
+allocentra,Allocentra,HKLM\SOFTWARE\Allocentra\Agent,Agent enrollment and connection configuration read and written by the inspected Windows code; values can contain credentials and must not be published.
+allocentra,Allocentra,HKLM\SYSTEM\CurrentControlSet\Services\AllocentraAgent,Windows service key inferred from the AllocentraAgent service configuration confirmed in decompiled installation code; not a runtime observation.
 alpemix,Alpemix,HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx,N/A
 ammyyadmin,Ammyy Admin,HKU\.DEFAULT\Software\Ammyy\Admin,Writing the hr3 binary in the registry. The hr3 is likely used to store admin-related information.
 ammyyadmin,Ammyy Admin,HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin,Ammyy Admin service allows AMMYY admin to run in safe mode.
@@ -22,6 +24,7 @@ atera,Atera,HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS,
 atera,Atera,HKLM\SOFTWARE\ATERA Networks\*,
+blackcrypt,BlackCrypt RMM Agent,HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\BlackCryptAgent,Run-key value observed in the saved behavior report; its sample-specific target path is intentionally not used as a generic installation indicator.
 controlr,ControlR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR,Default ControlR uninstall registry key on Windows.
 controlr,ControlR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*),Instance-specific ControlR uninstall registry key on Windows.
 faronics_core,Faronics Core,HKLM\SYSTEM\CurrentControlSet\Services\FaronicsCoreAgent,Faronics Core Agent Windows service registration
@@ -69,6 +72,7 @@ gotomypc,GoToMyPC,HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc,Configuration s
 gotomypc,GoToMyPC,HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc\GuestInvite,Guest invites send to connect
 gotomypc,GoToMyPC,HKEY_CURRENT_USER\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history,hostname of the computer making connections and location of transferred files
 gotomypc,GoToMyPC,HKEY_USERS\<SID>\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history,hostname of the computer making connections and location of transferred files
+gxm,GxM RMM Agent,HKLM\SYSTEM\CurrentControlSet\Services\GxMAgent,Windows service configuration key inferred from the inspected GxMAgent service-install code.
 hoptodesk,HopToDesk,HKEY_CURRENT_USER\Software\Classes\HopToDesk\shell\open\command,HopToDesk URL protocol handler
 hoptodesk,HopToDesk,HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\HopToDesk,HopToDesk uninstall registry key
 idrive,iDrive,HKEY_LOCAL_MACHINE\SOFTWARE\IDrive\*,iDrive configuration registry keys
@@ -84,8 +88,14 @@ komari,Komari,HKLM\System\CurrentControlSet\Services\Windows Update Service,"Kom
 lavawall,Lavawall,HKLM\SOFTWARE\WOW6432Node\LavaWall\Agent,"Agent registration and configuration key, including DeviceId, CompanyGuid, and IsRegistered values, confirmed in the inspected code."
 lavawall,Lavawall,HKLM\SYSTEM\CurrentControlSet\Services\Lavawall Support Agent,Automatic-start Windows management service. Its description is Patch and configuration monitoring and management.
 lavawall,Lavawall,HKLM\SYSTEM\CurrentControlSet\Services\LavaWallRemoteAgent,Windows remote-support service identified in both inspected agent components.
+light_rmm_agent,LightRmmAgent,HKLM\SYSTEM\CurrentControlSet\Services\LightRmmAgent,SCM key inferred from the observed LightRmmAgent service name; the report does not separately show a registry write.
+ls_rmm,LS RMM,HKLM\SOFTWARE\LS RMM,Product configuration and status key created and read by both inspected components.
+ls_rmm,LS RMM,HKLM\SYSTEM\CurrentControlSet\Services\LSRMMWorker,Service key for the statically recovered LSRMMWorker service name.
 lunixar,Lunixar,HKLM\System\CurrentControlSet\Services\LunixarRMM,Windows service registration
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*},ManageEngine ServiceDesk Plus uninstall registry keys (verified via VirusTotal sandbox)
+mini_rmm,Mini RMM Agent,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\MiniRMMAgent,Startup value set by the inspected agent code to its current executable path.
+mini_rmm,Mini RMM Agent,HKLM\SYSTEM\CurrentControlSet\Services\MiniRmmAgent,Windows service configuration key inferred from the inspected self-install code.
+mremote,Mremote,HKLM\SYSTEM\CurrentControlSet\Services\MremoteAgent,Hardcoded fallback Windows service key. Configured deployments can instead derive the service name from a sanitized deployment identity.
 mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Terminal Server Client\Default,Most-recently-used (MRU) list of remote hosts connected to via mstsc.exe.
 mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Terminal Server Client\Servers,Per-host subkeys recording usernames and gateway hints used by mstsc.exe.
 netbird,NetBird,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user,"Registry key set to 0 to hide the attacker-created local administrator account ""user"" from the Windows logon screen (May 2025 Trellix-reported CFO spear-phishing campaign)."
@@ -100,6 +110,7 @@ remsupp,RemSupp,HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595
 rg_system,RG System (RG Supervision),HKLM\SOFTWARE\RG Systemes\RG Supervision,"Native-view Windows agent configuration hierarchy, corroborated by registry activity and embedded strings."
 rg_system,RG System (RG Supervision),HKLM\SOFTWARE\WOW6432Node\RG Systemes\RG Supervision,"32-bit Windows agent configuration hierarchy, also documented for the expected-host-name network setting."
 rg_system,RG System (RG Supervision),HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision,Windows service configuration key inferred from the RG-Supervision service name in vendor deployment scripts.
+rmmcrat,RMMCRAT,HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent,Potential SCM key inferred from the default service name recovered by MalBear Labs; service installation was supported by code but not observed in this intrusion.
 rmmmax,RMMmax,HKLM\SOFTWARE\RMMmax\AgentService,Logical configuration key used by the Windows installer and agent; stores registration state and DPAPI-protected tokens in the process registry view.
 rmmmax,RMMmax,HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService,Windows service registered by the agent through sc.exe create with obj= LocalSystem and start= auto.
 rmmmax,RMMmax,HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService,Windows tray UI startup value; invokes the agent executable with /tray when the service is installed.

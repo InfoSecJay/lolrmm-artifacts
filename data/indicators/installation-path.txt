@@ -1,6 +1,8 @@
 %APPDATA%\GoToMeeting\G2M.exe
 %APPDATA%\JWrapper-SimpleSetup\*
 %APPDATA%\loclx\*
+%APPDATA%\Mremote\*
+%ProgramData%\Mremote\<deployment-id>\*
 %ProgramData%\rmmmax\AgentService\RMMmaxAgentService.exe
 %ProgramData%\Tiflux\*
 %USERPROFILE%\\AppData\\Local\\Temp\\SupremoRemoteDesktop\\
@@ -85,6 +87,9 @@
 *\OnionShare\*
 *\PcHelpWare_viewer.exe
 *\PJ Technologies\GOVsrv\*
+*\ProgramData\GxM\agent\GxM.Agent.exe
+*\ProgramData\GxM\enrollment.json
+*\ProgramData\GxM\install.log
 *\putty.exe
 *\puttytray.exe
 *\RDCMan-x86.exe
@@ -164,10 +169,12 @@
 /Applications/Teramind Agent.app
 /Applications/TiAgent.app
 /Applications/tmagent.app
+/etc/breeze/*
 /etc/glpi-agent/*
 /etc/init.d/dataplicity
 /etc/netbird/install.conf
 /etc/shellhub-agent/*
+/etc/systemd/system/breeze-agent.service
 /etc/systemd/system/dataplicity.service
 /etc/systemd/system/komari-agent.service
 /etc/systemd/system/komari.service
@@ -178,8 +185,14 @@
 /etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/helpwire-unattended.service
 /Library/Application Support/0x101_Cyber_Security/*
+/Library/Application Support/Breeze/*
 /Library/Application Support/ControlR/*
+/Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist
+/Library/LaunchAgents/com.breeze.desktop-helper-user.plist
+/Library/LaunchDaemons/com.breeze.agent.plist
+/Library/LaunchDaemons/com.breeze.watchdog.plist
 /Library/LaunchDaemons/remotely-agent.plist
+/Library/Logs/Breeze/*
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
 /Library/zecurit_agent/bin/CommandProcessor
@@ -203,6 +216,10 @@
 /usr/bin/netbird
 /usr/bin/tmate
 /usr/local/bin/0x101_Cyber_Security/Netlock_RMM/*
+/usr/local/bin/breeze-agent
+/usr/local/bin/breeze-backup
+/usr/local/bin/breeze-desktop-helper
+/usr/local/bin/breeze-watchdog
 /usr/local/bin/ControlR/*
 /usr/local/bin/dataplicity
 /usr/local/bin/glpi-agent
@@ -226,8 +243,10 @@
 /usr/local/zecurit_agent/bin/commandProcessor
 /usr/local/zecurit_agent/bin/installer
 /var/0x101_Cyber_Security/*
+/var/lib/breeze/*
 /var/lib/glpi-agent/*
 /var/lib/shellhub-agent/*
+/var/log/breeze/*
 /var/rmmmax/agentservice/rmmmax_agent.py
 9380CC75B872221A7425D7503565B67580407F60
 aa_v*.exe
@@ -249,6 +268,7 @@ AgentlessRC.exe
 AgentSetup-*.exe
 agentu.exe
 alitask.exe
+allocentra-agent.exe
 AMMYY_Admin.exe
 apc_host.exe
 ArcUI.exe
@@ -297,6 +317,7 @@ C:\bin\netbird.msi
 C:\bin\OpenSSH.msi
 C:\bin\trm.zip
 C:\Downloads\SuperPuTTY\*
+C:\GxM\agent
 C:\komari\*
 C:\Lavawall\LavawallWin.exe
 C:\nezha\*
@@ -366,6 +387,8 @@ C:\Program Files (x86)\ISL Online\ISL Light*
 C:\Program Files (x86)\Kaseya\
 C:\Program Files (x86)\LANDesk\*
 C:\Program Files (x86)\Lavawall\LavawallWin.exe
+C:\Program Files (x86)\LS RMM\LS RMM Worker.exe
+C:\Program Files (x86)\LS RMM\LS RMM.exe
 C:\Program Files (x86)\ManageEngine\ServiceDesk\*
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\*
 C:\Program Files (x86)\mRemoteNG\*
@@ -410,6 +433,7 @@ C:\Program Files (x86)\Yandex\*
 c:\Program Files\*\Duplicati.Server.exe
 C:\Program Files\0x101 Cyber Security\NetLock RMM\UserAgent\NetLock_RMM_User_Process.exe
 C:\Program Files\0x101 Cyber Security\NetLock RMM\UserAgent\NetLock_RMM_User_UAC.exe
+C:\Program Files\Allocentra\Agent\allocentra-agent.exe
 C:\Program Files\AnyDesk\*
 C:\Program Files\Aspia\
 C:\Program Files\Atera Networks
@@ -445,10 +469,12 @@ C:\Program Files\ImmyBot\ImmyUpdater.exe
 C:\Program Files\Komari\*
 C:\Program Files\Lavawall\LavawallWin.exe
 C:\Program Files\Level\*
+C:\Program Files\LightRmmAgent\*
 C:\Program Files\LiteManager Pro – Viewer\*
 C:\Program Files\Lunixar\*
 C:\Program Files\ManageEngine\ManageEngine Free Tools\Launcher\*
 C:\Program Files\ManageEngine\ServiceDesk\*
+C:\Program Files\MiniRMM\MiniRmmAgent.exe
 C:\Program Files\Miradore\OnlineClient\bin\*
 C:\Program Files\Monitic\*
 C:\Program Files\Monitic\agent.exe
@@ -465,6 +491,7 @@ C:\Program Files\RdClient\*
 C:\Program Files\RealVNC\VNC Server\*
 C:\Program Files\Remote Ripple\*
 C:\Program Files\Remote Utilities\*
+C:\Program Files\RemoteAgent\RemoteAgentAgent.exe
 C:\Program Files\Remotely\ConnectionInfo.json
 C:\Program Files\Remotely\Desktop\Remotely_Desktop.exe
 C:\Program Files\Remotely\etag.txt
@@ -505,9 +532,12 @@ C:\ProgramData\Getscreen.me\
 C:\ProgramData\IDrive\*
 C:\ProgramData\JWrapper-Remote Access\*
 C:\ProgramData\Kaseya\
+C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1
+C:\ProgramData\MiniRMM\SmartScreenTest.ps1
 C:\ProgramData\Netbird\*
 C:\ProgramData\OpsBridge\*
 C:\ProgramData\Package Cache\.unverified\agent
+C:\ProgramData\RMMAgent\*
 C:\ProgramData\Teramind Agent\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe
@@ -754,6 +784,10 @@ ISLLight.exe
 ISLLightClient.exe
 isllightservice.exe
 issuser.exe
+ITAgentRMMSender.exe
+ITAgentRMMSenderSL.exe
+ITAgentRMMSenderUpdater.exe
+ITAgentSender.aiui
 ITarianRemoteAccessSetup.exe
 itsmagent.exe
 ITSMAgent.exe
@@ -788,6 +822,8 @@ lmi_rescue.exe
 lmnoipserver.exe
 loclx
 loclx.exe
+LS RMM Worker.exe
+LS RMM.exe
 ltsvc.exe
 ltsvcmon.exe
 lttray.exe
@@ -827,6 +863,7 @@ neturo.exe
 netviewer*.exe
 netviewer.exe
 NetViewer.exe
+nexusrmm.exe
 nezha-agent
 nezha-agent.exe
 nezha_agent
@@ -862,6 +899,8 @@ Online Backup.exe
 oolocker.exe
 OOSysAgent.exe
 oosyspectr.exe
+OpenDesk-RMM-Agent.exe
+opendesk-rmm-agent.exe
 OrayRemoteService.exe
 OrayRemoteShell.exe
 OTPowerShell.exe
@@ -886,6 +925,7 @@ pcvisit_service_client.exe
 pdq-connect*.exe
 PDQConnectUpdater-*.msi
 Pilixo_Installer*.exe
+PixoIT-agent.exe
 pocketcloud*.exe
 pocketcloudservice.exe
 pocketcontroller.exe
@@ -1088,6 +1128,8 @@ UltraViewer_Service.exe
 ultraviewer_service.exe
 UltraViewer_setup*
 UltraVNC*.exe
+UniRMM.exe
+UniRMM.msi
 veyon-master.exe
 veyon-server.exe
 veyon-service.exe

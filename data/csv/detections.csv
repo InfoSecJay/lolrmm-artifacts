@@ -409,6 +409,7 @@ remsupp,RemSupp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sig
 remsupp,RemSupp,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remsupp_registry_sigma.yml,Detects potential registry activity of RemSupp RMM tool
 res_automation_manager,RES Automation Manager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/res_automation_manager_network_sigma.yml,Detects potential network activity of RES Automation Manager RMM tool
 res_automation_manager,RES Automation Manager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/res_automation_manager_processes_sigma.yml,Detects potential processes activity of RES Automation Manager RMM tool
+rmmcrat,RMMCRAT,https://github.com/pandare9x/Yara-Rules/blob/main/SEOPoison/rmmcrat.yar,Researcher-provided rule for the analyzed RMMCRAT payload.
 rocketremotedesktop,Rocket Remote Desktop,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rocket_remote_desktop_processes_sigma.yml,Detects potential processes activity of Rocket Remote Desktop RMM tool
 rodexrmm,Rodex RMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rodexrmm_files_sigma.yml,Detects potential files activity of Rodex RMM tool
 rodexrmm,Rodex RMM,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rodexrmm_processes_sigma.yml,Detects potential processes activity of Rodex RMM tool

@@ -16,9 +16,11 @@ Komari Agent
 Lavawall Windows Agent
 LMIGuardianSvc
 Mouse Without Borders
+Mremote Agent
 Ninite
 OpsBridge Endpoint Management Suite
 Parsec
+PixoIT RMM Agent
 Radmin Server
 Radmin Viewer
 RemSupp

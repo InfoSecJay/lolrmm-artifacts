@@ -1,11 +1,14 @@
 action1_agent.exe
+agent.exe
 AgentInstaller.dll
+allocentra-agent.exe
 Alpemix
 AnyDesk.exe
 AnyViewer
 aspia_client.exe
 AteraAgent.exe
 AutoUpdate.exe
+BlackCryptAgent.dll
 Bluetrait MSP Agent.exe
 bma.exe
 CloudWksInstall.exe
@@ -50,6 +53,7 @@ FWA_UI_Agent.exe
 FWAService.exe
 getscreen.exe
 Gorelo.Rmm.Setup.exe
+GxM.Agent.dll
 helpwire.exe
 InsightInstaller.exe
 InsightInstallerStudent.exe
@@ -59,21 +63,31 @@ InvGate-ED.exe
 InvGateAssetsRD.exe
 InvGateRD.exe
 IPRangeCalculator.exe
+ITAgentRMMSender.exe
+ITAgentRMMSenderSL.exe
+ITAgentRMMSenderUpdater.exe
+ITAgentSender.aiui
 komari-agent.exe
 komari.exe
 LavawallWin.dll
 loclx
 loclx.exe
+LS RMM Worker.exe
+LS RMM.exe
 ModulesUpgradeMgr.exe
 MoniticInstaller.exe
 MouseWithoutBorders.exe
+mremote-agent.exe
 mstsc.exe
 netbird_installer.exe
+nexusrmm.exe
 nezha-agent.exe
 NiniteOne.exe
 NotificationHelper.exe
+opendesk-rmm-agent.exe
 OpsBridgeAgent.exe
 pitunnel
+PixoIT-agent.exe
 plink.exe
 Radmin.exe
 RCClient.exe
@@ -101,4 +115,5 @@ tmagentsvc.exe
 TrustConnectAgent.dll
 tsh.exe
 UninstallStatusUpdater.exe
+UniRMM.exe
 wintun.dll

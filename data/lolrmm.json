@@ -1027,6 +1027,112 @@
     }
   },
   {
+    "Name": "Allocentra",
+    "Category": "RMM",
+    "Description": "Allocentra is an endpoint remote monitoring and management (RMM) and PSA platform. Vendor documentation describes agents for Windows, Linux, and macOS that provide endpoint telemetry, patch management, remote commands, scripts, and MeshCentral-backed remote-control sessions.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "https://allocentra.co.za/",
+      "PEMetadata": [
+        {
+          "Filename": "allocentra-agent.exe",
+          "OriginalFileName": "allocentra-agent.exe",
+          "Description": "Allocentra RMM Agent",
+          "Product": null
+        }
+      ],
+      "Privileges": "Windows installation requires elevation; the documented Linux and macOS installer is run with sudo.",
+      "Free": "",
+      "Verification": "The Windows agent was inspected statically without execution. Its full-file SHA-256 and PE metadata identify Allocentra RMM Agent, company Allocentra, and allocentra-agent.exe; it was unsigned at the time of inspection. Vendor documentation independently establishes Windows, Linux, and macOS agent support, the documented HTTPS API host, and the listed management capabilities. The binary contains a separate API-domain string under a .io domain; that value is intentionally not included as a network indicator because it was not correlated to the vendor documentation or runtime traffic. Ghidra decompilation confirms installation to C:\\Program Files\\Allocentra\\Agent\\allocentra-agent.exe, the AllocentraAgent service with its svc argument, configuration reads and writes under HKLM\\SOFTWARE\\Allocentra\\Agent, and remote-command dispatch to CMD or PowerShell. The generated allocentra-update.bat update script is also present. Linux and macOS support and the shell installer name are vendor-documented; no Unix package, installed path, systemd unit, or launchd label was verified in this review.",
+      "SupportedOS": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "Capabilities": [
+        "Endpoint telemetry and inventory",
+        "Patch management",
+        "Remote commands and scripts",
+        "Remote control through embedded MeshCentral"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\Allocentra\\Agent\\allocentra-agent.exe",
+        "allocentra-agent.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\allocentra\\agent\\allocentra-agent.exe",
+          "Description": "Windows agent install destination confirmed in the decompiled service-install routine.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\allocentra-update.bat",
+          "Description": "Update-script basename confirmed in decompiled Windows update code; generated under the process temporary directory, whose absolute path varies.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Allocentra\\Agent",
+          "Description": "Agent enrollment and connection configuration read and written by the inspected Windows code; values can contain credentials and must not be published."
+        },
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\AllocentraAgent",
+          "Description": "Windows service key inferred from the AllocentraAgent service configuration confirmed in decompiled installation code; not a runtime observation."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Vendor-documented outbound API endpoint for agent deployment and operation.",
+          "Domains": [
+            "api.allocentra.co.za"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "WindowsServiceName",
+          "Value": "AllocentraAgent"
+        },
+        {
+          "Type": "WindowsServiceArgument",
+          "Value": "svc"
+        },
+        {
+          "Type": "DocumentedLinuxMacOSInstaller",
+          "Value": "install-allocentra-agent.sh"
+        },
+        {
+          "Type": "InspectedWindowsAgentSHA256",
+          "Value": "24c8e21c6de8726b32d5deafadf69e2ad923d672ed09cdccf23c923544daf358"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://allocentra.co.za/",
+      "https://docs.allocentra.co.za/agent-installation",
+      "https://docs.allocentra.co.za/remote-control",
+      "https://docs.allocentra.co.za/scripts",
+      "https://docs.allocentra.co.za/patches"
+    ],
+    "Acknowledgement": [],
+    "source_file": "allocentra.yaml"
+  },
+  {
     "Name": "Alpemix",
     "Category": "RMM",
     "Description": "Alpemix is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -3104,6 +3210,66 @@
     "source_file": "basecamp.yaml"
   },
   {
+    "Name": "Basic RMM Agent",
+    "Category": "RMM",
+    "Description": "Basic RMM Agent is an unattributed Windows remote monitoring and management agent. Static analysis shows endpoint inventory, patch management, remote interactive desktop control, shell access, file transfer, and endpoint administration functions. The same binary also includes keylogging, vault scanning, webcam and audio functions, and hidden virtual desktop support. No independent vendor, official distribution source, or publisher signature was established; use the product identity, hash, and behavior rather than the generic agent.exe filename for triage.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "agent.exe",
+          "OriginalFileName": "agent.exe",
+          "Description": "Basic RMM monitoring and management agent",
+          "Product": null
+        }
+      ],
+      "Privileges": "",
+      "Free": "",
+      "Verification": "A Windows x64 Go executable was inspected statically without execution. Its PE metadata identifies Basic RMM Agent and its Go build information identifies the executable path basicrmm/cmd/agent, the basicrmm module, and GOOS=windows. Ghidra decompilation confirmed command dispatch for shell, screen/input, keylog, vault scan, webcam, audio, and HVNC adapters, plus compiled inventory, patch, and file-transfer functions. The vault scan's exact collection scope was not resolved. Recovered Go module and function paths additionally identify process, service, registry, and self-update components; these were not decompiled in this pass. The binary is unsigned. External vendor or distribution provenance was not established, so the Basic RMM name is a self-identity rather than an independently attributed vendor product.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Endpoint inventory and patch management",
+        "Interactive screen, input, and clipboard control",
+        "Remote shell and file transfer",
+        "Process, service, and registry administration components (symbol evidence)",
+        "Self-update components (symbol evidence)",
+        "Keylogging and vault scanning (collection scope not established)",
+        "Webcam, audio, and hidden virtual desktop support"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": []
+    },
+    "Artifacts": {
+      "Disk": [],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "InspectedWindowsAgentSHA256",
+          "Value": "3f5da17df9261283d0b70e9817bbfc681c6f3101b94a45ac6f8b9cda6aa40a3f"
+        },
+        {
+          "Type": "GoBuildModule",
+          "Value": "basicrmm"
+        },
+        {
+          "Type": "GoBuildRevision",
+          "Value": "7074055331fcfba7e91cac443af2288e3afed9f2"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [],
+    "Acknowledgement": [],
+    "source_file": "basic_rmm.yaml"
+  },
+  {
     "Name": "BeamYourScreen",
     "Category": "RMM",
     "Description": "BeamYourScreen is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -3615,6 +3781,105 @@
     }
   },
   {
+    "Name": "BlackCrypt RMM Agent",
+    "Category": "RMM",
+    "Description": "BlackCrypt RMM Agent is a custom Windows endpoint-management agent whose compiled code implements registration, heartbeats, WebSocket job dispatch, interactive terminal sessions, remote command and script execution, inventory collection, and endpoint-management actions. The inspected sample self-identifies as a BlackCrypt Labs Inc product, but no independently verifiable publisher or product source was identified. Its signing certificate subject is C&P Global Investors LLC and local certificate validation reported that certificate as revoked. This entry documents the agent's confirmed functionality and observed host/network artifacts; it does not establish a legitimate commercial vendor, malware classification, or observed abuse.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "BlackCryptAgent.dll",
+          "OriginalFileName": "BlackCryptAgent.dll",
+          "Description": "BlackCrypt RMM Remote Management Agent (self-identified in PE resources)",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator required for elevated job execution; service-install requirements were not established",
+      "Free": "Unknown",
+      "Verification": "A 120,769,056-byte Windows sample was downloaded for static analysis only and its SHA-256 was verified. Decompilation confirms a coherent custom endpoint-management implementation, including registration, heartbeat, WebSocket, terminal, command-execution, inventory, and firewall/USB services. Version resources claim BlackCrypt Labs Inc and version 4.2.1.35, but no reliable independent vendor source was found. The signed content digest verified locally; certificate trust validation was unsuccessful because the signer certificate was reported revoked. No live installation, remote-control session, or operator infrastructure was tested.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Endpoint registration, heartbeat, and WebSocket job handling",
+        "Interactive remote terminal sessions",
+        "Remote PowerShell, command-shell, and batch-script execution",
+        "Elevated job execution through Scheduled Task as SYSTEM",
+        "Screenshot capture, reboot, shutdown, and re-enrollment actions",
+        "Software, system, USB-device, and firewall inventory"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": []
+    },
+    "Artifacts": {
+      "Disk": [],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\BlackCryptAgent",
+          "Description": "Run-key value observed in the saved behavior report; its sample-specific target path is intentionally not used as a generic installation indicator."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Domain resolved by the inspected sample in the saved behavior report. This observation does not establish vendor ownership, operator identity, or malicious activity.",
+          "Domains": [
+            "blackcryptknight.com"
+          ],
+          "Ports": []
+        }
+      ],
+      "Other": [
+        {
+          "Type": "InspectedSampleSHA256",
+          "Value": "bb5c49eaa94615f7d75cfa80afb8e79b12da2defc47d9b9c53d7602e7171b668"
+        },
+        {
+          "Type": "ClaimedPublisher",
+          "Value": "BlackCrypt Labs Inc"
+        },
+        {
+          "Type": "SignerSubject",
+          "Value": "C&P Global Investors LLC"
+        },
+        {
+          "Type": "CertificateValidation",
+          "Value": "Signed content digest verified locally; certificate trust validation reported the signing certificate as revoked."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [],
+    "Acknowledgement": [],
+    "source_file": "blackcrypt.yaml",
+    "CodeSigning": {
+      "search_names": [
+        "BlackCryptAgent.dll"
+      ],
+      "company_names": [
+        "BlackCrypt Labs Inc"
+      ],
+      "signer_names": [
+        "C&P Global Investors LLC"
+      ],
+      "certificates": [
+        {
+          "signer_name": "C&P Global Investors LLC",
+          "certificate_thumbprint": "17AC77612F471DCDDB47B4D1169C2F4E746F7833",
+          "issuer": "DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1",
+          "valid_from": "2026-04-26T00:00:00Z",
+          "valid_to": "2027-04-27T23:59:59Z",
+          "src_file_sha256": "bb5c49eaa94615f7d75cfa80afb8e79b12da2defc47d9b9c53d7602e7171b668",
+          "src_file_path": null,
+          "src_file_company": "BlackCrypt Labs Inc"
+        }
+      ]
+    }
+  },
+  {
     "Name": "Bluetrait",
     "Category": "RAT",
     "Description": "Bluetrait is a Remote Monitoring and Management (RMM) tool designed to provide IT administrators and Managed Service Providers (MSPs) with remote access, system monitoring, and automation capabilities across Windows, Linux, and macOS devices. Like many RMM solutions, Bluetrait enables seamless remote management, allowing administrators to execute commands, install software, and troubleshoot issues without direct user intervention.\n\nHowever, Proofpoint's research has highlighted how threat actors are increasingly abusing RMM tools, including Bluetrait, for malicious purposes. Attackers leverage Bluetrait as part of their post-exploitation strategy, often deploying it through phishing or social engineering techniques. Once installed, Bluetrait allows attackers to establish persistent remote access, circumvent traditional security controls, and execute malicious payloads under the guise of legitimate administrative activity.",
@@ -3780,10 +4045,10 @@
   {
     "Name": "BreezeRMM",
     "Category": "RMM",
-    "Description": "BreezeRMM (Breeze) is an open-source remote monitoring and management platform developed by LanternOps, LLC. The vendor advertises remote access, fleet device management, patch management, script execution, software deployment, and monitoring across Windows, macOS, and Linux endpoints, with both self-hosted and managed cloud deployment options. Like other RMM agents, Breeze can be dropped and run by an operator to gain persistent remote access to endpoints. A Breeze agent sample is tracked on abuse.ch MalwareBazaar, and the on-disk artifacts below were reported in LOLRMM GitHub issue #235.",
+    "Description": "BreezeRMM (Breeze) is an open-source remote monitoring and management platform developed by LanternOps, LLC. The vendor advertises remote access, fleet device management, patch management, script execution, software deployment, and monitoring across Windows, macOS, and Linux endpoints, with both self-hosted and managed cloud deployment options. Like other RMM agents, Breeze can be dropped and run by an operator to gain persistent remote access to endpoints. A Breeze agent sample is tracked on abuse.ch MalwareBazaar, and the on-disk artifacts below were reported in LOLRMM GitHub issue #235. A separately inspected unsigned Windows build identifies itself as PixoIT RMM Agent while retaining Breeze RMM Go module paths. Its product-specific filename is included as branded-build coverage; no PixoIT vendor affiliation or abuse of that build was established.",
     "Author": "ChrisJr404",
     "Created": "2026-08-26",
-    "LastModified": "2026-08-26",
+    "LastModified": "2026-09-22",
     "Details": {
       "Website": "https://breezermm.com/",
       "PEMetadata": [
@@ -3810,11 +4075,17 @@
           "OriginalFileName": "",
           "Description": "Breeze agent backup component",
           "Product": "Breeze"
+        },
+        {
+          "Filename": "PixoIT-agent.exe",
+          "OriginalFileName": "PixoIT-agent.exe",
+          "Description": "PixoIT RMM Agent",
+          "Product": "PixoIT RMM Agent"
         }
       ],
       "Privileges": "User and SYSTEM",
       "Free": true,
-      "Verification": "The public Breeze website documents an open-source RMM with remote access, patching, script execution, and software deployment. The signer LanternOps, LLC and the on-disk artifacts are sourced from LOLRMM GitHub issue #235 and the linked abuse.ch MalwareBazaar sample.",
+      "Verification": "The public Breeze website documents an open-source RMM with remote access, patching, script execution, and software deployment. The signer LanternOps, LLC and the on-disk artifacts are sourced from LOLRMM GitHub issue #235 and the linked abuse.ch MalwareBazaar sample. Static inspection of the separate PixoIT-branded version 0.105.5 build recovered github.com/breeze-rmm/agent module paths and coherent enrollment, heartbeat, remote desktop, terminal, file-transfer, inventory, and patch components. That sample's full-file SHA-256 was verified and it is unsigned; the LanternOps signer attribution does not apply to it. No PixoIT corporate relationship, installation path, live session, or abuse was established. Official Breeze v0.115.0 Linux and macOS release artifacts were inspected without execution. The Linux release binary and installer source confirm the systemd layout below. The notarized macOS package payload and its installer scripts confirm the LaunchDaemon, watchdog, desktop-helper LaunchAgents, binaries, Application Support directory, and log paths below. The PixoIT observations remain limited to the separately inspected Windows build; they do not establish PixoIT Linux or macOS support.",
       "SupportedOS": [
         "Windows",
         "macOS",
@@ -3831,11 +4102,33 @@
       "Vulnerabilities": [],
       "InstallationPaths": [
         "C:\\Program Files\\Breeze\\*",
-        "C:\\ProgramData\\Breeze\\*"
+        "C:\\ProgramData\\Breeze\\*",
+        "PixoIT-agent.exe",
+        "/usr/local/bin/breeze-agent",
+        "/usr/local/bin/breeze-watchdog",
+        "/usr/local/bin/breeze-backup",
+        "/usr/local/bin/breeze-desktop-helper",
+        "/etc/breeze/*",
+        "/var/lib/breeze/*",
+        "/var/log/breeze/*",
+        "/etc/systemd/system/breeze-agent.service",
+        "/Library/Application Support/Breeze/*",
+        "/Library/Logs/Breeze/*",
+        "/Library/LaunchDaemons/com.breeze.agent.plist",
+        "/Library/LaunchDaemons/com.breeze.watchdog.plist",
+        "/Library/LaunchAgents/com.breeze.desktop-helper-user.plist",
+        "/Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist"
       ]
     },
     "Artifacts": {
       "Disk": [
+        {
+          "File": "PixoIT-agent.exe",
+          "Description": "Original filename of the unsigned PixoIT-branded Breeze RMM build, verified in PE resources; not an asserted standard installation path.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
         {
           "File": "C:\\Program Files\\Breeze\\breeze-agent.exe",
           "Description": "Breeze RMM agent executable reported in issue 235.",
@@ -3891,6 +4184,153 @@
           "OS": "Windows",
           "Type": null,
           "Example": []
+        },
+        {
+          "File": "/usr/local/bin/breeze-agent",
+          "Description": "Breeze agent binary installed by the official Linux installer and present in the official v0.115.0 macOS package payload.",
+          "OS": "Linux/macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/local/bin/breeze-watchdog",
+          "Description": "Breeze watchdog binary installed by the official Linux installer when the matching helper binary is supplied, and present in the official v0.115.0 macOS package payload.",
+          "OS": "Linux/macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/local/bin/breeze-backup",
+          "Description": "Breeze backup helper installed by the official Linux installer when the matching helper binary is supplied, and present in the official v0.115.0 macOS package payload.",
+          "OS": "Linux/macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/local/bin/breeze-desktop-helper",
+          "Description": "Desktop helper present in the official v0.115.0 macOS package payload and referenced by its user-session and LoginWindow LaunchAgents.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/breeze/agent.yaml",
+          "Description": "Default Breeze agent configuration path checked by the official Linux installer and referenced by the released Linux agent.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/var/lib/breeze/*",
+          "Description": "Breeze agent data directory created by the official Linux installer.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/var/log/breeze/*",
+          "Description": "Breeze log directory created by the official Linux installer; the released Linux agent references /var/log/breeze/agent.log.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/var/run/breeze/agent.sock",
+          "Description": "Breeze agent IPC socket path; the official Linux installer creates /var/run/breeze and the released Linux agent references agent.sock there.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/systemd/system/breeze-agent.service",
+          "Description": "Official Breeze Linux systemd unit. It runs /usr/local/bin/breeze-agent start with /etc/breeze as its working directory and enables boot persistence.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/lib/systemd/user/breeze-agent-user.service",
+          "Description": "Official per-user Breeze helper systemd unit installed when supplied with the Linux installer source.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/etc/xdg/autostart/breeze-agent-user.desktop",
+          "Description": "Official Breeze user-helper XDG autostart fallback installed by the Linux installer.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/usr/lib/tmpfiles.d/breeze-agent.conf",
+          "Description": "Official tmpfiles rule that creates /run/breeze at boot for Breeze agent IPC.",
+          "OS": "Linux",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/Application Support/Breeze/*",
+          "Description": "Breeze macOS configuration and IPC directory created by the v0.115.0 package postinstall script.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/Logs/Breeze/agent.log",
+          "Description": "Standard output log path for the Breeze agent LaunchDaemon in the official v0.115.0 macOS package.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/Logs/Breeze/agent.err",
+          "Description": "Standard error log path for the Breeze agent LaunchDaemon in the official v0.115.0 macOS package.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/Logs/Breeze/watchdog.log",
+          "Description": "Standard output log path for the Breeze watchdog LaunchDaemon in the official v0.115.0 macOS package.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/Logs/Breeze/watchdog.err",
+          "Description": "Standard error log path for the Breeze watchdog LaunchDaemon in the official v0.115.0 macOS package.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/LaunchDaemons/com.breeze.agent.plist",
+          "Description": "Official Breeze macOS LaunchDaemon, label com.breeze.agent, that runs /usr/local/bin/breeze-agent run with RunAtLoad and KeepAlive.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/LaunchDaemons/com.breeze.watchdog.plist",
+          "Description": "Official Breeze macOS watchdog LaunchDaemon, label com.breeze.watchdog, that runs /usr/local/bin/breeze-watchdog run with RunAtLoad and KeepAlive.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/LaunchAgents/com.breeze.desktop-helper-user.plist",
+          "Description": "Official Breeze macOS Aqua-session LaunchAgent, label com.breeze.desktop-helper-user, that runs the desktop helper for user sessions.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "/Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist",
+          "Description": "Official Breeze macOS LoginWindow LaunchAgent, label com.breeze.desktop-helper-loginwindow, that runs the desktop helper before user login.",
+          "OS": "macOS",
+          "Type": null,
+          "Example": []
         }
       ],
       "EventLog": [],
@@ -3920,12 +4360,28 @@
       ],
       "Other": [
         {
+          "Type": "InspectedBrandedBuildSHA256",
+          "Value": "74a9dc48d4d23983dbfc964422d57298c64234def5688a9b7e0f608b3043a66d"
+        },
+        {
+          "Type": "BrandedBuildIdentity",
+          "Value": "PixoIT RMM Agent 0.105.5; unsigned; compiled Go module github.com/breeze-rmm/agent."
+        },
+        {
           "Type": "ObservedSHA256",
           "Value": "52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8"
         },
         {
           "Type": "CodeSigningSigner",
           "Value": "LanternOps, LLC"
+        },
+        {
+          "Type": "OfficialReleaseArtifactSHA256",
+          "Value": "Breeze v0.115.0 Linux amd64 agent: bcf47edf1312f3480c172908fb36b1fc0b2a37f7c1df7a7434d99ae1850985af"
+        },
+        {
+          "Type": "OfficialReleaseArtifactSHA256",
+          "Value": "Breeze v0.115.0 macOS arm64 package: 8b32297661229f5173510ebbf1b6d656c85bd68fea930400808e138ce7c714d1"
         }
       ]
     },
@@ -3933,6 +4389,9 @@
     "References": [
       "https://breezermm.com/",
       "https://breeze.app/",
+      "https://github.com/LanternOps/breeze",
+      "https://github.com/LanternOps/breeze/releases/tag/v0.115.0",
+      "https://github.com/LanternOps/breeze/blob/v0.115.0/agent/scripts/install/install-linux.sh",
       "https://bazaar.abuse.ch/sample/52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8/",
       "https://github.com/magicsword-io/LOLRMM/issues/235"
     ],
@@ -10565,6 +11024,70 @@
     "source_file": "glpi.yaml"
   },
   {
+    "Name": "GO RMM",
+    "Category": "RMM",
+    "Description": "GO RMM is a custom Windows management console that builds and controls remote agents. The inspected Go/Wails console includes agent enrollment and build controls, WebSocket command handling, remote desktop and input, shell, file, inventory, process, and session-management workflows. Its embedded interface also exposes high-risk modules such as webcam, microphone, and keylogging, as well as disruptive operations including a forced system crash. This entry records the console's statically demonstrated remote-administration functions; it does not establish a verified publisher, commercial vendor, malware classification, or observed abuse.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "",
+          "OriginalFileName": "",
+          "Description": "GO RMM management console",
+          "Product": null
+        }
+      ],
+      "Privileges": "Not independently established; generated agents and their persistence settings are configurable in the inspected console",
+      "Free": "Unknown",
+      "Verification": "A 19,248,640-byte Windows GUI sample was handled for static analysis only and its SHA-256 was verified. PE resources identify GO RMM as a management console. Its compiled Go symbols and embedded Wails interface expose agent-building and enrollment controls, WebSocket command handling, system inventory, shell, remote desktop/input, file management, process/session management, and configurable agent persistence. The interface additionally exposes webcam, microphone, keylogging, and disruptive-control options. Ghidra analyzed the Windows x64 binary, but its Go 1.27 RTTI layout was unsupported, preventing reliable function-level recovery; these features are therefore recorded as compiled symbols and console workflows, not observed endpoint actions. The sample is unsigned. No independent publisher, live agent, remote endpoint, or delivery-abuse relationship was established.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Agent creation, enrollment, and module deployment",
+        "WebSocket-based agent command handling",
+        "System inventory and process/session management",
+        "Remote shell, file management, and upload/download workflows",
+        "Remote desktop, screen capture, keyboard/mouse input, and clipboard operations",
+        "Webcam, microphone, and keylogging modules exposed by the management console",
+        "Configurable agent persistence and endpoint-control actions"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": []
+    },
+    "Artifacts": {
+      "Disk": [],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "InspectedSampleSHA256",
+          "Value": "491d0512e396aa70efe16873ccf78be61e14f0f7c68bcc1639a1c3b6ba90cfd0"
+        },
+        {
+          "Type": "InspectedComponentRole",
+          "Value": "GO RMM management console, not a generated endpoint agent"
+        },
+        {
+          "Type": "PublisherStatus",
+          "Value": "Self-identified as GO RMM; no independent publisher or product source established."
+        },
+        {
+          "Type": "RiskScope",
+          "Value": "Static console UI exposes webcam, microphone, keylogger, forced-crash, and other endpoint-control actions; no use of those features was observed."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [],
+    "Acknowledgement": [],
+    "source_file": "go_rmm.yaml"
+  },
+  {
     "Name": "Gorelo RMM",
     "Category": "RMM",
     "Description": "Gorelo RMM is a remote monitoring and management tool facilitating remote access and control of devices for support and administration.",
@@ -11758,6 +12281,107 @@
     ],
     "Acknowledgement": [],
     "source_file": "guacamole.yaml"
+  },
+  {
+    "Name": "GxM RMM Agent",
+    "Category": "RMM",
+    "Description": "GxM RMM Agent is a custom Windows remote monitoring and management agent. Its inspected code implements enrollment, a Windows service, remote desktop support, shell and script execution, file operations, software and system inventory, patching, deployment, and endpoint administration. No independent vendor or source repository was identified, and the reviewed records contain no observed delivery-abuse relationship. This entry documents the agent's confirmed RMM functionality and static host artifacts; it does not establish a legitimate commercial vendor, malware classification, or a campaign.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "GxM.Agent.dll",
+          "OriginalFileName": "GxM.Agent.dll",
+          "Description": "GxM RMM endpoint agent — authorized remote monitoring and support for managed clients (self-identified in assembly metadata)",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator required to install the auto-starting Windows service",
+      "Free": "Unknown",
+      "Verification": "A 266,752-byte .NET 8 Windows sample was downloaded for static analysis only and its SHA-256 was verified. Decompilation recovered a coherent GxM.Agent project with enrollment, service installation, SignalR command handling, remote-screen/input/clipboard features, shell and script execution, file management, inventory, patching, deployment, update, and endpoint-administration components. The sample is unsigned and no reliable independent vendor, source repository, or delivery-abuse relationship was identified. No live installation, remote-control session, or network endpoint was tested.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Enrollment and managed endpoint registration",
+        "Auto-starting Windows service with restart-on-failure configuration",
+        "Remote screen capture, keyboard/mouse input, and clipboard operations",
+        "Interactive shell and remote script execution",
+        "Remote file read, write, delete, rename, and directory operations",
+        "Process and service management",
+        "Hardware, software, application, event-log, registry, and network inventory",
+        "Patch, software-deployment, update, and Wake-on-LAN actions"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "*\\ProgramData\\GxM\\agent\\GxM.Agent.exe",
+        "*\\ProgramData\\GxM\\enrollment.json",
+        "*\\ProgramData\\GxM\\install.log",
+        "C:\\GxM\\agent"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\ProgramData\\GxM\\agent\\GxM.Agent.exe",
+          "Description": "Windows service staging target implemented by the inspected service-install code.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\ProgramData\\GxM\\enrollment.json",
+          "Description": "Enrollment configuration path implemented by the inspected code; its contents can include agent credentials and should be handled as sensitive.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\ProgramData\\GxM\\install.log",
+          "Description": "Installer log path implemented by the inspected code.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\GxMAgent",
+          "Description": "Windows service configuration key inferred from the inspected GxMAgent service-install code."
+        }
+      ],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "ServiceName",
+          "Value": "GxMAgent"
+        },
+        {
+          "Type": "ServiceDisplayName",
+          "Value": "GxM RMM Agent"
+        },
+        {
+          "Type": "InspectedSampleSHA256",
+          "Value": "70cd93f03941fe638fc78b99783b7b73e55300e8e7c8710173f7e9859d52b5a6"
+        },
+        {
+          "Type": "ProductVersion",
+          "Value": "1.0.0.1"
+        },
+        {
+          "Type": "PublisherStatus",
+          "Value": "Self-identified as GxM; no independent vendor or source identity established."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [],
+    "Acknowledgement": [],
+    "source_file": "gxm.yaml"
   },
   {
     "Name": "HeartbeatRM",
@@ -14047,6 +14671,151 @@
           "src_file_sha256": "03214d8b41186760f2cf299ba70a22695f4a28be0080551dc582d7a52ac2b96a",
           "src_file_path": "downloaded_files/isl_online/03214d8b41186760f2cf299ba70a22695f4a28be0080551dc582d7a52ac2b96a",
           "src_file_company": "XLAB d.o.o."
+        }
+      ]
+    }
+  },
+  {
+    "Name": "IT Agent",
+    "Category": "RMM",
+    "Description": "IT Agent is a remote monitoring and management (RMM) platform. Its remote access capability is powered by Duet, while its separately named ITAgent RMM Sender components provide the broader IT Agent endpoint-management product. The IT Agent RMM Sender binaries are distinct from the Duet Display files covered by the existing Duet Display catalog entry.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "https://www.itagent.com/it-agent-remote-access",
+      "PEMetadata": [
+        {
+          "Filename": "ITAgentRMMSender.exe",
+          "OriginalFileName": "ITAgentRMMSender.exe",
+          "Description": "ITAgent RMM Sender",
+          "Product": null
+        },
+        {
+          "Filename": "ITAgentRMMSenderSL.exe",
+          "OriginalFileName": "ITAgentRMMSenderSL.exe",
+          "Description": "ITAgent RMM Sender Service Launcher",
+          "Product": null
+        },
+        {
+          "Filename": "ITAgentRMMSenderUpdater.exe",
+          "OriginalFileName": "ITAgentRMMSenderUpdater.exe",
+          "Description": "ITAgentRMMSenderUpdater 2026.7.31.1909",
+          "Product": null
+        },
+        {
+          "Filename": "ITAgentSender.aiui",
+          "OriginalFileName": "ITAgentSender.aiui",
+          "Description": "ITAgent RMM Sender Installer",
+          "Product": null
+        }
+      ],
+      "Privileges": "",
+      "Free": "",
+      "Verification": "Vendor documentation describes IT Agent as a full RMM suite whose remote-access feature is powered by Duet. Reviewed metadata for three Windows RMM Sender components reports valid IT Agent, Inc. Authenticode signatures; their full-file SHA-256 values, PE metadata, original filenames, and the shared signer certificate were reviewed without executing the files. The inspected RMM Sender components are distinct from the Duet Display executable and installer names. The vendor documents Windows, macOS, and Linux support; its current platform page specifically identifies Apple Silicon and Intel macOS systems, plus Ubuntu, Debian, and RHEL Linux systems. This review has no verified macOS or Linux artifact names, installed paths, services, launchd labels, or network endpoints.",
+      "SupportedOS": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "Capabilities": [
+        "Remote desktop access",
+        "Endpoint monitoring and alerts",
+        "Operating-system and application patching",
+        "Managed scripting",
+        "Policy and compliance management"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "ITAgentRMMSender.exe",
+        "ITAgentRMMSenderSL.exe",
+        "ITAgentRMMSenderUpdater.exe",
+        "ITAgentSender.aiui"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "ITAgentRMMSender.exe",
+          "Description": "Inspected Windows IT Agent RMM Sender component.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "ITAgentRMMSenderSL.exe",
+          "Description": "Inspected Windows IT Agent RMM Sender Service Launcher component.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "ITAgentRMMSenderUpdater.exe",
+          "Description": "Inspected Windows IT Agent RMM Sender updater component.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "ITAgentSender.aiui",
+          "Description": "Inspected Windows IT Agent RMM Sender installer artifact.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "InspectedWindowsComponentSHA256",
+          "Value": "14c9b3ecbb18231b63ad4156d760381ee0daaee1844c84b5fce1a453532f2316"
+        },
+        {
+          "Type": "InspectedWindowsComponentSHA256",
+          "Value": "8f6148457b7fba2cc5f7bd143cca625cddf215b0350791c9718409b655751e5f"
+        },
+        {
+          "Type": "InspectedWindowsComponentSHA256",
+          "Value": "8ef734ecf9d5d984e8540bc8272c089e846bf464b8f60ee9a90cbfa9e37bcd05"
+        },
+        {
+          "Type": "InspectedWindowsInstallerSHA256",
+          "Value": "c00f23177b12cb03d48dd812ff77b1838bddddf294abd5f8e6013b66c9c1e72a"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://www.itagent.com/it-agent-remote-access",
+      "https://www.itagent.com/remote-desktop-access",
+      "https://www.duetdisplay.com/remote-desktop-access-software"
+    ],
+    "Acknowledgement": [],
+    "source_file": "it_agent.yaml",
+    "CodeSigning": {
+      "search_names": [
+        "ITAgentRMMSender.exe",
+        "ITAgentRMMSenderSL.exe",
+        "ITAgentRMMSenderUpdater.exe"
+      ],
+      "company_names": [
+        "ITAgent"
+      ],
+      "signer_names": [
+        "IT Agent, Inc."
+      ],
+      "certificates": [
+        {
+          "signer_name": "IT Agent, Inc.",
+          "certificate_thumbprint": "BA9B6EAE4F10E0FE8D721C2956FC790289C9D0E6",
+          "issuer": "DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1",
+          "valid_from": "2025-04-24T00:00:00Z",
+          "valid_to": "2028-04-25T23:59:59Z",
+          "src_file_sha256": "8f6148457b7fba2cc5f7bd143cca625cddf215b0350791c9718409b655751e5f",
+          "src_file_path": "ITAgentRMMSender.exe",
+          "src_file_company": "ITAgent"
         }
       ]
     }
@@ -16501,10 +17270,10 @@
   {
     "Name": "Level",
     "Category": "RMM",
-    "Description": "Level is a remote monitoring and management (RMM) tool. Threat actors ...",
+    "Description": "Level is a remote monitoring and management (RMM) tool. Threat Hunting Labs documented its malicious installation through an RVTools-themed SEO poisoning chain in 2026. An operator used Level to run discovery commands as SYSTEM and install the separate LightRmmAgent service. The report distinguishes Level's routine inventory from operator activity.",
     "Author": "Christian Henriksen, ITM8 | Improsec",
     "Created": "2024-02-11",
-    "LastModified": "2024-02-11",
+    "LastModified": "2026-09-23",
     "Details": {
       "Website": "https://level.io/",
       "PEMetadata": [
@@ -16600,7 +17369,7 @@
             "builds.level.io",
             "agents.level.io",
             "online.level.io",
-            "downloads.io"
+            "downloads.level.io"
           ],
           "Ports": [
             443
@@ -16626,21 +17395,31 @@
       }
     ],
     "References": [
+      "https://www.threathuntinglabs.com/blog/from-seo-poisoning-to-custom-rmm-and-cobalt-strike",
       "https://dfirtnt.wordpress.com/2023/09/05/rmm-level-io-forensic-artifacts-and-evidence/",
       "https://docs.level.io/en/articles/9926456-level-watchdog-task"
     ],
-    "Acknowledgement": [],
+    "Acknowledgement": [
+      {
+        "Person": "Kostas / Threat Hunting Labs",
+        "Handle": "@Kostastsale"
+      },
+      {
+        "Person": "Threat Hunting Labs",
+        "Handle": "@ThruntingLabs"
+      },
+      {
+        "Person": "Anna / MalBear Labs",
+        "Handle": "@PandaRE__"
+      },
+      {
+        "Person": "MalBear Labs",
+        "Handle": "@malbearlabs"
+      }
+    ],
     "source_file": "level.yaml",
     "CodeSigning": {
       "certificates": [
-        {
-          "signer_name": "win.rar GmbH",
-          "certificate_thumbprint": "729AE1F8B489DE176CC099FF49937F85F9E412F7",
-          "certificate_der_base64": "MIIHWDCCBUCgAwIBAgIQBIsIOZ7HA2I8cs0gd61l2TANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJVUzEXMBUGA1UEChMORGlnaUNlcnQsIEluYy4xQTA/BgNVBAMTOERpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0ExMB4XDTIzMDgwODAwMDAwMFoXDTI2MDgwNzIzNTk1OVowgeAxEzARBgsrBgEEAYI3PAIBAxMCREUxFzAVBgsrBgEEAYI3PAIBAhMGQmVybGluMR8wHQYLKwYBBAGCNzwCAQETDkNoYXJsb3R0ZW5idXJnMR0wGwYDVQQPDBRQcml2YXRlIE9yZ2FuaXphdGlvbjETMBEGA1UEBRMKSFJCIDEwOTg4NTELMAkGA1UEBhMCREUxDzANBgNVBAgTBkJlcmxpbjEPMA0GA1UEBxMGQmVybGluMRUwEwYDVQQKEwx3aW4ucmFyIEdtYkgxFTATBgNVBAMTDHdpbi5yYXIgR21iSDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAJrNBWkLzla3tj9bhusRhk6ZzgzcgNHbZRI9nSX1/buowo4BjwCRFy7zTVQ9WNey9ghE8mbY8zhPgARuICPibaP19oFySzXSxG0QJWzi/HC50S6r0skMKDR42RBM7KcEazmfmp9RCnNjIJiaINa8RUpS+SuhmUl/iIOr9rHrEE/JGWoS8Ft9XDXwS2CacetaAcdyvKD9QQRoWu0yOkM/CaS1kHIVAayqta7rZvaBcs6SyLT2aR+0cWHcmH++2H2q37KbUcSEopNffmpU3M74Lcm2uckQgjsjEwmNfgLeLLntTx8yn7bfh4ZNNytn6bX2U0zufBJbKehAH6Zfww/aFAH0wsP1148R7pPGoXG4AeyXATWn7ufbWytTrgR8aNvsuS8h3mmUGV6mSNaxGszALQ0KxKAsTpoFVVsz86yVYL/IK9wuq9ogAheDeLR1v7leLbwJsqLRi0Ry8uyX7szJF5i+puSdqGz+lx6FcR2VsD8vnPOVC3Wtq2UgEKZs/0zP0wIDAQABo4ICAjCCAf4wHwYDVR0jBBgwFoAUaDfg67Y7+F8Rhvv+YXsIiGX0TkIwHQYDVR0OBBYEFFhcVBV2Psfb2Ad3xaRy9ZeAf4cTMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzCBtQYDVR0fBIGtMIGqMFOgUaBPhk1odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRUcnVzdGVkRzRDb2RlU2lnbmluZ1JTQTQwOTZTSEEzODQyMDIxQ0ExLmNybDBToFGgT4ZNaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VHJ1c3RlZEc0Q29kZVNpZ25pbmdSU0E0MDk2U0hBMzg0MjAyMUNBMS5jcmwwPQYDVR0gBDYwNDAyBgVngQwBAzApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwgZQGCCsGAQUFBwEBBIGHMIGEMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wXAYIKwYBBQUHMAKGUGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydFRydXN0ZWRHNENvZGVTaWduaW5nUlNBNDA5NlNIQTM4NDIwMjFDQTEuY3J0MAkGA1UdEwQCMAAwDQYJKoZIhvcNAQELBQADggIBAMQeLwDoY491d3YPbv8Zh5MBMGxgKM4gPL05+gkTSP3UhXVE/ydaCKYtrINTYDHM+SxOb4GcAJZ35YC9G5A9nocvQhyDiQ5I12RccOQ7heNq4h2NgxbShNLgXMZgv1E7fx2J7U7u2DnJK+c4dYADKYLZdQjO3nIojrfR9z6Fg1qaPFQQqkVmudthB5/0kYcOxPucbFlKpFoY6M88ZzOKCRLUYtvXs4nYRggG25VoNLtpLjLXCjmQ0wQ/28QZYtIq7mW+Jfc1vPOiEmPzX6t7X626ulBKCIL/MV5mBeag+0P7vTT+QWQef1v7npeWOSljVv84k7h7HzPn+c208FwNSrPGFBJ7M2HiY1TGUYtCzLHeSNKykvWpp+ALyKQtueN9fJYBLc8DS7aYJvtx3saVysRzHP+4oDZuEtb3hjfSBjAZq20ohXsbNtepSUb7cyjEfaTBjpI9mq6hkDkoTSL2Su8s7o0SXfVPi6o8NfjyCGIbyDRszZWts4wBw83pUDS//zGnfaSv65BoZ9dXGdckRznpgxuHqTeBGx0P1vSLbP76f1OZ/O/tHxBmSG7KL4XyHc6BG7K4tayEI9e6qJoL0St9M7GxZ9g3qHm0kQfPekvcOXxQuVn8n9SG6/QipQKR4fG0dRp4GqoIXGUjjvbJot7A9kG0IrykPagAXznZnMBG",
-          "src_file_sha256": "9ce73bf30a1b85bb85dc02b0177ec362b39587e48b968b411a9ae5cc0557a7c6",
-          "src_file_path": "downloaded_files/level/9ce73bf30a1b85bb85dc02b0177ec362b39587e48b968b411a9ae5cc0557a7c6",
-          "src_file_company": "Alexander Roshal"
-        },
         {
           "signer_name": "Level Software, Inc.",
           "certificate_thumbprint": "3C002DCBBCB603AE08699F4CEF973864AEB16860",
@@ -16748,6 +17527,111 @@
     ],
     "Acknowledgement": [],
     "source_file": "levelio.yaml"
+  },
+  {
+    "Name": "LightRmmAgent",
+    "Category": "RMM",
+    "Description": "LightRmmAgent is an unattributed custom Windows service described as RMM-style tooling by Threat Hunting Labs. In the reported RVTools SEO poisoning intrusion, an operator used Level to install MonitoringPanel.msi, which deployed LightRmmAgent. The service stored a machine identifier and contacted an Azure-hosted endpoint. No command execution through this agent was observed. It is distinct from RemoteAgentAgent and RMMCRAT; no legitimate vendor or official distribution source was established.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-23",
+    "LastModified": "2026-09-23",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "LightRmmAgentService.exe",
+          "OriginalFileName": "",
+          "Description": "",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator for Windows service installation",
+      "Free": "",
+      "Verification": "Based on Threat Hunting Labs' published intrusion evidence, not local execution or reverse engineering. The report identifies the executable, unsigned service installation, machine.id write, and external connection. The name is the researchers' label derived from the service and directory. No sample hash, PE version resources, Linux/macOS build, or remote-task execution was established in the reviewed public report. Level's discovery commands and the separate RemoteAgent login panel are not attributed to LightRmmAgent.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Machine identification",
+        "External communication from a persistent Windows service"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\LightRmmAgent\\*"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\LightRmmAgent\\LightRmmAgentService.exe",
+          "Description": "Reported executable identity scoped to the reported installation directory; the exact combined path is inferred from those two observations.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\LightRmmAgent\\machine.id",
+          "Description": "Machine identifier written after the service started in the reported intrusion.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Windows\\Temp\\MonitoringPanel.msi",
+          "Description": "Installer staged and launched by Level-delivered PowerShell; a case-specific staging path, not the persistent executable.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\LightRmmAgent",
+          "Description": "SCM key inferred from the observed LightRmmAgent service name; the report does not separately show a registry write."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Exact case-specific endpoint contacted by LightRmmAgent; not a legitimate vendor domain or an indicator for other Azure tenants.",
+          "Domains": [
+            "light-rmm-monitor-20260825.azurewebsites.net"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "ObservedWindowsServiceName",
+          "Value": "LightRmmAgent"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://www.threathuntinglabs.com/blog/from-seo-poisoning-to-custom-rmm-and-cobalt-strike"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "Kostas / Threat Hunting Labs",
+        "Handle": "@Kostastsale"
+      },
+      {
+        "Person": "Threat Hunting Labs",
+        "Handle": "@ThruntingLabs"
+      },
+      {
+        "Person": "Anna / MalBear Labs",
+        "Handle": "@PandaRE__"
+      },
+      {
+        "Person": "MalBear Labs",
+        "Handle": "@malbearlabs"
+      }
+    ],
+    "source_file": "light_rmm_agent.yaml"
   },
   {
     "Name": "Lite Manager",
@@ -17289,6 +18173,145 @@
         }
       ]
     }
+  },
+  {
+    "Name": "LS RMM",
+    "Category": "RMM",
+    "Description": "LS RMM is a legacy Windows remote monitoring and management product whose embedded components identify Logistical Software LTD. Static analysis of its management application and service worker shows Windows-service deployment, endpoint inventory, Windows Update inventory, scheduled screenshot capture and upload, update retrieval, and remote-request handling. This entry records the historical product artifacts and configured hosts; it does not establish current vendor operation, trusted distribution, or abusive use.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "LS RMM.exe",
+          "OriginalFileName": "LS RMM.exe",
+          "Description": "LS RMM",
+          "Product": null
+        },
+        {
+          "Filename": "LS RMM Worker.exe",
+          "OriginalFileName": "LS RMM Worker.exe",
+          "Description": "LS RMM Worker Process",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator required to install and manage the Windows service.",
+      "Free": "",
+      "Verification": "The Windows .NET management application and worker were decompiled and inspected without execution. Their product metadata, namespaces, embedded worker resource, source paths, and update code consistently identify LS RMM. The user interface names Logistical Software LTD, and the worker's statically configured update hosts use the logistical-software.co.uk domain. Static code establishes the service, registry, update, inventory, Windows Update, screenshot, and remote-request artifacts below. An embedded database credential was identified and deliberately excluded. No current vendor website, distribution source, or runtime traffic was independently verified.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Windows service deployment and management",
+        "Endpoint system-information collection",
+        "Windows Update inventory collection",
+        "Scheduled screenshot capture and upload",
+        "Remote-request handling",
+        "Self-update"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files (x86)\\LS RMM\\LS RMM.exe",
+        "C:\\Program Files (x86)\\LS RMM\\LS RMM Worker.exe",
+        "LS RMM.exe",
+        "LS RMM Worker.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\LS RMM\\LS RMM.exe",
+          "Description": "Management application path recorded in the inspected sample metadata.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\LS RMM\\LS RMM Worker.exe",
+          "Description": "Worker resource deployed by the management application and installed as a service.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\LS RMM\\LS RMM-Update.exe",
+          "Description": "Update executable basename recovered from static update code.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\LS RMM\\LSRMMupdate.txt",
+          "Description": "Version-check file basename recovered from static update code.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\LS RMM\\SC.exe",
+          "Description": "Screenshot-helper executable basename recovered from the worker's static code.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\LS RMM\\SC.bmp",
+          "Description": "Screenshot output basename recovered from the worker's static code.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\LS RMM",
+          "Description": "Product configuration and status key created and read by both inspected components."
+        },
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\LSRMMWorker",
+          "Description": "Service key for the statically recovered LSRMMWorker service name."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Historical HTTP update host hard-coded in the inspected worker; no current reachability or runtime connection was verified.",
+          "Domains": [
+            "www.logistical-software.co.uk"
+          ],
+          "Ports": [
+            80
+          ]
+        },
+        {
+          "Description": "Historical database host hard-coded in the inspected worker; no port or runtime connection was verified.",
+          "Domains": [
+            "webserv.logistical-software.co.uk"
+          ],
+          "Ports": []
+        }
+      ],
+      "Other": [
+        {
+          "Type": "WindowsServiceName",
+          "Value": "LSRMMWorker"
+        },
+        {
+          "Type": "InspectedWindowsApplicationSHA256",
+          "Value": "a4c3c416a2c2348d2805fb1cb73bc01efdcd83b35b6f63e31fd1ee41c3663af4"
+        },
+        {
+          "Type": "InspectedWindowsWorkerSHA256",
+          "Value": "d1a4f7fcdb85f55edde9fce195939d2d117ffb2ced919bc2f8b9bfdc84878376"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [],
+    "Acknowledgement": [],
+    "source_file": "ls_rmm.yaml"
   },
   {
     "Name": "Lunixar",
@@ -18335,6 +19358,111 @@
     "source_file": "mikogo.yaml"
   },
   {
+    "Name": "Mini RMM Agent",
+    "Category": "RMM",
+    "Description": "Mini RMM Agent is a custom Windows endpoint-management agent. Its inspected code self-installs as a Windows service, registers and sends heartbeats to a management server, polls for remote tasks, runs PowerShell, and supports software installation and testing workflows. The assembly identifies Senin Firman as its company, but no independently verified publisher or product source was identified. This entry documents statically confirmed RMM behavior and host artifacts only; it does not establish a legitimate commercial vendor, malware classification, or observed abuse.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "MiniRmmAgent.exe",
+          "OriginalFileName": "",
+          "Description": "Mini RMM Agent (self-identified in assembly metadata)",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator required by the self-install code to create and start the Windows service",
+      "Free": "Unknown",
+      "Verification": "A 5,691,392-byte .NET 8 Windows sample was downloaded for static analysis only and its SHA-256 was verified. Decompilation confirms self-installation to a fixed Program Files path, an auto-starting Windows service, registration and heartbeat logic, remote task polling and results, PowerShell execution, software installation, and verification/testing workflows. The embedded resources also include SmartScreen-test and Defender-exclusion scripts. The assembly's company field names Senin Firman, but no reliable independent vendor or source identity was found. No live installation, endpoint contact, remote task, or delivery-abuse relationship was tested or established.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Self-installation and auto-starting Windows service",
+        "Endpoint registration, heartbeat, task polling, and result reporting",
+        "Remote PowerShell execution",
+        "Remote software download and installation workflows",
+        "Software verification and SmartScreen-test workflows"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\MiniRMM\\MiniRmmAgent.exe",
+        "C:\\ProgramData\\MiniRMM\\SmartScreenTest.ps1",
+        "C:\\ProgramData\\MiniRMM\\Invoke-AVExclusions.ps1"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\MiniRMM\\MiniRmmAgent.exe",
+          "Description": "Fixed executable destination in the statically inspected self-install routine.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\MiniRMM\\SmartScreenTest.ps1",
+          "Description": "Embedded SmartScreen-test script extracted by the agent at runtime.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\MiniRMM\\Invoke-AVExclusions.ps1",
+          "Description": "Embedded Defender-exclusion script extracted by the agent at runtime; included as an artifact, not as a conclusion about use or intent.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MiniRMMAgent",
+          "Description": "Startup value set by the inspected agent code to its current executable path."
+        },
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\MiniRmmAgent",
+          "Description": "Windows service configuration key inferred from the inspected self-install code."
+        }
+      ],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "ServiceName",
+          "Value": "MiniRmmAgent"
+        },
+        {
+          "Type": "ServiceDisplayName",
+          "Value": "Mini RMM Agent"
+        },
+        {
+          "Type": "InspectedSampleSHA256",
+          "Value": "89ea754708f2be80b2d8e39533d9b98e9a8bdc588f5d732687ee7b5ce18201e7"
+        },
+        {
+          "Type": "ProductVersion",
+          "Value": "0.4.3.0"
+        },
+        {
+          "Type": "ClaimedAssemblyCompany",
+          "Value": "Senin Firman"
+        },
+        {
+          "Type": "PublisherStatus",
+          "Value": "No independently verified publisher or product source identified."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [],
+    "Acknowledgement": [],
+    "source_file": "mini_rmm.yaml"
+  },
+  {
     "Name": "MioNet (Also known as WD Anywhere Access)",
     "Category": "RMM",
     "Description": "MioNet (Also known as WD Anywhere Access) is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -19135,6 +20263,143 @@
           "src_file_sha256": "f4b2e2dac7ba4458f79e7333d093b5259c18300ad201bfcb9b4674c00109815d",
           "src_file_path": "downloaded_files/mouse_without_borders/f4b2e2dac7ba4458f79e7333d093b5259c18300ad201bfcb9b4674c00109815d",
           "src_file_company": "Microsoft Corporation"
+        }
+      ]
+    }
+  },
+  {
+    "Name": "Mremote",
+    "Category": "RMM",
+    "Description": "Mremote is a commercial remote-support and endpoint-management product from EGSCI SARL (EGS Côte d'Ivoire). Its Windows agent provides remote screen and keyboard/mouse control, file transfer and management, clipboard synchronization, chat, remote shell and PowerShell execution, service and system actions, and consent-gated webcam and microphone access. An inspected configured agent was distributed under an Adobe-themed filename through a third-party download chain while retaining Mremote product metadata. The delivery context is suspicious but does not establish who deployed it or whether EGSCI authorized that distribution. Mremote is distinct from the unrelated mRemoteNG connection manager.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "https://egs.ci/mremote.html",
+      "PEMetadata": [
+        {
+          "Filename": "mremote-agent.exe",
+          "OriginalFileName": "mremote-agent.exe",
+          "Description": "Mremote Agent - Outil de maintenance a distance autorise",
+          "Product": "Mremote Agent"
+        }
+      ],
+      "Privileges": "User context for interactive operation; Administrator approval is required to install Windows service mode.",
+      "Free": false,
+      "Verification": "EGSCI's product page establishes Mremote as a persistent remote-support product and documents screen and input control, files, clipboard, chat, consent-gated webcam and microphone access, service mode, enrollment, and silent updates with rollback. Windows agent version 1.8.8.38 was inspected statically without execution. Its native Go build metadata, source-function map, embedded strings, PE metadata, and locally verified full-file SHA-256 corroborate the vendor-described features and additionally establish remote shell and PowerShell execution, Windows service control, system actions, update handling, and the api.mremote.io relay. Existing sandbox evidence only corroborates creation of the AppData Mremote directory and agent.log; it does not demonstrate enrollment, service installation, a remote session, or command execution. The executable is unsigned and contains deployment-specific client identity, enrollment, branding, relay, and consent configuration; sensitive values are intentionally excluded.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Remote screen, keyboard, and mouse control",
+        "File transfer and remote filesystem management",
+        "Clipboard synchronization and chat",
+        "Remote shell and PowerShell execution",
+        "Windows service and system actions",
+        "Consent-gated webcam and microphone access",
+        "Persistent service mode and silent self-update with rollback"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "%APPDATA%\\Mremote\\*",
+        "%ProgramData%\\Mremote\\<deployment-id>\\*"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\AppData\\Roaming\\Mremote\\agent.exe",
+          "Description": "Stable per-user agent path derived from the inspected Windows binary.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\AppData\\Roaming\\Mremote\\agent.log",
+          "Description": "Agent log written by the inspected Windows sample in existing sandbox evidence.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\AppData\\Roaming\\Mremote\\enrolled.json",
+          "Description": "Enrollment cache path derived from the inspected Windows binary; contents are deployment-specific.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "*\\AppData\\Roaming\\Mremote\\consent.ok",
+          "Description": "General-consent marker path derived from the inspected Windows binary.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\MremoteAgent",
+          "Description": "Hardcoded fallback Windows service key. Configured deployments can instead derive the service name from a sanitized deployment identity."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Mremote agent WebSocket relay embedded in the inspected binary and its deployment configuration; the vendor links the management console at mremote.io.",
+          "Domains": [
+            "api.mremote.io"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "DefaultServiceName",
+          "Value": "MremoteAgent"
+        },
+        {
+          "Type": "InspectedWindowsAgentSHA256",
+          "Value": "cb70951b2bc19ea7a9c852b0d7f68f1548f6d5d2117547f7d8b4691ba2928a5c"
+        },
+        {
+          "Type": "InspectedWindowsAgentVersion",
+          "Value": "1.8.8.38"
+        },
+        {
+          "Type": "BuildIdentity",
+          "Value": "Native Go 1.26.5 executable; main module mremote-host; Windows amd64."
+        },
+        {
+          "Type": "DeploymentSpecificIdentity",
+          "Value": "A configured client identity determines the ProgramData subdirectory and can replace the fallback service name; the inspected value is excluded."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://egs.ci/mremote.html",
+      "https://egs.ci/"
+    ],
+    "Acknowledgement": [],
+    "source_file": "mremote.yaml",
+    "CodeSigning": {
+      "search_names": [
+        "mremote-agent.exe"
+      ],
+      "company_names": [
+        "Mremote"
+      ],
+      "signer_names": [],
+      "certificates": []
+    },
+    "FileHashes": {
+      "authenticode": [
+        {
+          "file_name": "mremote-agent.exe",
+          "sha256": "bd0b6f1f0518823b446f34d6e722bdf897a6f1a565c94c564b32db978366ed60",
+          "sha1": null
         }
       ]
     }
@@ -21462,6 +22727,77 @@
     "source_file": "netviewer_(gotomeet).yaml"
   },
   {
+    "Name": "Nexus RMM (Scogo)",
+    "Category": "RMM",
+    "Description": "Nexus RMM is Scogo's endpoint-management product. Scogo describes its platform as providing direct device intelligence, endpoint telemetry, patching, vulnerability detection, compliance enforcement, and remote management. This entry records the vendor-associated Windows Nexus RMM Agent metadata reviewed in the census. The census establishes product identity only; it does not establish delivery, abuse, victim impact, or actor attribution.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "https://scogo.ai/",
+      "PEMetadata": [
+        {
+          "Filename": "nexusrmm.exe",
+          "OriginalFileName": "nexusrmm.exe",
+          "Description": "Nexus RMM Agent Setup",
+          "Product": null
+        }
+      ],
+      "Privileges": "",
+      "Free": "Unknown",
+      "Verification": "The reviewed Windows sample has Nexus RMM Agent metadata and Scogo.ai copyright. Scogo's product materials independently describe Scogo RMM and Nexus endpoint-management functions. The sample was not executed, and this review does not assert an installation path, signer, network endpoint, or abuse relationship.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Endpoint telemetry and monitoring",
+        "Remote endpoint management",
+        "Patch management",
+        "Vulnerability detection",
+        "Compliance enforcement"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "nexusrmm.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "nexusrmm.exe",
+          "Description": "Windows Nexus RMM Agent setup filename from reviewed PE metadata.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "InspectedWindowsSampleSHA256",
+          "Value": "2d1134ec001eed644a0d459898d2f48c0e0418f1cc109f927b7f8a39aef6bbec"
+        },
+        {
+          "Type": "ProductVersion",
+          "Value": "2.9.0.0"
+        },
+        {
+          "Type": "CatalogScope",
+          "Value": "Product identity confirmed; no delivery or abuse claim."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://scogo.ai/",
+      "https://scogo.ai/blog/scogo-ai-is-now-available-on-microsoft-marketplace"
+    ],
+    "Acknowledgement": [],
+    "source_file": "nexus_scogo.yaml"
+  },
+  {
     "Name": "Nezha",
     "Category": "RMM",
     "Description": "Nezha (nezhahq/nezha on GitHub) is a self-hosted, lightweight, open-source server and website monitoring / O&M tool written in Go. The architecture is a central Dashboard plus a per-host Agent that maintains a persistent gRPC connection back to the Dashboard for telemetry and remote operations. The Agent ships first-class capabilities by default — interactive WebSSH terminals, arbitrary command execution, file management, scheduled and triggered task execution, and batch operations across the entire fleet — and runs at SYSTEM on Windows or root on Linux/macOS/FreeBSD/OpenWRT/Synology without requiring privilege escalation.\n\nThreat actors have been observed abusing Nezha as a stealthy post-exploitation RAT. Huntress published \"The Crown Prince, Nezha\" (2025) documenting a China-nexus campaign that compromised 100+ hosts across Taiwan, Japan, South Korea, and Hong Kong via unauthenticated phpMyAdmin → log poisoning → AntSword web shell → Nezha agent deployment → Ghost RAT installation. Ontinue published a parallel writeup (\"The Monitoring Tool That's Also a Perfect RAT\") on the same abuse class. Kaspersky flags the official agent binary as `not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen`; Microsoft and most other AV engines do not currently flag it, which is exactly what makes it attractive as a living-off-the-land RMM masquerade.",
@@ -22563,6 +23899,98 @@
     "References": [],
     "Acknowledgement": [],
     "source_file": "onionshare.yaml"
+  },
+  {
+    "Name": "OpenDesk RMM Agent",
+    "Category": "RMM",
+    "Description": "OpenDesk RMM Agent is a remote monitoring and management agent from NextCore TI. Its first-party release repository documents Windows and Linux support; the reviewed Windows release is a signed OpenDesk RMM Agent binary.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "https://github.com/nextcoreti/opendesk-rmm-agent",
+      "PEMetadata": [
+        {
+          "Filename": "OpenDesk-RMM-Agent.exe",
+          "OriginalFileName": "opendesk-rmm-agent.exe",
+          "Description": "OpenDesk RMM Agent - Gerenciamento Remoto",
+          "Product": null
+        }
+      ],
+      "Privileges": "",
+      "Free": "",
+      "Verification": "The Windows sample was not executed. Its recorded full-file SHA-256, PE metadata, and Authenticode signer identify OpenDesk RMM Agent, NextCore TI, and Next Core TI Ltda. The body hash of the official first-party OpenDesk-RMM-Agent.exe release asset matches the reviewed Windows sample. The first-party release repository documents Windows and Linux support. Its 30 published release records each expose only a Windows OpenDesk-RMM-Agent.exe asset; this review has no verified Linux artifact names, installed paths, services, or runtime network endpoints. The vendor does not claim macOS support in the reviewed repository.",
+      "SupportedOS": [
+        "Windows",
+        "Linux"
+      ],
+      "Capabilities": [
+        "Remote monitoring",
+        "Remote management"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "OpenDesk-RMM-Agent.exe",
+        "opendesk-rmm-agent.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "OpenDesk-RMM-Agent.exe",
+          "Description": "Official Windows release-asset basename matching the inspected signed sample.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "opendesk-rmm-agent.exe",
+          "Description": "Original filename in the inspected Windows sample's PE metadata.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "InspectedWindowsAgentSHA256",
+          "Value": "60e5ca6a1f82a52a104601005d8a5c768674208f8f4ce7ac89ad97ca2b5978bb"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://github.com/nextcoreti/opendesk-rmm-agent",
+      "https://github.com/nextcoreti/opendesk-rmm-agent/releases/tag/v2.10.24",
+      "https://github.com/nextcoreti/opendesk-rmm-agent/releases/download/v2.10.24/OpenDesk-RMM-Agent.exe"
+    ],
+    "Acknowledgement": [],
+    "source_file": "opendesk.yaml",
+    "CodeSigning": {
+      "search_names": [
+        "OpenDesk-RMM-Agent.exe",
+        "opendesk-rmm-agent.exe"
+      ],
+      "company_names": [
+        "NextCore TI"
+      ],
+      "signer_names": [
+        "Next Core TI Ltda"
+      ],
+      "certificates": [
+        {
+          "signer_name": "Next Core TI Ltda",
+          "certificate_thumbprint": "0E6DD4D5946FA8908346735BF7D511251E3815D2",
+          "issuer": "Sectigo Public Code Signing CA R36",
+          "src_file_sha256": "60e5ca6a1f82a52a104601005d8a5c768674208f8f4ce7ac89ad97ca2b5978bb",
+          "src_file_path": "OpenDesk-RMM-Agent.exe",
+          "src_file_company": "NextCore TI"
+        }
+      ]
+    }
   },
   {
     "Name": "OpsBridge Agent",
@@ -26045,6 +27473,124 @@
     }
   },
   {
+    "Name": "RemoteAgentAgent",
+    "Category": "RAT",
+    "Description": "RemoteAgentAgent is malicious custom Windows remote-management tooling documented in an RVTools SEO poisoning intrusion by Threat Hunting Labs and MalBear Labs. Its PyInstaller-packaged Python service registers a device, polls for tasks, runs server-supplied PowerShell commands, and returns output and exit status. It was installed through RemoteAgent.msi and NSSM as a SYSTEM service. No independent legitimate vendor was established. This agent is separate from LightRmmAgent, RMMCRAT, and unrelated products named RemoteAgent.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-23",
+    "LastModified": "2026-09-23",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "RemoteAgentAgent.exe",
+          "OriginalFileName": "",
+          "Description": "",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator for service installation; observed service ran as LocalSystem",
+      "Free": "",
+      "Verification": "Based on the published incident reconstruction and MalBear Labs' Python bytecode analysis; no sample was executed or locally reverse engineered for this entry. The report documents CPython 3.11, agent_service.py, configuration through AGENT_CONFIG_PATH, a default ten-second polling interval, and PowerShell result reporting. Observed commands were Get-Date and two RemoteAgent_API_CHECK checks, not broad post-exploitation tasking. The captured panel establishes a login page, not authenticated management functions. Linux/macOS builds, PE version resources, signer, and an unambiguously mapped agent hash were not established. The exact SCM service name is not sufficiently explicit to create a service-key selector.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Device registration and command polling",
+        "Remote PowerShell execution",
+        "Command output and exit-status reporting"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\Program Files\\RemoteAgent\\RemoteAgentAgent.exe"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "C:\\Program Files\\RemoteAgent\\RemoteAgentAgent.exe",
+          "Description": "Agent executable installed by the recovered service-install script.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Program Files\\RemoteAgent\\config.json",
+          "Description": "Default configuration file identified in the reconstructed Python code; its path can be overridden by AGENT_CONFIG_PATH.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\Windows\\Temp\\RemoteAgent.msi",
+          "Description": "Case-specific installer staging path observed before silent MSI installation.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [
+        {
+          "Description": "Case-specific configured server and captured RemoteAgent login-panel hostname; initial resolution failed, and no full registration or command exchange with the panel was captured.",
+          "Domains": [
+            "app-af-agent-prod-009.azurewebsites.net"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "ServiceArgument",
+          "Value": "--service"
+        },
+        {
+          "Type": "ConfigurationEnvironmentVariable",
+          "Value": "AGENT_CONFIG_PATH"
+        },
+        {
+          "Type": "ReportedRegistrationRoute",
+          "Value": "/api/register"
+        },
+        {
+          "Type": "ReportedCommandPollingRoute",
+          "Value": "/api/commands"
+        },
+        {
+          "Type": "ReportedResultRoute",
+          "Value": "/api/commands/<cmd_id>/result"
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://www.threathuntinglabs.com/blog/from-seo-poisoning-to-custom-rmm-and-cobalt-strike",
+      "https://malbearlabs.com/posts/novel-malware-built-to-survive-the-analyst"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "Kostas / Threat Hunting Labs",
+        "Handle": "@Kostastsale"
+      },
+      {
+        "Person": "Threat Hunting Labs",
+        "Handle": "@ThruntingLabs"
+      },
+      {
+        "Person": "Anna / MalBear Labs",
+        "Handle": "@PandaRE__"
+      },
+      {
+        "Person": "MalBear Labs",
+        "Handle": "@malbearlabs"
+      }
+    ],
+    "source_file": "remote_agent_agent.yaml"
+  },
+  {
     "Name": "Remote Desktop Manager (Devolutions)",
     "Category": "RAT",
     "Description": "Remote Desktop Manager (Devolutions) is a remote monitoring and management (RMM) tool. More information will be added as it becomes available.",
@@ -27635,6 +29181,159 @@
         }
       ]
     }
+  },
+  {
+    "Name": "RMMCRAT",
+    "Category": "RAT",
+    "Description": "RMMCRAT is the researchers' name, also written RMMcRAT, for a custom Windows C++ remote-access payload masquerading as an RMM agent. Threat Hunting Labs and MalBear Labs documented it as rmm.exe in an RVTools SEO poisoning intrusion. It registers hosts, reports system inventory, receives package tasks, and accepts a remote stop command. It is malicious custom tooling, not an established legitimate RMM product, and is distinct from LightRmmAgent and RemoteAgentAgent.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-23",
+    "LastModified": "2026-09-23",
+    "Details": {
+      "Website": "",
+      "PEMetadata": [
+        {
+          "Filename": "rmm.exe",
+          "OriginalFileName": "",
+          "Description": "",
+          "Product": null
+        }
+      ],
+      "Privileges": "Administrator for optional service installation; incident execution context is not established here",
+      "Free": "",
+      "Verification": "Based on the primary intrusion and reverse-engineering reports, not local sample execution or decompilation. MalBear Labs recovered Windows service support, encrypted strings, embedded RMMC configuration, host inventory, package-integrity checks, and DPAPI-protected enrollment files. Threat Hunting Labs observed registration, a run_package task that failed its SHA-256 check, and a stop_agent task. No successful package execution, installed rmm.exe service, Run key, or scheduled task was observed in the incident. The report's optional RMMAgent service is a code capability, not observed persistence. The published hash is report-sourced. No legitimate vendor, signer, PE version resources, or Linux/macOS build was established.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Device registration and system inventory",
+        "Heartbeat-based remote task polling",
+        "Package download with SHA-256 verification before execution",
+        "Remote agent shutdown",
+        "Optional Windows service installation"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "C:\\ProgramData\\RMMAgent\\*"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "*\\AppData\\Roaming\\rmm.exe",
+          "Description": "Executable location observed in the intrusion; rmm.exe alone is a generic name and requires corroboration.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\RMMAgent\\client_id.bin",
+          "Description": "DPAPI-protected device identity documented by the reverse-engineering report under the observed enrollment directory.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\RMMAgent\\credentials.dat",
+          "Description": "DPAPI-protected issued agent token; enrollment data must not be included in public indicators.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "C:\\ProgramData\\RMMAgent\\packages\\Notepad++.exe",
+          "Description": "Case-specific downloaded package path; the Notepad++-named task failed its integrity check before execution.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [
+        {
+          "Path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\RMMAgent",
+          "Description": "Potential SCM key inferred from the default service name recovered by MalBear Labs; service installation was supported by code but not observed in this intrusion."
+        }
+      ],
+      "Network": [
+        {
+          "Description": "Case-specific registration and heartbeat server resolved and contacted by rmm.exe; not legitimate vendor infrastructure.",
+          "Domains": [
+            "softbymade.top"
+          ],
+          "Ports": [
+            443
+          ]
+        }
+      ],
+      "Other": [
+        {
+          "Type": "ObservedPackageStagingDirectory",
+          "Value": "C:\\ProgramData\\RMMAgent\\packages\\"
+        },
+        {
+          "Type": "ReportedWindowsPayloadSHA256",
+          "Value": "3afabe2f9197f66460044083c708a5206291b2efe1138be1c763f60c47069787"
+        },
+        {
+          "Type": "DefaultServiceNameFromCode",
+          "Value": "RMMAgent"
+        },
+        {
+          "Type": "DefaultServiceDisplayNameFromCode",
+          "Value": "RMM Agent"
+        },
+        {
+          "Type": "EmbeddedConfigurationMagic",
+          "Value": "RMMC"
+        },
+        {
+          "Type": "OptionalConfigurationFile",
+          "Value": "agent.conf next to the executable; path can be overridden"
+        },
+        {
+          "Type": "ReportedRegistrationRoute",
+          "Value": "/api/v1/agents/register"
+        },
+        {
+          "Type": "ReportedHeartbeatRoute",
+          "Value": "/api/v1/agents/heartbeat"
+        }
+      ]
+    },
+    "Detections": [
+      {
+        "Sigma": null,
+        "Link": "https://github.com/pandare9x/Yara-Rules/blob/main/SEOPoison/rmmcrat.yar",
+        "Name": "MalBear Labs RMMCRAT YARA rule",
+        "Description": "Researcher-provided rule for the analyzed RMMCRAT payload.",
+        "author": null
+      }
+    ],
+    "References": [
+      "https://www.threathuntinglabs.com/blog/from-seo-poisoning-to-custom-rmm-and-cobalt-strike",
+      "https://malbearlabs.com/posts/novel-malware-built-to-survive-the-analyst",
+      "https://github.com/pandare9x/Yara-Rules/blob/main/SEOPoison/rmmcrat.yar"
+    ],
+    "Acknowledgement": [
+      {
+        "Person": "Kostas / Threat Hunting Labs",
+        "Handle": "@Kostastsale"
+      },
+      {
+        "Person": "Threat Hunting Labs",
+        "Handle": "@ThruntingLabs"
+      },
+      {
+        "Person": "Anna / MalBear Labs",
+        "Handle": "@PandaRE__"
+      },
+      {
+        "Person": "MalBear Labs",
+        "Handle": "@malbearlabs"
+      }
+    ],
+    "source_file": "rmmcrat.yaml"
   },
   {
     "Name": "RMMmax",
@@ -34960,6 +36659,87 @@
     ],
     "Acknowledgement": [],
     "source_file": "ultravnc.yaml"
+  },
+  {
+    "Name": "UniSystem RMM",
+    "Category": "RMM",
+    "Description": "UniSystem RMM is a Windows endpoint-management platform. Matching product-branded material describes a UniRMM agent with remote terminal access, RDP tunneling, remote script execution, and endpoint monitoring. This entry records matching UniRMM Windows sample metadata. The reviewed evidence establishes product identity and vendor-described capabilities only; it does not establish delivery, abuse, victim impact, or actor attribution.",
+    "Author": "Michael Haag",
+    "Created": "2026-09-22",
+    "LastModified": "2026-09-22",
+    "Details": {
+      "Website": "https://xelvarunetio.pro/",
+      "PEMetadata": [
+        {
+          "Filename": "UniRMM.exe",
+          "OriginalFileName": "UniRMM.exe",
+          "Description": "Servico de Gerenciamento Remoto",
+          "Product": null
+        }
+      ],
+      "Privileges": "",
+      "Free": "Unknown",
+      "Verification": "The reviewed Windows sample identifies as UniSystem RMM from UniSystem Tecnologia LTDA. A product-branded page describes matching UniRMM installation and endpoint-management functions; site ownership and legal publisher identity were not independently verified. The sample was not executed, and this review does not assert a stable installation path, signer, network endpoint, or abuse relationship.",
+      "SupportedOS": [
+        "Windows"
+      ],
+      "Capabilities": [
+        "Remote terminal access",
+        "RDP tunneling",
+        "Remote script execution",
+        "Endpoint monitoring"
+      ],
+      "Vulnerabilities": [],
+      "InstallationPaths": [
+        "UniRMM.exe",
+        "UniRMM.msi"
+      ]
+    },
+    "Artifacts": {
+      "Disk": [
+        {
+          "File": "UniRMM.exe",
+          "Description": "Windows UniSystem RMM agent filename from reviewed PE metadata.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        },
+        {
+          "File": "UniRMM.msi",
+          "Description": "Windows installer filename described by the vendor product site.",
+          "OS": "Windows",
+          "Type": null,
+          "Example": []
+        }
+      ],
+      "EventLog": [],
+      "Registry": [],
+      "Network": [],
+      "Other": [
+        {
+          "Type": "InspectedWindowsSampleSHA256",
+          "Value": "8a0c5fdb48d77253945e931270b9586ada54ae1066d26af5dbacf4ca261478d3"
+        },
+        {
+          "Type": "ProductVersion",
+          "Value": "2.0.0.0"
+        },
+        {
+          "Type": "VendorIdentity",
+          "Value": "UniSystem Tecnologia LTDA (from reviewed PE metadata)"
+        },
+        {
+          "Type": "CatalogScope",
+          "Value": "Product identity confirmed; no delivery or abuse claim."
+        }
+      ]
+    },
+    "Detections": [],
+    "References": [
+      "https://xelvarunetio.pro/"
+    ],
+    "Acknowledgement": [],
+    "source_file": "unisystem.yaml"
   },
   {
     "Name": "SimpleHelp",
