@@ -24,6 +24,7 @@ baramundi,baramundi Management Suite,RMM,True,True,True,True,True,False,False,Tr
 barracuda,Barracuda,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
 basecamp,Basecamp,RAT,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
 basic_rmm,Basic RMM Agent,RMM,True,False,True,True,False,False,False,False,True,False,installation_paths | disk | eventlog | registry | network | detections
+beacon,Beacon (Synertek),RMM,True,True,True,True,True,True,False,False,True,False,registry | network | detections
 beamyourscreen,BeamYourScreen,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 beanywhere,BeAnyWhere,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 beinsync,BeInSync,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -33,9 +34,11 @@ bitvise_ssh_client,Bitvise SSH Client,RAT,True,True,False,False,False,False,Fals
 bitvise_ssh_server,Bitvise SSH Server,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 blackcrypt,BlackCrypt RMM Agent,RMM,True,False,True,True,False,False,True,True,True,False,installation_paths | disk | eventlog | detections
 bluetrait,Bluetrait,RAT,True,True,True,True,True,True,False,True,False,True,registry | other
+borealis,Borealis,RMM,True,True,True,True,True,True,False,False,True,False,registry | network | detections
 breezermm,BreezeRMM,RMM,True,True,True,True,True,False,False,True,True,False,eventlog | registry | detections
 centrastage_(now_datto),CentraStage (Now Datto),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 centurion,Centurion,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+chaos_rat,CHAOS RAT,RAT,True,False,True,True,False,False,False,True,True,False,installation_paths | disk | eventlog | registry | detections
 chicken_(of_the_vnc),Chicken (of the VNC),RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 chrome_remote_desktop,Chrome Remote Desktop,RAT,True,True,True,True,True,False,False,True,False,True,eventlog | registry | other
 chrome_ssh_extension,Chrome SSH Extension,RAT,True,True,False,False,False,False,False,False,False,False,capabilities | supported_os | disk | eventlog | registry | network | other | detections
@@ -68,6 +71,7 @@ ehorus,eHorus,RMM,True,True,False,True,False,False,False,True,False,True,capabil
 electric_ai_(kaseya),Electric AI (Kaseya),RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
 emco_remote_console,EMCO Remote Console,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 encapto,Encapto,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
+endar,Endar,RMM,True,False,True,True,False,False,False,True,True,False,installation_paths | disk | eventlog | registry | detections
 ericom_accessnow,Ericom AccessNow,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 ericom_connect,Ericom Connect,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 eset_remote_administrator,ESET Remote Administrator,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -89,6 +93,7 @@ freshservice,Freshservice,RMM,True,True,True,True,True,True,True,True,True,True,
 gatherplace-desktop_sharing,GatherPlace-desktop sharing,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 getscreen,GetScreen,RMM,True,True,True,True,True,True,True,True,True,True,
 glpi,GLPI Agent,RMM,True,True,True,True,True,True,True,True,True,True,
+go_mini_rmm,Go Mini RMM,RMM,True,False,True,True,True,False,False,True,True,False,installation_paths | eventlog | registry | detections
 go_rmm,GO RMM,RMM,True,False,True,True,False,False,False,False,True,False,installation_paths | disk | eventlog | registry | network | detections
 gorelormm,Gorelo RMM,RMM,True,False,True,True,True,False,False,True,False,True,installation_paths | eventlog | registry | other
 goto_opener,GoTo Opener,RMM,True,True,False,False,False,False,False,False,False,False,capabilities | supported_os | disk | eventlog | registry | network | other | detections
@@ -158,6 +163,7 @@ megasync,MEGAsync,RAT,True,True,False,False,False,False,False,False,False,True,c
 meshcentral,MeshCentral,RMM,True,True,True,True,True,True,False,True,False,True,registry | other
 microsoft_quick_assist,Microsoft Quick Assist,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 mikogo,Mikogo,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+minexus,Minexus,RMM,True,True,True,True,True,False,False,True,True,False,eventlog | registry | detections
 mini_rmm,Mini RMM Agent,RMM,True,True,True,True,True,False,True,False,True,False,eventlog | network | detections
 mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 mionet_(wd_anywhere_access),MioNet (WD Anywhere Access),RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
@@ -179,6 +185,7 @@ n-ableadvancedmonitoringagent,N-Able Advanced Monitoring Agent,RMM,True,True,Fal
 naverisk,Naverisk,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 netbird,NetBird,RAT,True,True,True,True,True,True,True,True,True,False,detections
 netlock_rmm,NetLock RMM,RMM,True,True,False,True,True,False,False,False,False,True,capabilities | eventlog | registry | network | other
+netmaster,NetMaster,RMM,True,True,True,True,True,True,True,True,True,False,detections
 netmonitor,Net Monitor for Employees,RMM,False,True,True,True,False,False,False,False,False,True,pe_metadata | disk | eventlog | registry | network | other
 netop,Netop,RMM,True,True,False,True,False,False,False,False,False,False,capabilities | disk | eventlog | registry | network | other | detections
 netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -199,8 +206,11 @@ nordlocker,NordLocker,RAT,True,False,False,False,False,False,False,False,False,F
 noteon-desktop_sharing,NoteOn-desktop sharing,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 ntr_remote,NTR Remote,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 nvda,NVDA (Non-Visual Desktop Access),RMM,True,True,True,True,True,True,False,True,False,False,registry | other | detections
+obliance,Obliance,RMM,True,True,True,True,True,True,True,False,True,False,network | detections
 ocs_inventory,OCS inventory,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 onionshare,Onionshare,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
+opale,Opale,RMM,True,True,True,True,True,True,True,True,True,False,detections
+open_uem,OpenUEM,RMM,True,True,True,True,True,True,False,False,True,False,registry | network | detections
 opendesk,OpenDesk RMM Agent,RMM,True,True,True,True,True,False,False,False,True,False,eventlog | registry | network | detections
 opsbridge_agent,OpsBridge Agent,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 optitune,OptiTune,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -218,6 +228,7 @@ pitunnel,PiTunnel,RAT,True,True,True,True,True,False,False,True,True,True,eventl
 pocket_cloud_(wyse),Pocket Cloud (Wyse),RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 pocket_controller,Pocket Controller,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
+proxiport,ProxiPort,RMM,True,True,True,True,True,True,True,True,True,False,detections
 psexec,PSEXEC,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 psexec_(clone),PSEXEC (Clone),RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 pulseway,Pulseway,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -259,6 +270,7 @@ rmmcrat,RMMCRAT,RAT,True,True,True,True,True,False,True,True,True,True,eventlog
 rmmmax,RMMmax,RMM,True,True,True,True,True,True,True,True,True,False,detections
 rocketremotedesktop,Rocket Remote Desktop,RMM,True,True,False,True,False,False,False,False,False,True,capabilities | disk | eventlog | registry | network | other
 rodexrmm,Rodex RMM,RAT,True,True,True,True,True,False,False,True,True,True,eventlog | registry
+roster,Roster,RMM,True,True,True,True,True,True,False,False,True,False,registry | network | detections
 royal_apps,Royal Apps,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 royal_server,Royal Server,RMM,True,False,False,False,False,False,False,True,False,True,installation_paths | capabilities | supported_os | disk | eventlog | registry | other
 royal_ts,Royal TS,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -272,6 +284,7 @@ screenmeet,ScreenMeet,RMM,True,True,False,False,False,False,False,True,False,Tru
 securecrt,SecureCRT,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 seetrol,Seetrol,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 senso.cloud,Senso.cloud,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+sentinel_rmm,Sentinel RMM,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 servereye,ServerEye,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 setme_pro,SetMe PRO,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 shellhub,ShellHub,RAT,True,True,True,True,True,False,False,True,True,True,eventlog | registry
@@ -285,6 +298,7 @@ smartty,SmarTTY,RAT,True,True,False,False,False,False,False,False,False,True,cap
 solar-putty,Solar-PuTTY,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 sophos-remote_management_system,Sophos-Remote Management System,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 sorillus,Sorillus,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+sparkrat,SparkRAT,RAT,True,False,True,True,True,False,False,True,True,False,installation_paths | eventlog | registry | detections
 splashtop,Splashtop,RMM,True,True,False,False,True,True,True,True,False,True,capabilities | supported_os | other
 splashtop_remote,Splashtop Remote,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 splashtopbeta,Splashtop (Beta),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other

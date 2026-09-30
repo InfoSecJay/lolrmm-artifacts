@@ -28,7 +28,7 @@ logsource:
 generated:
   source: indicators/domain.txt
   indicators: 657
-  tools: 341
+  tools: 355
   rewritten:
     - "agents*-cloud.acronis.com -> -cloud.acronis.com"
     - "asapi*.aweray.net -> .aweray.net"

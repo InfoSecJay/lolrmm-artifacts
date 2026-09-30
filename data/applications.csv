@@ -37,6 +37,7 @@ Barracuda,barracuda,barracuda,Barracuda,Name,RMM,,https://www.barracuda.com/prod
 Basecamp,basecamp,basecamp,Basecamp,Name,RAT,,https://basecamp.com/,
 Basic RMM Agent,basic rmm agent,basic_rmm,Basic RMM Agent,Name,RMM,,,Windows
 Basic RMM monitoring and management agent,basic rmm monitoring and management agent,basic_rmm,Basic RMM Agent,PEMetadata.Description,RMM,,,Windows
+Beacon (Synertek),beacon (synertek),beacon,Beacon (Synertek),Name,RMM,true,https://github.com/synertek-cloud-services/beacon,Windows | Linux | macOS
 BeamYourScreen,beamyourscreen,beamyourscreen,BeamYourScreen,Name,RMM,,https://web.archive.org/web/20210304100510/https://www.beamyourscreen.com/,
 BeAnyWhere,beanywhere,beanywhere,BeAnyWhere,Name,RMM,,https://www.n-able.com/products/take-control,
 BeInSync,beinsync,beinsync,BeInSync,Name,RAT,,,
@@ -50,6 +51,7 @@ BlackCryptAgent.dll,blackcryptagent.dll,blackcrypt,BlackCrypt RMM Agent,PEMetada
 Bluetrait,bluetrait,bluetrait,Bluetrait,Name,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
 Bluetrait MSP Agent,bluetrait msp agent,bluetrait,Bluetrait,PEMetadata.Description,RAT,true,https://bluetrait.io/,Windows | Linux | macOS
 bma,bma,baramundi,baramundi Management Suite,PEMetadata.OriginalFileName,RMM,false,https://www.baramundi.com/en-us/,Windows | Linux | Mac | Android | IOS
+Borealis,borealis,borealis,Borealis,Name,RMM,true,https://github.com/bunny-lab-io/Borealis,Windows | Linux
 Breeze,breeze,breezermm,BreezeRMM,PEMetadata.Product,RMM,true,https://breezermm.com/,Windows | macOS | Linux
 Breeze agent backup component,breeze agent backup component,breezermm,BreezeRMM,PEMetadata.Description,RMM,true,https://breezermm.com/,Windows | macOS | Linux
 Breeze agent watchdog process,breeze agent watchdog process,breezermm,BreezeRMM,PEMetadata.Description,RMM,true,https://breezermm.com/,Windows | macOS | Linux
@@ -58,6 +60,7 @@ Breeze user-context helper process,breeze user-context helper process,breezermm,
 BreezeRMM,breezermm,breezermm,BreezeRMM,Name,RMM,true,https://breezermm.com/,Windows | macOS | Linux
 CentraStage (Now Datto),centrastage (now datto),centrastage_(now_datto),CentraStage (Now Datto),Name,RMM,,https://rmm.datto.com/help,
 Centurion,centurion,centurion,Centurion,Name,RMM,,,
+CHAOS RAT,chaos rat,chaos_rat,CHAOS RAT,Name,RAT,true,https://github.com/tiagorlampert/CHAOS,Windows | Linux
 Chicken (of the VNC),chicken (of the vnc),chicken_(of_the_vnc),Chicken (of the VNC),Name,RAT,,https://github.com/flit/cotvnc,
 Chrome Remote Desktop,chrome remote desktop,chrome_remote_desktop,Chrome Remote Desktop,Name,RAT,true,https://remotedesktop.google.com/,Windows | macOS | Linux
 Chrome SSH Extension,chrome ssh extension,chrome_ssh_extension,Chrome SSH Extension,Name,RAT,,https://chromewebstore.google.com/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd,
@@ -93,6 +96,7 @@ Deep Freeze workstation service,deep freeze workstation service,faronics_deep_fr
 Deep Freeze workstation service (extended host),deep freeze workstation service (extended host),faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.Description,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
 Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter,default rename target for the teramind clipboard-monitor process; configurable via tmclipmonexe installer parameter,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name,default rename target for the teramind hidden agent core executable; configurable via tmagentexe installer parameter — collides intentionally with the legitimate desktop window manager process name,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
+Default Windows agent filename copied by the repository installer; build-time branding can change this name.,default windows agent filename copied by the repository installer; build-time branding can change this name.,opale,Opale,PEMetadata.Description,RMM,Open source,https://github.com/4rtefakt/opale,Windows
 DepHlp,dephlp,invgate,InvGate,PEMetadata.OriginalFileName,RMM,30 day trial,https://invgate.com/,Windows | Linux | MacOS | Android
 DeskDay,deskday,deskday,DeskDay,Name,RMM,,https://deskday.com/,Windows
 DeskNets,desknets,desknets,DeskNets,Name,RMM,,https://www.desknets.com/,
@@ -121,6 +125,7 @@ eHorus,ehorus,ehorus,eHorus,Name,RMM,,https://ehorus.com,Windows | Linux | Mac
 Electric AI (Kaseya),electric ai (kaseya),electric_ai_(kaseya),Electric AI (Kaseya),Name,RMM,,https://www.electric.ai/,
 EMCO Remote Console,emco remote console,emco_remote_console,EMCO Remote Console,Name,RMM,,https://emcosoftware.com/,
 Encapto,encapto,encapto,Encapto,Name,RMM,,https://www.encapto.com/,
+Endar,endar,endar,Endar,Name,RMM,Open source,https://github.com/tomkeene/endar,Linux
 Endpoint Agent,endpoint agent,action1,Action1,PEMetadata.Description,RMM,Yes,https://www.action1.com/,Windows
 Ericom AccessNow,ericom accessnow,ericom_accessnow,Ericom AccessNow,Name,RMM,,https://www.ericom.com/connect-accessnow/,
 Ericom Connect,ericom connect,ericom_connect,Ericom Connect,Name,RMM,,https://www.ericom.com/connect-accessnow/,
@@ -204,9 +209,11 @@ FSWmiScanner,fswmiscanner,freshservice,Freshservice,PEMetadata.OriginalFileName,
 FWA_UI_Agent,fwa_ui_agent,faronics_deploy,Faronics Deploy,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deploy,Windows | MacOS
 FWAService,fwaservice,faronics_deploy,Faronics Deploy,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deploy,Windows | MacOS
 GatherPlace-desktop sharing,gatherplace-desktop sharing,gatherplace-desktop_sharing,GatherPlace-desktop sharing,Name,RMM,,https://web.archive.org/web/20241106023713/https://www.gatherplace.com/,
+Generic Windows agent filename used by the repository installer; filename-only process detection would be too broad.,generic windows agent filename used by the repository installer; filename-only process detection would be too broad.,go_mini_rmm,Go Mini RMM,PEMetadata.Description,RMM,Open source,https://github.com/cevrimxe/go-mini-rmm,Windows | Linux
 GetScreen,getscreen,getscreen,GetScreen,Name,RMM,,https://getscreen.me/,Windows
 "Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B Ltd). Distributed as a UPX-packed PE32 (x86) GUI executable from https://getscreen.me/download/getscreen-x86.exe. Current binaries (file version 3.5.0+) are signed by POINT B LTD (Cyprus, registered HE 430957) on a GlobalSign GCC R45 EV CodeSigning chain. Older 2020-2021 era binaries were signed by OOO ""GET SKRIN SOFTVER"" on a COMODO RSA Extended Validation Code Signing CA chain (now expired).","getscreen.me agent (productname/internalname: getscreen.me, companyname: point b ltd). distributed as a upx-packed pe32 (x86) gui executable from https://getscreen.me/download/getscreen-x86.exe. current binaries (file version 3.5.0+) are signed by point b ltd (cyprus, registered he 430957) on a globalsign gcc r45 ev codesigning chain. older 2020-2021 era binaries were signed by ooo ""get skrin softver"" on a comodo rsa extended validation code signing ca chain (now expired).",getscreen,GetScreen,PEMetadata.Description,RMM,,https://getscreen.me/,Windows
 GLPI Agent,glpi agent,glpi,GLPI Agent,Name,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
+Go Mini RMM,go mini rmm,go_mini_rmm,Go Mini RMM,Name,RMM,Open source,https://github.com/cevrimxe/go-mini-rmm,Windows | Linux
 GO RMM,go rmm,go_rmm,GO RMM,Name,RMM,Unknown,,Windows
 GO RMM management console,go rmm management console,go_rmm,GO RMM,PEMetadata.Description,RMM,Unknown,,Windows
 Gorelo RMM,gorelo rmm,gorelormm,Gorelo RMM,Name,RMM,false,https://www.gorelo.io/remote-management/,Windows | Mac
@@ -332,12 +339,14 @@ MeshCentral,meshcentral,meshcentral,MeshCentral,Name,RMM,Yes,https://meshcentral
 MeshCentral Background Service Agent,meshcentral background service agent,meshcentral,MeshCentral,PEMetadata.Description,RMM,Yes,https://meshcentral.com/,Windows | Linux | MacOS | FreeBSD
 Microsoft Quick Assist,microsoft quick assist,microsoft_quick_assist,Microsoft Quick Assist,Name,RAT,,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,
 Mikogo,mikogo,mikogo,Mikogo,Name,RMM,,,
+Minexus,minexus,minexus,Minexus,Name,RMM,true,https://github.com/arhuman/minexus,Windows | Linux | macOS
 Mini RMM Agent,mini rmm agent,mini_rmm,Mini RMM Agent,Name,RMM,Unknown,,Windows
 Mini RMM Agent (self-identified in assembly metadata),mini rmm agent (self-identified in assembly metadata),mini_rmm,Mini RMM Agent,PEMetadata.Description,RMM,Unknown,,Windows
 MioNet (Also known as WD Anywhere Access),mionet (also known as wd anywhere access),mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),Name,RMM,,,
 MioNet (WD Anywhere Access),mionet (wd anywhere access),mionet_(wd_anywhere_access),MioNet (WD Anywhere Access),Name,RMM,,,
 Miradore,miradore,miradore,Miradore,Name,RMM,Free tier available,https://www.miradore.com/,Windows | Mac | Linux | iOS | Android
 Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal),miradore installer msi (observed renamed in phishing campaigns - verified via virustotal),miradore,Miradore,PEMetadata.Description,RMM,Free tier available,https://www.miradore.com/,Windows | Mac | Linux | iOS | Android
+"Misleading release filename: the reviewed endar.exe is a stripped Linux x86-64 ELF PyInstaller executable, not a Windows PE. It bundles Python 3.8 and an endar.pyc entry point.","misleading release filename: the reviewed endar.exe is a stripped linux x86-64 elf pyinstaller executable, not a windows pe. it bundles python 3.8 and an endar.pyc entry point.",endar,Endar,PEMetadata.Description,RMM,Open source,https://github.com/tomkeene/endar,Linux
 MobaXterm,mobaxterm,mobaxterm,MobaXterm,Name,RAT,,https://mobaxterm.mobatek.net/,
 Mocha VNC Lite,mocha vnc lite,mocha_vnc_lite,Mocha VNC Lite,Name,RAT,,,
 ModulesUpgradeMgr,modulesupgrademgr,faronics_deploy,Faronics Deploy,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deploy,Windows | MacOS
@@ -372,6 +381,7 @@ NetBird UI executable for Windows,netbird ui executable for windows,netbird,NetB
 "NetBird Windows MSI installer (canonical naming pattern from official GitHub releases, e.g. netbird_installer_0.70.4_windows_amd64.msi). Renamed to netbird.msi in the May 2025 Trellix-reported campaign.","netbird windows msi installer (canonical naming pattern from official github releases, e.g. netbird_installer_0.70.4_windows_amd64.msi). renamed to netbird.msi in the may 2025 trellix-reported campaign.",netbird,NetBird,PEMetadata.Description,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
 netbird_installer,netbird_installer,netbird,NetBird,PEMetadata.OriginalFileName,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
 NetLock RMM,netlock rmm,netlock_rmm,NetLock RMM,Name,RMM,,https://www.netlockrmm.com/,Windows | Linux | MacOS
+NetMaster,netmaster,netmaster,NetMaster,Name,RMM,true,https://github.com/f3di006/NetMaster,Windows
 Netop,netop,netop,Netop,Name,RMM,,https://netop.com/,Windows
 Netop Remote Control (aka Impero Connect),netop remote control (aka impero connect),netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),Name,RMM,,https://netop.com/,
 Netop Remote Control (Impero Connect),netop remote control (impero connect),netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),Name,RMM,,https://netop.com/,
@@ -403,12 +413,16 @@ NTR Remote,ntr remote,ntr_remote,NTR Remote,Name,RMM,,,Windows
 NVDA (Non-Visual Desktop Access),nvda (non-visual desktop access),nvda,NVDA (Non-Visual Desktop Access),Name,RMM,true,https://www.nvaccess.org/,Windows
 NVDA screen reader executable,nvda screen reader executable,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
 NVDA service executable for secure screens,nvda service executable for secure screens,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
+Obliance,obliance,obliance,Obliance,Name,RMM,Unknown,https://github.com/MeeJay/Obliance,Windows | Linux | macOS
 OCS inventory,ocs inventory,ocs_inventory,OCS inventory,Name,RMM,,https://ocsinventory-ng.org/,
 Official HeartbeatRM installer (verified via VirusTotal),official heartbeatrm installer (verified via virustotal),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
+Official Windows installer filename; no PE metadata was inspected.,official windows installer filename; no pe metadata was inspected.,open_uem,OpenUEM,PEMetadata.Description,RMM,true,https://openuem.eu/,Windows | Linux | macOS
 Onionshare,onionshare,onionshare,Onionshare,Name,RAT,,https://onionshare.org/,
+Opale,opale,opale,Opale,Name,RMM,Open source,https://github.com/4rtefakt/opale,Windows
 OpenDesk RMM Agent,opendesk rmm agent,opendesk,OpenDesk RMM Agent,Name,RMM,,https://github.com/nextcoreti/opendesk-rmm-agent,Windows | Linux
 OpenDesk RMM Agent - Gerenciamento Remoto,opendesk rmm agent - gerenciamento remoto,opendesk,OpenDesk RMM Agent,PEMetadata.Description,RMM,,https://github.com/nextcoreti/opendesk-rmm-agent,Windows | Linux
 opendesk-rmm-agent,opendesk-rmm-agent,opendesk,OpenDesk RMM Agent,PEMetadata.OriginalFileName,RMM,,https://github.com/nextcoreti/opendesk-rmm-agent,Windows | Linux
+OpenUEM,openuem,open_uem,OpenUEM,Name,RMM,true,https://openuem.eu/,Windows | Linux | macOS
 OpsBridge Agent,opsbridge agent,opsbridge_agent,OpsBridge Agent,Name,RMM,,https://opsbridge.digital/,Windows
 OpsBridge Endpoint Management Suite,opsbridge endpoint management suite,opsbridge_agent,OpsBridge Agent,PEMetadata.Product,RMM,,https://opsbridge.digital/,Windows
 OpsBridge Endpoint Service,opsbridge endpoint service,opsbridge_agent,OpsBridge Agent,PEMetadata.Description,RMM,,https://opsbridge.digital/,Windows
@@ -432,6 +446,8 @@ plink,plink,freshservice,Freshservice,PEMetadata.OriginalFileName,RMM,14-day tri
 Pocket Cloud (Wyse),pocket cloud (wyse),pocket_cloud_(wyse),Pocket Cloud (Wyse),Name,RMM,,,
 Pocket Controller,pocket controller,pocket_controller,Pocket Controller,Name,RMM,,https://soti.net/products/soti-pocket-controller,Windows
 Pocket Controller (Soti Xsight),pocket controller (soti xsight),pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),Name,RMM,,https://soti.net/products/soti-xsight/,Windows
+ProxiPort,proxiport,proxiport,ProxiPort,Name,RMM,true,https://github.com/proximile/proxiport,Windows | Linux | macOS
+ProxiPort client for Windows,proxiport client for windows,proxiport,ProxiPort,PEMetadata.Description,RMM,true,https://github.com/proximile/proxiport,Windows | Linux | macOS
 PSEXEC,psexec,psexec,PSEXEC,Name,RAT,,https://learn.microsoft.com/en-us/sysinternals/downloads/psexec,
 PSEXEC (Clone),psexec (clone),psexec_(clone),PSEXEC (Clone),Name,RAT,,,
 Pulseway,pulseway,pulseway,Pulseway,Name,RMM,,https://www.pulseway.com/,
@@ -496,6 +512,7 @@ Rocket Remote Desktop,rocket remote desktop,rocketremotedesktop,Rocket Remote De
 Rodex RMM,rodex rmm,rodexrmm,Rodex RMM,Name,RAT,"No (crypto-only paid plans, $150-$650/mo recurring)",https://www.rodex.cc/,Windows | Linux | MacOS
 "Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.","rodex rmm agent — go-based websocket agent (~7.3 mb). pe version-block strings (product=`rodex rmm suite`, copyrightholder=`rodex technologies inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.",rodexrmm,Rodex RMM,PEMetadata.Description,RAT,"No (crypto-only paid plans, $150-$650/mo recurring)",https://www.rodex.cc/,Windows | Linux | MacOS
 RodexAgent,rodexagent,rodexrmm,Rodex RMM,PEMetadata.OriginalFileName,RAT,"No (crypto-only paid plans, $150-$650/mo recurring)",https://www.rodex.cc/,Windows | Linux | MacOS
+Roster,roster,roster,Roster,Name,RMM,true,https://github.com/boonkerz/roster,Windows | Linux | macOS
 Royal Apps,royal apps,royal_apps,Royal Apps,Name,RMM,,https://www.royalapps.com/,Windows
 Royal Server,royal server,royal_server,Royal Server,Name,RMM,,https://www.royalapps.com/server/,
 Royal TS,royal ts,royal_ts,Royal TS,Name,RMM,,https://www.royalapps.com/ts/,
@@ -512,6 +529,7 @@ ScreenMeet,screenmeet,screenmeet,ScreenMeet,Name,RMM,,https://www.screenmeet.com
 SecureCRT,securecrt,securecrt,SecureCRT,Name,RAT,,https://www.vandyke.com/products/securecrt/,
 Seetrol,seetrol,seetrol,Seetrol,Name,RMM,,https://www.seetrol.co.kr/,
 Senso.cloud,senso.cloud,senso.cloud,Senso.cloud,Name,RMM,,https://senso.cloud/,
+Sentinel RMM,sentinel rmm,sentinel_rmm,Sentinel RMM,Name,RMM,Open source,https://github.com/codexX64/sentinel-rmm,Windows | Linux | macOS
 ServerEye,servereye,servereye,ServerEye,Name,RMM,,https://www.servereye.de/,
 Servico de Gerenciamento Remoto,servico de gerenciamento remoto,unisystem,UniSystem RMM,PEMetadata.Description,RMM,Unknown,https://xelvarunetio.pro/,Windows
 SetMe,setme,setme_pro,SetMe PRO,PEMetadata.Product,RMM,false,https://www.setme.net/,Windows | macOS
@@ -534,6 +552,7 @@ SNMP-based network inventory task binary,snmp-based network inventory task binar
 Solar-PuTTY,solar-putty,solar-putty,Solar-PuTTY,Name,RAT,,https://www.solarwinds.com/free-tools/solar-putty,
 Sophos-Remote Management System,sophos-remote management system,sophos-remote_management_system,Sophos-Remote Management System,Name,RMM,,,
 Sorillus,sorillus,sorillus,Sorillus,Name,RMM,,,
+SparkRAT,sparkrat,sparkrat,SparkRAT,Name,RAT,true,https://github.com/XZB-1248/Spark,Windows | Linux | macOS
 Splash Window,splash window,anyviewer,AnyViewer,PEMetadata.Description,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
 Splashtop,splashtop,splashtop,Splashtop,Name,RMM,,https://www.splashtop.com/,
 Splashtop (Beta),splashtop (beta),splashtopbeta,Splashtop (Beta),Name,RMM,,https://www.splashtop.com/,
@@ -573,6 +592,7 @@ Teramind.Setup.UI,teramind.setup.ui,teramind,Teramind,PEMetadata.OriginalFileNam
 Teramind.Setup.UIARM,teramind.setup.uiarm,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Teramind.Setup.Updater,teramind.setup.updater,teramind,Teramind,PEMetadata.OriginalFileName,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Terminals,terminals,terminals,Terminals,Name,RAT,,https://github.com/Terminals-Origin/Terminals,
+"The source build output is the generic name Agent.exe, so it is not retained as a filename detection selector; no PE metadata was inspected.","the source build output is the generic name agent.exe, so it is not retained as a filename detection selector; no pe metadata was inspected.",borealis,Borealis,PEMetadata.Description,RMM,true,https://github.com/bunny-lab-io/Borealis,Windows | Linux
 TiAgent,tiagent,tiflux,TiFLUX,PEMetadata.OriginalFileName,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
 TiAgent (user-mode tray application that registers the equipment and surfaces a browser link to the tenant),tiagent (user-mode tray application that registers the equipment and surfaces a browser link to the tenant),tiflux,TiFLUX,PEMetadata.Description,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
 TiFLUX,tiflux,tiflux,TiFLUX,Name,RMM,Yes (free trial),https://tiflux.com/,Windows | Linux | MacOS | Android
@@ -634,6 +654,10 @@ VNC Connect,vnc connect,vnc_connect,VNC Connect,Name,RAT,,https://www.realvnc.co
 WebEx (Remote Access),webex (remote access),webex_(remote_access),WebEx (Remote Access),Name,RMM,,https://www.webex.com/,
 WebRDP,webrdp,webrdp,WebRDP,Name,RAT,,https://github.com/Mikej81/WebRDP,
 Weezo,weezo,weezo,Weezo,Name,RMM,,,
+Windows distribution filename specified by the repository deployment script; no PE metadata was inspected.,windows distribution filename specified by the repository deployment script; no pe metadata was inspected.,roster,Roster,PEMetadata.Description,RMM,true,https://github.com/boonkerz/roster,Windows | Linux | macOS
+Windows filename configured by the repository PyInstaller specification; Linux and macOS builds use sentinel-agent.,windows filename configured by the repository pyinstaller specification; linux and macos builds use sentinel-agent.,sentinel_rmm,Sentinel RMM,PEMetadata.Description,RMM,Open source,https://github.com/codexX64/sentinel-rmm,Windows | Linux | macOS
+Windows MSI source names this endpoint service executable; no PE metadata was inspected.,windows msi source names this endpoint service executable; no pe metadata was inspected.,obliance,Obliance,PEMetadata.Description,RMM,Unknown,https://github.com/MeeJay/Obliance,Windows | Linux | macOS
+Windows service binary name set by the reviewed installer source; no PE metadata was inspected.,windows service binary name set by the reviewed installer source; no pe metadata was inspected.,beacon,Beacon (Synertek),PEMetadata.Description,RMM,true,https://github.com/synertek-cloud-services/beacon,Windows | Linux | macOS
 "Windows service binary — ""LANutil32 Distribution Agent"" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client","windows service binary — ""lanutil32 distribution agent"" (per third-party startup-program databases) — software distribution / push deployment service hosted by the vector asset management client",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32),windows service wrapper that hosts the glpi agent as a windows service (only available on win32),glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 WinSCP,winscp,winscp,WinSCP,Name,RAT,,https://winscp.net/,

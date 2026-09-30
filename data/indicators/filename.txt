@@ -13,6 +13,7 @@ action1_update.exe
 AEMAgent.exe
 aeroadmin.exe
 agent-installer-any.exe
+agent-windows-amd64.exe
 agent.exe
 agent32.exe
 agent64.exe
@@ -57,6 +58,7 @@ basupsrvcupdate.exe
 BASupSysInf.exe
 basuptshelper.exe
 bbl.exe
+beacon-agent.exe
 beamyourscreen-host.exe
 beamyourscreen.exe
 Beinsync*.exe
@@ -164,6 +166,7 @@ ehorus_cmd.exe
 ehorus_launcher.exe
 ehorus_uit.exe
 einstaller.exe
+endar.exe
 era.exe
 ERAAgent.exe
 eratool.exe
@@ -457,6 +460,7 @@ netbird_installer_*_windows_amd64.msi
 NetLock_RMM_Agent_Installer.exe
 NetLock_RMM_User_Process.exe
 NetLock_RMM_User_UAC.exe
+NetMaster_Client.exe
 Netop Ondemand.exe
 neturo*.exe
 neturo.exe
@@ -492,6 +496,9 @@ nvda_service.exe
 nxd.exe
 nxplayer.exe
 nxservice*.exe
+obliance-agent.exe
+obliance-tray.exe
+obliance-watchdog.exe
 ocsinventory.exe
 ocsservice.exe
 onionshare*.exe
@@ -499,7 +506,9 @@ Online Backup.exe
 oolocker.exe
 OOSysAgent.exe
 oosyspectr.exe
+opale-agent.exe
 OpenDesk-RMM-Agent.exe
+openuem-agent-setup.exe
 OpsBridgeAgent.exe
 OrayRemoteService.exe
 OrayRemoteShell.exe
@@ -536,6 +545,7 @@ Prep64.exe
 prl_deskctl_agent.exe
 prl_deskctl_wizard.exe
 prl_pm_service.exe
+proxiport.exe
 pservice.exe
 psexec.exe
 psexec64.exe
@@ -653,6 +663,7 @@ seetrolsetting.exe
 SelfUpdater.exe
 SensoClient.exe
 SensoService.exe
+sentinel-agent.exe
 servereye*.exe
 serverproxyservice.exe
 ServiceProxyLocalSys.exe

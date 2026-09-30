@@ -27,6 +27,7 @@ Deep Freeze workstation service
 Deep Freeze workstation service (extended host)
 Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter
 Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name
+Default Windows agent filename copied by the repository installer; build-time branding can change this name.
 Desktop client for allowing an IT administrator to provide remote support.
 Duet Display executable (observed in threat intelligence)
 Duet Display installer (verified via VirusTotal)
@@ -70,6 +71,7 @@ Freshservice Discovery Probe telemetry reporter
 Freshservice Discovery Probe tray application (.NET, ConfuserEx-packed, signed by "Freshworks Inc"; references fstools.freshservice.com and the legacy fstools.freshasset.com)
 Freshservice Discovery Probe uninstall reporter
 Freshservice WMI inventory helper invoked by the Discovery Agent / Probe (.NET, signed by "Freshworks Inc")
+Generic Windows agent filename used by the repository installer; filename-only process detection would be too broad.
 Getscreen.me agent (ProductName/InternalName: Getscreen.me, CompanyName: Point B Ltd). Distributed as a UPX-packed PE32 (x86) GUI executable from https://getscreen.me/download/getscreen-x86.exe. Current binaries (file version 3.5.0+) are signed by POINT B LTD (Cyprus, registered HE 430957) on a GlobalSign GCC R45 EV CodeSigning chain. Older 2020-2021 era binaries were signed by OOO "GET SKRIN SOFTVER" on a COMODO RSA Extended Validation Code Signing CA chain (now expired).
 GO RMM management console
 Gorelo RMM
@@ -111,6 +113,7 @@ ManageEngine ServiceDesk Plus installer (verified via VirusTotal)
 MeshCentral Background Service Agent
 Mini RMM Agent (self-identified in assembly metadata)
 Miradore installer MSI (observed renamed in phishing campaigns - verified via VirusTotal)
+Misleading release filename: the reviewed endar.exe is a stripped Linux x86-64 ELF PyInstaller executable, not a Windows PE. It bundles Python 3.8 and an endar.pyc entry point.
 Monitic agent bootstrap installer (Themida-packed Win32 PE, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ. via GlobalSign GCC R45 EV CodeSigning CA 2020). Hosted at https://app.monitic.com/MoniticInstaller.exe; observed sha256 d641841cdf83037b32e699f01da16b66a9064221013dfec43d7a3bc993d6181d (3/2026) and 924238d5c8b4c882f236053c394d1a9510b6a1fe028ae5437eed7785774b1462 (7/2025). On launch it executes `rundll32 url.dll,FileProtocolHandler https://app.monitic.com/installer` to open the installer flow in the user's browser.
 Monitic agent monitor / watchdog binary (~6 MB Go executable, Themida-packed, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\amon.exe and registered as a SYSTEM service via `amon.exe install` then started with `amon.exe start`. Calls https://api.monitic.com/api/ext/check-sha256 for integrity check / config polling. Observed sha256 71cd67afd19f9f5d0cf00d92034c40b674e3b4d9888f5be6c2f401c52863a523 (10/2025).
 Monitic primary agent binary (~50-60 MB .NET executable, signed by VAULT BİLİŞİM SİSTEMLERİ LTD.ŞTİ.). Installed to C:\Program Files\Monitic\agent.exe and registered as a SYSTEM service via `agent.exe install`. Bundles RustDesk for remote desktop (libvpx-1.dll, WinPthreadGC.dll observed in dropped-files), the kopia.io backup engine, and uses WMI (`Get-WmiObject Win32_BIOS / Win32_Processor / Win32_DiskDrive / Win32_BaseBoard`) for hardware fingerprinting. Spawns a child `tunnel.exe` (taskkill /IM tunnel.exe /F observed in lifecycle). Observed sha256 9c6b26fe30870775a42d02804c9094c83479850a87703d95ebd8631ad8188b8e (11/2025).
@@ -129,11 +132,13 @@ Ninite Pro Classic
 NVDA screen reader executable
 NVDA service executable for secure screens
 Official HeartbeatRM installer (verified via VirusTotal)
+Official Windows installer filename; no PE metadata was inspected.
 OpenDesk RMM Agent - Gerenciamento Remoto
 OpsBridge Endpoint Service
 Parsec
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.
 PixoIT RMM Agent
+ProxiPort client for Windows
 PuTTY plink.exe (PuTTY 0.62) bundled inside the Freshservice Discovery Probe MSI for SSH-based scanning of Linux/Unix hosts (legitimate redistributable, but executes from the Freshservice install dir)
 Radmin Server
 Radmin Viewer
@@ -166,6 +171,7 @@ Teramind agent updater shim; renamed to update-shim.exe at runtime; .NET assembl
 Teramind Agent Windows service binary (registered under service name tsvchst); embedded URL https://www.teramind.co/d/update-shim.exe
 Teramind installer UI helper (signed by Teramind Inc.)
 Teramind installer UI helper for ARM64 Windows (signed by Teramind Inc.)
+The source build output is the generic name Agent.exe, so it is not retained as a filename detection selector; no PE metadata was inspected.
 TiAgent (user-mode tray application that registers the equipment and surfaces a browser link to the tenant)
 TiFLUX agent updater binary (.NET — TiUpdateService.exe.config and TiUpdateService.pdb shipped alongside; not directly observed registered as a Windows service)
 TiFLUX silent helper invoked by the service via cmd.exe /c start /MIN
@@ -199,6 +205,10 @@ Vector Networks server-side post-install setup binary shipped in the VIZOR 2.5.2
 VIZOR / Vector Networks configuration utility (referenced as a VirusTotal "referrer file" for vector-networks.com — 1-2/74 detection rate, low-prevalence Vector-authored binary)
 VIZOR ServiceDesk mail / email-integration component (Mq prefix = MetaQuest, the original Vector Networks codebase namespace; referenced as a vector-networks.com VirusTotal "referrer file" with 1-2/74 detection rate)
 VMware ESX inventory task binary
+Windows distribution filename specified by the repository deployment script; no PE metadata was inspected.
+Windows filename configured by the repository PyInstaller specification; Linux and macOS builds use sentinel-agent.
+Windows MSI source names this endpoint service executable; no PE metadata was inspected.
+Windows service binary name set by the reviewed installer source; no PE metadata was inspected.
 Windows service binary — "LANutil32 Distribution Agent" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client
 Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32)
 WireGuard Wintun TUN driver shipped with the NetBird Windows client.

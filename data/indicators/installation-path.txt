@@ -169,36 +169,60 @@
 /Applications/Teramind Agent.app
 /Applications/TiAgent.app
 /Applications/tmagent.app
+/etc/beacon/agent.log
+/etc/beacon/credential.json
 /etc/breeze/*
 /etc/glpi-agent/*
 /etc/init.d/dataplicity
 /etc/netbird/install.conf
+/etc/obliance-agent/config.json
+/etc/openuem-agent/openuem.ini
+/etc/proxiport/proxiport.conf
+/etc/roster/agent.yaml
 /etc/shellhub-agent/*
+/etc/systemd/system/beacon-agent.service
+/etc/systemd/system/borealis-agent-updater.service
+/etc/systemd/system/borealis-agent-watchdog.service
+/etc/systemd/system/borealis-agent.service
 /etc/systemd/system/breeze-agent.service
 /etc/systemd/system/dataplicity.service
 /etc/systemd/system/komari-agent.service
 /etc/systemd/system/komari.service
+/etc/systemd/system/minion.service
 /etc/systemd/system/nezha-agent.service
 /etc/systemd/system/nezha-dashboard.service
+/etc/systemd/system/obliance-agent.service
+/etc/systemd/system/obliance-watchdog.service
 /etc/systemd/system/pitunnel.service
 /etc/systemd/system/remotely-agent.service
+/etc/systemd/system/roster-agent.service
 /etc/systemd/system/shellhub-agent.service
 /lib/systemd/system/helpwire-unattended.service
+/lib/systemd/system/proxiport.service
 /Library/Application Support/0x101_Cyber_Security/*
+/Library/Application Support/Beacon/agent.log
+/Library/Application Support/Beacon/credential.json
 /Library/Application Support/Breeze/*
 /Library/Application Support/ControlR/*
 /Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist
 /Library/LaunchAgents/com.breeze.desktop-helper-user.plist
+/Library/LaunchDaemons/com.beacon.agent.plist
 /Library/LaunchDaemons/com.breeze.agent.plist
 /Library/LaunchDaemons/com.breeze.watchdog.plist
+/Library/LaunchDaemons/com.obliance.agent.plist
+/Library/LaunchDaemons/com.roster.agent.plist
 /Library/LaunchDaemons/remotely-agent.plist
 /Library/Logs/Breeze/*
+/Library/OpenUEMAgent/etc/openuem-agent/openuem.ini
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
 /Library/zecurit_agent/bin/CommandProcessor
 /Library/zecurit_agent/bin/Installer
 /Library/zecurit_agent/bin/Service
 /Library/zecurit_agent/bin/ZecuritAccess.app/Contents/MacOS/ZecuritAccess
+/opt/Borealis/Agent/Agent
+/opt/Borealis/Agent/agent.json
+/opt/Borealis/Agent/Logs/Agent/agent.log
 /opt/dataplicity/*
 /opt/dataplicity/tuxtunnel/*
 /opt/google/chrome-remote-desktop/chrome-remote-desktop
@@ -209,13 +233,17 @@
 /opt/nezha/agent
 /opt/nezha/agent/nezha-agent
 /opt/nezha/dashboard
+/opt/obliance-agent/obliance-agent
 /opt/pitunnel/*
+/opt/sentinel-agent/sentinel-agent
 /opt/Teleport Connect/*
 /usr/0x101_Cyber_Security/Netlock_RMM/*
 /usr/bin/glpi-agent
 /usr/bin/netbird
+/usr/bin/proxiport
 /usr/bin/tmate
 /usr/local/bin/0x101_Cyber_Security/Netlock_RMM/*
+/usr/local/bin/beacon-agent
 /usr/local/bin/breeze-agent
 /usr/local/bin/breeze-backup
 /usr/local/bin/breeze-desktop-helper
@@ -225,17 +253,20 @@
 /usr/local/bin/glpi-agent
 /usr/local/bin/loclx
 /usr/local/bin/netbird
+/usr/local/bin/obliance-agent
 /usr/local/bin/pitunnel
 /usr/local/bin/Remotely/ConnectionInfo.json
 /usr/local/bin/Remotely/Desktop/Remotely_Desktop
 /usr/local/bin/Remotely/Remotely_Agent
 /usr/local/bin/rmmmax-agent
+/usr/local/bin/roster-agent
 /usr/local/bin/shellhub-agent
 /usr/local/bin/tmate
 /usr/local/bin/tsh
 /usr/local/komari/*
 /usr/local/mesh_services/meshagent/*
 /usr/local/mesh_services/meshagent/meshagent/*
+/usr/local/sentinel-agent/sentinel-agent
 /usr/local/teramind/agent/bin/
 /usr/local/teramind/agent/bin/tmsysd
 /usr/local/teramind/agent/etc/
@@ -246,7 +277,11 @@
 /var/lib/breeze/*
 /var/lib/glpi-agent/*
 /var/lib/shellhub-agent/*
+/var/log/beacon-agent.log
 /var/log/breeze/*
+/var/log/obliance-agent.log
+/var/log/openuem-agent/openuem-agent.log
+/var/log/roster-agent.log
 /var/rmmmax/agentservice/rmmmax_agent.py
 9380CC75B872221A7425D7503565B67580407F60
 aa_v*.exe
@@ -316,6 +351,9 @@ C:\bin\cis.vbs
 C:\bin\netbird.msi
 C:\bin\OpenSSH.msi
 C:\bin\trm.zip
+C:\Borealis\*
+C:\Borealis\agent.json
+C:\Borealis\Logs\Agent\agent.log
 C:\Downloads\SuperPuTTY\*
 C:\GxM\agent
 C:\komari\*
@@ -438,6 +476,7 @@ C:\Program Files\AnyDesk\*
 C:\Program Files\Aspia\
 C:\Program Files\Atera Networks
 C:\Program Files\ATERA Networks\AteraAgent\*
+C:\Program Files\Beacon\beacon-agent.exe
 C:\Program Files\Bitvise SSH Server\*
 C:\Program Files\Breeze\*
 C:\Program Files\bsag\*
@@ -485,8 +524,16 @@ C:\Program Files\Netbird\netbird-ui.exe
 C:\Program Files\Netbird\netbird.exe
 C:\Program Files\nezha\*
 C:\Program Files\NVDA\nvda.exe
+C:\Program Files\OblianceAgent\obliance-agent.exe
+C:\Program Files\OblianceAgent\obliance-tray.exe
+C:\Program Files\OblianceAgent\obliance-watchdog.exe
+C:\Program Files\OpenUEM Agent\*
+C:\Program Files\OpenUEM Agent\config\openuem.ini
+C:\Program Files\OpenUEM Agent\logs\openuem-log.txt
 C:\Program Files\OpsBridge\OpsBridgeAgent.exe
 C:\Program Files\Parsec\*
+C:\Program Files\ProxiPort\proxiport.conf
+C:\Program Files\ProxiPort\proxiport.exe
 C:\Program Files\RdClient\*
 C:\Program Files\RealVNC\VNC Server\*
 C:\Program Files\Remote Ripple\*
@@ -498,6 +545,7 @@ C:\Program Files\Remotely\etag.txt
 C:\Program Files\Remotely\Remotely_Agent.exe
 C:\Program Files\RG-Supervision\*
 C:\Program Files\Rodex\RodexAgent.exe
+C:\Program Files\Roster\*
 C:\Program Files\RustDesk
 C:\Program Files\Solar-Putty-v4\*
 C:\Program Files\SolarWinds\Dameware Mini Remote Control\*
@@ -524,6 +572,8 @@ C:\Program Files\Zecurit\Agent\ZecuritScreenReaderAppUI.exe
 C:\Program Files\Zecurit\Agent\ZecuritScreenReaderService.exe
 C:\Program Files\ZOC8\*
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\*
+C:\ProgramData\Beacon\agent.log
+C:\ProgramData\Beacon\credential.json
 C:\ProgramData\Breeze\*
 C:\ProgramData\ControlR\
 C:\ProgramData\Faronics\FCAForStartupMonitor.msi
@@ -535,9 +585,18 @@ C:\ProgramData\Kaseya\
 C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1
 C:\ProgramData\MiniRMM\SmartScreenTest.ps1
 C:\ProgramData\Netbird\*
+C:\ProgramData\NetMaster\config.ini
+C:\ProgramData\NetMaster\NetMaster_Client.exe
+C:\ProgramData\OblianceAgent\agent.log
+C:\ProgramData\OblianceAgent\config.json
+C:\ProgramData\OblianceAgent\watchdog.json
+C:\ProgramData\Opale\opale-agent.exe
 C:\ProgramData\OpsBridge\*
 C:\ProgramData\Package Cache\.unverified\agent
 C:\ProgramData\RMMAgent\*
+C:\ProgramData\Roster\agent-state.json
+C:\ProgramData\Roster\agent.yaml
+C:\ProgramData\SentinelAgent\sentinel-agent.exe
 C:\ProgramData\Teramind Agent\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\*
 C:\ProgramData\Teramind Agent\<version>\{6D99445F-F40F-45CB-B433-06302DAE6C70}\tmagentsvc.exe

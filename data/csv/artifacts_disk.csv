@@ -40,11 +40,32 @@ atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageHear
 atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageFileExplorer\AgentPackageFileExplorer.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageFileExplorer\AgentPackageFileExplorer.exe,Windows,Windows,,N/A
 atera,Atera,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe,C:\Program Files\ATERA Networks\AteraAgent\Packages\AgentPackageRunCommandInteractive\AgentPackageRunCommandInteractive.exe,Windows,Windows,,N/A
 baramundi,baramundi Management Suite,C:\Program Files\bsag\bma\bma.exe,C:\Program Files\bsag\bma\bma.exe,Windows,Windows,,baramundi Management Agent executable. Main service binary for the baramundi Management Suite agent that runs as a Windows service (BARAAGNT). Depends on RpcSs service.
+beacon,Beacon (Synertek),C:\Program Files\Beacon\beacon-agent.exe,C:\Program Files\Beacon\beacon-agent.exe,Windows,Windows,,Windows service installer destination.
+beacon,Beacon (Synertek),C:\ProgramData\Beacon\credential.json,C:\ProgramData\Beacon\credential.json,Windows,Windows,,Windows system-service credential store path.
+beacon,Beacon (Synertek),C:\ProgramData\Beacon\agent.log,C:\ProgramData\Beacon\agent.log,Windows,Windows,,"Windows system-service log path, colocated with the credential store."
+beacon,Beacon (Synertek),/usr/local/bin/beacon-agent,/usr/local/bin/beacon-agent,Linux,Linux,,Linux agent executable destination.
+beacon,Beacon (Synertek),/usr/local/bin/beacon-agent,/usr/local/bin/beacon-agent,macOS,MacOS,,macOS agent executable destination.
+beacon,Beacon (Synertek),/etc/systemd/system/beacon-agent.service,/etc/systemd/system/beacon-agent.service,Linux,Linux,,Linux systemd unit written by the installer.
+beacon,Beacon (Synertek),/etc/beacon/credential.json,/etc/beacon/credential.json,Linux,Linux,,Linux root-service credential store path.
+beacon,Beacon (Synertek),/etc/beacon/agent.log,/etc/beacon/agent.log,Linux,Linux,,"Linux root-service log path, colocated with the credential store."
+beacon,Beacon (Synertek),/Library/LaunchDaemons/com.beacon.agent.plist,/Library/LaunchDaemons/com.beacon.agent.plist,macOS,MacOS,,macOS LaunchDaemon plist written by the installer.
+beacon,Beacon (Synertek),/Library/Application Support/Beacon/credential.json,/Library/Application Support/Beacon/credential.json,macOS,MacOS,,macOS root-service credential store path.
+beacon,Beacon (Synertek),/Library/Application Support/Beacon/agent.log,/Library/Application Support/Beacon/agent.log,macOS,MacOS,,"macOS root-service log path, colocated with the credential store."
+beacon,Beacon (Synertek),/var/log/beacon-agent.log,/var/log/beacon-agent.log,macOS,MacOS,,Standard output and error path in the macOS LaunchDaemon plist.
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe,C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe,Windows,Windows,,Main Bluetrait agent executable file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe,C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe,Windows,Windows,,Bluetrait User Agent executable file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.db,C:\Program Files (x86)\Bluetrait Agent\config.db,Windows,Windows,,Bluetrait configuration database file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\config.json,C:\Program Files (x86)\Bluetrait Agent\config.json,Windows,Windows,,Bluetrait JSON configuration file
 bluetrait,Bluetrait,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe,Windows,Windows,,PAExec utility used by Bluetrait for remote execution
+borealis,Borealis,C:\Borealis\Agent.exe,C:\Borealis\Agent.exe,Windows,Windows,,Default Windows bootstrap installation directory and agent filename in reviewed source.
+borealis,Borealis,C:\Borealis\agent.json,C:\Borealis\agent.json,Windows,Windows,,Agent configuration defaults beside Agent.exe.
+borealis,Borealis,C:\Borealis\Logs\Agent\agent.log,C:\Borealis\Logs\Agent\agent.log,Windows,Windows,,Agent log path is derived from the configuration directory.
+borealis,Borealis,/opt/Borealis/Agent/Agent,/opt/Borealis/Agent/Agent,Linux,Linux,,Linux agent service executable path.
+borealis,Borealis,/opt/Borealis/Agent/agent.json,/opt/Borealis/Agent/agent.json,Linux,Linux,,Agent configuration defaults beside the Linux executable.
+borealis,Borealis,/opt/Borealis/Agent/Logs/Agent/agent.log,/opt/Borealis/Agent/Logs/Agent/agent.log,Linux,Linux,,Agent log path is derived from the configuration directory.
+borealis,Borealis,/etc/systemd/system/borealis-agent.service,/etc/systemd/system/borealis-agent.service,Linux,Linux,,Linux agent systemd unit written by runtime source.
+borealis,Borealis,/etc/systemd/system/borealis-agent-updater.service,/etc/systemd/system/borealis-agent-updater.service,Linux,Linux,,Linux updater systemd unit written by runtime source.
+borealis,Borealis,/etc/systemd/system/borealis-agent-watchdog.service,/etc/systemd/system/borealis-agent-watchdog.service,Linux,Linux,,Linux watchdog systemd unit written by runtime source.
 breezermm,BreezeRMM,PixoIT-agent.exe,PixoIT-agent.exe,Windows,Windows,,"Original filename of the unsigned PixoIT-branded Breeze RMM build, verified in PE resources; not an asserted standard installation path."
 breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-agent.exe,C:\Program Files\Breeze\breeze-agent.exe,Windows,Windows,,Breeze RMM agent executable reported in issue 235.
 breezermm,BreezeRMM,C:\Program Files\Breeze\breeze-watchdog.exe,C:\Program Files\Breeze\breeze-watchdog.exe,Windows,Windows,,Breeze agent watchdog executable reported in issue 235.
@@ -226,6 +247,10 @@ glpi,GLPI Agent,/var/lib/glpi-agent/*,/var/lib/glpi-agent/*,Linux,Linux,,"GLPI A
 glpi,GLPI Agent,/lib/systemd/system/glpi-agent.service,/lib/systemd/system/glpi-agent.service,Linux,Linux,,systemd unit file shipped by glpi-agent .deb / .rpm packages — ExecStart=/usr/bin/glpi-agent --daemon --no-fork $OPTIONS
 glpi,GLPI Agent,/Applications/GLPI-Agent/etc/agent.cfg,/Applications/GLPI-Agent/etc/agent.cfg,MacOS,MacOS,,GLPI Agent main configuration file on macOS
 glpi,GLPI Agent,/Applications/GLPI-Agent/etc/conf.d/*,/Applications/GLPI-Agent/etc/conf.d/*,MacOS,MacOS,,GLPI Agent configuration overrides directory on macOS
+go_mini_rmm,Go Mini RMM,C:\rmm\agent.exe,C:\rmm\agent.exe,Windows,Windows,,Windows installer download location for the generically named agent binary.
+go_mini_rmm,Go Mini RMM,C:\rmm\config.json,C:\rmm\config.json,Windows,Windows,,"Windows installer configuration containing controller URL, agent key, and agent name."
+go_mini_rmm,Go Mini RMM,/opt/rmm/agent,/opt/rmm/agent,Linux,Linux,,Linux installer agent path.
+go_mini_rmm,Go Mini RMM,/etc/systemd/system/rmm-agent.service,/etc/systemd/system/rmm-agent.service,Linux,Linux,,Linux systemd unit written by the repository installer.
 gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.AppManagement.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.AppManagement.zip,Windows,Windows,,Gorelo Agent Plugin - App Management
 gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.DeviceChat.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.DeviceChat.zip,Windows,Windows,,Gorelo Agent Plugin - Device Chat
 gorelormm,Gorelo RMM,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.IpAddressDetector.zip,C:\Program Files\Gorelo\Agent\Plugins\Downloads\Gorelo.RemoteManagement.IpAddressDetector.zip,Windows,Windows,,Gorelo Agent Plugin - IpAddress Detector
@@ -373,6 +398,7 @@ meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent/meshagent.m
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent,/usr/local/mesh_services/meshagent/meshagent,Linux,Linux,,Local MeshAgent service binary after installation
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent.db,/usr/local/mesh_services/meshagent/meshagent.db,Linux,Linux,,Local Meshagent database after installation
 meshcentral,MeshCentral,/usr/local/mesh_services/meshagent/meshagent.msh,/usr/local/mesh_services/meshagent/meshagent.msh,Linux,Linux,,Local Meshagent databconfiguration file after installation
+minexus,Minexus,/etc/systemd/system/minion.service,/etc/systemd/system/minion.service,Linux,Linux,,Optional systemd unit written by the generated Linux install script; the executable location is the operator-selected current directory.
 mini_rmm,Mini RMM Agent,C:\Program Files\MiniRMM\MiniRmmAgent.exe,C:\Program Files\MiniRMM\MiniRmmAgent.exe,Windows,Windows,,Fixed executable destination in the statically inspected self-install routine.
 mini_rmm,Mini RMM Agent,C:\ProgramData\MiniRMM\SmartScreenTest.ps1,C:\ProgramData\MiniRMM\SmartScreenTest.ps1,Windows,Windows,,Embedded SmartScreen-test script extracted by the agent at runtime.
 mini_rmm,Mini RMM Agent,C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1,C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1,Windows,Windows,,"Embedded Defender-exclusion script extracted by the agent at runtime; included as an artifact, not as a conclusion about use or intent."
@@ -416,6 +442,9 @@ netlock_rmm,NetLock RMM,C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Age
 netlock_rmm,NetLock RMM,/etc/systemd/system/netlock-rmm-agent-comm.service,/etc/systemd/system/netlock-rmm-agent-comm.service,Linux,Linux,,Netlock RMM Agent comm agent service
 netlock_rmm,NetLock RMM,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,/Library/LaunchDaemons/com.netlock.rmm.agentcomm.plist,macOS,MacOS,,macOS LaunchDaemon plist File
 netlock_rmm,NetLock RMM,/var/log/netlock-rmm-agent-comm.log,/var/log/netlock-rmm-agent-comm.log,Linux,Linux,,RMM agent comm log (Non-Windows)
+netmaster,NetMaster,C:\ProgramData\NetMaster\NetMaster_Client.exe,C:\ProgramData\NetMaster\NetMaster_Client.exe,Windows,Windows,,Client binary copied by the included installer and registered as the netmaster service executable.
+netmaster,NetMaster,C:\ProgramData\NetMaster\config.ini,C:\ProgramData\NetMaster\config.ini,Windows,Windows,,Client configuration containing the operator-selected panel URL and polling interval.
+netmaster,NetMaster,C:\ProgramData\NetMaster\log.txt,C:\ProgramData\NetMaster\log.txt,Windows,Windows,,Client log file path set by NetMaster_Client Log.cpp.
 nexus_scogo,Nexus RMM (Scogo),nexusrmm.exe,nexusrmm.exe,Windows,Windows,,Windows Nexus RMM Agent setup filename from reviewed PE metadata.
 nezha,Nezha,C:\nezha\nezha-agent.exe,C:\nezha\nezha-agent.exe,Windows,Windows,,Nezha Agent Windows binary (typical install path; vendor PowerShell installer drops it here)
 nezha,Nezha,C:\nezha\config.yml,C:\nezha\config.yml,Windows,Windows,,"Nezha Agent configuration file (server address, client_secret, UUID). Sits alongside the agent binary by convention."
@@ -429,6 +458,30 @@ nvda,NVDA (Non-Visual Desktop Access),C:\Program Files (x86)\NVDA\nvda.exe,C:\Pr
 nvda,NVDA (Non-Visual Desktop Access),C:\Program Files\NVDA\nvda.exe,C:\Program Files\NVDA\nvda.exe,Windows,Windows,,NVDA installation directory (64-bit)
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.log,C:\Users\*\AppData\Roaming\nvda\nvda.log,Windows,Windows,,NVDA log file
 nvda,NVDA (Non-Visual Desktop Access),C:\Users\*\AppData\Roaming\nvda\nvda.ini,C:\Users\*\AppData\Roaming\nvda\nvda.ini,Windows,Windows,,NVDA configuration file
+obliance,Obliance,C:\Program Files\OblianceAgent\obliance-agent.exe,C:\Program Files\OblianceAgent\obliance-agent.exe,Windows,Windows,,Windows MSI service executable destination.
+obliance,Obliance,C:\Program Files\OblianceAgent\obliance-tray.exe,C:\Program Files\OblianceAgent\obliance-tray.exe,Windows,Windows,,Windows MSI tray executable destination.
+obliance,Obliance,C:\Program Files\OblianceAgent\obliance-watchdog.exe,C:\Program Files\OblianceAgent\obliance-watchdog.exe,Windows,Windows,,Windows MSI watchdog executable destination.
+obliance,Obliance,C:\ProgramData\OblianceAgent\config.json,C:\ProgramData\OblianceAgent\config.json,Windows,Windows,,Windows agent configuration path.
+obliance,Obliance,C:\ProgramData\OblianceAgent\agent.log,C:\ProgramData\OblianceAgent\agent.log,Windows,Windows,,Windows service log path.
+obliance,Obliance,C:\ProgramData\OblianceAgent\watchdog.json,C:\ProgramData\OblianceAgent\watchdog.json,Windows,Windows,,Windows watchdog state path.
+obliance,Obliance,/opt/obliance-agent/obliance-agent,/opt/obliance-agent/obliance-agent,Linux,Linux,,Linux installer endpoint executable path.
+obliance,Obliance,/etc/obliance-agent/config.json,/etc/obliance-agent/config.json,Linux,Linux,,Linux agent configuration path.
+obliance,Obliance,/etc/obliance-agent/config.json,/etc/obliance-agent/config.json,macOS,MacOS,,macOS agent configuration path.
+obliance,Obliance,/etc/systemd/system/obliance-agent.service,/etc/systemd/system/obliance-agent.service,Linux,Linux,,Linux systemd unit installed by the project script.
+obliance,Obliance,/etc/systemd/system/obliance-watchdog.service,/etc/systemd/system/obliance-watchdog.service,Linux,Linux,,Linux watchdog systemd unit installed by the project script.
+obliance,Obliance,/Library/LaunchDaemons/com.obliance.agent.plist,/Library/LaunchDaemons/com.obliance.agent.plist,macOS,MacOS,,macOS LaunchDaemon plist installed by the project script.
+obliance,Obliance,/usr/local/bin/obliance-agent,/usr/local/bin/obliance-agent,macOS,MacOS,,macOS agent executable path in the project service source.
+obliance,Obliance,/var/log/obliance-agent.log,/var/log/obliance-agent.log,macOS,MacOS,,macOS LaunchDaemon log path.
+opale,Opale,C:\ProgramData\Opale\opale-agent.exe,C:\ProgramData\Opale\opale-agent.exe,Windows,Windows,,Default branded agent binary path; the source allows the data-directory and binary branding to be changed at build or deployment time.
+opale,Opale,C:\ProgramData\Opale\config.json,C:\ProgramData\Opale\config.json,Windows,Windows,,Agent configuration containing the enrollment token and controller URL.
+opale,Opale,C:\ProgramData\Opale\state.json,C:\ProgramData\Opale\state.json,Windows,Windows,,Persistent agent state file.
+opale,Opale,C:\ProgramData\Opale\agent.log,C:\ProgramData\Opale\agent.log,Windows,Windows,,Default agent log file.
+open_uem,OpenUEM,C:\Program Files\OpenUEM Agent\config\openuem.ini,C:\Program Files\OpenUEM Agent\config\openuem.ini,Windows,Windows,,Official Windows documentation configuration path.
+open_uem,OpenUEM,C:\Program Files\OpenUEM Agent\logs\openuem-log.txt,C:\Program Files\OpenUEM Agent\logs\openuem-log.txt,Windows,Windows,,Official Windows documentation log path.
+open_uem,OpenUEM,/etc/openuem-agent/openuem.ini,/etc/openuem-agent/openuem.ini,Linux,Linux,,Documented Linux agent configuration path.
+open_uem,OpenUEM,/var/log/openuem-agent/openuem-agent.log,/var/log/openuem-agent/openuem-agent.log,Linux,Linux,,Linux logger output path defined in agent source.
+open_uem,OpenUEM,/Library/OpenUEMAgent/etc/openuem-agent/openuem.ini,/Library/OpenUEMAgent/etc/openuem-agent/openuem.ini,macOS,MacOS,,Official macOS documentation configuration path.
+open_uem,OpenUEM,/Library/LaunchDaemons/openuem-agent-uninstaller.plist,/Library/LaunchDaemons/openuem-agent-uninstaller.plist,macOS,MacOS,,Official macOS documentation identifies this uninstall LaunchDaemon plist as a possible residual after uninstall.
 opendesk,OpenDesk RMM Agent,OpenDesk-RMM-Agent.exe,OpenDesk-RMM-Agent.exe,Windows,Windows,,Official Windows release-asset basename matching the inspected signed sample.
 opendesk,OpenDesk RMM Agent,opendesk-rmm-agent.exe,opendesk-rmm-agent.exe,Windows,Windows,,Original filename in the inspected Windows sample's PE metadata.
 opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,Windows,Windows,,Canonical agent executable installed by the observed MSI.
@@ -446,6 +499,13 @@ pchelpware,PChelpware,C:\temp_phw,C:\temp_phw,Windows,Windows,,Folder that is cr
 pdq_connect,PDQ Connect,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,Windows,Windows,,Journal file that is part of the database system used by the PDQ Connect Agent to manage and store data related to its operations
 pitunnel,PiTunnel,/usr/local/bin/pitunnel,/usr/local/bin/pitunnel,Linux,Linux,,PiTunnel client binary (default install path)
 pitunnel,PiTunnel,/etc/systemd/system/pitunnel.service,/etc/systemd/system/pitunnel.service,Linux,Linux,,systemd unit file for PiTunnel persistence (created when `--persist` flag is used)
+proxiport,ProxiPort,C:\Program Files\ProxiPort\proxiport.exe,C:\Program Files\ProxiPort\proxiport.exe,Windows,Windows,,Windows MSI endpoint executable installed under the product directory.
+proxiport,ProxiPort,C:\Program Files\ProxiPort\proxiport.conf,C:\Program Files\ProxiPort\proxiport.conf,Windows,Windows,,Windows MSI endpoint configuration file installed beside the client executable.
+proxiport,ProxiPort,/usr/bin/proxiport,/usr/bin/proxiport,Linux,Linux,,Linux agent executable installed by the package/manual install instructions.
+proxiport,ProxiPort,/etc/proxiport/proxiport.conf,/etc/proxiport/proxiport.conf,Linux,Linux,,Linux agent configuration file.
+proxiport,ProxiPort,/var/lib/proxiport-agent,/var/lib/proxiport-agent,Linux,Linux,,Linux agent state directory created by the package/manual install instructions.
+proxiport,ProxiPort,/var/log/proxiport-agent,/var/log/proxiport-agent,Linux,Linux,,Linux agent log directory created by the package/manual install instructions.
+proxiport,ProxiPort,/lib/systemd/system/proxiport.service,/lib/systemd/system/proxiport.service,Linux,Linux,,Linux systemd unit for the packaged endpoint agent.
 radmin,RAdmin,C:\Windows\SysWOW64\rserver30\Radm_log.htm,C:\Windows\SysWOW64\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (32-bit)
 radmin,RAdmin,C:\Windows\System32\rserver30\Radm_log.htm,C:\Windows\System32\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (64-bit)
 radmin,RAdmin,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,Windows,Windows,,RAdmin chat logs
@@ -511,10 +571,25 @@ rmmmax,RMMmax,/var/rmmmax/agentservice/activity.log,/var/rmmmax/agentservice/act
 rodexrmm,Rodex RMM,RodexAgent.exe,RodexAgent.exe,Windows,Windows,,"Rodex Go-based agent binary, ~7.3 MB. Unsigned. Multiple decoy filenames observed in the wild — match on the binary's PE version-block strings or authentihash rather than filename."
 rodexrmm,Rodex RMM,C:\Windows\<random-6-9-char>.exe,C:\Windows\<random-6-9-char>.exe,Windows,Windows,,Stage-1 drop location pattern observed across multiple campaigns delivering RodexAgent.exe under random hex / lowercase filenames.
 rodexrmm,Rodex RMM,<impersonated-org>Agent.exe,<impersonated-org>Agent.exe,Windows,Windows,,"Decoy installer naming pattern — RodexAgent.exe wrapped or renamed to look like a legitimate organisation's installer (PROSEGURAgent.exe, FundacinAdsisAgent.exe, Daleph-Install-Default.exe, SifemInstall.exe, AdobepluginD3238-Install-Default.exe, AccessWinRAR.exe, InvitationCard.exe observed in VirusTotal corpus)."
+roster,Roster,C:\Program Files\Roster\agent.exe,C:\Program Files\Roster\agent.exe,Windows,Windows,,Windows agent destination specified by deploy/windows/install-agent.ps1.
+roster,Roster,C:\ProgramData\Roster\agent.yaml,C:\ProgramData\Roster\agent.yaml,Windows,Windows,,Windows agent configuration written by the deployment script.
+roster,Roster,C:\ProgramData\Roster\agent-state.json,C:\ProgramData\Roster\agent-state.json,Windows,Windows,,Windows agent state path configured by the deployment script.
+roster,Roster,/usr/local/bin/roster-agent,/usr/local/bin/roster-agent,Linux,Linux,,Linux agent executable path in the supplied systemd unit.
+roster,Roster,/usr/local/bin/roster-agent,/usr/local/bin/roster-agent,macOS,MacOS,,macOS agent executable path in the supplied LaunchDaemon plist.
+roster,Roster,/etc/roster/agent.yaml,/etc/roster/agent.yaml,Linux,Linux,,Linux agent configuration path in the supplied systemd unit.
+roster,Roster,/etc/roster/agent.yaml,/etc/roster/agent.yaml,macOS,MacOS,,macOS agent configuration path in the supplied LaunchDaemon plist.
+roster,Roster,/etc/systemd/system/roster-agent.service,/etc/systemd/system/roster-agent.service,Linux,Linux,,Linux systemd unit supplied by the project.
+roster,Roster,/Library/LaunchDaemons/com.roster.agent.plist,/Library/LaunchDaemons/com.roster.agent.plist,macOS,MacOS,,macOS LaunchDaemon plist supplied by the project.
+roster,Roster,/var/log/roster-agent.log,/var/log/roster-agent.log,macOS,MacOS,,Standard output and error path in the macOS LaunchDaemon plist.
 rustdesk,RustDesk,C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*,C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*,Windows,Windows,,N/A
 screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\Session.db,C:\Program Files*\ScreenConnect\App_Data\Session.db,Windows,Windows,,ScreenConnect session database
 screenconnect,ScreenConnect,C:\Program Files*\ScreenConnect\App_Data\User.xml,C:\Program Files*\ScreenConnect\App_Data\User.xml,Windows,Windows,,ScreenConnect user configuration
 screenconnect,ScreenConnect,C:\ProgramData\ScreenConnect Client*\user.config,C:\ProgramData\ScreenConnect Client*\user.config,Windows,Windows,,ScreenConnect client user configuration
+sentinel_rmm,Sentinel RMM,C:\ProgramData\SentinelAgent\sentinel-agent.exe,C:\ProgramData\SentinelAgent\sentinel-agent.exe,Windows,Windows,,Windows self-install destination used by the reviewed agent source.
+sentinel_rmm,Sentinel RMM,/usr/local/sentinel-agent/sentinel-agent,/usr/local/sentinel-agent/sentinel-agent,macOS,MacOS,,macOS self-install destination used by the reviewed agent source.
+sentinel_rmm,Sentinel RMM,/Library/LaunchDaemons/fr.sentinel.agent.plist,/Library/LaunchDaemons/fr.sentinel.agent.plist,macOS,MacOS,,macOS LaunchDaemon written by the reviewed agent source.
+sentinel_rmm,Sentinel RMM,/opt/sentinel-agent/sentinel-agent,/opt/sentinel-agent/sentinel-agent,Linux,Linux,,Linux self-install destination used by the reviewed agent source.
+sentinel_rmm,Sentinel RMM,/etc/systemd/system/sentinel-agent.service,/etc/systemd/system/sentinel-agent.service,Linux,Linux,,Linux systemd unit written by the reviewed agent source.
 setme_pro,SetMe PRO,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Client\SetMe_Client.exe,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Client\SetMe_Client.exe,Windows,Windows,,SetMe client executable reported in issue 231.
 setme_pro,SetMe PRO,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Module\*\tinUnattendedModule.exe,C:\Program Files (x86)\Techinline Ltd\SetMe Unattended\Module\*\tinUnattendedModule.exe,Windows,Windows,,Versioned unattended client module reported in issue 231 and confirmed by VirusTotal.
 setme_pro,SetMe PRO,C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientDesktopApplication.exe,C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientDesktopApplication.exe,Windows,Windows,,Attended client desktop application extracted into a per-run temporary directory.
@@ -527,6 +602,8 @@ shellhub,ShellHub,/etc/shellhub-agent/agent.env,/etc/shellhub-agent/agent.env,Li
 shellhub,ShellHub,/etc/systemd/system/shellhub-agent.service,/etc/systemd/system/shellhub-agent.service,Linux,Linux,,systemd unit file for ShellHub agent persistence
 simplehelp,SimpleHelp,C:\ProgramData\JWrapper-Remote Access\,C:\ProgramData\JWrapper-Remote Access\,Windows,Windows,,"Default SimpleHelp ""Remote Access"" service installation directory observed in Huntress reporting on Crazy ransomware operations."
 simplehelp,SimpleHelp,%APPDATA%\JWrapper-SimpleSetup\,C:\Users\*\AppData\Roaming\JWrapper-SimpleSetup\,Windows,Windows,,"SimpleHelp customer-side setup/wrapper directory dropped by the SimpleSetup installer (e.g. windowslauncher.exe, SimpleSetupECompatibility.exe)."
+sparkrat,SparkRAT,/Users/shared/pull.bin,/Users/shared/pull.bin,macOS,MacOS,,Campaign-specific downloaded SparkRAT client location documented by Hunt.io; not an upstream default path.
+sparkrat,SparkRAT,/Users/run/com.second.startup.plist,/Users/run/com.second.startup.plist,macOS,MacOS,,Campaign-specific LaunchAgent-style persistence artifact documented by Hunt.io; not an upstream default path.
 splashtop,Splashtop,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx,Windows,Windows,,N/A
 splashtop,Splashtop,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx,C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx,Windows,Windows,,N/A
 splashtop,Splashtop,%PROGRAMDATA%\Splashtop\Temp\log\FTCLog.txt,C:\ProgramData\Splashtop\Temp\log\FTCLog.txt,Windows,Windows,,N/A

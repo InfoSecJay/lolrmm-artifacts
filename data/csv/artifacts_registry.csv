@@ -100,9 +100,16 @@ mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Te
 mstsc,mstsc.exe (Microsoft Remote Desktop Connection),HKCU\Software\Microsoft\Terminal Server Client\Servers,Per-host subkeys recording usernames and gateway hints used by mstsc.exe.
 netbird,NetBird,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user,"Registry key set to 0 to hide the attacker-created local administrator account ""user"" from the Windows logon screen (May 2025 Trellix-reported CFO spear-phishing campaign)."
 netbird,NetBird,HKLM\SYSTEM\CurrentControlSet\Services\Netbird,Netbird Windows service registration (created by NetBird MSI installer; configured by the campaign for delayed automatic start at boot).
+netmaster,NetMaster,HKLM\SYSTEM\CurrentControlSet\Services\netmaster,Service Control Manager key created by the included installer.
 nezha,Nezha,HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent,Windows service registry key for Nezha Agent (default name; may be renamed by abuse cases)
+obliance,Obliance,HKLM\SOFTWARE\OblianceAgent,"Windows MSI writes initial ServerUrl and ApiKey values, and agent code reads them if config.json is absent. Values can contain credentials and should not be published."
+obliance,Obliance,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OblianceTray,Windows MSI registers obliance-tray.exe for user-session startup.
+obliance,Obliance,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\OblianceAgent,Windows MSI and service source register the service for Safe Mode with Networking.
+obliance,Obliance,HKLM\SYSTEM\CurrentControlSet\Services\OblianceAgent,Windows service configuration key inferred from the MSI ServiceInstall definition.
+opale,Opale,HKLM\SYSTEM\CurrentControlSet\Services\Opale-Agent,SCM key expected when the default Opale-Agent Windows service is installed; its exact values vary with build-time branding and deployment path.
 opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OpsBridgeAgent,"Agent uninstall metadata, including the randomized persisted executable path."
 opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent,Task Scheduler cache entry for the OpsBridge Agent persistence task.
+proxiport,ProxiPort,HKLM\SYSTEM\CurrentControlSet\Services\proxiport,Windows Service Control Manager key for the packaged endpoint agent.
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
 remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
@@ -114,6 +121,7 @@ rmmcrat,RMMCRAT,HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent,Potential SCM ke
 rmmmax,RMMmax,HKLM\SOFTWARE\RMMmax\AgentService,Logical configuration key used by the Windows installer and agent; stores registration state and DPAPI-protected tokens in the process registry view.
 rmmmax,RMMmax,HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService,Windows service registered by the agent through sc.exe create with obj= LocalSystem and start= auto.
 rmmmax,RMMmax,HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService,Windows tray UI startup value; invokes the agent executable with /tray when the service is installed.
+sentinel_rmm,Sentinel RMM,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\SentinelAgent,Task Scheduler cache key expected after the Windows self-installer creates the SentinelAgent task.
 setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*,Per-session temporary SetMe client service.
 setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*,Safe-mode registration for the per-session SetMe client service.
 simplehelp,SimpleHelp,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SimpleSetup,Uninstall key written by the SimpleHelp SimpleSetup installer; URLUpdateInfo points to https://www.simple-help.com/media/static/SimpleSetup/.

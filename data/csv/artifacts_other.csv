@@ -10,20 +10,40 @@ anydesk,AnyDesk,NamedPipe,adprinterpipe
 basic_rmm,Basic RMM Agent,InspectedWindowsAgentSHA256,3f5da17df9261283d0b70e9817bbfc681c6f3101b94a45ac6f8b9cda6aa40a3f
 basic_rmm,Basic RMM Agent,GoBuildModule,basicrmm
 basic_rmm,Basic RMM Agent,GoBuildRevision,7074055331fcfba7e91cac443af2288e3afed9f2
+beacon,Beacon (Synertek),WindowsServiceName,BeaconAgent
+beacon,Beacon (Synertek),LinuxSystemdUnit,beacon-agent.service
+beacon,Beacon (Synertek),macOSLaunchDaemonLabel,com.beacon.agent
 blackcrypt,BlackCrypt RMM Agent,InspectedSampleSHA256,bb5c49eaa94615f7d75cfa80afb8e79b12da2defc47d9b9c53d7602e7171b668
 blackcrypt,BlackCrypt RMM Agent,ClaimedPublisher,BlackCrypt Labs Inc
 blackcrypt,BlackCrypt RMM Agent,SignerSubject,C&P Global Investors LLC
 blackcrypt,BlackCrypt RMM Agent,CertificateValidation,Signed content digest verified locally; certificate trust validation reported the signing certificate as revoked.
+borealis,Borealis,WindowsServiceName,BorealisAgent
+borealis,Borealis,LinuxSystemdUnit,borealis-agent.service
+borealis,Borealis,LinuxSystemdUnit,borealis-agent-updater.service
+borealis,Borealis,LinuxSystemdUnit,borealis-agent-watchdog.service
 breezermm,BreezeRMM,InspectedBrandedBuildSHA256,74a9dc48d4d23983dbfc964422d57298c64234def5688a9b7e0f608b3043a66d
 breezermm,BreezeRMM,BrandedBuildIdentity,PixoIT RMM Agent 0.105.5; unsigned; compiled Go module github.com/breeze-rmm/agent.
 breezermm,BreezeRMM,ObservedSHA256,52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8
 breezermm,BreezeRMM,CodeSigningSigner,"LanternOps, LLC"
 breezermm,BreezeRMM,OfficialReleaseArtifactSHA256,Breeze v0.115.0 Linux amd64 agent: bcf47edf1312f3480c172908fb36b1fc0b2a37f7c1df7a7434d99ae1850985af
 breezermm,BreezeRMM,OfficialReleaseArtifactSHA256,Breeze v0.115.0 macOS arm64 package: 8b32297661229f5173510ebbf1b6d656c85bd68fea930400808e138ce7c714d1
+chaos_rat,CHAOS RAT,EndpointWebSocketRoute,/client
+chaos_rat,CHAOS RAT,EndpointClientHeader,x-client
+chaos_rat,CHAOS RAT,ControllerDefaultPort,8080
+chaos_rat,CHAOS RAT,PerBuildConfiguration,"Base64-encoded server address, port, and JWT fields; values are omitted because they are generated per deployment."
 controlio,Controlio,Service,weSvcService
 dataplicity,Dataplicity,URL,https://www.dataplicity.com/<TOKEN>.py
 dataplicity,Dataplicity,Other,Install command: curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python  (high-signal hunt pattern — sudo-piped curl-to-python from dataplicity.com)
 dataplicity,Dataplicity,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/dataplicity/
+endar,Endar,ControllerDefaultPort,5000
+endar,Endar,AgentEntryPoint,AppServerSvc
+endar,Endar,BundledRuntime,PyInstaller Python 3.8 on Linux x86-64
+endar,Endar,CronPersistenceOption,--cron
+endar,Endar,ReviewedReleaseSHA256,18f1d3189486cdcefb55e38edbe00462ea3b21b676714bf67dfec97d7c978327
+endar,Endar,ControllerRegistrationRoute,/api/v1/agent/register
+endar,Endar,ControllerPolicyRoute,/api/v1/agent/policy
+endar,Endar,ControllerComplianceRoute,/api/v1/agent/compliance
+endar,Endar,ControllerDataCollectionRoute,/api/v1/agent/collection
 freshservice,Freshservice,URL,https://fstools.freshservice.com/agent/win-installer-3.10.0.msi
 freshservice,Freshservice,URL,https://fstools.freshservice.com/agent/win-installer-3.7.0.msi
 freshservice,Freshservice,URL,https://fstools.freshservice.com/fs-windows-agent-3.10.0.msi
@@ -59,6 +79,11 @@ glpi,GLPI Agent,Other,"systemd unit on Linux: glpi-agent.service (ExecStart=/usr
 glpi,GLPI Agent,Other,Default embedded HTTP daemon listen port: 62354/tcp (httpd-port parameter)
 glpi,GLPI Agent,Other,"Code-signing publisher: Teclib' (per MSI Manufacturer string in Variables-v2.wxi.tt — Manufacturer=""Teclib'"")"
 glpi,GLPI Agent,Other,GLPI Agent 1.17 x64 MSI SHA-256: db2661a14359931a2d14ed7268f9b90763da4f2bec97b5ed8d51b9bb655d730c (signed via GlobalSign GCC R45 EV CodeSigning CA 2020 — OCSP host ocsp.globalsign.com)
+go_mini_rmm,Go Mini RMM,GoModulePath,github.com/cevrimxe/go-mini-rmm
+go_mini_rmm,Go Mini RMM,WindowsScheduledTaskName,RMM-Agent
+go_mini_rmm,Go Mini RMM,LinuxSystemdServiceName,rmm-agent.service
+go_mini_rmm,Go Mini RMM,ControllerHeartbeatPath,/api/v1/heartbeat
+go_mini_rmm,Go Mini RMM,ControllerAgentWebSocketPath,/ws/agent
 go_rmm,GO RMM,InspectedSampleSHA256,491d0512e396aa70efe16873ccf78be61e14f0f7c68bcc1639a1c3b6ba90cfd0
 go_rmm,GO RMM,InspectedComponentRole,"GO RMM management console, not a generated endpoint agent"
 go_rmm,GO RMM,PublisherStatus,Self-identified as GO RMM; no independent publisher or product source established.
@@ -105,6 +130,9 @@ ls_rmm,LS RMM,WindowsServiceName,LSRMMWorker
 ls_rmm,LS RMM,InspectedWindowsApplicationSHA256,a4c3c416a2c2348d2805fb1cb73bc01efdcd83b35b6f63e31fd1ee41c3663af4
 ls_rmm,LS RMM,InspectedWindowsWorkerSHA256,d1a4f7fcdb85f55edde9fce195939d2d117ffb2ced919bc2f8b9bfdc84878376
 lunixar,Lunixar,Installer control,Current Lunixar agent installers use platform-controlled names and cannot be renamed from the Lunixar console; historical renamed MSI filenames should be treated as abuse artifacts rather than expected current installer names.
+minexus,Minexus,ServerConfigurationEnvironmentVariable,NEXUS_SERVER
+minexus,Minexus,DefaultMinionServerPort,11972
+minexus,Minexus,OptionalSystemdServiceName,minion.service
 mini_rmm,Mini RMM Agent,ServiceName,MiniRmmAgent
 mini_rmm,Mini RMM Agent,ServiceDisplayName,Mini RMM Agent
 mini_rmm,Mini RMM Agent,InspectedSampleSHA256,89ea754708f2be80b2d8e39533d9b98e9a8bdc588f5d732687ee7b5ce18201e7
@@ -137,6 +165,10 @@ netbird,NetBird,LocalUser,user
 netbird,NetBird,SHA256,b8c84e7047080589cc2e1dc955c78349f8d37d0e79160a040096e1ffcf89d869
 netbird,NetBird,SignerSubject,NetBird GmbH (current; chain GlobalSign GCC R45 EV CodeSigning CA 2020 -> GlobalSign Code Signing Root R45)
 netbird,NetBird,SignerSubject,Wiretrustee UG (haftungsbeschränkt) (legacy; chain SSL.com EV Code Signing Intermediate CA RSA R3 -> SSL.com EV Root Certification Authority RSA R2)
+netmaster,NetMaster,ServiceName,netmaster
+netmaster,NetMaster,PanelRegistrationEndpointSuffix,userinit.php
+netmaster,NetMaster,PanelPollingEndpointSuffix,userupdate.php
+netmaster,NetMaster,ConfigurationField,url
 nexus_scogo,Nexus RMM (Scogo),InspectedWindowsSampleSHA256,2d1134ec001eed644a0d459898d2f48c0e0418f1cc109f927b7f8a39aef6bbec
 nexus_scogo,Nexus RMM (Scogo),ProductVersion,2.9.0.0
 nexus_scogo,Nexus RMM (Scogo),CatalogScope,Product identity confirmed; no delivery or abuse claim.
@@ -151,6 +183,18 @@ nezha,Nezha,IP,45.207.220.12
 nezha,Nezha,Other,"Environment variables: NZ_SERVER, NZ_CLIENT_SECRET"
 nezha,Nezha,Other,"Process command-line indicators: client_secret, nezhahq"
 nezha,Nezha,Other,AV signature: Kaspersky not-a-virus:HEUR:RemoteAdmin.Win64.NezhaAgent.gen
+obliance,Obliance,WindowsServiceName,OblianceAgent
+obliance,Obliance,WindowsScheduledTask,OblianceWatchdog
+obliance,Obliance,LinuxSystemdUnit,obliance-agent.service
+obliance,Obliance,LinuxSystemdUnit,obliance-watchdog.service
+obliance,Obliance,macOSLaunchDaemonLabel,com.obliance.agent
+opale,Opale,DefaultWindowsServiceName,Opale-Agent
+opale,Opale,DefaultAgentUserAgentPrefix,opale-agent-go
+opale,Opale,DataDirectoryOverrideEnvironmentVariable,RMM_DATA_DIR
+open_uem,OpenUEM,WindowsServiceName,openuem-agent
+open_uem,OpenUEM,macOSLaunchDaemonLabel,eu.openuem.openuem-agent
+open_uem,OpenUEM,macOSLaunchDaemonLabel,eu.openuem.openuem-agent-updater
+open_uem,OpenUEM,TransportConfiguration,NATS servers and service ports are administrator configured and intentionally omitted from generic network indicators.
 opendesk,OpenDesk RMM Agent,InspectedWindowsAgentSHA256,60e5ca6a1f82a52a104601005d8a5c768674208f8f4ce7ac89ad97ca2b5978bb
 opsbridge_agent,OpsBridge Agent,ScheduledTaskName,\OpsBridge Agent
 opsbridge_agent,OpsBridge Agent,Mutex,Global\OpsBridgeAgentSingleton
@@ -163,6 +207,10 @@ pitunnel,PiTunnel,URL,https://pitunnel.com/get/<TOKEN>
 pitunnel,PiTunnel,Other,Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)
 pitunnel,PiTunnel,Other,Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist
 pitunnel,PiTunnel,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/pitunnel/
+proxiport,ProxiPort,WindowsServiceName,proxiport
+proxiport,ProxiPort,LinuxSystemdService,proxiport.service
+proxiport,ProxiPort,LinuxServiceAccount,proxiport-agent
+proxiport,ProxiPort,ConfiguredServerField,client.server
 remote_agent_agent,RemoteAgentAgent,ServiceArgument,--service
 remote_agent_agent,RemoteAgentAgent,ConfigurationEnvironmentVariable,AGENT_CONFIG_PATH
 remote_agent_agent,RemoteAgentAgent,ReportedRegistrationRoute,/api/register
@@ -201,12 +249,28 @@ rmmmax,RMMmax,MacOSInstallerSHA256 (RMMmax-Agent-Installer.dmg),982ddbb150b3c4b6
 rmmmax,RMMmax,LinuxPackageSHA256 (rmmmax_linux_agent.tgz),9b29df09e57aad8cb7bdb96686c494814386e01a0469b69a85eec4e5b1b79ae2
 rmmmax,RMMmax,WindowsTrayMutex,RMMMaxAgentService_TrayInstance
 rodexrmm,Rodex RMM,Note,"r3v13wd0s.com — alternate domain referenced in earlier writeups; flagged 14/91 malicious + tagged ""dga"" on VirusTotal. Likely a previous staging / payload-host name; rodex.cc appears to be the current marketing front."
+roster,Roster,WindowsServiceName,roster-agent
+roster,Roster,LinuxSystemdUnit,roster-agent.service
+roster,Roster,macOSLaunchDaemonLabel,com.roster.agent
+sentinel_rmm,Sentinel RMM,SourceBinaryConfigurationMarker,SENTINELCFG1
+sentinel_rmm,Sentinel RMM,RemoteExecutionFeatureFlag,SENTINEL_ALLOW_EXEC=1
+sentinel_rmm,Sentinel RMM,ControllerUrlEnvironmentVariable,SENTINEL_URL
+sentinel_rmm,Sentinel RMM,AgentTokenEnvironmentVariable,SENTINEL_AGENT_TOKEN
+sentinel_rmm,Sentinel RMM,WindowsScheduledTaskName,SentinelAgent
+sentinel_rmm,Sentinel RMM,macOSLaunchDaemonLabel,fr.sentinel.agent
+sentinel_rmm,Sentinel RMM,LinuxSystemdServiceName,sentinel-agent.service
 setme_pro,SetMe PRO,ServiceNamePattern,tinClientSessionManager-*
 setme_pro,SetMe PRO,ObservedClientSHA256,442ab6918b0b715b4a3c7f9e9c4a67fd27cb12094eb43653c1b2501e7f4f61e5
 setme_pro,SetMe PRO,ObservedUnattendedModuleSHA256,02e53fbb632c8af5e53d763b53c497b9c83493ff32406633e665ac7a01baa815
 shellhub,ShellHub,URL,https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>
 shellhub,ShellHub,Other,"Install command: curl -sSf ""https://cloud.shellhub.io/install.sh?tenant_id=<TENANT_ID>"" | sh  (high-signal hunt pattern — curl-to-sh from cloud.shellhub.io with tenant_id parameter)"
 shellhub,ShellHub,Other,LOTTunnels project — Shell Access category: https://lottunnels.github.io/lottunnels/Binaries/shellhub/
+sparkrat,SparkRAT,ConfiguredWebSocketRoute,/ws
+sparkrat,SparkRAT,ConfiguredUpdateRoute,/api/client/update
+sparkrat,SparkRAT,ClientUserAgentPrefix,SPARK COMMIT:
+sparkrat,SparkRAT,ControllerDefaultListenAddress,:8000
+sparkrat,SparkRAT,HuntIOMacOSSampleSHA256,cd313c9b706c2ba9f50d338305c456ad3392572efe387a83093b09d2cb6f1b56
+sparkrat,SparkRAT,HuntIOMacOSSampleSHA256,52277d43d2f5e8fa8c856e1c098a1ff260a956f0598e16c8fb1b38e3a9374d15
 teamviewer,TeamViewer,Mutex,TeamViewer_LogMutex
 teamviewer,TeamViewer,Mutex,TeamViewerHooks_DynamicMemMutex
 teamviewer,TeamViewer,Mutex,TeamViewer3_Win32_Instance_Mutex

@@ -93,6 +93,7 @@ centrastage_(now_datto),CentraStage (Now Datto),*.rmm.datto.com,,Known remote do
 centrastage_(now_datto),CentraStage (Now Datto),cc.centrastage.net,,Known remote domains
 centrastage_(now_datto),CentraStage (Now Datto),*.cc.centrastage.net,,Known remote domains
 centurion,Centurion,centuriontech.com,,Known remote domains
+chaos_rat,CHAOS RAT,,,"Client server address, port, and authentication values are embedded per build and are operator-selected."
 chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop.google.com,443,Known remote domains
 chrome_remote_desktop,Chrome Remote Desktop,*.remotedesktop.google.com,3478,Known remote domains
 chrome_remote_desktop,Chrome Remote Desktop,remotedesktop-pa.googleapis.com,443,Known remote domains
@@ -147,6 +148,7 @@ electric_ai_(kaseya),Electric AI (Kaseya),electric.ai,,Known remote domains
 emco_remote_console,EMCO Remote Console,user_managed,,Known remote domains
 emco_remote_console,EMCO Remote Console,emcosoftware.com,,Known remote domains
 encapto,Encapto,encapto.com,,Known remote domains
+endar,Endar,,,Documentation uses a self-hosted controller on TCP 5000 by default; a deployment can place it behind TLS or a reverse proxy. It has no shared vendor hostname.
 ericom_accessnow,Ericom AccessNow,user_managed,,Known remote domains
 ericom_accessnow,Ericom AccessNow,ericom.com,,Known remote domains
 ericom_connect,Ericom Connect,user_managed,,Known remote domains
@@ -252,6 +254,7 @@ glpi,GLPI Agent,glpi-network.com,443,"Teclib commercial offering for GLPI (paid 
 glpi,GLPI Agent,services.glpi-network.com,443,"Teclib commercial offering for GLPI (paid services, plugins, support) — operated by Teclib', the company that maintains GLPI and the GLPI Agent"
 glpi,GLPI Agent,github.com,443,GitHub release host for the GLPI Agent installers (MSI / PKG / DEB / RPM / AppImage downloaded from this host by deployment scripts)
 glpi,GLPI Agent,objects.githubusercontent.com,443,GitHub release host for the GLPI Agent installers (MSI / PKG / DEB / RPM / AppImage downloaded from this host by deployment scripts)
+go_mini_rmm,Go Mini RMM,,,Controller hostname and port are deployment-specific; deployments are operator-hosted and the agent uses the configured controller for HTTP API and WebSocket traffic.
 gorelormm,Gorelo RMM,app.gorelo.io,443,Called during access to remote control WebGUI access
 gorelormm,Gorelo RMM,gorelo-rmm.azurewebsites.net,443,Called during setup
 gorelormm,Gorelo RMM,gw.usw.gorelo.tech,443,Called during setup
@@ -435,6 +438,7 @@ mikogo,Mikogo,*.real-time-collaboration.com,,Known remote domains
 mikogo,Mikogo,*.mikogo4.com,,Known remote domains
 mikogo,Mikogo,*.mikogo.com,,Known remote domains
 mikogo,Mikogo,mikogo.com,,Known remote domains
+minexus,Minexus,,11972,Minion connects to the administrator-configured NEXUS_SERVER; 11972 is the documented default Minion server port.
 miradore,Miradore,gateway.miradore.com,443,Known remote domains
 miradore,Miradore,*.miradore.com,443,Known remote domains
 miradore,Miradore,miradore.com,443,Known remote domains
@@ -557,6 +561,7 @@ netbird,NetBird,my2cloudlive.com,3333,Threat actor C2 / staging infrastructure o
 netbird,NetBird,web-16fe.app,80,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
 netbird,NetBird,web-16fe.app,443,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
 netbird,NetBird,web-16fe.app,3333,Threat actor C2 / staging infrastructure observed in the May 2025 Trellix-reported CFO spear-phishing campaign and Hunt.io follow-up. Overlaps with APT MuddyWater (Earth Vetala) infrastructure.
+netmaster,NetMaster,,,Client panel URL is set in config.ini by the operator; no vendor domain or fixed port is inherent to NetMaster.
 netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),,,Known remote domains
 netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),*.connect.backdrop.cloud,,Known remote domains
 netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),*.netop.com,,Known remote domains
@@ -615,6 +620,7 @@ nvda,NVDA (Non-Visual Desktop Access),nvaccess.org,443,Known remote domains
 nvda,NVDA (Non-Visual Desktop Access),*.nvaccess.org,443,Known remote domains
 ocs_inventory,OCS inventory,user_managed,,Known remote domains
 ocs_inventory,OCS inventory,ocsinventory-ng.org,,Known remote domains
+opale,Opale,,,Controller endpoint is supplied during enrollment and stored in agent configuration; deployments are operator-hosted and have no shared vendor hostname.
 opsbridge_agent,OpsBridge Agent,opsbridge.digital,443,"OpsBridge agent enrollment, command, and telemetry service."
 optitune,OptiTune,*.optitune.us,,Known remote domains
 optitune,OptiTune,*.opti-tune.com,,Known remote domains
@@ -645,6 +651,7 @@ pitunnel,PiTunnel,*.pitunnel.com,443,PiTunnel control plane and per-tenant relay
 pocket_controller,Pocket Controller,,,Known remote domains
 pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),soti.net,,Known remote domains
 pocket_controller_(soti_xsight),Pocket Controller (Soti Xsight),*.soti.net,,Known remote domains
+proxiport,ProxiPort,,80,Endpoint dials an administrator-configured ProxiPort server; the documented seeded server listener is TCP 80.
 psexec,PSEXEC,user_managed,,Known remote domains
 psexec_(clone),PSEXEC (Clone),user_managed,,Known remote domains
 pulseway,Pulseway,pulseway.com,,Known remote domains
@@ -731,6 +738,7 @@ screenmeet,ScreenMeet,*.scrn.mt,,Known remote domains
 seetrol,Seetrol,seetrol.co.kr,,Known remote domains
 senso.cloud,Senso.cloud,*.senso.cloud,,Known remote domains
 senso.cloud,Senso.cloud,senso.cloud,,Known remote domains
+sentinel_rmm,Sentinel RMM,,,Controller URL and agent token are supplied at deployment; deployments are operator-hosted and have no shared vendor hostname.
 servereye,ServerEye,*.server-eye.de,,Known remote domains
 setme_pro,SetMe PRO,set.me,443,Vendor-documented SetMe HTTPS and secure WebSocket services.
 setme_pro,SetMe PRO,*.set.me,443,Vendor-documented SetMe HTTPS and secure WebSocket services.
@@ -766,6 +774,7 @@ sophos-remote_management_system,Sophos-Remote Management System,*.sophosupd.com,
 sophos-remote_management_system,Sophos-Remote Management System,*.sophosupd.net,,Known remote domains
 sorillus,Sorillus,*.sorillus.com,,Known remote domains
 sorillus,Sorillus,sorillus.com,,Known remote domains
+sparkrat,SparkRAT,,,Endpoint connection values are generated per deployment and point to an operator-configured controller; no vendor domain is inherent to SparkRAT.
 splashtop,Splashtop,*.splashtop.com,,N/A
 splashtop_remote,Splashtop Remote,splashtop.com,,Known remote domains
 splashtop_remote,Splashtop Remote,*.api.splashtop.com,,Known remote domains

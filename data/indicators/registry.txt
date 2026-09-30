@@ -52,8 +52,10 @@ HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer\*
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent
+HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\SentinelAgent
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList\user
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\MiniRMMAgent
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OblianceTray
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*)
@@ -69,6 +71,7 @@ HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A40A237D-C090-4C05-858
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F0076285-D0E2-4B49-92BD-25E0B7B27DF6}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Remote Session/Operational
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational
+HKLM\SOFTWARE\OblianceAgent
 HKLM\SOFTWARE\Policies\Teleport\TeleportConnect
 HKLM\SOFTWARE\RdClient
 HKLM\SOFTWARE\RG Systemes\RG Supervision
@@ -102,6 +105,7 @@ HKLM\SOFTWARE\Zecurit\Agent
 HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AlphaAgent
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent
+HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\OblianceAgent
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*
 HKLM\System\CurrentControlSet\Services\A1Agent
@@ -128,7 +132,11 @@ HKLM\System\CurrentControlSet\Services\LunixarRMM
 HKLM\SYSTEM\CurrentControlSet\Services\MiniRmmAgent
 HKLM\SYSTEM\CurrentControlSet\Services\MremoteAgent
 HKLM\SYSTEM\CurrentControlSet\Services\Netbird
+HKLM\SYSTEM\CurrentControlSet\Services\netmaster
 HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
+HKLM\SYSTEM\CurrentControlSet\Services\OblianceAgent
+HKLM\SYSTEM\CurrentControlSet\Services\Opale-Agent
+HKLM\SYSTEM\CurrentControlSet\Services\proxiport
 HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision
 HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent
 HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService

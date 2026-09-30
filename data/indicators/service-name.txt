@@ -3,7 +3,9 @@ AlpemixSrvc
 Ammyy Admin
 AnyDesk Service
 AteraAgent
+BeaconAgent
 Bluetrait Agent
+BorealisAgent
 DFServ
 FaronicsCoreAgent
 FIStudentSvc
@@ -19,11 +21,17 @@ komari-agent
 Level
 Mesh Agent background service
 Mouse without Borders Service
+netmaster
 nezha-agent
+OblianceAgent
+Opale-Agent
+openuem-agent
 parsecvirtualds
+proxiport
 RCService
 Remotely_Service
 RemotePC Performance Service
+roster-agent
 Splashtop Software Updater Service
 SplashtopRemoteService
 Splashtop® Remote Service
