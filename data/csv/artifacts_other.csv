@@ -31,6 +31,11 @@ chaos_rat,CHAOS RAT,EndpointWebSocketRoute,/client
 chaos_rat,CHAOS RAT,EndpointClientHeader,x-client
 chaos_rat,CHAOS RAT,ControllerDefaultPort,8080
 chaos_rat,CHAOS RAT,PerBuildConfiguration,"Base64-encoded server address, port, and JWT fields; values are omitted because they are generated per deployment."
+cloudflare_tunnel,CloudFlare Tunnel,WindowsServiceName,Cloudflared
+cloudflare_tunnel,CloudFlare Tunnel,CommandLine,cloudflared.exe service install <TOKEN>
+cloudflare_tunnel,CloudFlare Tunnel,CommandLine,cloudflared.exe tunnel run --token <TOKEN>
+cloudflare_tunnel,CloudFlare Tunnel,CommandLine,cloudflared.exe tunnel --url http://localhost:8080
+cloudflare_tunnel,CloudFlare Tunnel,RDPArtifact,"The Swisscom case reported RDP connections through Cloudflare Tunnel with a loopback source (::%16777216) in Windows event logs; this is a tunneling indicator, not unique to cloudflared"
 controlio,Controlio,Service,weSvcService
 dataplicity,Dataplicity,URL,https://www.dataplicity.com/<TOKEN>.py
 dataplicity,Dataplicity,Other,Install command: curl -s https://www.dataplicity.com/<TOKEN>.py | sudo python  (high-signal hunt pattern — sudo-piped curl-to-python from dataplicity.com)
@@ -156,6 +161,10 @@ mremote,Mremote,InspectedWindowsAgentSHA256,cb70951b2bc19ea7a9c852b0d7f68f1548f6
 mremote,Mremote,InspectedWindowsAgentVersion,1.8.8.38
 mremote,Mremote,BuildIdentity,Native Go 1.26.5 executable; main module mremote-host; Windows amd64.
 mremote,Mremote,DeploymentSpecificIdentity,A configured client identity determines the ProgramData subdirectory and can replace the fallback service name; the inspected value is excluded.
+n-able_n-central,N-able N-central,WindowsService,Windows Agent Service; Windows Agent Maintenance Service (classic agent)
+n-able_n-central,N-able N-central,WindowsService,MSPAgent (display name MSP Agent)
+n-able_n-central,N-able N-central,LinuxService,MspAgent.service (systemd)
+n-able_n-central,N-able N-central,macOSDaemon,MspAgent (package com.n-able.mspagent)
 netbird,NetBird,NetworkInterface,wt0
 netbird,NetBird,NetworkInterface,utun100
 netbird,NetBird,ServiceName,Netbird
@@ -252,6 +261,14 @@ rodexrmm,Rodex RMM,Note,"r3v13wd0s.com — alternate domain referenced in earlie
 roster,Roster,WindowsServiceName,roster-agent
 roster,Roster,LinuxSystemdUnit,roster-agent.service
 roster,Roster,macOSLaunchDaemonLabel,com.roster.agent
+rustdesk,RustDesk,WindowsServiceName,RustDesk
+rustdesk,RustDesk,WindowsServiceArgument,--service
+rustdesk,RustDesk,CommandLine,"""C:\Program Files\RustDesk\RustDesk.exe"" --tray"
+rustdesk,RustDesk,CommandLine,"""C:\Program Files\RustDesk\RustDesk.exe"" --cm"
+rustdesk,RustDesk,CommandLine,rustdesk.exe --silent-install
+rustdesk,RustDesk,CommandLine,rustdesk.exe --password <password>
+rustdesk,RustDesk,CommandLine,rustdesk.exe --get-id
+rustdesk,RustDesk,CommandLine,rustdesk.exe --config <config-string>
 sentinel_rmm,Sentinel RMM,SourceBinaryConfigurationMarker,SENTINELCFG1
 sentinel_rmm,Sentinel RMM,RemoteExecutionFeatureFlag,SENTINEL_ALLOW_EXEC=1
 sentinel_rmm,Sentinel RMM,ControllerUrlEnvironmentVariable,SENTINEL_URL

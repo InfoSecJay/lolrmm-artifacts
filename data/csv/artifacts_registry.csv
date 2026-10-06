@@ -8,13 +8,17 @@ alpemix,Alpemix,HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx,N/A
 ammyyadmin,Ammyy Admin,HKU\.DEFAULT\Software\Ammyy\Admin,Writing the hr3 binary in the registry. The hr3 is likely used to store admin-related information.
 ammyyadmin,Ammyy Admin,HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin,Ammyy Admin service allows AMMYY admin to run in safe mode.
 anydesk,AnyDesk,HKLM\SOFTWARE\Clients\Media\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\Clients\Media\AnyDesk-*,Custom client media entry.
 anydesk,AnyDesk,HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk-*,Custom client service registry entry; CurrentControlSet represents the active control set.
 anydesk,AnyDesk,HKLM\SOFTWARE\Classes\.anydesk\shell\open\command,N/A
 anydesk,AnyDesk,HKLM\SOFTWARE\Classes\AnyDesk\shell\open\command,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\Classes\AnyDesk-*\shell\open\command,Custom client URL handler.
 anydesk,AnyDesk,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\AnyDesk Printer\*,N/A
 anydesk,AnyDesk,HKLM\DRIVERS\DriverDatabase\DeviceIds\USBPRINT\AnyDesk,N/A
 anydesk,AnyDesk,HKLM\DRIVERS\DriverDatabase\DeviceIds\WSDPRINT\AnyDesk,N/A
 anydesk,AnyDesk,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk,N/A
+anydesk,AnyDesk,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk-*,Custom client uninstall entry.
 atera,Atera,HKLM\SOFTWARE\ATERA Networks\AlphaAgent,
 atera,Atera,HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent,
 atera,Atera,KLM\SOFTWARE\WOW6432Node\Splashtop Inc.,
@@ -25,6 +29,8 @@ atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASAPI32,
 atera,Atera,HKLM\SOFTWARE\Microsoft\Tracing\AteraAgent_RASMANCS,
 atera,Atera,HKLM\SOFTWARE\ATERA Networks\*,
 blackcrypt,BlackCrypt RMM Agent,HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\BlackCryptAgent,Run-key value observed in the saved behavior report; its sample-specific target path is intentionally not used as a generic installation indicator.
+cloudflare_tunnel,CloudFlare Tunnel,HKLM\SYSTEM\CurrentControlSet\Services\Cloudflared,Service key; ImagePath may contain the tunnel token
+cloudflare_tunnel,CloudFlare Tunnel,HKLM\SYSTEM\CurrentControlSet\Services\EventLog\Application\Cloudflared,Event log source registered during service install
 controlr,ControlR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR,Default ControlR uninstall registry key on Windows.
 controlr,ControlR,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*),Instance-specific ControlR uninstall registry key on Windows.
 faronics_core,Faronics Core,HKLM\SYSTEM\CurrentControlSet\Services\FaronicsCoreAgent,Faronics Core Agent Windows service registration
@@ -109,6 +115,8 @@ obliance,Obliance,HKLM\SYSTEM\CurrentControlSet\Services\OblianceAgent,Windows s
 opale,Opale,HKLM\SYSTEM\CurrentControlSet\Services\Opale-Agent,SCM key expected when the default Opale-Agent Windows service is installed; its exact values vary with build-time branding and deployment path.
 opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OpsBridgeAgent,"Agent uninstall metadata, including the randomized persisted executable path."
 opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent,Task Scheduler cache entry for the OpsBridge Agent persistence task.
+overlord,Overlord,HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OverlordAgent-*,Autorun value observed by ANY.RUN as OverlordAgent-0ba8d3ca pointing to AppData\Roaming\Microsoft\DeviceSync\svchost.exe. Public source uses registry value prefix OverlordAgent- (plus legacy OverlordAgent).
+overlord,Overlord,HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OverlordAgent,Legacy registry value name from public agent source.
 proxiport,ProxiPort,HKLM\SYSTEM\CurrentControlSet\Services\proxiport,Windows Service Control Manager key for the packaged endpoint agent.
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
@@ -121,6 +129,12 @@ rmmcrat,RMMCRAT,HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent,Potential SCM ke
 rmmmax,RMMmax,HKLM\SOFTWARE\RMMmax\AgentService,Logical configuration key used by the Windows installer and agent; stores registration state and DPAPI-protected tokens in the process registry view.
 rmmmax,RMMmax,HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService,Windows service registered by the agent through sc.exe create with obj= LocalSystem and start= auto.
 rmmmax,RMMmax,HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService,Windows tray UI startup value; invokes the agent executable with /tray when the service is installed.
+rustdesk,RustDesk,HKLM\SYSTEM\CurrentControlSet\Services\RustDesk,RustDesk Windows service
+rustdesk,RustDesk,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RustDesk,Installation record
+screenconnect,ScreenConnect,HKLM\System\CurrentControlSet\Services\ScreenConnect Client (*)\ImagePath,"Service ImagePath value can contain the relay host and port in client launch parameters. It can reveal a configured destination without network telemetry; the cited lab observed the registry write before DNS, but that event ordering is not guaranteed."
+screenconnect,ScreenConnect,HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Authentication Packages,The cited case reported ScreenConnect.WindowsAuthenticationPackage.dll in the Authentication Packages value. Investigate that DLL entry against the approved deployment and loaded module provenance; this shared Windows registry location alone identifies neither ScreenConnect nor malicious activity.
+screenconnect,ScreenConnect,HKLM\SOFTWARE\Classes\CLSID\{6FF59A85-BC37-4CD4-C175-070CC4814204},"Credential provider registration pointing to ScreenConnect.WindowsCredentialProvider.dll. Display name may be ""SC FeedbackTool Credential Provider"" in malicious deployments."
+screenconnect,ScreenConnect,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\ScreenConnect Client (*),SafeBoot Network entry allowing ScreenConnect client to start in Safe Mode with Networking.
 sentinel_rmm,Sentinel RMM,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\SentinelAgent,Task Scheduler cache key expected after the Windows self-installer creates the SentinelAgent task.
 setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*,Per-session temporary SetMe client service.
 setme_pro,SetMe PRO,HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*,Safe-mode registration for the per-session SetMe client service.

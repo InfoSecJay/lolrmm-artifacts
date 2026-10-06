@@ -10,8 +10,9 @@ action1,Action1,4688,Microsoft-Security-Auditing,Security.evtx,,,C:\Windows\Acti
 alpemix,Alpemix,7045,Service Control Manager,System.evtx,AlpemixSrvc,*\Alpemix.exe servicestartxxx,,Service installation event as result of Alpemix installation.
 ammyyadmin,Ammyy Admin,4688,Microsoft-Security-Auditing,Security.evtx,,,"rundll32.exe ""C:\ProgramData\AMMYY\aa_nts.dll"",run",Execution of Ammyy Admin
 ammyyadmin,Ammyy Admin,7045,Service Control Manager,System.evtx,Ammyy Admin,C:\*\AA_v3.exe,,Ammyy Admin service installation event
-anydesk,AnyDesk,7045,Service Control Manager,System.evtx,AnyDesk Service,"""C:\\Program Files (x86)\\AnyDesk\\AnyDesk.exe"" --service",,Service installation event as result of AnyDesk installation.
-anydesk,AnyDesk,4697,Microsoft-Security-Auditing,Security.evtx,AnyDesk Service,"""C:\\Program Files (x86)\\AnyDesk\\AnyDesk.exe"" --service",,Service installation event as result of AnyDesk installation.
+anydesk,AnyDesk,7045,Service Control Manager,System.evtx,AnyDesk Service,"""C:\Program Files (x86)\AnyDesk\AnyDesk.exe"" --service",,Service installation event as result of AnyDesk installation.
+anydesk,AnyDesk,7045,Service Control Manager,System.evtx,AnyDesk * Service,"""C:\Program Files (x86)\AnyDesk-*\AnyDesk-*.exe"" --service",,Service installation event for custom per-org clients.
+anydesk,AnyDesk,4697,Microsoft-Security-Auditing,Security.evtx,AnyDesk Service,"""C:\Program Files (x86)\AnyDesk\AnyDesk.exe"" --service",,Service installation event as result of AnyDesk installation.
 anyviewer,AnyViewer,4688,Microsoft-Security-Auditing,Security.evtx,,,"""C:\\Program Files (x86)\\AnyViewer\\AVCore.exe"" -d",Taking actions on the remote machine such as opening a command prompt.
 anyviewer,AnyViewer,7045,Service Control Manager,System.evtx,RCService,C:\\Program Files (x86)\\AnyViewer\\RCService.exe,,AnyViewer service installation service.
 aspia,Aspia,11707,MsiInstaller,Application.evtx,,,,Aspia Client installation event.
@@ -23,6 +24,8 @@ beacon,Beacon (Synertek),7045,Service Control Manager,System,BeaconAgent,C:\Prog
 bluetrait,Bluetrait,4688,Microsoft-Windows-Security-Auditing,Security.evtx,,,C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe,Execution of Bluetrait MSP Agent
 bluetrait,Bluetrait,7045,Service Control Manager,System.evtx,Bluetrait Agent,"""C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe""",,Bluetrait service installation event
 borealis,Borealis,7045,Service Control Manager,System,BorealisAgent,C:\Borealis\Agent.exe,,Windows runtime creates this automatic service from the configured executable path; the default bootstrap path is C:\Borealis.
+cloudflare_tunnel,CloudFlare Tunnel,7045,Service Control Manager,System.evtx,Cloudflared,,,"Service installation (display name ""Cloudflared agent"", auto start). ImagePath contains 'tunnel run --token <TOKEN>' on older versions or '--token-file' on newer versions."
+cloudflare_tunnel,CloudFlare Tunnel,1,Cloudflared,Application.evtx,,,,"cloudflared registers an event source named Cloudflared and logs ""Cloudflared service starting"" / ""service arguments"""
 faronics_core,Faronics Core,7045,Service Control Manager,System.evtx,FaronicsCoreAgent,"""C:\Program Files\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe""",,Service installation event for the Faronics Core Agent.
 faronics_deep_freeze,Faronics Deep Freeze,7045,Service Control Manager,System.evtx,DFServ,"""C:\Program Files (x86)\Faronics\Deep Freeze\DFServ.exe""",,Service installation event for Deep Freeze workstation service.
 faronics_deploy,Faronics Deploy,7045,Service Control Manager,System.evtx,FWASvc,"""C:\Program Files (x86)\Faronics\Faronics Deploy Agent\FWAService.exe""",,Service installation event for the Faronics Deploy / Cloud Agent service.
@@ -88,11 +91,21 @@ nvda,NVDA (Non-Visual Desktop Access),4688,,,,,,Process creation event for nvda.
 obliance,Obliance,7045,Service Control Manager,System,OblianceAgent,C:\Program Files\OblianceAgent\obliance-agent.exe,,Windows MSI source installs this automatic LocalSystem service.
 opale,Opale,7045,Service Control Manager,System.evtx,Opale-Agent,C:\ProgramData\Opale\opale-agent.exe,,A Windows service installation using the default source branding; the name and path are configurable.
 open_uem,OpenUEM,7045,Service Control Manager,System,openuem-agent,,,Service name registered by the reviewed Windows service entry point; the source does not fix an executable installation path.
+overlord,Overlord,4688,,,,,,"Process creation for Overlord agent binaries (svchost-windows-amd64-*.exe, DeviceSync\svchost.exe, ovd_*.exe)."
+overlord,Overlord,1,,,,,,Sysmon process create for agent / persistence copies.
+overlord,Overlord,11,,,,,,Sysmon file create under DeviceSync or Startup paths.
+overlord,Overlord,13,,,,,,Sysmon registry value set for HKCU Run OverlordAgent-* persistence.
 parsec,Parsec,7045,Service Control Manager,System.evtx,parsecvirtualds,"""\SystemRoot\System32\drivers\parsecvirtualds.sys""",,Parsec service installation event
 proxiport,ProxiPort,7045,Service Control Manager,System,proxiport,C:\Program Files\ProxiPort\proxiport.exe -c C:\Program Files\ProxiPort\proxiport.conf,,Windows MSI installs an automatic proxiport service with the configuration file as its argument.
 remotely,Remotely,7045,Service Control Manager,System,Remotely_Service,C:\Program Files\Remotely\Remotely_Agent.exe,,Windows service installation event for Remotely unattended agent persistence.
 rmmmax,RMMmax,,RMMmaxAgentService,Application.evtx,,,,Windows agent creates the RMMmaxAgentService event source in the Application log.
 roster,Roster,7045,Service Control Manager,System,roster-agent,C:\Program Files\Roster\agent.exe,C:\Program Files\Roster\agent.exe -config C:\ProgramData\Roster\agent.yaml install,Windows deployment script invokes the agent to install the roster-agent service from this executable path.
+rustdesk,RustDesk,7045,Service Control Manager,System.evtx,RustDesk,"""C:\Program Files\RustDesk\RustDesk.exe"" --service",,Service installation event when RustDesk is installed as a Windows service (auto start)
+rustdesk,RustDesk,4624,Microsoft-Windows-Security-Auditing,Security.evtx,,,,"Interactive logon (Type 2) from 127.0.0.1 immediately followed by RustDesk.exe --cm, observed in the July 2025 intrusion documented by The DFIR Report; this sequence is case-specific, not a universal RustDesk logon signature"
+screenconnect,ScreenConnect,7045,Service Control Manager,System.evtx,ScreenConnect Client (<thumbprint>),"""C:\Program Files (x86)\ScreenConnect Client (<thumbprint>)\ScreenConnect.ClientService.exe"" ""?e=Access&y=Guest&h=<relay>&p=<port>&...""",,"Service installation observed as LocalSystem with automatic startup in the cited lab. The service image path included launch parameters for session type (e=Access), relay host (h=) and port (p=). Distinct client thumbprints can identify multiple installations; compare with the approved inventory."
+screenconnect,ScreenConnect,100,ScreenConnect,Application.evtx,,,,"Host user connected. In the cited lab, the message included the session label, relay URL and instance fingerprint. Use as corroboration; absence of these application events does not exclude activity."
+screenconnect,ScreenConnect,101,ScreenConnect,Application.evtx,,,,Host user disconnected. Corroborates the end of that connection; it does not establish that all operator activity or spawned processes have stopped.
+screenconnect,ScreenConnect,201,ScreenConnect,Application.evtx,,,,"Files transferred, with the action stated, e.g. ""Transferred files with action 'Run': ScreenConnect.ClientSetup (1).msi""."
 splashtop,Splashtop,7045,Service Control Manager,System.evtx,Splashtop Software Updater Service,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Software Updater\\SSUService.exe""",,Service installation event as result of Splashtop Software Updater Service installation.
 splashtop,Splashtop,7045,Service Control Manager,System.evtx,Splashtop® Remote Service,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Remote\\Server\\SRService.exe""",,Service installation event as result of Splashtop Remote Service installation.
 splashtop,Splashtop,7045,Service Control Manager,System.evtx,SplashtopRemoteService,"""C:\\Program Files (x86)\\Splashtop\\Splashtop Remote\\Server\\SRService.exe""",,Service installation event as result of Splashtop Remote Service installation.

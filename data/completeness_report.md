@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **355**
-- Fetched + parsed tools: **355**
+- Expected files (upstream listing): **358**
+- Fetched + parsed tools: **358**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 355 tools total:
+Of 358 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 350 | 99% |
-| installation_paths | 317 | 89% |
-| capabilities | 103 | 29% |
-| supported_os | 145 | 41% |
-| disk | 103 | 29% |
-| eventlog | 55 | 15% |
-| registry | 56 | 16% |
-| network | 266 | 75% |
-| other | 61 | 17% |
-| detections | 272 | 77% |
+| pe_metadata | 353 | 99% |
+| installation_paths | 320 | 89% |
+| capabilities | 108 | 30% |
+| supported_os | 149 | 42% |
+| disk | 107 | 30% |
+| eventlog | 59 | 16% |
+| registry | 60 | 17% |
+| network | 269 | 75% |
+| other | 64 | 18% |
+| detections | 274 | 77% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,7 +93,7 @@ Of 355 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (83)
+## Tools with no detections (84)
 
 - `allocentra` (RMM)
 - `basic_rmm` (RMM)
@@ -154,6 +154,7 @@ Of 355 tools total:
 - `open_uem` (RMM)
 - `opendesk` (RMM)
 - `opsbridge_agent` (RMM)
+- `overlord` (RAT)
 - `proxiport` (RMM)
 - `realvnc` (RAT)
 - `remmina` (RAT)

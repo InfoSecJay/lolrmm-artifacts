@@ -5,6 +5,11 @@
 *\allocentra-update.bat
 *\allocentra\agent\allocentra-agent.exe
 *\AppData\Local\Temp\rgsupv\cache\prepared
+*\AppData\Roaming\AnyDesk\ad_*\ad_*.trace
+*\AppData\Roaming\AnyDesk\ad_*\chat\*.txt
+*\AppData\Roaming\AnyDesk\ad_*\service.conf
+*\AppData\Roaming\AnyDesk\ad_*\user.conf
+*\AppData\Roaming\AnyDesk\file_transfer_trace.txt
 *\AppData\Roaming\Mremote\agent.exe
 *\AppData\Roaming\Mremote\agent.log
 *\AppData\Roaming\Mremote\consent.ok
@@ -25,9 +30,14 @@
 *\LS RMM\LSRMMupdate.txt
 *\LS RMM\SC.bmp
 *\LS RMM\SC.exe
+*\ProgramData\AnyDesk\ad_*\ad_*_svc.trace
+*\ProgramData\AnyDesk\ad_*\service.conf
+*\ProgramData\AnyDesk\ad_*\system.conf
+*\ProgramData\AnyDesk\file_transfer_trace.txt
 *\ProgramData\GxM\agent\GxM.Agent.exe
 *\ProgramData\GxM\enrollment.json
 *\ProgramData\GxM\install.log
+*\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk *.lnk
 *\RG-Supervision\RG_Supervision.exe
 *\Zecurit\Agent\Logs\agent_cmd_handler.log
 *\Zecurit\Agent\Logs\agent_service.log
@@ -103,6 +113,8 @@
 /Library/Application Support/Beacon/credential.json
 /Library/Application Support/Breeze/*
 /Library/Application Support/ControlR/*/ControlR.Agent
+/Library/Application Support/Vicarius/topiaInstaller.log
+/Library/Application Support/Vicarius/TopiaTrace.log
 /Library/LaunchAgents/app.controlr.desktop*.plist
 /Library/LaunchAgents/com.breeze.desktop-helper-loginwindow.plist
 /Library/LaunchAgents/com.breeze.desktop-helper-user.plist
@@ -118,6 +130,7 @@
 /Library/LaunchDaemons/com.roster.agent.plist
 /Library/LaunchDaemons/com.zecurit_agent.service.plist
 /Library/LaunchDaemons/fr.sentinel.agent.plist
+/Library/LaunchDaemons/io.vicarius.Topia.plist
 /Library/LaunchDaemons/openuem-agent-uninstaller.plist
 /Library/LaunchDaemons/org.chromium.chromoting.broker.plist
 /Library/LaunchDaemons/remotely-agent.plist
@@ -125,11 +138,15 @@
 /Library/Logs/Breeze/agent.log
 /Library/Logs/Breeze/watchdog.err
 /Library/Logs/Breeze/watchdog.log
+/Library/Logs/TopiaTrace.log
+/Library/MspAgent/*
 /Library/OpenUEMAgent/etc/openuem-agent/openuem.ini
+/Library/Preferences/Topia/io.vicarius.topia.config
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
 /Library/PrivilegedHelperTools/org.chromium.chromoting.json
 /Library/PrivilegedHelperTools/org.chromium.chromoting.settings.json
+/Library/PrivilegedHelperTools/topiad
 /Library/zecurit_agent/bin/CommandProcessor
 /Library/zecurit_agent/bin/Installer
 /Library/zecurit_agent/bin/Service
@@ -145,6 +162,7 @@
 /opt/google/chrome-remote-desktop/chrome-remote-desktop-host
 /opt/komari/agent
 /opt/komari/komari
+/opt/msp-agent/*
 /opt/nezha/agent/config.yml
 /opt/nezha/agent/nezha-agent
 /opt/nezha/dashboard/app
@@ -197,6 +215,7 @@
 /usr/local/zecurit_agent/config/server.json
 /usr/local/zecurit_agent/RemoveAgent.sh
 /usr/share/applications/teleport-connect.desktop
+/usr/share/vicarius/topiad.config
 /var/lib/breeze/*
 /var/lib/glpi-agent/*
 /var/lib/proxiport-agent
@@ -211,6 +230,8 @@
 /var/log/remotely/Agent_Install.log
 /var/log/roster-agent.log
 /var/log/system.log
+/var/log/topiaInstaller.log
+/var/log/TopiaTrace.log
 /var/rmmmax/agentservice/activity.log
 /var/rmmmax/agentservice/config.json
 /var/rmmmax/agentservice/rmmmax_agent.py
@@ -333,6 +354,8 @@ C:\Program Files (x86)\Inventec\InvGate.net Client\usbFiles\usbLog.txt
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorders.exe
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersHelper.exe
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBordersSvc.exe
+C:\Program Files (x86)\Msp Agent\msp-agent-core.exe
+C:\Program Files (x86)\N-able Technologies\Windows Agent\bin\agent.exe
 C:\Program Files (x86)\NVDA\nvda.exe
 C:\Program Files (x86)\RemotePC\*
 C:\Program Files (x86)\RemotePC\RemotePCUIU.exe
@@ -341,6 +364,7 @@ C:\Program Files (x86)\RemotePulseAgent\defender-exclude.ps1
 C:\Program Files (x86)\RemotePulseAgent\install.cmd
 C:\Program Files (x86)\RemotePulseAgent\install.ps1
 C:\Program Files (x86)\RemotePulseAgent\InstallCore.exe
+C:\Program Files (x86)\ScreenConnect Client (*)\system.config
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\agent_log.txt
 C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\log\SPLog.txt
@@ -404,6 +428,7 @@ C:\Program Files (x86)\Vector\Asset Management Client\VNLDriverInstaller.exe
 C:\Program Files (x86)\Vector\Asset Management Client\VnlSelfUpdate.exe
 C:\Program Files (x86)\Vector\Asset Management Client\WINCHK32.EXE
 C:\Program Files*\Kaseya\*\agentmon.log
+C:\Program Files*\ScreenConnect Client*\app.config
 C:\Program Files*\ScreenConnect\App_Data\Session.db
 C:\Program Files*\ScreenConnect\App_Data\User.xml
 C:\Program Files*\TeamViewer\connections*.txt
@@ -521,6 +546,10 @@ C:\Program Files\TrustConnect Agent\config.json
 C:\Program Files\TrustConnect Agent\TrustConnectAgent.exe
 C:\Program Files\Vector Networks Limited\LANutil32 Suite\clboot32.exe
 C:\Program Files\Vector\Asset Management Client\CLBOOT32.EXE
+C:\Program Files\Vicarius\Topia\Topia.config
+C:\Program Files\Vicarius\Topia\topiad.exe
+C:\Program Files\Vicarius\Topia\Trace\TopiaTrace.log
+C:\Program Files\Vicarius\topiaInstaller.log
 C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\server_config.json
 C:\ProgramData\\AMMYY\\access.log
 C:\ProgramData\AnyDesk\ad_svc.trace
@@ -532,6 +561,7 @@ C:\ProgramData\Beacon\credential.json
 C:\ProgramData\Breeze\agent.env
 C:\ProgramData\Breeze\logs\agent.log
 C:\ProgramData\Breeze\secrets.yaml
+C:\ProgramData\cloudflared\*
 C:\ProgramData\ControlR\*\appsettings.json
 C:\ProgramData\ControlR\*\Logs\ControlR.Agent\LogFile*.log
 C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\LogFile*.log
@@ -553,6 +583,7 @@ C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\*
 C:\ProgramData\LightRmmAgent\machine.id
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\AnyDesk\Uninstall AnyDesk.lnk
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\RustDesk Tray.lnk
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TeamViewer.lnk
 C:\ProgramData\MiniRMM\Invoke-AVExclusions.ps1
 C:\ProgramData\MiniRMM\SmartScreenTest.ps1
@@ -602,6 +633,7 @@ C:\rmm\config.json
 C:\temp\netlock rmm\installer\logs\*
 C:\temp_phw
 C:\temper\trm
+C:\Users\*\.cloudflared\*
 C:\Users\*\AppData\*\mRemoteNG\**10\user.config
 C:\Users\*\AppData\Local\Alpemix\Alpemix.ini
 C:\Users\*\AppData\Local\Devolutions\RemoteDesktopManager[GUID]\Mru.xml
@@ -626,6 +658,7 @@ C:\Users\*\AppData\Local\Temp\privacyhelper.exe
 C:\Users\*\AppData\Local\Temp\Remote_Ripple_*
 C:\Users\*\AppData\Local\Temp\Remotely_Install.txt
 C:\Users\*\AppData\Local\Temp\sciter.dll
+C:\Users\*\AppData\Local\Temp\svchost-windows-amd64-*.exe
 C:\Users\*\AppData\Local\Temp\TeamViewer\TV15Install.log
 C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientDesktopApplication.exe
 C:\Users\*\AppData\Local\Temp\tinClientExtractor-*\tinClientSessionManager.exe
@@ -648,11 +681,16 @@ C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk.toml
 C:\Users\*\AppData\Roaming\HopToDesk\config\HopToDesk_rCURRENT.log
 C:\Users\*\AppData\Roaming\JWrapper-SimpleSetup\
 C:\Users\*\AppData\Roaming\loclx\config.yaml
+C:\Users\*\AppData\Roaming\Microsoft\DeviceSync\ovd_*.exe
+C:\Users\*\AppData\Roaming\Microsoft\DeviceSync\svchost.exe
 C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\RemSupp.lnk
+C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ovd_*.exe
+C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\svchost.exe
 C:\Users\*\AppData\Roaming\mRemoteNG\confCons.xml
 C:\Users\*\AppData\Roaming\mRemoteNG\mRemoteNG.log
 C:\Users\*\AppData\Roaming\nvda\nvda.ini
 C:\Users\*\AppData\Roaming\nvda\nvda.log
+C:\Users\*\AppData\Roaming\Overlord\agent.exe
 C:\Users\*\AppData\Roaming\RdClient\*
 C:\Users\*\AppData\Roaming\RemSupp\chromium.log
 C:\Users\*\AppData\Roaming\RemSupp\Crashpad\metadata
@@ -664,6 +702,9 @@ C:\Users\*\AppData\Roaming\RemSupp\quitAndInstall.json
 C:\Users\*\AppData\Roaming\RemSupp\sentry\queue\queue.json
 C:\Users\*\AppData\Roaming\RemSupp\sentry\scope_v3.json
 C:\Users\*\AppData\Roaming\RemSupp\sentry\session.json
+C:\Users\*\AppData\Roaming\RustDesk\config\RustDesk.toml
+C:\Users\*\AppData\Roaming\RustDesk\config\RustDesk2.toml
+C:\Users\*\AppData\Roaming\RustDesk\log\*
 C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport\*tvc
 C:\Users\*\AppData\Roaming\Teleport Connect\app_config.json
 C:\Users\*\AppData\Roaming\Teleport Connect\app_state.json
@@ -684,6 +725,8 @@ C:\Windows\Action1\rule_data\*
 C:\Windows\Action1\scripts\*
 C:\Windows\Installer\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}\ARPPRODUCTICON.exe
 C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
+C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\config\RustDesk2.toml
+C:\Windows\System32\config\systemprofile\.cloudflared\*
 C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\
 C:\Windows\System32\rserver30\CHATLOGS\*\*.htm
 C:\Windows\System32\rserver30\Radm_log.htm
@@ -691,6 +734,7 @@ C:\Windows\System32\Tasks\OpsBridge Agent
 C:\Windows\System32\termsrv.exe
 C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx
 C:\windows\System32\winevt\Logs\Splashtop-Splashtop Streamer-Status%4Operational.evtx
+C:\Windows\SystemTemp\ScreenConnect\*
 C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\*
 C:\Windows\SysWOW64\rserver30\Radm_log.htm
 C:\Windows\Temp\DFServiceInit.log
@@ -754,5 +798,7 @@ wesvc.exe
 ~/.loclx/config.yaml
 ~/.tmate.conf
 ~/Library/Application Support/AnyDesk/Logs/
+~/Library/Application Support/Overlord/*
+~/Library/LaunchAgents/*.plist
 ~/Library/Logs/com.kaseya/KaseyaLiveConnect/*
 ~/opt/kaseya/*/logs*

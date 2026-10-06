@@ -11,10 +11,18 @@
 *\*\ScreenConnect.ClientService.exe
 *\*\ScreenConnect.WindowsClient.exe
 *\\supremoremotedesktop\\supremosystem.exe
+*\agent-windows-amd64-*.exe
 *\AgentPackageNetworkDiscovery.exe
 *\AgentPackageTaskScheduler.exe
 *\Almageste\DragonDisk\*
 *\AMMYY_Admin.exe
+*\AppData\Roaming\Microsoft\DeviceSync\agent-*.tmp
+*\AppData\Roaming\Microsoft\DeviceSync\ovd_*.exe
+*\AppData\Roaming\Microsoft\DeviceSync\svchost.exe
+*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\agent-*.tmp
+*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ovd_*.exe
+*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\svchost.exe
+*\AppData\Roaming\Overlord\agent.exe
 *\aspia_client.exe
 *\ATERA Networks\AteraAgent\*
 *\AteraAgent.exe
@@ -117,6 +125,7 @@
 *\Splashtop\Splashtop Remote\Client for RMM\*
 *\superputty.exe
 *\SuperPuTTY\*
+*\svchost-windows-amd64-*.exe
 *\Syncthing.exe
 *\SysAid\*
 *\SysAidServer\*
@@ -213,9 +222,11 @@
 /Library/LaunchDaemons/com.roster.agent.plist
 /Library/LaunchDaemons/remotely-agent.plist
 /Library/Logs/Breeze/*
+/Library/MspAgent/*
 /Library/OpenUEMAgent/etc/openuem-agent/openuem.ini
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host
 /Library/PrivilegedHelperTools/ChromeRemoteDesktopHost.app/Contents/MacOS/remoting_me2me_host_service
+/Library/PrivilegedHelperTools/topiad
 /Library/zecurit_agent/bin/CommandProcessor
 /Library/zecurit_agent/bin/Installer
 /Library/zecurit_agent/bin/Service
@@ -228,6 +239,7 @@
 /opt/google/chrome-remote-desktop/chrome-remote-desktop
 /opt/google/chrome-remote-desktop/chrome-remote-desktop-host
 /opt/komari/*
+/opt/msp-agent/*
 /opt/netbird/*
 /opt/nezha/*
 /opt/nezha/agent
@@ -273,6 +285,7 @@
 /usr/local/zecurit_agent/bin/agentService
 /usr/local/zecurit_agent/bin/commandProcessor
 /usr/local/zecurit_agent/bin/installer
+/usr/share/vicarius/*
 /var/0x101_Cyber_Security/*
 /var/lib/breeze/*
 /var/lib/glpi-agent/*
@@ -300,6 +313,8 @@ agent64.exe
 Agent_*_RW.exe
 agent_setup_5.exe
 AgentlessRC.exe
+AgentMaint.exe
+AgentMonitor.exe
 AgentSetup-*.exe
 agentu.exe
 alitask.exe
@@ -361,7 +376,10 @@ C:\Lavawall\LavawallWin.exe
 C:\nezha\*
 c:\Program Files (x86)%\mRemoteNG
 C:\Program Files (x86)\Almageste\DragonDisk\*
+C:\Program Files (x86)\AnyDesk-*\*
+C:\Program Files (x86)\AnyDesk-*\AnyDesk-*.exe
 C:\Program Files (x86)\AnyDesk\*
+C:\Program Files (x86)\AnyDesk\AnyDesk.exe
 C:\Program Files (x86)\AnyViewer\*
 C:\Program Files (x86)\Aspia\
 C:\Program Files (x86)\Atera Networks
@@ -369,6 +387,7 @@ C:\Program Files (x86)\Bitvise SSH Client\*
 C:\Program Files (x86)\Bluetrait Agent\*
 C:\Program Files (x86)\bsag\*
 C:\Program Files (x86)\bsag\bma\*
+C:\Program Files (x86)\cloudflared\cloudflared.exe
 C:\Program Files (x86)\DesktopCentral_Agent\bin\*
 C:\Program Files (x86)\Faronics\Deep Freeze\*
 C:\Program Files (x86)\Faronics\Deep Freeze\Install C-0\*
@@ -430,6 +449,9 @@ C:\Program Files (x86)\LS RMM\LS RMM.exe
 C:\Program Files (x86)\ManageEngine\ServiceDesk\*
 C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\*
 C:\Program Files (x86)\mRemoteNG\*
+C:\Program Files (x86)\Msp Agent\*
+C:\Program Files (x86)\N-able Technologies\Windows Agent\bin\*
+C:\Program Files (x86)\N-able Technologies\Windows Agent\bin\agent.exe
 C:\Program Files (x86)\Net Monitor for Employees Pro\*
 C:\Program Files (x86)\NetSarang\xShell\*
 C:\Program Files (x86)\NVDA\nvda.exe
@@ -472,6 +494,7 @@ c:\Program Files\*\Duplicati.Server.exe
 C:\Program Files\0x101 Cyber Security\NetLock RMM\UserAgent\NetLock_RMM_User_Process.exe
 C:\Program Files\0x101 Cyber Security\NetLock RMM\UserAgent\NetLock_RMM_User_UAC.exe
 C:\Program Files\Allocentra\Agent\allocentra-agent.exe
+C:\Program Files\AnyDesk-*\AnyDesk-*.exe
 C:\Program Files\AnyDesk\*
 C:\Program Files\Aspia\
 C:\Program Files\Atera Networks
@@ -481,6 +504,7 @@ C:\Program Files\Bitvise SSH Server\*
 C:\Program Files\Breeze\*
 C:\Program Files\bsag\*
 C:\Program Files\bsag\bma\*
+C:\Program Files\cloudflared\cloudflared.exe
 C:\Program Files\ControlR\*\ControlR.Agent.exe
 C:\Program Files\ControlR\*\DesktopClient\ControlR.DesktopClient.dll
 C:\Program Files\ControlR\*\DesktopClient\ControlR.DesktopClient.exe
@@ -547,6 +571,7 @@ C:\Program Files\RG-Supervision\*
 C:\Program Files\Rodex\RodexAgent.exe
 C:\Program Files\Roster\*
 C:\Program Files\RustDesk
+C:\Program Files\RustDesk\RustDesk.exe
 C:\Program Files\Solar-Putty-v4\*
 C:\Program Files\SolarWinds\Dameware Mini Remote Control\*
 C:\Program Files\SysAidServer\*
@@ -559,6 +584,7 @@ C:\Program Files\uvnc bvba\UltraVNC\*
 C:\Program Files\Vector Networks Limited\LANutil32 Suite\*
 C:\Program Files\Vector\Asset Management Client\*
 C:\Program Files\Veyon\*
+C:\Program Files\Vicarius\Topia\*
 C:\Program Files\Zecurit\Agent\ZecuritAgentAssetMgr.exe
 C:\Program Files\Zecurit\Agent\ZecuritAgentRegister.exe
 C:\Program Files\Zecurit\Agent\ZecuritAgentService.exe
@@ -904,6 +930,7 @@ mionetmanager.exe
 MonitoringAgent.exe
 mRemoteNG-Installer-*.msi
 mRemoteNG.exe
+msp-agent-core.exe
 mwcliun.exe
 mygreenpc.exe
 myivomanager.exe
@@ -964,6 +991,7 @@ OrayRemoteService.exe
 OrayRemoteShell.exe
 OTPowerShell.exe
 OTService.exe
+ovd_*.exe
 p9agent*.exe
 PAExec-*.exe
 paexec.exe
@@ -1171,6 +1199,7 @@ todesk.exe
 ToDesk_Service.exe
 ToDesk_Setup.exe
 toolsiq.exe
+topiad.exe
 TPowerShell.exe
 TrustConnectAgent.exe
 TSClient.exe

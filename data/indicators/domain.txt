@@ -6,7 +6,6 @@
 *.alpemix.com
 *.ammyy.com
 *.analytics.insight.rapid7.com
-*.anydesk.com
 *.anysupport.net
 *.anyviewer.com
 *.aomeisoftware.com
@@ -27,6 +26,7 @@
 *.cc.centrastage.net
 *.cdn.getgo.com
 *.cell-1.domotz.com
+*.cfargotunnel.com
 *.cloud.tanium.com
 *.cloudbackup.management
 *.cloudberrylab.com
@@ -122,10 +122,18 @@
 *.mygreenpc.com
 *.n-able.com
 *.nchuser.com
+*.net.anydesk.com
 *.netbird.io
 *.netop.com
 *.netsupportmanager.com
 *.netviewer.com
+*.ngrok-free.app
+*.ngrok.app
+*.ngrok.com
+*.ngrok.dev
+*.ngrok.io
+*.ngrok.pizza
+*.ngrok.pro
 *.ninite.com
 *.ninja-backup.com
 *.ninjaone.com
@@ -140,6 +148,7 @@
 *.pcvisit.de
 *.pilixo.com
 *.pitunnel.com
+*.prd.cdo.system-monitor.com
 *.real-time-collaboration.com
 *.rel.tunnels.api.visualstudio.com
 *.relay.splashtop.com
@@ -199,7 +208,9 @@
 *.tiflux.com
 *.tmate.io
 *.todesk.com
+*.trycloudflare.com
 *.ultraviewer.net
+*.vicarius.cloud
 *.webpush.freshchat.com
 *.weezo.me
 *.weezo.net
@@ -232,7 +243,12 @@
 <operator-configured GLPI server>
 <operator-configured Vector Discovery Server URL>
 <operator-controlled VPS hostname or IP>
+_v2-origintunneld._tcp.argotunnel.com
 a1-backend-packages.s3.amazonaws.com
+a33d8yamkwy4nx-ats.iot.ap-southeast-2.amazonaws.com
+a33d8yamkwy4nx-ats.iot.eu-central-1.amazonaws.com
+a33d8yamkwy4nx-ats.iot.eu-west-1.amazonaws.com
+a33d8yamkwy4nx-ats.iot.us-west-2.amazonaws.com
 account.flexihub.com
 activation.netreo.net
 aeroadmin.com
@@ -249,6 +265,7 @@ ammyy.com
 anyplace-control.com
 api-ca-1.lavawall.com
 api.allocentra.co.za
+api.cloudflare.com
 api.fdcollab.com
 api.helpwire.app
 api.hoptodesk.com
@@ -302,6 +319,7 @@ cdn.teleport.dev
 cell-1.domotz.com
 centuriontech.com
 cfcdn.pdq.com
+cftunnel.com
 changes.panorama9.com
 charon.netreo.net
 checkip.zmazonaws.com
@@ -318,6 +336,10 @@ cloud.faronics.com
 cloud.shellhub.io
 cloud.tanium.com
 cloudbackup.management
+comserver.eu1.mspa.n-able.com
+comserver.global.mspa.n-able.com
+comserver.us1.mspa.n-able.com
+comserver.us2.mspa.n-able.com
 connect.acronis.com
 connect.ap.ngrok-agent.com
 connect.au.ngrok-agent.com
@@ -363,6 +385,10 @@ downloads.zohocdn.com
 downloads.zohodl.com.cn
 dronemaker.org
 duetdisplay.com
+eb.ap-southeast-2.prd.davinci.system-monitor.com
+eb.eu-central-1.prd.davinci.system-monitor.com
+eb.eu-west-1.prd.davinci.system-monitor.com
+eb.us-west-2.prd.davinci.system-monitor.com
 ehorus.com
 electric.ai
 emcosoftware.com
@@ -376,6 +402,7 @@ faronics-deploy-na-production-installers.s3.us-west-2.amazonaws.com
 faronics.com
 faronicscloud.com
 fastviewer.com
+feeds.n-able.com
 fixme.it
 fleetdeck.io
 fortra.com
@@ -410,6 +437,7 @@ grtmprod.addigy.com
 guacamole.apache.org
 gw.remotix.com
 gw.usw.gorelo.tech
+h2.cftunnel.com
 heartbeatrm.com
 help.invgate.com
 helpbeam.software.informer.com
@@ -421,6 +449,7 @@ idrive.com
 image.getscreen.me
 immy.bot
 imperosoftware.com
+instance-*-relay.screenconnect.com
 instances-info.invgate.com
 instances-list.invgate.com
 instanthousecall.com
@@ -501,6 +530,7 @@ one.comodo.com
 online.level.io
 opsbridge.digital
 packagesstore.blob.core.windows.net
+pandoramods.top
 panorama9.com
 parsec.app
 parsec.gg
@@ -522,13 +552,17 @@ pubsub.atera.com
 pulseway.com
 px-*.getscreen.me
 qq-messenger.en.softonic.com
+quic.cftunnel.com
 r1.rmm.uw.gorelo.tech
 radmin.com
 raw.githubusercontent.com
 rdp.duetdisplay.com
-relay-[a-f0-9]{8}.net.anydesk.com:443
+region1.v2.argotunnel.com
+region2.v2.argotunnel.com
+relay-*.net.anydesk.com
 relay.netbird.io
 releases.invgate.com
+releases.n-able.com
 remmon.hu
 remobo.en.softonic.com
 remote.it
@@ -567,6 +601,7 @@ rt.teramind.co
 rudesktop.ru
 runsmart.io
 rustdesk.com
+savaliyapriyal874-code.github.io
 search.namequery.com
 secure.instanthousecall.com
 seetrol.co.kr
@@ -584,6 +619,7 @@ signal.hoptodesk.com
 signal.netbird.io
 signalserver.xyz
 simple-help.com
+sis.n-able.com
 skyfex.com
 socket.lunixar.com
 softbymade.top
@@ -599,6 +635,7 @@ stunserver.stunprotocol.org
 sunlogin.oray.com
 superops.ai
 support.faronics.com
+swi-rc.cdn-sw.net
 syncromsp.com
 syspectr.com
 system-monitor.com
@@ -625,11 +662,32 @@ turn.monitic.com
 ultraviewer.net
 ultravnc.com
 upd.faronicslabs.com
+update.argotunnel.com
+update.n-able.com
 upload_data.qq.com
+us-region1.v2.argotunnel.com
+us-region2.v2.argotunnel.com
 us.2breeze.app
 usage.teleport.dev
 user_managed
 vector-networks.com
+vicarius-ap-southeast-3-installer.s3.amazonaws.com
+vicarius-ap-southeast-3-installer.s3.ap-southeast-3.amazonaws.com
+vicarius-ap-southeast-3-patches.s3.amazonaws.com
+vicarius-ap-southeast-3-patches.s3.ap-southeast-3.amazonaws.com
+vicarius-ap-southeast-3-release.s3.amazonaws.com
+vicarius-ap-southeast-3-release.s3.ap-southeast-3.amazonaws.com
+vicarius-eu-central-1-installer.s3.amazonaws.com
+vicarius-eu-central-1-installer.s3.eu-central-1.amazonaws.com
+vicarius-eu-central-1-patches.s3.amazonaws.com
+vicarius-eu-central-1-patches.s3.eu-central-1.amazonaws.com
+vicarius-eu-central-1-release.s3.amazonaws.com
+vicarius-eu-central-1-release.s3.eu-central-1.amazonaws.com
+vicarius-installer.s3.amazonaws.com
+vicarius-patches.s3.amazonaws.com
+vicarius-release.s3.amazonaws.com
+vicarius-release.s3.us-east-1.amazonaws.com
+vicarius-static-organizationinstallations.vicarius-cdn.com
 vizor.cloud
 wangwang.taobao.com
 web-16fe.app

@@ -1,5 +1,6 @@
 Allocentra RMM Agent
 Alpemix
+Alternate agent filenames observed in ANY.RUN related tasks (e.g. agent-b97b.exe)
 Ammyy Admin
 AnyDesk
 AnyViewer Core
@@ -25,6 +26,7 @@ Deep Freeze Standard runtime
 Deep Freeze Workstation install program
 Deep Freeze workstation service
 Deep Freeze workstation service (extended host)
+Default randomized Windows persistence executable prefix when no custom startup name is set
 Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter
 Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name
 Default Windows agent filename copied by the repository installer; build-time branding can change this name.
@@ -131,11 +133,13 @@ Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint
 Ninite Pro Classic
 NVDA screen reader executable
 NVDA service executable for secure screens
+Observed Go agent build naming pattern (platform-arch-hash) used for masquerading as svchost
 Official HeartbeatRM installer (verified via VirusTotal)
 Official Windows installer filename; no PE metadata was inspected.
 OpenDesk RMM Agent - Gerenciamento Remoto
 OpsBridge Endpoint Service
 Parsec
+Persistence copy name when DefaultStartupName/custom startup name is set to svchost
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.
 PixoIT RMM Agent
 ProxiPort client for Windows
@@ -165,6 +169,7 @@ Standalone inventory collector (offline / one-shot inventory)
 Successor variant ("DocConnect" / "SHIELD OS") observed after February 2026 disruption
 Teleport Connect
 Teleport tsh command-line client
+Temporary staging names written under DeviceSync and Startup during install/copy
 Teramind agent removal utility (signed by Teramind Inc.)
 Teramind agent removal utility variant served from teramind.co
 Teramind agent updater shim; renamed to update-shim.exe at runtime; .NET assembly signed by Teramind Inc.

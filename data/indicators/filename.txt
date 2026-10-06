@@ -12,7 +12,10 @@ action1_remote.exe
 action1_update.exe
 AEMAgent.exe
 aeroadmin.exe
+agent-*.exe
+agent-*.tmp
 agent-installer-any.exe
+agent-windows-amd64-*.exe
 agent-windows-amd64.exe
 agent.exe
 agent32.exe
@@ -21,7 +24,9 @@ Agent_*_RW.exe
 agent_setup_5.exe
 AgentInstaller.dll
 AgentlessRC.exe
+AgentMaint.exe
 agentmon.exe
+AgentMonitor.exe
 AgentPackageNetworkDiscovery.exe
 AgentPackageTaskScheduler.exe
 AgentSetup-*.exe
@@ -32,6 +37,7 @@ Alpemix.exe
 AlpemixService.exe
 AMMYY_Admin.exe
 amon.exe
+AnyDesk-*.exe
 anydesk.exe
 AnyViewer.exe
 apc_host.exe
@@ -444,6 +450,7 @@ MouseWithoutBorders.exe
 MqMailIntegration.exe
 mremote-agent.exe
 mRemoteNG.exe
+msp-agent-core.exe
 mstsc.exe
 mwcliun.exe
 mygreenpc.exe
@@ -514,6 +521,7 @@ OrayRemoteService.exe
 OrayRemoteShell.exe
 OTPowerShell.exe
 OTService.exe
+ovd_*.exe
 p9agent*.exe
 PAExec-*.exe
 paexec.exe
@@ -708,6 +716,8 @@ supremo.exe
 supremohelper.exe
 supremoservice.exe
 SupremoSystem.exe
+svchost-windows-amd64-*.exe
+svchost.exe
 Syncro.App.Runner.exe
 Syncro.Installer.exe
 Syncro.Overmind.Service.exe
@@ -757,6 +767,7 @@ todesk.exe
 ToDesk_Service.exe
 ToDesk_Setup.exe
 toolsiq.exe
+topiad.exe
 TPowerShell.exe
 TrustConnectAgent.exe
 TSClient.exe

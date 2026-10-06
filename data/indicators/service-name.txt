@@ -1,11 +1,13 @@
 A1Agent
 AlpemixSrvc
 Ammyy Admin
+AnyDesk * Service
 AnyDesk Service
 AteraAgent
 BeaconAgent
 Bluetrait Agent
 BorealisAgent
+Cloudflared
 DFServ
 FaronicsCoreAgent
 FIStudentSvc
@@ -32,6 +34,8 @@ RCService
 Remotely_Service
 RemotePC Performance Service
 roster-agent
+RustDesk
+ScreenConnect Client (<thumbprint>)
 Splashtop Software Updater Service
 SplashtopRemoteService
 Splashtop® Remote Service

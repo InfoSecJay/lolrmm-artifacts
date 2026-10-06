@@ -15,6 +15,7 @@ Allocentra,allocentra,allocentra,Allocentra,Name,RMM,,https://allocentra.co.za/,
 Allocentra RMM Agent,allocentra rmm agent,allocentra,Allocentra,PEMetadata.Description,RMM,,https://allocentra.co.za/,Windows | Linux | macOS
 allocentra-agent,allocentra-agent,allocentra,Allocentra,PEMetadata.OriginalFileName,RMM,,https://allocentra.co.za/,Windows | Linux | macOS
 Alpemix,alpemix,alpemix,Alpemix,Name,RMM,,https://www.alpemix.com/en/Home,Windows | Linux | Android | Mac | IOS
+Alternate agent filenames observed in ANY.RUN related tasks (e.g. agent-b97b.exe),alternate agent filenames observed in any.run related tasks (e.g. agent-b97b.exe),overlord,Overlord,PEMetadata.Description,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 Ammyy Admin,ammyy admin,ammyyadmin,Ammyy Admin,Name,RMM,Yes/1 active session at a time,https://www.ammyy.com,Windows
 Any Support,any support,any_support,Any Support,Name,RMM,,https://anysupport.net/,Windows
 AnyDesk,anydesk,anydesk,AnyDesk,Name,RMM,true,https://anydesk.com/en,Android | ChromeOS | IOS | Linux | Mac | Windows
@@ -64,7 +65,7 @@ CHAOS RAT,chaos rat,chaos_rat,CHAOS RAT,Name,RAT,true,https://github.com/tiagorl
 Chicken (of the VNC),chicken (of the vnc),chicken_(of_the_vnc),Chicken (of the VNC),Name,RAT,,https://github.com/flit/cotvnc,
 Chrome Remote Desktop,chrome remote desktop,chrome_remote_desktop,Chrome Remote Desktop,Name,RAT,true,https://remotedesktop.google.com/,Windows | macOS | Linux
 Chrome SSH Extension,chrome ssh extension,chrome_ssh_extension,Chrome SSH Extension,Name,RAT,,https://chromewebstore.google.com/detail/secure-shell/iodihamcpbpeioajjeobimgagajmlibd,
-CloudFlare Tunnel,cloudflare tunnel,cloudflare_tunnel,CloudFlare Tunnel,Name,RAT,,https://cloudflare.com/products/tunnel/,
+CloudFlare Tunnel,cloudflare tunnel,cloudflare_tunnel,CloudFlare Tunnel,Name,RAT,Yes,https://cloudflare.com/products/tunnel/,Windows | Linux | MacOS
 CloudWksInstall,cloudwksinstall,faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
 Comodo RMM,comodo rmm,comodo_rmm,Comodo RMM,Name,RMM,,https://one.comodo.com/,Windows
 Connect App Setup,connect app setup,adobe_connect,Adobe Connect,PEMetadata.Description,RAT,false,https://www.adobe.com/products/adobeconnect.html,Windows | macOS
@@ -94,6 +95,7 @@ Deep Freeze Standard runtime,deep freeze standard runtime,faronics_deep_freeze,F
 Deep Freeze Workstation install program,deep freeze workstation install program,faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.Description,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
 Deep Freeze workstation service,deep freeze workstation service,faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.Description,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
 Deep Freeze workstation service (extended host),deep freeze workstation service (extended host),faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.Description,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
+Default randomized Windows persistence executable prefix when no custom startup name is set,default randomized windows persistence executable prefix when no custom startup name is set,overlord,Overlord,PEMetadata.Description,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 Default rename target for the Teramind clipboard-monitor process; configurable via TMCLIPMONEXE installer parameter,default rename target for the teramind clipboard-monitor process; configurable via tmclipmonexe installer parameter,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Default rename target for the Teramind Hidden Agent core executable; configurable via TMAGENTEXE installer parameter — collides intentionally with the legitimate Desktop Window Manager process name,default rename target for the teramind hidden agent core executable; configurable via tmagentexe installer parameter — collides intentionally with the legitimate desktop window manager process name,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Default Windows agent filename copied by the repository installer; build-time branding can change this name.,default windows agent filename copied by the repository installer; build-time branding can change this name.,opale,Opale,PEMetadata.Description,RMM,Open source,https://github.com/4rtefakt/opale,Windows
@@ -370,6 +372,7 @@ MyGreenPC,mygreenpc,mygreenpc,MyGreenPC,Name,RMM,,https://mygreenpc.com/,
 MyIVO,myivo,myivo,MyIVO,Name,RMM,,,
 N-Able Advanced Monitoring Agent,n-able advanced monitoring agent,n-able_advanced_monitoring_agent,N-Able Advanced Monitoring Agent,Name,RMM,,https://www.n-able.com/features/advanced-monitoring-agent,
 N-Able Advanced Monitoring Agent,n-able advanced monitoring agent,n-ableadvancedmonitoringagent,N-Able Advanced Monitoring Agent,Name,RMM,,https://www.n-able.com/features/advanced-monitoring-agent,
+N-able N-central,n-able n-central,n-able_n-central,N-able N-central,Name,RMM,false,https://www.n-able.com/products/n-central,Windows | macOS | Linux
 N-ABLE Remote Access Software,n-able remote access software,n-able_remote_access_software,N-ABLE Remote Access Software,Name,RMM,,https://www.n-able.com/features/remote-access,
 Naverisk,naverisk,naverisk,Naverisk,Name,RMM,,https://www.naverisk.com/,
 Net Monitor for Employees,net monitor for employees,netmonitor,Net Monitor for Employees,Name,RMM,true,https://networklookout.com/,Windows | MacOS | Linux
@@ -414,6 +417,7 @@ NVDA (Non-Visual Desktop Access),nvda (non-visual desktop access),nvda,NVDA (Non
 NVDA screen reader executable,nvda screen reader executable,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
 NVDA service executable for secure screens,nvda service executable for secure screens,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
 Obliance,obliance,obliance,Obliance,Name,RMM,Unknown,https://github.com/MeeJay/Obliance,Windows | Linux | macOS
+Observed Go agent build naming pattern (platform-arch-hash) used for masquerading as svchost,observed go agent build naming pattern (platform-arch-hash) used for masquerading as svchost,overlord,Overlord,PEMetadata.Description,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 OCS inventory,ocs inventory,ocs_inventory,OCS inventory,Name,RMM,,https://ocsinventory-ng.org/,
 Official HeartbeatRM installer (verified via VirusTotal),official heartbeatrm installer (verified via virustotal),heartbeatrm,HeartbeatRM,PEMetadata.Description,RMM,Unknown,https://heartbeatrm.com/,Windows
 Official Windows installer filename; no PE metadata was inspected.,official windows installer filename; no pe metadata was inspected.,open_uem,OpenUEM,PEMetadata.Description,RMM,true,https://openuem.eu/,Windows | Linux | macOS
@@ -428,6 +432,7 @@ OpsBridge Endpoint Management Suite,opsbridge endpoint management suite,opsbridg
 OpsBridge Endpoint Service,opsbridge endpoint service,opsbridge_agent,OpsBridge Agent,PEMetadata.Description,RMM,,https://opsbridge.digital/,Windows
 OpsBridgeAgent,opsbridgeagent,opsbridge_agent,OpsBridge Agent,PEMetadata.OriginalFileName,RMM,,https://opsbridge.digital/,Windows
 OptiTune,optitune,optitune,OptiTune,Name,RMM,,https://www.bravurasoftware.com/optitune/,
+Overlord,overlord,overlord,Overlord,Name,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 Pandora RC (eHorus),pandora rc (ehorus),pandora_rc_(ehorus),Pandora RC (eHorus),Name,RMM,,https://pandorafms.com/en/remote-control/,
 Panorama9,panorama9,panorama9,Panorama9,Name,RMM,,https://panorama9.com/,
 Parallels Access,parallels access,parallelsaccess,Parallels Access,Name,RMM,,https://www.parallels.com/,
@@ -437,6 +442,7 @@ PChelpware,pchelpware,pchelpware,PChelpware,Name,RMM,true,https://uvnc.com/downl
 Pcnow,pcnow,pcnow,Pcnow,Name,RMM,,,
 Pcvisit,pcvisit,pcvisit,Pcvisit,Name,RMM,,https://www.pcvisit.de/,
 PDQ Connect,pdq connect,pdq_connect,PDQ Connect,Name,RMM,,https://www.pdq.com/pdq-connect/,
+Persistence copy name when DefaultStartupName/custom startup name is set to svchost,persistence copy name when defaultstartupname/custom startup name is set to svchost,overlord,Overlord,PEMetadata.Description,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 Pilixo,pilixo,pilixo,Pilixo,Name,RMM,,,
 PiTunnel,pitunnel,pitunnel,PiTunnel,Name,RAT,Yes (free + paid subscription),https://www.pitunnel.com/,Linux | MacOS
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.,pitunnel client binary; invokable as `pitunnel --port=<port> --name=<name> --persist` to register a persistent named tunnel back to the operator's tenant cloud.,pitunnel,PiTunnel,PEMetadata.Description,RAT,Yes (free + paid subscription),https://www.pitunnel.com/,Linux | MacOS
@@ -580,6 +586,7 @@ TeleDesktop,teledesktop,teledesktop,TeleDesktop,Name,RMM,,,
 Teleport,teleport,teleport_connect,Teleport Connect,PEMetadata.Product,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
 Teleport Connect,teleport connect,teleport_connect,Teleport Connect,Name,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
 Teleport tsh command-line client,teleport tsh command-line client,teleport_connect,Teleport Connect,PEMetadata.Description,RAT,true,https://goteleport.com/connect/,Windows | macOS | Linux
+Temporary staging names written under DeviceSync and Startup during install/copy,temporary staging names written under devicesync and startup during install/copy,overlord,Overlord,PEMetadata.Description,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 Teramind,teramind,teramind,Teramind,Name,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Teramind agent removal utility (signed by Teramind Inc.),teramind agent removal utility (signed by teramind inc.),teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
 Teramind agent removal utility variant served from teramind.co,teramind agent removal utility variant served from teramind.co,teramind,Teramind,PEMetadata.Description,RMM,14 day trial; subsequent paid subscription,https://www.teramind.co/,Windows | MacOS
@@ -644,6 +651,7 @@ Vector Asset Management Windows-side inventory collector (executes against winch
 "Vector Networks LANutil32 / Vector Asset Management Client main executable (boot/launcher) — author ""Vector Networks Limited"", original product ""LANutil32 Suite""; spawns CLDIST32.EXE, WINCHK32.EXE, lusmbios16.exe etc. during inventory collection (confirmed via VirusTotal sandbox behaviour for SHA-256 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893)","vector networks lanutil32 / vector asset management client main executable (boot/launcher) — author ""vector networks limited"", original product ""lanutil32 suite""; spawns cldist32.exe, winchk32.exe, lusmbios16.exe etc. during inventory collection (confirmed via virustotal sandbox behaviour for sha-256 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893)",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 Vector Networks server-side post-install setup binary shipped in the VIZOR 2.5.2 MSI_Merge bundle (registry footprint includes HKLM\SOFTWARE\Metaquest — Metaquest is the original Vector Networks parent brand) — SHA-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e,vector networks server-side post-install setup binary shipped in the vizor 2.5.2 msi_merge bundle (registry footprint includes hklm\software\metaquest — metaquest is the original vector networks parent brand) — sha-256 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 Veyon,veyon,veyon,Veyon,Name,RAT,true,https://veyon.io,Linux | Windows
+Vicarius vRx,vicarius vrx,vicarius_vrx,Vicarius vRx,Name,RMM,false,https://www.vicarius.io,Windows | Linux | macOS
 Visual Studio Dev Tunnel,visual studio dev tunnel,visual_studio_dev_tunnel,Visual Studio Dev Tunnel,Name,RAT,,https://learn.microsoft.com/azure/developer/dev-tunnels/,
 VIZOR,vizor,vizor,VIZOR,Name,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 "VIZOR / Vector Networks configuration utility (referenced as a VirusTotal ""referrer file"" for vector-networks.com — 1-2/74 detection rate, low-prevalence Vector-authored binary)","vizor / vector networks configuration utility (referenced as a virustotal ""referrer file"" for vector-networks.com — 1-2/74 detection rate, low-prevalence vector-authored binary)",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows

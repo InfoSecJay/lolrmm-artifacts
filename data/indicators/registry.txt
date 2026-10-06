@@ -2,6 +2,8 @@ HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\Software\Microsoft\Terminal Server Client\Default
 HKCU\Software\Microsoft\Terminal Server Client\Servers
 HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\BlackCryptAgent
+HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OverlordAgent
+HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OverlordAgent-*
 HKCU\Software\Microsoft\Windows\CurrentVersion\Run\RMMmaxAgentService
 HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb
 HKCU\SOFTWARE\Policies\Teleport\TeleportConnect
@@ -21,12 +23,15 @@ HKLM\SOFTWARE\Allocentra\Agent
 HKLM\SOFTWARE\ATERA Networks\*
 HKLM\SOFTWARE\ATERA Networks\AlphaAgent
 HKLM\SOFTWARE\Classes\.anydesk\shell\open\command
+HKLM\SOFTWARE\Classes\AnyDesk-*\shell\open\command
 HKLM\SOFTWARE\Classes\AnyDesk\shell\open\command
 HKLM\SOFTWARE\Classes\AppID\FWAService.exe
 HKLM\SOFTWARE\Classes\AppID\TrustConnectAgent.exe
+HKLM\SOFTWARE\Classes\CLSID\{6FF59A85-BC37-4CD4-C175-070CC4814204}
 HKLM\SOFTWARE\Classes\Installer\Products\08BB5F1461464FA46BB7AF632CD94B4C
 HKLM\SOFTWARE\Classes\{359C24F1-51B5-44CE-8F2D-2FBB1A0FE4EA}\FWA_GUI_Agent
 HKLM\SOFTWARE\Clients\Media\AnyDesk
+HKLM\SOFTWARE\Clients\Media\AnyDesk-*
 HKLM\SOFTWARE\Faronics
 HKLM\SOFTWARE\Faronics\Deep Freeze
 HKLM\SOFTWARE\Faronics\Faronics Core 3
@@ -60,6 +65,7 @@ HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\TrustConnectAgent_*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ControlR (*)
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\OpsBridgeAgent
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RustDesk
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TeamViewer\*
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TrustConnect Agent
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}
@@ -90,6 +96,7 @@ HKLM\SOFTWARE\WOW6432Node\GLPI-Agent\Installer\Version
 HKLM\SOFTWARE\WOW6432Node\LavaWall\Agent
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run\TiAgent
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk
+HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\AnyDesk-*
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\SimpleSetup
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Splashtop Software Updater\InstallRefCount
@@ -105,15 +112,20 @@ HKLM\SOFTWARE\Zecurit\Agent
 HKLM\SYSTEM\ControlSet001\Control\SafeBoot\Network\AmmyyAdmin
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AlphaAgent
 HKLM\SYSTEM\ControlSet\Services\EventLog\Application\AteraAgent
+HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Authentication Packages
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\OblianceAgent
+HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\ScreenConnect Client (*)
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\tinClientSessionManager-*
 HKLM\System\CurrentControlSet\Services\A1Agent
 HKLM\SYSTEM\CurrentControlSet\Services\AllocentraAgent
 HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx
 HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk
+HKLM\SYSTEM\CurrentControlSet\Services\AnyDesk-*
 HKLM\SYSTEM\CurrentControlSet\Services\AteraAgent
+HKLM\SYSTEM\CurrentControlSet\Services\Cloudflared
 HKLM\SYSTEM\CurrentControlSet\Services\DFServ
+HKLM\SYSTEM\CurrentControlSet\Services\EventLog\Application\Cloudflared
 HKLM\SYSTEM\CurrentControlSet\Services\FaronicsCoreAgent
 HKLM\SYSTEM\CurrentControlSet\Services\FIStudentSvc
 HKLM\SYSTEM\CurrentControlSet\Services\FleetDeck Agent Service
@@ -140,6 +152,8 @@ HKLM\SYSTEM\CurrentControlSet\Services\proxiport
 HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision
 HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent
 HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService
+HKLM\SYSTEM\CurrentControlSet\Services\RustDesk
+HKLM\System\CurrentControlSet\Services\ScreenConnect Client (*)\ImagePath
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
 HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*
