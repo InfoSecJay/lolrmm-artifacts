@@ -19,6 +19,7 @@ HKEY_LOCAL_MACHINE\WOW6432Node\Citrix\GoToMyPc\GuestInvite
 HKEY_USERS\<SID>\SOFTWARE\Citrix\GoToMyPc\FileTransfer\history
 HKLM\DRIVERS\DriverDatabase\DeviceIds\USBPRINT\AnyDesk
 HKLM\DRIVERS\DriverDatabase\DeviceIds\WSDPRINT\AnyDesk
+HKLM\Software\Action1\Agent
 HKLM\SOFTWARE\Allocentra\Agent
 HKLM\SOFTWARE\ATERA Networks\*
 HKLM\SOFTWARE\ATERA Networks\AlphaAgent

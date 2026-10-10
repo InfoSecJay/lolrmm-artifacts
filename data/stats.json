@@ -529,12 +529,12 @@
     "Endpoint monitoring and configuration management": 1
   },
   "artifact_counts": {
-    "disk": 817,
+    "disk": 820,
     "eventlog": 125,
-    "registry": 191,
-    "network_pairs": 1003,
+    "registry": 192,
+    "network_pairs": 1004,
     "other": 345,
-    "total": 2481
+    "total": 2486
   },
   "detection_count": 560,
   "tools_without_artifacts_count": 67,

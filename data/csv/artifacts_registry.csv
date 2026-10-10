@@ -2,6 +2,7 @@ slug,name,path,description
 action1,Action1,HKLM\System\CurrentControlSet\Services\A1Agent,Service installation event as result of Action1 installation.
 action1,Action1,HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps\action1_agent.exe,"Ensures that detailed crash information is available for analysis, which aids in maintaining the stability and reliability of the software."
 action1,Action1,HKLM\SOFTWARE\WOW6432Node\Action1,Storing its configuration settings and other relevant information
+action1,Action1,HKLM\Software\Action1\Agent,Action1 agent stores its CustomerId here
 allocentra,Allocentra,HKLM\SOFTWARE\Allocentra\Agent,Agent enrollment and connection configuration read and written by the inspected Windows code; values can contain credentials and must not be published.
 allocentra,Allocentra,HKLM\SYSTEM\CurrentControlSet\Services\AllocentraAgent,Windows service key inferred from the AllocentraAgent service configuration confirmed in decompiled installation code; not a runtime observation.
 alpemix,Alpemix,HKLM\SYSTEM\CurrentControlSet\Services\AlpemixSrvcx,N/A

@@ -324,6 +324,7 @@ HopToDesk.exe
 hsloader.exe
 HTTPGet.exe
 HTTPPush.exe
+hypersnap.exe
 I'm InTouch Go Installer.exe
 iadmin.exe
 id_tray.exe

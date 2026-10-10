@@ -68,6 +68,7 @@ generated:
     - "monitic primary agent binary (~50-60 mb .net executable, ..."
     - "netbird windows exe installer signed by netbird gmbh (for..."
     - "netbird windows msi installer (canonical naming pattern f..."
+    - "netsupport client32.exe renamed to hypersnap.exe in the p..."
     - "nezha agent (go binary, ~20 mb). maintains a persistent g..."
     - "nezha dashboard server binary (windows). hosts the web co..."
     - "pitunnel client binary; invokable as `pitunnel --port=<po..."

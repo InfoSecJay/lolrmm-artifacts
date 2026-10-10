@@ -389,6 +389,7 @@ Netop,netop,netop,Netop,Name,RMM,,https://netop.com/,Windows
 Netop Remote Control (aka Impero Connect),netop remote control (aka impero connect),netop_remote_control_(aka_impero_connect),Netop Remote Control (aka Impero Connect),Name,RMM,,https://netop.com/,
 Netop Remote Control (Impero Connect),netop remote control (impero connect),netop_remote_control_(impero_connect),Netop Remote Control (Impero Connect),Name,RMM,,https://netop.com/,
 Netreo,netreo,netreo,Netreo,Name,RMM,,https://docs.netreo.com/,
+"NetSupport client32.exe renamed to hypersnap.exe in the payload analyzed by Cisco Talos (report published September 8, 2026); PE OriginalFileName was not established","netsupport client32.exe renamed to hypersnap.exe in the payload analyzed by cisco talos (report published september 8, 2026); pe originalfilename was not established",netsupport_manager,NetSupport Manager,PEMetadata.Description,RMM,,https://www.netsupportmanager.com/,
 NetSupport Manager,netsupport manager,netsupport_manager,NetSupport Manager,Name,RMM,,https://www.netsupportmanager.com/,
 NetSupport Remote Command Prompt Stub,netsupport remote command prompt stub,netsupport_manager,NetSupport Manager,PEMetadata.Description,RMM,,https://www.netsupportmanager.com/,
 Neturo,neturo,neturo,Neturo,Name,RMM,,,Windows

@@ -610,6 +610,7 @@ netreo,Netreo,netreo.com,,Known remote domains
 netsupport_manager,NetSupport Manager,geo.netsupportsoftware.com,,Known remote domains
 netsupport_manager,NetSupport Manager,*.netsupportmanager.com,,Known remote domains
 netsupport_manager,NetSupport Manager,netsupportmanager.com,,Known remote domains
+netsupport_manager,NetSupport Manager,paternal-angrily.com,443,"Campaign-specific NetSupport HTTP Gateway from the ClearFake payload analyzed by Cisco Talos (report published September 8, 2026); not vendor infrastructure"
 neturo,Neturo,neturo.uplus.co.kr,,Known remote domains
 netviewer,Netviewer,,,Known remote domains
 netviewer_(gotomeet),Netviewer (GoToMeet),*.netviewer.com,,Known remote domains

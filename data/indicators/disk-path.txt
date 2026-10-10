@@ -662,6 +662,7 @@ C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\
 C:\rmm\agent.exe
 C:\rmm\config.json
 C:\temp\netlock rmm\installer\logs\*
+C:\Temp\ScreenConnect.ClientSetup.msi
 C:\temp_phw
 C:\temper\trm
 C:\Users\*\.cloudflared\*
@@ -715,9 +716,11 @@ C:\Users\*\AppData\Roaming\Teleport Connect\app_state.json
 C:\Users\*\AppData\Roaming\Teleport Connect\certs\tshd.crt
 C:\Users\*\AppData\Roaming\Teleport Connect\logs\*
 C:\Users\*\Documents\ChatLogs\*\*.htm
+C:\Users\*\Downloads\ScreenConnect.ClientSetup*.exe
 C:\Users\*\Videos\AnyDesk\*.anydesk
 C:\Users\<USER>\AppData\Local\Temp\_$Df\DFStdInstall.sib
 C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log
+C:\Users\ScreenConnect.ClientSetup*.exe
 C:\winchk.dat
 C:\Windows\<random-6-9-char>.exe
 C:\Windows\Action1\*
