@@ -118,6 +118,9 @@ opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\U
 opsbridge_agent,OpsBridge Agent,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\OpsBridge Agent,Task Scheduler cache entry for the OpsBridge Agent persistence task.
 overlord,Overlord,HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OverlordAgent-*,Autorun value observed by ANY.RUN as OverlordAgent-0ba8d3ca pointing to AppData\Roaming\Microsoft\DeviceSync\svchost.exe. Public source uses registry value prefix OverlordAgent- (plus legacy OverlordAgent).
 overlord,Overlord,HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\OverlordAgent,Legacy registry value name from public agent source.
+ping32,Ping32,HKLM\SOFTWARE\NSecsoft\Debug,Debug configuration observed with older signed NSecRTS builds; the LogUser value points to the debug log directory.
+ping32,Ping32,HKLM\SOFTWARE\NSecsoft\NSecAgent,Agent configuration namespace observed in newer signed NSecRTS builds.
+ping32,Ping32,HKLM\SOFTWARE\WOW6432Node\NSecsoft\NSecAgent,"32-bit agent configuration namespace observed on 64-bit Windows, including NxService settings."
 proxiport,ProxiPort,HKLM\SYSTEM\CurrentControlSet\Services\proxiport,Windows Service Control Manager key for the packaged endpoint agent.
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation

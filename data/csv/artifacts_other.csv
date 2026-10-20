@@ -212,6 +212,9 @@ opsbridge_agent,OpsBridge Agent,MSIProductCode,{1C453AC7-7551-48B1-B9CA-0D0FAE88
 opsbridge_agent,OpsBridge Agent,MSIUpgradeCode,{75C245E5-96D2-41D4-B398-8E329847088C}
 opsbridge_agent,OpsBridge Agent,ObservedSHA256,6f5c207de0e60fb54e34f439b21c8c317539c8c0262f76ad1c19cff0ecb76914
 opsbridge_agent,OpsBridge Agent,ObservedInstallerSHA256,2a0e94343f24039319e01636d1b30a368f43b598cff6d555fd14fa0f38236fb0
+ping32,Ping32,URL,http://cloud.nsecsoft.com:8987/ndns/<SUFFIX>
+ping32,Ping32,ServiceDisplayName,Windows Real-time Protection Service
+ping32,Ping32,Mutex,NSEC_TRAY_MTX_3BC4445E-02DB-41F6-8A37-1E7BE2387F45
 pitunnel,PiTunnel,URL,https://pitunnel.com/get/<TOKEN>
 pitunnel,PiTunnel,Other,Install command: curl -s https://pitunnel.com/get/<TOKEN> | sudo bash  (or wget -qO- ... | sudo bash) — high-signal hunt pattern (sudo-piped curl-to-bash from pitunnel.com)
 pitunnel,PiTunnel,Other,Persistent-tunnel command pattern: pitunnel --port=<PORT> --name=<NAME> --persist

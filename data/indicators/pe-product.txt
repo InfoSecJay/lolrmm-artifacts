@@ -10,6 +10,7 @@ Controlio
 ControlR.Agent
 ControlR.Agent.Installer
 ControlR.DesktopClient
+EPS
 Gorelo RMM
 Komari
 Komari Agent
@@ -30,3 +31,4 @@ SetMe
 TeamViewer
 Teleport
 Teleport Connect
+vRx Agent

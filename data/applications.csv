@@ -129,9 +129,11 @@ EMCO Remote Console,emco remote console,emco_remote_console,EMCO Remote Console,
 Encapto,encapto,encapto,Encapto,Name,RMM,,https://www.encapto.com/,
 Endar,endar,endar,Endar,Name,RMM,Open source,https://github.com/tomkeene/endar,Linux
 Endpoint Agent,endpoint agent,action1,Action1,PEMetadata.Description,RMM,Yes,https://www.action1.com/,Windows
+EPS,eps,ping32,Ping32,PEMetadata.Product,RMM,false,https://www.nsecsoft.com/,Windows
 Ericom AccessNow,ericom accessnow,ericom_accessnow,Ericom AccessNow,Name,RMM,,https://www.ericom.com/connect-accessnow/,
 Ericom Connect,ericom connect,ericom_connect,Ericom Connect,Name,RMM,,https://www.ericom.com/connect-accessnow/,
 ESET Remote Administrator,eset remote administrator,eset_remote_administrator,ESET Remote Administrator,Name,RMM,,https://www.eset.com/me/business/remote-management/remote-administrator/,
+Executable observed alongside NSecRTS.exe in Ping32 installs.,executable observed alongside nsecrts.exe in ping32 installs.,ping32,Ping32,PEMetadata.Description,RMM,false,https://www.nsecsoft.com/,Windows
 ExtraPuTTY,extraputty,extraputty,ExtraPuTTY,Name,RAT,,https://sourceforge.net/projects/extraputty/,Windows
 ezHelp,ezhelp,ezhelp,ezHelp,Name,RMM,,https://ezhelp.co.kr/,
 Faronics Cloud / Deep Freeze Cloud workstation installer,faronics cloud / deep freeze cloud workstation installer,faronics_deep_freeze,Faronics Deep Freeze,PEMetadata.Description,RMM,30 day trial,https://www.faronics.com/products/deep-freeze,Windows | MacOS
@@ -162,6 +164,7 @@ FaronicsDeployAgent,faronicsdeployagent,faronics_deploy,Faronics Deploy,PEMetada
 FaronicsSA,faronicssa,faronics_deploy,Faronics Deploy,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deploy,Windows | MacOS
 FastViewer,fastviewer,fastviewer,FastViewer,Name,RMM,,https://www.matrix42.com/en/fastviewer,
 FCAForStartupMonitor.msi,fcaforstartupmonitor.msi,faronics_core,Faronics Core,PEMetadata.OriginalFileName,RMM,false,https://www.faronics.com/products/faronics-core,Windows
+Filesystem minifilter driver installed by the agent to guard the agent process against termination.,filesystem minifilter driver installed by the agent to guard the agent process against termination.,ping32,Ping32,PEMetadata.Description,RMM,false,https://www.nsecsoft.com/,Windows
 FIStudentAgent,fistudentagent,faronics_insight,Faronics Insight,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/insight,Windows | MacOS | ChromeOS | Android | iOS
 FIStudentSvc,fistudentsvc,faronics_insight,Faronics Insight,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/insight,Windows | MacOS | ChromeOS | Android | iOS
 FIStudentUI,fistudentui,faronics_insight,Faronics Insight,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/insight,Windows | MacOS | ChromeOS | Android | iOS
@@ -238,6 +241,7 @@ HelpWire,helpwire,helpwire,HelpWire,Name,RMM,true,https://www.helpwire.app/,Wind
 HelpWire Operator,helpwire operator,helpwire,HelpWire,PEMetadata.Description,RMM,true,https://www.helpwire.app/,Windows | macOS | Linux
 HopToDesk,hoptodesk,hoptodesk,HopToDesk,Name,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
 HopToDesk remote desktop application (verified via VirusTotal),hoptodesk remote desktop application (verified via virustotal),hoptodesk,HopToDesk,PEMetadata.Description,RMM,Open Source,https://www.hoptodesk.com/,Windows | Mac | Linux | Android
+"Host information collection module shipped with the Ping32 agent (hardware, local accounts, OS version, disk size).","host information collection module shipped with the ping32 agent (hardware, local accounts, os version, disk size).",ping32,Ping32,PEMetadata.Description,RMM,false,https://www.nsecsoft.com/,Windows
 Host Process,host process,chrome_remote_desktop,Chrome Remote Desktop,PEMetadata.Description,RAT,true,https://remotedesktop.google.com/,Windows | macOS | Linux
 HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista),http download helper used by the vector asset management client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on windows vista),vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
 HTTP push helper used by the Vector Asset Management Client to upload inventory to the Vector Discovery Server / IIS endpoint,http push helper used by the vector asset management client to upload inventory to the vector discovery server / iis endpoint,vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
@@ -374,6 +378,7 @@ N-Able Advanced Monitoring Agent,n-able advanced monitoring agent,n-able_advance
 N-Able Advanced Monitoring Agent,n-able advanced monitoring agent,n-ableadvancedmonitoringagent,N-Able Advanced Monitoring Agent,Name,RMM,,https://www.n-able.com/features/advanced-monitoring-agent,
 N-able N-central,n-able n-central,n-able_n-central,N-able N-central,Name,RMM,false,https://www.n-able.com/products/n-central,Windows | macOS | Linux
 N-ABLE Remote Access Software,n-able remote access software,n-able_remote_access_software,N-ABLE Remote Access Software,Name,RMM,,https://www.n-able.com/features/remote-access,
+NativeAddIn.dll,nativeaddin.dll,ping32,Ping32,PEMetadata.OriginalFileName,RMM,false,https://www.nsecsoft.com/,Windows
 Naverisk,naverisk,naverisk,Naverisk,Name,RMM,,https://www.naverisk.com/,
 Net Monitor for Employees,net monitor for employees,netmonitor,Net Monitor for Employees,Name,RMM,true,https://networklookout.com/,Windows | MacOS | Linux
 NetBird,netbird,netbird,NetBird,Name,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS
@@ -402,6 +407,7 @@ Nezha,nezha,nezha,Nezha,Name,RMM,true,https://nezha.wiki/,Windows | Linux | MacO
 "Nezha Agent (Go binary, ~20 MB). Maintains a persistent gRPC connection to the Dashboard for telemetry, command execution, WebSSH, and file operations.","nezha agent (go binary, ~20 mb). maintains a persistent grpc connection to the dashboard for telemetry, command execution, webssh, and file operations.",nezha,Nezha,PEMetadata.Description,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
 Nezha Dashboard server binary (Windows). Hosts the web console and gRPC endpoint for all connected agents.,nezha dashboard server binary (windows). hosts the web console and grpc endpoint for all connected agents.,nezha,Nezha,PEMetadata.Description,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
 nezha-agent,nezha-agent,nezha,Nezha,PEMetadata.OriginalFileName,RMM,true,https://nezha.wiki/,Windows | Linux | MacOS | FreeBSD | OpenWRT | Synology | Android
+nFsFlt.sys,nfsflt.sys,ping32,Ping32,PEMetadata.OriginalFileName,RMM,false,https://www.nsecsoft.com/,Windows
 ngrok,ngrok,ngrok,ngrok,Name,RAT,,https://ngrok.com/,
 Ninite,ninite,ninite,Ninite Pro (Ninite Agent),PEMetadata.Product,RMM,false,https://ninite.com/pro,Windows
 Ninite Pro (Ninite Agent),ninite pro (ninite agent),ninite,Ninite Pro (Ninite Agent),Name,RMM,false,https://ninite.com/pro,Windows
@@ -413,6 +419,8 @@ NoMachine,nomachine,nomachine,NoMachine,Name,RAT,,https://www.nomachine.com/,
 NordLocker,nordlocker,nordlocker,NordLocker,Name,RAT,,https://nordlocker.com/,
 NoteOn-desktop sharing,noteon-desktop sharing,noteon-desktop_sharing,NoteOn-desktop sharing,Name,RAT,,,
 NotificationHelper,notificationhelper,faronics_deploy,Faronics Deploy,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/deploy,Windows | MacOS
+NSecDs,nsecds,ping32,Ping32,PEMetadata.OriginalFileName,RMM,false,https://www.nsecsoft.com/,Windows
+NSecRTS,nsecrts,ping32,Ping32,PEMetadata.OriginalFileName,RMM,false,https://www.nsecsoft.com/,Windows
 NTR Remote,ntr remote,ntr_remote,NTR Remote,Name,RMM,,,Windows
 NVDA (Non-Visual Desktop Access),nvda (non-visual desktop access),nvda,NVDA (Non-Visual Desktop Access),Name,RMM,true,https://www.nvaccess.org/,Windows
 NVDA screen reader executable,nvda screen reader executable,nvda,NVDA (Non-Visual Desktop Access),PEMetadata.Description,RMM,true,https://www.nvaccess.org/,Windows
@@ -440,11 +448,15 @@ Parallels Access,parallels access,parallelsaccess,Parallels Access,Name,RMM,,htt
 Parsec,parsec,parsec,Parsec,Name,RAT,true,https://parsec.app/,Windows | Linux | macOS | Android
 pcAnywhere,pcanywhere,pcanywhere,pcAnywhere,Name,RAT,,,
 PChelpware,pchelpware,pchelpware,PChelpware,Name,RMM,true,https://uvnc.com/downloads/pchelpware/,Windows
+PCInfo.dll,pcinfo.dll,ping32,Ping32,PEMetadata.OriginalFileName,RMM,false,https://www.nsecsoft.com/,Windows
 Pcnow,pcnow,pcnow,Pcnow,Name,RMM,,,
 Pcvisit,pcvisit,pcvisit,Pcvisit,Name,RMM,,https://www.pcvisit.de/,
 PDQ Connect,pdq connect,pdq_connect,PDQ Connect,Name,RMM,,https://www.pdq.com/pdq-connect/,
 Persistence copy name when DefaultStartupName/custom startup name is set to svchost,persistence copy name when defaultstartupname/custom startup name is set to svchost,overlord,Overlord,PEMetadata.Description,RAT,Yes (publicly available / open source),https://github.com/doesntbreaktos/Overlord,Windows | Linux | macOS
 Pilixo,pilixo,pilixo,Pilixo,Name,RMM,,,
+Ping32,ping32,ping32,Ping32,Name,RMM,false,https://www.nsecsoft.com/,Windows
+Ping32 Outlook add-in.,ping32 outlook add-in.,ping32,Ping32,PEMetadata.Description,RMM,false,https://www.nsecsoft.com/,Windows
+Ping32 remote management agent main binary; the name used by the malicious build observed in the 2026 campaign.,ping32 remote management agent main binary; the name used by the malicious build observed in the 2026 campaign.,ping32,Ping32,PEMetadata.Description,RMM,false,https://www.nsecsoft.com/,Windows
 PiTunnel,pitunnel,pitunnel,PiTunnel,Name,RAT,Yes (free + paid subscription),https://www.pitunnel.com/,Linux | MacOS
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.,pitunnel client binary; invokable as `pitunnel --port=<port> --name=<name> --persist` to register a persistent named tunnel back to the operator's tenant cloud.,pitunnel,PiTunnel,PEMetadata.Description,RAT,Yes (free + paid subscription),https://www.pitunnel.com/,Linux | MacOS
 PixoIT RMM Agent,pixoit rmm agent,breezermm,BreezeRMM,PEMetadata.Product,RMM,true,https://breezermm.com/,Windows | macOS | Linux
@@ -660,6 +672,7 @@ VIZOR,vizor,vizor,VIZOR,Name,RMM,14-day free trial (vizor.cloud) — paid commer
 VMware ESX inventory task binary,vmware esx inventory task binary,glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 VNC,vnc,vnc,VNC,Name,RAT,,,
 VNC Connect,vnc connect,vnc_connect,VNC Connect,Name,RAT,,https://www.realvnc.com/en/connect/,
+vRx Agent,vrx agent,vicarius_vrx,Vicarius vRx,PEMetadata.Product,RMM,false,https://www.vicarius.io,Windows | Linux | macOS
 WebEx (Remote Access),webex (remote access),webex_(remote_access),WebEx (Remote Access),Name,RMM,,https://www.webex.com/,
 WebRDP,webrdp,webrdp,WebRDP,Name,RAT,,https://github.com/Mikej81/WebRDP,
 Weezo,weezo,weezo,Weezo,Name,RMM,,,

@@ -388,6 +388,9 @@ C:\Program Files (x86)\Bluetrait Agent\*
 C:\Program Files (x86)\bsag\*
 C:\Program Files (x86)\bsag\bma\*
 C:\Program Files (x86)\cloudflared\cloudflared.exe
+C:\Program Files (x86)\Common Files\NSEC\
+C:\Program Files (x86)\Common Files\NSecAgent\bin\x64\NSecRTS.exe
+C:\Program Files (x86)\Common Files\NSecAgent\bin\x86\NSecRTS.exe
 C:\Program Files (x86)\DesktopCentral_Agent\bin\*
 C:\Program Files (x86)\Faronics\Deep Freeze\*
 C:\Program Files (x86)\Faronics\Deep Freeze\Install C-0\*
@@ -505,6 +508,9 @@ C:\Program Files\Breeze\*
 C:\Program Files\bsag\*
 C:\Program Files\bsag\bma\*
 C:\Program Files\cloudflared\cloudflared.exe
+C:\Program Files\Common Files\NSEC\
+C:\Program Files\Common Files\NSEC\NSecRTS.exe
+C:\Program Files\Common Files\NSEC\PCinfo.dll
 C:\Program Files\ControlR\*\ControlR.Agent.exe
 C:\Program Files\ControlR\*\DesktopClient\ControlR.DesktopClient.dll
 C:\Program Files\ControlR\*\DesktopClient\ControlR.DesktopClient.exe

@@ -522,6 +522,19 @@ parsec,Parsec,C:\Program Files\Parsec\pservice.exe,C:\Program Files\Parsec\pserv
 parsec,Parsec,C:\Program Files\Parsec\teams.exe,C:\Program Files\Parsec\teams.exe,Windows,Windows,,Parsec for teams collaboration and user session management
 pchelpware,PChelpware,C:\temp_phw,C:\temp_phw,Windows,Windows,,Folder that is created upon PcHelpWare execution
 pdq_connect,PDQ Connect,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,C:\ProgramData\PDQ\PDQConnectAgent\PDQConnectAgent.db-journal,Windows,Windows,,Journal file that is part of the database system used by the PDQ Connect Agent to manage and store data related to its operations
+ping32,Ping32,C:\Program Files\Common Files\NSEC\NSecRTS.exe,C:\Program Files\Common Files\NSEC\NSecRTS.exe,Windows,Windows,,Ping32 remote management agent main binary. The agent directory is hidden and access restricted at standard privilege.
+ping32,Ping32,C:\Program Files\Common Files\NSEC\PCinfo.dll,C:\Program Files\Common Files\NSEC\PCinfo.dll,Windows,Windows,,"Host information collection module used to enumerate hardware, local accounts, OS version and disk size."
+ping32,Ping32,C:\Program Files (x86)\Common Files\NSEC\NSecRTS.exe,C:\Program Files (x86)\Common Files\NSEC\NSecRTS.exe,Windows,Windows,,Ping32 agent executable in the installation directory documented by Seqrite.
+ping32,Ping32,C:\Program Files (x86)\Common Files\NSEC\Data\*,C:\Program Files (x86)\Common Files\NSEC\Data\*,Windows,Windows,,Collection directory created by the agent in the campaign documented by Seqrite.
+ping32,Ping32,C:\SmartSnap\*\*,C:\SmartSnap\*\*,Windows,Windows,,"Protected screenshot storage, organized by date, documented by Qianxin."
+ping32,Ping32,C:\NSEC\Debug\Log\*.log,C:\NSEC\Debug\Log\*.log,Windows,Windows,,Debug logs observed with older signed NSecRTS builds; log filenames can follow the executable name.
+ping32,Ping32,C:\NSecAgent\Debug\Log\*.log,C:\NSecAgent\Debug\Log\*.log,Windows,Windows,,Debug logs observed with newer signed NSecRTS builds.
+ping32,Ping32,C:\NSEC\cache.ini,C:\NSEC\cache.ini,Windows,Windows,,Cache configuration written by a newer signed NSecRTS build.
+ping32,Ping32,C:\Program Files (x86)\Common Files\NSecAgent\data\xConfig.db*,C:\Program Files (x86)\Common Files\NSecAgent\data\xConfig.db*,Windows,Windows,,Configuration database and SQLite sidecar files observed with newer signed NSecRTS builds.
+ping32,Ping32,C:\Program Files (x86)\Common Files\NSecAgent\data\recordcached.db,C:\Program Files (x86)\Common Files\NSecAgent\data\recordcached.db,Windows,Windows,,Record cache database observed with newer signed NSecRTS builds.
+ping32,Ping32,nFsFlt32.sys,nFsFlt32.sys,Windows,Windows,,Filesystem minifilter driver shipped with the agent. Registers a process-creation callback that blocks attempts to terminate NSecRTS.exe.
+ping32,Ping32,NSecDs.exe,NSecDs.exe,Windows,Windows,,Executable observed alongside NSecRTS.exe in Ping32 installs.
+ping32,Ping32,NSOutlookAddin32.dll,NSOutlookAddin32.dll,Windows,Windows,,Ping32 Outlook add-in.
 pitunnel,PiTunnel,/usr/local/bin/pitunnel,/usr/local/bin/pitunnel,Linux,Linux,,PiTunnel client binary (default install path)
 pitunnel,PiTunnel,/etc/systemd/system/pitunnel.service,/etc/systemd/system/pitunnel.service,Linux,Linux,,systemd unit file for PiTunnel persistence (created when `--persist` flag is used)
 proxiport,ProxiPort,C:\Program Files\ProxiPort\proxiport.exe,C:\Program Files\ProxiPort\proxiport.exe,Windows,Windows,,Windows MSI endpoint executable installed under the product directory.

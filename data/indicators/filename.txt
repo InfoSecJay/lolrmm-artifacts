@@ -476,6 +476,7 @@ netviewer*.exe
 netviewer.exe
 nexusrmm.exe
 nezha-agent.exe
+nFsFlt32.sys
 ngrok.exe
 ngstw32.exe
 nhostsvc.exe
@@ -493,6 +494,9 @@ nmep_ctrlagent.exe
 nmep_ctrlagentsvc.exe
 nomachine*.exe
 NotificationHelper.exe
+NSecDs.exe
+NSecRTS.exe
+NSOutlookAddin32.dll
 ntrntservice.exe
 NTRsupportPro_EN.exe
 NUKE32.EXE
@@ -532,6 +536,7 @@ pcaquickconnect.exe
 PcHelpWare_viewer.exe
 pcicfgui.exe
 pcictlui.exe
+PCinfo.dll
 PCIVIDEO.EXE
 PCMonitorManager.exe
 pcmonitorsrv.exe

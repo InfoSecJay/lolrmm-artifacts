@@ -226,6 +226,7 @@ pcnow,Pcnow,RMM,True,True,False,False,False,False,False,True,False,True,capabili
 pcvisit,Pcvisit,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 pdq_connect,PDQ Connect,RMM,True,True,False,False,True,False,False,True,False,True,capabilities | supported_os | eventlog | registry | other
 pilixo,Pilixo,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+ping32,Ping32,RMM,True,True,True,True,True,True,True,True,True,True,
 pitunnel,PiTunnel,RAT,True,True,True,True,True,False,False,True,True,True,eventlog | registry
 pocket_cloud_(wyse),Pocket Cloud (Wyse),RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 pocket_controller,Pocket Controller,RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other

@@ -256,11 +256,18 @@ C:\LUCLIENT.MOD
 C:\luhboot.bat
 C:\nezha\config.yml
 C:\nezha\nezha-agent.exe
+C:\NSEC\cache.ini
+C:\NSEC\Debug\Log\*.log
+C:\NSecAgent\Debug\Log\*.log
 C:\Program Files (x86)\Bluetrait Agent\Bluetrait MSP Agent.exe
 C:\Program Files (x86)\Bluetrait Agent\BluetraitUserAgent.exe
 C:\Program Files (x86)\Bluetrait Agent\config.db
 C:\Program Files (x86)\Bluetrait Agent\config.json
 C:\Program Files (x86)\Bluetrait Agent\libraries\paexec.exe
+C:\Program Files (x86)\Common Files\NSEC\Data\*
+C:\Program Files (x86)\Common Files\NSEC\NSecRTS.exe
+C:\Program Files (x86)\Common Files\NSecAgent\data\recordcached.db
+C:\Program Files (x86)\Common Files\NSecAgent\data\xConfig.db*
 C:\Program Files (x86)\Faronics\Deep Freeze\DFServ.exe
 C:\Program Files (x86)\Faronics\Deep Freeze\DFServEx.exe
 C:\Program Files (x86)\Faronics\Deep Freeze\DFWks.exe
@@ -449,6 +456,8 @@ C:\Program Files\Breeze\breeze-user-helper.exe
 C:\Program Files\Breeze\breeze-watchdog.exe
 C:\Program Files\Breeze\scripts\install\install-windows.ps1
 C:\Program Files\bsag\bma\bma.exe
+C:\Program Files\Common Files\NSEC\NSecRTS.exe
+C:\Program Files\Common Files\NSEC\PCinfo.dll
 C:\Program Files\ControlR\*\ControlR.Agent.exe
 C:\Program Files\Faronics\Faronics Core\Workstation Agent\CoreAgentService.exe
 C:\Program Files\Faronics\Faronics Core\Workstation Agent\FaronicsCoreAgent.exe
@@ -630,6 +639,7 @@ C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\rundll32.exe.confi
 C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\
 C:\rmm\agent.exe
 C:\rmm\config.json
+C:\SmartSnap\*\*
 C:\temp\netlock rmm\installer\logs\*
 C:\Temp\ScreenConnect.ClientSetup.msi
 C:\temp_phw
@@ -763,7 +773,10 @@ ITAgentSender.aiui
 libeay32.dll
 loclx.exe
 nexusrmm.exe
+nFsFlt32.sys
 NiniteUpdateSummary.log
+NSecDs.exe
+NSOutlookAddin32.dll
 OpenDesk-RMM-Agent.exe
 opendesk-rmm-agent.exe
 PixoIT-agent.exe

@@ -337,6 +337,10 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pdq_connect_n
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pdq_connect_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pilixo_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pilixo_processes_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_files_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_network_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_processes_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_registry_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_cloud__wyse__processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller__soti_xsight__network_sigma.yml

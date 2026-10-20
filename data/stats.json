@@ -1,11 +1,11 @@
 {
-  "tool_count": 358,
+  "tool_count": 359,
   "by_category": {
-    "RMM": 261,
+    "RMM": 262,
     "RAT": 97
   },
   "by_os": {
-    "Windows": 145,
+    "Windows": 146,
     "MacOS": 70,
     "Linux": 66,
     "Android": 19,
@@ -395,6 +395,13 @@
     "Web / Electron operator console": 1,
     "Optional tunneling via operator-controlled services (e.g. ngrok)": 1,
     "Remote Desktop Control": 1,
+    "Live screen monitoring and screen recording": 1,
+    "Employee web-browsing activity monitoring": 1,
+    "Network traffic monitoring": 1,
+    "File and document backup / centralisation": 1,
+    "Software deployment and file push to endpoints": 1,
+    "Access control policy enforcement": 1,
+    "Host inventory collection (hardware, local accounts, OS version, disk size)": 1,
     "Persistent named tunnels (`--persist` flag) that auto-reconnect on reboot": 1,
     "TCP exposure of arbitrary local ports (SSH/RDP/VNC/HTTP) through the operator tenant": 1,
     "Custom subdomain routing under `*.pitunnel.com`": 1,
@@ -529,14 +536,14 @@
     "Endpoint monitoring and configuration management": 1
   },
   "artifact_counts": {
-    "disk": 820,
-    "eventlog": 125,
-    "registry": 192,
-    "network_pairs": 1004,
-    "other": 345,
-    "total": 2486
+    "disk": 833,
+    "eventlog": 126,
+    "registry": 195,
+    "network_pairs": 1005,
+    "other": 348,
+    "total": 2507
   },
-  "detection_count": 560,
+  "detection_count": 564,
   "tools_without_artifacts_count": 67,
   "tools_without_detections_count": 84
 }

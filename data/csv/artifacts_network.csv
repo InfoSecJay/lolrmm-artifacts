@@ -702,6 +702,9 @@ pdq_connect,PDQ Connect,pdqinstallers.*.r2.cloudflarestorage.com,,Known remote d
 pilixo,Pilixo,pilixo.com,,Known remote domains
 pilixo,Pilixo,download.pilixo.com,,Known remote domains
 pilixo,Pilixo,*.pilixo.com,,Known remote domains
+ping32,Ping32,cloud.nsecsoft.com,8987,"Ping32 agents are pointed at an operator-supplied server, so there is no fixed vendor C2.
+The vendor operates a cloud service on port 8987 that agents query to resolve the
+address of their server."
 pitunnel,PiTunnel,pitunnel.com,443,PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.
 pitunnel,PiTunnel,www.pitunnel.com,443,PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.
 pitunnel,PiTunnel,*.pitunnel.com,443,PiTunnel control plane and per-tenant relay endpoints. Operator's named tunnels publish under `*.pitunnel.com` subdomains.

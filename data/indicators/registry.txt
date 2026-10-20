@@ -78,6 +78,8 @@ HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{A40A237D-C090-4C05-858
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F0076285-D0E2-4B49-92BD-25E0B7B27DF6}
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Remote Session/Operational
 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Splashtop-Splashtop Streamer-Status/Operational
+HKLM\SOFTWARE\NSecsoft\Debug
+HKLM\SOFTWARE\NSecsoft\NSecAgent
 HKLM\SOFTWARE\OblianceAgent
 HKLM\SOFTWARE\Policies\Teleport\TeleportConnect
 HKLM\SOFTWARE\RdClient
@@ -105,6 +107,7 @@ HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{*}
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{04821777-1FD1-4C1A-AC4D-BF5D4D53C34C}
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}
 HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\Windows Error Reporting\LocalDumps\action1_agent.exe
+HKLM\SOFTWARE\WOW6432Node\NSecsoft\NSecAgent
 HKLM\SOFTWARE\WOW6432Node\RG Systemes\RG Supervision
 HKLM\SOFTWARE\WOW6432Node\Splashtop Inc.\Splashtop Remote Server\ClientInfo\*
 HKLM\SOFTWARE\WOW6432Node\TiFLUX\*

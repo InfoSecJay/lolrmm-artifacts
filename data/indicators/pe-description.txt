@@ -34,6 +34,7 @@ Desktop client for allowing an IT administrator to provide remote support.
 Duet Display executable (observed in threat intelligence)
 Duet Display installer (verified via VirusTotal)
 Endpoint Agent
+Executable observed alongside NSecRTS.exe in Ping32 installs.
 Faronics Cloud / Deep Freeze Cloud workstation installer
 Faronics Core Agent (workstation)
 Faronics Core Agent service host
@@ -53,6 +54,7 @@ Faronics Insight unified installer
 Faronics Remote Control server component
 Faronics Standalone helper
 Faronics Storage Spaces installer
+Filesystem minifilter driver installed by the agent to guard the agent process against termination.
 FleetDeck agent DLL component (reported in GitHub issue)
 FleetDeck agent installer (verified via official documentation)
 FleetDeck agent service executable (verified via official documentation)
@@ -80,6 +82,7 @@ Gorelo RMM
 GxM RMM endpoint agent — authorized remote monitoring and support for managed clients (self-identified in assembly metadata)
 HelpWire Operator
 HopToDesk remote desktop application (verified via VirusTotal)
+Host information collection module shipped with the Ping32 agent (hardware, local accounts, OS version, disk size).
 Host Process
 HTTP download helper used by the Vector Asset Management Client to retrieve content (referenced in the v5.80 release notes as occasionally requesting attention after reboot on Windows Vista)
 HTTP push helper used by the Vector Asset Management Client to upload inventory to the Vector Discovery Server / IIS endpoint
@@ -141,6 +144,8 @@ OpenDesk RMM Agent - Gerenciamento Remoto
 OpsBridge Endpoint Service
 Parsec
 Persistence copy name when DefaultStartupName/custom startup name is set to svchost
+Ping32 Outlook add-in.
+Ping32 remote management agent main binary; the name used by the malicious build observed in the 2026 campaign.
 PiTunnel client binary; invokable as `pitunnel --port=<PORT> --name=<NAME> --persist` to register a persistent named tunnel back to the operator's tenant cloud.
 PixoIT RMM Agent
 ProxiPort client for Windows
@@ -211,6 +216,7 @@ Vector Networks server-side post-install setup binary shipped in the VIZOR 2.5.2
 VIZOR / Vector Networks configuration utility (referenced as a VirusTotal "referrer file" for vector-networks.com — 1-2/74 detection rate, low-prevalence Vector-authored binary)
 VIZOR ServiceDesk mail / email-integration component (Mq prefix = MetaQuest, the original Vector Networks codebase namespace; referenced as a vector-networks.com VirusTotal "referrer file" with 1-2/74 detection rate)
 VMware ESX inventory task binary
+vRx Agent
 Windows distribution filename specified by the repository deployment script; no PE metadata was inspected.
 Windows filename configured by the repository PyInstaller specification; Linux and macOS builds use sentinel-agent.
 Windows MSI source names this endpoint service executable; no PE metadata was inspected.

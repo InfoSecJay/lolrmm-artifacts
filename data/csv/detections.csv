@@ -351,6 +351,10 @@ pdq_connect,PDQ Connect,https://github.com/magicsword-io/LOLRMM/blob/main/detect
 pdq_connect,PDQ Connect,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pdq_connect_processes_sigma.yml,Detects potential processes activity of PDQ Connect RMM tool
 pilixo,Pilixo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pilixo_network_sigma.yml,Detects potential network activity of Pilixo RMM tool
 pilixo,Pilixo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pilixo_processes_sigma.yml,Detects potential processes activity of Pilixo RMM tool
+ping32,Ping32,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_registry_sigma.yml,Detects potential registry activity of Ping32 RMM tool
+ping32,Ping32,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_network_sigma.yml,Detects potential network activity of Ping32 RMM tool
+ping32,Ping32,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_files_sigma.yml,Detects potential files activity of Ping32 RMM tool
+ping32,Ping32,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/ping32_processes_sigma.yml,Detects potential processes activity of Ping32 RMM tool
 pitunnel,PiTunnel,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pitunnel_network_sigma.yml,Detects potential network activity of PiTunnel RMM tool
 pocket_cloud_(wyse),Pocket Cloud (Wyse),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_cloud__wyse__processes_sigma.yml,Detects potential processes activity of Pocket Cloud (Wyse) RMM tool
 pocket_controller,Pocket Controller,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/pocket_controller_processes_sigma.yml,Detects potential processes activity of Pocket Controller RMM tool
