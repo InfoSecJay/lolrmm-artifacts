@@ -1,13 +1,13 @@
 {
-  "tool_count": 359,
+  "tool_count": 360,
   "by_category": {
-    "RMM": 262,
+    "RMM": 263,
     "RAT": 97
   },
   "by_os": {
-    "Windows": 146,
-    "MacOS": 70,
-    "Linux": 66,
+    "Windows": 147,
+    "MacOS": 71,
+    "Linux": 67,
     "Android": 19,
     "iOS": 13,
     "ChromeOS": 3,
@@ -380,7 +380,7 @@
     "Package deployment and settings management": 1,
     "Self-hosted management console and agent workers": 1,
     "Remote management": 1,
-    "Remote terminal and command execution": 1,
+    "Remote terminal and command execution": 2,
     "PowerShell script execution": 1,
     "File upload and download": 1,
     "Remote screenshots": 1,
@@ -530,20 +530,23 @@
     "Embedded HTTP/HTTPS upload to operator-configured Vector Discovery Server (default 443/HTTPS, configurable)": 1,
     "Active Directory connector — automated AD account provisioning, group membership changes, password resets, account creation/disable/delete (VIZOR ServiceDesk feature, executed server-side from the Vector Discovery Server)": 1,
     "Self-hosted on-premise OR vendor-hosted cloud (vizor.cloud) — agent endpoint is operator-configured, not a fixed vendor cloud": 1,
+    "Remote file access and editing": 1,
+    "Remote extension execution": 1,
+    "Persistent tunnel operation using platform-specific user startup mechanisms": 1,
     "Attended and unattended remote desktop access": 1,
     "Remote registry, service, and process management on Windows": 1,
     "Operating-system and application patch management": 1,
     "Endpoint monitoring and configuration management": 1
   },
   "artifact_counts": {
-    "disk": 833,
+    "disk": 834,
     "eventlog": 126,
     "registry": 195,
-    "network_pairs": 1005,
-    "other": 348,
-    "total": 2507
+    "network_pairs": 1006,
+    "other": 357,
+    "total": 2518
   },
-  "detection_count": 564,
+  "detection_count": 565,
   "tools_without_artifacts_count": 67,
   "tools_without_detections_count": 84
 }

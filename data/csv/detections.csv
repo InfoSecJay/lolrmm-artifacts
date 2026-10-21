@@ -546,6 +546,7 @@ vizor,VIZOR,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/v
 vizor,VIZOR,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vizor_registry_sigma.yml,Detects potential registry activity of VIZOR RMM tool
 vnc,VNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vnc_network_sigma.yml,Detects potential network activity of VNC RMM tool
 vnc,VNC,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/vnc_processes_sigma.yml,Detects potential processes activity of VNC RMM tool
+vscode_remote_tunnels,VS Code Remote Tunnels,https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_vscode_tunnel_service_install.yml,"Detects the Windows tunnel service's internal-run command with tunnel-service.log; covers service execution, not the initial install command, and can match legitimate use"
 webrdp,WebRDP,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/webrdp_network_sigma.yml,Detects potential network activity of WebRDP RMM tool
 webrdp,WebRDP,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/webrdp_processes_sigma.yml,Detects potential processes activity of WebRDP RMM tool
 weezo,Weezo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/weezo_network_sigma.yml,Detects potential network activity of Weezo RMM tool

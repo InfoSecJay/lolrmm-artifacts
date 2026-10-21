@@ -329,6 +329,15 @@ vizor,VIZOR,Other,"Remote client install: uses ADMIN$ share + local administrato
 vizor,VIZOR,Other,"Code-signing publisher: ""Vector Networks"" / ""Vector Networks Limited"" (per Windows file database listings for clboot32.exe — original product name ""LANutil32 Suite"")"
 vizor,VIZOR,Other,"VirusTotal — VIZOR 2.5.2 MSI_Merge bundle Setup.exe SHA-256: 316d76102bdb089ed48188d2b95f6dbf9dc6ae070775d2b4404f486db87aa61e (1/67 detection, low-prevalence Vector Networks-authored binary, registry footprint includes HKLM\SOFTWARE\Metaquest)"
 vizor,VIZOR,Other,"VirusTotal — Vector Networks LANutil32 / Vector Asset Management CLBOOTnn.EXE SHA-256: 435519ff10b0cfa569296dcd5dcbf470bfe5aafbe0471fcf99015a24691c0893 (1/72 detection; sandbox observed spawning C:\winchk32.exe, C:\cldist32.exe, C:\lusmbios16.exe and C:\luhboot.bat)"
+vscode_remote_tunnels,VS Code Remote Tunnels,ObservedCommandLine,"""CSIDL_WINDOWS\debug\code-insiders.exe"" tunnel service install --accept-server-license-terms"
+vscode_remote_tunnels,VS Code Remote Tunnels,CommandLine,code tunnel --accept-server-license-terms
+vscode_remote_tunnels,VS Code Remote Tunnels,CommandLine,code tunnel service install --accept-server-license-terms
+vscode_remote_tunnels,VS Code Remote Tunnels,CommandLine,code-insiders tunnel service install --accept-server-license-terms
+vscode_remote_tunnels,VS Code Remote Tunnels,BinaryNames,code.exe and code-insiders.exe (standalone Windows CLI); code-tunnel.exe (CLI bundled with VS Code Desktop). Names alone do not establish tunnel use.
+vscode_remote_tunnels,VS Code Remote Tunnels,WindowsPersistence,"The upstream CLI writes a value under HKCU\Software\Microsoft\Windows\CurrentVersion\Run, named from the build's PRODUCT_NAME_LONG followed by "" Tunnel"". Its command runs tunnel service internal-run with --log-to-file pointing to tunnel-service.log in the CLI data directory. This is per-user startup, not a Windows Service Control Manager service."
+vscode_remote_tunnels,VS Code Remote Tunnels,LinuxPersistence,"The upstream CLI writes <APPLICATION_NAME>-tunnel.service in the CLI data directory and links, enables, and starts it through the user systemd manager. Availability after logout depends on user-session configuration such as lingering."
+vscode_remote_tunnels,VS Code Remote Tunnels,MacOSPersistence,"The upstream CLI writes ~/com.visualstudio.<APPLICATION_NAME>.tunnel.plist and loads it with launchctl; the plist uses KeepAlive and the Aqua session type. It is written directly in the user's home directory, not Library/LaunchAgents."
+vscode_remote_tunnels,VS Code Remote Tunnels,ServiceLog,"Windows and macOS use tunnel-service.log in the CLI data directory; Linux exposes logs through journalctl --user. The CLI data directory is configurable, and product/build names affect default paths and service identifiers."
 zecurit,Zecurit,ObservedServiceName,Zecurit Agent
 zecurit,Zecurit,LinuxSystemdUnit,zecurit_agent.service
 zecurit,Zecurit,MacOSLaunchDaemonLabel,com.zecurit.service

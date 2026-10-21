@@ -980,6 +980,7 @@ vizor,VIZOR,www.metaquest.com,443,"Vector Networks legacy Metaquest brand domain
 vizor,VIZOR,downloads.vector-networks.com,443,"Vector Networks downloads / support distribution host — serves the VIZOR MSI bundles, version directories (2.5.2, 2.50.2), Update Files.zip, VNConfig utility ZIPs and connector bundles. Operators (and threat actors emulating an operator) can pull the Vector Asset Management Client install media directly from these directories."
 vizor,VIZOR,www.vector-networks.com,443,"Vector Networks downloads / support distribution host — serves the VIZOR MSI bundles, version directories (2.5.2, 2.50.2), Update Files.zip, VNConfig utility ZIPs and connector bundles. Operators (and threat actors emulating an operator) can pull the Vector Asset Management Client install media directly from these directories."
 vnc,VNC,user_managed,,Known remote domains
+vscode_remote_tunnels,VS Code Remote Tunnels,global.rel.tunnels.api.visualstudio.com,,"Microsoft dev tunnels control endpoint documented by VS Code; shared legitimate infrastructure, not a dedicated malicious endpoint or proof of VS Code tunnel abuse"
 webrdp,WebRDP,user_managed,,Known remote domains
 weezo,Weezo,*.weezo.me,,Known remote domains
 weezo,Weezo,weezo.net,,Known remote domains

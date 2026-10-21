@@ -736,6 +736,7 @@ C:\Windows\Action1\action1_agent.exe
 C:\Windows\Action1\action1_log_*.log
 C:\Windows\Action1\rule_data\*
 C:\Windows\Action1\scripts\*
+C:\Windows\debug\code-insiders.exe
 C:\Windows\Installer\{41F5BB80-6416-4AF4-B67B-FA36C29DB4C4}\ARPPRODUCTICON.exe
 C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
 C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\config\RustDesk2.toml

@@ -673,6 +673,7 @@ VMware ESX inventory task binary,vmware esx inventory task binary,glpi,GLPI Agen
 VNC,vnc,vnc,VNC,Name,RAT,,,
 VNC Connect,vnc connect,vnc_connect,VNC Connect,Name,RAT,,https://www.realvnc.com/en/connect/,
 vRx Agent,vrx agent,vicarius_vrx,Vicarius vRx,PEMetadata.Product,RMM,false,https://www.vicarius.io,Windows | Linux | macOS
+VS Code Remote Tunnels,vs code remote tunnels,vscode_remote_tunnels,VS Code Remote Tunnels,Name,RMM,Yes,https://code.visualstudio.com/docs/remote/tunnels,Windows | Linux | macOS
 WebEx (Remote Access),webex (remote access),webex_(remote_access),WebEx (Remote Access),Name,RMM,,https://www.webex.com/,
 WebRDP,webrdp,webrdp,WebRDP,Name,RAT,,https://github.com/Mikej81/WebRDP,
 Weezo,weezo,weezo,Weezo,Name,RMM,,,

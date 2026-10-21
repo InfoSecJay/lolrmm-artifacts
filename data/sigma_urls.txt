@@ -11,6 +11,7 @@ https://github.com/SigmaHQ/sigma/blob/ca24243a6e3f94353a54176f83c4c3b7f579224a/r
 https://github.com/SigmaHQ/sigma/blob/ca24243a6e3f94353a54176f83c4c3b7f579224a/rules/windows/process_creation/proc_creation_win_remote_access_tools_anydesk_piped_password_via_cli.yml
 https://github.com/SigmaHQ/sigma/blob/ca24243a6e3f94353a54176f83c4c3b7f579224a/rules/windows/process_creation/proc_creation_win_remote_access_tools_anydesk_susp_exec.yml
 https://github.com/SigmaHQ/sigma/blob/ca24243a6e3f94353a54176f83c4c3b7f579224a/rules/windows/process_creation/proc_creation_win_remote_access_tools_screenconnect.yml
+https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_vscode_tunnel_service_install.yml
 https://github.com/The-DFIR-Report/Sigma-Rules/blob/d67407d357ad32b247e2a303abc5a38bb30fd576/rules/windows/process_creation/proc_creation_win_ateraagent_malicious_installations.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/247ithelp.com__connectwise__network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/247ithelp.com__connectwise__processes_sigma.yml

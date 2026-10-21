@@ -343,6 +343,7 @@ visual_studio_dev_tunnel,Visual Studio Dev Tunnel,RAT,True,False,False,False,Fal
 vizor,VIZOR,RMM,True,True,True,True,True,True,True,True,True,True,
 vnc,VNC,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 vnc_connect,VNC Connect,RAT,True,True,False,False,False,False,False,False,False,False,capabilities | supported_os | disk | eventlog | registry | network | other | detections
+vscode_remote_tunnels,VS Code Remote Tunnels,RMM,True,False,True,True,True,False,False,True,True,True,installation_paths | eventlog | registry
 webex_(remote_access),WebEx (Remote Access),RMM,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 webrdp,WebRDP,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 weezo,Weezo,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other

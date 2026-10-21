@@ -810,6 +810,7 @@ vizor,VIZOR,C:\luhboot.bat,C:\luhboot.bat,Windows,Windows,,LANutil32 Suite boot-
 vizor,VIZOR,C:\winchk.dat,C:\winchk.dat,Windows,Windows,,Vector Asset Management Windows inventory data file consumed by winchk32.exe (observed at C:\winchk.dat in VirusTotal Cuckoofork sandbox runs)
 vizor,VIZOR,C:\LUCLIENT.INI,C:\LUCLIENT.INI,Windows,Windows,,Vector Asset Management Client configuration INI file (observed accessed by CLBOOT32.EXE in VirusTotal Cuckoofork sandbox runs)
 vizor,VIZOR,C:\LUCLIENT.MOD,C:\LUCLIENT.MOD,Windows,Windows,,Vector Asset Management Client module file (observed accessed by CLBOOT32.EXE in VirusTotal Cuckoofork sandbox runs)
+vscode_remote_tunnels,VS Code Remote Tunnels,C:\Windows\debug\code-insiders.exe,C:\Windows\debug\code-insiders.exe,Windows,Windows,,"Observed Warlock intrusion staging path; the report uses CSIDL_WINDOWS, so C:\Windows is an example Windows directory, not a universal installation location"
 zecurit,Zecurit,*\Zecurit\Agent\ZecuritAgentService.exe,*\Zecurit\Agent\ZecuritAgentService.exe,Windows,Windows,,Windows management service executable included in the extracted agent archive.
 zecurit,Zecurit,*\Zecurit\Agent\ZecuritAgentRegister.exe,*\Zecurit\Agent\ZecuritAgentRegister.exe,Windows,Windows,,Agent registration executable invoked by the installer helper.
 zecurit,Zecurit,*\Zecurit\Agent\ZecuritRemoteTools.exe,*\Zecurit\Agent\ZecuritRemoteTools.exe,Windows,Windows,,Remote-tools component included in the extracted Windows agent archive.
