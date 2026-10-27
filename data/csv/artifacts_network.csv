@@ -360,8 +360,7 @@ itarian,Itarian,*.cmdm.comodo.com,,Known remote domains
 itarian,Itarian,remoteaccess.itarian.com,,Known remote domains
 itarian,Itarian,servicedesk.itarian.com,,Known remote domains
 itsupport247_(connectwise),ITSupport247 (ConnectWise),*.itsupport247.net,,Known remote domains
-itsupport247connectwise,ITSupport247 (ConnectWise),*.itsupport247.net,,Known remote domains
-itsupport247connectwise,ITSupport247 (ConnectWise),itsupport247.net,,Known remote domains
+itsupport247_(connectwise),ITSupport247 (ConnectWise),itsupport247.net,,Known remote domains
 ivanti_remote_control,Ivanti Remote Control,*.ivanticloud.com,,Known remote domains
 jump_cloud,Jump Cloud,*.api.jumpcloud.com,,Known remote domains
 jump_cloud,Jump Cloud,*.assist.jumpcloud.com,,Known remote domains

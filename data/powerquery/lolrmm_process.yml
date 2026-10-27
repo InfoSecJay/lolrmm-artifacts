@@ -27,7 +27,7 @@ logsource:
 generated:
   source: applications.csv (application_name_lower)
   indicators: 635
-  tools: 360
+  tools: 359
   short_aliases:
     - "bma"
     - "dfc"

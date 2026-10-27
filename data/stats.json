@@ -1,7 +1,7 @@
 {
-  "tool_count": 360,
+  "tool_count": 359,
   "by_category": {
-    "RMM": 263,
+    "RMM": 262,
     "RAT": 97
   },
   "by_os": {
@@ -542,11 +542,11 @@
     "disk": 834,
     "eventlog": 126,
     "registry": 195,
-    "network_pairs": 1006,
+    "network_pairs": 1005,
     "other": 357,
-    "total": 2518
+    "total": 2517
   },
-  "detection_count": 565,
+  "detection_count": 563,
   "tools_without_artifacts_count": 67,
   "tools_without_detections_count": 84
 }

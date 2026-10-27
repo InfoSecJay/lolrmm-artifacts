@@ -126,7 +126,6 @@ islonline,ISL Online,RMM,True,True,False,False,False,False,False,True,False,True
 it_agent,IT Agent,RMM,True,True,True,True,True,False,False,False,True,False,eventlog | registry | network | detections
 itarian,Itarian,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 itsupport247_(connectwise),ITSupport247 (ConnectWise),RMM,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
-itsupport247connectwise,ITSupport247 (ConnectWise),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 ivanti_remote_control,Ivanti Remote Control,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 jollysfastvnc,JollysFastVNC,RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 jump_cloud,Jump Cloud,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other

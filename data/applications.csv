@@ -291,7 +291,6 @@ ITAgentRMMSenderUpdater 2026.7.31.1909,itagentrmmsenderupdater 2026.7.31.1909,it
 ITAgentSender.aiui,itagentsender.aiui,it_agent,IT Agent,PEMetadata.OriginalFileName,RMM,,https://www.itagent.com/it-agent-remote-access,Windows | macOS | Linux
 Itarian,itarian,itarian,Itarian,Name,RMM,,https://www.itarian.com/rmm/,
 ITSupport247 (ConnectWise),itsupport247 (connectwise),itsupport247_(connectwise),ITSupport247 (ConnectWise),Name,RMM,,https://control.itsupport247.net/,Windows
-ITSupport247 (ConnectWise),itsupport247 (connectwise),itsupport247connectwise,ITSupport247 (ConnectWise),Name,RMM,,https://control.itsupport247.net/,
 Ivanti Remote Control,ivanti remote control,ivanti_remote_control,Ivanti Remote Control,Name,RMM,,https://www.ivanti.com/use-cases/remote-control-all-of-my-devices-worldwide,
 JollysFastVNC,jollysfastvnc,jollysfastvnc,JollysFastVNC,Name,RAT,,https://www.jinx.de/JollysFastVNC.html,
 Jump Cloud,jump cloud,jump_cloud,Jump Cloud,Name,RMM,,https://jumpcloud.com/platform/remote-assistance,

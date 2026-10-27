@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **360**
-- Fetched + parsed tools: **360**
+- Expected files (upstream listing): **359**
+- Fetched + parsed tools: **359**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 360 tools total:
+Of 359 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 355 | 99% |
-| installation_paths | 321 | 89% |
+| pe_metadata | 354 | 99% |
+| installation_paths | 320 | 89% |
 | capabilities | 110 | 31% |
 | supported_os | 151 | 42% |
 | disk | 109 | 30% |
 | eventlog | 60 | 17% |
 | registry | 61 | 17% |
-| network | 271 | 75% |
+| network | 270 | 75% |
 | other | 66 | 18% |
-| detections | 276 | 77% |
+| detections | 275 | 77% |
 
 ## Tools with no artifacts at all (67)
 
