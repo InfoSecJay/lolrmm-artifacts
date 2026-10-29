@@ -240,13 +240,9 @@ laplink_everywhere,Laplink Everywhere,https://github.com/magicsword-io/LOLRMM/bl
 laplink_everywhere,Laplink Everywhere,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_everywhere_processes_sigma.yml,Detects potential processes activity of Laplink Everywhere RMM tool
 laplink_gold,Laplink Gold,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_gold_network_sigma.yml,Detects potential network activity of Laplink Gold RMM tool
 laplink_gold,Laplink Gold,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_gold_processes_sigma.yml,Detects potential processes activity of Laplink Gold RMM tool
-level.io,Level.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_network_sigma.yml,Detects potential network activity of Level.io RMM tool
-level.io,Level.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_processes_sigma.yml,Detects potential processes activity of Level.io RMM tool
 level,Level,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level_network_sigma.yml,Detects potential network activity of Level RMM tool
 level,Level,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level_files_sigma.yml,Detects potential files activity of Level RMM tool
-levelio,Level.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_network_sigma.yml,Detects potential network activity of Level.io RMM tool
-levelio,Level.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_files_sigma.yml,Detects potential files activity of Level.io RMM tool
-levelio,Level.io,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_processes_sigma.yml,Detects potential processes activity of Level.io RMM tool
+level,Level,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level_processes_sigma.yml,Detects potential processes activity of Level RMM tool
 lite_manager,Lite Manager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/lite_manager_processes_sigma.yml,Detects potential processes activity of Lite Manager RMM tool
 litemanager,LiteManager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/litemanager_network_sigma.yml,Detects potential network activity of LiteManager RMM tool
 litemanager,LiteManager,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/litemanager_processes_sigma.yml,Detects potential processes activity of LiteManager RMM tool
@@ -266,8 +262,6 @@ meshcentral,MeshCentral,https://github.com/tsale/Sigma_rules/blob/main/Threat%20
 meshcentral,MeshCentral,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_network_sigma.yml,Detects potential network activity of MeshCentral RMM tool
 meshcentral,MeshCentral,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_files_sigma.yml,Detects potential files activity of MeshCentral RMM tool
 meshcentral,MeshCentral,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_processes_sigma.yml,Detects potential processes activity of MeshCentral RMM tool
-microsoft_quick_assist,Microsoft Quick Assist,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_quick_assist_network_sigma.yml,Detects potential network activity of Microsoft Quick Assist RMM tool
-microsoft_quick_assist,Microsoft Quick Assist,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_quick_assist_processes_sigma.yml,Detects potential processes activity of Microsoft Quick Assist RMM tool
 mikogo,Mikogo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_network_sigma.yml,Detects potential network activity of Mikogo RMM tool
 mikogo,Mikogo,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_processes_sigma.yml,Detects potential processes activity of Mikogo RMM tool
 mionet_(also_known_as_wd_anywhere_access),MioNet (Also known as WD Anywhere Access),https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mionet__also_known_as_wd_anywhere_access__processes_sigma.yml,Detects potential processes activity of MioNet (Also known as WD Anywhere Access) RMM tool
@@ -388,6 +382,9 @@ rdpview,RDPView,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sig
 rdpview,RDPView,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpview_processes_sigma.yml,Detects potential processes activity of RDPView RMM tool
 rdpwrap,rdpwrap,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpwrap_network_sigma.yml,Detects potential network activity of rdpwrap RMM tool
 rdpwrap,rdpwrap,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpwrap_processes_sigma.yml,Detects potential processes activity of rdpwrap RMM tool
+rdviewer,RdViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdviewer_files_sigma.yml,Detects potential files activity of RdViewer RMM tool
+rdviewer,RdViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdviewer_registry_sigma.yml,Detects potential registry activity of RdViewer RMM tool
+rdviewer,RdViewer,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdviewer_network_sigma.yml,Detects potential network activity of RdViewer RMM tool
 remcos,Remcos,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remcos_processes_sigma.yml,Detects potential processes activity of Remcos RMM tool
 remmon,Remmon,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remmon_network_sigma.yml,Detects potential network activity of Remmon RMM tool
 remmon,Remmon,https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remmon_processes_sigma.yml,Detects potential processes activity of Remmon RMM tool

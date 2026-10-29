@@ -238,11 +238,9 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_every
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_everywhere_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_gold_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/laplink_gold_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_files_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_network_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level.io_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level_network_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/level_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/lite_manager_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/litemanager_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/litemanager_processes_sigma.yml
@@ -259,8 +257,6 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/megasync_proc
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_files_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/meshcentral_processes_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_quick_assist_network_sigma.yml
-https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/microsoft_quick_assist_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mikogo_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/mionet__also_known_as_wd_anywhere_access__processes_sigma.yml
@@ -373,6 +369,9 @@ https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpview_netwo
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpview_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpwrap_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdpwrap_processes_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdviewer_files_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdviewer_network_sigma.yml
+https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/rdviewer_registry_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remcos_processes_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remmon_network_sigma.yml
 https://github.com/magicsword-io/LOLRMM/blob/main/detections/sigma/remmon_processes_sigma.yml

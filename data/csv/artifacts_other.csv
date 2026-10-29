@@ -223,6 +223,27 @@ proxiport,ProxiPort,WindowsServiceName,proxiport
 proxiport,ProxiPort,LinuxSystemdService,proxiport.service
 proxiport,ProxiPort,LinuxServiceAccount,proxiport-agent
 proxiport,ProxiPort,ConfiguredServerField,client.server
+rdviewer,RdViewer,ServiceName,Rd_Service; vendor-documented as rd_service and corroborated by public research and existing sandbox reports
+rdviewer,RdViewer,ReportedServiceDisplayName,"RdViewer Client Service; July ESRC campaign display name, not established as the vendor default"
+rdviewer,RdViewer,ReportedCampaignServiceDisplayName,"DMService; October fake Disk Manager campaign display name, not the actual service name or a vendor default"
+rdviewer,RdViewer,ReportedCampaignEndpoint,"204.194.54.118:7788; ESRC's narrative and IOC table agree on port 7788, while its decrypted-configuration table prints 778. July campaign infrastructure, not a vendor default; excluded from DNS-domain indicators."
+rdviewer,RdViewer,ReportedCampaignEndpoint,1.14.146.76:7790; October fake Disk Manager build 1 relay reported by Rogue Authority and corroborated by an existing VirusTotal CAPE record; not a vendor default; excluded from DNS-domain indicators.
+rdviewer,RdViewer,ReportedCampaignEndpoint,103.64.13.103:7788; October fake Disk Manager build 2 relay corroborated by an existing VirusTotal CAPE record. The report also lists ports 7777 and 7799; only 7788 was independently observed in that record. Not a vendor default; excluded from DNS-domain indicators.
+rdviewer,RdViewer,ReportedDropperMD5,0084596140bfc8121401216f3d0873aa
+rdviewer,RdViewer,CorrelatedDropperSHA256,5f1c6059cbca3d1ba33c9834e845d290d8bfde3c4e0a37a71207b1a9b31593a7
+rdviewer,RdViewer,ReportedClientMD5,122c481e44221fefd34c808ff679b1ba
+rdviewer,RdViewer,CorrelatedClientSHA256,5bea7f348d4ff47afb4abbb06909b894434d4df83318780da23bbe49bc0fb233; July campaign RdClient.exe
+rdviewer,RdViewer,CorrelatedServiceSHA256,7ed2a077a1ce34fcb182e5135ae75ad7bd96207c3204c9f343095f967bfa109f; one shared genuine service sample correlated with the July chain and renamed dmservice.exe in both October builds
+rdviewer,RdViewer,ReportedCampaignLoaderSHA256,e71149d889cc558e6328ea7ce3498cd858c26ab282cda9410ccc51f6275f7da6; October fake Disk Manager build 1
+rdviewer,RdViewer,ReportedCampaignClientSHA256,fb60876621b2932fa2681d81a17ce8b79952fa3fb9a7ea77d5ba177433d8d76d; October build 1 patched NetBridge Suite/diskmgr.exe client
+rdviewer,RdViewer,ReportedCampaignHostSHA256,dcb372ff16de08fd126d9fceb866343ad03795f58427e4c78e1c837f6cd140d8; October build 1 host.dat
+rdviewer,RdViewer,ReportedCampaignConfigSHA256,9db36c4f42395b676d31bf7dad3dce15a3e6f4acf3003f7383fb326c9062c29a; October build 1 cfg.ini
+rdviewer,RdViewer,ReportedCampaignLoaderSHA256,b9115303dd3567ac75104a5a3d2bc0ce4fd7d697ebf258e61283cdf708d50133; October fake Disk Manager build 2
+rdviewer,RdViewer,ReportedCampaignClientSHA256,bf41e6af51ccba343098f403093b195fb5f238559f723d4088196a2648fb9272; October build 2 patched Disk Manager Corp./diskmgr.exe client
+rdviewer,RdViewer,ReportedCampaignHostSHA256,6bf67a040c0da26678b8b574db5f624b6bc3cc446455e3645d8bdaf3ef4517b8; October build 2 host.dat
+rdviewer,RdViewer,OfficialPackageSHA256,c081f809350dd836c9cb12257f6975bd69c0e7689d09ad5f471300bac1afd8a4
+rdviewer,RdViewer,OfficialServerSHA256,4ed32c1723b0cea3454f9085573f6cacbb371408c0ee700416079a2dad6dce63
+rdviewer,RdViewer,OfficialServerEmbeddedCertificateSubject,"济南快安网络科技有限公司; extracted from the official package's RdServer.exe Authenticode certificate, not a live trust or revocation validation"
 remote_agent_agent,RemoteAgentAgent,ServiceArgument,--service
 remote_agent_agent,RemoteAgentAgent,ConfigurationEnvironmentVariable,AGENT_CONFIG_PATH
 remote_agent_agent,RemoteAgentAgent,ReportedRegistrationRoute,/api/register
@@ -291,6 +312,7 @@ sparkrat,SparkRAT,ClientUserAgentPrefix,SPARK COMMIT:
 sparkrat,SparkRAT,ControllerDefaultListenAddress,:8000
 sparkrat,SparkRAT,HuntIOMacOSSampleSHA256,cd313c9b706c2ba9f50d338305c456ad3392572efe387a83093b09d2cb6f1b56
 sparkrat,SparkRAT,HuntIOMacOSSampleSHA256,52277d43d2f5e8fa8c856e1c098a1ff260a956f0598e16c8fb1b38e3a9374d15
+stifler,StifleR (2Pint Software),Windows event log channel pattern,TwoPintSoftware-StifleR.ClientApp*
 teamviewer,TeamViewer,Mutex,TeamViewer_LogMutex
 teamviewer,TeamViewer,Mutex,TeamViewerHooks_DynamicMemMutex
 teamviewer,TeamViewer,Mutex,TeamViewer3_Win32_Instance_Mutex

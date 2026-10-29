@@ -153,12 +153,14 @@ HKLM\SYSTEM\CurrentControlSet\Services\nezha-agent
 HKLM\SYSTEM\CurrentControlSet\Services\OblianceAgent
 HKLM\SYSTEM\CurrentControlSet\Services\Opale-Agent
 HKLM\SYSTEM\CurrentControlSet\Services\proxiport
+HKLM\SYSTEM\CurrentControlSet\Services\Rd_Service
 HKLM\SYSTEM\CurrentControlSet\Services\RG-Supervision
 HKLM\SYSTEM\CurrentControlSet\Services\RMMAgent
 HKLM\SYSTEM\CurrentControlSet\Services\RMMmaxAgentService
 HKLM\SYSTEM\CurrentControlSet\Services\RustDesk
 HKLM\System\CurrentControlSet\Services\ScreenConnect Client (*)\ImagePath
 HKLM\SYSTEM\CurrentControlSet\Services\SplashtopRemoteService
+HKLM\SYSTEM\CurrentControlSet\Services\StifleRClient
 HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*
 HKLM\SYSTEM\CurrentControlSet\Services\tinClientSessionManager-*
 HKLM\SYSTEM\CurrentControlSet\Services\TiService

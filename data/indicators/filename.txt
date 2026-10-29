@@ -595,6 +595,8 @@ rdp2tcp.exe
 RDPCheck.exe
 RDPConf.exe
 RDPWInst.exe
+RdServer.exe
+rdService.exe
 Recycler.exe
 regapps.exe
 remcmdstub.exe
@@ -709,6 +711,7 @@ srserver.exe
 srservice.exe
 STAHelper.exe
 StatementView.msi
+StifleR.ClientApp.exe
 strwinclt.exe
 StudentSvc.exe
 sunlogin*.exe

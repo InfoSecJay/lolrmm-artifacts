@@ -377,16 +377,16 @@ kaseya,Kaseya (VSA),kaseya.com,,Known remote domains
 khelpdesk,KHelpDesk,*.khelpdesk.com.br,,Known remote domains
 kickidler,KickIdler,kickidler.com,,Known remote domains
 kickidler,KickIdler,my.kickidler.com,,Known remote domains
+komari,Komari,komari-document.pages.dev,25774,Komari server web interface and agent communication
+komari,Komari,komari-document.pages.dev,443,Komari server web interface and agent communication
+komari,Komari,www.komari.wiki,25774,Komari server web interface and agent communication
+komari,Komari,www.komari.wiki,443,Komari server web interface and agent communication
 komari,Komari,github.com,25774,Komari server web interface and agent communication
 komari,Komari,github.com,443,Komari server web interface and agent communication
 komari,Komari,raw.githubusercontent.com,25774,Komari server web interface and agent communication
 komari,Komari,raw.githubusercontent.com,443,Komari server web interface and agent communication
 komari,Komari,ghcr.io,25774,Komari server web interface and agent communication
 komari,Komari,ghcr.io,443,Komari server web interface and agent communication
-komari,Komari,komari-document.pages.dev,25774,Komari server web interface and agent communication
-komari,Komari,komari-document.pages.dev,443,Komari server web interface and agent communication
-komari,Komari,www.komari.wiki,25774,Komari server web interface and agent communication
-komari,Komari,www.komari.wiki,443,Komari server web interface and agent communication
 komari,Komari,raw.githubusercontent.com,443,Komari Agent install URL pattern observed in Huntress April 2026 abuse case (PowerShell installer pulled directly from komari-monitor's main branch on GitHub).
 labtech_rmm_(now_connectwise_automate),LabTech RMM (Now ConnectWise Automate),connectwise.com,,Known remote domains
 landesk,LANDesk,*.ivanticloud.com,,Known remote domains
@@ -399,15 +399,12 @@ laplink_gold,Laplink Gold,user_managed,,Known remote domains
 lavawall,Lavawall,api-ca-1.lavawall.com,443,"Default Windows management API and secure WebSocket endpoint embedded in the inspected agent, using /go/ and /go/ws respectively. These are code-confirmed endpoints, not a claim of observed sandbox connections."
 lavawall,Lavawall,lavawinupdate.lavawall.com,443,"Vendor remote-support update host. The management agent retrieves version.json, which identifies the remote-agent.zip download and hash."
 lavawall,Lavawall,caremote1.lavawall.com,8443,Default remote-support server and port embedded in the signed remote-agent.exe version 2.0.0.16. Live session traffic was not tested.
-level.io,Level.io,level.io,,Known remote domains
-level.io,Level.io,*.level.io,,Known remote domains
 level,Level,level.io,443,Known remote domains
+level,Level,*.level.io,443,Known remote domains
 level,Level,builds.level.io,443,Known remote domains
 level,Level,agents.level.io,443,Known remote domains
 level,Level,online.level.io,443,Known remote domains
 level,Level,downloads.level.io,443,Known remote domains
-levelio,Level.io,level.io,,Known remote domains
-levelio,Level.io,*.level.io,,Known remote domains
 light_rmm_agent,LightRmmAgent,light-rmm-monitor-20260825.azurewebsites.net,443,Exact case-specific endpoint contacted by LightRmmAgent; not a legitimate vendor domain or an indicator for other Azure tenants.
 litemanager,LiteManager,*.litemanager.ru,,Known remote domains
 litemanager,LiteManager,*.litemanager.com,,Known remote domains
@@ -447,8 +444,6 @@ manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,manageengine.com,443
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,manageengine.com,8080,Known remote domains
 meshcentral,MeshCentral,user_managed,,Known remote domains
 meshcentral,MeshCentral,meshcentral.com,,Known remote domains
-microsoft_quick_assist,Microsoft Quick Assist,user_managed,,Known remote domains
-microsoft_quick_assist,Microsoft Quick Assist,*.support.services.microsoft.com,,Known remote domains
 mikogo,Mikogo,*.real-time-collaboration.com,,Known remote domains
 mikogo,Mikogo,*.mikogo4.com,,Known remote domains
 mikogo,Mikogo,*.mikogo.com,,Known remote domains
@@ -616,10 +611,10 @@ netviewer_(gotomeet),Netviewer (GoToMeet),*.netviewer.com,,Known remote domains
 netviewer_(gotomeet),Netviewer (GoToMeet),netviewer.com,,Known remote domains
 nezha,Nezha,user_managed,5555,Nezha Agent gRPC channel to operator-controlled Dashboard. Dashboard host/port is fully tenant-configurable — no fixed vendor C2 — so the protocol fingerprint (persistent gRPC over TLS) is more reliable than any specific domain.
 nezha,Nezha,user_managed,443,Nezha Agent gRPC channel to operator-controlled Dashboard. Dashboard host/port is fully tenant-configurable — no fixed vendor C2 — so the protocol fingerprint (persistent gRPC over TLS) is more reliable than any specific domain.
-nezha,Nezha,github.com,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
-nezha,Nezha,raw.githubusercontent.com,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
 nezha,Nezha,nezha.wiki,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
 nezha,Nezha,nezhahq.github.io,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
+nezha,Nezha,github.com,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
+nezha,Nezha,raw.githubusercontent.com,443,Official Nezha project / documentation / installer hosts. Agent installers pulled directly from GitHub raw content via curl|bash on Linux/macOS or PowerShell on Windows.
 nezha,Nezha,c.mid.al,443,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
 nezha,Nezha,c.mid.al,53762,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
 nezha,Nezha,gd.bj2.xyz,443,China-nexus abuse infrastructure observed by Huntress (Crown Prince Nezha campaign). Threat-actor-controlled Dashboard host and adjacent Ghost RAT C2.
@@ -719,13 +714,14 @@ qq_im-remote_assistance,QQ IM-remote assistance,*.desktop.qq.com,,Known remote d
 qq_im-remote_assistance,QQ IM-remote assistance,upload_data.qq.com,,Known remote domains
 qq_im-remote_assistance,QQ IM-remote assistance,qq-messenger.en.softonic.com,,Known remote domains
 quest_kace_agent_(formerly_dell_kace),Quest KACE Agent (formerly Dell KACE),*.kace.com,,Known remote domains
-quickassist,Quick Assist,*.support.services.microsoft.com,,Known remote domains
+quickassist,Quick Assist,*.support.services.microsoft.com,443,Microsoft Remote Assistance service shared by Quick Assist and Remote Help; HTTPS traffic alone does not establish which application is used or whether the session is malicious
 radmin,RAdmin,radmin.com,443,N/A
 rapid7,Rapid7,*.analytics.insight.rapid7.com,,Known remote domains
 rapid7,Rapid7,*.endpoint.ingress.rapid7.com,,Known remote domains
 rdp2tcp,rdp2tcp,user_managed,,Known remote domains
 rdpview,RDPView,user_managed,,Known remote domains
 rdpwrap,rdpwrap,user_managed,,Known remote domains
+rdviewer,RdViewer,rdviewer.oss-cn-hangzhou.aliyuncs.com,443,"Official software download host linked by the vendor; this is not evidence of a remote-control session, and self-hosted deployments can use other infrastructure"
 remmon,Remmon,*.remmon.hu,,Known remote domains
 remmon,Remmon,remmon.hu,,Known remote domains
 remobo,Remobo,user_managed,,Known remote domains
@@ -859,6 +855,7 @@ splashtop_remote,Splashtop Remote,*.api.splashtop.eu,,Known remote domains
 splashtopbeta,Splashtop (Beta),splashtop.com,,Known remote domains
 spyanywhere,SpyAnywhere,*.spytech-web.com,,Known remote domains
 spyanywhere,SpyAnywhere,spyanywhere.com,,Known remote domains
+stifler,StifleR (2Pint Software),,1414,Client connects to an organization-configured StifleR server using SignalR. Vendor installation documentation specifies port 1414; server names and ports depend on deployment. No fixed vendor management domain is documented.
 sunlogin,SunLogin,sunlogin.oray.com,,Known remote domains
 sunlogin,SunLogin,client.oray.net,,Known remote domains
 superops,SuperOps,*.superopsbeta.com,,Known remote domains

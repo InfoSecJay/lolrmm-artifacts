@@ -38,6 +38,12 @@
 *\ProgramData\GxM\enrollment.json
 *\ProgramData\GxM\install.log
 *\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\AnyDesk *.lnk
+*\rdpro\cfg.ini
+*\rdpro\host.dat
+*\rdpro\RdClient.exe
+*\rdpro\rdlibw.dll
+*\rdpro\rdService.exe
+*\RdViewerPro\RdServer.exe
 *\RG-Supervision\RG_Supervision.exe
 *\Zecurit\Agent\Logs\agent_cmd_handler.log
 *\Zecurit\Agent\Logs\agent_service.log
@@ -364,6 +370,7 @@ C:\Program Files (x86)\Microsoft Garage\Mouse without Borders\MouseWithoutBorder
 C:\Program Files (x86)\Msp Agent\msp-agent-core.exe
 C:\Program Files (x86)\N-able Technologies\Windows Agent\bin\agent.exe
 C:\Program Files (x86)\NVDA\nvda.exe
+C:\Program Files (x86)\rdviewer\rdclient\*
 C:\Program Files (x86)\RemotePC\*
 C:\Program Files (x86)\RemotePC\RemotePCUIU.exe
 C:\Program Files (x86)\RemotePulseAgent\agent.ps1
@@ -439,6 +446,7 @@ C:\Program Files*\ScreenConnect Client*\app.config
 C:\Program Files*\ScreenConnect\App_Data\Session.db
 C:\Program Files*\ScreenConnect\App_Data\User.xml
 C:\Program Files*\TeamViewer\connections*.txt
+C:\Program Files\2Pint Software\StifleR Client\TwoPint.ConfigEditor.Wpf\TwoPint.ConfigEditor.Wpf.exe
 C:\Program Files\Aspia\Client\qt.conf
 C:\Program Files\Atera Networks\AlphaAgent.exe
 C:\Program Files\ATERA Networks\AteraAgent\AteraAgent.exe
@@ -533,7 +541,6 @@ C:\Program Files\OblianceAgent\obliance-tray.exe
 C:\Program Files\OblianceAgent\obliance-watchdog.exe
 C:\Program Files\OpenUEM Agent\config\openuem.ini
 C:\Program Files\OpenUEM Agent\logs\openuem-log.txt
-C:\Program Files\OpsBridge\*.exe
 C:\Program Files\OpsBridge\OpsBridgeAgent.exe
 C:\Program Files\Parsec\parsecd.exe
 C:\Program Files\Parsec\pservice.exe
@@ -580,6 +587,10 @@ C:\ProgramData\Faronics\StorageSpace\FWA\Logs\FWASvc.log
 C:\ProgramData\Getscreen.me\<date>.gui.log
 C:\ProgramData\Getscreen.me\<date>.log
 C:\ProgramData\Getscreen.me\session.inf
+C:\ProgramData\host\cfg.ini
+C:\ProgramData\host\diskmgr.exe
+C:\ProgramData\host\dmservice.exe
+C:\ProgramData\host\host.dat
 C:\ProgramData\IDrive\*
 C:\ProgramData\ImmyBot\Logs\*
 C:\ProgramData\ImmyBot\Scripts\*
@@ -742,6 +753,7 @@ C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\*
 C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\config\RustDesk2.toml
 C:\Windows\System32\config\systemprofile\.cloudflared\*
 C:\Windows\System32\config\systemprofile\AppData\Local\Kaseya\Log\MakeSelfSignedCert.exe\
+C:\Windows\System32\QuickAssist.exe
 C:\Windows\System32\rserver30\CHATLOGS\*\*.htm
 C:\Windows\System32\rserver30\Radm_log.htm
 C:\Windows\System32\Tasks\OpsBridge Agent
@@ -783,6 +795,8 @@ opendesk-rmm-agent.exe
 PixoIT-agent.exe
 RodexAgent.exe
 ssleay32.dll
+StifleR.ClientApp.exe
+StifleR.ClientApp.exe.Config
 teamviewer.exe
 TeamViewer\d\d_Logfile\.log
 teamviewer_service.exe

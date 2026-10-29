@@ -124,6 +124,7 @@ ping32,Ping32,HKLM\SOFTWARE\WOW6432Node\NSecsoft\NSecAgent,"32-bit agent configu
 proxiport,ProxiPort,HKLM\SYSTEM\CurrentControlSet\Services\proxiport,Windows Service Control Manager key for the packaged endpoint agent.
 radmin,RAdmin,HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Radmin\v3.0\Server\Parameters\Radmin Security,N/A
 rdclient,RdClient,HKLM\SOFTWARE\RdClient,RdClient Installation
+rdviewer,RdViewer,HKLM\SYSTEM\CurrentControlSet\Services\Rd_Service,"RdViewer Windows service key; existing sandbox records show Services\Rd_Service under ControlSet001, normalized here to CurrentControlSet"
 remsupp,RemSupp,HKCU\Software\99ac595d-36d0-5122-a860-22a3443073cb,Product-specific installer key (vendor-assigned GUID)
 remsupp,RemSupp,HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\99ac595d-36d0-5122-a860-22a3443073cb,Per-user uninstall key (vendor-assigned GUID)
 rg_system,RG System (RG Supervision),HKLM\SOFTWARE\RG Systemes\RG Supervision,"Native-view Windows agent configuration hierarchy, corroborated by registry activity and embedded strings."
@@ -154,6 +155,7 @@ splashtop,Splashtop,HKU\.DEFAULT\Software\Splashtop Inc.\*,Default user Splashto
 splashtop,Splashtop,HKU\SID\Software\Splashtop Inc.\*,User-specific Splashtop Inc. registry key
 splashtop,Splashtop,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Print\Printers\Splashtop PDF Remote Printer,Splashtop PDF Remote Printer configuration
 splashtop,Splashtop,HKLM\SOFTWARE\WOW6432Node\Splashtop Inc.\Splashtop Remote Server\ClientInfo\*,Splashtop Remote Server client information
+stifler,StifleR (2Pint Software),HKLM\SYSTEM\CurrentControlSet\Services\StifleRClient,Windows service registry path derived from the documented StifleRClient service name (display name 2Pint Software Stifler Client).
 teamviewer,TeamViewer,HKLM\SOFTWARE\TeamViewer\*,N/A
 teamviewer,TeamViewer,HKU\<SID>\SOFTWARE\TeamViewer\*,N/A
 teamviewer,TeamViewer,HKLM\SYSTEM\CurrentControlSet\Services\TeamViewer\*,N/A

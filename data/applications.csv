@@ -315,9 +315,7 @@ Lavawall,lavawall,lavawall,Lavawall,Name,RMM,false,https://lavawall.com/,Windows
 Lavawall Windows Agent,lavawall windows agent,lavawall,Lavawall,PEMetadata.Product,RMM,false,https://lavawall.com/,Windows | macOS | Linux
 LavawallWin,lavawallwin,lavawall,Lavawall,PEMetadata.Description,RMM,false,https://lavawall.com/,Windows | macOS | Linux
 LavawallWin.dll,lavawallwin.dll,lavawall,Lavawall,PEMetadata.OriginalFileName,RMM,false,https://lavawall.com/,Windows | macOS | Linux
-Level,level,level,Level,Name,RMM,Free,https://level.io/,Windows
-Level.io,level.io,level.io,Level.io,Name,RMM,,https://level.io/,
-Level.io,level.io,levelio,Level.io,Name,RMM,,https://level.io/,Windows
+Level,level,level,Level,Name,RMM,Free for up to 10 devices; paid subscription for larger fleets,https://level.io/,Windows | macOS | Linux
 LightRmmAgent,lightrmmagent,light_rmm_agent,LightRmmAgent,Name,RMM,,,Windows
 Lite Manager,lite manager,lite_manager,Lite Manager,Name,RMM,,https://www.litemanager.com/,
 LiteManager,litemanager,litemanager,LiteManager,Name,RMM,,https://www.litemanager.com/,
@@ -342,7 +340,6 @@ ManageEngine ServiceDesk Plus installer (verified via VirusTotal),manageengine s
 MEGAsync,megasync,megasync,MEGAsync,Name,RAT,,https://mega.io/desktop,
 MeshCentral,meshcentral,meshcentral,MeshCentral,Name,RMM,Yes,https://meshcentral.com/,Windows | Linux | MacOS | FreeBSD
 MeshCentral Background Service Agent,meshcentral background service agent,meshcentral,MeshCentral,PEMetadata.Description,RMM,Yes,https://meshcentral.com/,Windows | Linux | MacOS | FreeBSD
-Microsoft Quick Assist,microsoft quick assist,microsoft_quick_assist,Microsoft Quick Assist,Name,RAT,,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,
 Mikogo,mikogo,mikogo,Mikogo,Name,RMM,,,
 Minexus,minexus,minexus,Minexus,Name,RMM,true,https://github.com/arhuman/minexus,Windows | Linux | macOS
 Mini RMM Agent,mini rmm agent,mini_rmm,Mini RMM Agent,Name,RMM,Unknown,,Windows
@@ -474,17 +471,21 @@ PuTTY,putty,putty,PuTTY,Name,RAT,,https://www.chiark.greenend.org.uk/~sgtatham/p
 PuTTY Tray,putty tray,putty_tray,PuTTY Tray,Name,RAT,,https://github.com/FauxFaux/PuTTYTray,
 QQ IM-remote assistance,qq im-remote assistance,qq_im-remote_assistance,QQ IM-remote assistance,Name,RMM,,,
 Quest KACE Agent (formerly Dell KACE),quest kace agent (formerly dell kace),quest_kace_agent_(formerly_dell_kace),Quest KACE Agent (formerly Dell KACE),Name,RMM,,https://www.quest.com/kace/,
-Quick Assist,quick assist,quickassist,Quick Assist,Name,RAT,,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,
+Quick Assist,quick assist,quickassist,Quick Assist,Name,RAT,Yes,https://support.microsoft.com/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3,Windows
 RAdmin,radmin,radmin,RAdmin,Name,RMM,,https://www.radmin.com/,Windows
 Radmin Server,radmin server,radmin,RAdmin,PEMetadata.Product,RMM,,https://www.radmin.com/,Windows
 Radmin Viewer,radmin viewer,radmin,RAdmin,PEMetadata.Product,RMM,,https://www.radmin.com/,Windows
 Rapid7,rapid7,rapid7,Rapid7,Name,RMM,,https://docs.rapid7.com/insight-agent/overview/,
 RCClient,rcclient,anyviewer,AnyViewer,PEMetadata.OriginalFileName,RMM,up to 10 devices,https://www.anyviewer.com/,Windows
 RdClient,rdclient,rdclient,RdClient,Name,RAT,true,https://www.pierschel.com/en/software-blog/28-rdclient-en,Windows
+rdclient,rdclient,rdviewer,RdViewer,PEMetadata.OriginalFileName,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
 RDCMan,rdcman,rdcman,RDCMan,Name,RAT,true,https://learn.microsoft.com/en-us/sysinternals/downloads/rdcman,Windows
 rdp2tcp,rdp2tcp,rdp2tcp,rdp2tcp,Name,RAT,,https://github.com/V-E-O/rdp2tcp,Windows
 RDPView,rdpview,rdpview,RDPView,Name,RAT,,,
 rdpwrap,rdpwrap,rdpwrap,rdpwrap,Name,RAT,,https://github.com/stascorp/rdpwrap,
+RdServer,rdserver,rdviewer,RdViewer,PEMetadata.OriginalFileName,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
+rdservice,rdservice,rdviewer,RdViewer,PEMetadata.OriginalFileName,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
+RdViewer,rdviewer,rdviewer,RdViewer,Name,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
 RealVNC,realvnc,realvnc,RealVNC,Name,RAT,,https://www.realvnc.com/en/connect/,
 remcmdstub,remcmdstub,netsupport_manager,NetSupport Manager,PEMetadata.OriginalFileName,RMM,,https://www.netsupportmanager.com/,
 Remcos,remcos,remcos,Remcos,Name,RMM,,,
@@ -498,6 +499,7 @@ Remote Desktop Plus,remote desktop plus,remote_desktop_plus,Remote Desktop Plus,
 Remote Manipulator System,remote manipulator system,remote_manipulator_system,Remote Manipulator System,Name,RMM,,https://rmansys.ru/,
 Remote Ripple,remote ripple,remoteripple,Remote Ripple,Name,RMM,true,https://remoteripple.com,Windows | Mac | Android | iOS
 Remote Utilities,remote utilities,remote_utilities,Remote Utilities,Name,RMM,,https://www.remoteutilities.com/,
+Remote-control client; the correlated July campaign sample has original filename rdclient.exe and impersonates Windows service-host version metadata,remote-control client; the correlated july campaign sample has original filename rdclient.exe and impersonates windows service-host version metadata,rdviewer,RdViewer,PEMetadata.Description,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
 Remote.it,remote.it,remote.it,Remote.it,Name,RMM,,https://www.remote.it/,Windows
 RemoteAgentAgent,remoteagentagent,remote_agent_agent,RemoteAgentAgent,Name,RAT,,,Windows
 RemoteCall,remotecall,remotecall,RemoteCall,Name,RMM,,https://www.remotecall.com/,Windows
@@ -548,6 +550,7 @@ SecureCRT,securecrt,securecrt,SecureCRT,Name,RAT,,https://www.vandyke.com/produc
 Seetrol,seetrol,seetrol,Seetrol,Name,RMM,,https://www.seetrol.co.kr/,
 Senso.cloud,senso.cloud,senso.cloud,Senso.cloud,Name,RMM,,https://senso.cloud/,
 Sentinel RMM,sentinel rmm,sentinel_rmm,Sentinel RMM,Name,RMM,Open source,https://github.com/codexX64/sentinel-rmm,Windows | Linux | macOS
+"Server executable in the inspected official RdViewerPro archive; PE version 6.6.4.0, independent of the advertised suite version","server executable in the inspected official rdviewerpro archive; pe version 6.6.4.0, independent of the advertised suite version",rdviewer,RdViewer,PEMetadata.Description,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
 ServerEye,servereye,servereye,ServerEye,Name,RMM,,https://www.servereye.de/,
 Servico de Gerenciamento Remoto,servico de gerenciamento remoto,unisystem,UniSystem RMM,PEMetadata.Description,RMM,Unknown,https://xelvarunetio.pro/,Windows
 SetMe,setme,setme_pro,SetMe PRO,PEMetadata.Product,RMM,false,https://www.setme.net/,Windows | macOS
@@ -578,6 +581,7 @@ Splashtop Remote,splashtop remote,splashtop_remote,Splashtop Remote,Name,RMM,,ht
 SpyAnywhere,spyanywhere,spyanywhere,SpyAnywhere,Name,RMM,,https://www.spytech-web.com/,
 STAHelper,stahelper,faronics_insight,Faronics Insight,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/insight,Windows | MacOS | ChromeOS | Android | iOS
 Standalone inventory collector (offline / one-shot inventory),standalone inventory collector (offline / one-shot inventory),glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
+StifleR (2Pint Software),stifler (2pint software),stifler,StifleR (2Pint Software),Name,RMM,,https://2pintsoftware.com/solution/remote-monitoring-management,Windows
 StudentSvc,studentsvc,faronics_insight,Faronics Insight,PEMetadata.OriginalFileName,RMM,30 day trial,https://www.faronics.com/products/insight,Windows | MacOS | ChromeOS | Android | iOS
 "Successor variant (""DocConnect"" / ""SHIELD OS"") observed after February 2026 disruption","successor variant (""docconnect"" / ""shield os"") observed after february 2026 disruption",trustconnect,TrustConnect,PEMetadata.Description,RAT,"No - sold as Malware-as-a-Service (~$300/month, Bitcoin or USDT)",https://trustconnectsoftware.com/,Windows
 SunLogin,sunlogin,sunlogin,SunLogin,Name,RMM,,https://sunlogin.oray.com/,
@@ -681,6 +685,7 @@ Windows filename configured by the repository PyInstaller specification; Linux a
 Windows MSI source names this endpoint service executable; no PE metadata was inspected.,windows msi source names this endpoint service executable; no pe metadata was inspected.,obliance,Obliance,PEMetadata.Description,RMM,Unknown,https://github.com/MeeJay/Obliance,Windows | Linux | macOS
 Windows service binary name set by the reviewed installer source; no PE metadata was inspected.,windows service binary name set by the reviewed installer source; no pe metadata was inspected.,beacon,Beacon (Synertek),PEMetadata.Description,RMM,true,https://github.com/synertek-cloud-services/beacon,Windows | Linux | macOS
 "Windows service binary — ""LANutil32 Distribution Agent"" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client","windows service binary — ""lanutil32 distribution agent"" (per third-party startup-program databases) — software distribution / push deployment service hosted by the vector asset management client",vizor,VIZOR,PEMetadata.Description,RMM,14-day free trial (vizor.cloud) — paid commercial product otherwise,https://www.vector-networks.com/,Windows
+Windows service module; the correlated sample identifies product RdViewer 服务程序 and version 6.6.8.0,windows service module; the correlated sample identifies product rdviewer 服务程序 and version 6.6.8.0,rdviewer,RdViewer,PEMetadata.Description,RMM,Free personal and self-hosted editions; paid editions are also offered,https://www.rdviewer.com/,Windows | macOS | Linux | Android | iOS
 Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32),windows service wrapper that hosts the glpi agent as a windows service (only available on win32),glpi,GLPI Agent,PEMetadata.Description,RMM,Yes,https://glpi-project.org/,Windows | MacOS | Linux
 WinSCP,winscp,winscp,WinSCP,Name,RAT,,https://winscp.net/,
 wintun.dll,wintun.dll,netbird,NetBird,PEMetadata.OriginalFileName,RAT,Yes (Open Source),https://netbird.io/,Windows | Linux | macOS | Android | iOS

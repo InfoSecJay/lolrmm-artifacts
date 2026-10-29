@@ -380,9 +380,6 @@ lavawall,Lavawall,*\LavawallWin.runtimeconfig.json,*\LavawallWin.runtimeconfig.j
 level,Level,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
 level,Level,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
 level,Level,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
-levelio,Level.io,C:\Program Files\Level\level.exe,C:\Program Files\Level\level.exe,Windows,Windows,,Level Binary
-levelio,Level.io,C:\Program Files\Level\osqueryi.exe,C:\Program Files\Level\osqueryi.exe,Windows,Windows,,A tool used by level to collect machine state information.
-levelio,Level.io,C:\Program Files\Level\level.log,C:\Program Files\Level\level.log,Windows,Windows,,Client log file for Level.
 light_rmm_agent,LightRmmAgent,*\LightRmmAgent\LightRmmAgentService.exe,*\LightRmmAgent\LightRmmAgentService.exe,Windows,Windows,,Reported executable identity scoped to the reported installation directory; the exact combined path is inferred from those two observations.
 light_rmm_agent,LightRmmAgent,C:\ProgramData\LightRmmAgent\machine.id,C:\ProgramData\LightRmmAgent\machine.id,Windows,Windows,,Machine identifier written after the service started in the reported intrusion.
 light_rmm_agent,LightRmmAgent,C:\Windows\Temp\MonitoringPanel.msi,C:\Windows\Temp\MonitoringPanel.msi,Windows,Windows,,"Installer staged and launched by Level-delivered PowerShell; a case-specific staging path, not the persistent executable."
@@ -502,7 +499,6 @@ open_uem,OpenUEM,/Library/LaunchDaemons/openuem-agent-uninstaller.plist,/Library
 opendesk,OpenDesk RMM Agent,OpenDesk-RMM-Agent.exe,OpenDesk-RMM-Agent.exe,Windows,Windows,,Official Windows release-asset basename matching the inspected signed sample.
 opendesk,OpenDesk RMM Agent,opendesk-rmm-agent.exe,opendesk-rmm-agent.exe,Windows,Windows,,Original filename in the inspected Windows sample's PE metadata.
 opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,C:\Program Files\OpsBridge\OpsBridgeAgent.exe,Windows,Windows,,Canonical agent executable installed by the observed MSI.
-opsbridge_agent,OpsBridge Agent,C:\Program Files\OpsBridge\*.exe,C:\Program Files\OpsBridge\*.exe,Windows,Windows,,Randomly named persisted agent copy observed across sandbox runs.
 opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\agent_state.json,C:\ProgramData\OpsBridge\agent_state.json,Windows,Windows,,Agent enrollment and runtime state.
 opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\agent.log,C:\ProgramData\OpsBridge\agent.log,Windows,Windows,,Agent activity log.
 opsbridge_agent,OpsBridge Agent,C:\ProgramData\OpsBridge\install.log,C:\ProgramData\OpsBridge\install.log,Windows,Windows,,Agent installation and persistence log.
@@ -544,11 +540,23 @@ proxiport,ProxiPort,/etc/proxiport/proxiport.conf,/etc/proxiport/proxiport.conf,
 proxiport,ProxiPort,/var/lib/proxiport-agent,/var/lib/proxiport-agent,Linux,Linux,,Linux agent state directory created by the package/manual install instructions.
 proxiport,ProxiPort,/var/log/proxiport-agent,/var/log/proxiport-agent,Linux,Linux,,Linux agent log directory created by the package/manual install instructions.
 proxiport,ProxiPort,/lib/systemd/system/proxiport.service,/lib/systemd/system/proxiport.service,Linux,Linux,,Linux systemd unit for the packaged endpoint agent.
+quickassist,Quick Assist,C:\Windows\System32\QuickAssist.exe,C:\Windows\System32\QuickAssist.exe,Windows,Windows,,Legacy Windows Quick Assist executable location; the current version is distributed through Microsoft Store
 radmin,RAdmin,C:\Windows\SysWOW64\rserver30\Radm_log.htm,C:\Windows\SysWOW64\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (32-bit)
 radmin,RAdmin,C:\Windows\System32\rserver30\Radm_log.htm,C:\Windows\System32\rserver30\Radm_log.htm,Windows,Windows,,RAdmin log file (64-bit)
 radmin,RAdmin,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,C:\Windows\System32\rserver30\CHATLOGS\*\*.htm,Windows,Windows,,RAdmin chat logs
 radmin,RAdmin,C:\Users\*\Documents\ChatLogs\*\*.htm,C:\Users\*\Documents\ChatLogs\*\*.htm,Windows,Windows,,RAdmin user chat logs
 rdclient,RdClient,%APPDATA%\RdClient\*,C:\Users\*\AppData\Roaming\RdClient\*,Windows,Windows,,
+rdviewer,RdViewer,C:\Program Files (x86)\rdviewer\rdclient\*,C:\Program Files (x86)\rdviewer\rdclient\*,Windows,Windows,,Vendor-documented client directory; not established as universal across every current edition
+rdviewer,RdViewer,*\rdpro\RdClient.exe,*\rdpro\RdClient.exe,Windows,Windows,,Client under the July campaign's rdpro directory; path suffix generalized from ESRC's reported per-user installation
+rdviewer,RdViewer,*\rdpro\rdService.exe,*\rdpro\rdService.exe,Windows,Windows,,Service module under the July campaign deployment directory
+rdviewer,RdViewer,*\rdpro\rdlibw.dll,*\rdpro\rdlibw.dll,Windows,Windows,,Remote-screen codec library in the July campaign client package
+rdviewer,RdViewer,*\rdpro\cfg.ini,*\rdpro\cfg.ini,Windows,Windows,,July campaign configuration file scoped to the reported deployment directory; the bare filename is not product-specific
+rdviewer,RdViewer,*\rdpro\host.dat,*\rdpro\host.dat,Windows,Windows,,July campaign relay configuration scoped to the reported deployment directory
+rdviewer,RdViewer,C:\ProgramData\host\dmservice.exe,C:\ProgramData\host\dmservice.exe,Windows,Windows,,Genuine RdViewer service renamed by the October fake Disk Manager builds; campaign-specific path
+rdviewer,RdViewer,C:\ProgramData\host\diskmgr.exe,C:\ProgramData\host\diskmgr.exe,Windows,Windows,,Patched and relabelled RdViewer client in the October fake Disk Manager builds; campaign-specific path
+rdviewer,RdViewer,C:\ProgramData\host\cfg.ini,C:\ProgramData\host\cfg.ini,Windows,Windows,,"October campaign configuration file, not a vendor-default installation path"
+rdviewer,RdViewer,C:\ProgramData\host\host.dat,C:\ProgramData\host\host.dat,Windows,Windows,,"October campaign relay configuration, not a vendor-default installation path"
+rdviewer,RdViewer,*\RdViewerPro\RdServer.exe,*\RdViewerPro\RdServer.exe,Windows,Windows,,"Server executable path inside the official self-hosted ZIP, not a fixed installed path"
 remote_agent_agent,RemoteAgentAgent,C:\Program Files\RemoteAgent\RemoteAgentAgent.exe,C:\Program Files\RemoteAgent\RemoteAgentAgent.exe,Windows,Windows,,Agent executable installed by the recovered service-install script.
 remote_agent_agent,RemoteAgentAgent,C:\Program Files\RemoteAgent\config.json,C:\Program Files\RemoteAgent\config.json,Windows,Windows,,Default configuration file identified in the reconstructed Python code; its path can be overridden by AGENT_CONFIG_PATH.
 remote_agent_agent,RemoteAgentAgent,C:\Windows\Temp\RemoteAgent.msi,C:\Windows\Temp\RemoteAgent.msi,Windows,Windows,,Case-specific installer staging path observed before silent MSI installation.
@@ -666,6 +674,9 @@ splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Software Updater\
 splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRUtility.exe,Windows,Windows,,N/A
 splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\SRFeature.exe,Windows,Windows,,N/A
 splashtop,Splashtop,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3,C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\SRAgent.sqlite3,Windows,Windows,,N/A
+stifler,StifleR (2Pint Software),StifleR.ClientApp.exe,StifleR.ClientApp.exe,Windows,Windows,,"StifleR client executable documented in the vendor's WinPE integration script; filename evidence, not verified PE version metadata."
+stifler,StifleR (2Pint Software),StifleR.ClientApp.exe.Config,StifleR.ClientApp.exe.Config,Windows,Windows,,StifleR client configuration file documented in the vendor's WinPE integration script.
+stifler,StifleR (2Pint Software),C:\Program Files\2Pint Software\StifleR Client\TwoPint.ConfigEditor.Wpf\TwoPint.ConfigEditor.Wpf.exe,C:\Program Files\2Pint Software\StifleR Client\TwoPint.ConfigEditor.Wpf\TwoPint.ConfigEditor.Wpf.exe,Windows,Windows,,Documented client configuration editor location. The installation directory can be customized.
 teamviewer,TeamViewer,C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log,C:\Users\<username>\AppData\Local\Temp\TeamViewer\TV15Install.log,Windows,Windows,,N/A
 teamviewer,TeamViewer,TeamViewer\d\d_Logfile\.log,TeamViewer\d\d_Logfile\.log,Windows,Windows,Regex,N/A
 teamviewer,TeamViewer,C:\Program Files\TeamViewer\Connections_incoming.txt,C:\Program Files\TeamViewer\Connections_incoming.txt,Windows,Windows,,N/A

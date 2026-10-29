@@ -496,6 +496,7 @@ C:\Program Files (x86)\Yandex\*
 c:\Program Files\*\Duplicati.Server.exe
 C:\Program Files\0x101 Cyber Security\NetLock RMM\UserAgent\NetLock_RMM_User_Process.exe
 C:\Program Files\0x101 Cyber Security\NetLock RMM\UserAgent\NetLock_RMM_User_UAC.exe
+C:\Program Files\2Pint Software\StifleR Client\*
 C:\Program Files\Allocentra\Agent\allocentra-agent.exe
 C:\Program Files\AnyDesk-*\AnyDesk-*.exe
 C:\Program Files\AnyDesk\*
@@ -668,6 +669,7 @@ C:\Windows\<random>.exe
 C:\Windows\Action1\*
 C:\Windows\dwrcs\*
 C:\Windows\System32\mstsc.exe
+C:\Windows\System32\QuickAssist.exe
 C:\Windows\System32\Tasks\OpsBridge Agent
 C:\Windows\SysWOW64\rserver30\FamItrf2
 C:\Windows\SysWOW64\rserver30\FamItrfc

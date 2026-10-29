@@ -154,6 +154,7 @@ Radmin Server
 Radmin Viewer
 Remote agent management utility (SSH / WinRM remote inventory)
 Remote Desktop Connection
+Remote-control client; the correlated July campaign sample has original filename rdclient.exe and impersonates Windows service-host version metadata
 RemotePulse agent installer component
 RemSupp - Remote desktop software
 Reported HeartbeatRM executable (unverified - from threat intelligence report)
@@ -164,6 +165,7 @@ RMMmax Agent Service Setup
 Rodex RMM Agent — Go-based WebSocket agent (~7.3 MB). PE version-block strings (Product=`Rodex RMM Suite`, CopyrightHolder=`Rodex Technologies Inc.`) are vendor-claimed but not verifiable in any corporate registry; binary is unsigned.
 Runtime name of Teramind.Setup.Updater.exe; downloaded from https://www.teramind.co/d/update-shim.exe
 Screan capture
+Server executable in the inspected official RdViewerPro archive; PE version 6.6.4.0, independent of the advertised suite version
 Servico de Gerenciamento Remoto
 SetMe Client
 SetMe Unattended Client
@@ -222,5 +224,6 @@ Windows filename configured by the repository PyInstaller specification; Linux a
 Windows MSI source names this endpoint service executable; no PE metadata was inspected.
 Windows service binary name set by the reviewed installer source; no PE metadata was inspected.
 Windows service binary — "LANutil32 Distribution Agent" (per third-party startup-program databases) — software distribution / push deployment service hosted by the Vector Asset Management Client
+Windows service module; the correlated sample identifies product RdViewer 服务程序 and version 6.6.8.0
 Windows service wrapper that hosts the GLPI Agent as a Windows service (only available on win32)
 WireGuard Wintun TUN driver shipped with the NetBird Windows client.

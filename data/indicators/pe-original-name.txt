@@ -96,6 +96,9 @@ PixoIT-agent.exe
 plink.exe
 Radmin.exe
 RCClient.exe
+rdclient.exe
+RdServer.exe
+rdservice.exe
 remcmdstub.exe
 RemoteDesktopManager
 Remotely_Agent.exe

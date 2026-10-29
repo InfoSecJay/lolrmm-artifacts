@@ -1,27 +1,27 @@
 # LOLRMM export completeness report
 
-- Expected files (upstream listing): **359**
-- Fetched + parsed tools: **359**
+- Expected files (upstream listing): **358**
+- Fetched + parsed tools: **358**
 - Missing: **0**
 - Parse errors: **0**
 - Status: PASS
 
 ## Section coverage (number of tools populating each section)
 
-Of 359 tools total:
+Of 358 tools total:
 
 | Section | Tools populating | % |
 | --- | ---: | ---: |
-| pe_metadata | 354 | 99% |
-| installation_paths | 320 | 89% |
-| capabilities | 110 | 31% |
-| supported_os | 151 | 42% |
-| disk | 109 | 30% |
+| pe_metadata | 353 | 99% |
+| installation_paths | 318 | 89% |
+| capabilities | 113 | 32% |
+| supported_os | 153 | 43% |
+| disk | 111 | 31% |
 | eventlog | 60 | 17% |
-| registry | 61 | 17% |
-| network | 270 | 75% |
-| other | 66 | 18% |
-| detections | 275 | 77% |
+| registry | 63 | 18% |
+| network | 269 | 75% |
+| other | 68 | 19% |
+| detections | 273 | 76% |
 
 ## Tools with no artifacts at all (67)
 
@@ -93,7 +93,7 @@ Of 359 tools total:
 - `yandex.disk` (RAT)
 - `zoc` (RAT)
 
-## Tools with no detections (84)
+## Tools with no detections (85)
 
 - `allocentra` (RMM)
 - `basic_rmm` (RMM)
@@ -169,6 +169,7 @@ Of 359 tools total:
 - `smartcode_web_vnc` (RAT)
 - `smartftp` (RAT)
 - `sparkrat` (RAT)
+- `stifler` (RMM)
 - `taniumdeploy` (RMM)
 - `teleport_connect` (RAT)
 - `terminals` (RAT)

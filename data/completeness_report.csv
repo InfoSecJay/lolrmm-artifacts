@@ -144,8 +144,6 @@ laplink_everywhere,Laplink Everywhere,RMM,True,True,False,False,False,False,Fals
 laplink_gold,Laplink Gold,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 lavawall,Lavawall,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 level,Level,RMM,True,True,True,True,True,True,False,True,False,True,registry | other
-level.io,Level.io,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
-levelio,Level.io,RMM,True,True,False,True,True,False,False,True,False,True,capabilities | eventlog | registry | other
 light_rmm_agent,LightRmmAgent,RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 lite_manager,Lite Manager,RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 litemanager,LiteManager,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
@@ -160,7 +158,6 @@ manageengine_rmm_central,ManageEngine RMM Central,RMM,True,False,False,False,Fal
 manageengine_servicedesk_plus,ManageEngine ServiceDesk Plus,RMM,True,True,True,True,True,True,True,True,False,False,other | detections
 megasync,MEGAsync,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 meshcentral,MeshCentral,RMM,True,True,True,True,True,True,False,True,False,True,registry | other
-microsoft_quick_assist,Microsoft Quick Assist,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 mikogo,Mikogo,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 minexus,Minexus,RMM,True,True,True,True,True,False,False,True,True,False,eventlog | registry | detections
 mini_rmm,Mini RMM Agent,RMM,True,True,True,True,True,False,True,False,True,False,eventlog | network | detections
@@ -238,7 +235,7 @@ putty,PuTTY,RAT,True,True,False,False,False,False,False,False,False,True,capabil
 putty_tray,PuTTY Tray,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 qq_im-remote_assistance,QQ IM-remote assistance,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 quest_kace_agent_(formerly_dell_kace),Quest KACE Agent (formerly Dell KACE),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
-quickassist,Quick Assist,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+quickassist,Quick Assist,RAT,True,True,True,True,True,False,False,True,False,True,eventlog | registry | other
 radmin,RAdmin,RMM,True,True,False,True,True,False,True,True,False,True,capabilities | eventlog | other
 rapid7,Rapid7,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 rdclient,RdClient,RAT,False,True,True,True,True,False,True,False,False,True,pe_metadata | eventlog | network | other
@@ -246,6 +243,7 @@ rdcman,RDCMan,RAT,False,True,True,True,False,False,False,False,False,True,pe_met
 rdp2tcp,rdp2tcp,RAT,True,True,False,True,False,False,False,True,False,True,capabilities | disk | eventlog | registry | other
 rdpview,RDPView,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 rdpwrap,rdpwrap,RAT,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+rdviewer,RdViewer,RMM,True,False,True,True,True,False,True,True,True,True,installation_paths | eventlog
 realvnc,RealVNC,RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
 remcos,Remcos,RMM,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
 remmina,Remmina,RAT,True,False,False,False,False,False,False,False,False,False,installation_paths | capabilities | supported_os | disk | eventlog | registry | network | other | detections
@@ -305,6 +303,7 @@ splashtop,Splashtop,RMM,True,True,False,False,True,True,True,True,False,True,cap
 splashtop_remote,Splashtop Remote,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 splashtopbeta,Splashtop (Beta),RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 spyanywhere,SpyAnywhere,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
+stifler,StifleR (2Pint Software),RMM,True,True,True,True,True,False,True,True,True,False,eventlog | detections
 sunlogin,SunLogin,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 superops,SuperOps,RMM,True,True,False,False,False,False,False,True,False,True,capabilities | supported_os | disk | eventlog | registry | other
 superputty,SuperPuTTY,RAT,True,True,False,False,False,False,False,False,False,True,capabilities | supported_os | disk | eventlog | registry | network | other
